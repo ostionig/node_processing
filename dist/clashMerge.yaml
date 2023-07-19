@@ -1,4 +1,4 @@
-# 更新时间 2023-07-19T18:53:01.593Z
+# 更新时间 2023-07-19T19:06:50.917Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1378,6 +1378,26 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 美国V2CROSS.COM3
+    ws-opts:
+      path: /
+    server: 108.186.192.231
+    port: 45502
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 荷兰北荷兰省阿姆斯特丹Sharktech数据中心6
+    ws-opts:
+      path: /
+    server: 45.58.186.91
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
+    alterId: 0
+    cipher: auto
+    network: auto
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1511,6 +1531,8 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点99
       - github.com/freefq-澳大利亚悉尼1010
       - github.com/freefq-美国CloudFlare公司CDN节点1414
+      - 美国V2CROSS.COM3
+      - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1644,6 +1666,8 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点99
       - github.com/freefq-澳大利亚悉尼1010
       - github.com/freefq-美国CloudFlare公司CDN节点1414
+      - 美国V2CROSS.COM3
+      - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心6
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1776,6 +1800,8 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点99
       - github.com/freefq-澳大利亚悉尼1010
       - github.com/freefq-美国CloudFlare公司CDN节点1414
+      - 美国V2CROSS.COM3
+      - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心6
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1940,6 +1966,8 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点99
       - github.com/freefq-澳大利亚悉尼1010
       - github.com/freefq-美国CloudFlare公司CDN节点1414
+      - 美国V2CROSS.COM3
+      - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心6
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
