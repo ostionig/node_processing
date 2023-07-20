@@ -1,4 +1,4 @@
-# 更新时间 2023-07-20T06:54:19.981Z
+# 更新时间 2023-07-20T07:10:30.515Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -650,14 +650,14 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: m1OoPMx5W_8aGUQZZm8Mbg
     udp: true
-  - name: US_SG_speednode_0081
+  - name: SG_SG_speednode_0081
     server: sg2.downloadvip.cfd
     port: 443
     type: trojan
     password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
     sni: jssg1.xn--mes358acgm99l.com
     skip-cert-verify: true
-  - name: US_SG_speednode_0082
+  - name: SG_SG_speednode_0082
     server: sg1.downloadvip.cfd
     port: 443
     type: trojan
@@ -734,7 +734,7 @@ proxies:
       path: /
       headers:
         Host: jp2.mlxg.org
-  - name: US_US_speednode_0094
+  - name: US_speednode_0094
     server: baxamdyfa.76898102.xyz
     port: 2052
     type: vmess
@@ -1806,28 +1806,49 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点0
-    ws-opts:
-      path: /vmessws
-      headers:
-        host: linkedin.disnet.gq
-    server: linkedin.disnet.gq
-    port: 443
-    uuid: a869c557-5c7d-426f-9039-0279c16352bc
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国V2CROSS.COM4
+    name: 美国V2CROSS.COM5
     ws-opts:
       path: /
-    server: 108.186.4.4
-    port: 42382
+    server: 108.186.192.231
+    port: 45502
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国V2CROSS.COM7
+    ws-opts:
+      path: /
+    server: 108.186.116.177
+    port: 55005
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /qwer
+      headers:
+        host: fcc.vtcss.top
+    server: 104.17.106.72
+    port: 8880
+    uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点17
+    ws-opts:
+      path: /api/v3/download.getFile
+      headers:
+        host: ssrsub.v01.ssrsub.com
+    server: speedip.eu.org
+    port: 8080
+    uuid: dd87d362-dba1-49aa-9c73-87c828f372d6
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1888,8 +1909,8 @@ proxy-groups:
       - US_NU_speednode_0078
       - US_NU_speednode_0079
       - RU_RU_speednode_0080
-      - US_SG_speednode_0081
-      - US_SG_speednode_0082
+      - SG_SG_speednode_0081
+      - SG_SG_speednode_0082
       - SG_SG_speednode_0083
       - SG_SG_speednode_0084
       - SG_SG_speednode_0085
@@ -1897,7 +1918,7 @@ proxy-groups:
       - SG_SG_speednode_0091
       - TW_speednode_0092
       - US_US_speednode_0093
-      - US_US_speednode_0094
+      - US_speednode_0094
       - US_US_speednode_0095
       - US_US_speednode_0096
       - US_US_speednode_0097
@@ -1994,8 +2015,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1515
       - github.com/freefq-澳大利亚悉尼1616
       - github.com/freefq-美国CloudFlare公司CDN节点1717
-      - 美国CloudFlare节点0
-      - 美国V2CROSS.COM4
+      - 美国V2CROSS.COM5
+      - 美国V2CROSS.COM7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -2056,8 +2079,8 @@ proxy-groups:
       - US_NU_speednode_0078
       - US_NU_speednode_0079
       - RU_RU_speednode_0080
-      - US_SG_speednode_0081
-      - US_SG_speednode_0082
+      - SG_SG_speednode_0081
+      - SG_SG_speednode_0082
       - SG_SG_speednode_0083
       - SG_SG_speednode_0084
       - SG_SG_speednode_0085
@@ -2065,7 +2088,7 @@ proxy-groups:
       - SG_SG_speednode_0091
       - TW_speednode_0092
       - US_US_speednode_0093
-      - US_US_speednode_0094
+      - US_speednode_0094
       - US_US_speednode_0095
       - US_US_speednode_0096
       - US_US_speednode_0097
@@ -2162,8 +2185,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1515
       - github.com/freefq-澳大利亚悉尼1616
       - github.com/freefq-美国CloudFlare公司CDN节点1717
-      - 美国CloudFlare节点0
-      - 美国V2CROSS.COM4
+      - 美国V2CROSS.COM5
+      - 美国V2CROSS.COM7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -2223,8 +2248,8 @@ proxy-groups:
       - US_NU_speednode_0078
       - US_NU_speednode_0079
       - RU_RU_speednode_0080
-      - US_SG_speednode_0081
-      - US_SG_speednode_0082
+      - SG_SG_speednode_0081
+      - SG_SG_speednode_0082
       - SG_SG_speednode_0083
       - SG_SG_speednode_0084
       - SG_SG_speednode_0085
@@ -2232,7 +2257,7 @@ proxy-groups:
       - SG_SG_speednode_0091
       - TW_speednode_0092
       - US_US_speednode_0093
-      - US_US_speednode_0094
+      - US_speednode_0094
       - US_US_speednode_0095
       - US_US_speednode_0096
       - US_US_speednode_0097
@@ -2329,8 +2354,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1515
       - github.com/freefq-澳大利亚悉尼1616
       - github.com/freefq-美国CloudFlare公司CDN节点1717
-      - 美国CloudFlare节点0
-      - 美国V2CROSS.COM4
+      - 美国V2CROSS.COM5
+      - 美国V2CROSS.COM7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2422,8 +2449,8 @@ proxy-groups:
       - US_NU_speednode_0078
       - US_NU_speednode_0079
       - RU_RU_speednode_0080
-      - US_SG_speednode_0081
-      - US_SG_speednode_0082
+      - SG_SG_speednode_0081
+      - SG_SG_speednode_0082
       - SG_SG_speednode_0083
       - SG_SG_speednode_0084
       - SG_SG_speednode_0085
@@ -2431,7 +2458,7 @@ proxy-groups:
       - SG_SG_speednode_0091
       - TW_speednode_0092
       - US_US_speednode_0093
-      - US_US_speednode_0094
+      - US_speednode_0094
       - US_US_speednode_0095
       - US_US_speednode_0096
       - US_US_speednode_0097
@@ -2528,8 +2555,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1515
       - github.com/freefq-澳大利亚悉尼1616
       - github.com/freefq-美国CloudFlare公司CDN节点1717
-      - 美国CloudFlare节点0
-      - 美国V2CROSS.COM4
+      - 美国V2CROSS.COM5
+      - 美国V2CROSS.COM7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
