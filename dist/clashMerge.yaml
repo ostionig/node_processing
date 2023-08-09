@@ -1,4 +1,4 @@
-# 更新时间 2023-08-09T06:53:50.952Z
+# 更新时间 2023-08-09T07:09:55.858Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1717,74 +1717,6 @@ proxies:
     cipher: auto
     network: ws
     tls: true
-  - type: vmess
-    name: 美国CloudFlare节点2
-    ws-opts:
-      path: /hgcefomn
-      headers:
-        host: amszx.66666654.xyz
-    server: 172.64.166.10
-    port: 2095
-    uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: /hgcefomn
-      headers:
-        host: amszx.66666654.xyz
-    server: 172.67.244.14
-    port: 2095
-    uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare公司CDN节点(shopify)6
-    ws-opts:
-      path: /aries
-      headers:
-        host: Fr.cloudflare.quest
-    server: Shopify.com
-    port: 2086
-    uuid: 250f4331-8c3e-4b87-a86b-5c5fbf9ddba8
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点7
-    ws-opts:
-      path: /hgcefomn
-      headers:
-        host: amszx.66666654.xyz
-    server: 162.159.133.130
-    port: 2095
-    uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省深圳市移动10
-    server: 120.241.47.40
-    port: 58002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点12
-    ws-opts:
-      path: /hgcefomn
-      headers:
-        host: amszx.66666654.xyz
-    server: 172.67.194.234
-    port: 2095
-    uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1929,12 +1861,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1919
       - github.com/freefq-美国CloudFlare公司CDN节点2121
-      - 美国CloudFlare节点2
-      - 美国CloudFlare节点4
-      - 美国CloudFlare公司CDN节点(shopify)6
-      - 美国CloudFlare节点7
-      - 广东省深圳市移动10
-      - 美国CloudFlare节点12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -2079,12 +2005,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1919
       - github.com/freefq-美国CloudFlare公司CDN节点2121
-      - 美国CloudFlare节点2
-      - 美国CloudFlare节点4
-      - 美国CloudFlare公司CDN节点(shopify)6
-      - 美国CloudFlare节点7
-      - 广东省深圳市移动10
-      - 美国CloudFlare节点12
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -2228,12 +2148,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1919
       - github.com/freefq-美国CloudFlare公司CDN节点2121
-      - 美国CloudFlare节点2
-      - 美国CloudFlare节点4
-      - 美国CloudFlare公司CDN节点(shopify)6
-      - 美国CloudFlare节点7
-      - 广东省深圳市移动10
-      - 美国CloudFlare节点12
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2409,12 +2323,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1919
       - github.com/freefq-美国CloudFlare公司CDN节点2121
-      - 美国CloudFlare节点2
-      - 美国CloudFlare节点4
-      - 美国CloudFlare公司CDN节点(shopify)6
-      - 美国CloudFlare节点7
-      - 广东省深圳市移动10
-      - 美国CloudFlare节点12
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
