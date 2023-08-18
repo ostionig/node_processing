@@ -1,4 +1,4 @@
-# 更新时间 2023-08-18T00:58:36.434Z
+# 更新时间 2023-08-18T01:49:25.752Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1360,33 +1360,14 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: 212.113.106.243
+    port: 13022
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3NWRyQUw3UGZDSXdRMnljVXVvRHNWMkxz
+    cipher: aes-128-gcm
   - type: vmess
-    name: 新加坡DigitalOcean数据中心3
-    ws-opts:
-      path: a7ee85f4
-      headers:
-        host: dd2.1808.cf
-    server: 206.189.92.4
-    port: 80
-    uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /speedtest
-      headers:
-        host: Amsterdam.kotick.site
-    server: cdnjs.com
-    port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点9
+    name: 美国CloudFlare节点4
     ws-opts:
       path: /shirker
       headers:
@@ -1398,26 +1379,50 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点11
+    name: 美国CloudFlare节点5
     ws-opts:
       path: /shirker
       headers:
-        host: dp4.scproxy.top
-    server: 162.159.130.198
+        host: dp3.scproxy.top
+    server: 172.64.168.28
     port: 80
     uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点12
+    name: 新加坡DigitalOcean数据中心6
+    ws-opts:
+      path: a7ee85f4
+      headers:
+        host: dd2.1808.cf
+    server: 178.128.223.23
+    port: 80
+    uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点9
     ws-opts:
       path: /shirker
       headers:
-        host: dp3.scproxy.top
-    server: 141.101.115.65
+        host: dp4.ilovescp.com
+    server: 172.67.27.227
     port: 80
     uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国V2CROSS.COM12
+    ws-opts:
+      path: a7ee85f4
+      headers:
+        host: dd2.1808.cf
+    server: 143.198.95.233
+    port: 80
+    uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
     alterId: 0
     cipher: auto
     network: ws
@@ -1541,11 +1546,12 @@ proxy-groups:
       - github.com/freefq-美国加州2020
       - github.com/freefq-美国CloudFlare节点2121
       - github.com/freefq-美国2424
-      - 新加坡DigitalOcean数据中心3
-      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点5
+      - 新加坡DigitalOcean数据中心6
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
-      - 美国CloudFlare节点12
+      - 美国V2CROSS.COM12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1666,11 +1672,12 @@ proxy-groups:
       - github.com/freefq-美国加州2020
       - github.com/freefq-美国CloudFlare节点2121
       - github.com/freefq-美国2424
-      - 新加坡DigitalOcean数据中心3
-      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点5
+      - 新加坡DigitalOcean数据中心6
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
-      - 美国CloudFlare节点12
+      - 美国V2CROSS.COM12
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1790,11 +1797,12 @@ proxy-groups:
       - github.com/freefq-美国加州2020
       - github.com/freefq-美国CloudFlare节点2121
       - github.com/freefq-美国2424
-      - 新加坡DigitalOcean数据中心3
-      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点5
+      - 新加坡DigitalOcean数据中心6
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
-      - 美国CloudFlare节点12
+      - 美国V2CROSS.COM12
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1946,11 +1954,12 @@ proxy-groups:
       - github.com/freefq-美国加州2020
       - github.com/freefq-美国CloudFlare节点2121
       - github.com/freefq-美国2424
-      - 新加坡DigitalOcean数据中心3
-      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点5
+      - 新加坡DigitalOcean数据中心6
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
-      - 美国CloudFlare节点12
+      - 美国V2CROSS.COM12
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
