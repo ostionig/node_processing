@@ -1,4 +1,4 @@
-# 更新时间 2023-08-23T00:58:44.743Z
+# 更新时间 2023-08-23T01:49:54.189Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -149,7 +149,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)4a81070:6193
     udp: true
-  - name: CN_CN_speednode_0122
+  - name: TW_CN_speednode_0122
     server: d02576d.b2.gladns.com
     port: 2377
     type: ss
@@ -160,7 +160,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)12a00c4:82897
     udp: true
-  - name: CN_CN_speednode_0123
+  - name: JP_CN_speednode_0123
     server: d02576d.b3.gladns.com
     port: 2377
     type: ss
@@ -322,7 +322,7 @@ proxies:
       mode: tls
       host: 03041b0:23622
     udp: true
-  - name: TW_TW_speednode_0253
+  - name: CN_TW_speednode_0253
     server: 1608545.b4.gladns.com
     port: 2377
     type: ss
@@ -333,7 +333,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)f478f13:54448
     udp: true
-  - name: TW_speednode_0254
+  - name: CN_TW_speednode_0254
     server: 7bedcef.b2.gladns.com
     port: 2377
     type: ss
@@ -1319,14 +1319,38 @@ proxies:
     network: ws
     tls: true
   - type: vmess
-    name: 美国CloudFlare节点3
+    name: 美国CloudFlare节点0
     ws-opts:
       path: /shirker
       headers:
         host: dp4.ilovescp.com
-    server: 162.159.194.228
+    server: 172.67.27.227
     port: 80
     uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /adobe
+      headers:
+        host: xjp.azzhuangaping.tw
+    server: xjp.azzhuangaping.tw
+    port: 80
+    uuid: dd46dd47-8bc0-3f05-83fc-f0e551cc6fc9
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /TG:@hkaa0
+      headers:
+        host: 13.wyhkaa0.gq
+    server: 13.wyhkaa0.gq
+    port: 2095
+    uuid: 32af4006-0698-4910-806c-b813074f36eb
     alterId: 0
     cipher: auto
     network: ws
@@ -1336,36 +1360,19 @@ proxies:
       path: /shirker
       headers:
         host: dp4.ilovescp.com
-    server: 172.64.132.22
+    server: 172.64.203.172
     port: 80
     uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 美国CloudFlare节点13
-    ws-opts:
-      path: /shirker
-      headers:
-        host: dp3.scproxy.top
-    server: 162.159.240.97
-    port: 80
-    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点14
-    ws-opts:
-      path: /shirker
-      headers:
-        host: lv2.scproxy.top
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 新加坡+Microsoft公司
+    server: de.stablize.top
+    port: 443
+    password: 8008b06e-2d1d-421c-9cdc-20af1f59093a
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1385,8 +1392,8 @@ proxy-groups:
       - CN_CN_speednode_0056
       - CN_CN_speednode_0083
       - CN_CN_speednode_0105
-      - CN_CN_speednode_0122
-      - CN_CN_speednode_0123
+      - TW_CN_speednode_0122
+      - JP_CN_speednode_0123
       - GB_GB_speednode_0124
       - US_HK_speednode_0131
       - US_HK_speednode_0132
@@ -1403,8 +1410,8 @@ proxy-groups:
       - JP_speednode_0231
       - JP_JP_speednode_0232
       - JP_JP_speednode_0233
-      - TW_TW_speednode_0253
-      - TW_speednode_0254
+      - CN_TW_speednode_0253
+      - CN_TW_speednode_0254
       - CN_TW_speednode_0256
       - CN_TW_speednode_0257
       - TW_TW_speednode_0258
@@ -1482,10 +1489,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点3030
       - github.com/freefq-美国CloudFlare节点3232
       - github.com/freefq-美国CloudFlare节点3333
-      - 美国CloudFlare节点3
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点6
       - 美国CloudFlare节点8
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 新加坡+Microsoft公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1505,8 +1513,8 @@ proxy-groups:
       - CN_CN_speednode_0056
       - CN_CN_speednode_0083
       - CN_CN_speednode_0105
-      - CN_CN_speednode_0122
-      - CN_CN_speednode_0123
+      - TW_CN_speednode_0122
+      - JP_CN_speednode_0123
       - GB_GB_speednode_0124
       - US_HK_speednode_0131
       - US_HK_speednode_0132
@@ -1523,8 +1531,8 @@ proxy-groups:
       - JP_speednode_0231
       - JP_JP_speednode_0232
       - JP_JP_speednode_0233
-      - TW_TW_speednode_0253
-      - TW_speednode_0254
+      - CN_TW_speednode_0253
+      - CN_TW_speednode_0254
       - CN_TW_speednode_0256
       - CN_TW_speednode_0257
       - TW_TW_speednode_0258
@@ -1602,10 +1610,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点3030
       - github.com/freefq-美国CloudFlare节点3232
       - github.com/freefq-美国CloudFlare节点3333
-      - 美国CloudFlare节点3
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点6
       - 美国CloudFlare节点8
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 新加坡+Microsoft公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1624,8 +1633,8 @@ proxy-groups:
       - CN_CN_speednode_0056
       - CN_CN_speednode_0083
       - CN_CN_speednode_0105
-      - CN_CN_speednode_0122
-      - CN_CN_speednode_0123
+      - TW_CN_speednode_0122
+      - JP_CN_speednode_0123
       - GB_GB_speednode_0124
       - US_HK_speednode_0131
       - US_HK_speednode_0132
@@ -1642,8 +1651,8 @@ proxy-groups:
       - JP_speednode_0231
       - JP_JP_speednode_0232
       - JP_JP_speednode_0233
-      - TW_TW_speednode_0253
-      - TW_speednode_0254
+      - CN_TW_speednode_0253
+      - CN_TW_speednode_0254
       - CN_TW_speednode_0256
       - CN_TW_speednode_0257
       - TW_TW_speednode_0258
@@ -1721,10 +1730,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点3030
       - github.com/freefq-美国CloudFlare节点3232
       - github.com/freefq-美国CloudFlare节点3333
-      - 美国CloudFlare节点3
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点6
       - 美国CloudFlare节点8
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 新加坡+Microsoft公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1775,8 +1785,8 @@ proxy-groups:
       - CN_CN_speednode_0056
       - CN_CN_speednode_0083
       - CN_CN_speednode_0105
-      - CN_CN_speednode_0122
-      - CN_CN_speednode_0123
+      - TW_CN_speednode_0122
+      - JP_CN_speednode_0123
       - GB_GB_speednode_0124
       - US_HK_speednode_0131
       - US_HK_speednode_0132
@@ -1793,8 +1803,8 @@ proxy-groups:
       - JP_speednode_0231
       - JP_JP_speednode_0232
       - JP_JP_speednode_0233
-      - TW_TW_speednode_0253
-      - TW_speednode_0254
+      - CN_TW_speednode_0253
+      - CN_TW_speednode_0254
       - CN_TW_speednode_0256
       - CN_TW_speednode_0257
       - TW_TW_speednode_0258
@@ -1872,10 +1882,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点3030
       - github.com/freefq-美国CloudFlare节点3232
       - github.com/freefq-美国CloudFlare节点3333
-      - 美国CloudFlare节点3
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点6
       - 美国CloudFlare节点8
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 新加坡+Microsoft公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
