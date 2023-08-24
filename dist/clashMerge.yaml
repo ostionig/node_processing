@@ -1,4 +1,4 @@
-# 更新时间 2023-08-24T00:59:09.441Z
+# 更新时间 2023-08-24T01:50:27.925Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -61,7 +61,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)4a81070:6193
     udp: true
-  - name: JP_CN_speednode_0059
+  - name: TW_CN_speednode_0059
     server: 1608545.b3.gladns.com
     port: 2377
     type: ss
@@ -72,7 +72,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)12a00c4:82897
     udp: true
-  - name: CN_CN_speednode_0062
+  - name: TW_CN_speednode_0062
     server: 1608545.b2.gladns.com
     port: 2377
     type: ss
@@ -116,7 +116,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)082f26a:31859
     udp: true
-  - name: TW_CN_speednode_0082
+  - name: CN_CN_speednode_0082
     server: 7bedcef.b2.gladns.com
     port: 2377
     type: ss
@@ -138,7 +138,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)af8f3e6:82919
     udp: true
-  - name: JP_CN_speednode_0086
+  - name: CN_CN_speednode_0086
     server: 7bedcef.b6.gladns.com
     port: 2377
     type: ss
@@ -182,7 +182,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)082f26a:31859
     udp: true
-  - name: CN_CN_speednode_0091
+  - name: TW_CN_speednode_0091
     server: 7bedcef.b5.gladns.com
     port: 2377
     type: ss
@@ -193,7 +193,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)af8f3e6:82919
     udp: true
-  - name: JP_CN_speednode_0094
+  - name: CN_CN_speednode_0094
     server: d02576d.b3.gladns.com
     port: 2377
     type: ss
@@ -204,7 +204,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)082f26a:31859
     udp: true
-  - name: CN_speednode_0097
+  - name: TW_CN_speednode_0097
     server: 1608545.b1.gladns.com
     port: 2377
     type: ss
@@ -215,7 +215,7 @@ proxies:
       mode: tls
       host: (TG@WangCai_1)af8f3e6:82919
     udp: true
-  - name: CN_CN_speednode_0098
+  - name: JP_CN_speednode_0098
     server: d02576d.b6.gladns.com
     port: 2377
     type: ss
@@ -1453,22 +1453,47 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 日本+东京都Amazon数据中心
-    server: fschk.1234567890spcloud.com
-    port: 20004
-    password: 7cea4e6c-ccb7-48c0-a8ba-77826f836102
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点12
+    name: 美国CloudFlare节点1
     ws-opts:
-      path: /
+      path: /shirker
       headers:
-        host: vcus2.vpn66.eu.org
-    server: dx1.992688.xyz
-    port: 8880
-    uuid: e5f9073b-a23c-487f-b2a8-e5eb6abad21d
+        host: dp4.scproxy.top
+    server: 162.159.243.133
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: /shirker
+      headers:
+        host: nl2.sharecentrepro.com
+    server: 172.67.247.81
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 台湾省中华电信12
+    server: gamespeed-gateway-1.numastergame.com
+    port: 11872
+    uuid: 0913b1ac-1f6c-436b-99b4-a5d6e343d025
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点13
+    ws-opts:
+      path: a7ee85f4
+      headers:
+        host: dd2.1808.cf
+    server: 104.25.13.12
+    port: 80
+    uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
     alterId: 0
     cipher: auto
     network: ws
@@ -1483,21 +1508,21 @@ proxy-groups:
       - CN_CN_speednode_0019
       - CN_CN_speednode_0021
       - CN_CN_speednode_0039
-      - JP_CN_speednode_0059
-      - CN_CN_speednode_0062
+      - TW_CN_speednode_0059
+      - TW_CN_speednode_0062
       - CN_CN_speednode_0074
       - JP_CN_speednode_0077
       - JP_CN_speednode_0081
-      - TW_CN_speednode_0082
+      - CN_CN_speednode_0082
       - CN_CN_speednode_0085
-      - JP_CN_speednode_0086
+      - CN_CN_speednode_0086
       - CN_CN_speednode_0087
       - CN_CN_speednode_0088
       - CN_CN_speednode_0089
-      - CN_CN_speednode_0091
-      - JP_CN_speednode_0094
-      - CN_speednode_0097
-      - CN_CN_speednode_0098
+      - TW_CN_speednode_0091
+      - CN_CN_speednode_0094
+      - TW_CN_speednode_0097
+      - JP_CN_speednode_0098
       - GB_GB_speednode_0100
       - US_HK_speednode_0104
       - US_HK_speednode_0105
@@ -1616,8 +1641,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2121
       - github.com/freefq-美国CloudFlare节点2222
       - github.com/freefq-美国CloudFlare节点2323
-      - 日本+东京都Amazon数据中心
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点2
+      - 台湾省中华电信12
+      - 美国CloudFlare节点13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1629,21 +1656,21 @@ proxy-groups:
       - CN_CN_speednode_0019
       - CN_CN_speednode_0021
       - CN_CN_speednode_0039
-      - JP_CN_speednode_0059
-      - CN_CN_speednode_0062
+      - TW_CN_speednode_0059
+      - TW_CN_speednode_0062
       - CN_CN_speednode_0074
       - JP_CN_speednode_0077
       - JP_CN_speednode_0081
-      - TW_CN_speednode_0082
+      - CN_CN_speednode_0082
       - CN_CN_speednode_0085
-      - JP_CN_speednode_0086
+      - CN_CN_speednode_0086
       - CN_CN_speednode_0087
       - CN_CN_speednode_0088
       - CN_CN_speednode_0089
-      - CN_CN_speednode_0091
-      - JP_CN_speednode_0094
-      - CN_speednode_0097
-      - CN_CN_speednode_0098
+      - TW_CN_speednode_0091
+      - CN_CN_speednode_0094
+      - TW_CN_speednode_0097
+      - JP_CN_speednode_0098
       - GB_GB_speednode_0100
       - US_HK_speednode_0104
       - US_HK_speednode_0105
@@ -1762,8 +1789,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2121
       - github.com/freefq-美国CloudFlare节点2222
       - github.com/freefq-美国CloudFlare节点2323
-      - 日本+东京都Amazon数据中心
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点2
+      - 台湾省中华电信12
+      - 美国CloudFlare节点13
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1774,21 +1803,21 @@ proxy-groups:
       - CN_CN_speednode_0019
       - CN_CN_speednode_0021
       - CN_CN_speednode_0039
-      - JP_CN_speednode_0059
-      - CN_CN_speednode_0062
+      - TW_CN_speednode_0059
+      - TW_CN_speednode_0062
       - CN_CN_speednode_0074
       - JP_CN_speednode_0077
       - JP_CN_speednode_0081
-      - TW_CN_speednode_0082
+      - CN_CN_speednode_0082
       - CN_CN_speednode_0085
-      - JP_CN_speednode_0086
+      - CN_CN_speednode_0086
       - CN_CN_speednode_0087
       - CN_CN_speednode_0088
       - CN_CN_speednode_0089
-      - CN_CN_speednode_0091
-      - JP_CN_speednode_0094
-      - CN_speednode_0097
-      - CN_CN_speednode_0098
+      - TW_CN_speednode_0091
+      - CN_CN_speednode_0094
+      - TW_CN_speednode_0097
+      - JP_CN_speednode_0098
       - GB_GB_speednode_0100
       - US_HK_speednode_0104
       - US_HK_speednode_0105
@@ -1907,8 +1936,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2121
       - github.com/freefq-美国CloudFlare节点2222
       - github.com/freefq-美国CloudFlare节点2323
-      - 日本+东京都Amazon数据中心
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点2
+      - 台湾省中华电信12
+      - 美国CloudFlare节点13
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1951,21 +1982,21 @@ proxy-groups:
       - CN_CN_speednode_0019
       - CN_CN_speednode_0021
       - CN_CN_speednode_0039
-      - JP_CN_speednode_0059
-      - CN_CN_speednode_0062
+      - TW_CN_speednode_0059
+      - TW_CN_speednode_0062
       - CN_CN_speednode_0074
       - JP_CN_speednode_0077
       - JP_CN_speednode_0081
-      - TW_CN_speednode_0082
+      - CN_CN_speednode_0082
       - CN_CN_speednode_0085
-      - JP_CN_speednode_0086
+      - CN_CN_speednode_0086
       - CN_CN_speednode_0087
       - CN_CN_speednode_0088
       - CN_CN_speednode_0089
-      - CN_CN_speednode_0091
-      - JP_CN_speednode_0094
-      - CN_speednode_0097
-      - CN_CN_speednode_0098
+      - TW_CN_speednode_0091
+      - CN_CN_speednode_0094
+      - TW_CN_speednode_0097
+      - JP_CN_speednode_0098
       - GB_GB_speednode_0100
       - US_HK_speednode_0104
       - US_HK_speednode_0105
@@ -2084,8 +2115,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2121
       - github.com/freefq-美国CloudFlare节点2222
       - github.com/freefq-美国CloudFlare节点2323
-      - 日本+东京都Amazon数据中心
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点2
+      - 台湾省中华电信12
+      - 美国CloudFlare节点13
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
