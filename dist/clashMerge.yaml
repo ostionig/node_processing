@@ -1,4 +1,4 @@
-# 更新时间 2023-08-26T00:57:50.907Z
+# 更新时间 2023-08-26T01:44:27.786Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1302,42 +1302,93 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 四川省泸州市移动2
+    name: 美国CloudFlare节点0
     ws-opts:
-      path: /ef483582-6269-468c-93af-c511eccb8a69
+      path: /TG:@hkaa0
       headers:
-        host: cdn.node.user-sub.pddns-usersdk.com
-    server: cdn.node.user-sub.pddns-usersdk.com
-    port: 13003
-    uuid: 5f9f4df4-5398-35d1-9a6a-44a8a575832d
+        host: 3.wyhkaa0.gq
+    server: 3.wyhkaa0.gq
+    port: 2095
+    uuid: 0150eac1-6e49-4329-9c06-50027c0b9ad7
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 美国CloudFlare节点3
-    ws-opts:
-      path: /
-      headers:
-        host: ca-01.cloudlion.me
-    server: ca-01.cloudlion.me
-    port: 2082
-    uuid: a0a1a61f-0134-4221-9b6c-2c00ce709238
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: /ikun
-      headers:
-        host: us2.twittei.me
-    server: cdn.twitter.now.cc
+  - type: trojan
+    name: 西班牙+Arsys网络
+    server: sp1.connecton.surf
     port: 443
-    uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709
+    password: 41dbabe59a
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare公司CDN节点(shopify)4
+    ws-opts:
+      path: /dongtaiwang.com
+      headers:
+        host: d.freeh1.xyz
+    server: dongtaiwang3.com
+    port: 443
+    uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2
     alterId: 0
     cipher: auto
     network: ws
     tls: true
+  - type: vmess
+    name: 美国CloudFlare节点5
+    ws-opts:
+      path: /
+      headers:
+        host: sdgrm.shabijichang.com
+    server: 198.41.220.181
+    port: 80
+    uuid: a1a676e4-016e-4bf0-96fe-4b6aaf53abc2
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国加利福尼亚州圣何塞MULTACOM机房6
+    server: 45.199.138.188
+    port: 32138
+    uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点8
+    ws-opts:
+      path: /shirker
+      headers:
+        host: dp4.scproxy.top
+    server: 162.159.243.133
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: /shirker
+      headers:
+        host: dp4.ilovescp.com
+    server: 172.64.101.91
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点11
+    ws-opts:
+      path: /
+      headers:
+        host: vcus2.vpn66.eu.org
+    server: yd1.992688.xyz
+    port: 8880
+    uuid: e5f9073b-a23c-487f-b2a8-e5eb6abad21d
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1447,9 +1498,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1313
       - github.com/freefq-美国CloudFlare公司CDN节点1414
       - github.com/freefq-美国CloudFlare节点1515
-      - 四川省泸州市移动2
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点0
+      - 西班牙+Arsys网络
+      - 美国CloudFlare公司CDN节点(shopify)4
+      - 美国CloudFlare节点5
+      - 美国加利福尼亚州圣何塞MULTACOM机房6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1559,9 +1615,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1313
       - github.com/freefq-美国CloudFlare公司CDN节点1414
       - github.com/freefq-美国CloudFlare节点1515
-      - 四川省泸州市移动2
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点0
+      - 西班牙+Arsys网络
+      - 美国CloudFlare公司CDN节点(shopify)4
+      - 美国CloudFlare节点5
+      - 美国加利福尼亚州圣何塞MULTACOM机房6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1670,9 +1731,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1313
       - github.com/freefq-美国CloudFlare公司CDN节点1414
       - github.com/freefq-美国CloudFlare节点1515
-      - 四川省泸州市移动2
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点0
+      - 西班牙+Arsys网络
+      - 美国CloudFlare公司CDN节点(shopify)4
+      - 美国CloudFlare节点5
+      - 美国加利福尼亚州圣何塞MULTACOM机房6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1813,9 +1879,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点1313
       - github.com/freefq-美国CloudFlare公司CDN节点1414
       - github.com/freefq-美国CloudFlare节点1515
-      - 四川省泸州市移动2
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点0
+      - 西班牙+Arsys网络
+      - 美国CloudFlare公司CDN节点(shopify)4
+      - 美国CloudFlare节点5
+      - 美国加利福尼亚州圣何塞MULTACOM机房6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
