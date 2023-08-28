@@ -1,4 +1,4 @@
-# 更新时间 2023-08-28T06:53:57.000Z
+# 更新时间 2023-08-28T07:09:43.906Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -258,7 +258,7 @@ proxies:
     obfs: tls1.2_ticket_auth
     password: eAokbaDN6
     protocol-param: None
-  - name: NL_KR_speednode_0031
+  - name: CH_KR_speednode_0031
     server: arm.gougouvpn.xyz
     port: 8058
     type: ss
@@ -1582,25 +1582,65 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点2
+    name: 美国CloudFlare节点0
+    ws-opts:
+      path: /
+      headers:
+        host: ca-01.cloudlion.me
+    server: ca-01.cloudlion.me
+    port: 2082
+    uuid: 57bb96b0-01d5-4fe1-a26f-bca96b8b1251
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点5
     ws-opts:
       path: /shirker
       headers:
         host: dp3.scproxy.top
-    server: 172.67.184.189
+    server: 172.67.100.189
     port: 80
     uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 广东省移动11
-    server: 120.233.43.62
-    port: 51504
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /shirker
+      headers:
+        host: ca.ilovescp.com
+    server: 162.159.243.53
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点8
+    ws-opts:
+      path: /
+      headers:
+        host: shs.shabijichang.com
+    server: shs.shabijichang.com
+    port: 80
+    uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: /shirker
+      headers:
+        host: dp4.ilovescp.com
+    server: 172.64.101.91
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1630,7 +1670,7 @@ proxy-groups:
       - HK_HK_speednode_0027
       - HK_HK_speednode_0028
       - JP_JP_speednode_0029
-      - NL_KR_speednode_0031
+      - CH_KR_speednode_0031
       - NL_NL_speednode_0032
       - NL_NL_speednode_0033
       - NO_NO_speednode_0034
@@ -1736,8 +1776,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2020
       - github.com/freefq-美国CloudFlare节点2323
       - github.com/freefq-亚太地区2424
-      - 美国CloudFlare节点2
-      - 广东省移动11
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1767,7 +1810,7 @@ proxy-groups:
       - HK_HK_speednode_0027
       - HK_HK_speednode_0028
       - JP_JP_speednode_0029
-      - NL_KR_speednode_0031
+      - CH_KR_speednode_0031
       - NL_NL_speednode_0032
       - NL_NL_speednode_0033
       - NO_NO_speednode_0034
@@ -1873,8 +1916,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2020
       - github.com/freefq-美国CloudFlare节点2323
       - github.com/freefq-亚太地区2424
-      - 美国CloudFlare节点2
-      - 广东省移动11
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1903,7 +1949,7 @@ proxy-groups:
       - HK_HK_speednode_0027
       - HK_HK_speednode_0028
       - JP_JP_speednode_0029
-      - NL_KR_speednode_0031
+      - CH_KR_speednode_0031
       - NL_NL_speednode_0032
       - NL_NL_speednode_0033
       - NO_NO_speednode_0034
@@ -2009,8 +2055,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2020
       - github.com/freefq-美国CloudFlare节点2323
       - github.com/freefq-亚太地区2424
-      - 美国CloudFlare节点2
-      - 广东省移动11
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2071,7 +2120,7 @@ proxy-groups:
       - HK_HK_speednode_0027
       - HK_HK_speednode_0028
       - JP_JP_speednode_0029
-      - NL_KR_speednode_0031
+      - CH_KR_speednode_0031
       - NL_NL_speednode_0032
       - NL_NL_speednode_0033
       - NO_NO_speednode_0034
@@ -2177,8 +2226,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2020
       - github.com/freefq-美国CloudFlare节点2323
       - github.com/freefq-亚太地区2424
-      - 美国CloudFlare节点2
-      - 广东省移动11
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
