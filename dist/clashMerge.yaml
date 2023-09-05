@@ -1,4 +1,4 @@
-# 更新时间 2023-09-05T00:59:38.552Z
+# 更新时间 2023-09-05T01:51:28.163Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -140,7 +140,7 @@ proxies:
       headers:
         Host: www.32159877.xyz
     udp: true
-  - name: HK_speednode_0014
+  - name: HK_HK_speednode_0014
     server: a4.wuxianliulianng.xyz
     port: 443
     type: vmess
@@ -155,7 +155,7 @@ proxies:
       path: /sometimesnaive
       headers:
         Host: 2.wuxianliulianng.xyz
-  - name: HK_speednode_0015
+  - name: US_HK_speednode_0015
     server: a8.wuxianliulianng.xyz
     port: 443
     type: vmess
@@ -1556,25 +1556,17 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国V2CROSS.COM4
+    name: 美国CloudFlare节点2
     ws-opts:
-      path: /
+      path: /shirker
       headers:
-        host: ceshii.1234567890spcloud.com
-    server: 172.99.190.12
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+        host: ca.ilovescp.com
+    server: 172.64.161.58
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
     alterId: 0
     cipher: auto
-    network: auto
-  - type: vmess
-    name: 湖南省移动10
-    server: 120.226.50.93
-    port: 40702
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
+    network: ws
   - type: trojan
     name: 香港+Leaseweb数据中心
     server: 27.0.232.204
@@ -1583,40 +1575,53 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点16
-    ws-opts:
-      path: /nishikata
-      headers:
-        host: us2.icu2rip.eu.org
-    server: stock.hostmonit.com
-    port: 443
-    uuid: cd7f6a89-e86a-47ae-87d3-0277d205286f
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点17
+    name: 美国CloudFlare节点6
     ws-opts:
       path: /shirker
       headers:
         host: dp3.scproxy.top
-    server: 162.159.240.97
+    server: 172.67.49.8
     port: 80
     uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国加利福尼亚州圣何塞PEGTECH18
+    name: 美国CloudFlare节点10
     ws-opts:
-      path: /
-    server: 142.4.126.24
-    port: 51715
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      path: /shirker
+      headers:
+        host: ca.ilovescp.com
+    server: 172.67.59.39
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点11
+    ws-opts:
+      path: /shirker
+      headers:
+        host: ca.ilovescp.com
+    server: 162.159.243.53
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /shirker
+      headers:
+        host: dp3.scproxy.top
+    server: 172.67.95.171
+    port: 80
+    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1636,8 +1641,8 @@ proxy-groups:
       - US_FR_speednode_0011
       - HK_HK_speednode_0012
       - HK_HK_speednode_0013
-      - HK_speednode_0014
-      - HK_speednode_0015
+      - HK_HK_speednode_0014
+      - US_HK_speednode_0015
       - HK_speednode_0016
       - HK_speednode_0017
       - HK_speednode_0018
@@ -1742,12 +1747,12 @@ proxy-groups:
       - github.com/freefq-日本25
       - github.com/freefq-美国加州2626
       - github.com/freefq-美国CloudFlare节点2727
-      - 美国V2CROSS.COM4
-      - 湖南省移动10
+      - 美国CloudFlare节点2
       - 香港+Leaseweb数据中心
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国加利福尼亚州圣何塞PEGTECH18
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
+      - 美国CloudFlare节点12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1767,8 +1772,8 @@ proxy-groups:
       - US_FR_speednode_0011
       - HK_HK_speednode_0012
       - HK_HK_speednode_0013
-      - HK_speednode_0014
-      - HK_speednode_0015
+      - HK_HK_speednode_0014
+      - US_HK_speednode_0015
       - HK_speednode_0016
       - HK_speednode_0017
       - HK_speednode_0018
@@ -1873,12 +1878,12 @@ proxy-groups:
       - github.com/freefq-日本25
       - github.com/freefq-美国加州2626
       - github.com/freefq-美国CloudFlare节点2727
-      - 美国V2CROSS.COM4
-      - 湖南省移动10
+      - 美国CloudFlare节点2
       - 香港+Leaseweb数据中心
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国加利福尼亚州圣何塞PEGTECH18
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
+      - 美国CloudFlare节点12
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1897,8 +1902,8 @@ proxy-groups:
       - US_FR_speednode_0011
       - HK_HK_speednode_0012
       - HK_HK_speednode_0013
-      - HK_speednode_0014
-      - HK_speednode_0015
+      - HK_HK_speednode_0014
+      - US_HK_speednode_0015
       - HK_speednode_0016
       - HK_speednode_0017
       - HK_speednode_0018
@@ -2003,12 +2008,12 @@ proxy-groups:
       - github.com/freefq-日本25
       - github.com/freefq-美国加州2626
       - github.com/freefq-美国CloudFlare节点2727
-      - 美国V2CROSS.COM4
-      - 湖南省移动10
+      - 美国CloudFlare节点2
       - 香港+Leaseweb数据中心
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国加利福尼亚州圣何塞PEGTECH18
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
+      - 美国CloudFlare节点12
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2059,8 +2064,8 @@ proxy-groups:
       - US_FR_speednode_0011
       - HK_HK_speednode_0012
       - HK_HK_speednode_0013
-      - HK_speednode_0014
-      - HK_speednode_0015
+      - HK_HK_speednode_0014
+      - US_HK_speednode_0015
       - HK_speednode_0016
       - HK_speednode_0017
       - HK_speednode_0018
@@ -2165,12 +2170,12 @@ proxy-groups:
       - github.com/freefq-日本25
       - github.com/freefq-美国加州2626
       - github.com/freefq-美国CloudFlare节点2727
-      - 美国V2CROSS.COM4
-      - 湖南省移动10
+      - 美国CloudFlare节点2
       - 香港+Leaseweb数据中心
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国加利福尼亚州圣何塞PEGTECH18
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点11
+      - 美国CloudFlare节点12
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
