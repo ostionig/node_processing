@@ -1,4 +1,4 @@
-# 更新时间 2023-09-16T00:59:26.032Z
+# 更新时间 2023-09-16T01:50:58.898Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1587,31 +1587,17 @@ proxies:
     network: ws
   - type: vmess
     name: 美国V2CROSS.COM0
-    server: 198.200.56.93
-    port: 47862
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点4
     ws-opts:
       path: /
       headers:
-        host: us-04.cloudlion.me
-    server: us-04.cloudlion.me
-    port: 2082
-    uuid: 1a498bc2-582e-4caf-865d-51a99e7d2045
+        host: us-1.acyun.tk
+    server: 104.31.16.196
+    port: 443
+    uuid: 6abfe33a-1894-4f62-8879-83b71a35e5fd
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 安徽省+移动数据上网公共出口
-    server: yidong.liulangdiqiu.cyou
-    port: 10701
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1MTIzOWJjZS0wMWFiLTQ1NGQtYmFhNS1jMDk0MGM5ZjE3NTE=
-    cipher: aes-128-gcm
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1754,8 +1740,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare节点2929
       - 美国V2CROSS.COM0
-      - 美国CloudFlare节点4
-      - 安徽省+移动数据上网公共出口
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1898,8 +1882,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare节点2929
       - 美国V2CROSS.COM0
-      - 美国CloudFlare节点4
-      - 安徽省+移动数据上网公共出口
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -2041,8 +2023,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare节点2929
       - 美国V2CROSS.COM0
-      - 美国CloudFlare节点4
-      - 安徽省+移动数据上网公共出口
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2216,8 +2196,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare节点2929
       - 美国V2CROSS.COM0
-      - 美国CloudFlare节点4
-      - 安徽省+移动数据上网公共出口
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
