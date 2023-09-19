@@ -46,7 +46,7 @@ async function parseAllFreeNodeList() {
 
   const nodeSet = await Promise.all([
     ...batch,
-    getNodeFreeOrg().then((content) => parseV2ray(content)),
+    // getNodeFreeOrg().then((content) => parseV2ray(content)),
   ]);
   console.log("parseAllFreeNodeList - nodeSet", nodeSet);
   const conf = generateClashConf(_.flatten(nodeSet));
