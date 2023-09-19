@@ -15,22 +15,22 @@ import uuidValidate from 'uuid-validate';
 async function task1() {
   const nodeList = await mergeClashNodes(clashList);
 
-  // const freeNodeContent = await getNodeFreeOrg(0, "yaml");
+  const freeNodeContent = await getNodeFreeOrg(0, "yaml");
 
-  // const freeNode = await getClashNodesByContent(
-  //   freeNodeContent.replaceAll("!<str>", "")
-  // );
+  const freeNode = await getClashNodesByContent(
+    freeNodeContent.replaceAll("!<str>", "")
+  );
 
   const v2rayToClashNodes = await batchV2rayToClashNodes(v2rayList);
 
-  let allNodes = [...nodeList, ...v2rayToClashNodes];
-  // for (let i = 0; i < allNodes.length; i++) {
-  //    const proxy = allNodes[i];
-  //    console.log(proxy);
-  //    await testSpeed(proxy).then(rs=>{
-  //       console.log(rs);
-  //    })
-  // }
+  let allNodes = [...nodeList, ...freeNode, ...v2rayToClashNodes];
+  for (let i = 0; i < allNodes.length; i++) {
+     const proxy = allNodes[i];
+     console.log(proxy);
+     await testSpeed(proxy).then(rs=>{
+        console.log(rs);
+     })
+  }
 
   const configContent = generateClashConf(
     allNodes
