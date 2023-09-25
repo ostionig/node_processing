@@ -11,11 +11,12 @@ import { generateFile } from "./src/output.mjs";
 import { testSpeed } from "./src/speedTest.mjs";
 import { batchV2rayToClashNodes } from "./src/v2ray.mjs";
 import uuidValidate from 'uuid-validate';
+import { to } from "await-to-js"
 
 async function task1() {
-  const nodeList = await mergeClashNodes(clashList);
+  const [nodeListErr, nodeList] = await to(mergeClashNodes(clashList));
 
-  const freeNodeContent = await getNodeFreeOrg(0, "yaml");
+  const [freeErr, freeNodeContent] = await to(getNodeFreeOrg(0, "yaml"));
 
   const freeNode = await getClashNodesByContent(
     freeNodeContent.replaceAll("!<str>", "")
