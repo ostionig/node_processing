@@ -1,4 +1,4 @@
-# 更新时间 2023-09-27T18:52:33.599Z
+# 更新时间 2023-09-27T19:07:04.202Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1226,18 +1226,6 @@ proxies:
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjOWIzYzZjNi02ZTFlLTRmZWEtYTkwMy00ODdlYWNkN2U3YjI=
     cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: /XQ2WCa29jfDM25GBcbnQ
-      headers:
-        host: poland.yj2022.gq
-    server: cdn.narutos.top
-    port: 8880
-    uuid: 4b5e4565-322f-4223-a891-78a84f189726
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1342,7 +1330,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3636
       - github.com/freefq-美国CloudFlare节点3838
       - 上海市+电信
-      - 美国CloudFlare节点4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1447,7 +1434,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3636
       - github.com/freefq-美国CloudFlare节点3838
       - 上海市+电信
-      - 美国CloudFlare节点4
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1551,7 +1537,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3636
       - github.com/freefq-美国CloudFlare节点3838
       - 上海市+电信
-      - 美国CloudFlare节点4
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1687,7 +1672,6 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3636
       - github.com/freefq-美国CloudFlare节点3838
       - 上海市+电信
-      - 美国CloudFlare节点4
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
