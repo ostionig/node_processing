@@ -18,22 +18,26 @@ async function task1() {
 
   const [freeErr, freeNodeContent] = await to(getNodeFreeOrg(0, "yaml"));
 
-  const [, freeNode] = await to(getClashNodesByContent(
+  const freeNode = await getClashNodesByContent(
     freeNodeContent.replaceAll("!<str>", "")
-  ));
+  );
 
-  const [, v2rayToClashNodes] = await to(batchV2rayToClashNodes(v2rayList));
+  const v2rayToClashNodes = await batchV2rayToClashNodes(v2rayList);
 
   let allNodes = [...nodeList, ...freeNode, ...v2rayToClashNodes];
-  for (let i = 0; i < allNodes.length; i++) {
-    const proxy = allNodes[i];
-    console.log(proxy);
-    await testSpeed(proxy).then(rs => {
-      console.log(rs);
-    })
-  }
+
+  // for (let i = 0; i < allNodes.length; i++) {
+  //   const proxy = allNodes[i];
+  //   console.log(proxy);
+  //   await testSpeed(proxy).then(rs => {
+  //     console.log(rs);
+  //   })
+  // }
+
+  let configContent;
+
   try {
-    const configContent = generateClashConf(
+    configContent = generateClashConf(
       allNodes
         .filter((node) => node)
         .filter((node) => !node.name.includes("中国"))
@@ -44,13 +48,12 @@ async function task1() {
         .filter((node) => !node.uuid || uuidValidate(node.uuid))
     );
 
-    const comments = `# 更新时间 ${new Date().toISOString()}
-`;
   } catch (error) {
 
   }
 
-
+  const comments = `# 更新时间 ${new Date().toISOString()}
+`;
   generateFile("clashMerge", comments + configContent);
 }
 
