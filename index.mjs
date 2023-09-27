@@ -18,34 +18,38 @@ async function task1() {
 
   const [freeErr, freeNodeContent] = await to(getNodeFreeOrg(0, "yaml"));
 
-  const freeNode = await getClashNodesByContent(
+  const [, freeNode] = await to(getClashNodesByContent(
     freeNodeContent.replaceAll("!<str>", "")
-  );
+  ));
 
-  const v2rayToClashNodes = await batchV2rayToClashNodes(v2rayList);
+  const [, v2rayToClashNodes] = await to(batchV2rayToClashNodes(v2rayList));
 
   let allNodes = [...nodeList, ...freeNode, ...v2rayToClashNodes];
   for (let i = 0; i < allNodes.length; i++) {
-     const proxy = allNodes[i];
-     console.log(proxy);
-     await testSpeed(proxy).then(rs=>{
-        console.log(rs);
-     })
+    const proxy = allNodes[i];
+    console.log(proxy);
+    await testSpeed(proxy).then(rs => {
+      console.log(rs);
+    })
+  }
+  try {
+    const configContent = generateClashConf(
+      allNodes
+        .filter((node) => node)
+        .filter((node) => !node.name.includes("中国"))
+        .filter((node) => !String(node.password).includes("<"))
+        // 过滤不支持的vless协议
+        .filter((node) => node.type !== "vless")
+        .filter((node) => !node.name.includes("🇨🇳 CN"))
+        .filter((node) => !node.uuid || uuidValidate(node.uuid))
+    );
+
+    const comments = `# 更新时间 ${new Date().toISOString()}
+`;
+  } catch (error) {
+
   }
 
-  const configContent = generateClashConf(
-    allNodes
-      .filter((node) => node)
-      .filter((node) => !node.name.includes("中国"))
-      .filter((node) => !String(node.password).includes("<"))
-      // 过滤不支持的vless协议
-      .filter((node) => node.type !== "vless")
-      .filter((node) => !node.name.includes("🇨🇳 CN"))
-      .filter((node) => !node.uuid || uuidValidate(node.uuid))
-  );
-
-  const comments = `# 更新时间 ${new Date().toISOString()}
-`;
 
   generateFile("clashMerge", comments + configContent);
 }
