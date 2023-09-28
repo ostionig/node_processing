@@ -1,4 +1,4 @@
-# 更新时间 2023-09-28T06:52:16.187Z
+# 更新时间 2023-09-28T07:07:56.529Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -950,36 +950,14 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点1
+    name: 美国CloudFlare节点3
     ws-opts:
-      path: /
+      path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
       headers:
-        host: hdlb4.shabijichang.com
-    server: hdlb4.shabijichang.com
-    port: 80
-    uuid: 53701585-591f-48a3-9515-8831ed0524ac
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国加利福尼亚州圣何塞MULTACOM机房11
-    ws-opts:
-      path: /
-    server: 45.199.138.205
-    port: 44094
-    uuid: 20b30916-e203-412e-8ec0-900f3acd5128
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点12
-    ws-opts:
-      path: /
-      headers:
-        host: sls.shabijichang.com
-    server: sls.shabijichang.com
-    port: 80
-    uuid: 53701585-591f-48a3-9515-8831ed0524ac
+        host: fr7.tehme100.fun
+    server: ns1.v2-vip.fun
+    port: 8880
+    uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
     alterId: 0
     cipher: auto
     network: ws
@@ -1073,9 +1051,7 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点4040
       - github.com/freefq-美国CloudFlare公司CDN节点4141
       - github.com/freefq-美国CloudFlare节点4444
-      - 美国CloudFlare节点1
-      - 美国加利福尼亚州圣何塞MULTACOM机房11
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1166,9 +1142,7 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点4040
       - github.com/freefq-美国CloudFlare公司CDN节点4141
       - github.com/freefq-美国CloudFlare节点4444
-      - 美国CloudFlare节点1
-      - 美国加利福尼亚州圣何塞MULTACOM机房11
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1258,9 +1232,7 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点4040
       - github.com/freefq-美国CloudFlare公司CDN节点4141
       - github.com/freefq-美国CloudFlare节点4444
-      - 美国CloudFlare节点1
-      - 美国加利福尼亚州圣何塞MULTACOM机房11
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1382,9 +1354,7 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点4040
       - github.com/freefq-美国CloudFlare公司CDN节点4141
       - github.com/freefq-美国CloudFlare节点4444
-      - 美国CloudFlare节点1
-      - 美国加利福尼亚州圣何塞MULTACOM机房11
-      - 美国CloudFlare节点12
+      - 美国CloudFlare节点3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
