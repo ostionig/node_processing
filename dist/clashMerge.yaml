@@ -1,4 +1,4 @@
-# 更新时间 2023-10-05T06:52:42.466Z
+# 更新时间 2023-10-05T07:08:40.349Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -550,42 +550,34 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 香港香港城市电讯(香港宽频)0
-    ws-opts:
-      path: /
-    server: 183.178.194.228
-    port: 4443
-    uuid: f15ca202-7edc-4e36-bf34-fe29db9ec305
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
   - type: ss
     name: 江苏省镇江市+移动
-    server: fs.xianyuwangluo.cyou
-    port: 27207
+    server: foshan.chiguayun.cc
+    port: 27130
     password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YjZiMGY2MS1mMWE4LTRlNjMtODhjYS1mMGY2ZDc5YTFiYzM=
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0Y2Y3NTQwOC05NjdkLTQxYzQtYmY4OS04MDUxNzgwN2UyNmY=
     cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: /
-      headers:
-        host: lu.wx.alue.link
-    server: 104.16.68.38
-    port: 2052
-    uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: ss
+    name: 安徽省+移动数据上网公共出口
+    server: yidong.liulangdiqiu.cyou
+    port: 10719
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0ZDlhZGNjNi05MTRjLTQwY2YtYWZlZC00MmNjOWI5ZjM4MWI=
+    cipher: aes-128-gcm
   - type: ss
     name: 法国+格拉沃利讷OVH数据中心
     server: 54.36.174.181
-    port: 5600
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    port: 8119
+    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
     cipher: aes-128-gcm
+  - type: vmess
+    name: 安徽省移动数据上网公共出口4
+    server: 112.29.94.22
+    port: 53737
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -639,10 +631,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1818
       - github.com/freefq-美国CloudFlare节点1919
-      - 香港香港城市电讯(香港宽频)0
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点4
+      - 安徽省+移动数据上网公共出口
       - 法国+格拉沃利讷OVH数据中心
+      - 安徽省移动数据上网公共出口4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -696,10 +688,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1818
       - github.com/freefq-美国CloudFlare节点1919
-      - 香港香港城市电讯(香港宽频)0
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点4
+      - 安徽省+移动数据上网公共出口
       - 法国+格拉沃利讷OVH数据中心
+      - 安徽省移动数据上网公共出口4
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -752,10 +744,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1818
       - github.com/freefq-美国CloudFlare节点1919
-      - 香港香港城市电讯(香港宽频)0
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点4
+      - 安徽省+移动数据上网公共出口
       - 法国+格拉沃利讷OVH数据中心
+      - 安徽省移动数据上网公共出口4
   - name: 📲 电报信息
     type: select
     proxies:
@@ -840,10 +832,10 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点1717
       - github.com/freefq-美国CloudFlare公司CDN节点1818
       - github.com/freefq-美国CloudFlare节点1919
-      - 香港香港城市电讯(香港宽频)0
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点4
+      - 安徽省+移动数据上网公共出口
       - 法国+格拉沃利讷OVH数据中心
+      - 安徽省移动数据上网公共出口4
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
