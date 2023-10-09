@@ -1,4 +1,4 @@
-# 更新时间 2023-10-09T18:52:25.802Z
+# 更新时间 2023-10-09T19:06:58.160Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -904,22 +904,40 @@ proxies:
     ws-opts:
       path: /
       headers:
-        host: ml.shabijichang.com
-    server: 172.67.146.22
+        host: zjg.shabijichang.com
+    server: zjg.shabijichang.com
     port: 80
-    uuid: 2e495227-58e3-4bea-a273-7a17bd8a804b
+    uuid: 53701585-591f-48a3-9515-8831ed0524ac
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 172.99.188.99
+    port: 5003
+    password: YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /
+      headers:
+        host: sls.shabijichang.com
+    server: 162.159.253.28
+    port: 80
+    uuid: 073360d9-72cb-4ba5-9a40-8ac6cd918356
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点3
+    name: 美国CloudFlare节点8
     ws-opts:
-      path: /api/v3/download.getFile
+      path: /
       headers:
-        host: ssrsub.v004.ssrsub.com
-    server: singapore.com
-    port: 8080
-    uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
+        host: ld.shabijichang.com
+    server: 312.outline-vpn.cloud
+    port: 80
+    uuid: a1a676e4-016e-4bf0-96fe-4b6aaf53abc2
     alterId: 0
     cipher: auto
     network: ws
@@ -1018,7 +1036,9 @@ proxy-groups:
       - github.com/freefq-江苏省盐城市移动25
       - github.com/freefq-美国CloudFlare公司CDN节点2626
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点3
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1114,7 +1134,9 @@ proxy-groups:
       - github.com/freefq-江苏省盐城市移动25
       - github.com/freefq-美国CloudFlare公司CDN节点2626
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点3
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1209,7 +1231,9 @@ proxy-groups:
       - github.com/freefq-江苏省盐城市移动25
       - github.com/freefq-美国CloudFlare公司CDN节点2626
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点3
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1336,7 +1360,9 @@ proxy-groups:
       - github.com/freefq-江苏省盐城市移动25
       - github.com/freefq-美国CloudFlare公司CDN节点2626
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点3
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
