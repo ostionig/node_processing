@@ -1,4 +1,4 @@
-# 更新时间 2023-10-12T00:58:10.574Z
+# 更新时间 2023-10-12T01:51:20.791Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -806,34 +806,31 @@ proxies:
     password: 80788c96-dfbf-40a8-ab8f-de3a6357d190
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 安徽省+移动数据上网公共出口
-    server: hefei.chiguayun.cc
-    port: 27131
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkMzc2ZjI3MC0xODA3LTQ1MjItOWY5Mi1iNDk5NjU4YTI2Nzg=
-    cipher: aes-128-gcm
   - type: vmess
-    name: 安徽省移动数据上网公共出口2
-    server: 112.29.94.22
-    port: 53737
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    name: 广东省移动0
+    ws-opts:
+      path: /6
+      headers:
+        host: cnzz03.fastbiubiu.com
+    server: cnzz03.fastbiubiu.com
+    port: 18700
+    uuid: bfe00cfc-5ecc-38a6-99ef-4c965305f982
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
   - type: ss
     name: 江苏省镇江市+移动
     server: foshan.chiguayun.cc
-    port: 27121
+    port: 27116
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkMzc2ZjI3MC0xODA3LTQ1MjItOWY5Mi1iNDk5NjU4YTI2Nzg=
     cipher: aes-128-gcm
   - type: ss
-    name: 甘肃省兰州市+移动
-    server: cn2-2-nc.go001.buzz
-    port: 19511
+    name: 安徽省+移动(全省通用)
+    server: cn2-1-nc.go001.buzz
+    port: 19531
     password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYWRlMGNhOC0wNzA2LTRmZWItOGQ0Yy0wZWIwMDhlNTRlOTM=
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyZTIwMWEzYy1lODU1LTQ0MTQtYTljMC01ZDZlNmZlZGNhMDc=
     cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
@@ -924,10 +921,9 @@ proxy-groups:
       - github.com/freefq-香港Amazon数据中心27
       - github.com/freefq-美国CloudFlare节点2929
       - github.com/freefq-俄罗斯30
-      - 安徽省+移动数据上网公共出口
-      - 安徽省移动数据上网公共出口2
+      - 广东省移动0
       - 江苏省镇江市+移动
-      - 甘肃省兰州市+移动
+      - 安徽省+移动(全省通用)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1017,10 +1013,9 @@ proxy-groups:
       - github.com/freefq-香港Amazon数据中心27
       - github.com/freefq-美国CloudFlare节点2929
       - github.com/freefq-俄罗斯30
-      - 安徽省+移动数据上网公共出口
-      - 安徽省移动数据上网公共出口2
+      - 广东省移动0
       - 江苏省镇江市+移动
-      - 甘肃省兰州市+移动
+      - 安徽省+移动(全省通用)
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1109,10 +1104,9 @@ proxy-groups:
       - github.com/freefq-香港Amazon数据中心27
       - github.com/freefq-美国CloudFlare节点2929
       - github.com/freefq-俄罗斯30
-      - 安徽省+移动数据上网公共出口
-      - 安徽省移动数据上网公共出口2
+      - 广东省移动0
       - 江苏省镇江市+移动
-      - 甘肃省兰州市+移动
+      - 安徽省+移动(全省通用)
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1233,10 +1227,9 @@ proxy-groups:
       - github.com/freefq-香港Amazon数据中心27
       - github.com/freefq-美国CloudFlare节点2929
       - github.com/freefq-俄罗斯30
-      - 安徽省+移动数据上网公共出口
-      - 安徽省移动数据上网公共出口2
+      - 广东省移动0
       - 江苏省镇江市+移动
-      - 甘肃省兰州市+移动
+      - 安徽省+移动(全省通用)
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
