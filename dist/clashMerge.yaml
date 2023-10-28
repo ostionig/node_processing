@@ -1,4 +1,4 @@
-# 更新时间 2023-10-28T00:58:03.203Z
+# 更新时间 2023-10-28T01:49:55.994Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -557,18 +557,31 @@ proxies:
   - type: vmess
     name: 美国CloudFlare节点2
     ws-opts:
-      path: /xtsmol
+      path: /
       headers:
-        host: brcf.duaaoped.xyz
-    server: 172.67.187.30
-    port: 8443
-    uuid: 865897ad-8d07-4021-b7c3-d8eb4a29ee8d
+        host: ld2.shabijichang.com
+    server: ld2.shabijichang.com
+    port: 80
+    uuid: c458695d-6908-45c3-9512-e0c46418454c
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
+  - type: trojan
+    name: 印度+V2CROSS.COM
+    server: 103.70.115.24
+    port: 443
+    password: 831596b2-fed1-4239-af88-e0630394545a
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 立陶宛+V2CROSS.COM
+    server: 212.24.103.3
+    port: 2053
+    password: 2228e29d-942a-4ee8-b3c0-f4a846e3f355
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国V2CROSS.COM3
+    name: 美国V2CROSS.COM9
     ws-opts:
       path: /path/1697980101249
       headers:
@@ -581,91 +594,22 @@ proxies:
     network: ws
     tls: true
   - type: vmess
-    name: 印度V2CROSS.COM7
+    name: 印度V2CROSS.COM10
     ws-opts:
       path: /vpngiare.net
-    server: 103.72.68.228
+    server: 103.70.115.22
     port: 80
     uuid: 831596b2-fed1-4239-af88-e0630394545a
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /
-      headers:
-        host: cc2.shabijichang.com
-    server: cc2.shabijichang.com
-    port: 80
-    uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.153.153.147
-    port: 22222
-    password: telegram-id-privatevpns
+    name: 德国+V2CROSS.COM
+    server: 5.104.108.109
+    port: 443
+    password: 8196dd4b-513f-4b2d-8631-56a4f0c8597d
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点11
-    ws-opts:
-      path: /
-    server: ml3.shabijichang.com
-    port: 80
-    uuid: c458695d-6908-45c3-9512-e0c46418454c
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 印度V2CROSS.COM12
-    ws-opts:
-      path: /vpngiare.net
-    server: 103.70.115.20
-    port: 80
-    uuid: 831596b2-fed1-4239-af88-e0630394545a
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点14
-    ws-opts:
-      path: /xtsmol
-      headers:
-        host: brcf.duaaoped.xyz
-    server: brcf.duaaoped.xyz
-    port: 8443
-    uuid: 865897ad-8d07-4021-b7c3-d8eb4a29ee8d
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点15
-    ws-opts:
-      path: /
-      headers:
-        host: cc3.shabijichang.com
-    server: cc3.shabijichang.com
-    port: 80
-    uuid: c458695d-6908-45c3-9512-e0c46418454c
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点17
-    ws-opts:
-      path: /
-      headers:
-        host: ld2.shabijichang.com
-    server: ld2.shabijichang.com
-    port: 80
-    uuid: c458695d-6908-45c3-9512-e0c46418454c
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -719,15 +663,11 @@ proxy-groups:
       - github.com/freefq-香港阿里云1515
       - github.com/freefq-美国CloudFlare公司CDN节点1616
       - 美国CloudFlare节点2
-      - 美国V2CROSS.COM3
-      - 印度V2CROSS.COM7
-      - 美国CloudFlare节点8
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
-      - 印度V2CROSS.COM12
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国CloudFlare节点17
+      - 印度+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
+      - 美国V2CROSS.COM9
+      - 印度V2CROSS.COM10
+      - 德国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -781,15 +721,11 @@ proxy-groups:
       - github.com/freefq-香港阿里云1515
       - github.com/freefq-美国CloudFlare公司CDN节点1616
       - 美国CloudFlare节点2
-      - 美国V2CROSS.COM3
-      - 印度V2CROSS.COM7
-      - 美国CloudFlare节点8
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
-      - 印度V2CROSS.COM12
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国CloudFlare节点17
+      - 印度+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
+      - 美国V2CROSS.COM9
+      - 印度V2CROSS.COM10
+      - 德国+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -842,15 +778,11 @@ proxy-groups:
       - github.com/freefq-香港阿里云1515
       - github.com/freefq-美国CloudFlare公司CDN节点1616
       - 美国CloudFlare节点2
-      - 美国V2CROSS.COM3
-      - 印度V2CROSS.COM7
-      - 美国CloudFlare节点8
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
-      - 印度V2CROSS.COM12
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国CloudFlare节点17
+      - 印度+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
+      - 美国V2CROSS.COM9
+      - 印度V2CROSS.COM10
+      - 德国+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -935,15 +867,11 @@ proxy-groups:
       - github.com/freefq-香港阿里云1515
       - github.com/freefq-美国CloudFlare公司CDN节点1616
       - 美国CloudFlare节点2
-      - 美国V2CROSS.COM3
-      - 印度V2CROSS.COM7
-      - 美国CloudFlare节点8
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
-      - 印度V2CROSS.COM12
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国CloudFlare节点17
+      - 印度+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
+      - 美国V2CROSS.COM9
+      - 印度V2CROSS.COM10
+      - 德国+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
