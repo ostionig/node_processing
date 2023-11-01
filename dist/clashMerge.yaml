@@ -1,4 +1,4 @@
-# 更新时间 2023-11-01T12:50:48.723Z
+# 更新时间 2023-11-01T13:08:03.968Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -819,76 +819,56 @@ proxies:
     port: 20960
     password: YWVzLTI1Ni1nY206YTM3MmI3ODItZjc1MS00NDEyLWFlNDItNmM0OGZlOTNkMjBj
     cipher: aes-128-gcm
+  - type: vmess
+    name: 日本东京都Amazon数据中心1
+    ws-opts:
+      path: /
+    server: jp06-vm0.entry.jpojpoh.art
+    port: 28785
+    uuid: 22cd0e59-02ab-3b48-956a-cfe6b9054ada
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
   - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 3.127.174.211
-    port: 22222
-    password: telegram-id-privatevpns
+    name: 新加坡+Amazon数据中心
+    server: sg4.421421.xyz
+    port: 20230
+    password: e7d1f4d0-f470-44d3-86b4-6eb4c22f1a79
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 意大利V2CROSS.COM1
+    name: 美国CloudFlare节点5
     ws-opts:
-      path: /vmess
-    server: us-v.sshmax.xyz
-    port: 80
-    uuid: fd4fa030-b8f1-424b-a780-578dbb59f950
+      path: /v?ed=2048
+      headers:
+        host: hk.tashancloud.link
+    server: icook.hk
+    port: 8080
+    uuid: c7b59357-1a1e-4d96-8c39-8a00e3c156bd
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 5701.763998.top
-    port: 22657
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MDc5MDYzZC0xMzQ2LTQwY2UtYjRkNC0zYmZkZTMwYzM4MDM=
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.208.27.147
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 新加坡+Amazon数据中心
-    server: sg1.lianpi.xyz
-    port: 56138
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxZjNkNjdiNC02OTI5LTQ1OTgtOTBjYS04NGE4NDFiZjAyZTQ=
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.20.214.185
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 35.181.192.244
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.192.224.102
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国科罗拉多州布隆菲尔德市Level311
+    name: 香港阿里云8
     ws-opts:
-      path: /vbub2
-    server: ub2.kq1.dynu.net
+      path: /
+      headers:
+        host: n1697685464.aaigefm.cn
+    server: n1697685464.aaigefm.cn
     port: 443
-    uuid: 7bcd1b11-ac49-40f7-9197-4df867192564
+    uuid: 187002fd-b8ad-4d36-b4fb-1a3224cc99e2
     alterId: 0
     cipher: auto
     network: ws
     tls: true
+  - type: trojan
+    name: 韩国+KT电信
+    server: jp.kunlun-ppg.com
+    port: 10813
+    password: cb245425-3ea8-41ba-b293-afa36f505157
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -969,15 +949,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点(shopify)99
       - github.com/freefq-香港阿里云1010
       - github.com/freefq-英国12
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 意大利V2CROSS.COM1
-      - 美国+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 日本东京都Amazon数据中心1
       - 新加坡+Amazon数据中心
-      - 英国+社会保险安全部
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国科罗拉多州布隆菲尔德市Level311
+      - 美国CloudFlare节点5
+      - 香港阿里云8
+      - 韩国+KT电信
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1058,15 +1034,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点(shopify)99
       - github.com/freefq-香港阿里云1010
       - github.com/freefq-英国12
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 意大利V2CROSS.COM1
-      - 美国+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 日本东京都Amazon数据中心1
       - 新加坡+Amazon数据中心
-      - 英国+社会保险安全部
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国科罗拉多州布隆菲尔德市Level311
+      - 美国CloudFlare节点5
+      - 香港阿里云8
+      - 韩国+KT电信
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1146,15 +1118,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点(shopify)99
       - github.com/freefq-香港阿里云1010
       - github.com/freefq-英国12
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 意大利V2CROSS.COM1
-      - 美国+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 日本东京都Amazon数据中心1
       - 新加坡+Amazon数据中心
-      - 英国+社会保险安全部
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国科罗拉多州布隆菲尔德市Level311
+      - 美国CloudFlare节点5
+      - 香港阿里云8
+      - 韩国+KT电信
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1266,15 +1234,11 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点(shopify)99
       - github.com/freefq-香港阿里云1010
       - github.com/freefq-英国12
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 意大利V2CROSS.COM1
-      - 美国+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 日本东京都Amazon数据中心1
       - 新加坡+Amazon数据中心
-      - 英国+社会保险安全部
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国科罗拉多州布隆菲尔德市Level311
+      - 美国CloudFlare节点5
+      - 香港阿里云8
+      - 韩国+KT电信
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
