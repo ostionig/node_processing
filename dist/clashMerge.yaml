@@ -1,4 +1,4 @@
-# 更新时间 2023-11-13T06:53:07.313Z
+# 更新时间 2023-11-13T07:09:46.204Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -916,47 +916,74 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 广东省+移动
+    server: tg_mfbpn_d4.52vpn.eu.org
+    port: 11007
+    password: 85db6652-a747-3a0a-a170-422736076410
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 法国+格拉沃利讷OVH数据中心
+    server: 54.36.174.181
+    port: 8080
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国加利福尼亚州圣何塞PEGTECH数据中心5
+    name: 美国加利福尼亚州洛杉矶PetaExpress11
     ws-opts:
-      path: /path/092523330320
-    server: 192.74.244.185
+      path: /path/140302122534
+    server: 107.148.202.129
     port: 30000
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: ws
     tls: true
-  - type: trojan
-    name: 广东省+移动
-    server: tg_mfbpn_d4.52vpn.eu.org
-    port: 11006
-    password: 85db6652-a747-3a0a-a170-422736076410
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点13
+    name: 美国CloudFlare节点14
     ws-opts:
       path: /
-    server: sgp-2.888401.xyz
+      headers:
+        host: cc2.shabijichang.com
+    server: 172.67.184.13
     port: 80
-    uuid: fb512649-3738-493c-887b-a93eb5fc1f60
+    uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 美国加利福尼亚州洛杉矶V2CROSS.COM15
+    ws-opts:
+      path: /path/113526011506
+    server: 156.251.135.4
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
   - type: trojan
-    name: 台湾省台北市+中华电信
-    server: download1tw.windowsupdatea.com
+    name: 美国+RF+Engineering
+    server: 141.193.68.81
     port: 443
     password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 俄罗斯+V2CROSS.COM
-    server: 212.113.106.243
-    port: 13022
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3NWRyQUw3UGZDSXdRMnljVXVvRHNWMkxz
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 德国+V2CROSS.COM
+    server: 89.163.220.99
+    port: 443
+    password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+加利福尼亚
+    server: z-v1-zzzh.ashx.net
+    port: 443
+    password: wkmY1R4EcP
+    udp: true
+    skip-cert-verify: true
   - type: trojan
     name: 香港+电讯盈科有限公司
     server: download1hkt.windowsupdatea.com
@@ -965,45 +992,50 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点25
+    name: 瑞典OracleCorporation27
     ws-opts:
       path: /
-      headers:
-        host: cc3.shabijichang.com
-    server: cc3.shabijichang.com
-    port: 80
-    uuid: c458695d-6908-45c3-9512-e0c46418454c
+    server: jpd.zerodisk.site
+    port: 48493
+    uuid: f8ef7c47-9735-439c-a42b-355bae224656
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 美国+RF+Engineering
-    server: 141.193.68.81
-    port: 443
-    password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
-    udp: true
-    skip-cert-verify: true
+    tls: true
   - type: vmess
-    name: 美国CloudFlare节点33
+    name: 广东省移动29
+    server: tg_mfbpn_d4.52vpn.eu.org
+    port: 11011
+    uuid: 85db6652-a747-3a0a-a170-422736076410
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国华盛顿Cogent通信公司30
     ws-opts:
-      path: /api/v3/download.getFile
-      headers:
-        host: ssrsub.v004.ssrsub.com
-    server: singapore.com
-    port: 80
-    uuid: 3d761afc-6dfd-49d9-9d0f-b79341391f26
+      path: /path/1692873927587
+    server: 38.53.92.185
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: ws
+    tls: true
   - type: vmess
-    name: 香港阿里云36
+    name: 广东省移动38
+    server: tg_mfbpn_d4.52vpn.eu.org
+    port: 11012
+    uuid: 85db6652-a747-3a0a-a170-422736076410
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点40
     ws-opts:
-      path: /
-      headers:
-        host: n1697555560.aaigefm.cn
-    server: n1697555560.aaigefm.cn
+      path: /xwdn8sj2aw
+    server: fr-1.8080.eu.org
     port: 443
-    uuid: 56691c3c-b9a5-440f-a678-478618854e75
+    uuid: 03bad296-8170-4756-a6be-760198f13413
     alterId: 0
     cipher: auto
     network: ws
@@ -1095,16 +1127,20 @@ proxy-groups:
       - github.com/freefq-广东省移动4343
       - github.com/freefq-广东省移动4444
       - github.com/freefq-美国CloudFlare公司CDN节点4545
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
       - 广东省+移动
-      - 美国CloudFlare节点13
-      - 台湾省台北市+中华电信
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
-      - 美国CloudFlare节点25
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国加利福尼亚州洛杉矶PetaExpress11
+      - 美国CloudFlare节点14
+      - 美国加利福尼亚州洛杉矶V2CROSS.COM15
       - 美国+RF+Engineering
-      - 美国CloudFlare节点33
-      - 香港阿里云36
+      - 德国+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 香港+电讯盈科有限公司
+      - 瑞典OracleCorporation27
+      - 广东省移动29
+      - 美国华盛顿Cogent通信公司30
+      - 广东省移动38
+      - 美国CloudFlare节点40
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1192,16 +1228,20 @@ proxy-groups:
       - github.com/freefq-广东省移动4343
       - github.com/freefq-广东省移动4444
       - github.com/freefq-美国CloudFlare公司CDN节点4545
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
       - 广东省+移动
-      - 美国CloudFlare节点13
-      - 台湾省台北市+中华电信
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
-      - 美国CloudFlare节点25
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国加利福尼亚州洛杉矶PetaExpress11
+      - 美国CloudFlare节点14
+      - 美国加利福尼亚州洛杉矶V2CROSS.COM15
       - 美国+RF+Engineering
-      - 美国CloudFlare节点33
-      - 香港阿里云36
+      - 德国+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 香港+电讯盈科有限公司
+      - 瑞典OracleCorporation27
+      - 广东省移动29
+      - 美国华盛顿Cogent通信公司30
+      - 广东省移动38
+      - 美国CloudFlare节点40
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1288,16 +1328,20 @@ proxy-groups:
       - github.com/freefq-广东省移动4343
       - github.com/freefq-广东省移动4444
       - github.com/freefq-美国CloudFlare公司CDN节点4545
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
       - 广东省+移动
-      - 美国CloudFlare节点13
-      - 台湾省台北市+中华电信
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
-      - 美国CloudFlare节点25
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国加利福尼亚州洛杉矶PetaExpress11
+      - 美国CloudFlare节点14
+      - 美国加利福尼亚州洛杉矶V2CROSS.COM15
       - 美国+RF+Engineering
-      - 美国CloudFlare节点33
-      - 香港阿里云36
+      - 德国+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 香港+电讯盈科有限公司
+      - 瑞典OracleCorporation27
+      - 广东省移动29
+      - 美国华盛顿Cogent通信公司30
+      - 广东省移动38
+      - 美国CloudFlare节点40
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1416,16 +1460,20 @@ proxy-groups:
       - github.com/freefq-广东省移动4343
       - github.com/freefq-广东省移动4444
       - github.com/freefq-美国CloudFlare公司CDN节点4545
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
       - 广东省+移动
-      - 美国CloudFlare节点13
-      - 台湾省台北市+中华电信
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
-      - 美国CloudFlare节点25
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国加利福尼亚州洛杉矶PetaExpress11
+      - 美国CloudFlare节点14
+      - 美国加利福尼亚州洛杉矶V2CROSS.COM15
       - 美国+RF+Engineering
-      - 美国CloudFlare节点33
-      - 香港阿里云36
+      - 德国+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 香港+电讯盈科有限公司
+      - 瑞典OracleCorporation27
+      - 广东省移动29
+      - 美国华盛顿Cogent通信公司30
+      - 广东省移动38
+      - 美国CloudFlare节点40
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
