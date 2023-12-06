@@ -1,4 +1,4 @@
-# 更新时间 2023-12-06T18:52:49.660Z
+# 更新时间 2023-12-06T19:08:17.966Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1149,21 +1149,49 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 美国CloudFlare节点0
-    server: us-new04.gujuji.top
-    port: 8080
-    uuid: c6f99669-7ff3-4a29-bc85-e22217ff1eee
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: ss
+    name: 法国+格拉沃利讷OVH数据中心
+    server: 54.36.174.181
+    port: 8881
+    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
+    cipher: aes-128-gcm
   - type: vmess
     name: 美国CloudFlare节点4
     ws-opts:
       path: /
       headers:
-        host: ca3.889611.com
-    server: 162.159.142.212
+        host: er3.889611.com
+    server: 162.159.142.203
+    port: 80
+    uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /
+      headers:
+        host: icu.mac2win.top
+    server: b.mac2win.top
+    port: 8080
+    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: 85.239.52.174
+    port: 51348
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkYXRkR0ZlNExrTU43MTBhSGVkeQ==
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点11
+    ws-opts:
+      path: /
+      headers:
+        host: us3.visaapp.top
+    server: 162.159.142.206
     port: 80
     uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
     alterId: 0
@@ -1176,27 +1204,39 @@ proxies:
     password: 63179baf-e94a-4d88-8968-ffe9ae3f1e45
     udp: true
     skip-cert-verify: true
-  - type: trojan
-    name: 美国+加利福尼亚
-    server: 64.176.80.213
-    port: 8443
-    password: 63179baf-e94a-4d88-8968-ffe9ae3f1e45
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare公司CDN节点(shopify)11
+    name: 俄罗斯V2CROSS.COM16
     ws-opts:
-      path: /
+      path: /vmess
       headers:
-        host: us3.889611.com
-    server: 23.227.38.35
+        host: es2-vmess.sshmax.xyz
+    server: es2-vmess.sshmax.xyz
     port: 80
-    uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
+    uuid: b3882186-ea80-45fd-bb95-6f0217404671
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点13
+    name: 美国CloudFlare节点17
+    ws-opts:
+      path: /
+      headers:
+        host: icu.mac2win.top
+    server: d.mac2win.top
+    port: 8080
+    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.37.119.162
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点24
     ws-opts:
       path: /
       headers:
@@ -1208,64 +1248,7 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国加利福尼亚州圣何塞PEGTECH数据中心15
-    ws-opts:
-      path: /path/1701265991727
-      headers:
-        host: www.37790958.xyz
-    server: 192.74.249.3
-    port: 30000
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 广东省东莞市移动16
-    server: 183.232.238.77
-    port: 10006
-    uuid: ab537195-b74c-3df5-a3a1-d504345e80bb
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点17
-    ws-opts:
-      path: /
-      headers:
-        host: icu2.mac2win.top
-    server: cfzl1.freeapp.buzz
-    port: 8080
-    uuid: 3ce4d20b-4374-42a2-a75e-24626b141ea2
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点19
-    ws-opts:
-      path: /
-      headers:
-        host: eu5.openxai.link
-    server: cf.openxai.link
-    port: 8080
-    uuid: e2695bd0-945f-4476-aac5-0e37bcdbd7fc
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点21
-    ws-opts:
-      path: /
-      headers:
-        host: ca3.889611.com
-    server: 162.159.142.214
-    port: 80
-    uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点22
+    name: 美国CloudFlare节点27
     ws-opts:
       path: /
       headers:
@@ -1277,53 +1260,24 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点24
+    name: 美国CloudFlare节点34
     ws-opts:
       path: /
       headers:
-        host: icu.mac2win.top
-    server: b.mac2win.top
+        host: eu5.openxai.link
+    server: cf.openxai.link
     port: 8080
-    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
+    uuid: e2695bd0-945f-4476-aac5-0e37bcdbd7fc
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 美国CloudFlare节点25
-    ws-opts:
-      path: /
-      headers:
-        host: er3.889611.com
-    server: 162.159.142.202
-    port: 80
-    uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare公司CDN节点(shopify)27
-    ws-opts:
-      path: /
-      headers:
-        host: ca3.889611.com
-    server: 23.227.38.33
-    port: 80
-    uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点30
-    ws-opts:
-      path: /
-      headers:
-        host: icu.mac2win.top
-    server: d.mac2win.top
-    port: 8080
-    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 香港+电讯盈科有限公司
+    server: download1hkt.windowsupdatea.com
+    port: 443
+    password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1442,22 +1396,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2727
       - github.com/freefq-美国2828
       - github.com/freefq-德国2929
-      - 美国CloudFlare节点0
+      - 法国+格拉沃利讷OVH数据中心
       - 美国CloudFlare节点4
+      - 美国CloudFlare节点6
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点11
       - 美国+阿里云
-      - 美国+加利福尼亚
-      - 美国CloudFlare公司CDN节点(shopify)11
-      - 美国CloudFlare节点13
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心15
-      - 广东省东莞市移动16
+      - 俄罗斯V2CROSS.COM16
       - 美国CloudFlare节点17
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 美国CloudFlare节点22
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare公司CDN节点(shopify)27
-      - 美国CloudFlare节点30
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点34
+      - 香港+电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1576,22 +1527,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2727
       - github.com/freefq-美国2828
       - github.com/freefq-德国2929
-      - 美国CloudFlare节点0
+      - 法国+格拉沃利讷OVH数据中心
       - 美国CloudFlare节点4
+      - 美国CloudFlare节点6
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点11
       - 美国+阿里云
-      - 美国+加利福尼亚
-      - 美国CloudFlare公司CDN节点(shopify)11
-      - 美国CloudFlare节点13
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心15
-      - 广东省东莞市移动16
+      - 俄罗斯V2CROSS.COM16
       - 美国CloudFlare节点17
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 美国CloudFlare节点22
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare公司CDN节点(shopify)27
-      - 美国CloudFlare节点30
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点34
+      - 香港+电讯盈科有限公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1709,22 +1657,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2727
       - github.com/freefq-美国2828
       - github.com/freefq-德国2929
-      - 美国CloudFlare节点0
+      - 法国+格拉沃利讷OVH数据中心
       - 美国CloudFlare节点4
+      - 美国CloudFlare节点6
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点11
       - 美国+阿里云
-      - 美国+加利福尼亚
-      - 美国CloudFlare公司CDN节点(shopify)11
-      - 美国CloudFlare节点13
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心15
-      - 广东省东莞市移动16
+      - 俄罗斯V2CROSS.COM16
       - 美国CloudFlare节点17
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 美国CloudFlare节点22
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare公司CDN节点(shopify)27
-      - 美国CloudFlare节点30
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点34
+      - 香港+电讯盈科有限公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1874,22 +1819,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2727
       - github.com/freefq-美国2828
       - github.com/freefq-德国2929
-      - 美国CloudFlare节点0
+      - 法国+格拉沃利讷OVH数据中心
       - 美国CloudFlare节点4
+      - 美国CloudFlare节点6
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点11
       - 美国+阿里云
-      - 美国+加利福尼亚
-      - 美国CloudFlare公司CDN节点(shopify)11
-      - 美国CloudFlare节点13
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心15
-      - 广东省东莞市移动16
+      - 俄罗斯V2CROSS.COM16
       - 美国CloudFlare节点17
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 美国CloudFlare节点22
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare公司CDN节点(shopify)27
-      - 美国CloudFlare节点30
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点34
+      - 香港+电讯盈科有限公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
