@@ -1,4 +1,4 @@
-# 更新时间 2023-12-06T12:53:08.869Z
+# 更新时间 2023-12-06T13:13:30.691Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1296,58 +1296,33 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.195.56.76
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 日本东京Amazon数据中心2
-    ws-opts:
-      path: /
-      headers:
-        host: dl.delivery.mp.microsoft.com
-    server: us1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
-    port: 80
-    uuid: 71d5d969-1c58-4bc9-b36c-111616f03c03
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国加利福尼亚州圣何塞PEGTECH数据中心5
-    ws-opts:
-      path: /path/1701265991727
-      headers:
-        host: www.37790958.xyz
-    server: 192.74.249.3
-    port: 30000
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点9
-    ws-opts:
-      path: /
-      headers:
-        host: icu.mac2win.top
-    server: d.mac2win.top
-    port: 8080
-    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省东莞市移动11
+    name: 广东省东莞市移动9
     server: 183.232.238.77
-    port: 10008
+    port: 10006
     uuid: ab537195-b74c-3df5-a3a1-d504345e80bb
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 台湾省桃园市+中华电信
-    server: download1tw.windowsupdatea.com
-    port: 443
-    password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: /
+      headers:
+        host: yxtw.651568.xyz
+    server: zfc.windowsupdate1.com
+    port: 80
+    uuid: 2a719cb6-ae11-48ea-a31f-ffca73366cb8
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: vmess
     name: 广东省东莞市移动13
     server: 183.232.238.77
@@ -1357,38 +1332,54 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点14
+    name: 广东省东莞市移动24
+    server: 183.232.238.77
+    port: 10010
+    uuid: ab537195-b74c-3df5-a3a1-d504345e80bb
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 香港+电讯盈科有限公司
+    server: download2hkt.windowsupdatea.com
+    port: 443
+    password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点29
     ws-opts:
-      path: /
+      path: /cloudconebbb
       headers:
-        host: eu4.openxai.link
-    server: 104.17.129.28
-    port: 8080
-    uuid: 218996e0-5a6e-4806-8106-6b7b42e6d0d6
+        host: cloudconebbb.gorgorchicken.one
+    server: 172.67.184.53
+    port: 8443
+    uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点31
+    ws-opts:
+      path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
+      headers:
+        host: fr4.v2-teh.fun
+    server: 172.67.229.20
+    port: 2095
+    uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 日本东京Amazon数据中心16
+    name: 美国CloudFlare节点33
     ws-opts:
       path: /
       headers:
-        host: dl.delivery.mp.microsoft.com
-    server: hk1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
-    port: 80
-    uuid: 71d5d969-1c58-4bc9-b36c-111616f03c03
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点19
-    ws-opts:
-      path: /
-      headers:
-        host: icu.mac2win.top
-    server: a.mac2win.top
+        host: icu2.mac2win.top
+    server: cfzl1.freeapp.buzz
     port: 8080
-    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
+    uuid: 3ce4d20b-4374-42a2-a75e-24626b141ea2
     alterId: 0
     cipher: auto
     network: ws
@@ -1526,15 +1517,15 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点5858
       - github.com/freefq-美国华盛顿Cogent通信公司6161
       - github.com/freefq-广东省东莞市移动6363
-      - 日本东京Amazon数据中心2
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
-      - 美国CloudFlare节点9
-      - 广东省东莞市移动11
-      - 台湾省桃园市+中华电信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 广东省东莞市移动9
+      - 美国CloudFlare节点10
       - 广东省东莞市移动13
-      - 美国CloudFlare节点14
-      - 日本东京Amazon数据中心16
-      - 美国CloudFlare节点19
+      - 广东省东莞市移动24
+      - 香港+电讯盈科有限公司
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点33
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1669,15 +1660,15 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点5858
       - github.com/freefq-美国华盛顿Cogent通信公司6161
       - github.com/freefq-广东省东莞市移动6363
-      - 日本东京Amazon数据中心2
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
-      - 美国CloudFlare节点9
-      - 广东省东莞市移动11
-      - 台湾省桃园市+中华电信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 广东省东莞市移动9
+      - 美国CloudFlare节点10
       - 广东省东莞市移动13
-      - 美国CloudFlare节点14
-      - 日本东京Amazon数据中心16
-      - 美国CloudFlare节点19
+      - 广东省东莞市移动24
+      - 香港+电讯盈科有限公司
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点33
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1811,15 +1802,15 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点5858
       - github.com/freefq-美国华盛顿Cogent通信公司6161
       - github.com/freefq-广东省东莞市移动6363
-      - 日本东京Amazon数据中心2
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
-      - 美国CloudFlare节点9
-      - 广东省东莞市移动11
-      - 台湾省桃园市+中华电信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 广东省东莞市移动9
+      - 美国CloudFlare节点10
       - 广东省东莞市移动13
-      - 美国CloudFlare节点14
-      - 日本东京Amazon数据中心16
-      - 美国CloudFlare节点19
+      - 广东省东莞市移动24
+      - 香港+电讯盈科有限公司
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点33
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1985,15 +1976,15 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点5858
       - github.com/freefq-美国华盛顿Cogent通信公司6161
       - github.com/freefq-广东省东莞市移动6363
-      - 日本东京Amazon数据中心2
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心5
-      - 美国CloudFlare节点9
-      - 广东省东莞市移动11
-      - 台湾省桃园市+中华电信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 广东省东莞市移动9
+      - 美国CloudFlare节点10
       - 广东省东莞市移动13
-      - 美国CloudFlare节点14
-      - 日本东京Amazon数据中心16
-      - 美国CloudFlare节点19
+      - 广东省东莞市移动24
+      - 香港+电讯盈科有限公司
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点33
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
