@@ -5,7 +5,7 @@ import fetch from "node-fetch";
 import { generateClashConf, parseV2ray } from "./utils.mjs";
 
 const freeNodeList = [
-  "https://raw.fastgit.org/freefq/free/master/v2",
+  // "https://raw.fastgit.org/freefq/free/master/v2",
   // # "https://raw.fastgit.org/v2ray-links/v2ray-free/master/v2ray",
   // "https://jiang.netlify.app",
   //   "https://shadowshare.v2cross.com/publicserver/servers/temp/SF4xoNf8GUjrHcPb",
