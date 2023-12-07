@@ -1,4 +1,4 @@
-# 更新时间 2023-12-07T12:52:54.398Z
+# 更新时间 2023-12-07T13:13:14.419Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2082,67 +2082,40 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 美国+V2CROSS.COM
+    server: 131.186.22.8
+    port: 20102
+    password: e5f9c753-d401-487f-a77b-1004b7f0f439
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.158.51.220
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: ss
     name: 法国+格拉沃利讷OVH数据中心
     server: 54.36.174.181
-    port: 443
-    password: YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN
+    port: 8080
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
     cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+V2CROSS.COM
-    server: >-
-      jp2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
-    port: 20652
-    password: e498c261-cabb-4b2c-810b-995d0bd8d049
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 日本+东京Amazon数据中心
-    server: jp2.djjsvip.cfd
-    port: 443
-    password: 46d69a7e-9002-44a3-99c1-01c412f29726
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 台湾省中华电信(HiNet)数据中心9
+    name: 美国CloudFlare节点12
     ws-opts:
-      path: /b11
-    server: nbq11.ntbq.dynu.net
-    port: 443
-    uuid: d607492b-9880-4788-8ace-f6c066e3e3c4
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: trojan
-    name: 香港+电讯盈科有限公司
-    server: download1hkt.windowsupdatea.com
-    port: 443
-    password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 台湾省台北市中华电信14
-    ws-opts:
-      path: /b21
+      path: /
       headers:
-        host: b21.ntbq.dynu.net
-    server: b21.ntbq.dynu.net
-    port: 443
-    uuid: e854e7dd-350e-43d2-bdf2-95d839d8dd46
+        host: icu.mac2win.top
+    server: c.mac2win.top
+    port: 8080
+    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
-  - type: trojan
-    name: 美国+RF+Engineering
-    server: 141.193.68.81
-    port: 443
-    password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点20
+    name: 美国CloudFlare节点17
     ws-opts:
       path: /
       headers:
@@ -2154,89 +2127,71 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点21
+    name: 美国CloudFlare节点18
     ws-opts:
       path: /
       headers:
         host: icu2.mac2win.top
-    server: cfzl2.freeapp.buzz
+    server: cfzl1.freeapp.buzz
     port: 8080
     uuid: 3ce4d20b-4374-42a2-a75e-24626b141ea2
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 印度V2CROSS.COM23
-    ws-opts:
-      path: /
-      headers:
-        host: icu3.mac2win.top
-    server: cm1.xn-w1yu8o.xyz
-    port: 80
-    uuid: e759eadc-8e71-47b0-874e-871e3d8dc31e
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.68.134.9
+    port: 7002
+    password: YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH
+    cipher: aes-128-gcm
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.158.51.220
+    name: 法国+巴黎Amazon数据中心
+    server: 52.47.56.14
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点29
+    ws-opts:
+      path: /
+      headers:
+        host: eu4.openxai.link
+    server: 104.17.129.28
+    port: 8080
+    uuid: 218996e0-5a6e-4806-8106-6b7b42e6d0d6
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点33
+    ws-opts:
+      path: /
+      headers:
+        host: icu.mac2win.top
+    server: a.mac2win.top
+    port: 8080
+    uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点34
+    ws-opts:
+      path: /MEHDI
+    server: X22.STAR-ONE.CFD
+    port: 2086
+    uuid: cf865c44-7e42-4b45-80c1-77d9d85b0794
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 德国下萨克森州萨尔茨吉特+德国电信
-    server: us.kunlun-ppg.com
-    port: 10822
-    password: 01bc8fc5-a81d-40cf-93f8-1d40f0351953
+    name: 新加坡+Amazon数据中心
+    server: sg1.djjsvip.cfd
+    port: 443
+    password: 46d69a7e-9002-44a3-99c1-01c412f29726
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点30
-    ws-opts:
-      path: /
-      headers:
-        host: eu1.openxai.link
-    server: 198.41.192.4
-    port: 8080
-    uuid: f440527e-5243-4ca8-890c-5e05e4b3bb41
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 日本东京OracleCloud32
-    ws-opts:
-      path: /
-    server: jpdj6.ip8.shop
-    port: 20202
-    uuid: a5de5eb3-5760-488a-9211-e5fbd9388905
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 日本东京Amazon数据中心33
-    ws-opts:
-      path: /
-      headers:
-        host: dl.delivery.mp.microsoft.com
-    server: us1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com
-    port: 80
-    uuid: 71d5d969-1c58-4bc9-b36c-111616f03c03
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 印度V2CROSS.COM35
-    ws-opts:
-      path: /
-      headers:
-        host: icu2.mac2win.top
-    server: nice2.xn-w1yu8o.xyz
-    port: 80
-    uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -2450,22 +2405,18 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3434
       - github.com/freefq-美国CloudFlare节点3535
       - github.com/freefq-美国CloudFlare公司CDN节点3636
-      - 法国+格拉沃利讷OVH数据中心
       - 美国+V2CROSS.COM
-      - 日本+东京Amazon数据中心
-      - 台湾省中华电信(HiNet)数据中心9
-      - 香港+电讯盈科有限公司
-      - 台湾省台北市中华电信14
-      - 美国+RF+Engineering
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点21
-      - 印度V2CROSS.COM23
       - 美国+Amazon数据中心
-      - 德国下萨克森州萨尔茨吉特+德国电信
-      - 美国CloudFlare节点30
-      - 日本东京OracleCloud32
-      - 日本东京Amazon数据中心33
-      - 印度V2CROSS.COM35
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 美国+华盛顿Cogent通信公司
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 新加坡+Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -2679,22 +2630,18 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3434
       - github.com/freefq-美国CloudFlare节点3535
       - github.com/freefq-美国CloudFlare公司CDN节点3636
-      - 法国+格拉沃利讷OVH数据中心
       - 美国+V2CROSS.COM
-      - 日本+东京Amazon数据中心
-      - 台湾省中华电信(HiNet)数据中心9
-      - 香港+电讯盈科有限公司
-      - 台湾省台北市中华电信14
-      - 美国+RF+Engineering
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点21
-      - 印度V2CROSS.COM23
       - 美国+Amazon数据中心
-      - 德国下萨克森州萨尔茨吉特+德国电信
-      - 美国CloudFlare节点30
-      - 日本东京OracleCloud32
-      - 日本东京Amazon数据中心33
-      - 印度V2CROSS.COM35
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 美国+华盛顿Cogent通信公司
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 新加坡+Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -2907,22 +2854,18 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3434
       - github.com/freefq-美国CloudFlare节点3535
       - github.com/freefq-美国CloudFlare公司CDN节点3636
-      - 法国+格拉沃利讷OVH数据中心
       - 美国+V2CROSS.COM
-      - 日本+东京Amazon数据中心
-      - 台湾省中华电信(HiNet)数据中心9
-      - 香港+电讯盈科有限公司
-      - 台湾省台北市中华电信14
-      - 美国+RF+Engineering
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点21
-      - 印度V2CROSS.COM23
       - 美国+Amazon数据中心
-      - 德国下萨克森州萨尔茨吉特+德国电信
-      - 美国CloudFlare节点30
-      - 日本东京OracleCloud32
-      - 日本东京Amazon数据中心33
-      - 印度V2CROSS.COM35
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 美国+华盛顿Cogent通信公司
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 新加坡+Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -3167,22 +3110,18 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点3434
       - github.com/freefq-美国CloudFlare节点3535
       - github.com/freefq-美国CloudFlare公司CDN节点3636
-      - 法国+格拉沃利讷OVH数据中心
       - 美国+V2CROSS.COM
-      - 日本+东京Amazon数据中心
-      - 台湾省中华电信(HiNet)数据中心9
-      - 香港+电讯盈科有限公司
-      - 台湾省台北市中华电信14
-      - 美国+RF+Engineering
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点21
-      - 印度V2CROSS.COM23
       - 美国+Amazon数据中心
-      - 德国下萨克森州萨尔茨吉特+德国电信
-      - 美国CloudFlare节点30
-      - 日本东京OracleCloud32
-      - 日本东京Amazon数据中心33
-      - 印度V2CROSS.COM35
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 美国+华盛顿Cogent通信公司
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 新加坡+Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
