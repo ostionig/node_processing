@@ -23,7 +23,7 @@ export function generateClashConf(nodeList) {
   });
 
   // .map((node) => JSON.stringify(node));
-  const names = nodeList.map((node) => node.name);
+  const names = proxies.map((node) => node.name);
 
   conf.proxies = proxies;
   const group = conf["proxy-groups"];
