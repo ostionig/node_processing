@@ -1,4 +1,4 @@
-# 更新时间 2024-01-15T18:52:11.952Z
+# 更新时间 2024-01-15T19:07:18.913Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -706,66 +706,34 @@ proxies:
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZjgyMWZmOC0yZWYyLTQ0MzMtYjgxMC1mMGNlNzdmZDU0OTE
     cipher: aes-128-gcm
   - type: trojan
-    name: 美国+Akamai科技公司CDN网络节点
-    server: 172.232.234.79
-    port: 443
-    password: 231f43f3-92bc-4b1d-8ba0-31f3c17ff84e
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.143.66.187
-    port: 9101
-    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
-    cipher: aes-128-gcm
-  - type: trojan
     name: 美国+CloudFlare节点
-    server: 104.21.41.21
+    server: 104.16.23.101
     port: 443
-    password: f9b7e3d0-ac52-11ee-b951-1239d0255272
+    password: Mahanvpn-insta-mahan_vpn
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 瑞典+斯德哥尔摩Amazon数据中心
-    server: 13.49.22.55
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.199.55.108
+    name: 英国+伦敦Amazon数据中心
+    server: 3.11.35.0
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 印度V2CROSS.COM5
-    ws-opts:
-      path: /bs
-      headers:
-        host: bs2.loadingip.com
-    server: bs2.loadingip.com
-    port: 80
-    uuid: 5278f5d3-f001-4459-94b6-7e0915238998
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: ss
+    name: 美国+Amazon数据中心
+    server: series-a1.samanehha.co
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
+    cipher: aes-128-gcm
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 34.246.125.25
-    port: 22222
-    password: telegram-id-directvpn
+    name: 江苏省镇江市+移动
+    server: js-cn.jdyzyjd.xyz
+    port: 40214
+    password: 72c433ae-7f01-4026-9291-25b0a66b7603
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 俄罗斯+V2CROSS.COM
-    server: 109.107.177.244
-    port: 1165
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpFTmktYU83REFwcEV5NXExT3FwdWNn
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国华盛顿Cogent通信公司9
+    name: 美国华盛顿Cogent通信公司6
     ws-opts:
       path: /ImUT5xAj/
       headers:
@@ -777,32 +745,26 @@ proxies:
     cipher: auto
     network: ws
     tls: true
+  - type: ss
+    name: 广东省广州市+移动
+    server: service.ouluyun9803.com
+    port: 26666
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZjgyMWZmOC0yZWYyLTQ0MzMtYjgxMC1mMGNlNzdmZDU0OTE=
+    cipher: aes-128-gcm
   - type: trojan
-    name: 江苏省镇江市+移动
-    server: js-cn.jdyzyjd.xyz
-    port: 40214
-    password: 72c433ae-7f01-4026-9291-25b0a66b7603
+    name: 美国+惠普公司
+    server: 15.237.229.62
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点11
-    ws-opts:
-      path: /vmess
-      headers:
-        host: ee1.xv2ray.net
-    server: sfmomastore.com
-    port: 80
-    uuid: 0580abe6-9aaf-40e2-ba33-0bc9f3b6ef2b
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 江苏省+移动
-    server: east.eeeeeef998.buzz
-    port: 15006
-    password: 414dff55-922a-4dc8-b5d3-b6517942b25a
-    udp: true
-    skip-cert-verify: true
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.143.66.187
+    port: 9101
+    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -883,18 +845,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-美国99
       - github.com/freefq-广东省广州市移动10
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
       - 美国+Amazon数据中心
-      - 印度V2CROSS.COM5
-      - 爱尔兰+都柏林Amazon数据中心
-      - 俄罗斯+V2CROSS.COM
-      - 美国华盛顿Cogent通信公司9
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点11
-      - 江苏省+移动
+      - 美国华盛顿Cogent通信公司6
+      - 广东省广州市+移动
+      - 美国+惠普公司
+      - 美国+华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -975,18 +933,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-美国99
       - github.com/freefq-广东省广州市移动10
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
       - 美国+Amazon数据中心
-      - 印度V2CROSS.COM5
-      - 爱尔兰+都柏林Amazon数据中心
-      - 俄罗斯+V2CROSS.COM
-      - 美国华盛顿Cogent通信公司9
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点11
-      - 江苏省+移动
+      - 美国华盛顿Cogent通信公司6
+      - 广东省广州市+移动
+      - 美国+惠普公司
+      - 美国+华盛顿Cogent通信公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1066,18 +1020,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-美国99
       - github.com/freefq-广东省广州市移动10
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
       - 美国+Amazon数据中心
-      - 印度V2CROSS.COM5
-      - 爱尔兰+都柏林Amazon数据中心
-      - 俄罗斯+V2CROSS.COM
-      - 美国华盛顿Cogent通信公司9
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点11
-      - 江苏省+移动
+      - 美国华盛顿Cogent通信公司6
+      - 广东省广州市+移动
+      - 美国+惠普公司
+      - 美国+华盛顿Cogent通信公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1189,18 +1139,14 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-美国99
       - github.com/freefq-广东省广州市移动10
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
       - 美国+Amazon数据中心
-      - 印度V2CROSS.COM5
-      - 爱尔兰+都柏林Amazon数据中心
-      - 俄罗斯+V2CROSS.COM
-      - 美国华盛顿Cogent通信公司9
       - 江苏省镇江市+移动
-      - 美国CloudFlare节点11
-      - 江苏省+移动
+      - 美国华盛顿Cogent通信公司6
+      - 广东省广州市+移动
+      - 美国+惠普公司
+      - 美国+华盛顿Cogent通信公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
