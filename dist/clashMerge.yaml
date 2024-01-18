@@ -1,4 +1,4 @@
-# 更新时间 2024-01-18T18:53:12.596Z
+# 更新时间 2024-01-18T19:08:12.439Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -457,6 +457,57 @@ proxies:
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMWJiMmJjNy0zNDY4LTQ0NDYtOWY1MC01NjM0ODY5NzdhY2Y
     cipher: aes-128-gcm
+  - type: trojan
+    name: 越南+V2CROSS.COM
+    server: skyht2.vpndata.vn
+    port: 443
+    password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 广东省+移动
+    server: nc.cn2.go002.xyz
+    port: 19511
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4OTM1NjJkMi0yZTM2LTRjODctYWViYy0zY2EzZmM3OGRlM2U=
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 日本东京+Amazon数据中心
+    server: jp04.333210.xyz
+    port: 40000
+    password: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 35.181.122.240
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 52.58.138.45
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.43.0.112
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省江门市移动7
+    server: 5c1a04.abzoones.xyz
+    port: 36701
+    uuid: 0a2cbf83-24ad-46e2-8197-2fc2d9636ae8
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
   - type: ss
     name: 美国+麻省理工学院
     server: series-a2.samanehha.co
@@ -464,52 +515,24 @@ proxies:
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn
     cipher: aes-128-gcm
   - type: trojan
+    name: 亚太地区+V2CROSS.COM
+    server: 103.154.62.23
+    port: 443
+    password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: undefined
+    server: 190.93.247.247
+    port: 2096
+    password: 6yIitAmNwb
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
     name: 美国+CloudFlare节点
     server: 173.245.58.34
     port: 2096
     password: DUvWfvC7xH
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 韩国+蘑菇主机BGP数据中心
-    server: 103.214.68.57
-    port: 10003
-    password: 6x8HcghsjS
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 印度+V2CROSS.COM
-    server: hanoi4.5gsieutocdo.com
-    port: 443
-    password: c95357eb-2869-4511-8940-f0dc5e1ec9b1
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 广东省广州市+移动
-    server: 183.236.51.7
-    port: 10829
-    password: 55ed7f3f-86d1-455b-b4d0-43342de056c7
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 乌克兰+V2CROSS.COM
-    server: 194.15.52.34
-    port: 8443
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKa0hzV2xPYWVoeUc4Qk5aZmNjN2ZsaHVBUFJZZWEvZmViT1FJQmpZUjBRPQ==
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.211.129.190
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Xerox
-    server: 13.51.38.136
-    port: 22222
-    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -575,14 +598,17 @@ proxy-groups:
       - github.com/freefq-广东省移动77
       - github.com/freefq-美国8
       - github.com/freefq-美国9
+      - 越南+V2CROSS.COM
+      - 广东省+移动
+      - 日本东京+Amazon数据中心
+      - 法国+巴黎Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon数据中心
+      - 广东省江门市移动7
       - 美国+麻省理工学院
+      - 亚太地区+V2CROSS.COM
+      - undefined
       - 美国+CloudFlare节点
-      - 韩国+蘑菇主机BGP数据中心
-      - 印度+V2CROSS.COM
-      - 广东省广州市+移动
-      - 乌克兰+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -646,14 +672,17 @@ proxy-groups:
       - github.com/freefq-广东省移动77
       - github.com/freefq-美国8
       - github.com/freefq-美国9
+      - 越南+V2CROSS.COM
+      - 广东省+移动
+      - 日本东京+Amazon数据中心
+      - 法国+巴黎Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon数据中心
+      - 广东省江门市移动7
       - 美国+麻省理工学院
+      - 亚太地区+V2CROSS.COM
+      - undefined
       - 美国+CloudFlare节点
-      - 韩国+蘑菇主机BGP数据中心
-      - 印度+V2CROSS.COM
-      - 广东省广州市+移动
-      - 乌克兰+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -716,14 +745,17 @@ proxy-groups:
       - github.com/freefq-广东省移动77
       - github.com/freefq-美国8
       - github.com/freefq-美国9
+      - 越南+V2CROSS.COM
+      - 广东省+移动
+      - 日本东京+Amazon数据中心
+      - 法国+巴黎Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon数据中心
+      - 广东省江门市移动7
       - 美国+麻省理工学院
+      - 亚太地区+V2CROSS.COM
+      - undefined
       - 美国+CloudFlare节点
-      - 韩国+蘑菇主机BGP数据中心
-      - 印度+V2CROSS.COM
-      - 广东省广州市+移动
-      - 乌克兰+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
   - name: 📲 电报信息
     type: select
     proxies:
@@ -818,14 +850,17 @@ proxy-groups:
       - github.com/freefq-广东省移动77
       - github.com/freefq-美国8
       - github.com/freefq-美国9
+      - 越南+V2CROSS.COM
+      - 广东省+移动
+      - 日本东京+Amazon数据中心
+      - 法国+巴黎Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon数据中心
+      - 广东省江门市移动7
       - 美国+麻省理工学院
+      - 亚太地区+V2CROSS.COM
+      - undefined
       - 美国+CloudFlare节点
-      - 韩国+蘑菇主机BGP数据中心
-      - 印度+V2CROSS.COM
-      - 广东省广州市+移动
-      - 乌克兰+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
