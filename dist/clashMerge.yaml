@@ -1,4 +1,4 @@
-# 更新时间 2024-01-23T12:27:40.968Z
+# 更新时间 2024-01-23T12:53:46.809Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,31 +6,43 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: AL_speednode_0001
-    server: 31.171.153.182
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 1592
-  - name: CA_speednode_0002
+  - name: CA_speednode_0001
     server: dongtaiwang3.com
     port: 443
     type: vmess
-    uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
     alterId: 0
     cipher: auto
     network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
+    servername: ''
     skip-cert-verify: true
+    tls: true
+    uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
     ws-opts:
-      path: /gzogws
       headers:
         host: xray1.freeh1.xyz
-    delay: 1502
+      path: /gzogws
+  - name: CN_speednode_0002
+    server: 106.75.26.66
+    port: 17070
+    type: socks5
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0003
+    server: 183.236.51.6
+    port: 10801
+    type: trojan
+    password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
+    skip-cert-verify: true
+    udp: true
   - name: CN_speednode_0004
+    server: 183.236.51.6
+    port: 10802
+    type: trojan
+    password: 17f47376-1c4e-4684-892e-887b21d16573
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0005
     server: 183.236.51.6
     port: 10805
     type: trojan
@@ -39,7 +51,35 @@ proxies:
     skip-cert-verify: true
     sni: cloudflare.node-ssl.cdn-alibaba.com
     udp: true
-  - name: CN_speednode_0005
+  - name: CN_speednode_0006
+    server: 183.236.51.6
+    port: 10803
+    type: trojan
+    password: e4eb7e68-c18c-40b9-ba4e-73d779473a75
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0007
+    server: 183.236.51.7
+    port: 10806
+    type: trojan
+    password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0009
+    server: 183.236.51.6
+    port: 10804
+    type: trojan
+    password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0010
+    server: 183.236.51.7
+    port: 10835
+    type: trojan
+    password: 41fa413a-c59e-4e2d-928c-3d8b7ab6fd22
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0011
     server: 183.236.51.7
     port: 10808
     type: trojan
@@ -48,109 +88,105 @@ proxies:
     skip-cert-verify: true
     sni: cloudflare.node-ssl.cdn-alibaba.com
     udp: true
-  - name: CN_speednode_0006
-    server: 183.236.51.6
-    port: 10801
-    type: trojan
-    password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0007
-    server: 106.75.26.66
-    port: 17070
-    type: socks5
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0008
-    server: 183.236.51.7
-    port: 10806
-    type: trojan
-    password: 17f47376-1c4e-4684-892e-887b21d16573
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0011
-    server: 183.236.51.6
-    port: 10803
-    type: trojan
-    password: e4eb7e68-c18c-40b9-ba4e-73d779473a75
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0012
-    server: 183.236.51.7
-    port: 10835
-    type: trojan
-    password: 41fa413a-c59e-4e2d-928c-3d8b7ab6fd22
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0013
-    server: 183.236.51.7
-    port: 10807
-    type: trojan
-    password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
-    skip-cert-verify: true
-    udp: true
   - name: CN_speednode_0019
-    server: 183.236.51.6
-    port: 10804
-    type: trojan
-    password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0021
-    server: 183.236.51.6
-    port: 10802
-    type: trojan
-    password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0027
     server: 183.236.51.7
     port: 10834
     type: trojan
     password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
     skip-cert-verify: true
     udp: true
-  - name: CN_speednode_0032
-    server: sg.cm.timoyun.cyou
-    port: 10273
-    type: vmess
-    alterId: 0
-    cipher: auto
-    country: 🇨🇳CN
-    h2-opts: {}
-    http-opts: {}
-    network: tcp
+  - name: CN_speednode_0020
+    server: 183.236.51.7
+    port: 10807
+    type: trojan
+    password: e4eb7e68-c18c-40b9-ba4e-73d779473a75
     skip-cert-verify: true
-    uuid: 274c9678-7634-4628-b53f-9c7abb6bc43b
-  - name: FR_speednode_0042
-    server: 51.15.13.210
-    port: 6679
-    type: ss
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
     udp: true
-  - name: GB_speednode_0043
+  - name: GB_speednode_0036
+    server: series-a2-mec.samanehha.co
+    port: 443
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: u17T3BvpYaaiuW2c
+  - name: GB_speednode_0037
     server: 45.154.14.209
     port: 48852
     type: vmess
     alterId: 0
     cipher: auto
-    h2-opts: {}
     http-opts:
       method: GET
       path:
         - /
     network: http
     skip-cert-verify: true
+    tls: false
     udp: true
     uuid: 557769ba-e085-49ef-8ac6-96cf3d1a9730
-  - name: GB_speednode_0045
-    server: series-a2-mec.samanehha.co
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: u17T3BvpYaaiuW2c
+  - name: HK_speednode_0038
+    server: tro.at678.top
+    port: 4201
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0039
+    server: 203.198.16.176
+    port: 4201
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0040
+    server: tro.at678.top
+    port: 4204
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0041
+    server: 203.198.16.176
+    port: 4204
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0042
+    server: tro.at678.top
+    port: 4202
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0043
+    server: tro.at678.top
+    port: 4205
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0044
+    server: 203.198.16.176
+    port: 4202
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0045
+    server: 203.198.16.176
+    port: 4205
+    type: trojan
+    password: 901a6458-7c68-47c9-8500-75e73c4365a8
+    sni: karyl.cc
+    skip-cert-verify: true
+    udp: true
   - name: HK_speednode_0046
     server: 1.65.223.223
     port: 443
@@ -166,37 +202,7 @@ proxies:
       skip-cert-verify: true
       tls: false
     delay: 1617
-  - name: HK_speednode_0047
-    server: hkt.littleqqq.co
-    port: 20759
-    type: vmess
-    uuid: 4866208c-2527-4ef7-bd2f-2e93082a1cc7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: hkt.littleqqq.co
-    udp: true
-  - name: HK_speednode_0048
-    server: 1.65.139.54
-    port: 443
-    type: ss
-    password: a-wym4ovY4Yw
-    cipher: aes-128-gcm
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: ''
-      mode: websocket
-      mux: true
-      path: ''
-      skip-cert-verify: true
-      tls: false
-    delay: 1781
-  - name: JP_speednode_0049
+  - name: JP_speednode_0047
     server: 18.176.215.63
     port: 2377
     type: ss
@@ -208,42 +214,14 @@ proxies:
       host: (TG@WangCai_8)7112bba:140737
       mode: tls
     delay: 269
-  - name: JP_speednode_0050
-    server: 54.64.183.76
-    port: 443
-    type: ss
-    Inc. - 3: None
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 1635
-  - name: KR_speednode_0051
-    server: 43.201.55.242
-    port: 443
+  - name: TR_speednode_0048
+    server: 185.123.101.241
+    port: 989
     type: ss
     cipher: aes-256-cfb
-    password: amazonskr05
-    tfo: false
-  - name: LT_speednode_0052
-    server: 94.131.13.110
-    port: 80
-    type: vmess
-    alterId: 0
-    cipher: auto
-    network: ws
-    skip-cert-verify: true
-    uuid: d3e40d59-b53c-4f4e-8867-bb598be864d2
-    ws-opts:
-      headers:
-        Host: lt1-vmess.sshmax.xyz
-      path: /vmess
-  - name: SE_speednode_0053
-    server: 51.21.116.138
-    port: 22222
-    type: trojan
-    password: telegram-id-privatevpns
-    skip-cert-verify: true
+    password: f8f7aCzcPKbsF8p3
     udp: true
-  - name: TR_speednode_0054
+  - name: TR_speednode_0049
     server: 78.135.67.230
     port: 8090
     type: vmess
@@ -259,49 +237,25 @@ proxies:
     servername: Soft98.ir
     skip-cert-verify: true
     uuid: 9c3cbce4-db0a-492c-8f8e-adaafe9c5911
-  - name: TW_speednode_0056
+  - name: TW_speednode_0050
+    server: b23.ntbq.dynu.net
+    port: 2024
+    type: vmess
+    uuid: a209ff8c-d691-496c-8c1f-32d2e995b603
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: TW_speednode_0051
     server: c12.twtc.dynu.net
     port: 6122
     type: vmess
-    uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+    uuid: a209ff8c-d691-496c-8c1f-32d2e995b603
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    udp: true
-  - name: US_speednode_0061
-    server: us.colacloud.site
-    port: 20552
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: f52feeff-6d25-4731-aca9-7321be1c2e2a
-    udp: true
-  - name: US_speednode_0062
-    server: 198.41.192.62
-    port: 443
-    type: trojan
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: mahanvip.mahantu.top
-    network: grpc
-    password: Tel:Mahanvpn-insta:mahan_vpn
-    skip-cert-verify: true
-    sni: mahanvip.mahantu.top
-    udp: true
-  - name: US_speednode_0063
-    server: us.littleqqq.co
-    port: 21859
-    type: vmess
-    uuid: 4866208c-2527-4ef7-bd2f-2e93082a1cc7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /live/UKPZrSI3K7dtNJmn
-      headers:
-        Host: www.tmall.com
     udp: true
   - name: 🇨🇭_CH_瑞士
     type: vmess
@@ -541,14 +495,6 @@ proxies:
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjZmExN2EwZC01ZTdkLTQ4NzEtOTc2ZS1mMTE2ZTA4MTgxMjM
     cipher: aes-128-gcm
   - type: vmess
-    name: github.com/freefq-台湾省中华电信(HiNet)数据中心1414
-    server: b23.ntbq.dynu.net
-    port: 2024
-    uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
     name: 美国V2CROSS.COM2
     ws-opts:
       path: /FREE-not_for_sale
@@ -648,36 +594,34 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - AL_speednode_0001
-      - CA_speednode_0002
+      - CA_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0006
       - CN_speednode_0007
-      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
       - CN_speednode_0011
-      - CN_speednode_0012
-      - CN_speednode_0013
       - CN_speednode_0019
-      - CN_speednode_0021
-      - CN_speednode_0027
-      - CN_speednode_0032
-      - FR_speednode_0042
-      - GB_speednode_0043
-      - GB_speednode_0045
+      - CN_speednode_0020
+      - GB_speednode_0036
+      - GB_speednode_0037
+      - HK_speednode_0038
+      - HK_speednode_0039
+      - HK_speednode_0040
+      - HK_speednode_0041
+      - HK_speednode_0042
+      - HK_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0045
       - HK_speednode_0046
-      - HK_speednode_0047
-      - HK_speednode_0048
-      - JP_speednode_0049
-      - JP_speednode_0050
-      - KR_speednode_0051
-      - LT_speednode_0052
-      - SE_speednode_0053
-      - TR_speednode_0054
-      - TW_speednode_0056
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
+      - JP_speednode_0047
+      - TR_speednode_0048
+      - TR_speednode_0049
+      - TW_speednode_0050
+      - TW_speednode_0051
       - 🇨🇭_CH_瑞士
       - 🇺🇸_US_美国_1
       - 🇳🇱_NL_荷兰
@@ -700,7 +644,6 @@ proxy-groups:
       - github.com/freefq-广东省广州市移动9
       - github.com/freefq-广东省移动1010
       - github.com/freefq-广东省广州市移动11
-      - github.com/freefq-台湾省中华电信(HiNet)数据中心1414
       - 美国V2CROSS.COM2
       - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
@@ -718,36 +661,34 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - AL_speednode_0001
-      - CA_speednode_0002
+      - CA_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0006
       - CN_speednode_0007
-      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
       - CN_speednode_0011
-      - CN_speednode_0012
-      - CN_speednode_0013
       - CN_speednode_0019
-      - CN_speednode_0021
-      - CN_speednode_0027
-      - CN_speednode_0032
-      - FR_speednode_0042
-      - GB_speednode_0043
-      - GB_speednode_0045
+      - CN_speednode_0020
+      - GB_speednode_0036
+      - GB_speednode_0037
+      - HK_speednode_0038
+      - HK_speednode_0039
+      - HK_speednode_0040
+      - HK_speednode_0041
+      - HK_speednode_0042
+      - HK_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0045
       - HK_speednode_0046
-      - HK_speednode_0047
-      - HK_speednode_0048
-      - JP_speednode_0049
-      - JP_speednode_0050
-      - KR_speednode_0051
-      - LT_speednode_0052
-      - SE_speednode_0053
-      - TR_speednode_0054
-      - TW_speednode_0056
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
+      - JP_speednode_0047
+      - TR_speednode_0048
+      - TR_speednode_0049
+      - TW_speednode_0050
+      - TW_speednode_0051
       - 🇨🇭_CH_瑞士
       - 🇺🇸_US_美国_1
       - 🇳🇱_NL_荷兰
@@ -770,7 +711,6 @@ proxy-groups:
       - github.com/freefq-广东省广州市移动9
       - github.com/freefq-广东省移动1010
       - github.com/freefq-广东省广州市移动11
-      - github.com/freefq-台湾省中华电信(HiNet)数据中心1414
       - 美国V2CROSS.COM2
       - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
@@ -787,36 +727,34 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - AL_speednode_0001
-      - CA_speednode_0002
+      - CA_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0006
       - CN_speednode_0007
-      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
       - CN_speednode_0011
-      - CN_speednode_0012
-      - CN_speednode_0013
       - CN_speednode_0019
-      - CN_speednode_0021
-      - CN_speednode_0027
-      - CN_speednode_0032
-      - FR_speednode_0042
-      - GB_speednode_0043
-      - GB_speednode_0045
+      - CN_speednode_0020
+      - GB_speednode_0036
+      - GB_speednode_0037
+      - HK_speednode_0038
+      - HK_speednode_0039
+      - HK_speednode_0040
+      - HK_speednode_0041
+      - HK_speednode_0042
+      - HK_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0045
       - HK_speednode_0046
-      - HK_speednode_0047
-      - HK_speednode_0048
-      - JP_speednode_0049
-      - JP_speednode_0050
-      - KR_speednode_0051
-      - LT_speednode_0052
-      - SE_speednode_0053
-      - TR_speednode_0054
-      - TW_speednode_0056
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
+      - JP_speednode_0047
+      - TR_speednode_0048
+      - TR_speednode_0049
+      - TW_speednode_0050
+      - TW_speednode_0051
       - 🇨🇭_CH_瑞士
       - 🇺🇸_US_美国_1
       - 🇳🇱_NL_荷兰
@@ -839,7 +777,6 @@ proxy-groups:
       - github.com/freefq-广东省广州市移动9
       - github.com/freefq-广东省移动1010
       - github.com/freefq-广东省广州市移动11
-      - github.com/freefq-台湾省中华电信(HiNet)数据中心1414
       - 美国V2CROSS.COM2
       - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
@@ -888,36 +825,34 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AL_speednode_0001
-      - CA_speednode_0002
+      - CA_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0006
       - CN_speednode_0007
-      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
       - CN_speednode_0011
-      - CN_speednode_0012
-      - CN_speednode_0013
       - CN_speednode_0019
-      - CN_speednode_0021
-      - CN_speednode_0027
-      - CN_speednode_0032
-      - FR_speednode_0042
-      - GB_speednode_0043
-      - GB_speednode_0045
+      - CN_speednode_0020
+      - GB_speednode_0036
+      - GB_speednode_0037
+      - HK_speednode_0038
+      - HK_speednode_0039
+      - HK_speednode_0040
+      - HK_speednode_0041
+      - HK_speednode_0042
+      - HK_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0045
       - HK_speednode_0046
-      - HK_speednode_0047
-      - HK_speednode_0048
-      - JP_speednode_0049
-      - JP_speednode_0050
-      - KR_speednode_0051
-      - LT_speednode_0052
-      - SE_speednode_0053
-      - TR_speednode_0054
-      - TW_speednode_0056
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
+      - JP_speednode_0047
+      - TR_speednode_0048
+      - TR_speednode_0049
+      - TW_speednode_0050
+      - TW_speednode_0051
       - 🇨🇭_CH_瑞士
       - 🇺🇸_US_美国_1
       - 🇳🇱_NL_荷兰
@@ -940,7 +875,6 @@ proxy-groups:
       - github.com/freefq-广东省广州市移动9
       - github.com/freefq-广东省移动1010
       - github.com/freefq-广东省广州市移动11
-      - github.com/freefq-台湾省中华电信(HiNet)数据中心1414
       - 美国V2CROSS.COM2
       - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
