@@ -1,4 +1,4 @@
-# 更新时间 2024-01-26T06:52:03.737Z
+# 更新时间 2024-01-26T07:07:25.117Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2494,36 +2494,31 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 54.200.222.173
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 18.197.248.173
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点5
+    name: 美国CloudFlare节点3
     ws-opts:
-      path: /video/u4eCZTxW
+      path: /
       headers:
-        host: jpafzyhfsg3.yofnhkfc.xyz
-    server: 104.19.45.17
-    port: 2052
-    uuid: 2b48622d-307c-40cf-88ca-954f83f3a9dd
+        host: us3.visaapp.top
+    server: 104.18.154.42
+    port: 80
+    uuid: 4899b015-5823-486d-bfe6-06c3239260f5
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 美国CloudFlare节点7
-    ws-opts:
-      path: /video/u4eCZTxW
-      headers:
-        host: jpafzyhfsg3.yofnhkfc.xyz
-    server: 104.19.45.25
-    port: 2052
-    uuid: 2b48622d-307c-40cf-88ca-954f83f3a9dd
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.37.214.102
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: trojan
     name: 北美地区+V2CROSS.COM
     server: 23.142.200.175
@@ -2532,10 +2527,10 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 52.57.241.185
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 52.48.31.55
     port: 22222
-    password: telegram-id-directvpn
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: trojan
@@ -2545,30 +2540,66 @@ proxies:
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点11
+    ws-opts:
+      path: /
+      headers:
+        host: jp3.889611.com
+    server: 162.159.200.5
+    port: 80
+    uuid: 4899b015-5823-486d-bfe6-06c3239260f5
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.18.202.232
-    port: 2095
-    password: wzZ-GniK9AYHUjn7LmoAmw
+    name: 韩国+蘑菇主机BGP数据中心
+    server: 103.214.68.57
+    port: 10003
+    password: 6x8HcghsjS
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: 85.239.61.132
+    port: 25380
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2U3prN3RvY2psWEZZY2RiRTVpdzVP
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点20
+    name: 美国CloudFlare节点22
     ws-opts:
       path: /video/u4eCZTxW
       headers:
         host: jpafzyhfsg3.yofnhkfc.xyz
-    server: 104.19.45.5
+    server: cfcdn2.sanfencdn9.com
+    port: 2052
+    uuid: 2b48622d-307c-40cf-88ca-954f83f3a9dd
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国+3COM公司企业网
+    server: 152.67.55.44
+    port: 7703
+    password: YWVzLTI1Ni1nY206YTk1MjYzNmEtMDMzNC00OTljLTk3YjYtNzk3OTk1YjZmYTI4
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点25
+    ws-opts:
+      path: /video/u4eCZTxW
+      headers:
+        host: jpafzyhfsg3.yofnhkfc.xyz
+    server: 104.19.45.20
     port: 2052
     uuid: 2b48622d-307c-40cf-88ca-954f83f3a9dd
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
-    name: 巴西圣保罗+CloudFlare节点
-    server: 188.114.98.0
-    port: 443
-    password: 01596265-168b-46a7-bcb7-25662c7a9546
+    name: 美国+Xerox
+    server: 13.51.203.69
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -2789,15 +2820,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2222
       - github.com/freefq-广东省广州市移动25
       - github.com/freefq-台湾省中华电信(HiNet)数据中心2626
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 北美地区+V2CROSS.COM
       - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国+CloudFlare节点
-      - 美国CloudFlare节点20
-      - 巴西圣保罗+CloudFlare节点
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点22
+      - 美国+3COM公司企业网
+      - 美国CloudFlare节点25
+      - 美国+Xerox
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3016,15 +3051,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2222
       - github.com/freefq-广东省广州市移动25
       - github.com/freefq-台湾省中华电信(HiNet)数据中心2626
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 北美地区+V2CROSS.COM
       - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国+CloudFlare节点
-      - 美国CloudFlare节点20
-      - 巴西圣保罗+CloudFlare节点
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点22
+      - 美国+3COM公司企业网
+      - 美国CloudFlare节点25
+      - 美国+Xerox
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3242,15 +3281,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2222
       - github.com/freefq-广东省广州市移动25
       - github.com/freefq-台湾省中华电信(HiNet)数据中心2626
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 北美地区+V2CROSS.COM
       - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国+CloudFlare节点
-      - 美国CloudFlare节点20
-      - 巴西圣保罗+CloudFlare节点
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点22
+      - 美国+3COM公司企业网
+      - 美国CloudFlare节点25
+      - 美国+Xerox
   - name: 📲 电报信息
     type: select
     proxies:
@@ -3500,15 +3543,19 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点2222
       - github.com/freefq-广东省广州市移动25
       - github.com/freefq-台湾省中华电信(HiNet)数据中心2626
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 北美地区+V2CROSS.COM
       - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国+CloudFlare节点
-      - 美国CloudFlare节点20
-      - 巴西圣保罗+CloudFlare节点
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点22
+      - 美国+3COM公司企业网
+      - 美国CloudFlare节点25
+      - 美国+Xerox
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
