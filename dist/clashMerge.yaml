@@ -1,4 +1,4 @@
-# 更新时间 2024-01-29T06:51:19.064Z
+# 更新时间 2024-01-29T07:07:13.033Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -882,96 +882,73 @@ proxies:
     cipher: auto
     network: ws
   - type: trojan
-    name: 爱尔兰+V2CROSS.COM
-    server: 108.128.87.55
+    name: 美国+CloudFlare节点
+    server: ironone.libertasiran.cloud
+    port: 443
+    password: Libertas*One*
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 台湾省中华电信(HiNet)数据中心2
+    server: 118.167.70.229
+    port: 12002
+    uuid: 7baddf37-f8bb-4744-bd9d-88d42dda603a
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点5
+    ws-opts:
+      path: /video/34kKXbLM
+      headers:
+        host: yvhnbevxhk1.yofnhkfc.xyz
+    server: cfcdn2.sanfencdn9.com
+    port: 2052
+    uuid: 657140e4-fb53-4404-80b7-fcbac652671f
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+麻省理工学院
+    server: 18.132.169.49
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: ss
-    name: 美国+Amazon数据中心
-    server: jseyu.arvancode.eu.org
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
+    name: 加拿大+魁北克省博阿努瓦OVH数据中心
+    server: 149.56.95.159
+    port: 34539
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpLbDNlclZyalV5MnJDMGw5akNzcmhY
     cipher: aes-128-gcm
   - type: trojan
-    name: 广东省广州市+移动
-    server: xibaozi.19890604.day
-    port: 10845
-    password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
+    name: 北美地区+V2CROSS.COM
+    server: los16.ttddd.xyz
+    port: 443
+    password: 27876_t7d7f4e3f
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 149.40.62.114
-    port: 443
-    password: >-
-      MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206UjFsS0d2TEU5bGxyc3JFOCtsalNjYVRTT1BUWnozTFpHYXZuOU8zWHBoVT06RVhtQVNicHh3b2huOTN4aHQzM21ZcG8vZnltWHlUS3JtM3Y0RERNTFo4RT0=
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: /eisasqa
-      headers:
-        host: foxlux.fovi.tk
-    server: cf.fovi.tk
-    port: 443
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /kwhmvws
-      headers:
-        host: urnxewzvh.site
-    server: 104.21.18.30
-    port: 443
-    uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 北京市移动9
-    ws-opts:
-      path: /
-      headers:
-        host: gz.daxun.cyou
-    server: gz.daxun.cyou
-    port: 26040
-    uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-    alterId: 0
-    cipher: auto
-    network: auto
   - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.20.214.153
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 52.31.120.72
     port: 22222
-    password: telegram-id-directvpn
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.79.143.41
+    port: 22222
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: trojan
     name: 美国+Xerox
-    server: 13.51.245.154
+    server: 13.51.103.32
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 德国V2CROSS.COM24
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        host: sahar55.serveirc.com
-    server: 92.223.124.24
-    port: 80
-    uuid: 75916879-adcf-45b3-98d8-54a2412470b5
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1061,16 +1038,15 @@ proxy-groups:
       - github.com/freefq-广东省移动2222
       - github.com/freefq-加拿大23
       - github.com/freefq-美国CloudFlare节点2727
-      - 爱尔兰+V2CROSS.COM
-      - 美国+Amazon数据中心
-      - 广东省广州市+移动
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点8
-      - 北京市移动9
-      - 英国+社会保险安全部
+      - 美国+CloudFlare节点
+      - 台湾省中华电信(HiNet)数据中心2
+      - 美国CloudFlare节点5
+      - 美国+麻省理工学院
+      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 美国+Xerox
-      - 德国V2CROSS.COM24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1160,16 +1136,15 @@ proxy-groups:
       - github.com/freefq-广东省移动2222
       - github.com/freefq-加拿大23
       - github.com/freefq-美国CloudFlare节点2727
-      - 爱尔兰+V2CROSS.COM
-      - 美国+Amazon数据中心
-      - 广东省广州市+移动
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点8
-      - 北京市移动9
-      - 英国+社会保险安全部
+      - 美国+CloudFlare节点
+      - 台湾省中华电信(HiNet)数据中心2
+      - 美国CloudFlare节点5
+      - 美国+麻省理工学院
+      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 美国+Xerox
-      - 德国V2CROSS.COM24
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1258,16 +1233,15 @@ proxy-groups:
       - github.com/freefq-广东省移动2222
       - github.com/freefq-加拿大23
       - github.com/freefq-美国CloudFlare节点2727
-      - 爱尔兰+V2CROSS.COM
-      - 美国+Amazon数据中心
-      - 广东省广州市+移动
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点8
-      - 北京市移动9
-      - 英国+社会保险安全部
+      - 美国+CloudFlare节点
+      - 台湾省中华电信(HiNet)数据中心2
+      - 美国CloudFlare节点5
+      - 美国+麻省理工学院
+      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 美国+Xerox
-      - 德国V2CROSS.COM24
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1388,16 +1362,15 @@ proxy-groups:
       - github.com/freefq-广东省移动2222
       - github.com/freefq-加拿大23
       - github.com/freefq-美国CloudFlare节点2727
-      - 爱尔兰+V2CROSS.COM
-      - 美国+Amazon数据中心
-      - 广东省广州市+移动
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点8
-      - 北京市移动9
-      - 英国+社会保险安全部
+      - 美国+CloudFlare节点
+      - 台湾省中华电信(HiNet)数据中心2
+      - 美国CloudFlare节点5
+      - 美国+麻省理工学院
+      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 北美地区+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 美国+Xerox
-      - 德国V2CROSS.COM24
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
