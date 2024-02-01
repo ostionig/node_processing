@@ -1,4 +1,4 @@
-# 更新时间 2024-02-01T06:51:41.420Z
+# 更新时间 2024-02-01T07:08:11.066Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1006,28 +1006,25 @@ proxies:
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmNjY1YzVkMC03N2MwLTQxOTYtYmM4ZC1mMDQ1MGU5YzY2NWI
     cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.38.224.10
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.21.84.144
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 伊朗V2CROSS.COM5
-    server: 188.209.152.202
-    port: 8000
-    uuid: 2097d04a-b0f8-4405-8935-b3565e108cce
+    name: 美国CloudFlare节点0
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu3.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
+  - type: trojan
+    name: 美国+V2CROSS.COM
+    server: 198.244.190.189
+    port: 443
+    password: 81dfb458-9a26-486a-a0da-914c380459c6
+    udp: true
+    skip-cert-verify: true
   - type: trojan
     name: 英国+V2CROSS.COM
     server: 141.94.115.231
@@ -1035,55 +1032,40 @@ proxies:
     password: f46677ae-8d38-4580-9359-d91078fa49c9
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国V2CROSS.COM8
-    ws-opts:
-      path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
-      headers:
-        host: cold-dawn-9246.fly.dev
-    server: cold-dawn-9246.fly.dev
-    port: 443
-    uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 日本东京都亚马逊(Amazon)公司数据中心9
-    ws-opts:
-      path: /
-    server: 54.248.200.124
-    port: 21583
-    uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 190.93.245.187
-    port: 2083
-    password: 1YcFVMZWx_OiEBEvnEMtrg
+    name: 美国+俄亥俄州都柏林Amazon数据中心
+    server: 18.191.24.3
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 北京市移动18
+    name: 北京市移动14
+    ws-opts:
+      path: /
+      headers:
+        host: gz.daxun.cyou
+    server: gz.daxun.cyou
+    port: 26040
+    uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 甘肃省兰州市移动16
+    ws-opts:
+      path: /
+      headers:
+        host: gz.daxun.cyou
     server: gz.daxun.cyou
     port: 38011
     uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 149.40.62.114
-    port: 443
-    password: >-
-      MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206UjFsS0d2TEU5bGxyc3JFOCtsalNjYVRTT1BUWnozTFpHYXZuOU8zWHBoVT06RVhtQVNicHh3b2huOTN4aHQzM21ZcG8vZnltWHlUS3JtM3Y0RERNTFo4RT0=
-    cipher: aes-128-gcm
   - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 34.211.8.63
+    name: 英国+社会保险安全部
+    server: 51.21.18.217
     port: 22222
     password: telegram-id-directvpn
     udp: true
@@ -1192,16 +1174,13 @@ proxy-groups:
       - github.com/freefq-亚太地区2424
       - github.com/freefq-广东省移动2525
       - github.com/freefq-广东省江门市移动26
-      - 美国+Amazon数据中心
-      - 英国+社会保险安全部
-      - 伊朗V2CROSS.COM5
-      - 英国+V2CROSS.COM
-      - 美国V2CROSS.COM8
-      - 日本东京都亚马逊(Amazon)公司数据中心9
-      - 美国+CloudFlare节点
-      - 北京市移动18
+      - 美国CloudFlare节点0
       - 美国+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 英国+V2CROSS.COM
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市移动14
+      - 甘肃省兰州市移动16
+      - 英国+社会保险安全部
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1306,16 +1285,13 @@ proxy-groups:
       - github.com/freefq-亚太地区2424
       - github.com/freefq-广东省移动2525
       - github.com/freefq-广东省江门市移动26
-      - 美国+Amazon数据中心
-      - 英国+社会保险安全部
-      - 伊朗V2CROSS.COM5
-      - 英国+V2CROSS.COM
-      - 美国V2CROSS.COM8
-      - 日本东京都亚马逊(Amazon)公司数据中心9
-      - 美国+CloudFlare节点
-      - 北京市移动18
+      - 美国CloudFlare节点0
       - 美国+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 英国+V2CROSS.COM
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市移动14
+      - 甘肃省兰州市移动16
+      - 英国+社会保险安全部
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1419,16 +1395,13 @@ proxy-groups:
       - github.com/freefq-亚太地区2424
       - github.com/freefq-广东省移动2525
       - github.com/freefq-广东省江门市移动26
-      - 美国+Amazon数据中心
-      - 英国+社会保险安全部
-      - 伊朗V2CROSS.COM5
-      - 英国+V2CROSS.COM
-      - 美国V2CROSS.COM8
-      - 日本东京都亚马逊(Amazon)公司数据中心9
-      - 美国+CloudFlare节点
-      - 北京市移动18
+      - 美国CloudFlare节点0
       - 美国+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 英国+V2CROSS.COM
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市移动14
+      - 甘肃省兰州市移动16
+      - 英国+社会保险安全部
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1564,16 +1537,13 @@ proxy-groups:
       - github.com/freefq-亚太地区2424
       - github.com/freefq-广东省移动2525
       - github.com/freefq-广东省江门市移动26
-      - 美国+Amazon数据中心
-      - 英国+社会保险安全部
-      - 伊朗V2CROSS.COM5
-      - 英国+V2CROSS.COM
-      - 美国V2CROSS.COM8
-      - 日本东京都亚马逊(Amazon)公司数据中心9
-      - 美国+CloudFlare节点
-      - 北京市移动18
+      - 美国CloudFlare节点0
       - 美国+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 英国+V2CROSS.COM
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市移动14
+      - 甘肃省兰州市移动16
+      - 英国+社会保险安全部
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
