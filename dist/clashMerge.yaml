@@ -1,4 +1,4 @@
-# 更新时间 2024-02-05T06:51:33.512Z
+# 更新时间 2024-02-05T07:08:34.808Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -657,19 +657,31 @@ proxies:
     network: ws
   - type: ss
     name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-    server: v1.arvancode.eu.org
+    server: 35.177.115.168
     port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
     cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.148.103.87
-    port: 16273
-    password: HhnDNu6FO7HH
-    udp: true
-    skip-cert-verify: true
+  - type: ss
+    name: 广东省江门市+移动
+    server: service.ouluyun9803.com
+    port: 50004
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmNjY1YzVkMC03N2MwLTQxOTYtYmM4ZC1mMDQ1MGU5YzY2NWI=
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点22
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu3.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点15
     ws-opts:
       path: /
       headers:
@@ -681,31 +693,30 @@ proxies:
     cipher: auto
     network: ws
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.222.249.219
-    port: 16283
-    password: YWmEsdbedkd9
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 54.214.175.14
+    port: 16281
+    password: 7KaoGMCJJP0Q
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 江苏省+移动
-    server: east.eeeeeef998.buzz
-    port: 15005
-    password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+    name: 巴西圣保罗+CloudFlare节点
+    server: 188.114.98.0
+    port: 443
+    password: 01596265-168b-46a7-bcb7-25662c7a9546
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 美国+Amazon数据中心
+    server: jseyu.arvancode.eu.org
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
+    cipher: aes-128-gcm
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.48.185.151
+    name: 美国+麻省理工学院
+    server: 18.134.75.179
     port: 22222
     password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄亥俄州都柏林Amazon数据中心
-    server: 18.191.103.112
-    port: 16278
-    password: Vco17FRfHowv
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -775,12 +786,13 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare公司CDN节点2929
       - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点22
-      - 美国+惠普公司
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点15
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -848,12 +860,13 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare公司CDN节点2929
       - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点22
-      - 美国+惠普公司
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点15
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -920,12 +933,13 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare公司CDN节点2929
       - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点22
-      - 美国+惠普公司
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点15
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1024,12 +1038,13 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare节点2828
       - github.com/freefq-美国CloudFlare公司CDN节点2929
       - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点22
-      - 美国+惠普公司
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点15
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
