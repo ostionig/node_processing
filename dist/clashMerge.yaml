@@ -1,4 +1,4 @@
-# 更新时间 2024-02-05T12:58:41.814Z
+# 更新时间 2024-02-05T13:19:27.698Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -566,42 +566,30 @@ proxies:
   - type: ss
     name: 广东省江门市+移动
     server: service.ouluyun9803.com
-    port: 20109
+    port: 20001
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmNjY1YzVkMC03N2MwLTQxOTYtYmM4ZC1mMDQ1MGU5YzY2NWI=
     cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 44.222.225.244
-    port: 16636
-    password: x3RO94iPwoFU
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: /video/ibCT6z55
-      headers:
-        host: agzbjszujp4.yofnhkfc.xyz
-    server: cfcdn3.sanfencdn9.com
-    port: 80
-    uuid: ce1b46f7-fd89-4646-a968-206d65245aba
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 美国+Akamai科技公司CDN网络节点
-    server: 172.233.83.6
-    port: 443
-    password: ae31f892-733f-44d5-b581-c514972aa7c2
-    udp: true
-    skip-cert-verify: true
   - type: ss
     name: 美国+麻省理工学院
-    server: series-a2-mec.samanehha.co
+    server: java.ct.arvancode.eu.Org
     port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
     cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.171.190.182
+    port: 16683
+    password: gHTCHomzNesd
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+惠普公司
+    server: 15.236.140.66
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: ss
     name: 英国+伦敦Microsoft公司
     server: 51.142.175.246
@@ -609,35 +597,50 @@ proxies:
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpIcmVnVUxmeXNYSmJlQXFIUk5VMXZL
     cipher: aes-128-gcm
   - type: trojan
-    name: 加拿大+魁北克省蒙特利尔Amazon数据中心
-    server: 35.183.132.203
-    port: 16631
-    password: dn69WyFsA19O
+    name: 美国+Amazon+EC2服务器
+    server: 3.99.184.213
+    port: 16688
+    password: CKyuo1jM4Mju
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-    server: java.ct.arvancode.eu.org
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 172.67.143.221
     port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
-    cipher: aes-128-gcm
+    password: 5528de7e9efc37a45714fe24d7c2d7a5d19dc55a1ad162a7372d7595a14e998f
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 35.180.221.185
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点20
+    name: 美国CloudFlare节点13
     ws-opts:
-      path: /?ed=2048
+      path: /video/QXjZG5u4F2
       headers:
-        host: eu3.openxai.link
-    server: cf.openxai.link
-    port: 8080
-    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+        host: us3AJ8biuQx.fzbqfrse.xyz
+    server: cfcdn1.sanfencdn9.com
+    port: 2052
+    uuid: ce1b46f7-fd89-4646-a968-206d65245aba
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.63.59
-    port: 443
-    password: 5528de7e9efc37a45714fe24d7c2d7a5d19dc55a1ad162a7372d7595a14e998f
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 34.220.0.65
+    port: 16691
+    password: KpXXVCM0bh32
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 韩国+蘑菇主机BGP数据中心
+    server: 103.214.68.57
+    port: 10003
+    password: 6x8HcghsjS
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -700,15 +703,16 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动14
       - github.com/freefq-广东省江门市移动15
       - 广东省江门市+移动
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点4
-      - 美国+Akamai科技公司CDN网络节点
       - 美国+麻省理工学院
+      - 美国+Amazon数据中心
+      - 美国+惠普公司
       - 英国+伦敦Microsoft公司
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国CloudFlare节点20
+      - 美国+Amazon+EC2服务器
       - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 韩国+蘑菇主机BGP数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -769,15 +773,16 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动14
       - github.com/freefq-广东省江门市移动15
       - 广东省江门市+移动
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点4
-      - 美国+Akamai科技公司CDN网络节点
       - 美国+麻省理工学院
+      - 美国+Amazon数据中心
+      - 美国+惠普公司
       - 英国+伦敦Microsoft公司
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国CloudFlare节点20
+      - 美国+Amazon+EC2服务器
       - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 韩国+蘑菇主机BGP数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -837,15 +842,16 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动14
       - github.com/freefq-广东省江门市移动15
       - 广东省江门市+移动
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点4
-      - 美国+Akamai科技公司CDN网络节点
       - 美国+麻省理工学院
+      - 美国+Amazon数据中心
+      - 美国+惠普公司
       - 英国+伦敦Microsoft公司
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国CloudFlare节点20
+      - 美国+Amazon+EC2服务器
       - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 韩国+蘑菇主机BGP数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -937,15 +943,16 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动14
       - github.com/freefq-广东省江门市移动15
       - 广东省江门市+移动
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点4
-      - 美国+Akamai科技公司CDN网络节点
       - 美国+麻省理工学院
+      - 美国+Amazon数据中心
+      - 美国+惠普公司
       - 英国+伦敦Microsoft公司
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国CloudFlare节点20
+      - 美国+Amazon+EC2服务器
       - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 韩国+蘑菇主机BGP数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
