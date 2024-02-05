@@ -1,4 +1,4 @@
-# 更新时间 2024-02-05T18:51:43.370Z
+# 更新时间 2024-02-05T19:06:52.190Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -558,67 +558,59 @@ proxies:
     cipher: auto
     network: ws
     tls: true
-  - type: ss
-    name: 美国+Amazon数据中心
-    server: java.ct.arvancode.eu.org
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
-    cipher: aes-128-gcm
   - type: trojan
-    name: 美国+Akamai科技公司CDN网络节点
-    server: 172.232.217.155
+    name: 美国+弗吉尼亚州阿什本Amazon数据中心
+    server: 54.204.102.91
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+CloudFlare公司CDN节点(shopify)
+    server: 23.227.38.18
     port: 443
-    password: a8ffca96-a47d-4fa4-a62d-6625b5346aa4
+    password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 新加坡+Amazon数据中心
+    server: 13.212.95.254
+    port: 17067
+    password: KCsf7QSvIBSp
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点6
-    ws-opts:
-      path: /
-      headers:
-        host: kr1.ljyyds.top
-    server: 104.17.25.1
-    port: 80
-    uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
+    name: 广东省广州市移动6
+    server: 4t1r5u04.m1k2s.xyz
+    port: 31851
+    uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
     alterId: 0
     cipher: auto
-    network: ws
-  - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 18.130.102.204
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 江苏省+移动
-    server: east.eeeeeef998.buzz
-    port: 15006
-    password: 414dff55-922a-4dc8-b5d3-b6517942b25a
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.49.105.158
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点13
-    ws-opts:
-      path: /vmess?ed=2048
-      headers:
-        host: tt04.77678h.tk
-    server: government.se
-    port: 443
-    uuid: 8b3c9d7b-2099-46d4-aa98-d237068ff38a
-    alterId: 0
-    cipher: auto
-    network: ws
+    network: auto
     tls: true
+  - type: trojan
+    name: 德国+黑森州法兰克福Linode数据中心
+    server: 172.105.84.14
+    port: 443
+    password: 4ad00feb-ab70-4c12-9da1-d610e8a90f7d
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Xerox
+    server: 13.51.153.172
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 日本+东京Amazon数据中心
+    server: 3.112.202.19
+    port: 17082
+    password: 1w4yQXEw3WXj
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点14
+    name: 美国CloudFlare节点15
     ws-opts:
       path: /video/QXjZG5u4F2
       headers:
@@ -629,11 +621,69 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 美国+CloudFlare公司CDN节点(shopify)
-    server: 23.227.38.46
+  - type: ss
+    name: 美国+Amazon数据中心
+    server: series-a2.samanehha.co
     port: 443
-    password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点20
+    ws-opts:
+      path: /video/QXjZG5u4F2
+      headers:
+        host: us3AJ8biuQx.fzbqfrse.xyz
+    server: cfcdn1.sanfencdn9.com
+    port: 2052
+    uuid: ce1b46f7-fd89-4646-a968-206d65245aba
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 俄罗斯V2CROSS.COM21
+    server: 193.104.57.136
+    port: 80
+    uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 美国谷歌公司云数据中心22
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: bilibili.com
+    server: jpcd07-4c4e-9945-219dfebd1776.xn--jsrz0o258a.online
+    port: 80
+    uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 台湾省+晟崴科技股份有限公司
+    server: 103.118.29.229
+    port: 443
+    password: eb9e8a52-0fec-4a10-8d16-af3b32874933
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点24
+    ws-opts:
+      path: /vmess
+      headers:
+        host: dk1.xv2ray.net
+    server: 18arcims.ir
+    port: 80
+    uuid: 6101f6c5-86a2-46d1-a0b0-3dafdf2a8535
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.78.234.35
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -693,15 +743,21 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-广东省移动1010
       - github.com/freefq-美国CloudFlare公司CDN节点1111
-      - 美国+Amazon数据中心
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国CloudFlare节点6
-      - 英国+伦敦Amazon数据中心
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+CloudFlare公司CDN节点(shopify)
+      - 新加坡+Amazon数据中心
+      - 广东省广州市移动6
+      - 德国+黑森州法兰克福Linode数据中心
+      - 美国+Xerox
+      - 日本+东京Amazon数据中心
+      - 美国CloudFlare节点15
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点20
+      - 俄罗斯V2CROSS.COM21
+      - 美国谷歌公司云数据中心22
+      - 台湾省+晟崴科技股份有限公司
+      - 美国CloudFlare节点24
+      - 爱尔兰+都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -759,15 +815,21 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-广东省移动1010
       - github.com/freefq-美国CloudFlare公司CDN节点1111
-      - 美国+Amazon数据中心
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国CloudFlare节点6
-      - 英国+伦敦Amazon数据中心
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+CloudFlare公司CDN节点(shopify)
+      - 新加坡+Amazon数据中心
+      - 广东省广州市移动6
+      - 德国+黑森州法兰克福Linode数据中心
+      - 美国+Xerox
+      - 日本+东京Amazon数据中心
+      - 美国CloudFlare节点15
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点20
+      - 俄罗斯V2CROSS.COM21
+      - 美国谷歌公司云数据中心22
+      - 台湾省+晟崴科技股份有限公司
+      - 美国CloudFlare节点24
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -824,15 +886,21 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-广东省移动1010
       - github.com/freefq-美国CloudFlare公司CDN节点1111
-      - 美国+Amazon数据中心
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国CloudFlare节点6
-      - 英国+伦敦Amazon数据中心
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+CloudFlare公司CDN节点(shopify)
+      - 新加坡+Amazon数据中心
+      - 广东省广州市移动6
+      - 德国+黑森州法兰克福Linode数据中心
+      - 美国+Xerox
+      - 日本+东京Amazon数据中心
+      - 美国CloudFlare节点15
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点20
+      - 俄罗斯V2CROSS.COM21
+      - 美国谷歌公司云数据中心22
+      - 台湾省+晟崴科技股份有限公司
+      - 美国CloudFlare节点24
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -921,15 +989,21 @@ proxy-groups:
       - github.com/freefq-美国CloudFlare公司CDN节点77
       - github.com/freefq-广东省移动1010
       - github.com/freefq-美国CloudFlare公司CDN节点1111
-      - 美国+Amazon数据中心
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国CloudFlare节点6
-      - 英国+伦敦Amazon数据中心
-      - 江苏省+移动
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点13
-      - 美国CloudFlare节点14
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+CloudFlare公司CDN节点(shopify)
+      - 新加坡+Amazon数据中心
+      - 广东省广州市移动6
+      - 德国+黑森州法兰克福Linode数据中心
+      - 美国+Xerox
+      - 日本+东京Amazon数据中心
+      - 美国CloudFlare节点15
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点20
+      - 俄罗斯V2CROSS.COM21
+      - 美国谷歌公司云数据中心22
+      - 台湾省+晟崴科技股份有限公司
+      - 美国CloudFlare节点24
+      - 爱尔兰+都柏林Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
