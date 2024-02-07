@@ -1,4 +1,4 @@
-# 更新时间 2024-02-07T06:50:14.199Z
+# 更新时间 2024-02-07T07:02:02.163Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1409,41 +1409,43 @@ proxies:
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI
     cipher: aes-128-gcm
   - type: trojan
-    name: 巴西圣保罗+CloudFlare节点
-    server: 188.114.98.0
+    name: 美国+V2CROSS.COM
+    server: 146.190.96.209
     port: 443
-    password: 01596265-168b-46a7-bcb7-25662c7a9546
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 新加坡+Amazon数据中心
-    server: 13.229.81.183
-    port: 14315
-    password: jHTBh6GyoJal
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄亥俄州都柏林Amazon数据中心
-    server: 18.190.253.145
-    port: 14270
-    password: tMEIQJIhM91q
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.148.103.87
-    port: 14258
-    password: gzQ79n0T5Ud3
+    password: w1dq4W1zZe
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 甘肃省兰州市移动20
-    server: 36.141.40.58
-    port: 55902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    name: 美国马里兰州罗耀拉大学1
+    ws-opts:
+      path: /v118-fccxmxm35
+      headers:
+        host: internet.life.com.by
+    server: 144.126.145.219
+    port: 80
+    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
+  - type: ss
+    name: 甘肃省兰州市+移动
+    server: 36.140.122.228
+    port: 26106
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkN2JlZTgzMC0wOWFhLTQzYjItODk0NS0zYjM0MWI4Nzg3ZGI=
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 意大利V2CROSS.COM32
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        host: 188.92.28.44
+    server: 188.92.28.44
+    port: 10000
+    uuid: a5006b50-c066-11ee-9802-7305f0d74794
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1584,11 +1586,10 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 巴西圣保罗+CloudFlare节点
-      - 新加坡+Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 甘肃省兰州市移动20
+      - 美国+V2CROSS.COM
+      - 美国马里兰州罗耀拉大学1
+      - 甘肃省兰州市+移动
+      - 意大利V2CROSS.COM32
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1729,11 +1730,10 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 巴西圣保罗+CloudFlare节点
-      - 新加坡+Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 甘肃省兰州市移动20
+      - 美国+V2CROSS.COM
+      - 美国马里兰州罗耀拉大学1
+      - 甘肃省兰州市+移动
+      - 意大利V2CROSS.COM32
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1873,11 +1873,10 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 巴西圣保罗+CloudFlare节点
-      - 新加坡+Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 甘肃省兰州市移动20
+      - 美国+V2CROSS.COM
+      - 美国马里兰州罗耀拉大学1
+      - 甘肃省兰州市+移动
+      - 意大利V2CROSS.COM32
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2049,11 +2048,10 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 巴西圣保罗+CloudFlare节点
-      - 新加坡+Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 甘肃省兰州市移动20
+      - 美国+V2CROSS.COM
+      - 美国马里兰州罗耀拉大学1
+      - 甘肃省兰州市+移动
+      - 意大利V2CROSS.COM32
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
