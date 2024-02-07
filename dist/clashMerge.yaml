@@ -1,4 +1,4 @@
-# 更新时间 2024-02-07T12:57:15.569Z
+# 更新时间 2024-02-07T13:17:32.179Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1408,41 +1408,75 @@ proxies:
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI
     cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu3.openxai.link
+    server: 172.67.171.177
+    port: 8080
+    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点4
+    ws-opts:
+      path: /
+      headers:
+        host: server2.beheshtbaneh.com
+    server: server2.beheshtbaneh.com
+    port: 8880
+    uuid: 8420ee38-4cf6-4d79-a9ec-2731207cf83a
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 3.8.148.89
-    port: 14666
-    password: P7kP0WUwW6YJ
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.48.9.192
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 甘肃省兰州市移动10
+    server: 4t1r5u04.m1k2s.xyz
+    port: 31851
+    uuid: d668bbb1-6e8f-4115-9a6a-1d5cac84c7ee
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: trojan
+    name: 英国+社会保险安全部
+    server: 51.21.45.250
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 甘肃省兰州市移动14
+    server: 36.141.40.58
+    port: 55902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
   - type: trojan
     name: 新加坡+Amazon数据中心
-    server: 13.212.244.13
-    port: 14653
-    password: jvdRJNXJERQO
+    server: 52.77.252.254
+    port: 14721
+    password: tmOoJ0HHcPoG
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 法国+国际航空电讯集团公司(SITA)
-    server: 57.180.58.239
-    port: 14650
-    password: W8ietaaHwvzQ
+    name: 英国+伦敦Amazon数据中心
+    server: 3.10.251.224
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: trojan
-    name: 德国+黑森州法兰克福AMazon数据中心
-    server: 3.123.23.123
-    port: 14653
-    password: fznk10We2KDc
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 广东省江门市+移动
-    server: service.ouluyun9803.com
-    port: 21001
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI=
-    cipher: aes-128-gcm
   - type: trojan
     name: 台湾省+晟崴科技股份有限公司
     server: 103.118.29.229
@@ -1451,77 +1485,21 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 江苏省+移动
-    server: east.eeeeeef998.buzz
-    port: 15005
-    password: 414dff55-922a-4dc8-b5d3-b6517942b25a
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 18.236.169.194
-    port: 14647
-    password: z7i3PEKs1oBh
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 韩国+首尔Amazon数据中心
-    server: 52.79.40.28
-    port: 14644
-    password: U6vymdQMKQwA
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 34.240.244.171
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 18.184.106.221
-    port: 14646
-    password: EHGfjf1gkpoq
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 德国+黑森州法兰克福Linode数据中心
-    server: 172.105.84.14
+    name: 美国+V2CROSS.COM
+    server: 146.190.96.209
     port: 443
-    password: 4ad00feb-ab70-4c12-9da1-d610e8a90f7d
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 瑞典+斯德哥尔摩Amazon数据中心
-    server: 13.48.9.192
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 加拿大+魁北克省蒙特利尔Amazon数据中心
-    server: 35.182.77.185
-    port: 14617
-    password: SQYKaGuctkI7
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 日本+东京都亚马逊(Amazon)公司数据中心
-    server: 54.249.52.175
-    port: 14664
-    password: CBL5b2yx8Xo4
+    password: w1dq4W1zZe
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国纽约美联社32
+    name: 美国CloudFlare节点26
     ws-opts:
-      path: /
+      path: /qZTtpya?ed=2048
       headers:
-        host: caonimashabiwanyi4.daxiongda.top
-    server: 165.1.66.37
-    port: 80
-    uuid: 1b5857d5-a7b8-445b-bcc8-f34745e75929
+        host: pq.kmoljklj.top
+    server: 104.17.123.55
+    port: 8080
+    uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
     alterId: 0
     cipher: auto
     network: ws
@@ -1665,22 +1643,17 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 英国+伦敦Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省江门市+移动
-      - 台湾省+晟崴科技股份有限公司
-      - 江苏省+移动
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 德国+黑森州法兰克福Linode数据中心
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点4
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 美国纽约美联社32
+      - 甘肃省兰州市移动10
+      - 英国+社会保险安全部
+      - 甘肃省兰州市移动14
+      - 新加坡+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 台湾省+晟崴科技股份有限公司
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点26
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1821,22 +1794,17 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 英国+伦敦Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省江门市+移动
-      - 台湾省+晟崴科技股份有限公司
-      - 江苏省+移动
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 德国+黑森州法兰克福Linode数据中心
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点4
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 美国纽约美联社32
+      - 甘肃省兰州市移动10
+      - 英国+社会保险安全部
+      - 甘肃省兰州市移动14
+      - 新加坡+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 台湾省+晟崴科技股份有限公司
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点26
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1976,22 +1944,17 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 英国+伦敦Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省江门市+移动
-      - 台湾省+晟崴科技股份有限公司
-      - 江苏省+移动
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 德国+黑森州法兰克福Linode数据中心
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点4
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 美国纽约美联社32
+      - 甘肃省兰州市移动10
+      - 英国+社会保险安全部
+      - 甘肃省兰州市移动14
+      - 新加坡+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 台湾省+晟崴科技股份有限公司
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点26
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2163,22 +2126,17 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 英国+伦敦Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省江门市+移动
-      - 台湾省+晟崴科技股份有限公司
-      - 江苏省+移动
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 德国+黑森州法兰克福Linode数据中心
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点4
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 美国纽约美联社32
+      - 甘肃省兰州市移动10
+      - 英国+社会保险安全部
+      - 甘肃省兰州市移动14
+      - 新加坡+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 台湾省+晟崴科技股份有限公司
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点26
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
