@@ -1,4 +1,4 @@
-# 更新时间 2024-02-08T06:52:23.187Z
+# 更新时间 2024-02-08T07:09:19.284Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1408,61 +1408,36 @@ proxies:
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI
     cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点0
-    ws-opts:
-      path: /
-      headers:
-        host: server2.beheshtbaneh.com
-    server: server2.beheshtbaneh.com
-    port: 8880
-    uuid: 8420ee38-4cf6-4d79-a9ec-2731207cf83a
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 34.218.247.220
+    port: 16377
+    password: m9Y73JGNgv1C
+    udp: true
+    skip-cert-verify: true
   - type: trojan
     name: 新加坡+Amazon数据中心
-    server: 13.228.75.199
-    port: 16290
-    password: rGazxTHeNo6w
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 英国+伦敦DigitalOcean数据中心
-    server: 138.68.178.156
-    port: 2060
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxSUEtcUhFNTNXa2dxU09GNGI4cy1n
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+麻省理工学院
-    server: 18.116.118.198
-    port: 16300
-    password: R9nAkWxSn5ta
+    server: 13.212.23.7
+    port: 16351
+    password: erM0zQNbw6dA
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.223.115.133
-    port: 16280
-    password: TfmhCHXNRaPw
+    name: 美国+Amazon+EC2服务器
+    server: 3.96.205.79
+    port: 16369
+    password: 8qKYWJvHMKeG
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 英国V2CROSS.COM13
-    ws-opts:
-      path: /
-    server: au-melbourne-oracle-abfdf2.ip1.shop
-    port: 63503
-    uuid: ed4d8827-4d5a-4c05-a577-c66d6a2fc1e6
+    name: 甘肃省兰州市移动6
+    server: 1j8p05.abzoones.xyz
+    port: 36106
+    uuid: 42f663e0-737c-4abd-9ce5-537909a701ee
     alterId: 0
     cipher: auto
-    network: ws
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 45.159.249.7
-    port: 31803
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsbFJRU3h3M2VySmhDRWxZZHdrczEy
-    cipher: aes-128-gcm
+    network: auto
+    tls: true
   - type: trojan
     name: 德国+巴伐利亚州纽伦堡Hetzner数据中心
     server: 195.201.7.179
@@ -1470,19 +1445,128 @@ proxies:
     password: EjecXwK17r
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 英国+伦敦Microsoft公司
-    server: 51.142.187.129
-    port: 35190
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNb3U5Mkdja2FPUnN6Wkg1UEpWcjVZ
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点11
+    ws-opts:
+      path: /
+      headers:
+        host: caonimashabiwanyi22.daxiongda.top
+    server: daxiongda.top
+    port: 80
+    uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 54.202.196.19
-    port: 16283
-    password: AjPRYB1cdtBb
+    name: 韩国+蘑菇主机BGP数据中心
+    server: 103.214.68.57
+    port: 10003
+    password: 6x8HcghsjS
     udp: true
     skip-cert-verify: true
+  - type: trojan
+    name: 美国+惠普公司
+    server: 15.223.2.31
+    port: 16379
+    password: dHKalytW6D68
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 甘肃省兰州市移动18
+    server: 2u3k04.abzoones.xyz
+    port: 36811
+    uuid: 42f663e0-737c-4abd-9ce5-537909a701ee
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 广东省广州市移动19
+    server: 9s5g06.abzoones.xyz
+    port: 36211
+    uuid: 42f663e0-737c-4abd-9ce5-537909a701ee
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 广东省广州市移动22
+    server: 1t8h04.abzoones.xyz
+    port: 36904
+    uuid: 42f663e0-737c-4abd-9ce5-537909a701ee
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 18.196.72.112
+    port: 16376
+    password: JvfWly8ANwmS
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 广东省江门市+移动
+    server: service.ouluyun9803.com
+    port: 20009
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI=
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点27
+    ws-opts:
+      path: /vmess
+      headers:
+        host: pl1-vmess.sshmax.xyz
+    server: upload.ir
+    port: 443
+    uuid: 33653184-91f3-4f3f-b707-2fc21e9adeb8
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 甘肃省兰州市移动29
+    server: 1j8p06.abzoones.xyz
+    port: 36111
+    uuid: 42f663e0-737c-4abd-9ce5-537909a701ee
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 甘肃省兰州市移动30
+    server: 8k2r04.abzoones.xyz
+    port: 36401
+    uuid: 42f663e0-737c-4abd-9ce5-537909a701ee
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点31
+    ws-opts:
+      path: /
+      headers:
+        host: lv1.xv2ray.net
+    server: 172.67.217.144
+    port: 80
+    uuid: 85674552-ce41-44d9-bb2a-50f76450b3d8
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司33
+    ws-opts:
+      path: /
+      headers:
+        host: caonimashabiwanyi5.daxiongda.top
+    server: s16.956256.xyz
+    port: 80
+    uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1623,16 +1707,24 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国CloudFlare节点0
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦DigitalOcean数据中心
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 英国V2CROSS.COM13
-      - 美国+V2CROSS.COM
-      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
-      - 英国+伦敦Microsoft公司
       - 美国+俄勒冈州波特兰Amazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 甘肃省兰州市移动6
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国+惠普公司
+      - 甘肃省兰州市移动18
+      - 广东省广州市移动19
+      - 广东省广州市移动22
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点27
+      - 甘肃省兰州市移动29
+      - 甘肃省兰州市移动30
+      - 美国CloudFlare节点31
+      - 美国马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司33
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1773,16 +1865,24 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国CloudFlare节点0
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦DigitalOcean数据中心
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 英国V2CROSS.COM13
-      - 美国+V2CROSS.COM
-      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
-      - 英国+伦敦Microsoft公司
       - 美国+俄勒冈州波特兰Amazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 甘肃省兰州市移动6
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国+惠普公司
+      - 甘肃省兰州市移动18
+      - 广东省广州市移动19
+      - 广东省广州市移动22
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点27
+      - 甘肃省兰州市移动29
+      - 甘肃省兰州市移动30
+      - 美国CloudFlare节点31
+      - 美国马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司33
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1922,16 +2022,24 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国CloudFlare节点0
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦DigitalOcean数据中心
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 英国V2CROSS.COM13
-      - 美国+V2CROSS.COM
-      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
-      - 英国+伦敦Microsoft公司
       - 美国+俄勒冈州波特兰Amazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 甘肃省兰州市移动6
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国+惠普公司
+      - 甘肃省兰州市移动18
+      - 广东省广州市移动19
+      - 广东省广州市移动22
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点27
+      - 甘肃省兰州市移动29
+      - 甘肃省兰州市移动30
+      - 美国CloudFlare节点31
+      - 美国马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司33
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2103,16 +2211,24 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国CloudFlare节点0
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦DigitalOcean数据中心
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 英国V2CROSS.COM13
-      - 美国+V2CROSS.COM
-      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
-      - 英国+伦敦Microsoft公司
       - 美国+俄勒冈州波特兰Amazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 甘肃省兰州市移动6
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 美国CloudFlare节点11
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国+惠普公司
+      - 甘肃省兰州市移动18
+      - 广东省广州市移动19
+      - 广东省广州市移动22
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省江门市+移动
+      - 美国CloudFlare节点27
+      - 甘肃省兰州市移动29
+      - 甘肃省兰州市移动30
+      - 美国CloudFlare节点31
+      - 美国马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司33
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
