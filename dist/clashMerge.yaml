@@ -1,4 +1,4 @@
-# 更新时间 2024-02-07T19:00:15.645Z
+# 更新时间 2024-02-08T00:58:58.985Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1408,79 +1408,95 @@ proxies:
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI
     cipher: aes-128-gcm
+  - type: vmess
+    name: 美国纽约美联社0
+    ws-opts:
+      path: /
+      headers:
+        host: s1.956256.xyz
+    server: 165.1.66.37
+    port: 80
+    uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+俄亥俄州都柏林Amazon数据中心
-    server: 18.222.182.199
-    port: 15023
-    password: nekYIMKeEuXr
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 44.203.64.14
-    port: 15007
-    password: zYqvQ4x90pdS
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 52.32.183.10
-    port: 14972
-    password: Zsq8ececoxNu
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 3.126.63.66
+    name: 法国+巴黎Amazon数据中心
+    server: 15.188.111.158
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 7001
-    password: YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH
+    name: 英国+伦敦DigitalOcean数据中心
+    server: 138.68.178.156
+    port: 2060
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxSUEtcUhFNTNXa2dxU09GNGI4cy1n
     cipher: aes-128-gcm
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 34.249.36.182
+    name: 美国+弗吉尼亚州阿什本Amazon数据中心
+    server: 3.92.210.88
+    port: 15389
+    password: 084ac4DRXdB1
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 日本+东京Amazon数据中心
+    server: 13.231.213.197
+    port: 15372
+    password: ynosEngEcdt1
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+    server: 54.238.13.165
+    port: 15332
+    password: 1BMpMPLP7GRp
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.99.139.196
+    port: 15374
+    password: P6bp27v4As7i
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省佛山市移动13
+    server: 183.232.170.22
+    port: 30128
+    uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 法国+国际航空电讯集团公司(SITA)
+    server: 57.180.245.230
+    port: 15389
+    password: r1evGHqnGeMR
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+惠普HP
+    server: 16.170.114.228
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.72.61
-    port: 2053
-    password: YS7mIZvKNt
+    name: 德国+巴伐利亚州纽伦堡Hetzner数据中心
+    server: 195.201.7.179
+    port: 8080
+    password: EjecXwK17r
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.79.223.48
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 52.212.62.87
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: trojan
-    name: 广东省广州市+移动
-    server: xibaozi.19890604.day
-    port: 10846
-    password: 4623e7ff-47b4-41d6-8f5a-33c8e6ac3fd5
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国V2CROSS.COM21
-    ws-opts:
-      path: /zBLPou
-    server: 130.162.47.123
-    port: 6854
-    uuid: b5f7e932-f730-4ad2-b425-40977b9db332
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1621,16 +1637,18 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+CloudFlare节点
+      - 美国纽约美联社0
+      - 法国+巴黎Amazon数据中心
+      - 英国+伦敦DigitalOcean数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国+Amazon+EC2服务器
-      - 广东省广州市+移动
-      - 美国V2CROSS.COM21
+      - 广东省佛山市移动13
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 爱尔兰+都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1771,16 +1789,18 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+CloudFlare节点
+      - 美国纽约美联社0
+      - 法国+巴黎Amazon数据中心
+      - 英国+伦敦DigitalOcean数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国+Amazon+EC2服务器
-      - 广东省广州市+移动
-      - 美国V2CROSS.COM21
+      - 广东省佛山市移动13
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1920,16 +1940,18 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+CloudFlare节点
+      - 美国纽约美联社0
+      - 法国+巴黎Amazon数据中心
+      - 英国+伦敦DigitalOcean数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国+Amazon+EC2服务器
-      - 广东省广州市+移动
-      - 美国V2CROSS.COM21
+      - 广东省佛山市移动13
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2101,16 +2123,18 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动8
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+CloudFlare节点
+      - 美国纽约美联社0
+      - 法国+巴黎Amazon数据中心
+      - 英国+伦敦DigitalOcean数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国+Amazon+EC2服务器
-      - 广东省广州市+移动
-      - 美国V2CROSS.COM21
+      - 广东省佛山市移动13
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 德国+巴伐利亚州纽伦堡Hetzner数据中心
+      - 爱尔兰+都柏林Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
