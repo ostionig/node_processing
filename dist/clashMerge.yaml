@@ -1,4 +1,4 @@
-# 更新时间 2024-02-16T12:57:48.299Z
+# 更新时间 2024-02-16T13:18:43.822Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1429,62 +1429,48 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.99.177.198
-    port: 14671
-    password: LQgbwDEjjTiC
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.171.158.118
-    port: 14633
-    password: u4dDIZ238noN
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.213.216.209
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 加拿大+魁北克省蒙特利尔Amazon数据中心
-    server: 99.79.62.197
-    port: 14673
-    password: imGtfQmBQATf
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 俄罗斯V2CROSS.COM10
-    server: ru01.333210.xyz
-    port: 80
-    uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
+    name: 美国CloudFlare节点0
+    ws-opts:
+      path: /qZTtpya?ed=2048
+      headers:
+        host: pq.kmoljklj.top
+    server: 104.17.123.55
+    port: 8080
+    uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
     alterId: 0
     cipher: auto
-    network: auto
-    tls: true
+    network: ws
+  - type: vmess
+    name: 乌克兰V2CROSS.COM1
+    ws-opts:
+      path: /vmess
+      headers:
+        host: cz2-vmess.sshmax.xyz
+    server: cz2-vmess.sshmax.xyz
+    port: 80
+    uuid: 3669d547-ee0c-477d-8e47-c4400965db74
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 甘肃省兰州市+移动
+    server: zf.quanstring.top
+    port: 21700
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1YzdmZGM4Mi1mNjhjLTRmNGQtYWVlYS1kNjkzYzg2ZDNiNWU=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 芬兰+V2CROSS.COM
+    server: 195.20.17.224
+    port: 34282
+    password: YWVzLTI1Ni1nY206ZlZkb3Z2S0JsQzA2cE83cw==
+    cipher: aes-128-gcm
   - type: trojan
-    name: 美国+麻省理工学院
-    server: 18.132.75.206
+    name: 美国+Amazon+EC2服务器
+    server: 3.99.74.203
     port: 22222
     password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 法国+格拉沃利纳OVH数据中心
-    server: 51.75.77.237
-    port: 443
-    password: 29ff9bb8-b154-43da-8ac2-da3dafea2159
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: fr1.test3.net
-    port: 443
-    password: 147669c0-cbef-11ee-b2e9-1239d0255272
     udp: true
     skip-cert-verify: true
   - type: ss
@@ -1493,27 +1479,93 @@ proxies:
     port: 27842
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmNTd6VmJsVFFzNjBlZ1hVaXphcTRZ
     cipher: aes-128-gcm
+  - type: trojan
+    name: 法国+OVH数据中心
+    server: de1.test3.net
+    port: 443
+    password: 9ab11330-cbfb-11ee-b443-1239d0255272
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 35.181.197.133
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+DigitalOcean数据中心
+    server: 167.99.251.255
+    port: 8080
+    password: >-
+      eGNoYWNoYTIwLXBvbHkxMzA1OkE2Sm1VbUV5RlhWMG1RZ0JtUjBXZU5sQ0JBcDF4TE5JeFdRYk9GbzZsbnM9
+    cipher: aes-128-gcm
   - type: ss
     name: 广东省江门市+移动
     server: service.ouluyun9803.com
-    port: 50005
+    port: 26601
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyNzcwYTY2Mi02MWRiLTQwZWQtYTE3Yy03ODNlNTIxMDg0Y2U=
     cipher: aes-128-gcm
   - type: trojan
     name: 加拿大+V2CROSS.COM
-    server: 47.129.56.186
-    port: 14636
-    password: 1zRQY2r56ewX
+    server: 47.129.4.198
+    port: 14683
+    password: 3wxKCZXyzAuH
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 德国黑森州法兰克福Choopa数据中心17
+    ws-opts:
+      path: /
+      headers:
+        host: de01.hajimihajimihajimi.online
+    server: de01.hajimihajimihajimi.online
+    port: 80
+    uuid: 22b502a4-0886-4c97-9538-49faa23d2912
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 江苏省+移动
-    server: east.eeeeeef998.buzz
-    port: 15002
-    password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+    name: 美国+惠普公司
+    server: 16.16.230.201
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 154.47.20.240
+    port: 443
+    password: YWVzLTEyOC1nY206c2hhZG93c29ja3M=
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 乌克兰V2CROSS.COM21
+    ws-opts:
+      path: /vmess
+      headers:
+        host: cz2-vmess.sshmax.xyz
+    server: 94.131.97.127
+    port: 80
+    uuid: 3669d547-ee0c-477d-8e47-c4400965db74
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 英国+社会保险安全部
+    server: 51.210.182.170
+    port: 443
+    password: 147669c0-cbef-11ee-b2e9-1239d0255272
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 台湾省中华电信(HiNet)数据中心28
+    server: nb24.ntbq.dynu.net
+    port: 4443
+    uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
+    alterId: 0
+    cipher: auto
+    network: auto
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1657,18 +1709,23 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
       - github.com/freefq-美国CloudFlare节点1414
+      - 美国CloudFlare节点0
+      - 乌克兰V2CROSS.COM1
+      - 甘肃省兰州市+移动
+      - 芬兰+V2CROSS.COM
       - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 俄罗斯V2CROSS.COM10
-      - 美国+麻省理工学院
-      - 法国+格拉沃利纳OVH数据中心
-      - 英国+社会保险安全部
       - 英国+伦敦Microsoft公司
+      - 法国+OVH数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+DigitalOcean数据中心
       - 广东省江门市+移动
       - 加拿大+V2CROSS.COM
-      - 江苏省+移动
+      - 德国黑森州法兰克福Choopa数据中心17
+      - 美国+惠普公司
+      - 美国+V2CROSS.COM
+      - 乌克兰V2CROSS.COM21
+      - 英国+社会保险安全部
+      - 台湾省中华电信(HiNet)数据中心28
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1812,18 +1869,23 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
       - github.com/freefq-美国CloudFlare节点1414
+      - 美国CloudFlare节点0
+      - 乌克兰V2CROSS.COM1
+      - 甘肃省兰州市+移动
+      - 芬兰+V2CROSS.COM
       - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 俄罗斯V2CROSS.COM10
-      - 美国+麻省理工学院
-      - 法国+格拉沃利纳OVH数据中心
-      - 英国+社会保险安全部
       - 英国+伦敦Microsoft公司
+      - 法国+OVH数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+DigitalOcean数据中心
       - 广东省江门市+移动
       - 加拿大+V2CROSS.COM
-      - 江苏省+移动
+      - 德国黑森州法兰克福Choopa数据中心17
+      - 美国+惠普公司
+      - 美国+V2CROSS.COM
+      - 乌克兰V2CROSS.COM21
+      - 英国+社会保险安全部
+      - 台湾省中华电信(HiNet)数据中心28
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1966,18 +2028,23 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
       - github.com/freefq-美国CloudFlare节点1414
+      - 美国CloudFlare节点0
+      - 乌克兰V2CROSS.COM1
+      - 甘肃省兰州市+移动
+      - 芬兰+V2CROSS.COM
       - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 俄罗斯V2CROSS.COM10
-      - 美国+麻省理工学院
-      - 法国+格拉沃利纳OVH数据中心
-      - 英国+社会保险安全部
       - 英国+伦敦Microsoft公司
+      - 法国+OVH数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+DigitalOcean数据中心
       - 广东省江门市+移动
       - 加拿大+V2CROSS.COM
-      - 江苏省+移动
+      - 德国黑森州法兰克福Choopa数据中心17
+      - 美国+惠普公司
+      - 美国+V2CROSS.COM
+      - 乌克兰V2CROSS.COM21
+      - 英国+社会保险安全部
+      - 台湾省中华电信(HiNet)数据中心28
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2152,18 +2219,23 @@ proxy-groups:
       - github.com/freefq-广东省江门市移动11
       - github.com/freefq-广东省江门市移动12
       - github.com/freefq-美国CloudFlare节点1414
+      - 美国CloudFlare节点0
+      - 乌克兰V2CROSS.COM1
+      - 甘肃省兰州市+移动
+      - 芬兰+V2CROSS.COM
       - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+魁北克省蒙特利尔Amazon数据中心
-      - 俄罗斯V2CROSS.COM10
-      - 美国+麻省理工学院
-      - 法国+格拉沃利纳OVH数据中心
-      - 英国+社会保险安全部
       - 英国+伦敦Microsoft公司
+      - 法国+OVH数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+DigitalOcean数据中心
       - 广东省江门市+移动
       - 加拿大+V2CROSS.COM
-      - 江苏省+移动
+      - 德国黑森州法兰克福Choopa数据中心17
+      - 美国+惠普公司
+      - 美国+V2CROSS.COM
+      - 乌克兰V2CROSS.COM21
+      - 英国+社会保险安全部
+      - 台湾省中华电信(HiNet)数据中心28
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
