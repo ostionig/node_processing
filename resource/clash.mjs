@@ -6,6 +6,7 @@ export const clashList = [
     // "https://raw.githubusercontent.com/kxswa/k/k/clash",
     "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
     "https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml",
+    "https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.yaml",
 //     "https://raw.githubusercontent.com/NiceVPN123/NiceVPN/main/Clash.yaml",
     // "https://raw.githubusercontent.com/openRunner/clash-freenode/main/clash.yaml",
     // "https://cdn.jsdelivr.net/gh/oslook/clash-freenode@main/clash.yaml",
