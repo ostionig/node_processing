@@ -1,4 +1,4 @@
-# 更新时间 2024-02-22T12:57:31.960Z
+# 更新时间 2024-02-22T13:19:53.809Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -7726,6 +7726,39 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 广东省移动1
+    ws-opts:
+      path: /
+      headers:
+        host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
+    server: m.cnmjcn.com
+    port: 16645
+    uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 广东省江门市+移动
+    server: service.ouluyun9803.com
+    port: 21003
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjZmExN2EwZC01ZTdkLTQ4NzEtOTc2ZS1mMTE2ZTA4MTgxMjM=
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 俄罗斯+V2CROSS.COM
+    server: 185.236.233.111
+    port: 2053
+    password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 台湾省台北市+中华电信
+    server: 114.43.169.51
+    port: 443
+    password: 7b4066ae-accc-11eb-a8bf-f23c91cfbbc9
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -8365,6 +8398,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】3_9@19
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省移动1
+      - 广东省江门市+移动
+      - 俄罗斯+V2CROSS.COM
+      - 台湾省台北市+中华电信
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -9004,6 +9041,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】3_9@19
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省移动1
+      - 广东省江门市+移动
+      - 俄罗斯+V2CROSS.COM
+      - 台湾省台北市+中华电信
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -9642,6 +9683,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】3_9@19
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省移动1
+      - 广东省江门市+移动
+      - 俄罗斯+V2CROSS.COM
+      - 台湾省台北市+中华电信
   - name: 📲 电报信息
     type: select
     proxies:
@@ -10312,6 +10357,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】3_9@19
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省移动1
+      - 广东省江门市+移动
+      - 俄罗斯+V2CROSS.COM
+      - 台湾省台北市+中华电信
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
