@@ -46,6 +46,7 @@ async function task1() {
         .filter((node) => node.type !== "vless")
         .filter((node) => !node.name.includes("🇨🇳 CN"))
         .filter((node) => !node.uuid || uuidValidate(node.uuid))
+        .filter((node) => node.cipher !== "chacha20-poly1305")
     );
 
   } catch (error) {
