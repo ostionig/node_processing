@@ -1,4 +1,4 @@
-# 更新时间 2024-02-23T12:56:37.017Z
+# 更新时间 2024-02-23T13:17:05.371Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -9381,6 +9381,63 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 瑞典V2CROSS.COM42
+    ws-opts:
+      path: /aries?ed=2048
+      headers:
+        host: huawei.mil.kp
+    server: miracle.bilibili.ovh
+    port: 80
+    uuid: a6e1d100-dab4-445e-bb15-7e362f6c2f75
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 德国+黑森州法兰克福AMazon数据中心
+    server: 3.123.20.141
+    port: 16677
+    password: WunG0taPptjO
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 新加坡+Amazon数据中心
+    server: 13.212.57.184
+    port: 16689
+    password: 1z4zppqKXbNB
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare76
+    ws-opts:
+      path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
+      headers:
+        host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    server: 162.159.26.135
+    port: 8080
+    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 172.67.132.6
+    port: 2096
+    password: 8dff76ef-4b6f-42e0-b21e-28dfaab03b53
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点83
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu1.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -10169,6 +10226,12 @@ proxy-groups:
       - 🇻🇳 越南【付费推荐：https://jdyvip.link/】13_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@20
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典V2CROSS.COM42
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare76
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点83
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -10957,6 +11020,12 @@ proxy-groups:
       - 🇻🇳 越南【付费推荐：https://jdyvip.link/】13_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@20
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典V2CROSS.COM42
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare76
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点83
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -11744,6 +11813,12 @@ proxy-groups:
       - 🇻🇳 越南【付费推荐：https://jdyvip.link/】13_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@20
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典V2CROSS.COM42
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare76
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点83
   - name: 📲 电报信息
     type: select
     proxies:
@@ -12563,6 +12638,12 @@ proxy-groups:
       - 🇻🇳 越南【付费推荐：https://jdyvip.link/】13_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@20
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典V2CROSS.COM42
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare76
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点83
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
