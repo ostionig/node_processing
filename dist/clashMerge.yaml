@@ -1,4 +1,4 @@
-# 更新时间 2024-02-25T12:54:02.272Z
+# 更新时间 2024-02-25T13:11:58.400Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -1183,12 +1183,21 @@ proxies:
     password: 6601fb90e9b3
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 9
-    server: 190.93.247.133
-    port: 8080
+  - name: 🇨🇳 广东省江门市+移动
+    server: service.ouluyun9803.com
+    port: 20003
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 6
+    server: server31.beheshtbaneh.com
+    port: 8880
     client-fingerprint: chrome
     type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
     alterId: 0
     cipher: auto
     tls: false
@@ -1196,30 +1205,24 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+      path: /
       headers:
-        Host: larger-marketing-amounts-skin.trycloudflare.com
+        Host: server31.beheshtbaneh.com
     udp: true
-  - name: 🇺🇸 美国 Akamai科技公司CDN网络节点
-    server: 172.232.250.121
-    port: 443
+  - name: 🇺🇸 美国 CloudFlare节点 10
+    server: 172.67.193.36
+    port: 2087
     client-fingerprint: chrome
     type: trojan
-    password: 83b1e430-be79-4318-a1a4-0dc470c00510
-    sni: 172.232.250.121
+    password: f85e2ad7-3e26-4589-b478-b0b15b9b5907
+    sni: us1.trojanvpn.de
     skip-cert-verify: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
     udp: true
-  - name: 🇺🇸 美国 Amazon数据中心
-    server: 13.42.98.109
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 15
-    server: 141.101.114.93
+  - name: 🇺🇸 美国 CloudFlare节点 11
+    server: 108.162.192.253
     port: 8080
     client-fingerprint: chrome
     type: vmess
@@ -1235,30 +1238,12 @@ proxies:
       headers:
         Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
     udp: true
-  - name: 🇮🇷 伊朗 v2rayfree.eu.org
-    server: 78.109.193.161
-    port: 50816
-    client-fingerprint: chrome
-    type: trojan
-    password: UJRra3tbVx
-    sni: free.atlasdn3.sbs
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇦 乌克兰 v2rayfree.eu.org
-    server: 95.164.68.116
-    port: 2053
-    client-fingerprint: chrome
-    type: trojan
-    password: f37a931d-7092-48fe-b82f-a98da3040eb2
-    sni: ftp.debian.org
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 20
-    server: 108.162.193.176
+  - name: 🇺🇸 美国 CloudFlare节点 15
+    server: 162.159.45.211
     port: 8080
     client-fingerprint: chrome
     type: vmess
-    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
     alterId: 0
     cipher: auto
     tls: false
@@ -1266,55 +1251,12 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
+      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
       headers:
-        Host: nest-emily-healing-h.trycloudflare.com
+        Host: larger-marketing-amounts-skin.trycloudflare.com
     udp: true
-  - name: 🇨🇳 广东省江门市+移动
-    server: service.ouluyun9803.com
-    port: 26668
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: cfa17a0d-5e7d-4871-976e-f116e0818123
-    tfo: false
-    udp: true
-  - name: 🇯🇵 日本 东京Fastly节点
-    server: fastly.alipay.ovh
-    port: 80
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 041f0d5b-c647-4a8d-8e4e-fa7f3526a490
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        Host: mihoyo.gov.kp
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 35
-    server: 104.17.123.55
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /qZTtpya?ed=2048
-      headers:
-        Host: pq.kmoljklj.top
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 39
-    server: 173.245.58.187
+  - name: 🇺🇸 美国 CloudFlare节点 16
+    server: 172.67.138.0
     port: 8080
     client-fingerprint: chrome
     type: vmess
@@ -1330,8 +1272,61 @@ proxies:
       headers:
         Host: pcs-referenced-camera-concerns.trycloudflare.com
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 40
-    server: 141.101.123.137
+  - name: 🇺🇸 美国 CloudFlare节点 21
+    server: 172.67.217.144
+    port: 80
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 85674552-ce41-44d9-bb2a-50f76450b3d8
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: lv1.xv2ray.net
+    udp: true
+  - name: 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
+    server: 3.81.150.99
+    port: 14651
+    client-fingerprint: chrome
+    type: trojan
+    password: KhAi5prJuCJ3
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇦 乌克兰 v2rayfree.eu.org
+    server: 95.164.114.43
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: 180c7f40-c29e-445d-8056-ae92f3b451d7
+    sni: 95.164.114.43
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬 新加坡 Amazon数据中心
+    server: 13.213.16.146
+    port: 14650
+    client-fingerprint: chrome
+    type: trojan
+    password: dfobBxh2zCbx
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵 日本 v2rayfree.eu.org
+    server: 43.203.126.23
+    port: 14632
+    client-fingerprint: chrome
+    type: trojan
+    password: nHENG4gM6cPc
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 25
+    server: 190.93.245.173
     port: 8080
     client-fingerprint: chrome
     type: vmess
@@ -1347,55 +1342,12 @@ proxies:
       headers:
         Host: larger-marketing-amounts-skin.trycloudflare.com
     udp: true
-  - name: 🇺🇸 美国 Merit网络公司
-    server: 35.91.132.65
-    port: 13405
-    client-fingerprint: chrome
-    type: trojan
-    password: 3nyuVvwwopEI
-    sni: www.myethblog.com
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
-    server: 173.245.49.137
-    port: 8080
+  - name: 🇺🇸 美国 CloudFlare节点 28
+    server: 104.21.82.183
+    port: 8880
     client-fingerprint: chrome
     type: vmess
-    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-      headers:
-        Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 44
-    server: 108.162.192.243
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-      headers:
-        Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 54
-    server: s1c.v2.v001sss.xyz
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+    uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
     alterId: 0
     cipher: auto
     tls: false
@@ -1405,7 +1357,50 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: s1c.v2.v001sss.xyz
+        Host: server26.beheshtbaneh.com
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 31
+    server: 162.159.130.219
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+      headers:
+        Host: pcs-referenced-camera-concerns.trycloudflare.com
+    udp: true
+  - name: 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+    server: 34.216.37.44
+    port: 14666
+    client-fingerprint: chrome
+    type: trojan
+    password: FTw9DCmsP0oi
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 40
+    server: 172.67.84.5
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+      headers:
+        Host: pcs-referenced-camera-concerns.trycloudflare.com
     udp: true
   - name: 🇮🇳 印度 v2rayfree.eu.org
     server: 202.78.162.5
@@ -1424,12 +1419,21 @@ proxies:
       headers:
         Host: pendar.onthewifi.com
     udp: true
-  - name: 🇫🇷 法国 v2rayfree.eu.org
-    server: 94.140.0.110
-    port: 8880
+  - name: 🇬🇧 英国 社会保险安全部
+    server: 51.21.67.169
+    port: 22222
+    client-fingerprint: chrome
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: false
+    udp: true
+  - name: 🇨🇳 广东省 移动
+    server: m.cnmjcn.com
+    port: 16620
     client-fingerprint: chrome
     type: vmess
-    uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+    uuid: c99074bd-bacd-48b5-9561-da069c481602
     alterId: 0
     cipher: auto
     tls: false
@@ -1439,18 +1443,270 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: food.zhaal.ir
+        Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 42
+    server: 173.245.58.159
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+      headers:
+        Host: pcs-referenced-camera-concerns.trycloudflare.com
+    udp: true
+  - name: 🇺🇸 美国 麻省理工学院
+    server: 18.119.129.115
+    port: 14639
+    client-fingerprint: chrome
+    type: trojan
+    password: nBHyaYzY5RP3
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇧🇷 巴西圣保罗 CloudFlare节点
+    server: 188.114.98.96
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
+      headers:
+        Host: nest-emily-healing-h.trycloudflare.com
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 54
+    server: 190.93.245.46
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+      headers:
+        Host: pcs-referenced-camera-concerns.trycloudflare.com
+    udp: true
+  - name: 🇺🇦 乌克兰 v2rayfree.eu.org 2
+    server: 95.164.46.235
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: 915dc116-70c6-403b-8a03-18d885c311bf
+    sni: 95.164.46.235
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 62
+    server: 198.41.204.209
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
+      headers:
+        Host: nest-emily-healing-h.trycloudflare.com
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 63
+    server: 198.41.205.138
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+      headers:
+        Host: larger-marketing-amounts-skin.trycloudflare.com
+    udp: true
+  - name: 🇺🇸 美国 Amazon数据中心
+    server: 18.199.12.195
+    port: 22222
+    client-fingerprint: chrome
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: false
+    udp: true
+  - name: 🇰🇷 韩国 首尔Amazon数据中心
+    server: 13.124.187.84
+    port: 14642
+    client-fingerprint: chrome
+    type: trojan
+    password: Q3sYggJBP5Yq
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇨🇳 江苏省镇江市 联通IDC机房
+    server: data-us-v1.shwjfkw.cn
+    port: 20401
+    client-fingerprint: chrome
+    type: vmess
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /debian
+      headers:
+        Host: data-us-v1.shwjfkw.cn
+    udp: true
+  - name: 🇰🇷 韩国 蘑菇主机BGP数据中心
+    server: 103.214.68.57
+    port: 10003
+    client-fingerprint: chrome
+    type: trojan
+    password: 6x8HcghsjS
+    sni: yes998.chickenkiller.com
+    skip-cert-verify: false
     udp: true
   - name: 🇨🇳 广东省江门市+移动 2
     server: service.ouluyun9803.com
-    port: 20005
+    port: 21005
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
     password: cfa17a0d-5e7d-4871-976e-f116e0818123
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 65
+  - name: 🇺🇸 美国 CloudFlare节点 84
+    server: 141.101.123.137
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+      headers:
+        Host: larger-marketing-amounts-skin.trycloudflare.com
+    udp: true
+  - name: 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+    server: 54.248.156.53
+    port: 14643
+    client-fingerprint: chrome
+    type: trojan
+    password: 4kIYGTmMItGj
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国+Amazon数据中心
+    server: wxwctxxx.arvancode.eu.org
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: u17T3BvpYaaiuW2c
+    tfo: false
+    udp: true
+  - name: 🇬🇧 英国 社会保险安全部 2
+    server: 51.20.234.165
+    port: 22222
+    client-fingerprint: chrome
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇦 乌克兰 v2rayfree.eu.org 3
+    server: 94.131.117.240
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: b556587e-6b3a-4cca-b379-714bfae91515
+    sni: 94.131.117.240
+    skip-cert-verify: false
+    udp: true
+  - name: 🇫🇷 法国 巴黎Amazon数据中心
+    server: 35.181.213.106
+    port: 22222
+    client-fingerprint: chrome
+    type: trojan
+    password: telegram-id-directvpn
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+    server: 35.177.209.14
+    port: 14652
+    client-fingerprint: chrome
+    type: trojan
+    password: yWz6vSFanOlm
+    sni: www.myethblog.com
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 91
+    server: 172.64.34.191
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+      headers:
+        Host: pcs-referenced-camera-concerns.trycloudflare.com
+    udp: true
+  - name: 🇧🇷 巴西圣保罗 CloudFlare节点 3
+    server: 188.114.98.86
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
+      headers:
+        Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 97
     server: 172.67.64.161
     port: 8080
     client-fingerprint: chrome
@@ -1467,21 +1723,12 @@ proxies:
       headers:
         Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
     udp: true
-  - name: 🇯🇵 日本 v2rayfree.eu.org
-    server: 43.203.122.46
-    port: 13402
-    client-fingerprint: chrome
-    type: trojan
-    password: 1uC9JpvdtdLP
-    sni: www.myethblog.com
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 79
-    server: 190.93.244.170
+  - name: 🇺🇸 美国 CloudFlare节点 99
+    server: 172.67.186.4
     port: 8080
     client-fingerprint: chrome
     type: vmess
-    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
+    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
     alterId: 0
     cipher: auto
     tls: false
@@ -1489,142 +1736,18 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
+      path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
       headers:
-        Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+        Host: nest-emily-healing-h.trycloudflare.com
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 80
-    server: 173.245.58.1
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-      headers:
-        Host: larger-marketing-amounts-skin.trycloudflare.com
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 91
-    server: 190.93.246.235
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-      headers:
-        Host: larger-marketing-amounts-skin.trycloudflare.com
-    udp: true
-  - name: 🇺🇸 美国 惠普公司
-    server: 15.237.216.156
-    port: 13409
+  - name: 🇺🇸 美国 v2rayfree.eu.org
+    server: ca02.reami.us
+    port: 11002
     client-fingerprint: chrome
     type: trojan
-    password: Pg0v8Zw3h7C1
-    sni: www.myethblog.com
+    password: ead190ad-51bf-4784-ab54-f4cc07f3e636
+    sni: ca02.reami.us
     skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
-    server: 18.189.191.191
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 Amazon数据中心 2
-    server: 13.41.174.229
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇷🇺 俄罗斯 莫斯科JustHost
-    server: 45.144.2.113
-    port: 80
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 45.144.2.113
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 105
-    server: 190.93.244.1
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-      headers:
-        Host: larger-marketing-amounts-skin.trycloudflare.com
-    udp: true
-  - name: 🇬🇧 英国 社会保险安全部
-    server: 51.20.14.222
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 108
-    server: 108.162.195.64
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-      headers:
-        Host: larger-marketing-amounts-skin.trycloudflare.com
-    udp: true
-  - name: 🇧🇷 巴西圣保罗 CloudFlare节点
-    server: 188.114.99.29
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-    sni: hdfy8c1.foriran.me
-    skip-cert-verify: false
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
     udp: true
   - name: 🇷🇺 俄罗斯  1
     server: 185.242.86.156
@@ -1644,69 +1767,18 @@ proxies:
     password: 7BcLdsO1WweoGD0X
     tfo: false
     udp: true
-  - name: 🇺🇸 美国CloudFlare公司CDN节点 6
-    server: server31.beheshtbaneh.com
-    port: 8880
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: server31.beheshtbaneh.com
-    udp: true
-  - name: 🇨🇳 广东省移动 7
-    server: data-us-v1.shwjfkw.cn
-    port: 20401
-    client-fingerprint: chrome
-    type: vmess
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /debian
-      headers:
-        Host: data-us-v1.shwjfkw.cn
-    udp: true
-  - name: 🇨🇳 广东省江门市移动 8
+  - name: 🇨🇳 广东省江门市移动 11
     server: service.ouluyun9803.com
-    port: 20003
+    port: 26667
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
     password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
     tfo: false
     udp: true
-  - name: 🇺🇸 美国CloudFlare公司CDN节点 9
-    server: 104.21.82.183
-    port: 8880
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: server26.beheshtbaneh.com
-    udp: true
-  - name: 🇨🇳 广东省江门市移动 11
+  - name: 🇨🇳 广东省江门市移动 12
     server: service.ouluyun9803.com
-    port: 26667
+    port: 20005
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
@@ -1730,6 +1802,20 @@ proxies:
       headers:
         Host: server32.beheshtbaneh.com
     udp: true
+  - alterId: 0
+    cipher: auto
+    name: 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@4
+    network: ws
+    port: 8880
+    server: 94.140.0.110
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+    ws-opts:
+      headers:
+        host: food.zhaal.ir
+      path: /
   - alterId: 0
     cipher: auto
     name: 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_0@11
@@ -2732,12 +2818,6 @@ proxies:
     ws-headers:
       Host: larger-marketing-amounts-skin.trycloudflare.com
     ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-  - name: 🇮🇹IT-95.164.46.235-169_2@169
-    password: 915dc116-70c6-403b-8a03-18d885c311bf
-    port: 443
-    server: 95.164.46.235
-    skip-cert-verify: true
-    type: trojan
   - name: 🇬🇧GB-18.169.157.148-172_2@172
     password: Hkw1UULC3zfC
     port: 14236
@@ -2779,19 +2859,6 @@ proxies:
     skip-cert-verify: true
     sni: www.myethblog.com
     type: trojan
-  - alterId: 0
-    cipher: auto
-    name: 🏁RELAY-173.245.58.159-195_2@195
-    network: ws
-    port: 8080
-    server: 173.245.58.159
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-    ws-headers:
-      Host: pcs-referenced-camera-concerns.trycloudflare.com
-    ws-path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
   - name: 🇺🇸US-34.216.37.44-201_2@201
     password: gRIHrtaL0sZA
     port: 14257
@@ -2799,6 +2866,19 @@ proxies:
     skip-cert-verify: true
     sni: www.myethblog.com
     type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-190.93.246.235-205_2@205
+    network: ws
+    port: 8080
+    server: 190.93.246.235
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    ws-headers:
+      Host: larger-marketing-amounts-skin.trycloudflare.com
+    ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
   - name: 🇮🇪IE-54.73.249.105-206_2@206
     password: telegram-id-privatevpns
     port: 22222
@@ -2841,6 +2921,19 @@ proxies:
     ws-path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
   - alterId: 0
     cipher: auto
+    name: 🏁RELAY-173.245.58.1-226_2@226
+    network: ws
+    port: 8080
+    server: 173.245.58.1
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    ws-headers:
+      Host: larger-marketing-amounts-skin.trycloudflare.com
+    ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+  - alterId: 0
+    cipher: auto
     name: 🏁RELAY-198.41.219.14-227_2@227
     network: ws
     port: 8080
@@ -2852,6 +2945,19 @@ proxies:
     ws-headers:
       Host: larger-marketing-amounts-skin.trycloudflare.com
     ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+  - alterId: 0
+    cipher: auto
+    name: 🇦🇶FASTLY-146.75.79.10-229_2@229
+    network: ws
+    port: 80
+    server: fastly.alipay.ovh
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 041f0d5b-c647-4a8d-8e4e-fa7f3526a490
+    ws-headers:
+      Host: mihoyo.gov.kp
+    ws-path: /aries?ed=2048
   - alterId: 0
     cipher: auto
     name: 🏁RELAY-190.93.246.154-231_2@231
@@ -2891,19 +2997,6 @@ proxies:
     ws-headers:
       Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
     ws-path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-  - alterId: 0
-    cipher: auto
-    name: 🏁RELAY-162.159.45.211-234_2@234
-    network: ws
-    port: 8080
-    server: 162.159.45.211
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
-    ws-headers:
-      Host: larger-marketing-amounts-skin.trycloudflare.com
-    ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
   - name: 🇳🇱NL-185.236.233.111-236_2@236
     password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
     port: 2053
@@ -3017,32 +3110,6 @@ proxies:
     ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
   - alterId: 0
     cipher: auto
-    name: 🏁RELAY-172.67.217.144-272_2@272
-    network: ws
-    port: 80
-    server: 172.67.217.144
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 85674552-ce41-44d9-bb2a-50f76450b3d8
-    ws-headers:
-      Host: lv1.xv2ray.net
-    ws-path: /
-  - alterId: 0
-    cipher: auto
-    name: 🏁RELAY-108.162.192.253-273_2@273
-    network: ws
-    port: 8080
-    server: 108.162.192.253
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
-    ws-headers:
-      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    ws-path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-  - alterId: 0
-    cipher: auto
     name: 🏁RELAY-188.114.98.155-275_2@275
     network: ws
     port: 8080
@@ -3094,13 +3161,6 @@ proxies:
     skip-cert-verify: true
     sni: www.myethblog.com
     type: trojan
-  - name: 🏁RELAY-172.67.193.36-286_2@286
-    password: f85e2ad7-3e26-4589-b478-b0b15b9b5907
-    port: 2087
-    server: 172.67.193.36
-    skip-cert-verify: true
-    sni: us1.trojanvpn.de
-    type: trojan
   - alterId: 0
     cipher: auto
     name: 🏁RELAY-162.159.141.196-295_2@295
@@ -3114,6 +3174,244 @@ proxies:
     ws-headers:
       Host: larger-marketing-amounts-skin.trycloudflare.com
     ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-190.93.247.133-306_2@305
+    network: ws
+    port: 8080
+    server: 190.93.247.133
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    ws-headers:
+      Host: larger-marketing-amounts-skin.trycloudflare.com
+    ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+  - name: 🇮🇩ID-172.232.250.121-310_2@309
+    password: 83b1e430-be79-4318-a1a4-0dc470c00510
+    port: 443
+    server: 172.232.250.121
+    skip-cert-verify: true
+    type: trojan
+  - name: 🇬🇧GB-13.42.98.109-312_2@311
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 13.42.98.109
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-141.101.114.93-314_2@313
+    network: ws
+    port: 8080
+    server: 141.101.114.93
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
+    ws-headers:
+      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    ws-path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
+  - name: 🇮🇷IR-78.109.193.161-317_2@316
+    password: UJRra3tbVx
+    port: 50816
+    server: 78.109.193.161
+    skip-cert-verify: true
+    sni: free.atlasdn3.sbs
+    type: trojan
+  - name: 🇩🇪DE-95.164.68.116-320_2@319
+    password: f37a931d-7092-48fe-b82f-a98da3040eb2
+    port: 2053
+    server: 95.164.68.116
+    skip-cert-verify: true
+    sni: ftp.debian.org
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-108.162.193.176-321_2@320
+    network: ws
+    port: 8080
+    server: 108.162.193.176
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
+    ws-headers:
+      Host: nest-emily-healing-h.trycloudflare.com
+    ws-path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
+  - cipher: chacha20-ietf-poly1305
+    name: 🇨🇳CN-120.238.122.159-323_2@322
+    password: cfa17a0d-5e7d-4871-976e-f116e0818123
+    port: 26668
+    server: service.ouluyun9803.com
+    type: ss
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-104.17.123.55-338_2@337
+    network: ws
+    port: 8080
+    server: 104.17.123.55
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
+    ws-headers:
+      Host: pq.kmoljklj.top
+    ws-path: /qZTtpya?ed=2048
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-173.245.58.187-342_2@341
+    network: ws
+    port: 8080
+    server: 173.245.58.187
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+    ws-headers:
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    ws-path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
+  - name: 🇺🇸US-35.91.132.65-344_2@343
+    password: 3nyuVvwwopEI
+    port: 13405
+    server: 35.91.132.65
+    skip-cert-verify: true
+    sni: www.myethblog.com
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-173.245.49.137-347_2@346
+    network: ws
+    port: 8080
+    server: 173.245.49.137
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
+    ws-headers:
+      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    ws-path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-108.162.192.243-349_2@348
+    network: ws
+    port: 8080
+    server: 108.162.192.243
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
+    ws-headers:
+      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    ws-path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-104.21.8.157-359_2@358
+    network: ws
+    port: 2082
+    server: s1c.v2.v001sss.xyz
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+    ws-headers:
+      Host: s1c.v2.v001sss.xyz
+    ws-path: /
+  - name: 🇰🇷KR-43.203.122.46-382_2@381
+    password: 1uC9JpvdtdLP
+    port: 13402
+    server: 43.203.122.46
+    skip-cert-verify: true
+    sni: www.myethblog.com
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-190.93.244.170-388_2@387
+    network: ws
+    port: 8080
+    server: 190.93.244.170
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
+    ws-headers:
+      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    ws-path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
+  - name: 🇫🇷FR-15.237.216.156-402_2@401
+    password: Pg0v8Zw3h7C1
+    port: 13409
+    server: 15.237.216.156
+    skip-cert-verify: true
+    sni: www.myethblog.com
+    type: trojan
+  - name: 🇺🇸US-18.189.191.191-410_2@409
+    password: telegram-id-directvpn
+    port: 22222
+    server: 18.189.191.191
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - name: 🇬🇧GB-13.41.174.229-413_2@412
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 13.41.174.229
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🇷🇺RU-45.144.2.113-415_2@414
+    network: ws
+    port: 80
+    server: 45.144.2.113
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
+    ws-headers:
+      Host: 45.144.2.113
+    ws-path: /
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-190.93.244.1-419_2@418
+    network: ws
+    port: 8080
+    server: 190.93.244.1
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    ws-headers:
+      Host: larger-marketing-amounts-skin.trycloudflare.com
+    ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+  - name: 🇸🇪SE-51.20.14.222-421_2@420
+    password: telegram-id-directvpn
+    port: 22222
+    server: 51.20.14.222
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-108.162.195.64-423_2@422
+    network: ws
+    port: 8080
+    server: 108.162.195.64
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
+    ws-headers:
+      Host: larger-marketing-amounts-skin.trycloudflare.com
+    ws-path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+  - name: 🏁RELAY-188.114.99.29-428_2@427
+    password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+    port: 443
+    server: 188.114.99.29
+    skip-cert-verify: true
+    sni: hdfy8c1.foriran.me
+    type: trojan
   - name: 德国 001_3@0
     network: tcp
     password: 2a9abeb7-6f97-4d33-9069-f6e009d88455
@@ -4755,22 +5053,6 @@ proxies:
       path: /path/271624282113
   - alterId: 0
     cipher: auto
-    client-fingerprint: chrome
-    name: 美国 049_3@154
-    network: ws
-    port: 8080
-    server: 198.41.204.209
-    skip-cert-verify: false
-    tfo: false
-    tls: false
-    type: vmess
-    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
-    ws-opts:
-      headers:
-        Host: nest-emily-healing-h.trycloudflare.com
-      path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
-  - alterId: 0
-    cipher: auto
     name: 韩国 003_3@157
     network: ws
     port: 443
@@ -5796,19 +6078,6 @@ proxies:
       headers:
         Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
       path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-  - alterId: 0
-    cipher: auto
-    name: 加拿大 126_3@251
-    network: ws
-    port: 8080
-    server: 162.159.130.219
-    tls: false
-    type: vmess
-    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-    ws-opts:
-      headers:
-        Host: pcs-referenced-camera-concerns.trycloudflare.com
-      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
   - alterId: 64
     cipher: auto
     name: 美国 078_3@252
@@ -6497,21 +6766,6 @@ proxies:
       headers:
         host: bibliographic-sword-sequence-advertisers.trycloudflare.com
       path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-  - alterId: 0
-    cipher: auto
-    name: 加拿大 154_3@298
-    network: ws
-    port: 8080
-    server: 172.67.186.4
-    servername: nest-emily-healing-h.trycloudflare.com
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
-    ws-opts:
-      headers:
-        host: nest-emily-healing-h.trycloudflare.com
-      path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
   - alterId: 0
     cipher: auto
     name: 加拿大 155_3@299
@@ -8356,32 +8610,6 @@ proxies:
       path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
   - alterId: 0
     cipher: auto
-    name: 加拿大 250_3@495
-    network: ws
-    port: 8080
-    server: 172.67.138.0
-    skip-cert-verify: true
-    type: vmess
-    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-    ws-opts:
-      headers:
-        Host: pcs-referenced-camera-concerns.trycloudflare.com
-      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
-  - alterId: 0
-    cipher: auto
-    name: 荷兰 040_3@498
-    network: ws
-    port: 8080
-    server: 188.114.98.86
-    skip-cert-verify: true
-    type: vmess
-    uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
-    ws-opts:
-      headers:
-        Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-      path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-  - alterId: 0
-    cipher: auto
     name: 加拿大 252_3@499
     network: ws
     port: 8080
@@ -8533,19 +8761,6 @@ proxies:
     network: ws
     port: 8080
     server: 198.41.220.170
-    skip-cert-verify: true
-    type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
-    ws-opts:
-      headers:
-        Host: larger-marketing-amounts-skin.trycloudflare.com
-      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-  - alterId: 0
-    cipher: auto
-    name: 美国 144_3@519
-    network: ws
-    port: 8080
-    server: 198.41.205.138
     skip-cert-verify: true
     type: vmess
     uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
@@ -9404,19 +9619,6 @@ proxies:
       path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
   - alterId: 0
     cipher: auto
-    name: 美国 183_3@609
-    network: ws
-    port: 8080
-    server: 190.93.245.46
-    skip-cert-verify: true
-    type: vmess
-    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-    ws-opts:
-      headers:
-        Host: pcs-referenced-camera-concerns.trycloudflare.com
-      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
-  - alterId: 0
-    cipher: auto
     name: 英国 005_3@610
     network: ws
     port: 8080
@@ -9788,32 +9990,6 @@ proxies:
       path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
   - alterId: 0
     cipher: auto
-    name: 美国 200_3@695
-    network: ws
-    port: 8080
-    server: 190.93.245.173
-    skip-cert-verify: true
-    type: vmess
-    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
-    ws-opts:
-      headers:
-        Host: larger-marketing-amounts-skin.trycloudflare.com
-      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-  - alterId: 0
-    cipher: auto
-    name: 加拿大 350_3@696
-    network: ws
-    port: 8080
-    server: 172.64.34.191
-    skip-cert-verify: true
-    type: vmess
-    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-    ws-opts:
-      headers:
-        Host: pcs-referenced-camera-concerns.trycloudflare.com
-      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
-  - alterId: 0
-    cipher: auto
     name: 加拿大 352_3@698
     network: ws
     port: 8080
@@ -10057,19 +10233,6 @@ proxies:
       path: /glweidf.sbs/linkws
   - alterId: 0
     cipher: auto
-    name: 加拿大 362_3@721
-    network: ws
-    port: 8080
-    server: 172.67.84.5
-    skip-cert-verify: true
-    type: vmess
-    uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
-    ws-opts:
-      headers:
-        Host: pcs-referenced-camera-concerns.trycloudflare.com
-      path: e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm
-  - alterId: 0
-    cipher: auto
     name: 加拿大 366_3@726
     network: ws
     port: 8080
@@ -10289,19 +10452,6 @@ proxies:
       headers:
         Host: larger-marketing-amounts-skin.trycloudflare.com
       path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-  - alterId: 0
-    cipher: auto
-    name: 荷兰 056_3@749
-    network: ws
-    port: 8080
-    server: 188.114.98.96
-    skip-cert-verify: true
-    type: vmess
-    uuid: 3069ecb6-dd75-4e24-a30d-ec55747d83a1
-    ws-opts:
-      headers:
-        Host: nest-emily-healing-h.trycloudflare.com
-      path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
   - alterId: 0
     cipher: auto
     name: 法国 015_3@750
@@ -10591,15 +10741,6 @@ proxies:
       headers:
         Host: larger-marketing-amounts-skin.trycloudflare.com
       path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
-  - name: 🇨🇦_CA_加拿大_1_6@56
-    network: tcp
-    password: ead190ad-51bf-4784-ab54-f4cc07f3e636
-    port: 11002
-    server: ca02.reami.us
-    skip-cert-verify: true
-    sni: ca02.reami.us
-    type: trojan
-    udp: true
   - name: 🇺🇸_US_美国_7_6@62
     network: tcp
     password: 915dc116-70c6-403b-8a03-18d885c311bf
@@ -10754,12 +10895,6 @@ proxies:
     port: 800
     server: 51.178.87.37
     type: ss
-  - name: 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@24
-    password: 6x8HcghsjS
-    port: 10003
-    server: 103.214.68.57
-    sni: yes998.chickenkiller.com
-    type: trojan
   - type: vmess
     name: 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
     server: 使用前记得更新订阅
@@ -10768,100 +10903,172 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 广东省广州市移动5
+    server: 5c1a04.abzoones.xyz
+    port: 36701
+    uuid: 95186f58-9a22-43c3-b42e-96475b190250
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 广东省广州市移动12
+    server: 3v4n04.abzoones.xyz
+    port: 36874
+    uuid: 95186f58-9a22-43c3-b42e-96475b190250
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: ss
+    name: 广东省江门市+移动
+    server: service.ouluyun9803.com
+    port: 21003
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjZmExN2EwZC01ZTdkLTQ4NzEtOTc2ZS1mMTE2ZTA4MTgxMjM=
+    cipher: aes-128-gcm
   - type: trojan
-    name: 美国+弗吉尼亚州阿什本Amazon数据中心
-    server: 3.81.150.99
-    port: 14651
-    password: KhAi5prJuCJ3
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 乌克兰+V2CROSS.COM
-    server: 95.164.114.43
-    port: 443
-    password: 180c7f40-c29e-445d-8056-ae92f3b451d7
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 新加坡+Amazon数据中心
-    server: 13.213.16.146
-    port: 14650
-    password: dfobBxh2zCbx
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 日本+V2CROSS.COM
-    server: 43.203.126.23
-    port: 14632
-    password: nHENG4gM6cPc
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 34.216.37.44
-    port: 14666
-    password: FTw9DCmsP0oi
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.21.67.169
-    port: 22222
-    password: telegram-id-privatevpns
+    name: 美国+惠普公司
+    server: 15.237.46.201
+    port: 14709
+    password: VU32YK1TEEN3
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 广东省移动49
+    name: 广东省广州市移动30
+    server: 8r5u04.abzoones.xyz
+    port: 36851
+    uuid: 95186f58-9a22-43c3-b42e-96475b190250
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: trojan
+    name: 亚太地区+V2CROSS.COM
+    server: 103.154.63.16
+    port: 443
+    password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+华盛顿州昆西Microsoft公司
+    server: 51.143.138.178
+    port: 33028
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMUUJyTHo0bHV5OWUxcWc1UzdOV0hN
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 广东省广州市移动47
+    server: 1j8p05.abzoones.xyz
+    port: 36106
+    uuid: 95186f58-9a22-43c3-b42e-96475b190250
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.68.92.29
+    port: 14700
+    password: X0OCYKnTagDg
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广西河池市联通51
     ws-opts:
       path: /
       headers:
-        host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
-    server: m.cnmjcn.com
-    port: 16620
-    uuid: c99074bd-bacd-48b5-9561-da069c481602
+        host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
+    server: yes.cnmjcn.net
+    port: 16626
+    uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省广州市移动52
+    server: 1j8p06.abzoones.xyz
+    port: 36111
+    uuid: 95186f58-9a22-43c3-b42e-96475b190250
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: ss
+    name: 伊朗+V2CROSS.COM
+    server: 46.245.64.116
+    port: 321
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwLUNxVkVVRnkxUlBFYXF4YnA5dTNR
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 广东省广州市移动90
+    server: 7p3h04.abzoones.xyz
+    port: 36801
+    uuid: 95186f58-9a22-43c3-b42e-96475b190250
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 美国马里兰州罗耀拉大学95
+    ws-opts:
+      path: /v118-fccxmxm35
+      headers:
+        host: internet.life.com.by
+    server: 144.126.145.219
+    port: 80
+    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国V2CROSS.COM98
+    server: 129.80.151.246
+    port: 40059
+    uuid: 1b359f51-72df-4435-81df-b92cf75262d9
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 18.185.106.180
+    port: 14703
+    password: siqvAjC0qIrD
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省广州市移动113
+    server: 9s5g05.abzoones.xyz
+    port: 36206
+    uuid: 95186f58-9a22-43c3-b42e-96475b190250
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 美国加利福尼亚州圣何塞Cloudflare节点114
+    ws-opts:
+      path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
+      headers:
+        host: larger-marketing-amounts-skin.trycloudflare.com
+    server: 103.21.244.156
+    port: 8080
+    uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
     name: 美国+麻省理工学院
-    server: 18.119.129.115
-    port: 14639
-    password: nBHyaYzY5RP3
+    server: 18.143.139.120
+    port: 14739
+    password: U1VKt0by5act
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.199.12.195
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 韩国+首尔Amazon数据中心
-    server: 13.124.187.84
-    port: 14642
-    password: Q3sYggJBP5Yq
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 日本+东京都亚马逊(Amazon)公司数据中心
-    server: 54.248.156.53
-    port: 14643
-    password: 4kIYGTmMItGj
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 35.181.213.106
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-    server: 35.177.209.14
-    port: 14652
-    password: yWz6vSFanOlm
+    name: 日本+V2CROSS.COM
+    server: 43.203.197.212
+    port: 14744
+    password: BmnrYCwTKmeJ
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -10984,46 +11191,55 @@ proxy-groups:
       - US_speednode_0138
       - US_speednode_0139
       - 高性价比机场:https://kfcloud.xyz/
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇮🇷 伊朗 v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 20
       - 🇨🇳 广东省江门市+移动
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇸 美国 CloudFlare节点 35
-      - 🇺🇸 美国 CloudFlare节点 39
-      - 🇺🇸 美国 CloudFlare节点 40
-      - 🇺🇸 美国 Merit网络公司
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 44
-      - 🇺🇸 美国 CloudFlare节点 54
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇫🇷 法国 v2rayfree.eu.org
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国 CloudFlare节点 65
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
+      - 🇺🇦 乌克兰 v2rayfree.eu.org
+      - 🇸🇬 新加坡 Amazon数据中心
       - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 79
-      - 🇺🇸 美国 CloudFlare节点 80
-      - 🇺🇸 美国 CloudFlare节点 91
-      - 🇺🇸 美国 惠普公司
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇺🇸 美国 CloudFlare节点 105
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 28
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 40
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇬🇧 英国 社会保险安全部
-      - 🇺🇸 美国 CloudFlare节点 108
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 42
+      - 🇺🇸 美国 麻省理工学院
       - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 54
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 62
+      - 🇺🇸 美国 CloudFlare节点 63
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇰🇷 韩国 首尔Amazon数据中心
+      - 🇨🇳 江苏省镇江市 联通IDC机房
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
+      - 🇨🇳 广东省江门市+移动 2
+      - 🇺🇸 美国 CloudFlare节点 84
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国+Amazon数据中心
+      - 🇬🇧 英国 社会保险安全部 2
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 3
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 CloudFlare节点 91
+      - 🇧🇷 巴西圣保罗 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 97
+      - 🇺🇸 美国 CloudFlare节点 99
+      - 🇺🇸 美国 v2rayfree.eu.org
       - 🇷🇺 俄罗斯  1
       - 🇵🇱 波兰  5
-      - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
-      - 🇨🇳 广东省江门市移动 8
-      - 🇺🇸 美国CloudFlare公司CDN节点 9
       - 🇨🇳 广东省江门市移动 11
+      - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
+      - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@4
       - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_0@11
       - 🇺🇸_US_美国_1_0@23
       - 🇺🇸_US_美国->🇩🇪_DE_德国_29_0@31
@@ -11124,23 +11340,23 @@ proxy-groups:
       - 🇬🇧GB-13.42.99.252-162_2@162
       - 🏁RELAY-173.245.58.10-163_2@163
       - 🏁RELAY-162.159.134.125-166_2@166
-      - 🇮🇹IT-95.164.46.235-169_2@169
       - 🇬🇧GB-18.169.157.148-172_2@172
       - 🇬🇧GB-3.9.97.178-178_2@178
       - 🏁RELAY-198.41.201.180-180_2@180
       - 🇺🇸US-18.223.171.151-183_2@183
       - 🇯🇵JP-13.231.96.162-194_2@194
-      - 🏁RELAY-173.245.58.159-195_2@195
       - 🇺🇸US-34.216.37.44-201_2@201
+      - 🏁RELAY-190.93.246.235-205_2@205
       - 🇮🇪IE-54.73.249.105-206_2@206
       - 🇯🇵JP-13.231.46.130-211_2@211
       - 🏁RELAY-190.93.246.129-220_2@220
       - 🏁RELAY-190.93.245.119-223_2@223
+      - 🏁RELAY-173.245.58.1-226_2@226
       - 🏁RELAY-198.41.219.14-227_2@227
+      - 🇦🇶FASTLY-146.75.79.10-229_2@229
       - 🏁RELAY-190.93.246.154-231_2@231
       - 🏁RELAY-23.227.39.24-232_2@232
       - 🏁RELAY-173.245.58.204-233_2@233
-      - 🏁RELAY-162.159.45.211-234_2@234
       - 🇳🇱NL-185.236.233.111-236_2@236
       - 🇨🇳CN-220.205.37.41-243_2@243
       - 🏁RELAY-190.93.246.168-244_2@244
@@ -11152,15 +11368,36 @@ proxy-groups:
       - 🇺🇸US-35.89.253.29-264_2@264
       - 🏁RELAY-141.101.122.74-266_2@266
       - 🏁RELAY-198.41.220.143-269_2@269
-      - 🏁RELAY-172.67.217.144-272_2@272
-      - 🏁RELAY-108.162.192.253-273_2@273
       - 🏁RELAY-188.114.98.155-275_2@275
       - 🇸🇪SE-51.21.142.154-281_2@281
       - 🏁RELAY-198.41.211.50-282_2@282
       - 🏁RELAY-172.64.138.230-283_2@283
       - 🇸🇬SG-54.254.240.28-285_2@285
-      - 🏁RELAY-172.67.193.36-286_2@286
       - 🏁RELAY-162.159.141.196-295_2@295
+      - 🏁RELAY-190.93.247.133-306_2@305
+      - 🇮🇩ID-172.232.250.121-310_2@309
+      - 🇬🇧GB-13.42.98.109-312_2@311
+      - 🏁RELAY-141.101.114.93-314_2@313
+      - 🇮🇷IR-78.109.193.161-317_2@316
+      - 🇩🇪DE-95.164.68.116-320_2@319
+      - 🏁RELAY-108.162.193.176-321_2@320
+      - 🇨🇳CN-120.238.122.159-323_2@322
+      - 🏁RELAY-104.17.123.55-338_2@337
+      - 🏁RELAY-173.245.58.187-342_2@341
+      - 🇺🇸US-35.91.132.65-344_2@343
+      - 🏁RELAY-173.245.49.137-347_2@346
+      - 🏁RELAY-108.162.192.243-349_2@348
+      - 🏁RELAY-104.21.8.157-359_2@358
+      - 🇰🇷KR-43.203.122.46-382_2@381
+      - 🏁RELAY-190.93.244.170-388_2@387
+      - 🇫🇷FR-15.237.216.156-402_2@401
+      - 🇺🇸US-18.189.191.191-410_2@409
+      - 🇬🇧GB-13.41.174.229-413_2@412
+      - 🇷🇺RU-45.144.2.113-415_2@414
+      - 🏁RELAY-190.93.244.1-419_2@418
+      - 🇸🇪SE-51.20.14.222-421_2@420
+      - 🏁RELAY-108.162.195.64-423_2@422
+      - 🏁RELAY-188.114.99.29-428_2@427
       - 德国 001_3@0
       - 美国 001_3@1
       - 美国 002_3@2
@@ -11282,7 +11519,6 @@ proxy-groups:
       - 越南 002_3@140
       - 韩国 002_3@141
       - 美国 048_3@151
-      - 美国 049_3@154
       - 韩国 003_3@157
       - 越南 003_3@158
       - 荷兰 005_3@159
@@ -11356,7 +11592,6 @@ proxy-groups:
       - 美国 077_3@235
       - 加拿大 112_3@236
       - 荷兰 007_3@250
-      - 加拿大 126_3@251
       - 美国 078_3@252
       - 荷兰 008_3@253
       - 美国 079_3@254
@@ -11403,7 +11638,6 @@ proxy-groups:
       - 加拿大 151_3@295
       - 加拿大 152_3@296
       - 加拿大 153_3@297
-      - 加拿大 154_3@298
       - 加拿大 155_3@299
       - 加拿大 156_3@300
       - 加拿大 157_3@301
@@ -11532,8 +11766,6 @@ proxy-groups:
       - 荷兰 038_3@491
       - 加拿大 249_3@492
       - 荷兰 039_3@494
-      - 加拿大 250_3@495
-      - 荷兰 040_3@498
       - 加拿大 252_3@499
       - 加拿大 254_3@501
       - 加拿大 255_3@503
@@ -11546,7 +11778,6 @@ proxy-groups:
       - 法国 010_3@512
       - 德国 008_3@513
       - 加拿大 261_3@517
-      - 美国 144_3@519
       - 波兰 005_3@523
       - 美国 146_3@526
       - 美国 147_3@527
@@ -11611,7 +11842,6 @@ proxy-groups:
       - 美国 182_3@605
       - 荷兰 051_3@606
       - 法国 013_3@608
-      - 美国 183_3@609
       - 英国 005_3@610
       - 加拿大 288_3@612
       - 加拿大 290_3@614
@@ -11640,8 +11870,6 @@ proxy-groups:
       - 加拿大 338_3@679
       - 加拿大 343_3@686
       - 哥斯达黎加 017_3@687
-      - 美国 200_3@695
-      - 加拿大 350_3@696
       - 加拿大 352_3@698
       - 哥斯达黎加 018_3@699
       - 加拿大 353_3@700
@@ -11660,7 +11888,6 @@ proxy-groups:
       - 美国 208_3@715
       - 美国 209_3@716
       - 美国 210_3@720
-      - 加拿大 362_3@721
       - 加拿大 366_3@726
       - 加拿大 369_3@729
       - 加拿大 370_3@730
@@ -11678,7 +11905,6 @@ proxy-groups:
       - 美国 218_3@745
       - 美国 219_3@746
       - 美国 220_3@747
-      - 荷兰 056_3@749
       - 法国 015_3@750
       - 美国 221_3@751
       - 波兰 009_3@752
@@ -11701,7 +11927,6 @@ proxy-groups:
       - 加拿大 380_3@770
       - 哥斯达黎加 022_3@771
       - 美国 233_3@772
-      - 🇨🇦_CA_加拿大_1_6@56
       - 🇺🇸_US_美国_7_6@62
       - 🇺🇸_US_美国_8_6@63
       - 🇺🇸_US_美国_14_6@91
@@ -11725,21 +11950,27 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.68.134.69:2375_7@17
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
-      - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@24
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 英国+社会保险安全部
-      - 广东省移动49
+      - 广东省广州市移动5
+      - 广东省广州市移动12
+      - 广东省江门市+移动
+      - 美国+惠普公司
+      - 广东省广州市移动30
+      - 亚太地区+V2CROSS.COM
+      - 美国+华盛顿州昆西Microsoft公司
+      - 广东省广州市移动47
+      - 美国+Amazon+EC2服务器
+      - 广西河池市联通51
+      - 广东省广州市移动52
+      - 伊朗+V2CROSS.COM
+      - 广东省广州市移动90
+      - 美国马里兰州罗耀拉大学95
+      - 美国V2CROSS.COM98
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省广州市移动113
+      - 美国加利福尼亚州圣何塞Cloudflare节点114
       - 美国+麻省理工学院
-      - 美国+Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 法国+巴黎Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 日本+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -11860,46 +12091,55 @@ proxy-groups:
       - US_speednode_0138
       - US_speednode_0139
       - 高性价比机场:https://kfcloud.xyz/
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇮🇷 伊朗 v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 20
       - 🇨🇳 广东省江门市+移动
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇸 美国 CloudFlare节点 35
-      - 🇺🇸 美国 CloudFlare节点 39
-      - 🇺🇸 美国 CloudFlare节点 40
-      - 🇺🇸 美国 Merit网络公司
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 44
-      - 🇺🇸 美国 CloudFlare节点 54
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇫🇷 法国 v2rayfree.eu.org
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国 CloudFlare节点 65
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
+      - 🇺🇦 乌克兰 v2rayfree.eu.org
+      - 🇸🇬 新加坡 Amazon数据中心
       - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 79
-      - 🇺🇸 美国 CloudFlare节点 80
-      - 🇺🇸 美国 CloudFlare节点 91
-      - 🇺🇸 美国 惠普公司
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇺🇸 美国 CloudFlare节点 105
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 28
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 40
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇬🇧 英国 社会保险安全部
-      - 🇺🇸 美国 CloudFlare节点 108
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 42
+      - 🇺🇸 美国 麻省理工学院
       - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 54
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 62
+      - 🇺🇸 美国 CloudFlare节点 63
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇰🇷 韩国 首尔Amazon数据中心
+      - 🇨🇳 江苏省镇江市 联通IDC机房
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
+      - 🇨🇳 广东省江门市+移动 2
+      - 🇺🇸 美国 CloudFlare节点 84
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国+Amazon数据中心
+      - 🇬🇧 英国 社会保险安全部 2
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 3
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 CloudFlare节点 91
+      - 🇧🇷 巴西圣保罗 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 97
+      - 🇺🇸 美国 CloudFlare节点 99
+      - 🇺🇸 美国 v2rayfree.eu.org
       - 🇷🇺 俄罗斯  1
       - 🇵🇱 波兰  5
-      - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
-      - 🇨🇳 广东省江门市移动 8
-      - 🇺🇸 美国CloudFlare公司CDN节点 9
       - 🇨🇳 广东省江门市移动 11
+      - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
+      - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@4
       - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_0@11
       - 🇺🇸_US_美国_1_0@23
       - 🇺🇸_US_美国->🇩🇪_DE_德国_29_0@31
@@ -12000,23 +12240,23 @@ proxy-groups:
       - 🇬🇧GB-13.42.99.252-162_2@162
       - 🏁RELAY-173.245.58.10-163_2@163
       - 🏁RELAY-162.159.134.125-166_2@166
-      - 🇮🇹IT-95.164.46.235-169_2@169
       - 🇬🇧GB-18.169.157.148-172_2@172
       - 🇬🇧GB-3.9.97.178-178_2@178
       - 🏁RELAY-198.41.201.180-180_2@180
       - 🇺🇸US-18.223.171.151-183_2@183
       - 🇯🇵JP-13.231.96.162-194_2@194
-      - 🏁RELAY-173.245.58.159-195_2@195
       - 🇺🇸US-34.216.37.44-201_2@201
+      - 🏁RELAY-190.93.246.235-205_2@205
       - 🇮🇪IE-54.73.249.105-206_2@206
       - 🇯🇵JP-13.231.46.130-211_2@211
       - 🏁RELAY-190.93.246.129-220_2@220
       - 🏁RELAY-190.93.245.119-223_2@223
+      - 🏁RELAY-173.245.58.1-226_2@226
       - 🏁RELAY-198.41.219.14-227_2@227
+      - 🇦🇶FASTLY-146.75.79.10-229_2@229
       - 🏁RELAY-190.93.246.154-231_2@231
       - 🏁RELAY-23.227.39.24-232_2@232
       - 🏁RELAY-173.245.58.204-233_2@233
-      - 🏁RELAY-162.159.45.211-234_2@234
       - 🇳🇱NL-185.236.233.111-236_2@236
       - 🇨🇳CN-220.205.37.41-243_2@243
       - 🏁RELAY-190.93.246.168-244_2@244
@@ -12028,15 +12268,36 @@ proxy-groups:
       - 🇺🇸US-35.89.253.29-264_2@264
       - 🏁RELAY-141.101.122.74-266_2@266
       - 🏁RELAY-198.41.220.143-269_2@269
-      - 🏁RELAY-172.67.217.144-272_2@272
-      - 🏁RELAY-108.162.192.253-273_2@273
       - 🏁RELAY-188.114.98.155-275_2@275
       - 🇸🇪SE-51.21.142.154-281_2@281
       - 🏁RELAY-198.41.211.50-282_2@282
       - 🏁RELAY-172.64.138.230-283_2@283
       - 🇸🇬SG-54.254.240.28-285_2@285
-      - 🏁RELAY-172.67.193.36-286_2@286
       - 🏁RELAY-162.159.141.196-295_2@295
+      - 🏁RELAY-190.93.247.133-306_2@305
+      - 🇮🇩ID-172.232.250.121-310_2@309
+      - 🇬🇧GB-13.42.98.109-312_2@311
+      - 🏁RELAY-141.101.114.93-314_2@313
+      - 🇮🇷IR-78.109.193.161-317_2@316
+      - 🇩🇪DE-95.164.68.116-320_2@319
+      - 🏁RELAY-108.162.193.176-321_2@320
+      - 🇨🇳CN-120.238.122.159-323_2@322
+      - 🏁RELAY-104.17.123.55-338_2@337
+      - 🏁RELAY-173.245.58.187-342_2@341
+      - 🇺🇸US-35.91.132.65-344_2@343
+      - 🏁RELAY-173.245.49.137-347_2@346
+      - 🏁RELAY-108.162.192.243-349_2@348
+      - 🏁RELAY-104.21.8.157-359_2@358
+      - 🇰🇷KR-43.203.122.46-382_2@381
+      - 🏁RELAY-190.93.244.170-388_2@387
+      - 🇫🇷FR-15.237.216.156-402_2@401
+      - 🇺🇸US-18.189.191.191-410_2@409
+      - 🇬🇧GB-13.41.174.229-413_2@412
+      - 🇷🇺RU-45.144.2.113-415_2@414
+      - 🏁RELAY-190.93.244.1-419_2@418
+      - 🇸🇪SE-51.20.14.222-421_2@420
+      - 🏁RELAY-108.162.195.64-423_2@422
+      - 🏁RELAY-188.114.99.29-428_2@427
       - 德国 001_3@0
       - 美国 001_3@1
       - 美国 002_3@2
@@ -12158,7 +12419,6 @@ proxy-groups:
       - 越南 002_3@140
       - 韩国 002_3@141
       - 美国 048_3@151
-      - 美国 049_3@154
       - 韩国 003_3@157
       - 越南 003_3@158
       - 荷兰 005_3@159
@@ -12232,7 +12492,6 @@ proxy-groups:
       - 美国 077_3@235
       - 加拿大 112_3@236
       - 荷兰 007_3@250
-      - 加拿大 126_3@251
       - 美国 078_3@252
       - 荷兰 008_3@253
       - 美国 079_3@254
@@ -12279,7 +12538,6 @@ proxy-groups:
       - 加拿大 151_3@295
       - 加拿大 152_3@296
       - 加拿大 153_3@297
-      - 加拿大 154_3@298
       - 加拿大 155_3@299
       - 加拿大 156_3@300
       - 加拿大 157_3@301
@@ -12408,8 +12666,6 @@ proxy-groups:
       - 荷兰 038_3@491
       - 加拿大 249_3@492
       - 荷兰 039_3@494
-      - 加拿大 250_3@495
-      - 荷兰 040_3@498
       - 加拿大 252_3@499
       - 加拿大 254_3@501
       - 加拿大 255_3@503
@@ -12422,7 +12678,6 @@ proxy-groups:
       - 法国 010_3@512
       - 德国 008_3@513
       - 加拿大 261_3@517
-      - 美国 144_3@519
       - 波兰 005_3@523
       - 美国 146_3@526
       - 美国 147_3@527
@@ -12487,7 +12742,6 @@ proxy-groups:
       - 美国 182_3@605
       - 荷兰 051_3@606
       - 法国 013_3@608
-      - 美国 183_3@609
       - 英国 005_3@610
       - 加拿大 288_3@612
       - 加拿大 290_3@614
@@ -12516,8 +12770,6 @@ proxy-groups:
       - 加拿大 338_3@679
       - 加拿大 343_3@686
       - 哥斯达黎加 017_3@687
-      - 美国 200_3@695
-      - 加拿大 350_3@696
       - 加拿大 352_3@698
       - 哥斯达黎加 018_3@699
       - 加拿大 353_3@700
@@ -12536,7 +12788,6 @@ proxy-groups:
       - 美国 208_3@715
       - 美国 209_3@716
       - 美国 210_3@720
-      - 加拿大 362_3@721
       - 加拿大 366_3@726
       - 加拿大 369_3@729
       - 加拿大 370_3@730
@@ -12554,7 +12805,6 @@ proxy-groups:
       - 美国 218_3@745
       - 美国 219_3@746
       - 美国 220_3@747
-      - 荷兰 056_3@749
       - 法国 015_3@750
       - 美国 221_3@751
       - 波兰 009_3@752
@@ -12577,7 +12827,6 @@ proxy-groups:
       - 加拿大 380_3@770
       - 哥斯达黎加 022_3@771
       - 美国 233_3@772
-      - 🇨🇦_CA_加拿大_1_6@56
       - 🇺🇸_US_美国_7_6@62
       - 🇺🇸_US_美国_8_6@63
       - 🇺🇸_US_美国_14_6@91
@@ -12601,21 +12850,27 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.68.134.69:2375_7@17
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
-      - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@24
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 英国+社会保险安全部
-      - 广东省移动49
+      - 广东省广州市移动5
+      - 广东省广州市移动12
+      - 广东省江门市+移动
+      - 美国+惠普公司
+      - 广东省广州市移动30
+      - 亚太地区+V2CROSS.COM
+      - 美国+华盛顿州昆西Microsoft公司
+      - 广东省广州市移动47
+      - 美国+Amazon+EC2服务器
+      - 广西河池市联通51
+      - 广东省广州市移动52
+      - 伊朗+V2CROSS.COM
+      - 广东省广州市移动90
+      - 美国马里兰州罗耀拉大学95
+      - 美国V2CROSS.COM98
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省广州市移动113
+      - 美国加利福尼亚州圣何塞Cloudflare节点114
       - 美国+麻省理工学院
-      - 美国+Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 法国+巴黎Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 日本+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -12735,46 +12990,55 @@ proxy-groups:
       - US_speednode_0138
       - US_speednode_0139
       - 高性价比机场:https://kfcloud.xyz/
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇮🇷 伊朗 v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 20
       - 🇨🇳 广东省江门市+移动
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇸 美国 CloudFlare节点 35
-      - 🇺🇸 美国 CloudFlare节点 39
-      - 🇺🇸 美国 CloudFlare节点 40
-      - 🇺🇸 美国 Merit网络公司
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 44
-      - 🇺🇸 美国 CloudFlare节点 54
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇫🇷 法国 v2rayfree.eu.org
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国 CloudFlare节点 65
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
+      - 🇺🇦 乌克兰 v2rayfree.eu.org
+      - 🇸🇬 新加坡 Amazon数据中心
       - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 79
-      - 🇺🇸 美国 CloudFlare节点 80
-      - 🇺🇸 美国 CloudFlare节点 91
-      - 🇺🇸 美国 惠普公司
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇺🇸 美国 CloudFlare节点 105
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 28
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 40
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇬🇧 英国 社会保险安全部
-      - 🇺🇸 美国 CloudFlare节点 108
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 42
+      - 🇺🇸 美国 麻省理工学院
       - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 54
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 62
+      - 🇺🇸 美国 CloudFlare节点 63
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇰🇷 韩国 首尔Amazon数据中心
+      - 🇨🇳 江苏省镇江市 联通IDC机房
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
+      - 🇨🇳 广东省江门市+移动 2
+      - 🇺🇸 美国 CloudFlare节点 84
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国+Amazon数据中心
+      - 🇬🇧 英国 社会保险安全部 2
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 3
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 CloudFlare节点 91
+      - 🇧🇷 巴西圣保罗 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 97
+      - 🇺🇸 美国 CloudFlare节点 99
+      - 🇺🇸 美国 v2rayfree.eu.org
       - 🇷🇺 俄罗斯  1
       - 🇵🇱 波兰  5
-      - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
-      - 🇨🇳 广东省江门市移动 8
-      - 🇺🇸 美国CloudFlare公司CDN节点 9
       - 🇨🇳 广东省江门市移动 11
+      - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
+      - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@4
       - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_0@11
       - 🇺🇸_US_美国_1_0@23
       - 🇺🇸_US_美国->🇩🇪_DE_德国_29_0@31
@@ -12875,23 +13139,23 @@ proxy-groups:
       - 🇬🇧GB-13.42.99.252-162_2@162
       - 🏁RELAY-173.245.58.10-163_2@163
       - 🏁RELAY-162.159.134.125-166_2@166
-      - 🇮🇹IT-95.164.46.235-169_2@169
       - 🇬🇧GB-18.169.157.148-172_2@172
       - 🇬🇧GB-3.9.97.178-178_2@178
       - 🏁RELAY-198.41.201.180-180_2@180
       - 🇺🇸US-18.223.171.151-183_2@183
       - 🇯🇵JP-13.231.96.162-194_2@194
-      - 🏁RELAY-173.245.58.159-195_2@195
       - 🇺🇸US-34.216.37.44-201_2@201
+      - 🏁RELAY-190.93.246.235-205_2@205
       - 🇮🇪IE-54.73.249.105-206_2@206
       - 🇯🇵JP-13.231.46.130-211_2@211
       - 🏁RELAY-190.93.246.129-220_2@220
       - 🏁RELAY-190.93.245.119-223_2@223
+      - 🏁RELAY-173.245.58.1-226_2@226
       - 🏁RELAY-198.41.219.14-227_2@227
+      - 🇦🇶FASTLY-146.75.79.10-229_2@229
       - 🏁RELAY-190.93.246.154-231_2@231
       - 🏁RELAY-23.227.39.24-232_2@232
       - 🏁RELAY-173.245.58.204-233_2@233
-      - 🏁RELAY-162.159.45.211-234_2@234
       - 🇳🇱NL-185.236.233.111-236_2@236
       - 🇨🇳CN-220.205.37.41-243_2@243
       - 🏁RELAY-190.93.246.168-244_2@244
@@ -12903,15 +13167,36 @@ proxy-groups:
       - 🇺🇸US-35.89.253.29-264_2@264
       - 🏁RELAY-141.101.122.74-266_2@266
       - 🏁RELAY-198.41.220.143-269_2@269
-      - 🏁RELAY-172.67.217.144-272_2@272
-      - 🏁RELAY-108.162.192.253-273_2@273
       - 🏁RELAY-188.114.98.155-275_2@275
       - 🇸🇪SE-51.21.142.154-281_2@281
       - 🏁RELAY-198.41.211.50-282_2@282
       - 🏁RELAY-172.64.138.230-283_2@283
       - 🇸🇬SG-54.254.240.28-285_2@285
-      - 🏁RELAY-172.67.193.36-286_2@286
       - 🏁RELAY-162.159.141.196-295_2@295
+      - 🏁RELAY-190.93.247.133-306_2@305
+      - 🇮🇩ID-172.232.250.121-310_2@309
+      - 🇬🇧GB-13.42.98.109-312_2@311
+      - 🏁RELAY-141.101.114.93-314_2@313
+      - 🇮🇷IR-78.109.193.161-317_2@316
+      - 🇩🇪DE-95.164.68.116-320_2@319
+      - 🏁RELAY-108.162.193.176-321_2@320
+      - 🇨🇳CN-120.238.122.159-323_2@322
+      - 🏁RELAY-104.17.123.55-338_2@337
+      - 🏁RELAY-173.245.58.187-342_2@341
+      - 🇺🇸US-35.91.132.65-344_2@343
+      - 🏁RELAY-173.245.49.137-347_2@346
+      - 🏁RELAY-108.162.192.243-349_2@348
+      - 🏁RELAY-104.21.8.157-359_2@358
+      - 🇰🇷KR-43.203.122.46-382_2@381
+      - 🏁RELAY-190.93.244.170-388_2@387
+      - 🇫🇷FR-15.237.216.156-402_2@401
+      - 🇺🇸US-18.189.191.191-410_2@409
+      - 🇬🇧GB-13.41.174.229-413_2@412
+      - 🇷🇺RU-45.144.2.113-415_2@414
+      - 🏁RELAY-190.93.244.1-419_2@418
+      - 🇸🇪SE-51.20.14.222-421_2@420
+      - 🏁RELAY-108.162.195.64-423_2@422
+      - 🏁RELAY-188.114.99.29-428_2@427
       - 德国 001_3@0
       - 美国 001_3@1
       - 美国 002_3@2
@@ -13033,7 +13318,6 @@ proxy-groups:
       - 越南 002_3@140
       - 韩国 002_3@141
       - 美国 048_3@151
-      - 美国 049_3@154
       - 韩国 003_3@157
       - 越南 003_3@158
       - 荷兰 005_3@159
@@ -13107,7 +13391,6 @@ proxy-groups:
       - 美国 077_3@235
       - 加拿大 112_3@236
       - 荷兰 007_3@250
-      - 加拿大 126_3@251
       - 美国 078_3@252
       - 荷兰 008_3@253
       - 美国 079_3@254
@@ -13154,7 +13437,6 @@ proxy-groups:
       - 加拿大 151_3@295
       - 加拿大 152_3@296
       - 加拿大 153_3@297
-      - 加拿大 154_3@298
       - 加拿大 155_3@299
       - 加拿大 156_3@300
       - 加拿大 157_3@301
@@ -13283,8 +13565,6 @@ proxy-groups:
       - 荷兰 038_3@491
       - 加拿大 249_3@492
       - 荷兰 039_3@494
-      - 加拿大 250_3@495
-      - 荷兰 040_3@498
       - 加拿大 252_3@499
       - 加拿大 254_3@501
       - 加拿大 255_3@503
@@ -13297,7 +13577,6 @@ proxy-groups:
       - 法国 010_3@512
       - 德国 008_3@513
       - 加拿大 261_3@517
-      - 美国 144_3@519
       - 波兰 005_3@523
       - 美国 146_3@526
       - 美国 147_3@527
@@ -13362,7 +13641,6 @@ proxy-groups:
       - 美国 182_3@605
       - 荷兰 051_3@606
       - 法国 013_3@608
-      - 美国 183_3@609
       - 英国 005_3@610
       - 加拿大 288_3@612
       - 加拿大 290_3@614
@@ -13391,8 +13669,6 @@ proxy-groups:
       - 加拿大 338_3@679
       - 加拿大 343_3@686
       - 哥斯达黎加 017_3@687
-      - 美国 200_3@695
-      - 加拿大 350_3@696
       - 加拿大 352_3@698
       - 哥斯达黎加 018_3@699
       - 加拿大 353_3@700
@@ -13411,7 +13687,6 @@ proxy-groups:
       - 美国 208_3@715
       - 美国 209_3@716
       - 美国 210_3@720
-      - 加拿大 362_3@721
       - 加拿大 366_3@726
       - 加拿大 369_3@729
       - 加拿大 370_3@730
@@ -13429,7 +13704,6 @@ proxy-groups:
       - 美国 218_3@745
       - 美国 219_3@746
       - 美国 220_3@747
-      - 荷兰 056_3@749
       - 法国 015_3@750
       - 美国 221_3@751
       - 波兰 009_3@752
@@ -13452,7 +13726,6 @@ proxy-groups:
       - 加拿大 380_3@770
       - 哥斯达黎加 022_3@771
       - 美国 233_3@772
-      - 🇨🇦_CA_加拿大_1_6@56
       - 🇺🇸_US_美国_7_6@62
       - 🇺🇸_US_美国_8_6@63
       - 🇺🇸_US_美国_14_6@91
@@ -13476,21 +13749,27 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.68.134.69:2375_7@17
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
-      - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@24
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 英国+社会保险安全部
-      - 广东省移动49
+      - 广东省广州市移动5
+      - 广东省广州市移动12
+      - 广东省江门市+移动
+      - 美国+惠普公司
+      - 广东省广州市移动30
+      - 亚太地区+V2CROSS.COM
+      - 美国+华盛顿州昆西Microsoft公司
+      - 广东省广州市移动47
+      - 美国+Amazon+EC2服务器
+      - 广西河池市联通51
+      - 广东省广州市移动52
+      - 伊朗+V2CROSS.COM
+      - 广东省广州市移动90
+      - 美国马里兰州罗耀拉大学95
+      - 美国V2CROSS.COM98
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省广州市移动113
+      - 美国加利福尼亚州圣何塞Cloudflare节点114
       - 美国+麻省理工学院
-      - 美国+Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 法国+巴黎Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 日本+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -13642,46 +13921,55 @@ proxy-groups:
       - US_speednode_0138
       - US_speednode_0139
       - 高性价比机场:https://kfcloud.xyz/
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇮🇷 伊朗 v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 20
       - 🇨🇳 广东省江门市+移动
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇸 美国 CloudFlare节点 35
-      - 🇺🇸 美国 CloudFlare节点 39
-      - 🇺🇸 美国 CloudFlare节点 40
-      - 🇺🇸 美国 Merit网络公司
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 44
-      - 🇺🇸 美国 CloudFlare节点 54
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇫🇷 法国 v2rayfree.eu.org
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国 CloudFlare节点 65
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
+      - 🇺🇦 乌克兰 v2rayfree.eu.org
+      - 🇸🇬 新加坡 Amazon数据中心
       - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 79
-      - 🇺🇸 美国 CloudFlare节点 80
-      - 🇺🇸 美国 CloudFlare节点 91
-      - 🇺🇸 美国 惠普公司
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇺🇸 美国 CloudFlare节点 105
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 28
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 40
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇬🇧 英国 社会保险安全部
-      - 🇺🇸 美国 CloudFlare节点 108
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 42
+      - 🇺🇸 美国 麻省理工学院
       - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 54
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 62
+      - 🇺🇸 美国 CloudFlare节点 63
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇰🇷 韩国 首尔Amazon数据中心
+      - 🇨🇳 江苏省镇江市 联通IDC机房
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
+      - 🇨🇳 广东省江门市+移动 2
+      - 🇺🇸 美国 CloudFlare节点 84
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国+Amazon数据中心
+      - 🇬🇧 英国 社会保险安全部 2
+      - 🇺🇦 乌克兰 v2rayfree.eu.org 3
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 CloudFlare节点 91
+      - 🇧🇷 巴西圣保罗 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 97
+      - 🇺🇸 美国 CloudFlare节点 99
+      - 🇺🇸 美国 v2rayfree.eu.org
       - 🇷🇺 俄罗斯  1
       - 🇵🇱 波兰  5
-      - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
-      - 🇨🇳 广东省江门市移动 8
-      - 🇺🇸 美国CloudFlare公司CDN节点 9
       - 🇨🇳 广东省江门市移动 11
+      - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
+      - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@4
       - 🇨🇷_CR_哥斯达黎加->🇨🇦_CA_加拿大_0@11
       - 🇺🇸_US_美国_1_0@23
       - 🇺🇸_US_美国->🇩🇪_DE_德国_29_0@31
@@ -13782,23 +14070,23 @@ proxy-groups:
       - 🇬🇧GB-13.42.99.252-162_2@162
       - 🏁RELAY-173.245.58.10-163_2@163
       - 🏁RELAY-162.159.134.125-166_2@166
-      - 🇮🇹IT-95.164.46.235-169_2@169
       - 🇬🇧GB-18.169.157.148-172_2@172
       - 🇬🇧GB-3.9.97.178-178_2@178
       - 🏁RELAY-198.41.201.180-180_2@180
       - 🇺🇸US-18.223.171.151-183_2@183
       - 🇯🇵JP-13.231.96.162-194_2@194
-      - 🏁RELAY-173.245.58.159-195_2@195
       - 🇺🇸US-34.216.37.44-201_2@201
+      - 🏁RELAY-190.93.246.235-205_2@205
       - 🇮🇪IE-54.73.249.105-206_2@206
       - 🇯🇵JP-13.231.46.130-211_2@211
       - 🏁RELAY-190.93.246.129-220_2@220
       - 🏁RELAY-190.93.245.119-223_2@223
+      - 🏁RELAY-173.245.58.1-226_2@226
       - 🏁RELAY-198.41.219.14-227_2@227
+      - 🇦🇶FASTLY-146.75.79.10-229_2@229
       - 🏁RELAY-190.93.246.154-231_2@231
       - 🏁RELAY-23.227.39.24-232_2@232
       - 🏁RELAY-173.245.58.204-233_2@233
-      - 🏁RELAY-162.159.45.211-234_2@234
       - 🇳🇱NL-185.236.233.111-236_2@236
       - 🇨🇳CN-220.205.37.41-243_2@243
       - 🏁RELAY-190.93.246.168-244_2@244
@@ -13810,15 +14098,36 @@ proxy-groups:
       - 🇺🇸US-35.89.253.29-264_2@264
       - 🏁RELAY-141.101.122.74-266_2@266
       - 🏁RELAY-198.41.220.143-269_2@269
-      - 🏁RELAY-172.67.217.144-272_2@272
-      - 🏁RELAY-108.162.192.253-273_2@273
       - 🏁RELAY-188.114.98.155-275_2@275
       - 🇸🇪SE-51.21.142.154-281_2@281
       - 🏁RELAY-198.41.211.50-282_2@282
       - 🏁RELAY-172.64.138.230-283_2@283
       - 🇸🇬SG-54.254.240.28-285_2@285
-      - 🏁RELAY-172.67.193.36-286_2@286
       - 🏁RELAY-162.159.141.196-295_2@295
+      - 🏁RELAY-190.93.247.133-306_2@305
+      - 🇮🇩ID-172.232.250.121-310_2@309
+      - 🇬🇧GB-13.42.98.109-312_2@311
+      - 🏁RELAY-141.101.114.93-314_2@313
+      - 🇮🇷IR-78.109.193.161-317_2@316
+      - 🇩🇪DE-95.164.68.116-320_2@319
+      - 🏁RELAY-108.162.193.176-321_2@320
+      - 🇨🇳CN-120.238.122.159-323_2@322
+      - 🏁RELAY-104.17.123.55-338_2@337
+      - 🏁RELAY-173.245.58.187-342_2@341
+      - 🇺🇸US-35.91.132.65-344_2@343
+      - 🏁RELAY-173.245.49.137-347_2@346
+      - 🏁RELAY-108.162.192.243-349_2@348
+      - 🏁RELAY-104.21.8.157-359_2@358
+      - 🇰🇷KR-43.203.122.46-382_2@381
+      - 🏁RELAY-190.93.244.170-388_2@387
+      - 🇫🇷FR-15.237.216.156-402_2@401
+      - 🇺🇸US-18.189.191.191-410_2@409
+      - 🇬🇧GB-13.41.174.229-413_2@412
+      - 🇷🇺RU-45.144.2.113-415_2@414
+      - 🏁RELAY-190.93.244.1-419_2@418
+      - 🇸🇪SE-51.20.14.222-421_2@420
+      - 🏁RELAY-108.162.195.64-423_2@422
+      - 🏁RELAY-188.114.99.29-428_2@427
       - 德国 001_3@0
       - 美国 001_3@1
       - 美国 002_3@2
@@ -13940,7 +14249,6 @@ proxy-groups:
       - 越南 002_3@140
       - 韩国 002_3@141
       - 美国 048_3@151
-      - 美国 049_3@154
       - 韩国 003_3@157
       - 越南 003_3@158
       - 荷兰 005_3@159
@@ -14014,7 +14322,6 @@ proxy-groups:
       - 美国 077_3@235
       - 加拿大 112_3@236
       - 荷兰 007_3@250
-      - 加拿大 126_3@251
       - 美国 078_3@252
       - 荷兰 008_3@253
       - 美国 079_3@254
@@ -14061,7 +14368,6 @@ proxy-groups:
       - 加拿大 151_3@295
       - 加拿大 152_3@296
       - 加拿大 153_3@297
-      - 加拿大 154_3@298
       - 加拿大 155_3@299
       - 加拿大 156_3@300
       - 加拿大 157_3@301
@@ -14190,8 +14496,6 @@ proxy-groups:
       - 荷兰 038_3@491
       - 加拿大 249_3@492
       - 荷兰 039_3@494
-      - 加拿大 250_3@495
-      - 荷兰 040_3@498
       - 加拿大 252_3@499
       - 加拿大 254_3@501
       - 加拿大 255_3@503
@@ -14204,7 +14508,6 @@ proxy-groups:
       - 法国 010_3@512
       - 德国 008_3@513
       - 加拿大 261_3@517
-      - 美国 144_3@519
       - 波兰 005_3@523
       - 美国 146_3@526
       - 美国 147_3@527
@@ -14269,7 +14572,6 @@ proxy-groups:
       - 美国 182_3@605
       - 荷兰 051_3@606
       - 法国 013_3@608
-      - 美国 183_3@609
       - 英国 005_3@610
       - 加拿大 288_3@612
       - 加拿大 290_3@614
@@ -14298,8 +14600,6 @@ proxy-groups:
       - 加拿大 338_3@679
       - 加拿大 343_3@686
       - 哥斯达黎加 017_3@687
-      - 美国 200_3@695
-      - 加拿大 350_3@696
       - 加拿大 352_3@698
       - 哥斯达黎加 018_3@699
       - 加拿大 353_3@700
@@ -14318,7 +14618,6 @@ proxy-groups:
       - 美国 208_3@715
       - 美国 209_3@716
       - 美国 210_3@720
-      - 加拿大 362_3@721
       - 加拿大 366_3@726
       - 加拿大 369_3@729
       - 加拿大 370_3@730
@@ -14336,7 +14635,6 @@ proxy-groups:
       - 美国 218_3@745
       - 美国 219_3@746
       - 美国 220_3@747
-      - 荷兰 056_3@749
       - 法国 015_3@750
       - 美国 221_3@751
       - 波兰 009_3@752
@@ -14359,7 +14657,6 @@ proxy-groups:
       - 加拿大 380_3@770
       - 哥斯达黎加 022_3@771
       - 美国 233_3@772
-      - 🇨🇦_CA_加拿大_1_6@56
       - 🇺🇸_US_美国_7_6@62
       - 🇺🇸_US_美国_8_6@63
       - 🇺🇸_US_美国_14_6@91
@@ -14383,21 +14680,27 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.68.134.69:2375_7@17
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
-      - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】37_9@24
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 英国+社会保险安全部
-      - 广东省移动49
+      - 广东省广州市移动5
+      - 广东省广州市移动12
+      - 广东省江门市+移动
+      - 美国+惠普公司
+      - 广东省广州市移动30
+      - 亚太地区+V2CROSS.COM
+      - 美国+华盛顿州昆西Microsoft公司
+      - 广东省广州市移动47
+      - 美国+Amazon+EC2服务器
+      - 广西河池市联通51
+      - 广东省广州市移动52
+      - 伊朗+V2CROSS.COM
+      - 广东省广州市移动90
+      - 美国马里兰州罗耀拉大学95
+      - 美国V2CROSS.COM98
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 广东省广州市移动113
+      - 美国加利福尼亚州圣何塞Cloudflare节点114
       - 美国+麻省理工学院
-      - 美国+Amazon数据中心
-      - 韩国+首尔Amazon数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 法国+巴黎Amazon数据中心
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 日本+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
