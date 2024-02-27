@@ -1,4 +1,4 @@
-# 更新时间 2024-02-27T06:50:29.939Z
+# 更新时间 2024-02-27T07:06:28.557Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -8966,84 +8966,83 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 34.216.37.44
+    port: 12373
+    password: 59EgbzjbnwIP
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
     name: 美国+新泽西州Linode公司
-    server: us-full.privateip.net
+    server: 96.126.127.7
     port: 443
     password: fbd8e1fb-099e-4e42-89fe-3c41a617148d
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 乌克兰+V2CROSS.COM
-    server: tr-full.privateip.net
-    port: 443
-    password: c38059a9-02f4-436c-891e-3818cd601e5a
+    name: 美国+Amazon数据中心
+    server: 13.40.61.107
+    port: 12348
+    password: ccUVTWR8hfGt
     udp: true
     skip-cert-verify: true
   - type: ss
-    name: 俄罗斯+V2CROSS.COM
-    server: 212.113.106.243
-    port: 12949
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQMnp4WFBld2xWM0JsZnFxWWlTdGh2dExj
+    name: 美国+麻省理工学院
+    server: wxwctxxx.arvancode.eu.org
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj
     cipher: aes-128-gcm
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.237.46.201
-    port: 12284
-    password: bBFBJ0Ld29ZT
+    name: 新加坡+亚马逊(Amazon)公司数据中心
+    server: 54.254.201.98
+    port: 12338
+    password: s8Lgqq2ZrJDR
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点36
+    name: 美国Fastly全球Anycast节点64
     ws-opts:
-      path: /?ed=2048
+      path: /aries?ed=2048
       headers:
-        host: eu3.openxai.link
-    server: cf.openxai.link
-    port: 8080
-    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+        host: nmsl.kp
+    server: fastly.com
+    port: 80
+    uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 美国Cloudinnovation数据中心67
+    ws-opts:
+      path: /path/271624282113
+      headers:
+        host: www.42077230.xyz
+    server: 154.85.1.2
+    port: 41003
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
   - type: trojan
-    name: 美国+Akamai科技公司CDN网络节点
-    server: 172.233.78.189
+    name: 乌克兰+V2CROSS.COM
+    server: 95.164.114.43
     port: 443
-    password: 3aa1ff1a-2909-46cc-ab7c-5e7f911b68d7
+    password: 180c7f40-c29e-445d-8056-ae92f3b451d7
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 3.127.143.66
-    port: 22222
-    password: telegram-id-privatevpns
+    name: 日本+V2CROSS.COM
+    server: 43.207.85.189
+    port: 12352
+    password: otsv7i3XkbWx
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 新加坡+Amazon数据中心
-    server: 13.212.238.198
-    port: 12309
-    password: TkDAIwMk853n
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 3.10.171.8
-    port: 12281
-    password: jTzgr13wgScI
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 35.165.89.32
-    port: 12296
-    password: gr2PoRtsGaL6
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 亚太地区+V2CROSS.COM
-    server: 103.154.63.16
-    port: 443
-    password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f
+    name: 美国+Amazon+EC2服务器
+    server: 3.133.129.83
+    port: 12361
+    password: Xh7EN9bflNmg
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -9790,17 +9789,16 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州Linode公司
-      - 乌克兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+惠普公司
-      - 美国CloudFlare节点36
-      - 美国+Akamai科技公司CDN网络节点
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦Amazon数据中心
       - 美国+俄勒冈州波特兰Amazon数据中心
-      - 亚太地区+V2CROSS.COM
+      - 美国+新泽西州Linode公司
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
+      - 新加坡+亚马逊(Amazon)公司数据中心
+      - 美国Fastly全球Anycast节点64
+      - 美国Cloudinnovation数据中心67
+      - 乌克兰+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -10545,17 +10543,16 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州Linode公司
-      - 乌克兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+惠普公司
-      - 美国CloudFlare节点36
-      - 美国+Akamai科技公司CDN网络节点
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦Amazon数据中心
       - 美国+俄勒冈州波特兰Amazon数据中心
-      - 亚太地区+V2CROSS.COM
+      - 美国+新泽西州Linode公司
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
+      - 新加坡+亚马逊(Amazon)公司数据中心
+      - 美国Fastly全球Anycast节点64
+      - 美国Cloudinnovation数据中心67
+      - 乌克兰+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -11299,17 +11296,16 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州Linode公司
-      - 乌克兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+惠普公司
-      - 美国CloudFlare节点36
-      - 美国+Akamai科技公司CDN网络节点
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦Amazon数据中心
       - 美国+俄勒冈州波特兰Amazon数据中心
-      - 亚太地区+V2CROSS.COM
+      - 美国+新泽西州Linode公司
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
+      - 新加坡+亚马逊(Amazon)公司数据中心
+      - 美国Fastly全球Anycast节点64
+      - 美国Cloudinnovation数据中心67
+      - 乌克兰+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
   - name: 📲 电报信息
     type: select
     proxies:
@@ -12085,17 +12081,16 @@ proxy-groups:
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-167.88.61.175:2375_7@18
       - SS-法国-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州Linode公司
-      - 乌克兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+惠普公司
-      - 美国CloudFlare节点36
-      - 美国+Akamai科技公司CDN网络节点
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 英国+伦敦Amazon数据中心
       - 美国+俄勒冈州波特兰Amazon数据中心
-      - 亚太地区+V2CROSS.COM
+      - 美国+新泽西州Linode公司
+      - 美国+Amazon数据中心
+      - 美国+麻省理工学院
+      - 新加坡+亚马逊(Amazon)公司数据中心
+      - 美国Fastly全球Anycast节点64
+      - 美国Cloudinnovation数据中心67
+      - 乌克兰+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
