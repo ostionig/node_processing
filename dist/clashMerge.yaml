@@ -1,4 +1,4 @@
-# 更新时间 2024-02-28T12:56:52.341Z
+# 更新时间 2024-02-28T13:16:51.451Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -9588,12 +9588,87 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 新加坡+Amazon数据中心
+    server: 54.169.224.250
+    port: 14730
+    password: 7d6Q98peaRRQ
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.135.209.85
+    port: 14723
+    password: YHQcH0xc9iLC
+    udp: true
+    skip-cert-verify: true
   - type: ss
-    name: 美国+麻省理工学院
-    server: 18.132.234.67
-    port: 443
-    password: Y2hhY2hhMjAtcG9seTEzMDU6dTE3VDNCdnBZYWFpdVcyYw==
+    name: 广东省江门市+移动
+    server: service.ouluyun9803.com
+    port: 21001
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjZmExN2EwZC01ZTdkLTQ4NzEtOTc2ZS1mMTE2ZTA4MTgxMjM=
     cipher: aes-128-gcm
+  - type: trojan
+    name: 加拿大+魁北克省蒙特利尔Amazon数据中心
+    server: 35.183.131.199
+    port: 14719
+    password: O9TW6ygioOzs
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 日本+V2CROSS.COM
+    server: 43.207.79.255
+    port: 14698
+    password: qLTnxr8HBkAT
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu1.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 意大利+V2CROSS.COM
+    server: 212.102.53.194
+    port: 443
+    password: YWVzLTEyOC1nY206c2hhZG93c29ja3M=
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 34.221.207.205
+    port: 14732
+    password: MEyFL003mtz0
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.199.81.169
+    port: 14710
+    password: b9TziWwabty5
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+俄亥俄州都柏林Amazon数据中心
+    server: 18.222.161.111
+    port: 14729
+    password: 5BobSHOKxVcF
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 英国+V2CROSS.COM
+    server: 141.94.115.231
+    port: 443
+    password: cf374638-f167-4ff5-a557-43e34e91a45f
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -10380,7 +10455,17 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】109_9@184
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】203_9@209
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+麻省理工学院
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 广东省江门市+移动
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 日本+V2CROSS.COM
+      - 美国CloudFlare节点12
+      - 意大利+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 英国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -11167,7 +11252,17 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】109_9@184
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】203_9@209
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+麻省理工学院
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 广东省江门市+移动
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 日本+V2CROSS.COM
+      - 美国CloudFlare节点12
+      - 意大利+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 英国+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -11953,7 +12048,17 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】109_9@184
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】203_9@209
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+麻省理工学院
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 广东省江门市+移动
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 日本+V2CROSS.COM
+      - 美国CloudFlare节点12
+      - 意大利+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 英国+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -12771,7 +12876,17 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】109_9@184
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】203_9@209
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+麻省理工学院
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 广东省江门市+移动
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 日本+V2CROSS.COM
+      - 美国CloudFlare节点12
+      - 意大利+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 英国+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
