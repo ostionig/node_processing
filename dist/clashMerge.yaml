@@ -1,4 +1,4 @@
-# 更新时间 2024-02-29T06:51:12.419Z
+# 更新时间 2024-02-29T07:08:16.983Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4690,8 +4690,15 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 俄罗斯+莫斯科JustHost
+    server: 185.22.154.254
+    port: 30005
+    password: 8f41de74-a6d6-4d80-b863-3ddbd67f6c38
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 德国黑森州法兰克福DigitalOcean数据中心1
+    name: 德国黑森州法兰克福DigitalOcean数据中心2
     ws-opts:
       path: /
       headers:
@@ -4702,11 +4709,18 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 美国+惠普公司
+    server: 15.237.229.191
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 8881
-    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
+    name: 英国+Technicolor+SA
+    server: beecomf.xyz
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB
     cipher: aes-128-gcm
   - type: trojan
     name: 瑞典+斯德哥尔摩Amazon数据中心
@@ -4716,7 +4730,7 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点6
+    name: 美国CloudFlare节点18
     ws-opts:
       path: /video/ibCT6z55
       headers:
@@ -4728,7 +4742,7 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点18
+    name: 美国CloudFlare节点20
     ws-opts:
       path: /video/Z7qdcrAGRw
       headers:
@@ -4739,39 +4753,30 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 广东省佛山市移动21
+    ws-opts:
+      path: /
+    server: 183.232.170.22
+    port: 30059
+    uuid: 6ae43308-07ef-4f0d-aa8f-25e480de542c
+    alterId: 0
+    cipher: auto
+    network: auto
   - type: trojan
-    name: 爱尔兰+V2CROSS.COM
-    server: 63.34.114.143
+    name: 法国+巴黎Amazon数据中心
+    server: 15.188.167.144
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+3COM公司企业网
-    server: 152.67.111.226
-    port: 38152
-    password: 8f41de74-a6d6-4d80-b863-3ddbd67f6c38
+    name: 美国+Amazon数据中心
+    server: 18.175.38.147
+    port: 22222
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: trojan
-    name: 日本+东京Oracle云计算数据中心
-    server: 140.238.54.169
-    port: 35902
-    password: 8f41de74-a6d6-4d80-b863-3ddbd67f6c38
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国纽约市DigitalOcean云公司26
-    ws-opts:
-      path: /
-      headers:
-        host: de01.hajimihajimihajimi.online
-    server: de01.hajimihajimihajimi.online
-    port: 80
-    uuid: 22b502a4-0886-4c97-9538-49faa23d2912
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5209,15 +5214,16 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】133_9@239
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@254
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心1
-      - 法国+OVH
+      - 俄罗斯+莫斯科JustHost
+      - 德国黑森州法兰克福DigitalOcean数据中心2
+      - 美国+惠普公司
+      - 英国+Technicolor+SA
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国CloudFlare节点6
       - 美国CloudFlare节点18
-      - 爱尔兰+V2CROSS.COM
-      - 美国+3COM公司企业网
-      - 日本+东京Oracle云计算数据中心
-      - 美国纽约市DigitalOcean云公司26
+      - 美国CloudFlare节点20
+      - 广东省佛山市移动21
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5655,15 +5661,16 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】133_9@239
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@254
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心1
-      - 法国+OVH
+      - 俄罗斯+莫斯科JustHost
+      - 德国黑森州法兰克福DigitalOcean数据中心2
+      - 美国+惠普公司
+      - 英国+Technicolor+SA
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国CloudFlare节点6
       - 美国CloudFlare节点18
-      - 爱尔兰+V2CROSS.COM
-      - 美国+3COM公司企业网
-      - 日本+东京Oracle云计算数据中心
-      - 美国纽约市DigitalOcean云公司26
+      - 美国CloudFlare节点20
+      - 广东省佛山市移动21
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6100,15 +6107,16 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】133_9@239
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@254
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心1
-      - 法国+OVH
+      - 俄罗斯+莫斯科JustHost
+      - 德国黑森州法兰克福DigitalOcean数据中心2
+      - 美国+惠普公司
+      - 英国+Technicolor+SA
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国CloudFlare节点6
       - 美国CloudFlare节点18
-      - 爱尔兰+V2CROSS.COM
-      - 美国+3COM公司企业网
-      - 日本+东京Oracle云计算数据中心
-      - 美国纽约市DigitalOcean云公司26
+      - 美国CloudFlare节点20
+      - 广东省佛山市移动21
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6577,15 +6585,16 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】133_9@239
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】30_9@254
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心1
-      - 法国+OVH
+      - 俄罗斯+莫斯科JustHost
+      - 德国黑森州法兰克福DigitalOcean数据中心2
+      - 美国+惠普公司
+      - 英国+Technicolor+SA
       - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国CloudFlare节点6
       - 美国CloudFlare节点18
-      - 爱尔兰+V2CROSS.COM
-      - 美国+3COM公司企业网
-      - 日本+东京Oracle云计算数据中心
-      - 美国纽约市DigitalOcean云公司26
+      - 美国CloudFlare节点20
+      - 广东省佛山市移动21
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
