@@ -1,4 +1,4 @@
-# 更新时间 2024-02-29T19:04:55.236Z
+# 更新时间 2024-03-01T01:05:16.334Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3890,168 +3890,70 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
+    name: 希腊+V2CROSS.COM
+    server: de2-full.privateip.net
+    port: 443
+    password: 4a27b319-ac1f-4479-8440-851d53580ba3
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 172.67.132.6
+    port: 2096
+    password: 6a7f8f96-d8cb-41b9-a39b-dcc9e6981412
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.75.39.6
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 15.188.225.132
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 乌克兰V2CROSS.COM13
+    ws-opts:
+      path: /vmess
+    server: 94.131.10.135
+    port: 2095
+    uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
     name: 美国+Amazon+EC2服务器
     server: 3.98.14.46
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 广东省广州市移动1
-    server: 4a2u0a06.m1k2s.xyz
-    port: 31511
-    uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 德国杜塞尔多夫xTom/AS32143
-    ws-opts:
-      path: /vmess
-    server: 5.181.23.58
-    port: 80
-    uuid: 6eff4314-ad4c-4ebc-b1d0-d3b79656f43d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省广州市移动4
-    server: 8k2r04.abzoones.xyz
-    port: 36401
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省佛山市移动7
-    server: 183.232.170.22
-    port: 30059
-    uuid: 6ae43308-07ef-4f0d-aa8f-25e480de542c
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 广东省潮州市移动8
-    server: 4t1r5u04.m1k2s.xyz
-    port: 31851
-    uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省广州市移动10
-    server: 2h4u04.abzoones.xyz
-    port: 36864
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省潮州市移动11
-    server: 3u1s04.abzoones.xyz
-    port: 36501
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 165.22.16.248
-    port: 1080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQVzFrcHBDR0hpWTlTU1poMVZvZ1hR
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 广东省广州市移动15
-    server: 6q3i1n04.m1k2s.xyz
-    port: 31831
-    uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省广州市移动17
-    server: 2u3k04.abzoones.xyz
-    port: 36811
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省潮州市移动18
-    server: 4a2u0a04.m1k2s.xyz
-    port: 31501
-    uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 34.240.226.66
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.48.82.190
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 乌克兰V2CROSS.COM22
-    ws-opts:
-      path: /vmess
-    server: 94.131.8.32
-    port: 8080
-    uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省潮州市移动26
-    server: 8r5u04.abzoones.xyz
-    port: 36851
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
   - type: trojan
-    name: 德国+黑森州法兰克福AMazon数据中心
-    server: 3.122.162.96
+    name: 美国+惠普公司
+    server: 15.236.132.186
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 广东省广州市移动29
-    server: 3d6e04.abzoones.xyz
-    port: 36841
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省广州市移动31
-    server: 3u1s06.abzoones.xyz
-    port: 36511
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省广州市移动32
-    server: 1j8p05.abzoones.xyz
-    port: 36106
-    uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
+  - type: ss
+    name: 美国+Amazon数据中心
+    server: jseyu.arvancode.eu.Org
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4411,25 +4313,15 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】276_9@30
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 广东省广州市移动1
-      - 德国杜塞尔多夫xTom/AS32143
-      - 广东省广州市移动4
-      - 广东省佛山市移动7
-      - 广东省潮州市移动8
-      - 广东省广州市移动10
-      - 广东省潮州市移动11
-      - 美国+V2CROSS.COM
-      - 广东省广州市移动15
-      - 广东省广州市移动17
-      - 广东省潮州市移动18
+      - 希腊+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 爱尔兰+都柏林Amazon数据中心
-      - 乌克兰V2CROSS.COM22
-      - 广东省潮州市移动26
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省广州市移动29
-      - 广东省广州市移动31
-      - 广东省广州市移动32
+      - 法国+巴黎Amazon数据中心
+      - 乌克兰V2CROSS.COM13
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普公司
+      - 美国+Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4789,25 +4681,15 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】276_9@30
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 广东省广州市移动1
-      - 德国杜塞尔多夫xTom/AS32143
-      - 广东省广州市移动4
-      - 广东省佛山市移动7
-      - 广东省潮州市移动8
-      - 广东省广州市移动10
-      - 广东省潮州市移动11
-      - 美国+V2CROSS.COM
-      - 广东省广州市移动15
-      - 广东省广州市移动17
-      - 广东省潮州市移动18
+      - 希腊+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 爱尔兰+都柏林Amazon数据中心
-      - 乌克兰V2CROSS.COM22
-      - 广东省潮州市移动26
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省广州市移动29
-      - 广东省广州市移动31
-      - 广东省广州市移动32
+      - 法国+巴黎Amazon数据中心
+      - 乌克兰V2CROSS.COM13
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普公司
+      - 美国+Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5166,25 +5048,15 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】276_9@30
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 广东省广州市移动1
-      - 德国杜塞尔多夫xTom/AS32143
-      - 广东省广州市移动4
-      - 广东省佛山市移动7
-      - 广东省潮州市移动8
-      - 广东省广州市移动10
-      - 广东省潮州市移动11
-      - 美国+V2CROSS.COM
-      - 广东省广州市移动15
-      - 广东省广州市移动17
-      - 广东省潮州市移动18
+      - 希腊+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 爱尔兰+都柏林Amazon数据中心
-      - 乌克兰V2CROSS.COM22
-      - 广东省潮州市移动26
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省广州市移动29
-      - 广东省广州市移动31
-      - 广东省广州市移动32
+      - 法国+巴黎Amazon数据中心
+      - 乌克兰V2CROSS.COM13
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普公司
+      - 美国+Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5575,25 +5447,15 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】276_9@30
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 广东省广州市移动1
-      - 德国杜塞尔多夫xTom/AS32143
-      - 广东省广州市移动4
-      - 广东省佛山市移动7
-      - 广东省潮州市移动8
-      - 广东省广州市移动10
-      - 广东省潮州市移动11
-      - 美国+V2CROSS.COM
-      - 广东省广州市移动15
-      - 广东省广州市移动17
-      - 广东省潮州市移动18
+      - 希腊+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 爱尔兰+都柏林Amazon数据中心
-      - 乌克兰V2CROSS.COM22
-      - 广东省潮州市移动26
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省广州市移动29
-      - 广东省广州市移动31
-      - 广东省广州市移动32
+      - 法国+巴黎Amazon数据中心
+      - 乌克兰V2CROSS.COM13
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普公司
+      - 美国+Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
