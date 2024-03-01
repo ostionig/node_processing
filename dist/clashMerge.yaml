@@ -1,4 +1,4 @@
-# 更新时间 2024-03-01T06:51:32.507Z
+# 更新时间 2024-03-01T07:07:19.027Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3985,36 +3985,13 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 美国+加利福尼亚州旧金山市Awknet通信公司
-    server: 67.220.86.148
-    port: 8000
-    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点14
-    ws-opts:
-      path: /
-      headers:
-        host: free-us.qdns.live
-    server: free.qdns.live
-    port: 80
-    uuid: ad6afad6-5659-3f25-9477-029735d5401c
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点19
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: eu3.openxai.link
-    server: cf.openxai.link
-    port: 8080
-    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 巴西圣保罗+CloudFlare节点
+    server: 188.114.99.29
+    port: 443
+    password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4408,9 +4385,7 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】8_9@16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州旧金山市Awknet通信公司
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点19
+      - 巴西圣保罗+CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4804,9 +4779,7 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】8_9@16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州旧金山市Awknet通信公司
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点19
+      - 巴西圣保罗+CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5199,9 +5172,7 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】8_9@16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州旧金山市Awknet通信公司
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点19
+      - 巴西圣保罗+CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5626,9 +5597,7 @@ proxy-groups:
       - SS-法国:荷兰-locked-ChatGPT-TikTok-51.178.87.37:800_7@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】8_9@16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州旧金山市Awknet通信公司
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点19
+      - 巴西圣保罗+CloudFlare节点
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
