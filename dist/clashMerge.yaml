@@ -1,4 +1,4 @@
-# 更新时间 2024-03-02T18:50:39.207Z
+# 更新时间 2024-03-02T19:03:15.310Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4041,59 +4041,47 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 美国+Linode数据中心
-    server: beecomf.xyz
-    port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB
-    cipher: aes-128-gcm
   - type: trojan
     name: 美国+Amazon数据中心
-    server: 18.169.148.45
+    server: 18.153.195.139
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 新加坡Amazon数据中心1
+    ws-opts:
+      path: /stream
+      headers:
+        host: d21rv6uz6osjkz.cloudfront.net
+    server: hkcft01.xqc.best
+    port: 443
+    uuid: 10625ba4-c22a-4255-9ab3-894a896b8bde
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
   - type: trojan
-    name: 美国+Xerox
-    server: 13.50.65.106
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 台湾省台北市+中华电信
-    server: 114.45.76.8
-    port: 18912
+    name: 台湾省桃园市+中华电信(HiNet)
+    server: 220.141.141.120
+    port: 13761
     password: 645f0af0-dec8-48db-862f-82b6346408b4
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 日本+东京Amazon数据中心
-    server: 3.112.42.81
-    port: 16977
-    password: sot8yCPWPvcx
+    name: 美国+CloudFlare节点
+    server: 104.16.192.155
+    port: 443
+    password: e8105dfd24414268b6c7652c63731097
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 法国+巴黎Choopa数据中心
-    server: 45.32.148.182
-    port: 443
-    password: wkmY1R4EcP
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 34.255.156.164
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare公司CDN节点(shopify)16
-    ws-opts:
-      path: 52899235-7faa-4f6f-b463-972cd7cfce04-vm
-      headers:
-        host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    server: 23.227.38.44
-    port: 8080
-    uuid: 52899235-7faa-4f6f-b463-972cd7cfce04
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4465,13 +4453,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Linode数据中心
       - 美国+Amazon数据中心
-      - 美国+Xerox
-      - 台湾省台北市+中华电信
-      - 日本+东京Amazon数据中心
-      - 法国+巴黎Choopa数据中心
-      - 美国CloudFlare公司CDN节点(shopify)16
+      - 新加坡Amazon数据中心1
+      - 台湾省桃园市+中华电信(HiNet)
+      - 美国+CloudFlare节点
+      - 爱尔兰+都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4843,13 +4829,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Linode数据中心
       - 美国+Amazon数据中心
-      - 美国+Xerox
-      - 台湾省台北市+中华电信
-      - 日本+东京Amazon数据中心
-      - 法国+巴黎Choopa数据中心
-      - 美国CloudFlare公司CDN节点(shopify)16
+      - 新加坡Amazon数据中心1
+      - 台湾省桃园市+中华电信(HiNet)
+      - 美国+CloudFlare节点
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5220,13 +5204,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Linode数据中心
       - 美国+Amazon数据中心
-      - 美国+Xerox
-      - 台湾省台北市+中华电信
-      - 日本+东京Amazon数据中心
-      - 法国+巴黎Choopa数据中心
-      - 美国CloudFlare公司CDN节点(shopify)16
+      - 新加坡Amazon数据中心1
+      - 台湾省桃园市+中华电信(HiNet)
+      - 美国+CloudFlare节点
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5629,13 +5611,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Linode数据中心
       - 美国+Amazon数据中心
-      - 美国+Xerox
-      - 台湾省台北市+中华电信
-      - 日本+东京Amazon数据中心
-      - 法国+巴黎Choopa数据中心
-      - 美国CloudFlare公司CDN节点(shopify)16
+      - 新加坡Amazon数据中心1
+      - 台湾省桃园市+中华电信(HiNet)
+      - 美国+CloudFlare节点
+      - 爱尔兰+都柏林Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
