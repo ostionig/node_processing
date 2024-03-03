@@ -1,4 +1,4 @@
-# 更新时间 2024-03-02T19:03:15.310Z
+# 更新时间 2024-03-03T01:02:49.740Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4041,6 +4041,31 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
+      headers:
+        host: larger-marketing-amounts-skin.trycloudflare.com
+    server: 104.16.149.244
+    port: 8080
+    uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 南非+V2CROSS.COM
+    server: 129.232.129.156
+    port: 444
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpEaVBpZXR5b3J5
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+惠普HP
+    server: 15.157.128.174
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: trojan
     name: 美国+Amazon数据中心
     server: 18.153.195.139
@@ -4048,40 +4073,66 @@ proxies:
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 新加坡Amazon数据中心1
-    ws-opts:
-      path: /stream
-      headers:
-        host: d21rv6uz6osjkz.cloudfront.net
-    server: hkcft01.xqc.best
-    port: 443
-    uuid: 10625ba4-c22a-4255-9ab3-894a896b8bde
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
   - type: trojan
-    name: 台湾省桃园市+中华电信(HiNet)
-    server: 220.141.141.120
-    port: 13761
-    password: 645f0af0-dec8-48db-862f-82b6346408b4
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.16.192.155
+    name: 乌克兰+V2CROSS.COM
+    server: 95.164.114.43
     port: 443
-    password: e8105dfd24414268b6c7652c63731097
+    password: 62011b3d-2706-4a97-98b7-9986003c5fe0
     udp: true
     skip-cert-verify: true
   - type: trojan
     name: 爱尔兰+都柏林Amazon数据中心
-    server: 34.255.156.164
+    server: 54.170.186.32
     port: 22222
-    password: telegram-id-directvpn
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: trojan
+    name: 英国+社会保险安全部
+    server: 51.44.30.166
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+V2CROSS.COM
+    server: 63.33.75.225
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 104.25.255.254
+    port: 443
+    password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.79.176.13
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: 62.133.63.23
+    port: 25365
+    password: YWVzLTEyOC1nY206VGVsZWdyYW06QFpFRE1PREVPTg==
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点18
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu1.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4453,11 +4504,18 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 南非+V2CROSS.COM
+      - 美国+惠普HP
       - 美国+Amazon数据中心
-      - 新加坡Amazon数据中心1
-      - 台湾省桃园市+中华电信(HiNet)
-      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
       - 爱尔兰+都柏林Amazon数据中心
+      - 英国+社会保险安全部
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+Amazon+EC2服务器
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点18
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4829,11 +4887,18 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 南非+V2CROSS.COM
+      - 美国+惠普HP
       - 美国+Amazon数据中心
-      - 新加坡Amazon数据中心1
-      - 台湾省桃园市+中华电信(HiNet)
-      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
       - 爱尔兰+都柏林Amazon数据中心
+      - 英国+社会保险安全部
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+Amazon+EC2服务器
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点18
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5204,11 +5269,18 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 南非+V2CROSS.COM
+      - 美国+惠普HP
       - 美国+Amazon数据中心
-      - 新加坡Amazon数据中心1
-      - 台湾省桃园市+中华电信(HiNet)
-      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
       - 爱尔兰+都柏林Amazon数据中心
+      - 英国+社会保险安全部
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+Amazon+EC2服务器
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点18
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5611,11 +5683,18 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_9@31
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 南非+V2CROSS.COM
+      - 美国+惠普HP
       - 美国+Amazon数据中心
-      - 新加坡Amazon数据中心1
-      - 台湾省桃园市+中华电信(HiNet)
-      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
       - 爱尔兰+都柏林Amazon数据中心
+      - 英国+社会保险安全部
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+Amazon+EC2服务器
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点18
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
