@@ -1,4 +1,4 @@
-# 更新时间 2024-03-03T18:58:58.865Z
+# 更新时间 2024-03-03T19:13:19.217Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4425,32 +4425,25 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 瑞典+斯德哥尔摩Amazon数据中心
-    server: 13.48.113.179
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 172.67.132.209
-    port: 443
-    password: 89edf49e-e625-4902-a94b-d1acc926b96d
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 澳大利亚V2CROSS.COM3
+    name: 美国CloudFlare公司CDN节点(shopify)1
     ws-opts:
-      path: /?ed=2048
+      path: c575b66a-2901-4e05-a4b2-453e196f9bb5-vm
       headers:
-        host: japan.pxiz.site
-    server: 140.83.81.91
-    port: 54752
-    uuid: 2da64de4-54d0-4611-ab16-3401a8d16f0c
+        host: per-essex-patterns-bowling.trycloudflare.com
+    server: 23.227.38.22
+    port: 8080
+    uuid: c575b66a-2901-4e05-a4b2-453e196f9bb5
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 乌克兰+V2CROSS.COM
+    server: 95.164.114.43
+    port: 443
+    password: 62011b3d-2706-4a97-98b7-9986003c5fe0
+    udp: true
+    skip-cert-verify: true
   - type: ss
     name: 美国+Akamai科技公司CDN网络节点
     server: 172.233.107.119
@@ -4459,29 +4452,90 @@ proxies:
       MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206anBHSUhHSUI0MUZmcEVWQXFpaDZ5Yjl4YlZrS05FNU43SXRsby9lQjMrQT06cWNtSE5vdURUb0xPQ2RJQUlWNHVlNHR3SmgrTnNVU2s4QTNjeXdMMUNXMD0=
     cipher: aes-128-gcm
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.199.110.96
+    name: 台湾省新北市+中华电信
+    server: b24.ntbq.dynu.net
+    port: 3271
+    password: 3d926991-4815-4dd9-aabe-42e8a56b27c4
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 18.184.234.134
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点12
+    name: 加拿大V2CROSS.COM10
     ws-opts:
-      path: /video/9TfVEyku
+      path: /
       headers:
-        host: wtywwcrzjp5.yofnhkfc.xyz
-    server: cfcdn3.sanfencdn9.com
-    port: 2052
-    uuid: 17c82b45-dff0-47bb-9e0c-07ef07f67005
+        host: sg03.beautifulprimavera.online
+    server: sg03.beautifulprimavera.online
+    port: 80
+    uuid: 064c67c0-ba22-4d94-96e8-be43245fd29b
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点11
+    ws-opts:
+      path: /vmess
+      headers:
+        host: fi2-vmess.sshmax.xyz
+    server: 172.67.204.84
+    port: 80
+    uuid: c9e99213-170b-458a-b45b-79454ac7cf4b
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
-    name: 台湾省桃园市+中华电信
-    server: b12.ntbq.dynu.net
-    port: 9755
-    password: 7c252929-6ac0-4681-a835-e52af701f151
+    name: 台湾省新竹市+中华电信
+    server: b22.ntbq.dynu.net
+    port: 19489
+    password: 08c8768a-31ee-447e-81aa-845399553dbf
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 澳大利亚V2CROSS.COM13
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: baidu.com
+    server: japan.pxiz.site
+    port: 54752
+    uuid: 2da64de4-54d0-4611-ab16-3401a8d16f0c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 波兰V2CROSS.COM14
+    ws-opts:
+      path: /cctv13/hd.m3u8/
+    server: 91.149.236.44
+    port: 26639
+    uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.43.194.15
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+麻省理工学院
+    server: series-a2-mec.samanehha.co
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+惠普HP
+    server: 15.157.88.42
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -4880,13 +4934,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】41_9@21
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+CloudFlare节点
-      - 澳大利亚V2CROSS.COM3
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 乌克兰+V2CROSS.COM
       - 美国+Akamai科技公司CDN网络节点
+      - 台湾省新北市+中华电信
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 加拿大V2CROSS.COM10
+      - 美国CloudFlare节点11
+      - 台湾省新竹市+中华电信
+      - 澳大利亚V2CROSS.COM13
+      - 波兰V2CROSS.COM14
       - 美国+Amazon数据中心
-      - 美国CloudFlare节点12
-      - 台湾省桃园市+中华电信
+      - 美国+麻省理工学院
+      - 美国+惠普HP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5283,13 +5343,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】41_9@21
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+CloudFlare节点
-      - 澳大利亚V2CROSS.COM3
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 乌克兰+V2CROSS.COM
       - 美国+Akamai科技公司CDN网络节点
+      - 台湾省新北市+中华电信
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 加拿大V2CROSS.COM10
+      - 美国CloudFlare节点11
+      - 台湾省新竹市+中华电信
+      - 澳大利亚V2CROSS.COM13
+      - 波兰V2CROSS.COM14
       - 美国+Amazon数据中心
-      - 美国CloudFlare节点12
-      - 台湾省桃园市+中华电信
+      - 美国+麻省理工学院
+      - 美国+惠普HP
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5685,13 +5751,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】41_9@21
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+CloudFlare节点
-      - 澳大利亚V2CROSS.COM3
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 乌克兰+V2CROSS.COM
       - 美国+Akamai科技公司CDN网络节点
+      - 台湾省新北市+中华电信
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 加拿大V2CROSS.COM10
+      - 美国CloudFlare节点11
+      - 台湾省新竹市+中华电信
+      - 澳大利亚V2CROSS.COM13
+      - 波兰V2CROSS.COM14
       - 美国+Amazon数据中心
-      - 美国CloudFlare节点12
-      - 台湾省桃园市+中华电信
+      - 美国+麻省理工学院
+      - 美国+惠普HP
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6119,13 +6191,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】41_9@21
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+CloudFlare节点
-      - 澳大利亚V2CROSS.COM3
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 乌克兰+V2CROSS.COM
       - 美国+Akamai科技公司CDN网络节点
+      - 台湾省新北市+中华电信
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 加拿大V2CROSS.COM10
+      - 美国CloudFlare节点11
+      - 台湾省新竹市+中华电信
+      - 澳大利亚V2CROSS.COM13
+      - 波兰V2CROSS.COM14
       - 美国+Amazon数据中心
-      - 美国CloudFlare节点12
-      - 台湾省桃园市+中华电信
+      - 美国+麻省理工学院
+      - 美国+惠普HP
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
