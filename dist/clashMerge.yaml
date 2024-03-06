@@ -1,4 +1,4 @@
-# 更新时间 2024-03-06T06:52:48.798Z
+# 更新时间 2024-03-06T07:09:27.023Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2984,45 +2984,96 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.16.192.146
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.76.25.16
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点11
+    name: 美国加利福尼亚州圣何塞PEGTECH3
     ws-opts:
-      path: /
+      path: /path/153428133302
       headers:
-        host: onea.flha.ru
-    server: 104.21.23.231
-    port: 2052
-    uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+        host: www.33586067.xyz
+    server: 142.4.116.164
+    port: 38001
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: ws
+    tls: true
+  - type: vmess
+    name: 加拿大TELUS10
+    ws-opts:
+      path: /path/153428133302
+      headers:
+        host: www.68841301.xyz
+    server: 74.48.221.237
+    port: 30000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国华盛顿Cogent通信公司11
+    ws-opts:
+      path: /path/153428133302
+      headers:
+        host: www.87044255.xyz
+    server: 38.38.169.109
+    port: 30000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 广东省移动12
+    server: 183.237.20.150
+    port: 44602
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 南非豪登省约翰内斯堡Cloudinnovation数据中心13
+    ws-opts:
+      path: /path/153428133302
+      headers:
+        host: www.11977475.xyz
+    server: 156.249.18.74
+    port: 41000
+    uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.222.208.190
+    name: 美国+Amazon+EC2服务器
+    server: 3.141.119.222
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: ss
-    name: 广东省江门市+移动
-    server: ddns.olucloud.subapi.cc
-    port: 26666
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjZmExN2EwZC01ZTdkLTQ4NzEtOTc2ZS1mMTE2ZTA4MTgxMjM=
+    name: 江苏省+移动
+    server: ef30833c.t1v0e4l6w3-fb-hk05.6pzfwf.com
+    port: 56005
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYWk5dDVuazkx
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 新加坡DigitalOcean数据中心22
+    ws-opts:
+      path: /
+      headers:
+        host: sg03.beautifulprimavera.online
+    server: sg03.beautifulprimavera.online
+    port: 80
+    uuid: 064c67c0-ba22-4d94-96e8-be43245fd29b
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国科罗拉多州布隆菲尔德市+Level3
+    server: jseyu.arvancode.eu.Org
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
     cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
@@ -3337,11 +3388,15 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
+      - 美国加利福尼亚州圣何塞PEGTECH3
+      - 加拿大TELUS10
+      - 美国华盛顿Cogent通信公司11
+      - 广东省移动12
+      - 南非豪登省约翰内斯堡Cloudinnovation数据中心13
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点11
-      - 美国+惠普公司
-      - 广东省江门市+移动
+      - 江苏省+移动
+      - 新加坡DigitalOcean数据中心22
+      - 美国科罗拉多州布隆菲尔德市+Level3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3655,11 +3710,15 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
+      - 美国加利福尼亚州圣何塞PEGTECH3
+      - 加拿大TELUS10
+      - 美国华盛顿Cogent通信公司11
+      - 广东省移动12
+      - 南非豪登省约翰内斯堡Cloudinnovation数据中心13
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点11
-      - 美国+惠普公司
-      - 广东省江门市+移动
+      - 江苏省+移动
+      - 新加坡DigitalOcean数据中心22
+      - 美国科罗拉多州布隆菲尔德市+Level3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3972,11 +4031,15 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
+      - 美国加利福尼亚州圣何塞PEGTECH3
+      - 加拿大TELUS10
+      - 美国华盛顿Cogent通信公司11
+      - 广东省移动12
+      - 南非豪登省约翰内斯堡Cloudinnovation数据中心13
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点11
-      - 美国+惠普公司
-      - 广东省江门市+移动
+      - 江苏省+移动
+      - 新加坡DigitalOcean数据中心22
+      - 美国科罗拉多州布隆菲尔德市+Level3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4321,11 +4384,15 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】16_9@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
+      - 美国加利福尼亚州圣何塞PEGTECH3
+      - 加拿大TELUS10
+      - 美国华盛顿Cogent通信公司11
+      - 广东省移动12
+      - 南非豪登省约翰内斯堡Cloudinnovation数据中心13
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点11
-      - 美国+惠普公司
-      - 广东省江门市+移动
+      - 江苏省+移动
+      - 新加坡DigitalOcean数据中心22
+      - 美国科罗拉多州布隆菲尔德市+Level3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
