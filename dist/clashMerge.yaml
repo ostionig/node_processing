@@ -1,4 +1,4 @@
-# 更新时间 2024-03-05T19:00:04.087Z
+# 更新时间 2024-03-06T00:59:36.295Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2617,32 +2617,33 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 美国CloudFlare公司CDN节点(shopify)0
-    ws-opts:
-      path: 33eb512b-8f3a-459b-b823-3cccb6e82049-vm
-      headers:
-        host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    server: 23.227.38.44
-    port: 8080
-    uuid: 33eb512b-8f3a-459b-b823-3cccb6e82049
-    alterId: 0
-    cipher: auto
-    network: ws
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.169.58.219
+    name: 美国+Amazon+EC2服务器
+    server: 3.141.119.222
     port: 22222
-    password: telegram-id-privatevpns
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 35.181.187.48
+    name: 美国+惠普公司
+    server: 15.222.208.190
     port: 22222
-    password: telegram-id-privatevpns
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: trojan
+    name: 美国+惠普HP
+    server: 15.156.151.14
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: vienna.telegavpn.com
+    port: 61992
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmYjJnRkhrbXBkU2FSSEJxTjlGTWVF
+    cipher: aes-128-gcm
   - type: ss
     name: 欧盟+V2CROSS.COM
     server: 45.89.52.197
@@ -2650,76 +2651,15 @@ proxies:
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGZ2x0YnBtNmNEOWVIU0ZoS0k2bWFD
     cipher: aes-128-gcm
   - type: vmess
-    name: 荷兰V2CROSS.COM5
+    name: 美国CloudFlare节点11
     ws-opts:
-      path: /path/153428133302
-      headers:
-        host: www.34668845.xyz
-    server: 46.182.107.116
-    port: 41000
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      path: /
+    server: yhnsb3.shabijichang.com
+    port: 80
+    uuid: c458695d-6908-45c3-9512-e0c46418454c
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
-  - type: vmess
-    name: 美国华盛顿Cogent通信公司6
-    ws-opts:
-      path: /path/153428133302
-      headers:
-        host: www.80150658.xyz
-    server: 38.14.100.176
-    port: 36000
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.21.125.90
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 韩国+首尔Amazon数据中心
-    server: 13.124.111.233
-    port: 16977
-    password: cVVCZNMzlBDN
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 34.243.134.106
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 7306
-    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
-    cipher: aes-128-gcm
-  - type: ss
-    name: 美国+麻省理工学院
-    server: 18.135.67.150
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
-    cipher: aes-128-gcm
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 170.64.188.248
-    port: 61073
-    password: YWVzLTI1Ni1nY206M2tnTDUzbGpVckNkS29TSA==
-    cipher: aes-128-gcm
-  - type: ss
-    name: 英国+伦敦Amazon数据中心
-    server: 3.9.244.109
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj
-    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -2996,19 +2936,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】46_9@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare公司CDN节点(shopify)0
-      - 美国+Amazon数据中心
-      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国+惠普公司
+      - 美国+惠普HP
+      - 俄罗斯+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 荷兰V2CROSS.COM5
-      - 美国华盛顿Cogent通信公司6
-      - 英国+社会保险安全部
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3285,19 +3218,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】46_9@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare公司CDN节点(shopify)0
-      - 美国+Amazon数据中心
-      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国+惠普公司
+      - 美国+惠普HP
+      - 俄罗斯+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 荷兰V2CROSS.COM5
-      - 美国华盛顿Cogent通信公司6
-      - 英国+社会保险安全部
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3573,19 +3499,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】46_9@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare公司CDN节点(shopify)0
-      - 美国+Amazon数据中心
-      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国+惠普公司
+      - 美国+惠普HP
+      - 俄罗斯+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 荷兰V2CROSS.COM5
-      - 美国华盛顿Cogent通信公司6
-      - 英国+社会保险安全部
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -3893,19 +3812,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】46_9@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】80_9@25
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare公司CDN节点(shopify)0
-      - 美国+Amazon数据中心
-      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国+惠普公司
+      - 美国+惠普HP
+      - 俄罗斯+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 荷兰V2CROSS.COM5
-      - 美国华盛顿Cogent通信公司6
-      - 英国+社会保险安全部
-      - 韩国+首尔Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点11
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
