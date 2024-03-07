@@ -1,4 +1,4 @@
-# 更新时间 2024-03-07T12:57:46.781Z
+# 更新时间 2024-03-07T13:18:21.731Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3741,6 +3741,20 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 104.25.255.254
+    port: 443
+    password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 乌克兰+V2CROSS.COM
+    server: de2.trojanvpn.de
+    port: 443
+    password: 0453eb8b-8b3a-42c5-9040-cb1495279898
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4110,6 +4124,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】63_9@62
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】64_9@63
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4479,6 +4495,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】63_9@62
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】64_9@63
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4847,6 +4865,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】63_9@62
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】64_9@63
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5247,6 +5267,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】63_9@62
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】64_9@63
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
