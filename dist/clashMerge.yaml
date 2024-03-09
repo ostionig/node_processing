@@ -1,4 +1,4 @@
-# 更新时间 2024-03-08T19:02:59.479Z
+# 更新时间 2024-03-09T00:57:20.736Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4203,6 +4203,13 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.171.38.42
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: ss
     name: 美国+加利福尼亚州圣克拉拉Microsoft公司
     server: 52.178.196.34
@@ -4216,77 +4223,27 @@ proxies:
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 广东省江门市移动14
-    server: 9a8r04.a3b5wy.xyz
-    port: 36861
-    uuid: a1a102c2-af7b-4d9b-9594-411bb43a4961
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 广东省江门市移动18
-    server: 8r5u04.a3b5wy.xyz
-    port: 36851
-    uuid: a1a102c2-af7b-4d9b-9594-411bb43a4961
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.171.38.42
+    name: 爱尔兰+V2CROSS.COM
+    server: 108.129.3.23
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 广东省江门市移动21
-    server: 1t8h04.a3b5wy.xyz
-    port: 36904
-    uuid: a1a102c2-af7b-4d9b-9594-411bb43a4961
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
   - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.135.14.234
+    name: 美国+CloudFlare节点
+    server: zula.ir
+    port: 443
+    password: 08176cae-b29d-4d1b-bebe-02214588a269
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+惠普HP
+    server: 15.157.131.145
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 广东省潮州市移动23
-    server: 3u1s06.a3b5wy.xyz
-    port: 36511
-    uuid: a1a102c2-af7b-4d9b-9594-411bb43a4961
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 德国V2CROSS.COM26
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        host: rahyaft.serveirc.com
-    server: 92.223.124.34
-    port: 80
-    uuid: 5e529016-d961-438e-9a99-0dcc5c0df208
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省江门市移动31
-    server: 2u3k04.a3b5wy.xyz
-    port: 36811
-    uuid: a1a102c2-af7b-4d9b-9594-411bb43a4961
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4680,16 +4637,12 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】66_9@65
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】67_9@66
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
       - 美国+加利福尼亚州圣克拉拉Microsoft公司
       - 爱尔兰+都柏林Amazon数据中心
-      - 广东省江门市移动14
-      - 广东省江门市移动18
-      - 美国+Amazon数据中心
-      - 广东省江门市移动21
-      - 美国+Amazon+EC2服务器
-      - 广东省潮州市移动23
-      - 德国V2CROSS.COM26
-      - 广东省江门市移动31
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+惠普HP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5083,16 +5036,12 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】66_9@65
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】67_9@66
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
       - 美国+加利福尼亚州圣克拉拉Microsoft公司
       - 爱尔兰+都柏林Amazon数据中心
-      - 广东省江门市移动14
-      - 广东省江门市移动18
-      - 美国+Amazon数据中心
-      - 广东省江门市移动21
-      - 美国+Amazon+EC2服务器
-      - 广东省潮州市移动23
-      - 德国V2CROSS.COM26
-      - 广东省江门市移动31
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+惠普HP
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5485,16 +5434,12 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】66_9@65
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】67_9@66
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
       - 美国+加利福尼亚州圣克拉拉Microsoft公司
       - 爱尔兰+都柏林Amazon数据中心
-      - 广东省江门市移动14
-      - 广东省江门市移动18
-      - 美国+Amazon数据中心
-      - 广东省江门市移动21
-      - 美国+Amazon+EC2服务器
-      - 广东省潮州市移动23
-      - 德国V2CROSS.COM26
-      - 广东省江门市移动31
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+惠普HP
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5919,16 +5864,12 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】66_9@65
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】67_9@66
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
       - 美国+加利福尼亚州圣克拉拉Microsoft公司
       - 爱尔兰+都柏林Amazon数据中心
-      - 广东省江门市移动14
-      - 广东省江门市移动18
-      - 美国+Amazon数据中心
-      - 广东省江门市移动21
-      - 美国+Amazon+EC2服务器
-      - 广东省潮州市移动23
-      - 德国V2CROSS.COM26
-      - 广东省江门市移动31
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+惠普HP
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
