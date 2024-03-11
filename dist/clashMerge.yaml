@@ -1,4 +1,4 @@
-# 更新时间 2024-03-11T12:59:17.894Z
+# 更新时间 2024-03-11T13:20:09.416Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5411,6 +5411,48 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: ss
+    name: 北京市+移动
+    server: yd1.qianggewangluo.buzz
+    port: 10803
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YTI4ZDMyYi1hNjkzLTQ0NTEtOGVlMi0xZjFkZWY2YmY4OWY=
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.36.126.125
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 德国+V2CROSS.COM
+    server: 31.220.22.201
+    port: 24573
+    password: b9pEaF9fBh
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省江门市移动16
+    server: 6i2r04.a3b5wy.xyz
+    port: 36877
+    uuid: 5944fa84-1019-415f-b5de-92f2b66777db
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点52
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu1.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5916,6 +5958,11 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】48_9@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_9@52
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 北京市+移动
+      - 美国+Amazon数据中心
+      - 德国+V2CROSS.COM
+      - 广东省江门市移动16
+      - 美国CloudFlare节点52
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6421,6 +6468,11 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】48_9@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_9@52
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 北京市+移动
+      - 美国+Amazon数据中心
+      - 德国+V2CROSS.COM
+      - 广东省江门市移动16
+      - 美国CloudFlare节点52
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6925,6 +6977,11 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】48_9@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_9@52
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 北京市+移动
+      - 美国+Amazon数据中心
+      - 德国+V2CROSS.COM
+      - 广东省江门市移动16
+      - 美国CloudFlare节点52
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7461,6 +7518,11 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】48_9@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_9@52
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 北京市+移动
+      - 美国+Amazon数据中心
+      - 德国+V2CROSS.COM
+      - 广东省江门市移动16
+      - 美国CloudFlare节点52
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
