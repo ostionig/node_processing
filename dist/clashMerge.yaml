@@ -1,4 +1,4 @@
-# 更新时间 2024-03-12T19:01:17.602Z
+# 更新时间 2024-03-13T01:00:47.385Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4710,34 +4710,43 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 英国+伦敦Microsoft公司
-    server: 51.140.62.236
-    port: 48908
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmWDVHVVVmV1BmVVZCMGlZeE1jQk15
-    cipher: aes-128-gcm
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.78.101.239
-    port: 22222
-    password: telegram-id-directvpn
+    name: 台湾省+中华电信(HiNet)数据中心
+    server: b24.ntbq.dynu.net
+    port: 3271
+    password: 6a063257-a783-49e9-afc4-c699c49134d3
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 波兰V2CROSS.COM13
+    name: 美国CloudFlare节点2
     ws-opts:
-      path: /cctv13/hd.m3u8/
-    server: 91.149.236.44
-    port: 26639
-    uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+      path: /api/v3/download.getFile
+      headers:
+        host: ssrsub.v03.ssrsub.com
+    server: 104.26.5.57
+    port: 8880
+    uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 巴西圣保罗CloudFlare节点3
+    ws-opts:
+      path: /vmess
+      headers:
+        host: fr1-vmess.sshmax.xyz
+    server: 188.114.97.53
+    port: 443
+    uuid: 8c929251-406f-4b32-9173-07ccd242cb58
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
   - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 35.181.216.185
-    port: 22222
-    password: telegram-id-privatevpns
+    name: 台湾省新北市+中华电信
+    server: b13.ntbq.dynu.net
+    port: 9489
+    password: 6a063257-a783-49e9-afc4-c699c49134d3
     udp: true
     skip-cert-verify: true
   - type: trojan
@@ -4748,40 +4757,95 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 广东省中山市广东移动中山市分公司46
-    server: 218.204.179.210
-    port: 50022
-    uuid: e80442e2-4577-4b33-8d9b-798d816974bd
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点48
+    name: 美国CloudFlare节点15
     ws-opts:
-      path: /?ed=2048
+      path: /vmess
       headers:
-        host: eu1.openxai.link
-    server: cf.openxai.link
-    port: 8080
-    uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+        host: be3-vmess.sshmax.xyz
+    server: zula.ir
+    port: 443
+    uuid: 36ae64b0-2fe1-4915-a50e-9108fcf6d84c
     alterId: 0
     cipher: auto
     network: ws
+    tls: true
   - type: trojan
-    name: 德国+黑森州法兰克福AMazon数据中心
-    server: 3.123.204.145
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.49.50.173
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 广东省中山市广东移动中山市分公司54
+    name: 俄罗斯V2CROSS.COM21
+    ws-opts:
+      path: /
+      headers:
+        host: www.erfan-davoodi.blog
+    server: 46.226.167.139
+    port: 46226
+    uuid: ea12e134-a574-4cde-bf87-dadf2e268323
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 广东省中山市广东移动中山市分公司29
     server: 50014.baidu-cdn.top
     port: 50014
     uuid: e80442e2-4577-4b33-8d9b-798d816974bd
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 台湾省台北市+中华电信
+    server: 1.164.148.8
+    port: 9755
+    password: 6a063257-a783-49e9-afc4-c699c49134d3
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点37
+    ws-opts:
+      path: WgCmp8p80KDzo64uHE
+    server: 172.66.213.38
+    port: 443
+    uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+  - type: vmess
+    name: 俄罗斯V2CROSS.COM44
+    ws-opts:
+      path: /
+      headers:
+        host: www.en.erfan-davoodi.blog
+    server: 46.226.167.139
+    port: 16713
+    uuid: d1eab8cc-4829-4004-ab7a-3c043cef09c0
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: ss
+    name: 美国+Akamai科技公司CDN网络节点
+    server: beecomf.xyz
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.171.22.104
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 广东省+移动
+    server: p1.bxy-fun1.com
+    port: 44101
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkN2JlZTgzMC0wOWFhLTQzYjItODk0NS0zYjM0MWI4Nzg3ZGI=
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5212,15 +5276,21 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】103_9@102
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】119_9@118
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+伦敦Microsoft公司
-      - 爱尔兰+都柏林Amazon数据中心
-      - 波兰V2CROSS.COM13
-      - 法国+巴黎Amazon数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 美国CloudFlare节点2
+      - 巴西圣保罗CloudFlare节点3
+      - 台湾省新北市+中华电信
       - 美国+Amazon+EC2服务器
-      - 广东省中山市广东移动中山市分公司46
-      - 美国CloudFlare节点48
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省中山市广东移动中山市分公司54
+      - 美国CloudFlare节点15
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 俄罗斯V2CROSS.COM21
+      - 广东省中山市广东移动中山市分公司29
+      - 台湾省台北市+中华电信
+      - 美国CloudFlare节点37
+      - 俄罗斯V2CROSS.COM44
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Amazon数据中心
+      - 广东省+移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5651,15 +5721,21 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】103_9@102
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】119_9@118
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+伦敦Microsoft公司
-      - 爱尔兰+都柏林Amazon数据中心
-      - 波兰V2CROSS.COM13
-      - 法国+巴黎Amazon数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 美国CloudFlare节点2
+      - 巴西圣保罗CloudFlare节点3
+      - 台湾省新北市+中华电信
       - 美国+Amazon+EC2服务器
-      - 广东省中山市广东移动中山市分公司46
-      - 美国CloudFlare节点48
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省中山市广东移动中山市分公司54
+      - 美国CloudFlare节点15
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 俄罗斯V2CROSS.COM21
+      - 广东省中山市广东移动中山市分公司29
+      - 台湾省台北市+中华电信
+      - 美国CloudFlare节点37
+      - 俄罗斯V2CROSS.COM44
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Amazon数据中心
+      - 广东省+移动
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6089,15 +6165,21 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】103_9@102
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】119_9@118
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+伦敦Microsoft公司
-      - 爱尔兰+都柏林Amazon数据中心
-      - 波兰V2CROSS.COM13
-      - 法国+巴黎Amazon数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 美国CloudFlare节点2
+      - 巴西圣保罗CloudFlare节点3
+      - 台湾省新北市+中华电信
       - 美国+Amazon+EC2服务器
-      - 广东省中山市广东移动中山市分公司46
-      - 美国CloudFlare节点48
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省中山市广东移动中山市分公司54
+      - 美国CloudFlare节点15
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 俄罗斯V2CROSS.COM21
+      - 广东省中山市广东移动中山市分公司29
+      - 台湾省台北市+中华电信
+      - 美国CloudFlare节点37
+      - 俄罗斯V2CROSS.COM44
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Amazon数据中心
+      - 广东省+移动
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6559,15 +6641,21 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】103_9@102
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】119_9@118
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+伦敦Microsoft公司
-      - 爱尔兰+都柏林Amazon数据中心
-      - 波兰V2CROSS.COM13
-      - 法国+巴黎Amazon数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 美国CloudFlare节点2
+      - 巴西圣保罗CloudFlare节点3
+      - 台湾省新北市+中华电信
       - 美国+Amazon+EC2服务器
-      - 广东省中山市广东移动中山市分公司46
-      - 美国CloudFlare节点48
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 广东省中山市广东移动中山市分公司54
+      - 美国CloudFlare节点15
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 俄罗斯V2CROSS.COM21
+      - 广东省中山市广东移动中山市分公司29
+      - 台湾省台北市+中华电信
+      - 美国CloudFlare节点37
+      - 俄罗斯V2CROSS.COM44
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Amazon数据中心
+      - 广东省+移动
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
