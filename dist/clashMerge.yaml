@@ -1,4 +1,4 @@
-# 更新时间 2024-03-14T12:47:37.288Z
+# 更新时间 2024-03-14T12:59:02.617Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -753,42 +753,16 @@ proxies:
     password: 6601fb90e9b3
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 Amazon EC2服务器
-    server: 3.76.175.82
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司
-    server: 38.75.136.135
-    port: 8118
+  - name: 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+    server: service.ouluyun9803.com
+    port: 20003
     client-fingerprint: chrome
     type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 11
-    server: cfcdn1.sanfencdn9.com
-    port: 2052
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 8e0fc6e0-1313-4767-b51c-5506680d534e
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /video/GQ2qE5Us9g
-      headers:
-        Host: tw1bQiWSE4x.fzbqfrse.xyz
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 12
+  - name: 🇺🇸 美国 CloudFlare节点 10
     server: yh1.dtku41.xyz
     port: 8080
     client-fingerprint: chrome
@@ -805,193 +779,106 @@ proxies:
       headers:
         Host: per-essex-patterns-bowling.trycloudflare.com
     udp: true
+  - name: 🇨🇳 北京市+移动
+    server: gtm1.ktmwan.com
+    port: 27257
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: e59a3d9e-201d-4818-823c-c29c3f16841e
+    tfo: false
+    udp: true
+  - name: 🇳🇴 挪威+v2rayfree.eu.org
+    server: 146.59.102.109
+    port: 35230
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: lSreYGyaPfCsJQWf
+    tfo: false
+    udp: true
   - name: 🇨🇳 广东省佛山市 移动
-    server: data-us-v1.shwjfkw.cn
-    port: 20401
+    server: 183.232.170.22
+    port: 30117
     client-fingerprint: chrome
     type: vmess
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
     alterId: 0
     cipher: auto
     tls: false
     tfo: false
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /debian
-      headers:
-        Host: data-us-v1.shwjfkw.cn
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 13
-    server: 104.26.4.57
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /api/v3/download.getFile
-      headers:
-        Host: ssrsub.v03.ssrsub.com
-    udp: true
-  - name: 🇻🇳 越南 v2rayfree.eu.org
-    server: free.mang5g.me
-    port: 80
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 8a2a7b92-b65d-4155-91fc-7b7be52ca598
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /mang5g.me
-      headers:
-        Host: free.mang5g.me
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 18
-    server: 172.67.204.84
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: qj1Dz1CJmFQRhWr1SP80aA
-    sni: cdn-21.gsmxreality.com
-    skip-cert-verify: false
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 443trojan
-    udp: true
-  - name: 🇨🇳 广东省广州市+电信IDC机房
-    server: kr2.indianonlinejob2.com
-    port: 20014
+  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org
+    server: 185.242.86.156
+    port: 54170
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: abb73d1f-7dce-4f17-ada4-8d1413f2ed4a
+    password: 36ZCHeabUSfKjfQEvJ4HDV
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 21
-    server: 104.21.47.176
+  - name: 🇮🇳 印度 v2rayfree.eu.org
+    server: 202.78.162.5
     port: 443
     client-fingerprint: chrome
-    type: trojan
-    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-    sni: hdfyc1.achaemenidempireofpersia.uk
+    type: vmess
+    uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
     skip-cert-verify: false
-    network: grpc
-    grpc-opts:
-      grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: pendar.onthewifi.com
     udp: true
-  - name: 🇺🇸 美国 Amazon数据中心
-    server: 13.39.11.239
-    port: 22222
+  - name: 🇨🇳 甘肃省兰州市+移动
+    server: 36.140.180.162
+    port: 10027
     client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
+    type: ss
+    cipher: aes-128-gcm
+    password: 1F56698C-2BFD-46ED-9F8C-AE789DE42954
+    tfo: false
     udp: true
-  - name: 🇮🇹 意大利+v2rayfree.eu.org
-    server: service.ouluyun9803.com
-    port: 26667
+  - name: 🇨🇳 北京市+移动 2
+    server: gtm1.ktmwan.com
+    port: 27252
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    password: e59a3d9e-201d-4818-823c-c29c3f16841e
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 Amazon EC2服务器 2
-    server: 3.133.53.134
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇰🇷 韩国 蘑菇主机BGP数据中心
-    server: 103.214.68.57
-    port: 10003
-    client-fingerprint: chrome
-    type: trojan
-    password: 6x8HcghsjS
-    sni: yes998.chickenkiller.com
-    skip-cert-verify: false
-    udp: true
-  - name: 🇮🇪 爱尔兰 都柏林Amazon数据中心
-    server: 52.208.214.129
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 34
-    server: flixeon.me
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-    sni: hdfyc1.achaemenidempireofpersia.uk
-    skip-cert-verify: false
-    network: grpc
-    grpc-opts:
-      grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
-    udp: true
-  - name: 🇺🇸 美国 麻省理工学院
-    server: 18.135.227.25
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
-    server: 52.211.206.240
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇷🇺 俄罗斯 v2rayfree.eu.org
-    server: 194.87.71.23
-    port: 23742
+  - name: 🇨🇳 广东省佛山市 移动 2
+    server: 183.232.170.22
+    port: 30058
     client-fingerprint: chrome
     type: vmess
-    uuid: e8706bdb-335e-4631-a2af-3052ad93b10d
+    uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
     alterId: 0
     cipher: auto
     tls: false
     tfo: false
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /wp-admin
-      headers:
-        Host: 194.87.71.23
     udp: true
-  - name: 🇺🇸 美国 Xerox
-    server: 13.50.149.79
-    port: 22222
+  - name: 🇺🇸 美国 CloudFlare节点 46
+    server: 104.21.4.113
+    port: 2096
     client-fingerprint: chrome
     type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
+    password: 24f10d2e-5c81-4606-b124-6aa830a55dbf
+    sni: channel.v2bamdad.tech
     skip-cert-verify: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: lK1wclmJRbMxj4FxIzvwxUDoX
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 49
-    server: yh1.freeh1.xyz
+  - name: 🇺🇸 美国 CloudFlare节点 61
+    server: fbi.gov
     port: 8080
     client-fingerprint: chrome
     type: vmess
@@ -1006,49 +893,6 @@ proxies:
       path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
       headers:
         Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    udp: true
-  - name: 🇨🇳 江苏省 移动
-    server: 223.113.130.55
-    port: 52052
-    client-fingerprint: chrome
-    type: vmess
-    uuid: c7395784-c77d-390a-9db6-67152462b95b
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: cache-hk-1.cn-db.top
-    udp: true
-  - name: 🇷🇺 俄罗斯  1
-    server: 185.242.86.156
-    port: 54170
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 36ZCHeabUSfKjfQEvJ4HDV
-    tfo: false
-    udp: true
-  - name: 🇮🇳 印度  2
-    server: 202.78.162.5
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: irsoft.sytes.net
     udp: true
   - name: 🇵🇱 波兰  5
     server: 193.243.147.128
@@ -1076,14 +920,22 @@ proxies:
       headers:
         Host: server31.beheshtbaneh.com
     udp: true
-  - name: 🇨🇳 广东省江门市移动 8
-    server: service.ouluyun9803.com
-    port: 20003
+  - name: 🇨🇳 广东省移动 7
+    server: data-us-v1.shwjfkw.cn
+    port: 20401
     client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    type: vmess
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 0
+    cipher: auto
+    tls: false
     tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /debian
+      headers:
+        Host: data-us-v1.shwjfkw.cn
     udp: true
   - name: 🇺🇸 美国CloudFlare公司CDN节点 9
     server: 104.21.82.183
@@ -1101,6 +953,15 @@ proxies:
       path: /
       headers:
         Host: server26.beheshtbaneh.com
+    udp: true
+  - name: 🇨🇳 广东省江门市移动 11
+    server: service.ouluyun9803.com
+    port: 26667
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
     udp: true
   - name: 🇨🇳 广东省江门市移动 12
     server: service.ouluyun9803.com
@@ -1172,6 +1033,34 @@ proxies:
       path: /?ed=2048
   - alterId: 0
     cipher: auto
+    name: 🇺🇸_US_美国_2_0@4
+    network: ws
+    port: 2052
+    server: cfcdn1.sanfencdn9.com
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 8e0fc6e0-1313-4767-b51c-5506680d534e
+    ws-opts:
+      headers:
+        host: us3AJ8biuQx.fzbqfrse.xyz
+      path: /video/QXjZG5u4F2
+  - alterId: 0
+    cipher: auto
+    name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_1_0@5
+    network: ws
+    port: 8080
+    server: yh1.freeh1.xyz
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+    ws-opts:
+      headers:
+        host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+      path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+  - alterId: 0
+    cipher: auto
     name: 🇨🇦_CA_加拿大->🇺🇸_US_美国_1_0@8
     network: ws
     port: 8080
@@ -1226,6 +1115,17 @@ proxies:
       headers:
         host: cache-hk-2.cn-db.top
       path: /db00
+  - grpc-opts:
+      grpc-service-name: 443trojan
+    name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@18
+    network: grpc
+    password: qj1Dz1CJmFQRhWr1SP80aA
+    port: 443
+    server: 172.67.204.84
+    skip-cert-verify: true
+    sni: cdn-21.gsmxreality.com
+    type: trojan
+    udp: true
   - alterId: 0
     cipher: auto
     name: 🇺🇸_US_美国_3_0@22
@@ -1916,19 +1816,6 @@ proxies:
     ws-headers:
       Host: hkd1.quickerlink.xyz
     ws-path: /h6jr23x9h3lqiitg
-  - alterId: 0
-    cipher: auto
-    name: 🇨🇳CN-183.232.170.22-126_2@126
-    network: tcp
-    port: 30117
-    server: 183.232.170.22
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-    ws-headers:
-      Host: 183.232.170.22
-    ws-path: /
   - cipher: aes-256-gcm
     name: 🇺🇸US-38.75.136.135-132_2@132
     password: e4FCWrgpkji3QY
@@ -1986,6 +1873,19 @@ proxies:
     port: 8119
     server: 38.75.136.135
     type: ss
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-104.26.4.57-172_2@172
+    network: ws
+    port: 2095
+    server: 104.26.4.57
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+    ws-path: /api/v3/download.getFile
   - cipher: aes-256-gcm
     name: 🇺🇸US-38.75.136.135-174_2@174
     password: g5MeD6Ft3CWlJId
@@ -2049,6 +1949,127 @@ proxies:
     ws-headers:
       Host: 85.133.241.48
     ws-path: /
+  - name: 🇩🇪DE-3.76.175.82-206_2@205
+    password: telegram-id-directvpn
+    port: 22222
+    server: 3.76.175.82
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - cipher: aes-256-gcm
+    name: 🇺🇸US-38.75.136.135-211_2@210
+    password: cdBIDV42DCwnfIN
+    port: 8118
+    server: 38.75.136.135
+    type: ss
+  - alterId: 0
+    cipher: auto
+    name: 🇻🇳VN-103.75.185.130-221_2@220
+    network: ws
+    port: 80
+    server: free.mang5g.me
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 8a2a7b92-b65d-4155-91fc-7b7be52ca598
+    ws-headers:
+      Host: free.mang5g.me
+    ws-path: /mang5g.me
+  - cipher: chacha20-ietf-poly1305
+    name: 🇨🇳CN-111.45.33.29-228_2@227
+    password: abb73d1f-7dce-4f17-ada4-8d1413f2ed4a
+    port: 20014
+    server: kr2.indianonlinejob2.com
+    type: ss
+  - name: 🏁RELAY-104.21.47.176-229_2@228
+    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+    port: 443
+    server: 104.21.47.176
+    skip-cert-verify: true
+    sni: hdfyc1.achaemenidempireofpersia.uk
+    type: trojan
+  - name: 🇫🇷FR-13.39.11.239-233_2@232
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 13.39.11.239
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - name: 🇺🇸US-3.133.53.134-244_2@243
+    password: telegram-id-directvpn
+    port: 22222
+    server: 3.133.53.134
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - name: 🇳🇱NL-103.214.68.57-245_2@244
+    password: 6x8HcghsjS
+    port: 10003
+    server: 103.214.68.57
+    skip-cert-verify: true
+    sni: yes998.chickenkiller.com
+    type: trojan
+  - name: 🇮🇪IE-52.208.214.129-246_2@245
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 52.208.214.129
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - name: 🏁RELAY-172.67.149.124-247_2@246
+    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+    port: 443
+    server: flixeon.me
+    skip-cert-verify: true
+    sni: hdfyc1.achaemenidempireofpersia.uk
+    type: trojan
+  - name: 🇬🇧GB-18.135.227.25-249_2@248
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 18.135.227.25
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - name: 🇮🇪IE-52.211.206.240-250_2@249
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 52.211.206.240
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🇩🇪DE-194.87.71.23-261_2@260
+    network: ws
+    port: 23742
+    server: 194.87.71.23
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: e8706bdb-335e-4631-a2af-3052ad93b10d
+    ws-headers:
+      Host: 194.87.71.23
+    ws-path: /wp-admin
+  - name: 🇸🇪SE-13.50.149.79-263_2@262
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 13.50.149.79
+    skip-cert-verify: true
+    sni: trojan.miwan.co.uk
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🇨🇳CN-223.113.130.55-268_2@267
+    network: ws
+    port: 52052
+    server: 223.113.130.55
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: c7395784-c77d-390a-9db6-67152462b95b
+    ws-headers:
+      Host: cache-hk-1.cn-db.top
+    ws-path: /db00
   - alterId: 0
     cipher: auto
     name: 加拿大 004_3@3
@@ -3356,20 +3377,6 @@ proxies:
       path: /api/v3/download.getFile
   - alterId: 0
     cipher: auto
-    name: 🇺🇸_US_美国_5_6@8
-    network: ws
-    port: 8080
-    server: fbi.gov
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-    ws-opts:
-      headers:
-        host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-      path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-  - alterId: 0
-    cipher: auto
     name: 🇺🇸_US_美国->🇿🇦_ZA_南非_6@11
     network: ws
     port: 80
@@ -3639,12 +3646,6 @@ proxies:
       headers:
         Host: championship-bidding-oxygen-brochure.trycloudflare.com
       path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-  - cipher: aes-256-gcm
-    name: 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@33
-    password: lSreYGyaPfCsJQWf
-    port: 35230
-    server: 146.59.102.109
-    type: ss
   - type: vmess
     name: 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
     server: 使用前记得更新订阅
@@ -3653,36 +3654,6 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 北京市+移动
-    server: gtm1.ktmwan.com
-    port: 27257
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNTlhM2Q5ZS0yMDFkLTQ4MTgtODIzYy1jMjljM2YxNjg0MWU=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 甘肃省兰州市+移动
-    server: 36.140.180.162
-    port: 10027
-    password: YWVzLTEyOC1nY206MUY1NjY5OEMtMkJGRC00NkVELTlGOEMtQUU3ODlERTQyOTU0
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 广东省佛山市移动50
-    ws-opts:
-      path: /
-    server: 183.232.170.22
-    port: 30058
-    uuid: 5635bc13-e51c-4381-ae56-949406fbd3ba
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.4.113
-    port: 2096
-    password: 24f10d2e-5c81-4606-b124-6aa830a55dbf
-    udp: true
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3767,43 +3738,35 @@ proxy-groups:
       - US_speednode_0082
       - US_speednode_0083
       - 高性价比机场:https://kf.kxyz.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 北京市+移动
+      - 🇳🇴 挪威+v2rayfree.eu.org
       - 🇨🇳 广东省佛山市 移动
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇻🇳 越南 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇰🇷 韩国 蘑菇主机BGP数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 34
-      - 🇺🇸 美国 麻省理工学院
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 CloudFlare节点 49
-      - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇨🇳 甘肃省兰州市+移动
+      - 🇨🇳 北京市+移动 2
+      - 🇨🇳 广东省佛山市 移动 2
+      - 🇺🇸 美国 CloudFlare节点 46
+      - 🇺🇸 美国 CloudFlare节点 61
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省江门市移动 8
+      - 🇨🇳 广东省移动 7
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 11
       - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_1_0@0
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_1_0@2
       - 🇺🇸_US_美国_1_0@3
+      - 🇺🇸_US_美国_2_0@4
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1_0@5
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_1_0@8
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2_0@10
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_2_0@16
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_2_0@17
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@18
       - 🇺🇸_US_美国_3_0@22
       - 🇨🇦_CA_加拿大_2_0@23
       - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@27
@@ -3885,13 +3848,13 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-122_2@122
       - 🇸🇬SG-159.223.94.156-123_2@123
       - 🏁RELAY-172.64.80.1-124_2@124
-      - 🇨🇳CN-183.232.170.22-126_2@126
       - 🇺🇸US-38.75.136.135-132_2@132
       - 🏁RELAY-172.67.204.19-133_2@133
       - 🏁RELAY-104.21.20.19-140_2@140
       - 🇺🇸US-38.75.136.135-149_2@149
       - 🏁RELAY-173.245.58.100-158_2@158
       - 🇺🇸US-38.75.136.135-169_2@169
+      - 🏁RELAY-104.26.4.57-172_2@172
       - 🇺🇸US-38.75.136.135-174_2@174
       - 🏁RELAY-162.159.11.32-184_2@184
       - 🏁RELAY-23.227.39.45-188_2@188
@@ -3899,6 +3862,21 @@ proxy-groups:
       - 🇺🇸US-38.75.136.135-194_2@194
       - 🇺🇸US-38.75.136.135-197_2@197
       - 🇮🇷IR-85.133.241.48-202_2@202
+      - 🇩🇪DE-3.76.175.82-206_2@205
+      - 🇺🇸US-38.75.136.135-211_2@210
+      - 🇻🇳VN-103.75.185.130-221_2@220
+      - 🇨🇳CN-111.45.33.29-228_2@227
+      - 🏁RELAY-104.21.47.176-229_2@228
+      - 🇫🇷FR-13.39.11.239-233_2@232
+      - 🇺🇸US-3.133.53.134-244_2@243
+      - 🇳🇱NL-103.214.68.57-245_2@244
+      - 🇮🇪IE-52.208.214.129-246_2@245
+      - 🏁RELAY-172.67.149.124-247_2@246
+      - 🇬🇧GB-18.135.227.25-249_2@248
+      - 🇮🇪IE-52.211.206.240-250_2@249
+      - 🇩🇪DE-194.87.71.23-261_2@260
+      - 🇸🇪SE-13.50.149.79-263_2@262
+      - 🇨🇳CN-223.113.130.55-268_2@267
       - 加拿大 004_3@3
       - 加拿大 008_3@7
       - 加拿大 009_3@8
@@ -3992,7 +3970,6 @@ proxy-groups:
       - 美国 049_3@142
       - 美国 050_3@143
       - 🇺🇸_US_美国_3_6@3
-      - 🇺🇸_US_美国_5_6@8
       - 🇺🇸_US_美国->🇿🇦_ZA_南非_6@11
       - 🇺🇸_US_美国_6_6@14
       - 🇺🇸_US_美国_7_6@16
@@ -4025,12 +4002,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】29_9@16
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
-      - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北京市+移动
-      - 甘肃省兰州市+移动
-      - 广东省佛山市移动50
-      - 美国+CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4115,43 +4087,35 @@ proxy-groups:
       - US_speednode_0082
       - US_speednode_0083
       - 高性价比机场:https://kf.kxyz.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 北京市+移动
+      - 🇳🇴 挪威+v2rayfree.eu.org
       - 🇨🇳 广东省佛山市 移动
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇻🇳 越南 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇰🇷 韩国 蘑菇主机BGP数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 34
-      - 🇺🇸 美国 麻省理工学院
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 CloudFlare节点 49
-      - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇨🇳 甘肃省兰州市+移动
+      - 🇨🇳 北京市+移动 2
+      - 🇨🇳 广东省佛山市 移动 2
+      - 🇺🇸 美国 CloudFlare节点 46
+      - 🇺🇸 美国 CloudFlare节点 61
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省江门市移动 8
+      - 🇨🇳 广东省移动 7
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 11
       - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_1_0@0
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_1_0@2
       - 🇺🇸_US_美国_1_0@3
+      - 🇺🇸_US_美国_2_0@4
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1_0@5
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_1_0@8
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2_0@10
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_2_0@16
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_2_0@17
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@18
       - 🇺🇸_US_美国_3_0@22
       - 🇨🇦_CA_加拿大_2_0@23
       - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@27
@@ -4233,13 +4197,13 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-122_2@122
       - 🇸🇬SG-159.223.94.156-123_2@123
       - 🏁RELAY-172.64.80.1-124_2@124
-      - 🇨🇳CN-183.232.170.22-126_2@126
       - 🇺🇸US-38.75.136.135-132_2@132
       - 🏁RELAY-172.67.204.19-133_2@133
       - 🏁RELAY-104.21.20.19-140_2@140
       - 🇺🇸US-38.75.136.135-149_2@149
       - 🏁RELAY-173.245.58.100-158_2@158
       - 🇺🇸US-38.75.136.135-169_2@169
+      - 🏁RELAY-104.26.4.57-172_2@172
       - 🇺🇸US-38.75.136.135-174_2@174
       - 🏁RELAY-162.159.11.32-184_2@184
       - 🏁RELAY-23.227.39.45-188_2@188
@@ -4247,6 +4211,21 @@ proxy-groups:
       - 🇺🇸US-38.75.136.135-194_2@194
       - 🇺🇸US-38.75.136.135-197_2@197
       - 🇮🇷IR-85.133.241.48-202_2@202
+      - 🇩🇪DE-3.76.175.82-206_2@205
+      - 🇺🇸US-38.75.136.135-211_2@210
+      - 🇻🇳VN-103.75.185.130-221_2@220
+      - 🇨🇳CN-111.45.33.29-228_2@227
+      - 🏁RELAY-104.21.47.176-229_2@228
+      - 🇫🇷FR-13.39.11.239-233_2@232
+      - 🇺🇸US-3.133.53.134-244_2@243
+      - 🇳🇱NL-103.214.68.57-245_2@244
+      - 🇮🇪IE-52.208.214.129-246_2@245
+      - 🏁RELAY-172.67.149.124-247_2@246
+      - 🇬🇧GB-18.135.227.25-249_2@248
+      - 🇮🇪IE-52.211.206.240-250_2@249
+      - 🇩🇪DE-194.87.71.23-261_2@260
+      - 🇸🇪SE-13.50.149.79-263_2@262
+      - 🇨🇳CN-223.113.130.55-268_2@267
       - 加拿大 004_3@3
       - 加拿大 008_3@7
       - 加拿大 009_3@8
@@ -4340,7 +4319,6 @@ proxy-groups:
       - 美国 049_3@142
       - 美国 050_3@143
       - 🇺🇸_US_美国_3_6@3
-      - 🇺🇸_US_美国_5_6@8
       - 🇺🇸_US_美国->🇿🇦_ZA_南非_6@11
       - 🇺🇸_US_美国_6_6@14
       - 🇺🇸_US_美国_7_6@16
@@ -4373,12 +4351,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】29_9@16
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
-      - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北京市+移动
-      - 甘肃省兰州市+移动
-      - 广东省佛山市移动50
-      - 美国+CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4462,43 +4435,35 @@ proxy-groups:
       - US_speednode_0082
       - US_speednode_0083
       - 高性价比机场:https://kf.kxyz.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 北京市+移动
+      - 🇳🇴 挪威+v2rayfree.eu.org
       - 🇨🇳 广东省佛山市 移动
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇻🇳 越南 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇰🇷 韩国 蘑菇主机BGP数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 34
-      - 🇺🇸 美国 麻省理工学院
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 CloudFlare节点 49
-      - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇨🇳 甘肃省兰州市+移动
+      - 🇨🇳 北京市+移动 2
+      - 🇨🇳 广东省佛山市 移动 2
+      - 🇺🇸 美国 CloudFlare节点 46
+      - 🇺🇸 美国 CloudFlare节点 61
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省江门市移动 8
+      - 🇨🇳 广东省移动 7
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 11
       - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_1_0@0
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_1_0@2
       - 🇺🇸_US_美国_1_0@3
+      - 🇺🇸_US_美国_2_0@4
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1_0@5
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_1_0@8
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2_0@10
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_2_0@16
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_2_0@17
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@18
       - 🇺🇸_US_美国_3_0@22
       - 🇨🇦_CA_加拿大_2_0@23
       - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@27
@@ -4580,13 +4545,13 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-122_2@122
       - 🇸🇬SG-159.223.94.156-123_2@123
       - 🏁RELAY-172.64.80.1-124_2@124
-      - 🇨🇳CN-183.232.170.22-126_2@126
       - 🇺🇸US-38.75.136.135-132_2@132
       - 🏁RELAY-172.67.204.19-133_2@133
       - 🏁RELAY-104.21.20.19-140_2@140
       - 🇺🇸US-38.75.136.135-149_2@149
       - 🏁RELAY-173.245.58.100-158_2@158
       - 🇺🇸US-38.75.136.135-169_2@169
+      - 🏁RELAY-104.26.4.57-172_2@172
       - 🇺🇸US-38.75.136.135-174_2@174
       - 🏁RELAY-162.159.11.32-184_2@184
       - 🏁RELAY-23.227.39.45-188_2@188
@@ -4594,6 +4559,21 @@ proxy-groups:
       - 🇺🇸US-38.75.136.135-194_2@194
       - 🇺🇸US-38.75.136.135-197_2@197
       - 🇮🇷IR-85.133.241.48-202_2@202
+      - 🇩🇪DE-3.76.175.82-206_2@205
+      - 🇺🇸US-38.75.136.135-211_2@210
+      - 🇻🇳VN-103.75.185.130-221_2@220
+      - 🇨🇳CN-111.45.33.29-228_2@227
+      - 🏁RELAY-104.21.47.176-229_2@228
+      - 🇫🇷FR-13.39.11.239-233_2@232
+      - 🇺🇸US-3.133.53.134-244_2@243
+      - 🇳🇱NL-103.214.68.57-245_2@244
+      - 🇮🇪IE-52.208.214.129-246_2@245
+      - 🏁RELAY-172.67.149.124-247_2@246
+      - 🇬🇧GB-18.135.227.25-249_2@248
+      - 🇮🇪IE-52.211.206.240-250_2@249
+      - 🇩🇪DE-194.87.71.23-261_2@260
+      - 🇸🇪SE-13.50.149.79-263_2@262
+      - 🇨🇳CN-223.113.130.55-268_2@267
       - 加拿大 004_3@3
       - 加拿大 008_3@7
       - 加拿大 009_3@8
@@ -4687,7 +4667,6 @@ proxy-groups:
       - 美国 049_3@142
       - 美国 050_3@143
       - 🇺🇸_US_美国_3_6@3
-      - 🇺🇸_US_美国_5_6@8
       - 🇺🇸_US_美国->🇿🇦_ZA_南非_6@11
       - 🇺🇸_US_美国_6_6@14
       - 🇺🇸_US_美国_7_6@16
@@ -4720,12 +4699,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】29_9@16
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
-      - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北京市+移动
-      - 甘肃省兰州市+移动
-      - 广东省佛山市移动50
-      - 美国+CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4841,43 +4815,35 @@ proxy-groups:
       - US_speednode_0082
       - US_speednode_0083
       - 高性价比机场:https://kf.kxyz.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 北京市+移动
+      - 🇳🇴 挪威+v2rayfree.eu.org
       - 🇨🇳 广东省佛山市 移动
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇻🇳 越南 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇰🇷 韩国 蘑菇主机BGP数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 34
-      - 🇺🇸 美国 麻省理工学院
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 CloudFlare节点 49
-      - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇨🇳 甘肃省兰州市+移动
+      - 🇨🇳 北京市+移动 2
+      - 🇨🇳 广东省佛山市 移动 2
+      - 🇺🇸 美国 CloudFlare节点 46
+      - 🇺🇸 美国 CloudFlare节点 61
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省江门市移动 8
+      - 🇨🇳 广东省移动 7
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 11
       - 🇨🇳 广东省江门市移动 12
       - 🇺🇸 美国CloudFlare节点 14
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_1_0@0
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_1_0@2
       - 🇺🇸_US_美国_1_0@3
+      - 🇺🇸_US_美国_2_0@4
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1_0@5
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_1_0@8
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2_0@10
       - 🇨🇭_CH_瑞士->🇭🇰_HK_香港_2_0@16
       - 🇰🇷_KR_韩国->🇭🇰_HK_香港_2_0@17
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@18
       - 🇺🇸_US_美国_3_0@22
       - 🇨🇦_CA_加拿大_2_0@23
       - 🇦🇪_AE_阿联酋->🇬🇧_GB_英国_0@27
@@ -4959,13 +4925,13 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-122_2@122
       - 🇸🇬SG-159.223.94.156-123_2@123
       - 🏁RELAY-172.64.80.1-124_2@124
-      - 🇨🇳CN-183.232.170.22-126_2@126
       - 🇺🇸US-38.75.136.135-132_2@132
       - 🏁RELAY-172.67.204.19-133_2@133
       - 🏁RELAY-104.21.20.19-140_2@140
       - 🇺🇸US-38.75.136.135-149_2@149
       - 🏁RELAY-173.245.58.100-158_2@158
       - 🇺🇸US-38.75.136.135-169_2@169
+      - 🏁RELAY-104.26.4.57-172_2@172
       - 🇺🇸US-38.75.136.135-174_2@174
       - 🏁RELAY-162.159.11.32-184_2@184
       - 🏁RELAY-23.227.39.45-188_2@188
@@ -4973,6 +4939,21 @@ proxy-groups:
       - 🇺🇸US-38.75.136.135-194_2@194
       - 🇺🇸US-38.75.136.135-197_2@197
       - 🇮🇷IR-85.133.241.48-202_2@202
+      - 🇩🇪DE-3.76.175.82-206_2@205
+      - 🇺🇸US-38.75.136.135-211_2@210
+      - 🇻🇳VN-103.75.185.130-221_2@220
+      - 🇨🇳CN-111.45.33.29-228_2@227
+      - 🏁RELAY-104.21.47.176-229_2@228
+      - 🇫🇷FR-13.39.11.239-233_2@232
+      - 🇺🇸US-3.133.53.134-244_2@243
+      - 🇳🇱NL-103.214.68.57-245_2@244
+      - 🇮🇪IE-52.208.214.129-246_2@245
+      - 🏁RELAY-172.67.149.124-247_2@246
+      - 🇬🇧GB-18.135.227.25-249_2@248
+      - 🇮🇪IE-52.211.206.240-250_2@249
+      - 🇩🇪DE-194.87.71.23-261_2@260
+      - 🇸🇪SE-13.50.149.79-263_2@262
+      - 🇨🇳CN-223.113.130.55-268_2@267
       - 加拿大 004_3@3
       - 加拿大 008_3@7
       - 加拿大 009_3@8
@@ -5066,7 +5047,6 @@ proxy-groups:
       - 美国 049_3@142
       - 美国 050_3@143
       - 🇺🇸_US_美国_3_6@3
-      - 🇺🇸_US_美国_5_6@8
       - 🇺🇸_US_美国->🇿🇦_ZA_南非_6@11
       - 🇺🇸_US_美国_6_6@14
       - 🇺🇸_US_美国_7_6@16
@@ -5099,12 +5079,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@4
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】29_9@16
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
-      - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@33
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北京市+移动
-      - 甘肃省兰州市+移动
-      - 广东省佛山市移动50
-      - 美国+CloudFlare节点
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
