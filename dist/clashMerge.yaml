@@ -1,4 +1,4 @@
-# 更新时间 2024-03-13T19:00:25.685Z
+# 更新时间 2024-03-14T00:59:39.344Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3054,73 +3054,57 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
-    name: 德国+黑森州法兰克福AMazon数据中心
-    server: 3.121.39.37
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.72.37.169
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+麻省理工学院
-    server: 18.135.227.25
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 新加坡+Amazon数据中心
-    server: hkmax09.170203.xyz
-    port: 34352
-    password: e49291db-08f5-4749-8dac-e5df481b9ac5
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
     name: 台湾省澎湖县+中华电信
     server: tw2.233235.xyz
     port: 23263
     password: 7e5f9c76-bda8-4f0c-8113-36078efec3c9
     udp: true
     skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 52.208.214.129
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 日本+东京Amazon数据中心
+    server: 2jp003d49d788f-0651-da9d-bccb-9a4b16401436.233235.xyz
+    port: 6994
+    password: 8f8c8cef-f86f-4dd6-a979-d5f73e5a115b
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国华盛顿Cogent通信公司35
+    name: 乌克兰V2CROSS.COM39
     ws-opts:
-      path: /path/153428133302
-      headers:
-        host: www.23179753.xyz
-    server: 38.14.107.241
-    port: 38001
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      path: /RACEVPN
+    server: tr-full.privateip.net
+    port: 443
+    uuid: c67a1d88-f8a2-42f5-9ca2-2452fb1b67d6
     alterId: 0
     cipher: auto
     network: ws
     tls: true
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.75.136.135
+    port: 8080
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
+    cipher: aes-128-gcm
   - type: trojan
-    name: 加拿大+V2CROSS.COM
-    server: hkmax05.170203.xyz
-    port: 4532
-    password: 8f8c8cef-f86f-4dd6-a979-d5f73e5a115b
+    name: 美国+Amazon数据中心
+    server: 44.221.146.2
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 广东省广州市+电信IDC机房
-    server: tw1.indianonlinejob2.com
-    port: 20005
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphYmI3M2QxZi03ZGNlLTRmMTctYWRhNC04ZDE0MTNmMmVkNGE=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 加拿大蒙特利尔+V2CROSS.COM
-    server: 134.195.196.231
-    port: 3306
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 德国+黑森州法兰克福AMazon数据中心
+    server: 3.121.39.37
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3419,15 +3403,13 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】58_9@52
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】50_9@59
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+麻省理工学院
-      - 新加坡+Amazon数据中心
       - 台湾省澎湖县+中华电信
-      - 美国华盛顿Cogent通信公司35
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市+电信IDC机房
-      - 加拿大蒙特利尔+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 乌克兰V2CROSS.COM39
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3726,15 +3708,13 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】58_9@52
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】50_9@59
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+麻省理工学院
-      - 新加坡+Amazon数据中心
       - 台湾省澎湖县+中华电信
-      - 美国华盛顿Cogent通信公司35
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市+电信IDC机房
-      - 加拿大蒙特利尔+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 乌克兰V2CROSS.COM39
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4032,15 +4012,13 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】58_9@52
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】50_9@59
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+麻省理工学院
-      - 新加坡+Amazon数据中心
       - 台湾省澎湖县+中华电信
-      - 美国华盛顿Cogent通信公司35
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市+电信IDC机房
-      - 加拿大蒙特利尔+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 乌克兰V2CROSS.COM39
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4370,15 +4348,13 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】58_9@52
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】50_9@59
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+黑森州法兰克福AMazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+麻省理工学院
-      - 新加坡+Amazon数据中心
       - 台湾省澎湖县+中华电信
-      - 美国华盛顿Cogent通信公司35
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市+电信IDC机房
-      - 加拿大蒙特利尔+V2CROSS.COM
+      - 爱尔兰+都柏林Amazon数据中心
+      - 日本+东京Amazon数据中心
+      - 乌克兰V2CROSS.COM39
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
