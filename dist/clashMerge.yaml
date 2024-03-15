@@ -1,4 +1,4 @@
-# 更新时间 2024-03-15T12:57:37.259Z
+# 更新时间 2024-03-15T13:19:13.642Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4000,6 +4000,31 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 广东省佛山市移动50
+    ws-opts:
+      path: /debian
+      headers:
+        host: data-jp-v1.usabooks.com.cn
+    server: data-jp-v1.usabooks.com.cn
+    port: 20301
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国加利福尼亚州圣何塞PEGTECH58
+    ws-opts:
+      path: /path/153428133302
+      headers:
+        host: www.31033708.xyz
+    server: 142.4.97.77
+    port: 38000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4384,6 +4409,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】11_9@23
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省佛山市移动50
+      - 美国加利福尼亚州圣何塞PEGTECH58
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4768,6 +4795,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】11_9@23
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省佛山市移动50
+      - 美国加利福尼亚州圣何塞PEGTECH58
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5151,6 +5180,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】11_9@23
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省佛山市移动50
+      - 美国加利福尼亚州圣何塞PEGTECH58
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5566,6 +5597,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】48_9@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】11_9@23
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 广东省佛山市移动50
+      - 美国加利福尼亚州圣何塞PEGTECH58
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
