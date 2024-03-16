@@ -1,4 +1,4 @@
-# 更新时间 2024-03-16T18:53:01.306Z
+# 更新时间 2024-03-16T19:08:24.807Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4299,45 +4299,40 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.67.131.167
+    name: 美国+CloudFlare节点
+    server: 104.16.159.4
+    port: 443
+    password: b4e8771997c94732acbc9ec4d19c2589
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 乌克兰+V2CROSS.COM
+    server: 95.164.33.62
+    port: 443
+    password: 0b1371aa-649d-41dc-9126-338c87936500
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Xerox
+    server: 13.50.183.153
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.39.202.47
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 8009
-    password: YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+麻省理工学院
-    server: 18.134.1.103
+    name: 美国+俄亥俄州都柏林Amazon数据中心
+    server: 18.221.92.147
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 172.67.132.6
-    port: 2096
-    password: 24f10d2e-5c81-4606-b124-6aa830a55dbf
+    name: 美国+Amazon数据中心
+    server: 13.39.57.76
+    port: 22222
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.68.134.9
-    port: 6379
-    password: YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2
-    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4721,12 +4716,11 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
       - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 乌克兰+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国+Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5110,12 +5104,11 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
       - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 乌克兰+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国+Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5498,12 +5491,11 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
       - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 乌克兰+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国+Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5918,12 +5910,11 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+麻省理工学院
       - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 乌克兰+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国+Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
