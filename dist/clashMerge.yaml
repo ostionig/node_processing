@@ -1,4 +1,4 @@
-# 更新时间 2024-03-16T12:56:44.266Z
+# 更新时间 2024-03-16T13:16:47.865Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4350,6 +4350,45 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu3.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国Akamai科技公司CDN网络节点14
+    ws-opts:
+      path: /CAT
+      headers:
+        host: 02.appleid.bf
+    server: 02.appleid.bf
+    port: 443
+    uuid: bfef2469-9d59-4111-b54b-4d58e819a808
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.199.127.30
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 英国+伦敦Amazon数据中心
+    server: 35.179.72.238
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4743,6 +4782,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@20
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点12
+      - 美国Akamai科技公司CDN网络节点14
+      - 美国+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5136,6 +5179,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@20
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点12
+      - 美国Akamai科技公司CDN网络节点14
+      - 美国+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5528,6 +5575,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@20
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点12
+      - 美国Akamai科技公司CDN网络节点14
+      - 美国+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5952,6 +6003,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】55_9@20
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点12
+      - 美国Akamai科技公司CDN网络节点14
+      - 美国+Amazon数据中心
+      - 英国+伦敦Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
