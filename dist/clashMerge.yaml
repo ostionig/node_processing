@@ -1,4 +1,4 @@
-# 更新时间 2024-03-16T19:08:24.807Z
+# 更新时间 2024-03-17T01:03:44.677Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4299,31 +4299,17 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
+    name: 荷兰+阿姆斯特丹Choopa数据中心
+    server: 78.141.221.194
+    port: 443
+    password: wkmY1R4EcP
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
     name: 美国+CloudFlare节点
-    server: 104.16.159.4
+    server: 104.21.47.176
     port: 443
-    password: b4e8771997c94732acbc9ec4d19c2589
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 乌克兰+V2CROSS.COM
-    server: 95.164.33.62
-    port: 443
-    password: 0b1371aa-649d-41dc-9126-338c87936500
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Xerox
-    server: 13.50.183.153
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄亥俄州都柏林Amazon数据中心
-    server: 18.221.92.147
-    port: 22222
-    password: telegram-id-directvpn
+    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
     udp: true
     skip-cert-verify: true
   - type: trojan
@@ -4331,6 +4317,73 @@ proxies:
     server: 13.39.57.76
     port: 22222
     password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 新加坡DigitalOcean数据中心9
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: gw.alicdn.com
+    server: 01.appleid.bf
+    port: 443
+    uuid: bfef2469-9d59-4111-b54b-4d58e819a808
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 英国+社会保险安全部
+    server: v1.arvancode.eu.org
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.73.62.169
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 35.156.38.82
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点24
+    ws-opts:
+      path: /45064/google
+      headers:
+        host: time.mississippistatefootball.com
+    server: canva.com
+    port: 443
+    uuid: 7e47932f-67e4-49ef-8bcd-808bbc6fa382
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.75.28.99
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省佛山市移动33
+    server: iepl2.airtcp.vip
+    port: 58000
+    uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 美国+俄亥俄州都柏林Amazon数据中心
+    server: 18.221.92.147
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -4716,11 +4769,17 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 荷兰+阿姆斯特丹Choopa数据中心
       - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
-      - 美国+Xerox
-      - 美国+俄亥俄州都柏林Amazon数据中心
       - 美国+Amazon数据中心
+      - 新加坡DigitalOcean数据中心9
+      - 英国+社会保险安全部
+      - 爱尔兰+都柏林Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点24
+      - 美国+Amazon+EC2服务器
+      - 广东省佛山市移动33
+      - 美国+俄亥俄州都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5104,11 +5163,17 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 荷兰+阿姆斯特丹Choopa数据中心
       - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
-      - 美国+Xerox
-      - 美国+俄亥俄州都柏林Amazon数据中心
       - 美国+Amazon数据中心
+      - 新加坡DigitalOcean数据中心9
+      - 英国+社会保险安全部
+      - 爱尔兰+都柏林Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点24
+      - 美国+Amazon+EC2服务器
+      - 广东省佛山市移动33
+      - 美国+俄亥俄州都柏林Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5491,11 +5556,17 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 荷兰+阿姆斯特丹Choopa数据中心
       - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
-      - 美国+Xerox
-      - 美国+俄亥俄州都柏林Amazon数据中心
       - 美国+Amazon数据中心
+      - 新加坡DigitalOcean数据中心9
+      - 英国+社会保险安全部
+      - 爱尔兰+都柏林Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点24
+      - 美国+Amazon+EC2服务器
+      - 广东省佛山市移动33
+      - 美国+俄亥俄州都柏林Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5910,11 +5981,17 @@ proxy-groups:
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】60_9@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】32_9@29
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 荷兰+阿姆斯特丹Choopa数据中心
       - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
-      - 美国+Xerox
-      - 美国+俄亥俄州都柏林Amazon数据中心
       - 美国+Amazon数据中心
+      - 新加坡DigitalOcean数据中心9
+      - 英国+社会保险安全部
+      - 爱尔兰+都柏林Amazon数据中心
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点24
+      - 美国+Amazon+EC2服务器
+      - 广东省佛山市移动33
+      - 美国+俄亥俄州都柏林Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
