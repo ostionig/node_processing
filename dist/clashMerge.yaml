@@ -1,4 +1,4 @@
-# 更新时间 2024-03-18T18:50:37.783Z
+# 更新时间 2024-03-18T19:05:01.815Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5250,31 +5250,40 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.49.35.176
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.97.185.72
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 英国+伦敦Amazon数据中心
+    server: 3.10.56.83
+    port: 13031
+    password: kBJUUmf6ZFcd
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 乌克兰+V2CROSS.COM
+    server: 95.164.68.116
+    port: 2053
+    password: f37a931d-7092-48fe-b82f-a98da3040eb2
+    udp: true
+    skip-cert-verify: true
   - type: ss
-    name: 美国+惠普HP
-    server: series-a2-me.varzesh360.co
+    name: 巴林+Amazon数据中心
+    server: 15.185.188.190
     port: 443
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
     cipher: aes-128-gcm
-  - type: trojan
-    name: 广东省广州市+移动
-    server: 183.236.51.55
-    port: 16001
-    password: a2673b60-aca1-48c2-a4ad-abeb518e18f9
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 广东省佛山市移动18
-    ws-opts:
-      path: /debian
-      headers:
-        host: data-jp-v1.usabooks.com.cn
-    server: data-jp-v1.usabooks.com.cn
-    port: 20301
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 0
-    cipher: auto
-    network: ws
   - type: trojan
     name: 爱尔兰+都柏林Amazon数据中心
     server: 52.17.85.93
@@ -5282,18 +5291,6 @@ proxies:
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点27
-    ws-opts:
-      path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    server: 108.162.192.100
-    port: 8080
-    uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5742,11 +5739,12 @@ proxy-groups:
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_9@75
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】86_9@76
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+惠普HP
-      - 广东省广州市+移动
-      - 广东省佛山市移动18
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 英国+伦敦Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 巴林+Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点27
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6195,11 +6193,12 @@ proxy-groups:
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_9@75
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】86_9@76
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+惠普HP
-      - 广东省广州市+移动
-      - 广东省佛山市移动18
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 英国+伦敦Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 巴林+Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点27
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6647,11 +6646,12 @@ proxy-groups:
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_9@75
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】86_9@76
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+惠普HP
-      - 广东省广州市+移动
-      - 广东省佛山市移动18
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 英国+伦敦Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 巴林+Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点27
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7131,11 +7131,12 @@ proxy-groups:
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_9@75
       - 🇫🇷 法国【付费推荐：https://jdyvip.link/】86_9@76
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+惠普HP
-      - 广东省广州市+移动
-      - 广东省佛山市移动18
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 英国+伦敦Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 巴林+Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点27
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
