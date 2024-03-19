@@ -1,4 +1,4 @@
-# 更新时间 2024-03-19T12:57:13.872Z
+# 更新时间 2024-03-19T13:18:07.687Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5547,6 +5547,37 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.48.113.24
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.107.226.132
+    port: 8080
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Xerox
+    server: 13.50.178.40
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国加利福尼亚州圣何塞PEGTECH31
+    ws-opts:
+      path: /path/153428133302
+    server: 142.4.97.72
+    port: 38000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -6024,6 +6055,10 @@ proxy-groups:
       - 🇮🇪 爱尔兰【付费推荐：https://jdyvip.link/】87_9@77
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】89_9@78
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Xerox
+      - 美国加利福尼亚州圣何塞PEGTECH31
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6501,6 +6536,10 @@ proxy-groups:
       - 🇮🇪 爱尔兰【付费推荐：https://jdyvip.link/】87_9@77
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】89_9@78
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Xerox
+      - 美国加利福尼亚州圣何塞PEGTECH31
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6977,6 +7016,10 @@ proxy-groups:
       - 🇮🇪 爱尔兰【付费推荐：https://jdyvip.link/】87_9@77
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】89_9@78
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Xerox
+      - 美国加利福尼亚州圣何塞PEGTECH31
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7485,6 +7528,10 @@ proxy-groups:
       - 🇮🇪 爱尔兰【付费推荐：https://jdyvip.link/】87_9@77
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】89_9@78
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Xerox
+      - 美国加利福尼亚州圣何塞PEGTECH31
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
