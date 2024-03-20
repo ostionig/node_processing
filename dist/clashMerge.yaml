@@ -1,4 +1,4 @@
-# 更新时间 2024-03-20T18:51:18.025Z
+# 更新时间 2024-03-20T19:04:58.585Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3224,24 +3224,41 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 德国黑森州法兰克福DigitalOcean数据中心2
-    ws-opts:
-      path: /
-      headers:
-        host: speedtest.net
-    server: 165.227.138.218
-    port: 8585
-    uuid: afedd970-62a2-46f5-88c4-e1f5305d3758
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 8009
-    password: YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.42.156.183
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.49.123.244
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 广东省深圳市+移动
+    server: 19234tj.matrixxx888.com
+    port: 19234
+    password: 7b0ed263-ed4d-375f-9002-a932b1da098a
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.137.127.245
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 加拿大+魁北克省蒙特利尔Amazon数据中心
+    server: 35.183.249.123
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: ss
     name: 广东省江门市+移动
     server: ddns.olucloud.subapi.cc
@@ -3249,50 +3266,55 @@ proxies:
     password: >-
       Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2ZjkzMjA1Ny1mZmQ5LTQ0MjYtOGNhNy1mMDY1NGJhYmY4NGY=
     cipher: aes-128-gcm
-  - type: ss
-    name: 瑞典+V2CROSS.COM
-    server: 167.88.61.175
-    port: 8090
-    password: YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 新加坡+DigitalOcean数据中心
-    server: 139.59.108.29
-    port: 31313
-    password: dT6h9HBwQO
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.48.207.242
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 18.196.217.14
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 广东省佛山市移动35
+    name: 美国V2CROSS.COM19
+    server: 45.45.152.12
+    port: 8099
+    uuid: fa1897db-1925-4c86-a495-939a959af900
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国华盛顿Cogent通信公司25
     ws-opts:
-      path: /debian
+      path: /path/153428133302
       headers:
-        host: data-jp-v1.usabooks.com.cn
-    server: data-jp-v1.usabooks.com.cn
-    port: 20301
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+        host: www.23179753.xyz
+    server: 38.14.107.249
+    port: 38001
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: ws
+    tls: true
+  - type: vmess
+    name: 乌克兰V2CROSS.COM31
+    ws-opts:
+      path: /
+    server: 95.164.89.225
+    port: 38153
+    uuid: 70a694c8-ba65-4d1d-942d-4fc489da1b5f
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国Microsoft数据中心34
+    ws-opts:
+      path: /pdd?ed=2048
+      headers:
+        host: hk.pdda.me
+    server: 20.2.218.142
+    port: 8443
+    uuid: 934e000a-0dec-4c0a-8ea9-4ffaccc28272
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.237.176.178
-    port: 16975
-    password: wpLP2iWsEQWw
+    name: 美国+CloudFlare节点
+    server: 104.19.171.7
+    port: 443
+    password: 984e400bf5d541b7b0815913fe0c432a
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -3630,15 +3652,17 @@ proxy-groups:
       - 🇺🇸 美国【付费推荐：https://jdyvip.link/】79_8@33
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心2
-      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 广东省深圳市+移动
+      - 美国+Amazon+EC2服务器
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
       - 广东省江门市+移动
-      - 瑞典+V2CROSS.COM
-      - 新加坡+DigitalOcean数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 广东省佛山市移动35
-      - 美国+惠普公司
+      - 美国V2CROSS.COM19
+      - 美国华盛顿Cogent通信公司25
+      - 乌克兰V2CROSS.COM31
+      - 美国Microsoft数据中心34
+      - 美国+CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3974,15 +3998,17 @@ proxy-groups:
       - 🇺🇸 美国【付费推荐：https://jdyvip.link/】79_8@33
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心2
-      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 广东省深圳市+移动
+      - 美国+Amazon+EC2服务器
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
       - 广东省江门市+移动
-      - 瑞典+V2CROSS.COM
-      - 新加坡+DigitalOcean数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 广东省佛山市移动35
-      - 美国+惠普公司
+      - 美国V2CROSS.COM19
+      - 美国华盛顿Cogent通信公司25
+      - 乌克兰V2CROSS.COM31
+      - 美国Microsoft数据中心34
+      - 美国+CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4317,15 +4343,17 @@ proxy-groups:
       - 🇺🇸 美国【付费推荐：https://jdyvip.link/】79_8@33
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心2
-      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 广东省深圳市+移动
+      - 美国+Amazon+EC2服务器
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
       - 广东省江门市+移动
-      - 瑞典+V2CROSS.COM
-      - 新加坡+DigitalOcean数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 广东省佛山市移动35
-      - 美国+惠普公司
+      - 美国V2CROSS.COM19
+      - 美国华盛顿Cogent通信公司25
+      - 乌克兰V2CROSS.COM31
+      - 美国Microsoft数据中心34
+      - 美国+CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4692,15 +4720,17 @@ proxy-groups:
       - 🇺🇸 美国【付费推荐：https://jdyvip.link/】79_8@33
       - 🇰🇷 韩国【付费推荐：https://jdyvip.link/】84_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国黑森州法兰克福DigitalOcean数据中心2
-      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 广东省深圳市+移动
+      - 美国+Amazon+EC2服务器
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
       - 广东省江门市+移动
-      - 瑞典+V2CROSS.COM
-      - 新加坡+DigitalOcean数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 广东省佛山市移动35
-      - 美国+惠普公司
+      - 美国V2CROSS.COM19
+      - 美国华盛顿Cogent通信公司25
+      - 乌克兰V2CROSS.COM31
+      - 美国Microsoft数据中心34
+      - 美国+CloudFlare节点
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
