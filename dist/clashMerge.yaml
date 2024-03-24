@@ -1,4 +1,4 @@
-# 更新时间 2024-03-24T06:51:17.942Z
+# 更新时间 2024-03-24T07:06:29.943Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5051,31 +5051,57 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: ss
+    name: 日本+M247网络
+    server: 185.172.113.182
+    port: 811
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 法国+OVH机房SAS硬盘BGP主机
+    server: 149.202.82.172
+    port: 2376
+    password: YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国V2CROSS.COM0
+    name: 美国CloudFlare节点4
     ws-opts:
-      path: /ting123
-    server: www.fyhqll.top
-    port: 50874
-    uuid: ca0f6eb4-bb7c-4fdb-8c8c-5aee7caaf3d1
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.26
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: /@hopev2ray
+      headers:
+        host: us-netflix.hihu.net
+    server: 104.21.25.19
+    port: 443
+    uuid: 9eac2350-e4f0-11ee-b532-205c6d5f5d78
     alterId: 0
     cipher: auto
     network: ws
     tls: true
-  - type: ss
-    name: 南非+V2CROSS.COM
-    server: 129.232.129.156
-    port: 444
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpEaVBpZXR5b3J5
-    cipher: aes-128-gcm
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 23.142.200.87
-    port: 16899
-    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点26
+    name: 美国CloudFlare节点19
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.126
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点22
     ws-opts:
       path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
       headers:
@@ -5086,12 +5112,18 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.75.137.66
-    port: 8091
-    password: YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点26
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.91
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5558,11 +5590,13 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国V2CROSS.COM0
-      - 南非+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
+      - 日本+M247网络
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点22
       - 美国CloudFlare节点26
-      - 美国+华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6029,11 +6063,13 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国V2CROSS.COM0
-      - 南非+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
+      - 日本+M247网络
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点22
       - 美国CloudFlare节点26
-      - 美国+华盛顿Cogent通信公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6499,11 +6535,13 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国V2CROSS.COM0
-      - 南非+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
+      - 日本+M247网络
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点22
       - 美国CloudFlare节点26
-      - 美国+华盛顿Cogent通信公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7001,11 +7039,13 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国V2CROSS.COM0
-      - 南非+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
+      - 日本+M247网络
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国CloudFlare节点4
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点22
       - 美国CloudFlare节点26
-      - 美国+华盛顿Cogent通信公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
