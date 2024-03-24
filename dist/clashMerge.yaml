@@ -1,4 +1,4 @@
-# 更新时间 2024-03-24T12:58:59.035Z
+# 更新时间 2024-03-24T13:19:06.705Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5030,6 +5030,150 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.128
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: PVR7r.cnbete.life
+    server: 104.21.238.174
+    port: 80
+    uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.41.164.126
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: m4p9q.cnbete.life
+    server: 104.21.235.175
+    port: 80
+    uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 104.16.192.157
+    port: 443
+    password: dba20dcb635e430fa4d3bfc303a149d2
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: PVR7r.cnbete.life
+    server: 104.21.238.130
+    port: 80
+    uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点16
+    ws-opts:
+      path: /video/P7EExoE2
+      headers:
+        host: oA5FSz9Tjp1.yofnhkfc.xyz
+    server: cfcdn3.sanfencdn9.com
+    port: 80
+    uuid: a564b1ec-2d51-418a-ba01-e9ab22736afc
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点18
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.226
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点22
+    ws-opts:
+      path: /@hopev2ray
+      headers:
+        host: us-netflix.hihu.net
+    server: 104.21.25.19
+    port: 443
+    uuid: 9eac2350-e4f0-11ee-b532-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: ss
+    name: 英国+社会保险安全部
+    server: 51.178.206.74
+    port: 42905
+    password: YWVzLTI1Ni1nY206UTNqOFYzaklFTmt6czhaRQ==
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 加拿大多伦多V2CROSS.COM29
+    ws-opts:
+      path: /
+    server: 198.57.27.212
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点30
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.160
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国加利福尼亚州圣何塞PEGTECH39
+    ws-opts:
+      path: /path/153428133302
+    server: 142.4.97.66
+    port: 38000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: ss
+    name: 瑞典+V2CROSS.COM
+    server: 167.88.62.104
+    port: 2376
+    password: YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5492,6 +5636,20 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点22
+      - 英国+社会保险安全部
+      - 加拿大多伦多V2CROSS.COM29
+      - 美国CloudFlare节点30
+      - 美国加利福尼亚州圣何塞PEGTECH39
+      - 瑞典+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5954,6 +6112,20 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点22
+      - 英国+社会保险安全部
+      - 加拿大多伦多V2CROSS.COM29
+      - 美国CloudFlare节点30
+      - 美国加利福尼亚州圣何塞PEGTECH39
+      - 瑞典+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6415,6 +6587,20 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点22
+      - 英国+社会保险安全部
+      - 加拿大多伦多V2CROSS.COM29
+      - 美国CloudFlare节点30
+      - 美国加利福尼亚州圣何塞PEGTECH39
+      - 瑞典+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6908,6 +7094,20 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点22
+      - 英国+社会保险安全部
+      - 加拿大多伦多V2CROSS.COM29
+      - 美国CloudFlare节点30
+      - 美国加利福尼亚州圣何塞PEGTECH39
+      - 瑞典+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
