@@ -1,4 +1,4 @@
-# 更新时间 2024-03-24T18:52:04.804Z
+# 更新时间 2024-03-24T19:07:58.147Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5114,46 +5114,40 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点0
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.212
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.18.13.130
-    port: 443
-    password: 7fcced56-528a-4fc8-9a78-18deeb70631e
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.36.221.225
+    name: 美国+Amazon+EC2服务器
+    server: 3.76.1.179
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: PVR7r.cnbete.life
-    server: 104.21.238.2
-    port: 80
-    uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    network: ws
   - type: ss
-    name: 美国+3COM公司企业网
-    server: 152.67.42.247
-    port: 7702
-    password: YWVzLTI1Ni1nY206ODMzOTQ0NmEtMzBlNy00M2EwLWEyNWQtZGZlNTlkNDdmYTlm
+    name: 广东省广州市+移动
+    server: gran.efnwgood.top
+    port: 28894
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YmMxZWRkZi0xNjc0LTQwZjEtYWQ2NC0wMGE2ZmM1YzIwNTQ=
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点15
+    name: 美国CloudFlare节点9
     ws-opts:
       path: /
       headers:
-        host: us1.laobideng.xyz
-    server: 104.21.84.38
-    port: 8880
+        host: us2.laobideng.xyz
+    server: us2.laobideng.xyz
+    port: 8080
     uuid: f9c92e9c-5f92-4ff7-99a1-91a973b6ec57
     alterId: 0
     cipher: auto
@@ -5161,70 +5155,64 @@ proxies:
   - type: vmess
     name: 美国CloudFlare节点26
     ws-opts:
-      path: /?ed=2048
+      path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
       headers:
-        host: PVR7r.cnbete.life
-    server: 104.21.238.151
-    port: 80
-    uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+        host: technological-mel-fill-decide.trycloudflare.com
+    server: 162.159.7.226
+    port: 8080
+    uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 35.181.231.247
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.53.58.116
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 加拿大+Coextro
+    server: 149.248.76.129
+    port: 28824
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6T3dXYVdRQWtveUk5a3pMUEJqcE9o
+    cipher: aes-128-gcm
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: 78.153.139.25
+    port: 32147
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNQ0JTd3BSSjBWNjY3ZGpaTTVHTDJi
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 35.158.168.105
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+惠普HP
+    server: 15.157.105.205
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点27
-    ws-opts:
-      path: /
-    server: cdn.vds-server.ir
-    port: 8880
-    uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省汕头市移动28
-    ws-opts:
-      path: /debian
-      headers:
-        host: data-jp-v1.usabooks.com.cn
-    server: data-jp-v1.usabooks.com.cn
-    port: 20301
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点32
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: m4p9q.cnbete.life
-    server: 104.21.235.140
-    port: 80
-    uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点34
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: m4p9q.cnbete.life
-    server: 104.21.235.6
-    port: 80
-    uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点38
+    name: 美国CloudFlare节点65
     ws-opts:
       path: /?ed=2048
       headers:
-        host: PVR7r.cnbete.life
-    server: 104.21.238.159
+        host: hDIgP.cnbete.life
+    server: 104.21.237.70
     port: 80
-    uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
     alterId: 0
     cipher: auto
     network: ws
@@ -5692,17 +5680,18 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国+3COM公司企业网
-      - 美国CloudFlare节点15
+      - 美国CloudFlare节点0
+      - 美国+Amazon+EC2服务器
+      - 广东省广州市+移动
+      - 美国CloudFlare节点9
       - 美国CloudFlare节点26
-      - 美国CloudFlare节点27
-      - 广东省汕头市移动28
-      - 美国CloudFlare节点32
-      - 美国CloudFlare节点34
-      - 美国CloudFlare节点38
+      - 法国+巴黎Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 加拿大+Coextro
+      - 俄罗斯+V2CROSS.COM
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+惠普HP
+      - 美国CloudFlare节点65
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6167,17 +6156,18 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国+3COM公司企业网
-      - 美国CloudFlare节点15
+      - 美国CloudFlare节点0
+      - 美国+Amazon+EC2服务器
+      - 广东省广州市+移动
+      - 美国CloudFlare节点9
       - 美国CloudFlare节点26
-      - 美国CloudFlare节点27
-      - 广东省汕头市移动28
-      - 美国CloudFlare节点32
-      - 美国CloudFlare节点34
-      - 美国CloudFlare节点38
+      - 法国+巴黎Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 加拿大+Coextro
+      - 俄罗斯+V2CROSS.COM
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+惠普HP
+      - 美国CloudFlare节点65
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6641,17 +6631,18 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国+3COM公司企业网
-      - 美国CloudFlare节点15
+      - 美国CloudFlare节点0
+      - 美国+Amazon+EC2服务器
+      - 广东省广州市+移动
+      - 美国CloudFlare节点9
       - 美国CloudFlare节点26
-      - 美国CloudFlare节点27
-      - 广东省汕头市移动28
-      - 美国CloudFlare节点32
-      - 美国CloudFlare节点34
-      - 美国CloudFlare节点38
+      - 法国+巴黎Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 加拿大+Coextro
+      - 俄罗斯+V2CROSS.COM
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+惠普HP
+      - 美国CloudFlare节点65
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7147,17 +7138,18 @@ proxy-groups:
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:7001_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国+3COM公司企业网
-      - 美国CloudFlare节点15
+      - 美国CloudFlare节点0
+      - 美国+Amazon+EC2服务器
+      - 广东省广州市+移动
+      - 美国CloudFlare节点9
       - 美国CloudFlare节点26
-      - 美国CloudFlare节点27
-      - 广东省汕头市移动28
-      - 美国CloudFlare节点32
-      - 美国CloudFlare节点34
-      - 美国CloudFlare节点38
+      - 法国+巴黎Amazon数据中心
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 加拿大+Coextro
+      - 俄罗斯+V2CROSS.COM
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+惠普HP
+      - 美国CloudFlare节点65
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
