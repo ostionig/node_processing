@@ -1,4 +1,4 @@
-# 更新时间 2024-03-25T18:51:35.394Z
+# 更新时间 2024-03-25T19:06:39.592Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5622,40 +5622,6 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /mailimahil-vm?ed=2048
-      headers:
-        host: fhm.mahilu.site
-    server: fhm.mahilu.site
-    port: 443
-    uuid: b37f0b5e-4ff6-4062-a758-fb7a788dd14b
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: trojan
-    name: 瑞典+斯德哥尔摩Amazon数据中心
-    server: 13.48.101.25
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.40.90.131
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+麻省理工学院
-    server: 18.135.149.185
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
   - type: trojan
     name: 美国+惠普HP
     server: 16.170.92.180
@@ -5663,18 +5629,80 @@ proxies:
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点4
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: m4p9q.cnbete.life
+    server: 104.21.235.123
+    port: 80
+    uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.21.97.72
+    name: 法国+巴黎Amazon数据中心
+    server: 35.181.228.177
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.77.233.138
+    name: 美国+Amazon+EC2服务器
+    server: 3.64.221.230
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 英国+社会保险安全部
+    server: 51.44.34.147
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.43.38.227
     port: 22222
     password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点44
+    ws-opts:
+      path: /
+    server: cdn.vds-server.ir
+    port: 8880
+    uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 104.16.192.146
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点48
+    ws-opts:
+      path: /vmess
+      headers:
+        host: no1.xv2ray.net
+    server: 104.21.24.72
+    port: 80
+    uuid: 5120d7e0-5ba9-4164-b61b-0f8fefabab34
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 35.158.2.187
+    port: 22222
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -6180,13 +6208,16 @@ proxy-groups:
       - 🇷🇺 俄罗斯联邦【付费推荐：https://jdyvip.link/】101_8@92
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】108_8@99
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点8
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+麻省理工学院
       - 美国+惠普HP
+      - 美国CloudFlare节点4
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点44
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点48
+      - 德国+黑森州法兰克福Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6690,13 +6721,16 @@ proxy-groups:
       - 🇷🇺 俄罗斯联邦【付费推荐：https://jdyvip.link/】101_8@92
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】108_8@99
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点8
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+麻省理工学院
       - 美国+惠普HP
+      - 美国CloudFlare节点4
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点44
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点48
+      - 德国+黑森州法兰克福Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -7199,13 +7233,16 @@ proxy-groups:
       - 🇷🇺 俄罗斯联邦【付费推荐：https://jdyvip.link/】101_8@92
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】108_8@99
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点8
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+麻省理工学院
       - 美国+惠普HP
+      - 美国CloudFlare节点4
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点44
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点48
+      - 德国+黑森州法兰克福Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7740,13 +7777,16 @@ proxy-groups:
       - 🇷🇺 俄罗斯联邦【付费推荐：https://jdyvip.link/】101_8@92
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】108_8@99
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点8
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon数据中心
-      - 美国+麻省理工学院
       - 美国+惠普HP
+      - 美国CloudFlare节点4
+      - 法国+巴黎Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 英国+社会保险安全部
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点44
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点48
+      - 德国+黑森州法兰克福Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
