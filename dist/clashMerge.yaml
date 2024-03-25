@@ -1,4 +1,4 @@
-# 更新时间 2024-03-25T06:53:30.795Z
+# 更新时间 2024-03-25T07:10:29.495Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5099,39 +5099,32 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 英国+社会保险安全部
-    server: java.ct.arvancode.eu.Org
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点9
+    name: 美国CloudFlare节点1
     ws-opts:
-      path: /qin20
+      path: /
       headers:
-        host: qin20.rong1104.uk
-    server: 104.21.80.53
-    port: 2053
-    uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c
+        host: en.laobideng.xyz
+    server: en.laobideng.xyz
+    port: 8080
+    uuid: f9c92e9c-5f92-4ff7-99a1-91a973b6ec57
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
   - type: vmess
-    name: 美国CloudFlare节点10
+    name: 美国CloudFlare节点8
     ws-opts:
       path: /?ed=2048
       headers:
-        host: hDIgP.cnbete.life
-    server: 104.21.237.128
+        host: VKJi7.cnbete.life
+    server: 104.21.236.227
     port: 80
-    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    uuid: 1973e770-e615-11ee-b238-205c6d5f5d78
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点19
+    name: 美国CloudFlare节点12
     ws-opts:
       path: /?ed=2048
       headers:
@@ -5142,27 +5135,33 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 172.67.192.61
+    port: 443
+    password: 2e75beeb-25d1-4419-b8bb-95933f7d8488
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.75.137.93
+    port: 2376
+    password: YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3
+    cipher: aes-128-gcm
   - type: vmess
-    name: 俄罗斯莫斯科JustHost20
+    name: 美国CloudFlare节点23
     ws-opts:
-      path: /
+      path: /?ed=2048
       headers:
-        host: 45.144.2.113
-    server: 45.144.2.113
+        host: hDIgP.cnbete.life
+    server: 104.21.237.36
     port: 80
-    uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.47.176
-    port: 443
-    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点32
+    name: 美国CloudFlare节点29
     ws-opts:
       path: /?ed=2048
       headers:
@@ -5174,20 +5173,75 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 广东省广州市电信IDC机房58
+    name: 美国CloudFlare节点30
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.214
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点47
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: m4p9q.cnbete.life
+    server: 104.21.235.170
+    port: 80
+    uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 北美地区V2CROSS.COM52
+    server: 23.142.200.149
+    port: 11129
+    uuid: 2c69c823-4dad-4dc1-89df-6eeab1dc5fe5
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: ss
+    name: 乌克兰+V2CROSS.COM
+    server: 185.39.31.6
+    port: 63911
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToydkpFMWlyQXBycFc0RU1YYXlUQld4
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点56
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: hDIgP.cnbete.life
+    server: 104.21.237.39
+    port: 80
+    uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省广州市电信IDC机房57
     server: 14.18.91.151
     port: 50004
     uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 广东省+移动
-    server: p1.bxy-fun1.com
-    port: 44101
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkN2JlZTgzMC0wOWFhLTQzYjItODk0NS0zYjM0MWI4Nzg3ZGI=
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国弗吉尼亚州阿什本Amazon数据中心58
+    ws-opts:
+      path: /
+      headers:
+        host: hetzner.com
+    server: 54.86.237.50
+    port: 8881
+    uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+    alterId: 0
+    cipher: auto
+    network: auto
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5657,15 +5711,20 @@ proxy-groups:
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】9_8@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点19
-      - 俄罗斯莫斯科JustHost20
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点12
       - 美国+CloudFlare节点
-      - 美国CloudFlare节点32
-      - 广东省广州市电信IDC机房58
-      - 广东省+移动
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点47
+      - 北美地区V2CROSS.COM52
+      - 乌克兰+V2CROSS.COM
+      - 美国CloudFlare节点56
+      - 广东省广州市电信IDC机房57
+      - 美国弗吉尼亚州阿什本Amazon数据中心58
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6135,15 +6194,20 @@ proxy-groups:
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】9_8@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点19
-      - 俄罗斯莫斯科JustHost20
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点12
       - 美国+CloudFlare节点
-      - 美国CloudFlare节点32
-      - 广东省广州市电信IDC机房58
-      - 广东省+移动
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点47
+      - 北美地区V2CROSS.COM52
+      - 乌克兰+V2CROSS.COM
+      - 美国CloudFlare节点56
+      - 广东省广州市电信IDC机房57
+      - 美国弗吉尼亚州阿什本Amazon数据中心58
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6612,15 +6676,20 @@ proxy-groups:
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】9_8@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点19
-      - 俄罗斯莫斯科JustHost20
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点12
       - 美国+CloudFlare节点
-      - 美国CloudFlare节点32
-      - 广东省广州市电信IDC机房58
-      - 广东省+移动
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点47
+      - 北美地区V2CROSS.COM52
+      - 乌克兰+V2CROSS.COM
+      - 美国CloudFlare节点56
+      - 广东省广州市电信IDC机房57
+      - 美国弗吉尼亚州阿什本Amazon数据中心58
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7121,15 +7190,20 @@ proxy-groups:
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】9_8@13
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】52_8@28
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点19
-      - 俄罗斯莫斯科JustHost20
+      - 美国CloudFlare节点1
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点12
       - 美国+CloudFlare节点
-      - 美国CloudFlare节点32
-      - 广东省广州市电信IDC机房58
-      - 广东省+移动
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点47
+      - 北美地区V2CROSS.COM52
+      - 乌克兰+V2CROSS.COM
+      - 美国CloudFlare节点56
+      - 广东省广州市电信IDC机房57
+      - 美国弗吉尼亚州阿什本Amazon数据中心58
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
