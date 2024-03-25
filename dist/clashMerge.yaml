@@ -1,4 +1,4 @@
-# 更新时间 2024-03-25T12:58:32.435Z
+# 更新时间 2024-03-25T13:20:13.075Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5545,6 +5545,20 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.39.176.67
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 52.213.221.181
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -6046,6 +6060,8 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@17
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
+      - 爱尔兰+都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6547,6 +6563,8 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@17
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -7047,6 +7065,8 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@17
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7579,6 +7599,8 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@17
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国+Amazon数据中心
+      - 爱尔兰+都柏林Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
