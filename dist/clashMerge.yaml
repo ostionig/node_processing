@@ -1,4 +1,4 @@
-# 更新时间 2024-03-26T18:51:14.661Z
+# 更新时间 2024-03-26T19:06:37.501Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6279,49 +6279,41 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 169.197.142.216
-    port: 7002
-    password: YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH
-    cipher: aes-128-gcm
   - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.44.28.175
+    name: 法国+巴黎Amazon数据中心
+    server: 15.188.104.170
     port: 22222
     password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 172.67.196.164
-    port: 443
-    password: a966a7ae-ac21-472d-be60-7726b724fc5d
     udp: true
     skip-cert-verify: true
   - type: ss
     name: 英国+伦敦Microsoft公司
-    server: 51.145.115.150
-    port: 46961
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDOE5mMlkwVWIwUTdVTjkzNTc0T0ZP
+    server: 51.145.116.125
+    port: 55227
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkMkE5WjVPczN0bHBSdUJ6QUJqVlQ3
     cipher: aes-128-gcm
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.38.151.246
+    name: 美国+Amazon+EC2服务器
+    server: 3.67.153.191
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: trojan
+    name: 瑞典+斯德哥尔摩Amazon数据中心
+    server: 13.49.220.175
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+惠普HP
+    server: series-a2-me.varzesh360.co
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
+    cipher: aes-128-gcm
   - type: vmess
-    name: 广东省江门市移动31
-    server: 120.238.122.246
-    port: 40002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 广东省汕头市移动34
+    name: 广东省汕头市移动26
     ws-opts:
       path: /debian
       headers:
@@ -6332,6 +6324,33 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 台湾省台北市+中華電信
+    server: ty12t.twty.dynu.net
+    port: 18912
+    password: de521ccd-0b3b-4616-a04f-c06cc4b3b077
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 52.31.124.140
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+亚特兰大
+    server: 74.226.208.42
+    port: 16899
+    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+麻省理工学院
+    server: 18.135.231.44
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -6877,13 +6896,16 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 英国+社会保险安全部
-      - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
       - 英国+伦敦Microsoft公司
-      - 美国+Amazon数据中心
-      - 广东省江门市移动31
-      - 广东省汕头市移动34
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普HP
+      - 广东省汕头市移动26
+      - 台湾省台北市+中華電信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+亚特兰大
+      - 美国+麻省理工学院
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -7429,13 +7451,16 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 英国+社会保险安全部
-      - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
       - 英国+伦敦Microsoft公司
-      - 美国+Amazon数据中心
-      - 广东省江门市移动31
-      - 广东省汕头市移动34
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普HP
+      - 广东省汕头市移动26
+      - 台湾省台北市+中華電信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+亚特兰大
+      - 美国+麻省理工学院
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -7980,13 +8005,16 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 英国+社会保险安全部
-      - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
       - 英国+伦敦Microsoft公司
-      - 美国+Amazon数据中心
-      - 广东省江门市移动31
-      - 广东省汕头市移动34
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普HP
+      - 广东省汕头市移动26
+      - 台湾省台北市+中華電信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+亚特兰大
+      - 美国+麻省理工学院
   - name: 📲 电报信息
     type: select
     proxies:
@@ -8563,13 +8591,16 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 英国+社会保险安全部
-      - 美国+CloudFlare节点
+      - 法国+巴黎Amazon数据中心
       - 英国+伦敦Microsoft公司
-      - 美国+Amazon数据中心
-      - 广东省江门市移动31
-      - 广东省汕头市移动34
+      - 美国+Amazon+EC2服务器
+      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 美国+惠普HP
+      - 广东省汕头市移动26
+      - 台湾省台北市+中華電信
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+亚特兰大
+      - 美国+麻省理工学院
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
