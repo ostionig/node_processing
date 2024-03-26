@@ -1,4 +1,4 @@
-# 更新时间 2024-03-26T06:53:37.758Z
+# 更新时间 2024-03-26T07:09:04.679Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5787,7 +5787,40 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 波斯尼亚和黑塞哥维那V2CROSS.COM4
+    name: 美国CloudFlare节点4
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: VKJi7.cnbete.life
+    server: 104.21.236.219
+    port: 80
+    uuid: 1973e770-e615-11ee-b238-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 台湾省彰化县+中华电信
+    server: nc12.twtc.dynu.net
+    port: 14656
+    password: 04b694b2-7022-4767-801b-6d21611f548b
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国V2CROSS.COM16
+    server: 23.26.67.40
+    port: 14344
+    uuid: df0a955b-9131-4cfb-945e-3821c0ab73f3
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 45.154.3.165
+    port: 16899
+    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 波斯尼亚和黑塞哥维那V2CROSS.COM22
     ws-opts:
       path: /vmess
     server: 80.71.157.105
@@ -5796,83 +5829,6 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 俄罗斯V2CROSS.COM14
-    server: 85.159.229.8
-    port: 8443
-    uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
-    alterId: 0
-    cipher: auto
-    network: grpc
-  - type: vmess
-    name: 美国CloudFlare节点23
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: PVR7r.cnbete.life
-    server: 104.21.238.33
-    port: 80
-    uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点42
-    ws-opts:
-      path: /
-    server: cdn.vds-server.ir
-    port: 8880
-    uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国新泽西州皮斯卡特维Choopa数据中心49
-    server: 149.28.233.73
-    port: 25487
-    uuid: 352970a3-41c2-4d57-925f-452d76ba6d23
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 新加坡Choopa数据中心52
-    ws-opts:
-      path: /
-    server: 66.42.55.85
-    port: 443
-    uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点54
-    ws-opts:
-      path: /glweidf.sbs/linkws
-      headers:
-        host: yaghoob55freenodes.repaco69437403.workers.dev
-    server: 172.67.170.103
-    port: 2095
-    uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点57
-    ws-opts:
-      path: /v1893298323Py
-    server: de1e-haha.v2freevpn.com
-    port: 80
-    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 169.197.142.216
-    port: 7002
-    password: YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH
-    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -6384,15 +6340,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@9
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM4
-      - 俄罗斯V2CROSS.COM14
-      - 美国CloudFlare节点23
-      - 美国CloudFlare节点42
-      - 美国新泽西州皮斯卡特维Choopa数据中心49
-      - 新加坡Choopa数据中心52
-      - 美国CloudFlare节点54
-      - 美国CloudFlare节点57
-      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 台湾省彰化县+中华电信
+      - 美国V2CROSS.COM16
+      - 美国+V2CROSS.COM
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM22
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6904,15 +6856,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@9
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM4
-      - 俄罗斯V2CROSS.COM14
-      - 美国CloudFlare节点23
-      - 美国CloudFlare节点42
-      - 美国新泽西州皮斯卡特维Choopa数据中心49
-      - 新加坡Choopa数据中心52
-      - 美国CloudFlare节点54
-      - 美国CloudFlare节点57
-      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 台湾省彰化县+中华电信
+      - 美国V2CROSS.COM16
+      - 美国+V2CROSS.COM
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM22
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -7423,15 +7371,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@9
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM4
-      - 俄罗斯V2CROSS.COM14
-      - 美国CloudFlare节点23
-      - 美国CloudFlare节点42
-      - 美国新泽西州皮斯卡特维Choopa数据中心49
-      - 新加坡Choopa数据中心52
-      - 美国CloudFlare节点54
-      - 美国CloudFlare节点57
-      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 台湾省彰化县+中华电信
+      - 美国V2CROSS.COM16
+      - 美国+V2CROSS.COM
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM22
   - name: 📲 电报信息
     type: select
     proxies:
@@ -7974,15 +7918,11 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@9
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM4
-      - 俄罗斯V2CROSS.COM14
-      - 美国CloudFlare节点23
-      - 美国CloudFlare节点42
-      - 美国新泽西州皮斯卡特维Choopa数据中心49
-      - 新加坡Choopa数据中心52
-      - 美国CloudFlare节点54
-      - 美国CloudFlare节点57
-      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 台湾省彰化县+中华电信
+      - 美国V2CROSS.COM16
+      - 美国+V2CROSS.COM
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM22
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
