@@ -1,4 +1,4 @@
-# 更新时间 2024-03-27T18:50:58.577Z
+# 更新时间 2024-03-27T19:04:11.394Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3302,35 +3302,13 @@ proxies:
     network: auto
   - type: trojan
     name: 美国+Amazon数据中心
-    server: 13.39.129.14
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 乌克兰V2CROSS.COM21
-    server: 94.131.99.8
-    port: 47182
-    uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.98.167.218
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+惠普HP
-    server: 16.170.83.108
+    server: 18.193.212.108
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 波斯尼亚和黑塞哥维那V2CROSS.COM52
+    name: 波斯尼亚和黑塞哥维那V2CROSS.COM15
     ws-opts:
       path: /vmess
     server: 80.71.157.105
@@ -3339,18 +3317,42 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 保加利亚V2CROSS.COM20
+    ws-opts:
+      path: /
+    server: 87.120.204.64
+    port: 8080
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
   - type: trojan
-    name: 台湾省台中市+中华电信
-    server: 36.232.130.61
-    port: 14656
+    name: 英国+伦敦Amazon数据中心
+    server: 52.56.161.112
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 波兰+V2CROSS.COM
+    server: 178.216.203.9
+    port: 16032
+    password: YWVzLTI1Ni1nY206bENZUW1tRG1CSA==
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 台湾省桃园市+中华电信(HiNet)
+    server: ty11t.twty.dynu.net
+    port: 13761
     password: 661ee645-8e3f-42ab-9e60-a19d5e7a89eb
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 台湾省桃园市+中华电信
-    server: b12.ntbq.dynu.net
-    port: 9755
-    password: e63d3dd2-1fdc-45d7-857a-ab32e26c4f73
+    name: 台湾省新竹市+中华电信
+    server: b24.ntbq.dynu.net
+    port: 3271
+    password: 158141ca-528d-407d-88f2-c0ddca399b26
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -3676,12 +3678,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+Amazon数据中心
-      - 乌克兰V2CROSS.COM21
-      - 美国+Amazon+EC2服务器
-      - 美国+惠普HP
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM52
-      - 台湾省台中市+中华电信
-      - 台湾省桃园市+中华电信
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM15
+      - 保加利亚V2CROSS.COM20
+      - 英国+伦敦Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 台湾省桃园市+中华电信(HiNet)
+      - 台湾省新竹市+中华电信
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4005,12 +4007,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+Amazon数据中心
-      - 乌克兰V2CROSS.COM21
-      - 美国+Amazon+EC2服务器
-      - 美国+惠普HP
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM52
-      - 台湾省台中市+中华电信
-      - 台湾省桃园市+中华电信
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM15
+      - 保加利亚V2CROSS.COM20
+      - 英国+伦敦Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 台湾省桃园市+中华电信(HiNet)
+      - 台湾省新竹市+中华电信
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4333,12 +4335,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+Amazon数据中心
-      - 乌克兰V2CROSS.COM21
-      - 美国+Amazon+EC2服务器
-      - 美国+惠普HP
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM52
-      - 台湾省台中市+中华电信
-      - 台湾省桃园市+中华电信
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM15
+      - 保加利亚V2CROSS.COM20
+      - 英国+伦敦Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 台湾省桃园市+中华电信(HiNet)
+      - 台湾省新竹市+中华电信
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4693,12 +4695,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+Amazon数据中心
-      - 乌克兰V2CROSS.COM21
-      - 美国+Amazon+EC2服务器
-      - 美国+惠普HP
-      - 波斯尼亚和黑塞哥维那V2CROSS.COM52
-      - 台湾省台中市+中华电信
-      - 台湾省桃园市+中华电信
+      - 波斯尼亚和黑塞哥维那V2CROSS.COM15
+      - 保加利亚V2CROSS.COM20
+      - 英国+伦敦Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 台湾省桃园市+中华电信(HiNet)
+      - 台湾省新竹市+中华电信
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
