@@ -1,4 +1,4 @@
-# 更新时间 2024-03-27T06:51:07.753Z
+# 更新时间 2024-03-27T07:06:23.485Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6683,22 +6683,20 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.68.153
-    port: 443
-    password: a966a7ae-ac21-472d-be60-7726b724fc5d
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 台湾省台中市+中华电信
-    server: nc12.twtc.dynu.net
-    port: 14656
-    password: 6152dab2-5a09-44fe-9c14-3ece9dbbc4b8
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 保加利亚V2CROSS.COM35
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: /video/GQ2qE5Us9g
+      headers:
+        host: tw1bQiWSE4x.fzbqfrse.xyz
+    server: 162.159.240.139
+    port: 2052
+    uuid: 160fdf6d-e27b-4763-bcef-22587c161a6e
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 保加利亚V2CROSS.COM17
     ws-opts:
       path: /
     server: 87.120.204.64
@@ -6708,13 +6706,27 @@ proxies:
     cipher: auto
     network: ws
     tls: true
-  - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 35.166.143.112
-    port: 12252
-    password: sQy2ymvSdpc5
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 美国加利福尼亚州圣何塞PEGTECH32
+    ws-opts:
+      path: /path/153428133302
+    server: 142.4.97.74
+    port: 38000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点35
+    ws-opts:
+      path: /
+    server: jpc.flha.ru
+    port: 2095
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -7302,10 +7314,10 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 台湾省台中市+中华电信
-      - 保加利亚V2CROSS.COM35
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点3
+      - 保加利亚V2CROSS.COM17
+      - 美国加利福尼亚州圣何塞PEGTECH32
+      - 美国CloudFlare节点35
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -7893,10 +7905,10 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 台湾省台中市+中华电信
-      - 保加利亚V2CROSS.COM35
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点3
+      - 保加利亚V2CROSS.COM17
+      - 美国加利福尼亚州圣何塞PEGTECH32
+      - 美国CloudFlare节点35
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -8483,10 +8495,10 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 台湾省台中市+中华电信
-      - 保加利亚V2CROSS.COM35
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点3
+      - 保加利亚V2CROSS.COM17
+      - 美国加利福尼亚州圣何塞PEGTECH32
+      - 美国CloudFlare节点35
   - name: 📲 电报信息
     type: select
     proxies:
@@ -9105,10 +9117,10 @@ proxy-groups:
       - 🇨🇳 台湾【付费推荐：https://jdyvip.link/】105_8@50
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】68_8@55
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 台湾省台中市+中华电信
-      - 保加利亚V2CROSS.COM35
-      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点3
+      - 保加利亚V2CROSS.COM17
+      - 美国加利福尼亚州圣何塞PEGTECH32
+      - 美国CloudFlare节点35
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
