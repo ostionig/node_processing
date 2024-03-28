@@ -1,4 +1,4 @@
-# 更新时间 2024-03-28T06:51:25.337Z
+# 更新时间 2024-03-28T07:07:11.132Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3269,33 +3269,53 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.43.26.49
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 台湾省台北市+中华电信
-    server: b12.ntbq.dynu.net
-    port: 9755
-    password: 158141ca-528d-407d-88f2-c0ddca399b26
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 法国+V2CROSS.COM
-    server: 92.243.27.51
-    port: 9802
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWVWU3VW9zMlBTdW9jaFUxQXVadGx1
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 172.67.196.164
+  - type: vmess
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: /qin20
+      headers:
+        host: qin20.rong1104.uk
+    server: 104.21.80.53
+    port: 2053
+    uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 香港ThinkDream数据中心7
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: au01.appleid.bf
+    server: 27.50.48.164
+    port: 2086
+    uuid: 97c752a2-43d3-4ac6-9369-b298b45feb3d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 印度V2CROSS.COM18
+    ws-opts:
+      path: /
+    server: 49.13.71.166
     port: 443
-    password: a966a7ae-ac21-472d-be60-7726b724fc5d
-    udp: true
-    skip-cert-verify: true
+    uuid: c11a16ae-eb51-4018-ab5c-2ac3cc0cdf63
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点32
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: au01.appleid.bf
+    server: au01.appleid.bf
+    port: 2086
+    uuid: 97c752a2-43d3-4ac6-9369-b298b45feb3d
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3633,10 +3653,10 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 台湾省台北市+中华电信
-      - 法国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 香港ThinkDream数据中心7
+      - 印度V2CROSS.COM18
+      - 美国CloudFlare节点32
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3974,10 +3994,10 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 台湾省台北市+中华电信
-      - 法国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 香港ThinkDream数据中心7
+      - 印度V2CROSS.COM18
+      - 美国CloudFlare节点32
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4314,10 +4334,10 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 台湾省台北市+中华电信
-      - 法国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 香港ThinkDream数据中心7
+      - 印度V2CROSS.COM18
+      - 美国CloudFlare节点32
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4686,10 +4706,10 @@ proxy-groups:
       - SS-法国:德国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 台湾省台北市+中华电信
-      - 法国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 香港ThinkDream数据中心7
+      - 印度V2CROSS.COM18
+      - 美国CloudFlare节点32
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
