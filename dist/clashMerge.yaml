@@ -1,4 +1,4 @@
-# 更新时间 2024-03-29T06:52:07.427Z
+# 更新时间 2024-03-29T07:09:00.198Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2747,7 +2747,111 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点6
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /
+      headers:
+        host: onea.flha.ru
+    server: 172.67.214.33
+    port: 2052
+    uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 日本东京都亚马逊(Amazon)公司数据中心2
+    ws-opts:
+      path: /
+    server: jp01.xpoti.online
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 日本东京Amazon数据中心6
+    ws-opts:
+      path: /
+      headers:
+        host: jp03.xpoti.online
+    server: 3.112.30.16
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 日本东京都Amazon数据中心9
+    ws-opts:
+      path: /
+    server: jp04.xpoti.online
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 新加坡DigitalOcean数据中心14
+    ws-opts:
+      path: /
+      headers:
+        host: sg02.xpoti.online
+    server: 206.189.153.83
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.75.137.42
+    port: 2376
+    password: YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 新加坡DigitalOcean数据中心20
+    ws-opts:
+      path: /
+    server: sg02.xpoti.online
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国+Alabanza
+    server: 65.108.142.67
+    port: 47146
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCRExub3ZheGducUhxV0p4R1J0U3hx
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国AmazonEC2服务器29
+    ws-opts:
+      path: /
+    server: kr03.xpoti.online
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 瑞典+V2CROSS.COM
+    server: 167.88.61.175
+    port: 5001
+    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国纽约市DigitalOcean云公司32
+    ws-opts:
+      path: /
+    server: de02.xpoti.online
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点34
     ws-opts:
       path: /fws
       headers:
@@ -2759,48 +2863,28 @@ proxies:
     cipher: auto
     network: ws
     tls: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.75.136.135
-    port: 8000
-    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点14
-    ws-opts:
-      path: /api/v3/download.getFile
-      headers:
-        host: ssrsub.v03.ssrsub.com
-    server: russia.com
-    port: 8080
-    uuid: bd8c41a8-7598-4c28-9965-522545e14892
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 保加利亚V2CROSS.COM22
+    name: 美国V2CROSS.COM39
     ws-opts:
       path: /
-    server: 87.120.204.64
-    port: 8080
-    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    server: us01.xpoti.online
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 75.102.51.30
-    port: 16899
-    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 澳门+澳门电讯
-    server: macau.hapchung.com
-    port: 10443
-    password: 5eb5bdf9-4a70-4890-b2ca-8b2b79792639
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 韩国首尔Amazon数据中心41
+    ws-opts:
+      path: /
+      headers:
+        host: kr04.xpoti.online
+    server: 3.34.94.178
+    port: 80
+    uuid: 432b1dd7-5787-440e-9af9-d924e6cf461c
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3083,12 +3167,20 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】91_8@27
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点1
+      - 日本东京都亚马逊(Amazon)公司数据中心2
+      - 日本东京Amazon数据中心6
+      - 日本东京都Amazon数据中心9
+      - 新加坡DigitalOcean数据中心14
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点14
-      - 保加利亚V2CROSS.COM22
-      - 美国+V2CROSS.COM
-      - 澳门+澳门电讯
+      - 新加坡DigitalOcean数据中心20
+      - 美国+Alabanza
+      - 美国AmazonEC2服务器29
+      - 瑞典+V2CROSS.COM
+      - 美国纽约市DigitalOcean云公司32
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM39
+      - 韩国首尔Amazon数据中心41
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3371,12 +3463,20 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】91_8@27
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点1
+      - 日本东京都亚马逊(Amazon)公司数据中心2
+      - 日本东京Amazon数据中心6
+      - 日本东京都Amazon数据中心9
+      - 新加坡DigitalOcean数据中心14
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点14
-      - 保加利亚V2CROSS.COM22
-      - 美国+V2CROSS.COM
-      - 澳门+澳门电讯
+      - 新加坡DigitalOcean数据中心20
+      - 美国+Alabanza
+      - 美国AmazonEC2服务器29
+      - 瑞典+V2CROSS.COM
+      - 美国纽约市DigitalOcean云公司32
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM39
+      - 韩国首尔Amazon数据中心41
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3658,12 +3758,20 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】91_8@27
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点1
+      - 日本东京都亚马逊(Amazon)公司数据中心2
+      - 日本东京Amazon数据中心6
+      - 日本东京都Amazon数据中心9
+      - 新加坡DigitalOcean数据中心14
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点14
-      - 保加利亚V2CROSS.COM22
-      - 美国+V2CROSS.COM
-      - 澳门+澳门电讯
+      - 新加坡DigitalOcean数据中心20
+      - 美国+Alabanza
+      - 美国AmazonEC2服务器29
+      - 瑞典+V2CROSS.COM
+      - 美国纽约市DigitalOcean云公司32
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM39
+      - 韩国首尔Amazon数据中心41
   - name: 📲 电报信息
     type: select
     proxies:
@@ -3977,12 +4085,20 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】91_8@27
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点1
+      - 日本东京都亚马逊(Amazon)公司数据中心2
+      - 日本东京Amazon数据中心6
+      - 日本东京都Amazon数据中心9
+      - 新加坡DigitalOcean数据中心14
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点14
-      - 保加利亚V2CROSS.COM22
-      - 美国+V2CROSS.COM
-      - 澳门+澳门电讯
+      - 新加坡DigitalOcean数据中心20
+      - 美国+Alabanza
+      - 美国AmazonEC2服务器29
+      - 瑞典+V2CROSS.COM
+      - 美国纽约市DigitalOcean云公司32
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM39
+      - 韩国首尔Amazon数据中心41
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
