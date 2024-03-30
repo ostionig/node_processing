@@ -1,4 +1,4 @@
-# 更新时间 2024-03-30T06:49:57.858Z
+# 更新时间 2024-03-30T07:00:45.840Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3212,32 +3212,77 @@ proxies:
     cipher: auto
     network: auto
   - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 5601
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    name: 乌克兰+V2CROSS.COM
+    server: 94.131.111.32
+    port: 8388
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOR1F6TXpReg==
     cipher: aes-128-gcm
-  - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 35.181.254.177
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 44.239.17.80
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 台湾省新北市+中华电信
-    server: 111.250.164.2
-    port: 18912
-    password: 5425aa49-ec9d-4df3-aaad-878270e78635
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 加拿大魁北克省博阿努瓦OVH数据中心13
+    ws-opts:
+      path: /vpnjantit
+    server: 192.99.247.52
+    port: 10000
+    uuid: 4a429cb2-ea53-11ee-ac11-4fc3babcf446
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 英国+Technicolor+SA
+    server: 141.11.189.55
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB
+    cipher: aes-128-gcm
+  - type: ss
+    name: 哈萨克斯坦+V2CROSS.COM
+    server: kz.telegavpn.com
+    port: 35152
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2b0J6bk1MUlFveXpsNHdoc2xtS21z
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点24
+    ws-opts:
+      path: /nws
+      headers:
+        host: nine.b4a-devs.org
+    server: 172.67.171.175
+    port: 2083
+    uuid: 1016cbc0-03c2-4e11-b590-296b01f269ac
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: ss
+    name: 美国+亚特兰大
+    server: 74.226.208.42
+    port: 16899
+    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点38
+    ws-opts:
+      path: /hdfy2cdn2.freelines.net/Xuz1MB7i6MbQgIre2fcLjqskl
+      headers:
+        host: cpisub7.CPiFOrpErsia.uK
+    server: changupmecca.com
+    port: 443
+    uuid: 6847f901-3938-4083-9fd9-2de96bcb6b9f
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 江苏省移动51
+    ws-opts:
+      path: /db00
+      headers:
+        host: cache-hk-1.cn-db.top
+    server: 223.113.130.58
+    port: 50080
+    uuid: 842bca7e-7fae-3e92-ba62-8c5e010c24cf
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3550,10 +3595,14 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】87_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+巴黎Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 台湾省新北市+中华电信
+      - 乌克兰+V2CROSS.COM
+      - 加拿大魁北克省博阿努瓦OVH数据中心13
+      - 英国+Technicolor+SA
+      - 哈萨克斯坦+V2CROSS.COM
+      - 美国CloudFlare节点24
+      - 美国+亚特兰大
+      - 美国CloudFlare节点38
+      - 江苏省移动51
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3866,10 +3915,14 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】87_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+巴黎Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 台湾省新北市+中华电信
+      - 乌克兰+V2CROSS.COM
+      - 加拿大魁北克省博阿努瓦OVH数据中心13
+      - 英国+Technicolor+SA
+      - 哈萨克斯坦+V2CROSS.COM
+      - 美国CloudFlare节点24
+      - 美国+亚特兰大
+      - 美国CloudFlare节点38
+      - 江苏省移动51
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4181,10 +4234,14 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】87_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+巴黎Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 台湾省新北市+中华电信
+      - 乌克兰+V2CROSS.COM
+      - 加拿大魁北克省博阿努瓦OVH数据中心13
+      - 英国+Technicolor+SA
+      - 哈萨克斯坦+V2CROSS.COM
+      - 美国CloudFlare节点24
+      - 美国+亚特兰大
+      - 美国CloudFlare节点38
+      - 江苏省移动51
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4528,10 +4585,14 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】26_8@34
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】87_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+巴黎Amazon数据中心
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 台湾省新北市+中华电信
+      - 乌克兰+V2CROSS.COM
+      - 加拿大魁北克省博阿努瓦OVH数据中心13
+      - 英国+Technicolor+SA
+      - 哈萨克斯坦+V2CROSS.COM
+      - 美国CloudFlare节点24
+      - 美国+亚特兰大
+      - 美国CloudFlare节点38
+      - 江苏省移动51
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
