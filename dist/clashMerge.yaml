@@ -1,4 +1,4 @@
-# 更新时间 2024-04-01T06:52:44.743Z
+# 更新时间 2024-04-01T07:09:30.895Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3867,6 +3867,73 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点0
+    ws-opts:
+      path: /video/9TfVEyku
+      headers:
+        host: wtywwcrzjp5.yofnhkfc.xyz
+    server: cfcdn3.sanfencdn9.com
+    port: 2052
+    uuid: 1eb5c2af-9211-461d-843b-de0de5de1d80
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点7
+    ws-opts:
+      path: /api/v3/download.getFile
+      headers:
+        host: ssrsub.v03.ssrsub.com
+    server: russia.com
+    port: 8080
+    uuid: bd8c41a8-7598-4c28-9965-522545e14892
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 香港ThinkDream数据中心8
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: krcc1.topf6.com
+    server: 27.50.48.72
+    port: 2086
+    uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+V2CROSS.COM
+    server: au-full.privateip.net
+    port: 443
+    password: 632b0d6b-aabf-4751-b523-321da2a9b03c
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 新加坡Choopa数据中心15
+    ws-opts:
+      path: /
+      headers:
+        host: m.zoom.us
+    server: 45.32.99.83
+    port: 18275
+    uuid: 386e5066-5078-4bef-96bf-4c25e422eabf
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国Fastly全球Anycast节点19
+    ws-opts:
+      path: /aries?ed=2048
+      headers:
+        host: nmsl.kp
+    server: 151.101.67.10
+    port: 80
+    uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4244,6 +4311,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点7
+      - 香港ThinkDream数据中心8
+      - 美国+V2CROSS.COM
+      - 新加坡Choopa数据中心15
+      - 美国Fastly全球Anycast节点19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4621,6 +4694,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点7
+      - 香港ThinkDream数据中心8
+      - 美国+V2CROSS.COM
+      - 新加坡Choopa数据中心15
+      - 美国Fastly全球Anycast节点19
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4997,6 +5076,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点7
+      - 香港ThinkDream数据中心8
+      - 美国+V2CROSS.COM
+      - 新加坡Choopa数据中心15
+      - 美国Fastly全球Anycast节点19
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5405,6 +5490,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国CloudFlare节点7
+      - 香港ThinkDream数据中心8
+      - 美国+V2CROSS.COM
+      - 新加坡Choopa数据中心15
+      - 美国Fastly全球Anycast节点19
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
