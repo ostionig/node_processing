@@ -1,4 +1,4 @@
-# 更新时间 2024-04-01T12:49:44.495Z
+# 更新时间 2024-04-01T13:01:15.766Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,7 +6,36 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: CN_speednode_0001
+  - name: CA_speednode_0003
+    server: 107.172.32.168
+    port: 16899
+    type: ss
+    cipher: aes-128-gcm
+    password: Yc2CtrIz8L
+  - name: CA_speednode_0004
+    server: 3.96.195.124
+    port: 14699
+    type: trojan
+    password: 5zqALIbK4k14
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: CA_speednode_0005
+    server: 99.79.33.197
+    port: 14696
+    type: trojan
+    password: LDpzBrxnSMuG
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0006
+    server: v3-js-hk.as9929.uk
+    port: 10061
+    type: ss
+    cipher: aes-128-gcm
+    password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+    delay: 1127
+  - name: CN_speednode_0007
     server: shdxus.aikunapp.com
     port: 20003
     type: vmess
@@ -17,81 +46,182 @@ proxies:
     tls: false
     uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
     delay: 1067
-  - name: DE_speednode_0002
-    server: 18.194.248.221
-    port: 14644
-    type: trojan
-    password: 2cFPZfF1FVAJ
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-  - name: DE_speednode_0003
-    server: 18.196.64.123
-    port: 14647
-    type: trojan
-    password: 3uNLb9WPgZTA
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-  - name: DE_speednode_0004
-    server: 92.223.124.35
-    port: 80
+  - name: CN_speednode_0008
+    server: kr01.aikunapp.com
+    port: 20006
     type: vmess
     alterId: 0
     cipher: auto
-    h2-opts: {}
-    http-opts: {}
+    network: tcp
+    skip-cert-verify: true
+    tls: false
+    uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
+    delay: 933
+  - name: CN_speednode_0009
+    server: mf838f.micloud.buzz
+    port: 46038
+    type: vmess
+    22|美国4|@ripaojiedian: None
+    uuid: 4a7929d8-f59e-4f37-9708-22027f210a07
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     network: ws
-    skip-cert-verify: true
-    uuid: 5a643d49-e531-4722-af45-06be6b65873d
     ws-opts:
+      path: /zh-cn
       headers:
-        host: samaan.servequake.com
-      path: /@forwardv2ray
-    delay: 1103
-  - name: FR_speednode_0005
-    server: 13.38.46.27
-    port: 14644
-    type: trojan
-    password: (mZAgLegXlG3
-    sni: appsvs.shop
-    skip-cert-verify: true
+        Host: mf838f.micloud.buzz
     udp: true
-  - name: FR_speednode_0006
-    server: 35.180.229.44
-    port: 14654
-    type: trojan
-    password: )c)2Oc)vf(dl
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-  - name: FR_speednode_0007
-    server: 163.172.64.22
-    port: 989
+  - name: CN_speednode_0010
+    server: nc.cm.xiaomi-api.xyz
+    port: 19581
     type: ss
-    cipher: aes-256-cfb
-    client-fingerprint: chrome
-    password: f8f7aCzcPKbsF8p3
-    tfo: false
+    password: 2bfaafe5-d825-424e-bb6b-471c8f4daef3
+    cipher: chacha20-ietf-poly1305
+  - name: CN_speednode_0011
+    server: nc.t1.xiaomi-api.xyz
+    port: 19561
+    type: ss
+    password: 739f0fb8-ef76-43a6-8175-0a977188e85c
+    cipher: chacha20-ietf-poly1305
+  - name: CN_speednode_0012
+    server: 101.91.164.138
+    port: 29126
+    type: ss
+    cipher: aes-256-gcm
+    password: 34a547cd-0bfe-4905-9076-0d7c9a61f325
     udp: true
-  - name: GB_speednode_0008
+  - name: DE_speednode_0013
+    server: 92.223.124.29
+    port: 80
+    type: vmess
+    country: 🇩🇪DE
+    uuid: a9c33d66-e66f-4a53-9ef0-3f6c52c8d091
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tasnim.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: tasnim.servecounterstrike.com
+    delay: 2344
+  - name: DE_speednode_0014
+    server: 3.79.110.197
+    port: 14728
+    type: trojan
+    password: oIBn(yJ)OH50
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: DE_speednode_0015
+    server: 18.194.248.221
+    port: 14733
+    type: trojan
+    password: t6WZjhA53Rj2
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: DE_speednode_0016
+    server: 3.64.216.1
+    port: 14705
+    type: trojan
+    password: nBGqK(fR33VG
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: FR_speednode_0017
+    server: 13.38.46.27
+    port: 14738
+    type: trojan
+    password: 1hVN4cbqhIMG
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: FR_speednode_0018
+    server: 13.37.223.226
+    port: 14694
+    type: trojan
+    password: QzSJ9QXdHVDv
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: FR_speednode_0019
+    server: 35.180.229.44
+    port: 14698
+    type: trojan
+    password: 3BvGB4kTi5mp
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: GB_speednode_0020
     server: 18.169.172.236
-    port: 14665
+    port: 14712
     type: trojan
-    password: taHH1K0Si61j
+    password: IZraHQiFMg0O
     sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-  - name: GB_speednode_0009
+  - name: GB_speednode_0021
+    server: 13.40.19.12
+    port: 14740
+    type: trojan
+    password: pmTxcuTRcPZe
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: GB_speednode_0022
+    server: 3.9.164.189
+    port: 14723
+    type: trojan
+    password: qgc(muD0XCZ1
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: GB_speednode_0023
     server: 3.10.207.72
-    port: 14650
+    port: 14738
     type: trojan
-    password: jWFiv)PhzTlM
+    password: dHopNo1KpyYS
     sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-  - name: HK_speednode_0010
-    server: 1.65.218.52
+  - name: HK_speednode_0024
+    server: 8.218.196.35
+    port: 443
+    type: ss
+    Ltd. - 6: None
+    cipher: aes-128-gcm
+    password: a-wym4ovY4Yw
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: ''
+      mode: websocket
+      mux: true
+      path: /
+      skip-cert-verify: true
+      tls: false
+    delay: 1166
+  - name: HK_speednode_0025
+    server: 47.76.185.99
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: a-wym4ovY4Yw
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ''
+      path: ''
+      tls: false
+      mux: true
+      skip-cert-verify: false
+  - name: HK_speednode_0026
+    server: 8.218.82.85
     port: 443
     type: ss
     cipher: aes-128-gcm
@@ -106,66 +236,244 @@ proxies:
       skip-cert-verify: true
       tls: false
     tfo: false
-    delay: 297
-  - name: JP_speednode_0011
-    server: 52.195.225.184
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - name: KR_speednode_0012
-    server: 43.203.192.6
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - name: KR_speednode_0013
-    server: 43.201.14.22
-    port: 14650
-    type: trojan
-    password: i7bIoSVZiAZQ
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-  - name: KR_speednode_0014
-    server: p221.panda001.net
-    port: 49032
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-  - name: KR_speednode_0015
-    server: p231.panda004.net
-    port: 43926
-    type: ss
-    udp: true
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 804
-  - name: KR_speednode_0016
-    server: 222.112.15.140
-    port: 58449
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-  - name: LU_speednode_0017
-    server: 87.120.204.200
+  - name: HK_speednode_0027
+    server: 194.99.79.178
     port: 8080
     type: vmess
     alterId: 0
     cipher: auto
     client-fingerprint: chrome
     network: ws
-    servername: jp-3.trollfunny.net
+    servername: hk-11.trollfunny.net
     skip-cert-verify: false
     tfo: false
     tls: true
+    udp: true
     uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
     ws-opts:
       headers:
-        Host: None
+        Host: 194.99.79.178
       path: /
-    delay: 2933
-  - name: NL_speednode_0019
+  - name: JP_speednode_0028
+    server: 54.199.15.70
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0029
+    server: 13.112.216.180
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0030
+    server: 43.207.117.29
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0031
+    server: 18.183.101.186
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0032
+    server: 52.69.81.42
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0033
+    server: 52.195.10.194
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0034
+    server: 54.249.214.66
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0035
+    server: 43.207.80.176
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: JP_speednode_0036
+    server: 54.95.146.36
+    port: 14696
+    type: trojan
+    password: ZAGtvnWvEPI2
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0037
+    server: 54.238.37.10
+    port: 14725
+    type: trojan
+    password: sTbNxRow073o
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0038
+    server: 13.114.199.179
+    port: 14728
+    type: trojan
+    password: OO()BcP9LcF2
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0039
+    server: 18.181.198.151
+    port: 14718
+    type: trojan
+    password: 3FSVDeD7MIj)
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0040
+    server: 52.68.192.115
+    port: 14732
+    type: trojan
+    password: J87NI1bhJrCU
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0041
+    server: 54.238.182.167
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: KR_speednode_0042
+    server: 27.255.82.62
+    port: 5304
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0043
+    server: 3.34.200.94
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: KR_speednode_0044
+    server: 13.125.25.193
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: KR_speednode_0045
+    server: 43.201.110.81
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: KR_speednode_0046
+    server: 221.150.109.17
+    port: 42839
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0047
+    server: p225.panda004.net
+    port: 4005
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0048
+    server: 43.203.192.6
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: KR_speednode_0049
+    server: 222.112.15.140
+    port: 58449
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0050
+    server: p236.panda004.net
+    port: 42839
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0051
+    server: p226.panda004.net
+    port: 58449
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0052
+    server: p238.panda004.net
+    port: 57743
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0053
+    server: p229.panda004.net
+    port: 10218
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0054
+    server: p233.panda004.net
+    port: 50942
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0055
+    server: 43.203.201.192
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: KR_speednode_0056
+    server: p221.panda001.net
+    port: 49032
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0057
+    server: p234.panda004.net
+    port: 58449
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0058
+    server: p230.panda004.net
+    port: 42978
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: KR_speednode_0059
+    server: 43.201.14.22
+    port: 14696
+    type: trojan
+    password: vD)dOkXbIWSG
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: KR_speednode_0060
+    server: 3.36.121.7
+    port: 14729
+    type: trojan
+    password: jSdlHIsNa9G2
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: KR_speednode_0061
+    server: p222.panda001.net
+    port: 51472
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+  - name: NL_speednode_0062
     server: 159.223.211.229
     port: 49585
     type: vmess
@@ -179,7 +487,7 @@ proxies:
     tls: true
     udp: true
     uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
-  - name: SE_speednode_0021
+  - name: SE_speednode_0064
     server: 95.164.33.62
     port: 443
     type: trojan
@@ -192,15 +500,58 @@ proxies:
       headers:
         host: se1.trojanvpn.de
       path: /websocket
-  - name: SG_speednode_0022
-    server: 175.41.152.248
-    port: 14649
+  - name: SG_speednode_0065
+    server: 52.221.231.138
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: SG_speednode_0066
+    server: 13.229.184.181
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: SG_speednode_0067
+    server: 47.128.252.57
+    port: 14710
     type: trojan
-    password: lXgXdXLK4QBr
+    password: Gvmb2xDPoPLN
     sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-  - name: SG_speednode_0023
+  - name: SG_speednode_0068
+    server: 18.143.148.120
+    port: 14715
+    type: trojan
+    password: qryO(gWMvun8
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: SG_speednode_0069
+    server: 13.212.202.7
+    port: 14717
+    type: trojan
+    password: A4lRpYybpzYg
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: SG_speednode_0070
+    server: 52.77.235.218
+    port: 14735
+    type: trojan
+    password: iMqFnSQLeG9V
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: SG_speednode_0071
+    server: 3.0.50.219
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: SG_speednode_0072
     server: sgfreenicuy.duniavpn.me
     port: 443
     type: trojan
@@ -213,23 +564,21 @@ proxies:
       headers:
         Host: sgfreenicuy.duniavpn.me
       path: /trojan
-  - name: US_speednode_0024
-    server: 34.222.114.254
-    port: 14647
-    type: trojan
-    password: wBq8v0LIx5Hh
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-  - name: US_speednode_0025
-    server: 44.222.221.188
-    port: 14656
-    type: trojan
-    password: FJASkx)DDfH9
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-  - name: US_speednode_0026
+  - name: US_speednode_0073
+    server: 38.33.19.66
+    port: 37000
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /path/200118110425
+      headers:
+        Host: www.59653884.xyz
+  - name: US_speednode_0074
     server: 38.48.141.195
     port: 38000
     type: vmess
@@ -243,23 +592,105 @@ proxies:
       path: /path/062017180007
       headers:
         Host: www.83429197.xyz
-  - name: US_speednode_0027
-    server: 104.20.30.205
+  - name: US_speednode_0075
+    server: 52.32.221.7
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: US_speednode_0076
+    server: 18.237.116.67
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: US_speednode_0077
+    server: 35.87.134.41
+    port: 14729
+    type: trojan
+    password: K0VJMSXuE3eG
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0078
+    server: 3.234.140.186
+    port: 14726
+    type: trojan
+    password: FQilihl6wPVK
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0079
+    server: 52.41.192.8
+    port: 14732
+    type: trojan
+    password: I9KdCicYM5Rz
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0080
+    server: 35.88.24.114
+    port: 14740
+    type: trojan
+    password: 15LiDSgG0Gbp
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0081
+    server: 18.226.169.124
+    port: 14714
+    type: trojan
+    password: 3(3OjkrNZaNO
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0082
+    server: 3.239.161.127
+    port: 14714
+    type: trojan
+    password: aaj0CRtnpSjW
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0083
+    server: 3.17.175.25
+    port: 14707
+    type: trojan
+    password: Fodtp9sXb69R
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0084
+    server: 91.199.82.78
+    port: 8080
+    type: vmess
+    alterId: 0
+    cipher: auto
+    network: ws
+    skip-cert-verify: true
+    tls: true
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    ws-opts:
+      path: /
+      headers:
+        Host: 91.199.82.78
+  - name: VN_speednode_0085
+    server: max26.flash5g.com
     port: 80
     type: vmess
     alterId: 0
     cipher: auto
-    country: 🏁ZZ
+    country: 🇻🇳VN
     h2-opts: {}
     http-opts: {}
     network: ws
-    servername: newsg1.xn--mes53ddysu0o3gl.top
+    servername: max26.flash5g.com
     skip-cert-verify: true
-    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+    uuid: 4e25f91f-603c-4e83-b002-c26030757816
     ws-opts:
       headers:
-        HOST: newsg1.xn--mes53ddysu0o3gl.top
-      path: /xn--mes53ddysu0o3gl
+        HOST: max26.flash5g.com
+      path: /AnhBin
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -269,30 +700,12 @@ proxies:
     password: 6601fb90e9b3
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点
-    server: 104.21.28.62
+  - name: 🇺🇸 美国 CloudFlare节点 2
+    server: hms04.xmivideo.cfd
     port: 443
     client-fingerprint: chrome
     type: vmess
-    uuid: 0d9776dd-e12e-4a5e-9bf2-8cceb1b502f1
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: pt1-vmess.sshmax.xyz
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: pt1-vmess.sshmax.xyz
-    udp: true
-  - name: 🇧🇷 巴西圣保罗 CloudFlare节点
-    server: 188.114.99.150
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: e4c7e0ce-ed93-40d9-8f38-90497cb83864
+    uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
     alterId: 0
     cipher: auto
     tls: true
@@ -300,11 +713,37 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
+      path: /linkws
+      headers:
+        Host: xmivideo.cfd
+    udp: true
+  - name: 🇬🇧 英国+伦敦Microsoft公司
+    server: 51.140.34.50
+    port: 35276
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: K3fssw2GFUqTwjt4HlsWjv
+    tfo: false
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 3
+    server: 104.21.20.16
+    port: 80
+    client-fingerprint: chrome
+    type: vmess
+    uuid: c9e99213-170b-458a-b45b-79454ac7cf4b
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
       path: /vmess
       headers:
-        Host: fi1.xv2ray.net
+        Host: fi2-vmess.sshmax.xyz
     udp: true
-  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+  - name: 🇰🇷 韩国+KT电信
     server: service.ouluyun9803.com
     port: 26667
     client-fingerprint: chrome
@@ -313,50 +752,7 @@ proxies:
     password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
     tfo: false
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 2
-    server: 104.21.23.231
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: onea.flha.ru
-    udp: true
-  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
-    server: service.ouluyun9803.com
-    port: 20005
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    tfo: false
-    udp: true
   - name: 🇺🇸 美国 CloudFlare节点 5
-    server: 162.159.1.33
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-      headers:
-        Host: pcs-referenced-camera-concerns.trycloudflare.com
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 6
     server: 162.159.7.226
     port: 8080
     client-fingerprint: chrome
@@ -373,30 +769,12 @@ proxies:
       headers:
         Host: technological-mel-fill-decide.trycloudflare.com
     udp: true
-  - name: 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-    server: 35.177.168.209
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 Amazon数据中心
-    server: 13.36.79.202
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-    udp: true
   - name: 🇺🇸 美国 CloudFlare节点 7
-    server: 104.21.4.14
-    port: 2086
+    server: 172.67.130.140
+    port: 2082
     client-fingerprint: chrome
     type: vmess
-    uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+    uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
     alterId: 0
     cipher: auto
     tls: false
@@ -406,11 +784,198 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: admin.arzonhost.ir
+        Host: s1c.v2.v001sss.xyz
+    udp: true
+  - name: 🇭🇰 香港 ThinkDream数据中心
+    server: 27.50.48.72
+    port: 2086
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        Host: krcc1.topf6.com
     udp: true
   - name: 🇺🇸 美国 CloudFlare节点 8
-    server: tu.mahilu.site
-    port: 2095
+    server: 104.19.201.135
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /video/CuTy87zAzV/
+      headers:
+        Host: us4Bb5oSgJA.fzbqfrse.xyz
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 10
+    server: us01.appleid.bf
+    port: 2086
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 2e5cb28b-e77e-414a-a16e-977b02bfce28
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        Host: us01.appleid.bf
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 11
+    server: caretaker.com
+    port: 443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: mikasa.yaemiko.cloudns.org
+    network: ws
+    ws-opts:
+      path: /ivideos.sbs/linkws
+      headers:
+        Host: mikasa.yaemiko.cloudns.org
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 12
+    server: 104.26.8.202
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: 559c3b5f-3dd1-47e4-94ad-017cb392a7ba
+    sni: de1.trojanvpn.de
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: >-
+        /path/Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config
+      headers:
+        Host: de1.trojanvpn.de
+    udp: true
+  - name: 🇺🇸 美国 Fastly全球Anycast节点
+    server: 151.101.3.10
+    port: 80
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /aries?ed=2048
+      headers:
+        Host: nmsl.kp
+    udp: true
+  - name: 🇺🇸 美国 Fastly全球Anycast节点 2
+    server: 151.101.67.10
+    port: 80
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /aries?ed=2048
+      headers:
+        Host: nmsl.kp
+    udp: true
+  - name: 🇺🇸 美国+v2rayfree.eu.org
+    server: 45.158.171.227
+    port: 8080
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    tfo: false
+    udp: true
+  - name: 🇨🇳 广东省 移动
+    server: data-us-v1.shwjfkw.cn
+    port: 20401
+    client-fingerprint: chrome
+    type: vmess
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /debian
+      headers:
+        Host: data-us-v1.shwjfkw.cn
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 14
+    server: russia.com
+    port: 80
+    client-fingerprint: chrome
+    type: vmess
+    uuid: bd8c41a8-7598-4c28-9965-522545e14892
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /api/v3/download.getFile
+      headers:
+        Host: ssrsub.v03.ssrsub.com
+    udp: true
+  - name: 🇬🇧 英国 社会保险安全部
+    server: 51.21.50.151
+    port: 22222
+    client-fingerprint: chrome
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: false
+    udp: true
+  - name: 🇮🇳 印度 v2rayfree.eu.org
+    server: 202.78.162.5
+    port: 443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sahand.serveminecraft.net
+    udp: true
+  - name: 🇺🇸 美国 CloudFlare节点 15
+    server: mahilu.site
+    port: 2052
     client-fingerprint: chrome
     type: vmess
     uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -423,129 +988,24 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: tu.mahilu.site
+        Host: mahilu.site
     udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 9
-    server: 172.67.166.192
-    port: 80
-    client-fingerprint: chrome
-    type: vmess
-    uuid: cd1db809-2de0-409c-aef5-861e95eff53e
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ua1-vmess.sshmax.xyz
-    udp: true
-  - name: 🇺🇸 美国 Amazon EC2服务器
-    server: 3.130.146.236
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇫🇷 法国+格拉沃利讷OVH数据中心
-    server: 54.36.174.181
-    port: 6697
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-    tfo: false
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 10
-    server: ying.appleid.bf
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 97c752a2-43d3-4ac6-9369-b298b45feb3d
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /ws?ed=2048
-      headers:
-        Host: ying.appleid.bf
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 11
-    server: server32.beheshtbaneh.com
-    port: 8880
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: server32.beheshtbaneh.com
-    udp: true
-  - name: 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
-    server: 34.213.191.154
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-    server: 52.58.109.136
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-    udp: true
-  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 3
-    server: service.ouluyun9803.com
-    port: 20003
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    tfo: false
-    udp: true
-  - name: 🇺🇸 美国 CloudFlare节点 15
-    server: yh1.dtku41.xyz
-    port: 8080
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
-      headers:
-        Host: uh-lawyers-instruments-kernel.trycloudflare.com
-    udp: true
-  - name: 🇭🇰 香港 电讯盈科数据中心
-    server: 528437691015237@216.83.41.85
+  - name: 🇺🇸 美国 CloudFlare节点 18
+    server: 104.21.15.212
     port: 443
     client-fingerprint: chrome
-    type: trojan
-    password: 38C17B5E02864C48855DC27A3DB80EF0
-    sni: node.kgvsogr.xyz
+    type: vmess
+    uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
     skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: glweidf.sbs
     udp: true
   - name: 🇷🇺 俄罗斯  1
     server: 185.242.86.156
@@ -555,23 +1015,6 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: 36ZCHeabUSfKjfQEvJ4HDV
     tfo: false
-    udp: true
-  - name: 🇮🇳 印度  2
-    server: 202.78.162.5
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: irsoft.sytes.net
     udp: true
   - name: 🇵🇱 波兰  5
     server: 193.243.147.128
@@ -599,22 +1042,14 @@ proxies:
       headers:
         Host: server31.beheshtbaneh.com
     udp: true
-  - name: 🇨🇳 广东省移动 7
-    server: data-us-v1.shwjfkw.cn
-    port: 20401
+  - name: 🇨🇳 广东省江门市移动 8
+    server: service.ouluyun9803.com
+    port: 20003
     client-fingerprint: chrome
-    type: vmess
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 0
-    cipher: auto
-    tls: false
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
     tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /debian
-      headers:
-        Host: data-us-v1.shwjfkw.cn
     udp: true
   - name: 🇺🇸 美国CloudFlare公司CDN节点 9
     server: 104.21.82.183
@@ -632,6 +1067,32 @@ proxies:
       path: /
       headers:
         Host: server26.beheshtbaneh.com
+    udp: true
+  - name: 🇨🇳 广东省江门市移动 12
+    server: service.ouluyun9803.com
+    port: 20005
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+    udp: true
+  - name: 🇺🇸 美国CloudFlare节点 14
+    server: server32.beheshtbaneh.com
+    port: 8880
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: server32.beheshtbaneh.com
     udp: true
   - grpc-opts:
       grpc-service-name: 443trojan
@@ -1621,27 +2082,38 @@ proxies:
     ws-headers:
       Host: hkd1.quickerlink.xyz
     ws-path: /h6jr23x9h3lqiitg
-  - cipher: chacha20-ietf-poly1305
-    name: 🇬🇧GB-51.140.34.50-186_1@186
-    password: K3fssw2GFUqTwjt4HlsWjv
-    port: 35276
-    server: 51.140.34.50
-    type: ss
-  - name: 🏁RELAY-104.26.8.202-192_1@192
-    password: 559c3b5f-3dd1-47e4-94ad-017cb392a7ba
-    port: 443
-    server: 104.26.8.202
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-104.21.70.242-193_1@193
+    network: ws
+    port: 2082
+    server: ying.appleid.bf
     skip-cert-verify: true
-    sni: de1.trojanvpn.de
-    type: trojan
-    ws-path: >-
-      h=%2Fpath%2FAlfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config
+    tls: false
+    type: vmess
+    uuid: 97c752a2-43d3-4ac6-9369-b298b45feb3d
+    ws-headers:
+      Host: ying.appleid.bf
+    ws-path: /ws?ed=2048
   - cipher: aes-256-gcm
     name: 🇺🇸US-38.75.136.135-195_1@195
     password: KixLvKzwjekG00rm
     port: 8000
     server: 38.75.136.135
     type: ss
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-172.64.32.100-199_1@199
+    network: ws
+    port: 8080
+    server: yh1.dtku41.xyz
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+    ws-headers:
+      Host: technological-mel-fill-decide.trycloudflare.com
+    ws-path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
   - alterId: 0
     cipher: auto
     name: 🏁RELAY-23.227.38.23-200_1@200
@@ -1657,16 +2129,16 @@ proxies:
     ws-path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
   - alterId: 0
     cipher: auto
-    name: 🏁RELAY-172.67.130.140-203_1@203
+    name: 🏁RELAY-104.21.23.231-202_1@202
     network: ws
-    port: 2082
-    server: 172.67.130.140
+    port: 2095
+    server: 104.21.23.231
     skip-cert-verify: true
     tls: false
     type: vmess
-    uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
     ws-headers:
-      Host: s1c.v2.v001sss.xyz
+      Host: onea.flha.ru
     ws-path: /
   - alterId: 0
     cipher: auto
@@ -1741,6 +2213,32 @@ proxies:
     ws-path: /
   - alterId: 0
     cipher: auto
+    name: 🏁RELAY-104.21.28.62-216_1@215
+    network: ws
+    port: 443
+    server: 104.21.28.62
+    skip-cert-verify: true
+    tls: true
+    type: vmess
+    uuid: 0d9776dd-e12e-4a5e-9bf2-8cceb1b502f1
+    ws-headers:
+      Host: pt1-vmess.sshmax.xyz
+    ws-path: /vmess
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-188.114.99.150-217_1@216
+    network: ws
+    port: 443
+    server: 188.114.99.150
+    skip-cert-verify: true
+    tls: true
+    type: vmess
+    uuid: e4c7e0ce-ed93-40d9-8f38-90497cb83864
+    ws-headers:
+      Host: fi1.xv2ray.net
+    ws-path: /vmess
+  - alterId: 0
+    cipher: auto
     name: 🇸🇬SG-8.222.174.108-220_1@219
     network: ws
     port: 2082
@@ -1752,6 +2250,99 @@ proxies:
     ws-headers:
       Host: s1c.v2.v001sss.xyz
     ws-path: /
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-162.159.1.33-224_1@223
+    network: ws
+    port: 8080
+    server: 162.159.1.33
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+    ws-headers:
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    ws-path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+  - name: 🇬🇧GB-35.177.168.209-228_1@227
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 35.177.168.209
+    skip-cert-verify: true
+    sni: trojan.burgerip.co.uk
+    type: trojan
+  - name: 🇫🇷FR-13.36.79.202-229_1@228
+    password: telegram-id-privatevpns
+    port: 22222
+    server: 13.36.79.202
+    skip-cert-verify: true
+    sni: trojan.burgerip.co.uk
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-104.21.4.14-232_1@231
+    network: ws
+    port: 2086
+    server: 104.21.4.14
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+    ws-headers:
+      Host: admin.arzonhost.ir
+    ws-path: /
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-172.67.152.170-233_1@232
+    network: ws
+    port: 2095
+    server: tu.mahilu.site
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    ws-headers:
+      Host: tu.mahilu.site
+    ws-path: /
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-172.67.166.192-234_1@233
+    network: ws
+    port: 80
+    server: 172.67.166.192
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: cd1db809-2de0-409c-aef5-861e95eff53e
+    ws-headers:
+      Host: ua1-vmess.sshmax.xyz
+    ws-path: /vmess
+  - name: 🇺🇸US-3.130.146.236-235_1@234
+    password: telegram-id-directvpn
+    port: 22222
+    server: 3.130.146.236
+    skip-cert-verify: true
+    sni: trojan.burgerip.co.uk
+    type: trojan
+  - cipher: aes-256-gcm
+    name: 🇫🇷FR-54.36.174.181-236_1@235
+    password: TEzjfAYq2IjtuoS
+    port: 6697
+    server: 54.36.174.181
+    type: ss
+  - name: 🇺🇸US-34.213.191.154-242_1@241
+    password: telegram-id-directvpn
+    port: 22222
+    server: 34.213.191.154
+    skip-cert-verify: true
+    sni: trojan.burgerip.co.uk
+    type: trojan
+  - name: 🇩🇪DE-52.58.109.136-243_1@242
+    password: telegram-id-directvpn
+    port: 22222
+    server: 52.58.109.136
+    skip-cert-verify: true
+    sni: trojan.burgerip.co.uk
+    type: trojan
   - name: 🇦🇶NOWHERE-0.0.0.0-247_1@246
     password: 38C17B5E02864C48855DC27A3DB80EF0
     port: 216.83.41.85
@@ -2092,20 +2683,6 @@ proxies:
       path: /db00
   - alterId: 0
     cipher: auto
-    name: 加拿大 049_2@60
-    network: ws
-    port: 80
-    server: 104.21.20.16
-    servername: ''
-    tls: false
-    type: vmess
-    uuid: c9e99213-170b-458a-b45b-79454ac7cf4b
-    ws-opts:
-      headers:
-        Host: fi2-vmess.sshmax.xyz
-      path: /vmess
-  - alterId: 0
-    cipher: auto
     name: 加拿大 050_2@61
     network: ws
     port: 8880
@@ -2311,20 +2888,6 @@ proxies:
       path: /db00
   - alterId: 0
     cipher: auto
-    name: 加拿大 061_2@74
-    network: ws
-    port: 2082
-    server: 104.19.201.135
-    servername: ''
-    tls: false
-    type: vmess
-    uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b
-    ws-opts:
-      headers:
-        Host: us4Bb5oSgJA.fzbqfrse.xyz
-      path: /video/CuTy87zAzV/
-  - alterId: 0
-    cipher: auto
     country: US
     h2-opts: {}
     http-opts: {}
@@ -2370,19 +2933,6 @@ proxies:
     tls: true
     type: trojan
     username: woshinilaohaner@gmail.com
-  - alterId: 64
-    cipher: auto
-    name: 美国 012_2@81
-    network: ws
-    port: 37000
-    server: 38.33.19.66
-    tls: true
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    ws-opts:
-      headers:
-        Host: www.59653884.xyz
-      path: /path/200118110425
   - alterId: 0
     cipher: auto
     name: 新加坡 001_2@82
@@ -2439,12 +2989,6 @@ proxies:
         host: mahilu.site
       path: /
   - cipher: aes-256-cfb
-    name: 🇺🇸_US_美国_5_5@9
-    password: amazonskr05
-    port: 443
-    server: 18.237.116.67
-    type: ss
-  - cipher: aes-256-cfb
     name: 🇺🇸_US_美国_6_5@10
     password: amazonskr05
     port: 443
@@ -2484,20 +3028,6 @@ proxies:
       path: /
   - alterId: 0
     cipher: auto
-    name: 🇺🇸_US_美国_10_5@15
-    network: ws
-    port: 80
-    server: russia.com
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: bd8c41a8-7598-4c28-9965-522545e14892
-    ws-opts:
-      headers:
-        host: ssrsub.v03.ssrsub.com
-      path: /api/v3/download.getFile
-  - alterId: 0
-    cipher: auto
     name: 🇺🇸_US_美国_11_5@16
     network: ws
     port: 8080
@@ -2524,33 +3054,6 @@ proxies:
       headers:
         host: cdn2_de.majutsu.top
       path: /acc
-  - alterId: 0
-    cipher: auto
-    name: 🇺🇸_US_美国->🇹🇷_TR_土耳其_5@20
-    network: ws
-    port: 2052
-    server: mahilu.site
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    ws-opts:
-      headers:
-        host: mahilu.site
-      path: /
-  - alterId: 0
-    cipher: auto
-    name: 🇱🇺_LU_卢森堡_5@23
-    network: ws
-    port: 8080
-    server: 91.199.82.78
-    servername: usma-12.trollfunny.net
-    skip-cert-verify: true
-    tls: true
-    type: vmess
-    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-    ws-opts:
-      path: /
   - cipher: aes-256-gcm
     name: SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.75.136.135:6697_6@0
     password: TEzjfAYq2IjtuoS
@@ -2776,177 +3279,122 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 美国CloudFlare节点1
-    ws-opts:
-      path: /linkws
-      headers:
-        host: xmivideo.cfd
-    server: hms04.xmivideo.cfd
-    port: 443
-    uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 香港ThinkDream数据中心11
-    ws-opts:
-      path: /ws?ed=2048
-      headers:
-        host: krcc1.topf6.com
-    server: 27.50.48.72
-    port: 2086
-    uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点14
-    ws-opts:
-      path: /ws?ed=2048
-      headers:
-        host: us01.appleid.bf
-    server: us01.appleid.bf
-    port: 2086
-    uuid: 2e5cb28b-e77e-414a-a16e-977b02bfce28
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点15
-    ws-opts:
-      path: /ivideos.sbs/linkws
-      headers:
-        host: mikasa.yaemiko.cloudns.org
-    server: caretaker.com
-    port: 443
-    uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国Fastly全球Anycast节点18
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        host: nmsl.kp
-    server: 151.101.3.10
-    port: 80
-    uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国Fastly全球Anycast节点19
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        host: nmsl.kp
-    server: 151.101.67.10
-    port: 80
-    uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 45.158.171.227
-    port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 日本V2CROSS.COM21
-    ws-opts:
-      path: /AnhBin
-      headers:
-        host: max26.flash5g.com
-    server: max26.flash5g.com
-    port: 80
-    uuid: 4e25f91f-603c-4e83-b002-c26030757816
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.21.50.151
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点30
-    ws-opts:
-      path: /linkws
-      headers:
-        host: glweidf.sbs
-    server: 104.21.15.212
-    port: 443
-    uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CN_speednode_0001
-      - DE_speednode_0002
-      - DE_speednode_0003
-      - DE_speednode_0004
-      - FR_speednode_0005
-      - FR_speednode_0006
-      - FR_speednode_0007
-      - GB_speednode_0008
-      - GB_speednode_0009
-      - HK_speednode_0010
-      - JP_speednode_0011
-      - KR_speednode_0012
-      - KR_speednode_0013
-      - KR_speednode_0014
-      - KR_speednode_0015
-      - KR_speednode_0016
-      - LU_speednode_0017
-      - NL_speednode_0019
-      - SE_speednode_0021
-      - SG_speednode_0022
-      - SG_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
+      - CA_speednode_0003
+      - CA_speednode_0004
+      - CA_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - DE_speednode_0013
+      - DE_speednode_0014
+      - DE_speednode_0015
+      - DE_speednode_0016
+      - FR_speednode_0017
+      - FR_speednode_0018
+      - FR_speednode_0019
+      - GB_speednode_0020
+      - GB_speednode_0021
+      - GB_speednode_0022
+      - GB_speednode_0023
+      - HK_speednode_0024
+      - HK_speednode_0025
+      - HK_speednode_0026
+      - HK_speednode_0027
+      - JP_speednode_0028
+      - JP_speednode_0029
+      - JP_speednode_0030
+      - JP_speednode_0031
+      - JP_speednode_0032
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - JP_speednode_0035
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - JP_speednode_0038
+      - JP_speednode_0039
+      - JP_speednode_0040
+      - JP_speednode_0041
+      - KR_speednode_0042
+      - KR_speednode_0043
+      - KR_speednode_0044
+      - KR_speednode_0045
+      - KR_speednode_0046
+      - KR_speednode_0047
+      - KR_speednode_0048
+      - KR_speednode_0049
+      - KR_speednode_0050
+      - KR_speednode_0051
+      - KR_speednode_0052
+      - KR_speednode_0053
+      - KR_speednode_0054
+      - KR_speednode_0055
+      - KR_speednode_0056
+      - KR_speednode_0057
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - KR_speednode_0061
+      - NL_speednode_0062
+      - SE_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0066
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0071
+      - SG_speednode_0072
+      - US_speednode_0073
+      - US_speednode_0074
+      - US_speednode_0075
+      - US_speednode_0076
+      - US_speednode_0077
+      - US_speednode_0078
+      - US_speednode_0079
+      - US_speednode_0080
+      - US_speednode_0081
+      - US_speednode_0082
+      - US_speednode_0083
+      - US_speednode_0084
+      - VN_speednode_0085
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇬🇧 英国+伦敦Microsoft公司
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 7
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇫🇷 法国+格拉沃利讷OVH数据中心
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 3
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇺🇸 美国+v2rayfree.eu.org
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇬🇧 英国 社会保险安全部
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点 15
-      - 🇭🇰 香港 电讯盈科数据中心
+      - 🇺🇸 美国 CloudFlare节点 18
       - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
+      - 🇨🇳 广东省江门市移动 8
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 12
+      - 🇺🇸 美国CloudFlare节点 14
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇦🇶NOWHERE-0.0.0.0-049_1@49
@@ -3040,18 +3488,30 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-181_1@181
       - 🇸🇬SG-159.223.94.156-182_1@182
       - 🏁RELAY-172.64.80.1-183_1@183
-      - 🇬🇧GB-51.140.34.50-186_1@186
-      - 🏁RELAY-104.26.8.202-192_1@192
+      - 🏁RELAY-104.21.70.242-193_1@193
       - 🇺🇸US-38.75.136.135-195_1@195
+      - 🏁RELAY-172.64.32.100-199_1@199
       - 🏁RELAY-23.227.38.23-200_1@200
-      - 🏁RELAY-172.67.130.140-203_1@203
+      - 🏁RELAY-104.21.23.231-202_1@202
       - 🏁RELAY-173.245.58.100-205_1@205
       - 🏁RELAY-172.64.236.127-206_1@206
       - 🇨🇳CN-120.233.205.133-207_1@207
       - 🇸🇬SG-54.251.156.15-209_1@209
       - 🏁RELAY-94.140.0.110-210_1@210
       - 🇯🇵JP-43.207.193.17-211_1@211
+      - 🏁RELAY-104.21.28.62-216_1@215
+      - 🏁RELAY-188.114.99.150-217_1@216
       - 🇸🇬SG-8.222.174.108-220_1@219
+      - 🏁RELAY-162.159.1.33-224_1@223
+      - 🇬🇧GB-35.177.168.209-228_1@227
+      - 🇫🇷FR-13.36.79.202-229_1@228
+      - 🏁RELAY-104.21.4.14-232_1@231
+      - 🏁RELAY-172.67.152.170-233_1@232
+      - 🏁RELAY-172.67.166.192-234_1@233
+      - 🇺🇸US-3.130.146.236-235_1@234
+      - 🇫🇷FR-54.36.174.181-236_1@235
+      - 🇺🇸US-34.213.191.154-242_1@241
+      - 🇩🇪DE-52.58.109.136-243_1@242
       - 🇦🇶NOWHERE-0.0.0.0-247_1@246
       - 美国 001_2@1
       - 加拿大 001_2@2
@@ -3076,7 +3536,6 @@ proxy-groups:
       - 加拿大 046_2@57
       - 加拿大 047_2@58
       - 加拿大 048_2@59
-      - 加拿大 049_2@60
       - 加拿大 050_2@61
       - 瑞典 001_2@62
       - 加拿大 051_2@63
@@ -3090,27 +3549,21 @@ proxy-groups:
       - 加拿大 058_2@71
       - 加拿大 059_2@72
       - 加拿大 060_2@73
-      - 加拿大 061_2@74
       - 美国 010_2@76
       - 日本 003_2@77
       - 伊朗 001_2@78
       - 俄罗斯 001_2@79
-      - 美国 012_2@81
       - 新加坡 001_2@82
       - 🇺🇸_US_美国->🇫🇷_FR_法国_1_5@0
       - 🇺🇸_US_美国_1_5@3
       - 🇺🇸_US_美国_2_5@4
-      - 🇺🇸_US_美国_5_5@9
       - 🇺🇸_US_美国_6_5@10
       - 🇺🇸_US_美国_7_5@11
       - 🇺🇸_US_美国_8_5@12
       - 🇺🇸_US_美国_9_5@13
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2_5@14
-      - 🇺🇸_US_美国_10_5@15
       - 🇺🇸_US_美国_11_5@16
       - 🇺🇸_US_美国->🇩🇪_DE_德国_5@18
-      - 🇺🇸_US_美国->🇹🇷_TR_土耳其_5@20
-      - 🇱🇺_LU_卢森堡_5@23
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.75.136.135:6697_6@0
       - SS-法国:波兰-locked-ChatGPT-TikTok-YouTubePrem-54.36.174.181:7002_6@1
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:8091_6@2
@@ -3140,75 +3593,122 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点1
-      - 香港ThinkDream数据中心11
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国Fastly全球Anycast节点18
-      - 美国Fastly全球Anycast节点19
-      - 美国+V2CROSS.COM
-      - 日本V2CROSS.COM21
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点30
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CN_speednode_0001
-      - DE_speednode_0002
-      - DE_speednode_0003
-      - DE_speednode_0004
-      - FR_speednode_0005
-      - FR_speednode_0006
-      - FR_speednode_0007
-      - GB_speednode_0008
-      - GB_speednode_0009
-      - HK_speednode_0010
-      - JP_speednode_0011
-      - KR_speednode_0012
-      - KR_speednode_0013
-      - KR_speednode_0014
-      - KR_speednode_0015
-      - KR_speednode_0016
-      - LU_speednode_0017
-      - NL_speednode_0019
-      - SE_speednode_0021
-      - SG_speednode_0022
-      - SG_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
+      - CA_speednode_0003
+      - CA_speednode_0004
+      - CA_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - DE_speednode_0013
+      - DE_speednode_0014
+      - DE_speednode_0015
+      - DE_speednode_0016
+      - FR_speednode_0017
+      - FR_speednode_0018
+      - FR_speednode_0019
+      - GB_speednode_0020
+      - GB_speednode_0021
+      - GB_speednode_0022
+      - GB_speednode_0023
+      - HK_speednode_0024
+      - HK_speednode_0025
+      - HK_speednode_0026
+      - HK_speednode_0027
+      - JP_speednode_0028
+      - JP_speednode_0029
+      - JP_speednode_0030
+      - JP_speednode_0031
+      - JP_speednode_0032
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - JP_speednode_0035
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - JP_speednode_0038
+      - JP_speednode_0039
+      - JP_speednode_0040
+      - JP_speednode_0041
+      - KR_speednode_0042
+      - KR_speednode_0043
+      - KR_speednode_0044
+      - KR_speednode_0045
+      - KR_speednode_0046
+      - KR_speednode_0047
+      - KR_speednode_0048
+      - KR_speednode_0049
+      - KR_speednode_0050
+      - KR_speednode_0051
+      - KR_speednode_0052
+      - KR_speednode_0053
+      - KR_speednode_0054
+      - KR_speednode_0055
+      - KR_speednode_0056
+      - KR_speednode_0057
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - KR_speednode_0061
+      - NL_speednode_0062
+      - SE_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0066
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0071
+      - SG_speednode_0072
+      - US_speednode_0073
+      - US_speednode_0074
+      - US_speednode_0075
+      - US_speednode_0076
+      - US_speednode_0077
+      - US_speednode_0078
+      - US_speednode_0079
+      - US_speednode_0080
+      - US_speednode_0081
+      - US_speednode_0082
+      - US_speednode_0083
+      - US_speednode_0084
+      - VN_speednode_0085
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇬🇧 英国+伦敦Microsoft公司
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 7
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇫🇷 法国+格拉沃利讷OVH数据中心
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 3
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇺🇸 美国+v2rayfree.eu.org
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇬🇧 英国 社会保险安全部
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点 15
-      - 🇭🇰 香港 电讯盈科数据中心
+      - 🇺🇸 美国 CloudFlare节点 18
       - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
+      - 🇨🇳 广东省江门市移动 8
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 12
+      - 🇺🇸 美国CloudFlare节点 14
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇦🇶NOWHERE-0.0.0.0-049_1@49
@@ -3302,18 +3802,30 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-181_1@181
       - 🇸🇬SG-159.223.94.156-182_1@182
       - 🏁RELAY-172.64.80.1-183_1@183
-      - 🇬🇧GB-51.140.34.50-186_1@186
-      - 🏁RELAY-104.26.8.202-192_1@192
+      - 🏁RELAY-104.21.70.242-193_1@193
       - 🇺🇸US-38.75.136.135-195_1@195
+      - 🏁RELAY-172.64.32.100-199_1@199
       - 🏁RELAY-23.227.38.23-200_1@200
-      - 🏁RELAY-172.67.130.140-203_1@203
+      - 🏁RELAY-104.21.23.231-202_1@202
       - 🏁RELAY-173.245.58.100-205_1@205
       - 🏁RELAY-172.64.236.127-206_1@206
       - 🇨🇳CN-120.233.205.133-207_1@207
       - 🇸🇬SG-54.251.156.15-209_1@209
       - 🏁RELAY-94.140.0.110-210_1@210
       - 🇯🇵JP-43.207.193.17-211_1@211
+      - 🏁RELAY-104.21.28.62-216_1@215
+      - 🏁RELAY-188.114.99.150-217_1@216
       - 🇸🇬SG-8.222.174.108-220_1@219
+      - 🏁RELAY-162.159.1.33-224_1@223
+      - 🇬🇧GB-35.177.168.209-228_1@227
+      - 🇫🇷FR-13.36.79.202-229_1@228
+      - 🏁RELAY-104.21.4.14-232_1@231
+      - 🏁RELAY-172.67.152.170-233_1@232
+      - 🏁RELAY-172.67.166.192-234_1@233
+      - 🇺🇸US-3.130.146.236-235_1@234
+      - 🇫🇷FR-54.36.174.181-236_1@235
+      - 🇺🇸US-34.213.191.154-242_1@241
+      - 🇩🇪DE-52.58.109.136-243_1@242
       - 🇦🇶NOWHERE-0.0.0.0-247_1@246
       - 美国 001_2@1
       - 加拿大 001_2@2
@@ -3338,7 +3850,6 @@ proxy-groups:
       - 加拿大 046_2@57
       - 加拿大 047_2@58
       - 加拿大 048_2@59
-      - 加拿大 049_2@60
       - 加拿大 050_2@61
       - 瑞典 001_2@62
       - 加拿大 051_2@63
@@ -3352,27 +3863,21 @@ proxy-groups:
       - 加拿大 058_2@71
       - 加拿大 059_2@72
       - 加拿大 060_2@73
-      - 加拿大 061_2@74
       - 美国 010_2@76
       - 日本 003_2@77
       - 伊朗 001_2@78
       - 俄罗斯 001_2@79
-      - 美国 012_2@81
       - 新加坡 001_2@82
       - 🇺🇸_US_美国->🇫🇷_FR_法国_1_5@0
       - 🇺🇸_US_美国_1_5@3
       - 🇺🇸_US_美国_2_5@4
-      - 🇺🇸_US_美国_5_5@9
       - 🇺🇸_US_美国_6_5@10
       - 🇺🇸_US_美国_7_5@11
       - 🇺🇸_US_美国_8_5@12
       - 🇺🇸_US_美国_9_5@13
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2_5@14
-      - 🇺🇸_US_美国_10_5@15
       - 🇺🇸_US_美国_11_5@16
       - 🇺🇸_US_美国->🇩🇪_DE_德国_5@18
-      - 🇺🇸_US_美国->🇹🇷_TR_土耳其_5@20
-      - 🇱🇺_LU_卢森堡_5@23
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.75.136.135:6697_6@0
       - SS-法国:波兰-locked-ChatGPT-TikTok-YouTubePrem-54.36.174.181:7002_6@1
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:8091_6@2
@@ -3402,74 +3907,121 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点1
-      - 香港ThinkDream数据中心11
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国Fastly全球Anycast节点18
-      - 美国Fastly全球Anycast节点19
-      - 美国+V2CROSS.COM
-      - 日本V2CROSS.COM21
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点30
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - CN_speednode_0001
-      - DE_speednode_0002
-      - DE_speednode_0003
-      - DE_speednode_0004
-      - FR_speednode_0005
-      - FR_speednode_0006
-      - FR_speednode_0007
-      - GB_speednode_0008
-      - GB_speednode_0009
-      - HK_speednode_0010
-      - JP_speednode_0011
-      - KR_speednode_0012
-      - KR_speednode_0013
-      - KR_speednode_0014
-      - KR_speednode_0015
-      - KR_speednode_0016
-      - LU_speednode_0017
-      - NL_speednode_0019
-      - SE_speednode_0021
-      - SG_speednode_0022
-      - SG_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
+      - CA_speednode_0003
+      - CA_speednode_0004
+      - CA_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - DE_speednode_0013
+      - DE_speednode_0014
+      - DE_speednode_0015
+      - DE_speednode_0016
+      - FR_speednode_0017
+      - FR_speednode_0018
+      - FR_speednode_0019
+      - GB_speednode_0020
+      - GB_speednode_0021
+      - GB_speednode_0022
+      - GB_speednode_0023
+      - HK_speednode_0024
+      - HK_speednode_0025
+      - HK_speednode_0026
+      - HK_speednode_0027
+      - JP_speednode_0028
+      - JP_speednode_0029
+      - JP_speednode_0030
+      - JP_speednode_0031
+      - JP_speednode_0032
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - JP_speednode_0035
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - JP_speednode_0038
+      - JP_speednode_0039
+      - JP_speednode_0040
+      - JP_speednode_0041
+      - KR_speednode_0042
+      - KR_speednode_0043
+      - KR_speednode_0044
+      - KR_speednode_0045
+      - KR_speednode_0046
+      - KR_speednode_0047
+      - KR_speednode_0048
+      - KR_speednode_0049
+      - KR_speednode_0050
+      - KR_speednode_0051
+      - KR_speednode_0052
+      - KR_speednode_0053
+      - KR_speednode_0054
+      - KR_speednode_0055
+      - KR_speednode_0056
+      - KR_speednode_0057
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - KR_speednode_0061
+      - NL_speednode_0062
+      - SE_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0066
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0071
+      - SG_speednode_0072
+      - US_speednode_0073
+      - US_speednode_0074
+      - US_speednode_0075
+      - US_speednode_0076
+      - US_speednode_0077
+      - US_speednode_0078
+      - US_speednode_0079
+      - US_speednode_0080
+      - US_speednode_0081
+      - US_speednode_0082
+      - US_speednode_0083
+      - US_speednode_0084
+      - VN_speednode_0085
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇬🇧 英国+伦敦Microsoft公司
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 7
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇫🇷 法国+格拉沃利讷OVH数据中心
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 3
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇺🇸 美国+v2rayfree.eu.org
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇬🇧 英国 社会保险安全部
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点 15
-      - 🇭🇰 香港 电讯盈科数据中心
+      - 🇺🇸 美国 CloudFlare节点 18
       - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
+      - 🇨🇳 广东省江门市移动 8
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 12
+      - 🇺🇸 美国CloudFlare节点 14
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇦🇶NOWHERE-0.0.0.0-049_1@49
@@ -3563,18 +4115,30 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-181_1@181
       - 🇸🇬SG-159.223.94.156-182_1@182
       - 🏁RELAY-172.64.80.1-183_1@183
-      - 🇬🇧GB-51.140.34.50-186_1@186
-      - 🏁RELAY-104.26.8.202-192_1@192
+      - 🏁RELAY-104.21.70.242-193_1@193
       - 🇺🇸US-38.75.136.135-195_1@195
+      - 🏁RELAY-172.64.32.100-199_1@199
       - 🏁RELAY-23.227.38.23-200_1@200
-      - 🏁RELAY-172.67.130.140-203_1@203
+      - 🏁RELAY-104.21.23.231-202_1@202
       - 🏁RELAY-173.245.58.100-205_1@205
       - 🏁RELAY-172.64.236.127-206_1@206
       - 🇨🇳CN-120.233.205.133-207_1@207
       - 🇸🇬SG-54.251.156.15-209_1@209
       - 🏁RELAY-94.140.0.110-210_1@210
       - 🇯🇵JP-43.207.193.17-211_1@211
+      - 🏁RELAY-104.21.28.62-216_1@215
+      - 🏁RELAY-188.114.99.150-217_1@216
       - 🇸🇬SG-8.222.174.108-220_1@219
+      - 🏁RELAY-162.159.1.33-224_1@223
+      - 🇬🇧GB-35.177.168.209-228_1@227
+      - 🇫🇷FR-13.36.79.202-229_1@228
+      - 🏁RELAY-104.21.4.14-232_1@231
+      - 🏁RELAY-172.67.152.170-233_1@232
+      - 🏁RELAY-172.67.166.192-234_1@233
+      - 🇺🇸US-3.130.146.236-235_1@234
+      - 🇫🇷FR-54.36.174.181-236_1@235
+      - 🇺🇸US-34.213.191.154-242_1@241
+      - 🇩🇪DE-52.58.109.136-243_1@242
       - 🇦🇶NOWHERE-0.0.0.0-247_1@246
       - 美国 001_2@1
       - 加拿大 001_2@2
@@ -3599,7 +4163,6 @@ proxy-groups:
       - 加拿大 046_2@57
       - 加拿大 047_2@58
       - 加拿大 048_2@59
-      - 加拿大 049_2@60
       - 加拿大 050_2@61
       - 瑞典 001_2@62
       - 加拿大 051_2@63
@@ -3613,27 +4176,21 @@ proxy-groups:
       - 加拿大 058_2@71
       - 加拿大 059_2@72
       - 加拿大 060_2@73
-      - 加拿大 061_2@74
       - 美国 010_2@76
       - 日本 003_2@77
       - 伊朗 001_2@78
       - 俄罗斯 001_2@79
-      - 美国 012_2@81
       - 新加坡 001_2@82
       - 🇺🇸_US_美国->🇫🇷_FR_法国_1_5@0
       - 🇺🇸_US_美国_1_5@3
       - 🇺🇸_US_美国_2_5@4
-      - 🇺🇸_US_美国_5_5@9
       - 🇺🇸_US_美国_6_5@10
       - 🇺🇸_US_美国_7_5@11
       - 🇺🇸_US_美国_8_5@12
       - 🇺🇸_US_美国_9_5@13
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2_5@14
-      - 🇺🇸_US_美国_10_5@15
       - 🇺🇸_US_美国_11_5@16
       - 🇺🇸_US_美国->🇩🇪_DE_德国_5@18
-      - 🇺🇸_US_美国->🇹🇷_TR_土耳其_5@20
-      - 🇱🇺_LU_卢森堡_5@23
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.75.136.135:6697_6@0
       - SS-法国:波兰-locked-ChatGPT-TikTok-YouTubePrem-54.36.174.181:7002_6@1
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:8091_6@2
@@ -3663,16 +4220,6 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点1
-      - 香港ThinkDream数据中心11
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国Fastly全球Anycast节点18
-      - 美国Fastly全球Anycast节点19
-      - 美国+V2CROSS.COM
-      - 日本V2CROSS.COM21
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点30
   - name: 📲 电报信息
     type: select
     proxies:
@@ -3710,59 +4257,116 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_speednode_0001
-      - DE_speednode_0002
-      - DE_speednode_0003
-      - DE_speednode_0004
-      - FR_speednode_0005
-      - FR_speednode_0006
-      - FR_speednode_0007
-      - GB_speednode_0008
-      - GB_speednode_0009
-      - HK_speednode_0010
-      - JP_speednode_0011
-      - KR_speednode_0012
-      - KR_speednode_0013
-      - KR_speednode_0014
-      - KR_speednode_0015
-      - KR_speednode_0016
-      - LU_speednode_0017
-      - NL_speednode_0019
-      - SE_speednode_0021
-      - SG_speednode_0022
-      - SG_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
+      - CA_speednode_0003
+      - CA_speednode_0004
+      - CA_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - DE_speednode_0013
+      - DE_speednode_0014
+      - DE_speednode_0015
+      - DE_speednode_0016
+      - FR_speednode_0017
+      - FR_speednode_0018
+      - FR_speednode_0019
+      - GB_speednode_0020
+      - GB_speednode_0021
+      - GB_speednode_0022
+      - GB_speednode_0023
+      - HK_speednode_0024
+      - HK_speednode_0025
+      - HK_speednode_0026
+      - HK_speednode_0027
+      - JP_speednode_0028
+      - JP_speednode_0029
+      - JP_speednode_0030
+      - JP_speednode_0031
+      - JP_speednode_0032
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - JP_speednode_0035
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - JP_speednode_0038
+      - JP_speednode_0039
+      - JP_speednode_0040
+      - JP_speednode_0041
+      - KR_speednode_0042
+      - KR_speednode_0043
+      - KR_speednode_0044
+      - KR_speednode_0045
+      - KR_speednode_0046
+      - KR_speednode_0047
+      - KR_speednode_0048
+      - KR_speednode_0049
+      - KR_speednode_0050
+      - KR_speednode_0051
+      - KR_speednode_0052
+      - KR_speednode_0053
+      - KR_speednode_0054
+      - KR_speednode_0055
+      - KR_speednode_0056
+      - KR_speednode_0057
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - KR_speednode_0061
+      - NL_speednode_0062
+      - SE_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0066
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0071
+      - SG_speednode_0072
+      - US_speednode_0073
+      - US_speednode_0074
+      - US_speednode_0075
+      - US_speednode_0076
+      - US_speednode_0077
+      - US_speednode_0078
+      - US_speednode_0079
+      - US_speednode_0080
+      - US_speednode_0081
+      - US_speednode_0082
+      - US_speednode_0083
+      - US_speednode_0084
+      - VN_speednode_0085
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇬🇧 英国+伦敦Microsoft公司
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 7
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇫🇷 法国+格拉沃利讷OVH数据中心
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 3
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇺🇸 美国+v2rayfree.eu.org
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇬🇧 英国 社会保险安全部
+      - 🇮🇳 印度 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点 15
-      - 🇭🇰 香港 电讯盈科数据中心
+      - 🇺🇸 美国 CloudFlare节点 18
       - 🇷🇺 俄罗斯  1
-      - 🇮🇳 印度  2
       - 🇵🇱 波兰  5
       - 🇺🇸 美国CloudFlare公司CDN节点 6
-      - 🇨🇳 广东省移动 7
+      - 🇨🇳 广东省江门市移动 8
       - 🇺🇸 美国CloudFlare公司CDN节点 9
+      - 🇨🇳 广东省江门市移动 12
+      - 🇺🇸 美国CloudFlare节点 14
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇦🇶NOWHERE-0.0.0.0-049_1@49
@@ -3856,18 +4460,30 @@ proxy-groups:
       - 🇦🇶NOWHERE-0.0.0.0-181_1@181
       - 🇸🇬SG-159.223.94.156-182_1@182
       - 🏁RELAY-172.64.80.1-183_1@183
-      - 🇬🇧GB-51.140.34.50-186_1@186
-      - 🏁RELAY-104.26.8.202-192_1@192
+      - 🏁RELAY-104.21.70.242-193_1@193
       - 🇺🇸US-38.75.136.135-195_1@195
+      - 🏁RELAY-172.64.32.100-199_1@199
       - 🏁RELAY-23.227.38.23-200_1@200
-      - 🏁RELAY-172.67.130.140-203_1@203
+      - 🏁RELAY-104.21.23.231-202_1@202
       - 🏁RELAY-173.245.58.100-205_1@205
       - 🏁RELAY-172.64.236.127-206_1@206
       - 🇨🇳CN-120.233.205.133-207_1@207
       - 🇸🇬SG-54.251.156.15-209_1@209
       - 🏁RELAY-94.140.0.110-210_1@210
       - 🇯🇵JP-43.207.193.17-211_1@211
+      - 🏁RELAY-104.21.28.62-216_1@215
+      - 🏁RELAY-188.114.99.150-217_1@216
       - 🇸🇬SG-8.222.174.108-220_1@219
+      - 🏁RELAY-162.159.1.33-224_1@223
+      - 🇬🇧GB-35.177.168.209-228_1@227
+      - 🇫🇷FR-13.36.79.202-229_1@228
+      - 🏁RELAY-104.21.4.14-232_1@231
+      - 🏁RELAY-172.67.152.170-233_1@232
+      - 🏁RELAY-172.67.166.192-234_1@233
+      - 🇺🇸US-3.130.146.236-235_1@234
+      - 🇫🇷FR-54.36.174.181-236_1@235
+      - 🇺🇸US-34.213.191.154-242_1@241
+      - 🇩🇪DE-52.58.109.136-243_1@242
       - 🇦🇶NOWHERE-0.0.0.0-247_1@246
       - 美国 001_2@1
       - 加拿大 001_2@2
@@ -3892,7 +4508,6 @@ proxy-groups:
       - 加拿大 046_2@57
       - 加拿大 047_2@58
       - 加拿大 048_2@59
-      - 加拿大 049_2@60
       - 加拿大 050_2@61
       - 瑞典 001_2@62
       - 加拿大 051_2@63
@@ -3906,27 +4521,21 @@ proxy-groups:
       - 加拿大 058_2@71
       - 加拿大 059_2@72
       - 加拿大 060_2@73
-      - 加拿大 061_2@74
       - 美国 010_2@76
       - 日本 003_2@77
       - 伊朗 001_2@78
       - 俄罗斯 001_2@79
-      - 美国 012_2@81
       - 新加坡 001_2@82
       - 🇺🇸_US_美国->🇫🇷_FR_法国_1_5@0
       - 🇺🇸_US_美国_1_5@3
       - 🇺🇸_US_美国_2_5@4
-      - 🇺🇸_US_美国_5_5@9
       - 🇺🇸_US_美国_6_5@10
       - 🇺🇸_US_美国_7_5@11
       - 🇺🇸_US_美国_8_5@12
       - 🇺🇸_US_美国_9_5@13
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2_5@14
-      - 🇺🇸_US_美国_10_5@15
       - 🇺🇸_US_美国_11_5@16
       - 🇺🇸_US_美国->🇩🇪_DE_德国_5@18
-      - 🇺🇸_US_美国->🇹🇷_TR_土耳其_5@20
-      - 🇱🇺_LU_卢森堡_5@23
       - SS-美国-自制NF-ChatGPT-TikTok-YouTubePrem-38.75.136.135:6697_6@0
       - SS-法国:波兰-locked-ChatGPT-TikTok-YouTubePrem-54.36.174.181:7002_6@1
       - SS-波兰-locked-ChatGPT-TikTok-YouTubePrem-51.77.53.200:8091_6@2
@@ -3956,16 +4565,6 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】82_8@26
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】62_8@27
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点1
-      - 香港ThinkDream数据中心11
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
-      - 美国Fastly全球Anycast节点18
-      - 美国Fastly全球Anycast节点19
-      - 美国+V2CROSS.COM
-      - 日本V2CROSS.COM21
-      - 英国+社会保险安全部
-      - 美国CloudFlare节点30
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
