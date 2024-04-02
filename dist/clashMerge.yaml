@@ -1,4 +1,4 @@
-# 更新时间 2024-04-01T19:03:07.372Z
+# 更新时间 2024-04-02T01:03:35.490Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3532,15 +3532,30 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.20.177.160
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 广东省移动2
+    name: 台湾省高雄市中华电信0
+    ws-opts:
+      path: /
+    server: tw1g.xn--vhq70hxyat50h6wk.com
+    port: 443
+    uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: /
+      headers:
+        host: onea.flha.ru
+    server: 172.67.214.33
+    port: 2052
+    uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省移动7
     ws-opts:
       path: /debian
       headers:
@@ -3552,60 +3567,54 @@ proxies:
     cipher: auto
     network: ws
   - type: trojan
-    name: 美国+麻省理工学院
-    server: 18.134.81.206
-    port: 22222
-    password: telegram-id-privatevpns
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 18.196.64.123
+    port: 15414
+    password: RVr0TUpk0Mmn
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.237.157.254
+    name: 美国+Amazon+EC2服务器
+    server: 3.67.57.153
     port: 22222
-    password: telegram-id-privatevpns
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 保加利亚V2CROSS.COM13
+    name: 美国CloudFlare节点12
     ws-opts:
-      path: /
-    server: 87.120.204.64
+      path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+      headers:
+        host: technological-mel-fill-decide.trycloudflare.com
+    server: 173.245.58.100
     port: 8080
-    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
   - type: trojan
-    name: 爱尔兰+V2CROSS.COM
-    server: 108.128.23.238
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 52.50.227.203
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 107.175.136.164
-    port: 16899
-    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 俄罗斯+莫斯科JustHost
+    server: 176.32.35.167
+    port: 1007
+    password: 85bce006-4885-11ee-8792-f23c9164ca5d
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国V2CROSS.COM25
+    name: 美国CloudFlare节点28
     ws-opts:
-      path: /
-    server: 45.137.97.203
-    port: 27914
-    uuid: a7dc92a2-ecfb-494d-934a-6706e366cbf2
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 台湾省高雄市中华电信28
-    ws-opts:
-      path: /
-    server: tw1g.xn--vhq70hxyat50h6wk.com
-    port: 443
-    uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce
+      path: /video/CuTy87zAzV/
+      headers:
+        host: us4Bb5oSgJA.fzbqfrse.xyz
+    server: cfcdn1.sanfencdn9.com
+    port: 2082
+    uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b
     alterId: 0
     cipher: auto
     network: ws
@@ -3938,15 +3947,15 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】41_8@53
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】40_8@56
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 广东省移动2
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 保加利亚V2CROSS.COM13
-      - 爱尔兰+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 美国V2CROSS.COM25
-      - 台湾省高雄市中华电信28
+      - 台湾省高雄市中华电信0
+      - 美国CloudFlare节点3
+      - 广东省移动7
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点12
+      - 爱尔兰+都柏林Amazon数据中心
+      - 俄罗斯+莫斯科JustHost
+      - 美国CloudFlare节点28
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4276,15 +4285,15 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】41_8@53
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】40_8@56
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 广东省移动2
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 保加利亚V2CROSS.COM13
-      - 爱尔兰+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 美国V2CROSS.COM25
-      - 台湾省高雄市中华电信28
+      - 台湾省高雄市中华电信0
+      - 美国CloudFlare节点3
+      - 广东省移动7
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点12
+      - 爱尔兰+都柏林Amazon数据中心
+      - 俄罗斯+莫斯科JustHost
+      - 美国CloudFlare节点28
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4613,15 +4622,15 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】41_8@53
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】40_8@56
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 广东省移动2
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 保加利亚V2CROSS.COM13
-      - 爱尔兰+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 美国V2CROSS.COM25
-      - 台湾省高雄市中华电信28
+      - 台湾省高雄市中华电信0
+      - 美国CloudFlare节点3
+      - 广东省移动7
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点12
+      - 爱尔兰+都柏林Amazon数据中心
+      - 俄罗斯+莫斯科JustHost
+      - 美国CloudFlare节点28
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4982,15 +4991,15 @@ proxy-groups:
       - 🇨🇦 加拿大【付费推荐：https://jdyvip.link/】41_8@53
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】40_8@56
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 英国+社会保险安全部
-      - 广东省移动2
-      - 美国+麻省理工学院
-      - 美国+惠普公司
-      - 保加利亚V2CROSS.COM13
-      - 爱尔兰+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 美国V2CROSS.COM25
-      - 台湾省高雄市中华电信28
+      - 台湾省高雄市中华电信0
+      - 美国CloudFlare节点3
+      - 广东省移动7
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点12
+      - 爱尔兰+都柏林Amazon数据中心
+      - 俄罗斯+莫斯科JustHost
+      - 美国CloudFlare节点28
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
