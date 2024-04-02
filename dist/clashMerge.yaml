@@ -1,4 +1,4 @@
-# 更新时间 2024-04-02T06:53:33.531Z
+# 更新时间 2024-04-02T07:12:15.119Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3407,36 +3407,28 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点3
+    name: 保加利亚V2CROSS.COM4
     ws-opts:
       path: /
-      headers:
-        host: onea.flha.ru
-    server: 172.67.214.33
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    server: 87.120.204.64
+    port: 8080
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 9101
-    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 浙江省杭州市+阿里云
-    server: 121.43.117.216
-    port: 10001
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSYWQzNWJhRw==
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.51.242
-    port: 2087
-    password: 241f01b9-8dfc-474f-8342-3fbd5c46417e
-    udp: true
-    skip-cert-verify: true
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点22
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: eu3.openxai.link
+    server: cf.openxai.link
+    port: 8080
+    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3794,10 +3786,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点3
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省杭州市+阿里云
-      - 美国+CloudFlare节点
+      - 保加利亚V2CROSS.COM4
+      - 美国CloudFlare节点22
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4155,10 +4145,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点3
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省杭州市+阿里云
-      - 美国+CloudFlare节点
+      - 保加利亚V2CROSS.COM4
+      - 美国CloudFlare节点22
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4515,10 +4503,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点3
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省杭州市+阿里云
-      - 美国+CloudFlare节点
+      - 保加利亚V2CROSS.COM4
+      - 美国CloudFlare节点22
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4907,10 +4893,8 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点3
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省杭州市+阿里云
-      - 美国+CloudFlare节点
+      - 保加利亚V2CROSS.COM4
+      - 美国CloudFlare节点22
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
