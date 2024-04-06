@@ -1,4 +1,4 @@
-# 更新时间 2024-04-06T07:06:22.501Z
+# 更新时间 2024-04-06T12:23:40.990Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,30 +6,30 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: AT_speednode_0001
-    server: 94.228.169.114
-    port: 25663
-    type: ss
-    country: 🇷🇺RU
-    password: 1ef9jGvAyzXLLnjssRFr8M
-    cipher: chacha20-ietf-poly1305
-    delay: 2823
+  - name: CN_speednode_0001
+    server: 106.15.199.119
+    port: 7891
+    type: socks5
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
   - name: CN_speednode_0002
     server: 183.236.51.59
     port: 54437
     type: vmess
     alterId: 64
     cipher: auto
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    tfo: false
+    network: tcp
+    servername: ''
     tls: false
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   - name: CN_speednode_0004
-    server: vip.basicnode.host
-    port: 11807
+    server: vip3.niuniupremium.xyz
+    port: 11424
     type: ssr
+    Inc. - 14: None
     cipher: chacha20-ietf
+    delay: 1204
     obfs: tls1.2_ticket_auth
     obfs-param: b91a022997.microsoft.com
     password: Fhbe0z
@@ -37,18 +37,6 @@ proxies:
     protocol-param: 22997:JeHHT2
     udp: true
   - name: CN_speednode_0005
-    server: 120.232.242.117
-    port: 41492
-    type: vmess
-    alterId: 64
-    cipher: auto
-    country: 🇨🇳 CN
-    h2-opts: {}
-    http-opts: {}
-    network: tcp
-    skip-cert-verify: true
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  - name: CN_speednode_0007
     server: 183.237.20.158
     port: 41242
     type: vmess
@@ -60,25 +48,32 @@ proxies:
     network: tcp
     skip-cert-verify: true
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  - name: CN_speednode_0009
-    server: hkscdn02.dorabbb.top
-    port: 44827
+  - name: CN_speednode_0007
+    server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
+    port: 20030
     type: vmess
-    uuid: 86933ebf-fe3a-4c67-8eb6-25c82bf07e85
     alterId: 0
     cipher: auto
+    network: ws
+    skip-cert-verify: true
     tls: false
-    skip-cert-verify: false
     udp: true
+    uuid: 2c715d12-69d4-468b-8c24-e631cf5aeb95
+    ws-opts:
+      headers:
+        Host: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
+      path: /
+  - name: CN_speednode_0008
+    server: tanz-kr.01byx31qzn.download
+    port: 35008
+    type: vmess
+    cipher: auto
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: tcp
   - name: DE_speednode_0010
-    server: 92.246.136.190
-    port: 32025
-    type: ss
-    country: 🇷🇺RU
-    password: VRKnPTULDqxaExI5yLJjoc
-    cipher: chacha20-ietf-poly1305
-    delay: 1855
-  - name: DE_speednode_0011
     server: 95.164.68.116
     port: 2053
     type: trojan
@@ -86,44 +81,20 @@ proxies:
     password: f37a931d-7092-48fe-b82f-a98da3040eb2
     skip-cert-verify: true
     udp: true
-  - name: DE_speednode_0014
-    server: de2.trojanvpn.de
-    port: 2053
-    type: trojan
-    password: f37a931d-7092-48fe-b82f-a98da3040eb2
-    skip-cert-verify: true
-    sni: de2.trojanvpn.de
-    udp: true
-  - name: FI_speednode_0015
-    server: 185.174.137.72
-    port: 57262
+  - name: HK_speednode_0014
+    server: 8.210.33.152
+    port: 443
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: WrszSP43UAOcFljDkb8vAL
-  - name: FR_speednode_0016
-    server: 45.15.157.199
-    port: 45346
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    country: 🇷🇺RU
-    password: wKmDInbrlOhZzjhh1WsvU7
-  - name: GB_speednode_0017
-    server: 51.140.37.161
-    port: 23226
-    type: ss
-    country: 🇬🇧GB
-    password: e8k7TiCtC5iZ6UQD0S9SGI
-    cipher: chacha20-ietf-poly1305
-    delay: 751
-  - name: GB_speednode_0018
-    server: 52.56.176.179
-    port: 12310
-    type: trojan
-    password: 5Mt1pfKCdmLF
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-  - name: HK_speednode_0019
+    cipher: aes-128-gcm
+    country: SG
+    password: a-wym4ovY4Yw
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: ''
+      mode: websocket
+      tls: false
+    delay: 1289
+  - name: HK_speednode_0015
     server: 47.243.196.229
     port: 443
     type: ss
@@ -135,127 +106,25 @@ proxies:
       host: ''
       mode: websocket
       tls: false
-  - name: HK_speednode_0020
-    server: 8.218.196.35
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: a-wym4ovY4Yw
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: ''
-      mode: websocket
-      mux: true
-      path: /
-      skip-cert-verify: true
-      tls: false
-  - name: IE_speednode_0021
-    server: 13.94.97.79
-    port: 14745
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: hMQ681A9fFpXM5r6TCkgb2
-  - name: KR_speednode_0022
-    server: 43.201.34.246
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-  - name: KR_speednode_0023
-    server: 43.203.220.68
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - name: KR_speednode_0024
-    server: 43.203.192.6
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - name: KR_speednode_0025
-    server: p236.panda004.net
-    port: 42839
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-    tfo: false
-    delay: 2099
-  - name: KR_speednode_0026
-    server: p226.panda004.net
-    port: 58449
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-  - name: KR_speednode_0027
-    server: p231.panda004.net
-    port: 43926
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-  - name: KR_speednode_0028
-    server: 125.141.31.73
-    port: 42185
-    type: ss
-    country: 🇰🇷KR
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 1835
-  - name: LU_speednode_0029
-    server: 87.120.204.64
-    port: 8080
-    type: vmess
-    alterId: 0
-    cipher: auto
-    country: 🇧🇬BG
-    h2-opts: {}
-    http-opts: {}
-    network: ws
-    skip-cert-verify: true
-    tls: true
-    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-    ws-opts:
-      path: /
-  - name: NL_speednode_0030
+  - name: NL_speednode_0106
     server: 159.223.211.229
     port: 49585
     type: vmess
     LLC - 1: None
-    uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
     alterId: 0
     cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: www.speedtest.net
-    network: http
+    country: 🇺🇸US
+    delay: 982
+    h2-opts: {}
     http-opts:
       method: GET
       path:
         - /
-    udp: true
-    delay: 1312
-  - name: RU_speednode_0032
-    server: 194.26.229.18
-    port: 50744
-    type: ss
-    country: 🏁ZZ
-    password: sIZ80DZsAC9ZSshS69gYql
-    cipher: chacha20-ietf-poly1305
-    delay: 810
-  - name: SG_speednode_0033
-    server: 54.169.147.64
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - name: TR_speednode_0034
-    server: 94.131.108.133
-    port: 8881
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: a8H2xE6f0ubGLeSvZrfQIWRDKE1LgY
-  - name: US_speednode_0035
+    network: http
+    skip-cert-verify: true
+    tls: true
+    uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
+  - name: US_speednode_0113
     server: 185.189.32.56
     port: 6666
     type: vmess
@@ -270,56 +139,6 @@ proxies:
     ws-opts:
       path: /a
     delay: 995
-  - name: US_speednode_0036
-    server: 104.20.30.205
-    port: 80
-    type: vmess
-    alterId: 0
-    cipher: auto
-    country: 🏁ZZ
-    h2-opts: {}
-    http-opts: {}
-    network: ws
-    servername: newsg1.xn--mes53ddysu0o3gl.top
-    skip-cert-verify: true
-    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-    ws-opts:
-      headers:
-        HOST: newsg1.xn--mes53ddysu0o3gl.top
-      path: /xn--mes53ddysu0o3gl
-  - name: US_speednode_0037
-    server: ch.hopev2ray.link
-    port: 80
-    type: vmess
-    alterId: 0
-    cipher: auto
-    country: 🇺🇸US
-    delay: 2444
-    h2-opts: {}
-    http-opts: {}
-    network: ws
-    servername: nl1.xv2ray.net
-    skip-cert-verify: true
-    uuid: 200ea676-464d-4ccf-bb5b-c50fd216c61b
-    ws-opts:
-      headers:
-        HOST: nl1.xv2ray.net
-      path: /vmess
-  - name: VN_speednode_0038
-    server: max26.flash5g.com
-    port: 80
-    type: vmess
-    alterId: 0
-    cipher: auto
-    h2-opts: {}
-    http-opts: {}
-    network: ws
-    skip-cert-verify: true
-    uuid: 4e25f91f-603c-4e83-b002-c26030757816
-    ws-opts:
-      headers:
-        host: max26.flash5g.com
-      path: /AnhBin
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -2980,6 +2799,19 @@ proxies:
       path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
   - alterId: 0
     cipher: auto
+    name: 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+    network: ws
+    port: 80
+    server: max26.flash5g.com
+    tls: false
+    type: vmess
+    uuid: 4e25f91f-603c-4e83-b002-c26030757816
+    ws-opts:
+      headers:
+        Host: max26.flash5g.com
+      path: /AnhBin
+  - alterId: 0
+    cipher: auto
     name: 🇺🇲 美国【付费推荐：https://jdyvip.link/】4_8@17
     network: ws
     port: 80
@@ -3063,38 +2895,17 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - AT_speednode_0001
+      - CN_speednode_0001
       - CN_speednode_0002
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0007
-      - CN_speednode_0009
+      - CN_speednode_0008
       - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0014
-      - FI_speednode_0015
-      - FR_speednode_0016
-      - GB_speednode_0017
-      - GB_speednode_0018
-      - HK_speednode_0019
-      - HK_speednode_0020
-      - IE_speednode_0021
-      - KR_speednode_0022
-      - KR_speednode_0023
-      - KR_speednode_0024
-      - KR_speednode_0025
-      - KR_speednode_0026
-      - KR_speednode_0027
-      - KR_speednode_0028
-      - LU_speednode_0029
-      - NL_speednode_0030
-      - RU_speednode_0032
-      - SG_speednode_0033
-      - TR_speednode_0034
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - VN_speednode_0038
+      - HK_speednode_0014
+      - HK_speednode_0015
+      - NL_speednode_0106
+      - US_speednode_0113
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -3367,6 +3178,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@7
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】23_8@8
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】38_8@10
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】4_8@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】17_8@21
@@ -3380,38 +3192,17 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - AT_speednode_0001
+      - CN_speednode_0001
       - CN_speednode_0002
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0007
-      - CN_speednode_0009
+      - CN_speednode_0008
       - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0014
-      - FI_speednode_0015
-      - FR_speednode_0016
-      - GB_speednode_0017
-      - GB_speednode_0018
-      - HK_speednode_0019
-      - HK_speednode_0020
-      - IE_speednode_0021
-      - KR_speednode_0022
-      - KR_speednode_0023
-      - KR_speednode_0024
-      - KR_speednode_0025
-      - KR_speednode_0026
-      - KR_speednode_0027
-      - KR_speednode_0028
-      - LU_speednode_0029
-      - NL_speednode_0030
-      - RU_speednode_0032
-      - SG_speednode_0033
-      - TR_speednode_0034
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - VN_speednode_0038
+      - HK_speednode_0014
+      - HK_speednode_0015
+      - NL_speednode_0106
+      - US_speednode_0113
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -3684,6 +3475,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@7
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】23_8@8
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】38_8@10
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】4_8@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】17_8@21
@@ -3696,38 +3488,17 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - AT_speednode_0001
+      - CN_speednode_0001
       - CN_speednode_0002
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0007
-      - CN_speednode_0009
+      - CN_speednode_0008
       - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0014
-      - FI_speednode_0015
-      - FR_speednode_0016
-      - GB_speednode_0017
-      - GB_speednode_0018
-      - HK_speednode_0019
-      - HK_speednode_0020
-      - IE_speednode_0021
-      - KR_speednode_0022
-      - KR_speednode_0023
-      - KR_speednode_0024
-      - KR_speednode_0025
-      - KR_speednode_0026
-      - KR_speednode_0027
-      - KR_speednode_0028
-      - LU_speednode_0029
-      - NL_speednode_0030
-      - RU_speednode_0032
-      - SG_speednode_0033
-      - TR_speednode_0034
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - VN_speednode_0038
+      - HK_speednode_0014
+      - HK_speednode_0015
+      - NL_speednode_0106
+      - US_speednode_0113
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -4000,6 +3771,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@7
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】23_8@8
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】38_8@10
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】4_8@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】17_8@21
@@ -4044,38 +3816,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AT_speednode_0001
+      - CN_speednode_0001
       - CN_speednode_0002
       - CN_speednode_0004
       - CN_speednode_0005
       - CN_speednode_0007
-      - CN_speednode_0009
+      - CN_speednode_0008
       - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0014
-      - FI_speednode_0015
-      - FR_speednode_0016
-      - GB_speednode_0017
-      - GB_speednode_0018
-      - HK_speednode_0019
-      - HK_speednode_0020
-      - IE_speednode_0021
-      - KR_speednode_0022
-      - KR_speednode_0023
-      - KR_speednode_0024
-      - KR_speednode_0025
-      - KR_speednode_0026
-      - KR_speednode_0027
-      - KR_speednode_0028
-      - LU_speednode_0029
-      - NL_speednode_0030
-      - RU_speednode_0032
-      - SG_speednode_0033
-      - TR_speednode_0034
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - VN_speednode_0038
+      - HK_speednode_0014
+      - HK_speednode_0015
+      - NL_speednode_0106
+      - US_speednode_0113
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -4348,6 +4099,7 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】15_8@7
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】23_8@8
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】38_8@10
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】4_8@17
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】35_8@19
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】17_8@21
