@@ -1,4 +1,4 @@
-# 更新时间 2024-04-10T01:00:38.268Z
+# 更新时间 2024-04-10T06:18:17.476Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,49 +6,90 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: CN_speednode_0006
-    server: hk2.iepl.cooc.icu
-    port: 22881
-    type: ss
-    cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
+  - name: AU_speednode_0001
+    server: au01.freeflyingcloud.xyz
+    port: 42002
+    type: trojan
+    password: 87b1b7c2-317c-41c3-a490-2cbf47a68200
+    sni: au01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
   - name: CN_speednode_0007
-    server: jp2.iepl.cooc.icu
-    port: 47101
+    server: uhisfgy78eu.cfprefer1.xyz
+    port: 10017
     type: ss
     cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
+    country: CN
+    password: 3ce72168-730e-4020-baf8-620ee14634ac
   - name: CN_speednode_0008
-    server: hk1.iepl.cooc.icu
-    port: 21881
+    server: uhisfgy78eu.cfprefer1.xyz
+    port: 10016
     type: ss
     cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
+    country: CN
+    password: 3ce72168-730e-4020-baf8-620ee14634ac
+  - name: CN_speednode_0009
+    server: uhisfgy78eu.cfprefer1.xyz
+    port: 10065
+    type: ss
+    cipher: aes-256-gcm
+    country: CN
+    password: 3ce72168-730e-4020-baf8-620ee14634ac
   - name: CN_speednode_0010
-    server: jp1.iepl.cooc.icu
-    port: 47100
-    type: ss
-    cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0011
-    server: sg2.iepl.cooc.icu
-    port: 35106
-    type: ss
-    cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
+    server: 13.v2-ray.cyou
+    port: 23613
+    type: vmess
+    uuid: 2b6fa4b4-3976-3d69-a540-c5ec43093505
+    alterId: 2
+    cipher: auto
+    skip-cert-vertify: true
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: 13.v2-ray.cyou
+    udp: true
   - name: CN_speednode_0012
-    server: tw1.iepl.cooc.icu
-    port: 35109
+    server: uhisfgy78eu.cfprefer1.xyz
+    port: 10022
     type: ss
     cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
+    country: CN
+    password: 3ce72168-730e-4020-baf8-620ee14634ac
   - name: CN_speednode_0013
-    server: sg1.iepl.cooc.icu
-    port: 35105
-    type: ss
-    cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
+    server: gy.58n.net
+    port: 20059
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: x59.flybar.work
+    skip-cert-verify: true
+    udp: true
   - name: CN_speednode_0014
+    server: gy.58n.net
+    port: 41767
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: x114.flybar.work
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0015
+    server: gy.58n.net
+    port: 59021
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: x100.flybar.work
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0016
+    server: gy.58n.net
+    port: 20076
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: x76.flybar.work
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0017
     server: 120.233.42.83
     port: 20207
     type: vmess
@@ -62,180 +103,200 @@ proxies:
       path: /debian
       headers:
         host: data-hk-v1.shwjfkw.cn
-  - name: CN_speednode_0015
-    server: gcdddd0001.likeone.lol
-    port: 58464
-    type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: sg02.ckcloud.info
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0016
-    server: tw2.iepl.cooc.icu
-    port: 35110
-    type: ss
-    cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0017
-    server: gcdddd0003.likeone.lol
-    port: 15485
-    type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: hk04.ckcloud.info
-    skip-cert-verify: true
-    udp: true
   - name: CN_speednode_0018
-    server: th.iepl.cooc.icu
-    port: 35613
-    type: ss
-    cipher: aes-128-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0019
-    server: freejpno1.beednsvip.top
-    port: 45613
-    type: ssr
-    cipher: aes-256-cfb
-    password: tsu9oi
-    obfs: plain
-    protocol: auth_aes128_sha1
-    protocol-param: 20321:hoxnjJ
-    obfs-param: a732620321.microsoft.com
-    group: SSRProvider
-  - name: CN_speednode_0020
-    server: vn1.iepl.cooc.icu
-    port: 35601
-    type: ss
-    cipher: aes-128-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0021
-    server: shdxus.aikunapp.com
-    port: 20003
-    type: vmess
-    alterId: 0
-    cipher: auto
-    tls: false
-    uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
-  - name: CN_speednode_0022
-    server: kr2.iepl.cooc.icu
-    port: 35102
-    type: ss
-    cipher: aes-128-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0023
-    server: gcdddd0001.likeone.lol
-    port: 15485
+    server: gy.58n.net
+    port: 54178
     type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: hk04.ckcloud.info
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: x115.flybar.work
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0019
+    server: gy.58n.net
+    port: 20141
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: z141.hongkongnode.top
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0020
+    server: gy.58n.net
+    port: 50355
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: z264.hongkongnode.top
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0021
+    server: gy.58n.net
+    port: 20301
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: z301.hongkongnode.top
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0022
+    server: 19.v2-ray.cyou
+    port: 23619
+    type: vmess
+    uuid: 2b6fa4b4-3976-3d69-a540-c5ec43093505
+    alterId: 2
+    cipher: auto
+    skip-cert-vertify: true
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: 19.v2-ray.cyou
+    udp: true
+  - name: CN_speednode_0023
+    server: gy.58n.net
+    port: 45168
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: z263.hongkongnode.top
     skip-cert-verify: true
     udp: true
   - name: CN_speednode_0024
-    server: kr1.iepl.cooc.icu
-    port: 35101
-    type: ss
-    cipher: aes-128-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0025
-    server: usa1.iepl.cooc.icu
-    port: 31881
-    type: ss
-    cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0026
-    server: ru.iepl.cooc.icu
-    port: 35612
-    type: ss
-    cipher: aes-128-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0027
-    server: gcdddd0005.likeone.lol
-    port: 15485
+    server: gy.58n.net
+    port: 20139
     type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: hk04.ckcloud.info
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: z139.hongkongnode.top
     skip-cert-verify: true
     udp: true
-  - name: CN_speednode_0028
-    server: gcdddd0001.likeone.lol
-    port: 26094
+  - name: CN_speednode_0025
+    server: gy.58n.net
+    port: 21247
     type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: id01.ckcloud.info
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: x91.flybar.work
+    skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0026
+    server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
+    port: 20002
+    type: vmess
+    alterId: 0
+    cipher: auto
+    network: ws
+    skip-cert-verify: true
+    tls: false
+    udp: true
+    uuid: 2c715d12-69d4-468b-8c24-e631cf5aeb95
+    ws-opts:
+      headers:
+        Host: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
+      path: /
+  - name: CN_speednode_0027
+    server: 11.v2-ray.cyou
+    port: 23611
+    type: vmess
+    uuid: 2b6fa4b4-3976-3d69-a540-c5ec43093505
+    alterId: 2
+    cipher: auto
+    skip-cert-vertify: true
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: 11.v2-ray.cyou
+    udp: true
+  - name: CN_speednode_0028
+    server: gy.58n.net
+    port: 20308
+    type: trojan
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: z308.hongkongnode.top
     skip-cert-verify: true
     udp: true
   - name: CN_speednode_0029
-    server: usa2.iepl.cooc.icu
-    port: 32881
-    type: ss
-    cipher: aes-256-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
-  - name: CN_speednode_0030
-    server: 183.236.51.59
-    port: 54437
-    type: vmess
-    alterId: 64
-    cipher: auto
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    tfo: false
-    tls: false
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    delay: 512
-  - name: CN_speednode_0031
-    server: gcdddd0001.likeone.lol
-    port: 16483
+    server: gy.58n.net
+    port: 21970
     type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: jp03.ckcloud.info
+    password: d58218a0-72e9-3a0a-b596-089928df5dd3
+    sni: x41.flybar.work
     skip-cert-verify: true
+    udp: true
+  - name: CN_speednode_0030
+    server: 15.v2-ray.cyou
+    port: 23615
+    type: vmess
+    uuid: 2b6fa4b4-3976-3d69-a540-c5ec43093505
+    alterId: 2
+    cipher: auto
+    skip-cert-vertify: true
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: 15.v2-ray.cyou
+    udp: true
+  - name: CN_speednode_0031
+    server: 14.v2-ray.cyou
+    port: 23614
+    type: vmess
+    uuid: 2b6fa4b4-3976-3d69-a540-c5ec43093505
+    alterId: 2
+    cipher: auto
+    skip-cert-vertify: true
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: 14.v2-ray.cyou
     udp: true
   - name: CN_speednode_0032
-    server: fr1.iepl.cooc.icu
-    port: 35611
-    type: ss
-    cipher: aes-128-gcm
-    password: f5c738dc-d86d-4f2c-9084-fbe2c82e274a
+    server: 16.v2-ray.cyou
+    port: 23616
+    type: vmess
+    uuid: 2b6fa4b4-3976-3d69-a540-c5ec43093505
+    alterId: 2
+    cipher: auto
+    skip-cert-vertify: true
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: 16.v2-ray.cyou
+    udp: true
   - name: CN_speednode_0033
-    server: gcdddd0001.likeone.lol
-    port: 16343
+    server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
+    port: 20013
+    type: vmess
+    alterId: 0
+    cipher: auto
+    network: ws
+    skip-cert-verify: true
+    tls: false
+    udp: true
+    uuid: 2c715d12-69d4-468b-8c24-e631cf5aeb95
+    ws-opts:
+      headers:
+        Host: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
+      path: /
+  - name: DE_speednode_0034
+    server: 3.75.171.185
+    port: 14160
     type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: vn01.ckcloud.info
+    password: Io4kevF6(zgM
+    sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-  - name: CN_speednode_0034
-    server: gcdddd0005.likeone.lol
-    port: 16343
+  - name: DE_speednode_0035
+    server: 3.73.132.232
+    port: 14152
     type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: vn01.ckcloud.info
+    password: 0gOaLn7idj4K
+    sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-  - name: CN_speednode_0035
-    server: gcdddd0001.likeone.lol
-    port: 53279
-    type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: de01.ckcloud.info
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0036
-    server: gcdddd0005.likeone.lol
-    port: 53279
-    type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: de01.ckcloud.info
-    skip-cert-verify: true
-    udp: true
-  - name: CN_speednode_0037
-    server: gcdddd0005.likeone.lol
-    port: 60293
-    type: trojan
-    password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
-    sni: tur01.ckcloud.info
-    skip-cert-verify: true
-    udp: true
-  - name: DE_speednode_0038
+  - name: DE_speednode_0037
     server: 95.164.68.116
     port: 443
     type: trojan
@@ -246,49 +307,52 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc
-  - name: HK_speednode_0045
-    server: 47.76.185.99
-    port: 443
+  - name: DE_speednode_0039
+    server: 80.71.157.105
+    port: 80
+    type: vmess
+    country: 🏁ZZ
+    uuid: b656b441-2cfd-44b8-9b2e-646e9925f8f6
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: نام.کانال.تلگرام.VPNHTTPInjectorfree
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: نام.کانال.تلگرام.VPNHTTPInjectorfree
+    delay: 2330
+  - name: FR_speednode_0043
+    server: fr01.freeflyingcloud.xyz
+    port: 30502
+    type: trojan
+    password: 87b1b7c2-317c-41c3-a490-2cbf47a68200
+    sni: fr01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0044
+    server: 1.65.197.10
+    port: 80
     type: ss
     cipher: aes-128-gcm
     password: a-wym4ovY4Yw
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: ''
-      path: /
-      tls: false
-      mux: true
-      skip-cert-verify: true
-  - name: HK_speednode_0046
-    server: 8.210.33.152
+  - name: HK_speednode_0050
+    server: 8.218.82.85
     port: 443
     type: ss
-    cipher: aes-128-gcm
-    country: SG
+    Ltd. - 4: None
+    country: 🇸🇬 SG
     password: a-wym4ovY4Yw
+    cipher: aes-128-gcm
     plugin: v2ray-plugin
     plugin-opts:
       host: ''
       mode: websocket
       tls: false
-    delay: 1821
-  - name: HK_speednode_0047
-    server: 8.218.196.35
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    client-fingerprint: chrome
-    password: a-wym4ovY4Yw
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: ''
-      mode: websocket
-      mux: true
-      path: ''
-      skip-cert-verify: true
-      tls: false
-    tfo: false
+    delay: 541
   - name: HK_speednode_0058
     server: 42.98.119.98
     port: 443
@@ -303,34 +367,86 @@ proxies:
       tls: false
       mux: true
       skip-cert-verify: true
-  - name: NL_speednode_0127
+  - name: IT_speednode_0060
+    server: it01.freeflyingcloud.xyz
+    port: 48102
+    type: trojan
+    password: 87b1b7c2-317c-41c3-a490-2cbf47a68200
+    sni: it01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0061
+    server: 13.231.234.225
+    port: 14161
+    type: trojan
+    password: R9NQezDe35KG
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0062
+    server: 35.78.196.235
+    port: 443
+    type: trojan
+    password: 3c237e79-795d-33ff-999b-fe0ee2ae5fcd
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  - name: KR_speednode_0072
+    server: kr01.freeflyingcloud.xyz
+    port: 24852
+    type: trojan
+    password: 87b1b7c2-317c-41c3-a490-2cbf47a68200
+    sni: kr01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: KR_speednode_0095
+    server: 3.35.205.17
+    port: 14150
+    type: trojan
+    password: TZgFleH)3ACe
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+  - name: NL_speednode_0129
     server: 159.223.211.229
     port: 49585
     type: vmess
-    uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
     alterId: 0
     cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: http
+    country: 🇺🇸US
+    h2-opts: {}
     http-opts:
       method: GET
       path:
         - /
-  - name: US_speednode_0141
-    server: us-phoenix-oracle-3e4543.ip1.shop
-    port: 46666
-    type: vmess
-    uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /rongseven?ed=2048
-      headers:
-        Host: us-phoenix-oracle-3e4543.ip1.shop
+    network: http
+    skip-cert-verify: true
+    tls: true
+    uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
+  - name: RU_speednode_0130
+    server: ru01.freeflyingcloud.xyz
+    port: 30002
+    type: trojan
+    password: 87b1b7c2-317c-41c3-a490-2cbf47a68200
+    sni: ru01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0158
+    server: 103.136.185.28
+    port: 3504
+    type: trojan
+    password: 3c237e79-795d-33ff-999b-fe0ee2ae5fcd
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0161
+    server: us03.freeflyingcloud.xyz
+    port: 30018
+    type: trojan
+    password: 87b1b7c2-317c-41c3-a490-2cbf47a68200
+    sni: us03.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -3087,11 +3203,11 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CN_speednode_0006
+      - AU_speednode_0001
       - CN_speednode_0007
       - CN_speednode_0008
+      - CN_speednode_0009
       - CN_speednode_0010
-      - CN_speednode_0011
       - CN_speednode_0012
       - CN_speednode_0013
       - CN_speednode_0014
@@ -3114,17 +3230,23 @@ proxy-groups:
       - CN_speednode_0031
       - CN_speednode_0032
       - CN_speednode_0033
-      - CN_speednode_0034
-      - CN_speednode_0035
-      - CN_speednode_0036
-      - CN_speednode_0037
-      - DE_speednode_0038
-      - HK_speednode_0045
-      - HK_speednode_0046
-      - HK_speednode_0047
+      - DE_speednode_0034
+      - DE_speednode_0035
+      - DE_speednode_0037
+      - DE_speednode_0039
+      - FR_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0050
       - HK_speednode_0058
-      - NL_speednode_0127
-      - US_speednode_0141
+      - IT_speednode_0060
+      - JP_speednode_0061
+      - JP_speednode_0062
+      - KR_speednode_0072
+      - KR_speednode_0095
+      - NL_speednode_0129
+      - RU_speednode_0130
+      - US_speednode_0158
+      - US_speednode_0161
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -3411,11 +3533,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CN_speednode_0006
+      - AU_speednode_0001
       - CN_speednode_0007
       - CN_speednode_0008
+      - CN_speednode_0009
       - CN_speednode_0010
-      - CN_speednode_0011
       - CN_speednode_0012
       - CN_speednode_0013
       - CN_speednode_0014
@@ -3438,17 +3560,23 @@ proxy-groups:
       - CN_speednode_0031
       - CN_speednode_0032
       - CN_speednode_0033
-      - CN_speednode_0034
-      - CN_speednode_0035
-      - CN_speednode_0036
-      - CN_speednode_0037
-      - DE_speednode_0038
-      - HK_speednode_0045
-      - HK_speednode_0046
-      - HK_speednode_0047
+      - DE_speednode_0034
+      - DE_speednode_0035
+      - DE_speednode_0037
+      - DE_speednode_0039
+      - FR_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0050
       - HK_speednode_0058
-      - NL_speednode_0127
-      - US_speednode_0141
+      - IT_speednode_0060
+      - JP_speednode_0061
+      - JP_speednode_0062
+      - KR_speednode_0072
+      - KR_speednode_0095
+      - NL_speednode_0129
+      - RU_speednode_0130
+      - US_speednode_0158
+      - US_speednode_0161
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -3734,11 +3862,11 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - CN_speednode_0006
+      - AU_speednode_0001
       - CN_speednode_0007
       - CN_speednode_0008
+      - CN_speednode_0009
       - CN_speednode_0010
-      - CN_speednode_0011
       - CN_speednode_0012
       - CN_speednode_0013
       - CN_speednode_0014
@@ -3761,17 +3889,23 @@ proxy-groups:
       - CN_speednode_0031
       - CN_speednode_0032
       - CN_speednode_0033
-      - CN_speednode_0034
-      - CN_speednode_0035
-      - CN_speednode_0036
-      - CN_speednode_0037
-      - DE_speednode_0038
-      - HK_speednode_0045
-      - HK_speednode_0046
-      - HK_speednode_0047
+      - DE_speednode_0034
+      - DE_speednode_0035
+      - DE_speednode_0037
+      - DE_speednode_0039
+      - FR_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0050
       - HK_speednode_0058
-      - NL_speednode_0127
-      - US_speednode_0141
+      - IT_speednode_0060
+      - JP_speednode_0061
+      - JP_speednode_0062
+      - KR_speednode_0072
+      - KR_speednode_0095
+      - NL_speednode_0129
+      - RU_speednode_0130
+      - US_speednode_0158
+      - US_speednode_0161
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -4089,11 +4223,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_speednode_0006
+      - AU_speednode_0001
       - CN_speednode_0007
       - CN_speednode_0008
+      - CN_speednode_0009
       - CN_speednode_0010
-      - CN_speednode_0011
       - CN_speednode_0012
       - CN_speednode_0013
       - CN_speednode_0014
@@ -4116,17 +4250,23 @@ proxy-groups:
       - CN_speednode_0031
       - CN_speednode_0032
       - CN_speednode_0033
-      - CN_speednode_0034
-      - CN_speednode_0035
-      - CN_speednode_0036
-      - CN_speednode_0037
-      - DE_speednode_0038
-      - HK_speednode_0045
-      - HK_speednode_0046
-      - HK_speednode_0047
+      - DE_speednode_0034
+      - DE_speednode_0035
+      - DE_speednode_0037
+      - DE_speednode_0039
+      - FR_speednode_0043
+      - HK_speednode_0044
+      - HK_speednode_0050
       - HK_speednode_0058
-      - NL_speednode_0127
-      - US_speednode_0141
+      - IT_speednode_0060
+      - JP_speednode_0061
+      - JP_speednode_0062
+      - KR_speednode_0072
+      - KR_speednode_0095
+      - NL_speednode_0129
+      - RU_speednode_0130
+      - US_speednode_0158
+      - US_speednode_0161
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
