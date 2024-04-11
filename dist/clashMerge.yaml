@@ -1,4 +1,4 @@
-# 更新时间 2024-04-11T07:09:27.596Z
+# 更新时间 2024-04-11T12:25:29.858Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,26 +6,41 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: CN_speednode_0007
-    server: fg5d.84bbo0t-olimkrx-kr02.my777999.top
-    port: 32998
+  - name: CN_speednode_0004
+    server: db.quanstring.top
+    port: 42107
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: 22212159-1be2-4c81-afbb-6203b6a51739
+    password: e50dd0c1-b1bc-4910-aa3e-7237d55043c1
+  - name: CN_speednode_0005
+    server: sg003.sfrae.net
+    port: 44209
+    type: ss
+    country: 🏁 ZZ
+    password: fade2b35-7872-442e-a54e-6ccf9b970476
+    cipher: aes-256-gcm
+    delay: 2974
+  - name: CN_speednode_0006
+    server: sjc002.sfrae.net
+    port: 44214
+    type: ss
+    password: fade2b35-7872-442e-a54e-6ccf9b970476
+    cipher: aes-256-gcm
+    delay: 1446
   - name: CN_speednode_0008
     server: 120.233.42.83
     port: 20207
     type: vmess
-    cipher: auto
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
     alterId: 0
-    tls: false
-    skip-cert-verify: true
+    cipher: auto
     network: ws
+    skip-cert-verify: true
+    tls: false
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
     ws-opts:
-      path: /debian
       headers:
         host: data-hk-v1.shwjfkw.cn
+      path: /debian
   - name: DE_speednode_0010
     server: 95.164.68.116
     port: 443
@@ -37,42 +52,135 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc
-  - name: HK_speednode_0020
-    server: 1.65.197.10
-    port: 80
-    type: ss
-    cipher: aes-128-gcm
-    password: a-wym4ovY4Yw
-  - name: HK_speednode_0021
+  - name: GB_speednode_0019
+    server: uk01.freeflyingcloud.xyz
+    port: 22252
+    type: trojan
+    password: 0c682abc-cb45-47cc-881b-40dafeff2403
+    sni: uk01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: HK_speednode_0030
+    server: 91.199.84.136
+    port: 8080
+    type: vmess
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: hk-3.trollfunny.net
+    network: ws
+    ws-opts:
+      path: /
+  - name: HK_speednode_0031
     server: 42.98.119.98
     port: 443
     type: ss
     cipher: aes-128-gcm
+    client-fingerprint: chrome
     password: a-wym4ovY4Yw
     plugin: v2ray-plugin
     plugin-opts:
-      mode: websocket
       host: ''
-      path: /
-      tls: false
+      mode: websocket
       mux: true
+      path: ''
       skip-cert-verify: true
-  - name: NL_speednode_0088
+      tls: false
+    tfo: false
+  - name: JP_speednode_0033
+    server: jp01.freeflyingcloud.xyz
+    port: 44402
+    type: trojan
+    password: 0c682abc-cb45-47cc-881b-40dafeff2403
+    sni: jp01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: JP_speednode_0034
+    server: 35.78.196.235
+    port: 443
+    type: trojan
+    password: 761cc01b-5674-3f50-92cd-54e3ba730e3c
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  - name: KR_speednode_0077
+    server: 43.203.220.68
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: KR_speednode_0086
+    server: 43.203.207.149
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: NL_speednode_0093
     server: 159.223.211.229
     port: 49585
     type: vmess
+    alpn:
+      - h2
+      - http/1.1
     alterId: 0
     cipher: auto
-    country: 🇺🇸US
-    h2-opts: {}
     http-opts:
       method: GET
       path:
         - /
     network: http
+    servername: www.speedtest.net
     skip-cert-verify: true
     tls: true
+    udp: true
     uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
+  - name: NL_speednode_0095
+    server: 156.225.67.240
+    port: 41000
+    type: vmess
+    alterId: 64
+    cipher: auto
+    network: ws
+    skip-cert-verify: true
+    tls: true
+    udp: true
+    uuid: 9c026efe-6af0-465f-b8c0-3f58c8c2d4c5
+    ws-opts:
+      path: /path/180820033318
+  - name: RU_speednode_0096
+    server: ru01.freeflyingcloud.xyz
+    port: 30002
+    type: trojan
+    password: 0c682abc-cb45-47cc-881b-40dafeff2403
+    sni: ru01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: SG_speednode_0189
+    server: sg01.freeflyingcloud.xyz
+    port: 35702
+    type: trojan
+    password: 0c682abc-cb45-47cc-881b-40dafeff2403
+    sni: sg01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: US_speednode_0192
+    server: 23.27.103.76
+    port: 44214
+    type: ss
+    country: 🇺🇸US
+    password: fade2b35-7872-442e-a54e-6ccf9b970476
+    cipher: aes-256-gcm
+    delay: 560
+  - name: US_speednode_0193
+    server: us03.freeflyingcloud.xyz
+    port: 30018
+    type: trojan
+    password: 0c682abc-cb45-47cc-881b-40dafeff2403
+    sni: us03.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -2829,12 +2937,24 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CN_speednode_0007
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0008
       - DE_speednode_0010
-      - HK_speednode_0020
-      - HK_speednode_0021
-      - NL_speednode_0088
+      - GB_speednode_0019
+      - HK_speednode_0030
+      - HK_speednode_0031
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - KR_speednode_0077
+      - KR_speednode_0086
+      - NL_speednode_0093
+      - NL_speednode_0095
+      - RU_speednode_0096
+      - SG_speednode_0189
+      - US_speednode_0192
+      - US_speednode_0193
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -3121,12 +3241,24 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CN_speednode_0007
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0008
       - DE_speednode_0010
-      - HK_speednode_0020
-      - HK_speednode_0021
-      - NL_speednode_0088
+      - GB_speednode_0019
+      - HK_speednode_0030
+      - HK_speednode_0031
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - KR_speednode_0077
+      - KR_speednode_0086
+      - NL_speednode_0093
+      - NL_speednode_0095
+      - RU_speednode_0096
+      - SG_speednode_0189
+      - US_speednode_0192
+      - US_speednode_0193
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -3412,12 +3544,24 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - CN_speednode_0007
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0008
       - DE_speednode_0010
-      - HK_speednode_0020
-      - HK_speednode_0021
-      - NL_speednode_0088
+      - GB_speednode_0019
+      - HK_speednode_0030
+      - HK_speednode_0031
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - KR_speednode_0077
+      - KR_speednode_0086
+      - NL_speednode_0093
+      - NL_speednode_0095
+      - RU_speednode_0096
+      - SG_speednode_0189
+      - US_speednode_0192
+      - US_speednode_0193
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
@@ -3735,12 +3879,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_speednode_0007
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0008
       - DE_speednode_0010
-      - HK_speednode_0020
-      - HK_speednode_0021
-      - NL_speednode_0088
+      - GB_speednode_0019
+      - HK_speednode_0030
+      - HK_speednode_0031
+      - JP_speednode_0033
+      - JP_speednode_0034
+      - KR_speednode_0077
+      - KR_speednode_0086
+      - NL_speednode_0093
+      - NL_speednode_0095
+      - RU_speednode_0096
+      - SG_speednode_0189
+      - US_speednode_0192
+      - US_speednode_0193
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇧🇬 保加利亚 v2rayfree.eu.org
       - 🇺🇸 美国 CloudFlare节点
