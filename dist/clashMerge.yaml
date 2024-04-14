@@ -1,4 +1,4 @@
-# 更新时间 2024-04-14T07:54:25.208Z
+# 更新时间 2024-04-14T14:43:51.840Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2892,13 +2892,53 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 广东省汕头市移动0
+    server: 183.240.179.207
+    port: 30127
+    uuid: e456d54e-fb49-42c2-ace7-0dd141fee5a6
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 104.21.69.44
+    port: 443
+    password: qj1Dz1CJmFQRhWr1SP80aA
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 英国+社会保险安全部
+    server: 51.20.38.197
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点4
+    ws-opts:
+      path: /video/P7EExoE2
+      headers:
+        host: oA5FSz9Tjp1.yofnhkfc.xyz
+    server: cfcdn3.sanfencdn9.com
+    port: 80
+    uuid: e7bd848c-c1c9-40a4-b1d9-eba048a340c5
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: ss
-    name: 甘肃省兰州市+移动
-    server: hk.4.thap.xyz
-    port: 35021
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjZmYyMmZjMi03YjUwLTQzNTMtYTY5NS0xNThhYzNhMjczOGQ=
+    name: 美国+惠普HP
+    server: 15.184.233.173
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyTFZWRnh4SEpTQk1kR2Rs
     cipher: aes-128-gcm
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 3.126.76.182
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点7
     ws-opts:
@@ -2911,38 +2951,58 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.168.194.250
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点11
+    name: 美国CloudFlare节点8
     ws-opts:
-      path: /vmess
+      path: /
       headers:
-        host: fr2-vmess.sshmax.xyz
-    server: 104.21.25.8
-    port: 2096
-    uuid: 22999f0a-20b0-485d-b000-fa59586940f9
+        host: admin.arzonhost.ir
+    server: 172.67.223.242
+    port: 2086
+    uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
+  - type: ss
+    name: 伊朗+V2CROSS.COM
+    server: 91.186.210.150
+    port: 30129
+    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 75.102.51.45
+    port: 16899
+    password: YWVzLTEyOC1nY206WWMyQ3RySXo4TA==
+    cipher: aes-128-gcm
   - type: vmess
     name: 美国CloudFlare节点13
     ws-opts:
-      path: /?ed=2048
+      path: /
       headers:
-        host: de.sanfen002.top
-    server: 4.namesilo123.top
-    port: 80
-    uuid: 4d68da82-e8d0-4eaa-aec9-0df4a23e1a04
+        host: oiictw.yydsii.com
+    server: kkyx.yydsii.com
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 美国+Microsoft公司
+    server: 52.151.90.80
+    port: 34782
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptS3gxaXhRVm5pTTlObVNPd3lqTWRK
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国华盛顿Cogent通信公司15
+    ws-opts:
+      path: /
+    server: 38.75.137.27
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    network: auto
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3243,11 +3303,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 甘肃省兰州市+移动
+      - 广东省汕头市移动0
+      - 美国+CloudFlare节点
+      - 英国+社会保险安全部
+      - 美国CloudFlare节点4
+      - 美国+惠普HP
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点7
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点8
+      - 伊朗+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国CloudFlare节点13
+      - 美国+Microsoft公司
+      - 美国华盛顿Cogent通信公司15
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3548,11 +3616,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 甘肃省兰州市+移动
+      - 广东省汕头市移动0
+      - 美国+CloudFlare节点
+      - 英国+社会保险安全部
+      - 美国CloudFlare节点4
+      - 美国+惠普HP
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点7
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点8
+      - 伊朗+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国CloudFlare节点13
+      - 美国+Microsoft公司
+      - 美国华盛顿Cogent通信公司15
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3852,11 +3928,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 甘肃省兰州市+移动
+      - 广东省汕头市移动0
+      - 美国+CloudFlare节点
+      - 英国+社会保险安全部
+      - 美国CloudFlare节点4
+      - 美国+惠普HP
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点7
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点8
+      - 伊朗+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国CloudFlare节点13
+      - 美国+Microsoft公司
+      - 美国华盛顿Cogent通信公司15
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4188,11 +4272,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 甘肃省兰州市+移动
+      - 广东省汕头市移动0
+      - 美国+CloudFlare节点
+      - 英国+社会保险安全部
+      - 美国CloudFlare节点4
+      - 美国+惠普HP
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点7
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点8
+      - 伊朗+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国CloudFlare节点13
+      - 美国+Microsoft公司
+      - 美国华盛顿Cogent通信公司15
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
