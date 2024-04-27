@@ -1,4 +1,4 @@
-# 更新时间 2024-04-27T06:53:22.811Z
+# 更新时间 2024-04-27T07:09:13.867Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2876,40 +2876,69 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 日本+东京都亚马逊(Amazon)公司数据中心
-    server: 54.250.114.90
-    port: 12260
-    password: WjPGxeQwDc08
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 甘肃省兰州市移动1
+    ws-opts:
+      path: /v2ray
+      headers:
+        host: hk.lalayunssl.xyz
+    server: zf.lalayun.cyou
+    port: 10163
+    uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
     name: 美国+惠普HP
     server: 15.157.58.12
-    port: 12285
-    password: Hm0puXikVSwy
+    port: 12331
+    password: CPryjjVuh98y
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 广东省潮州市移动5
-    server: 183.240.188.56
-    port: 35012
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.58
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省江门市移动4
+    server: 120.238.122.170
+    port: 35020
     uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 安徽省+移动数据上网公共出口
+    server: 112.29.94.24
+    port: 443
+    password: BZjkHMao
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 广东省广州市移动6
-    ws-opts:
-      path: /
-    server: 120.232.242.117
-    port: 41492
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    name: 广东省潮州市移动6
+    server: 183.240.188.56
+    port: 35011
+    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 韩国+首尔Amazon数据中心
+    server: 52.79.159.145
+    port: 12339
+    password: agu18n8FtN19
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点7
+    name: 美国CloudFlare节点8
     ws-opts:
       path: /video/Zo98PYfE
       headers:
@@ -2920,8 +2949,15 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 34.220.172.40
+    port: 12320
+    password: Uj0zcpqTz2ID
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 广东省潮州市移动8
+    name: 广东省潮州市移动11
     server: 183.240.188.56
     port: 35007
     uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
@@ -2929,17 +2965,64 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 广东省广州市移动9
+    name: 美国CloudFlare节点13
+    ws-opts:
+      path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+      headers:
+        host: fantastic-doe-bids-ended.trycloudflare.com
+    server: 198.41.221.113
+    port: 8080
+    uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 8882
+    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 加拿大+V2CROSS.COM
+    server: sg08.421421.xyz
+    port: 20230
+    password: 0f408453-2589-4fc2-bf9d-22e0cef8b8d2
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点17
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.211
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点18
     ws-opts:
       path: /
-    server: 183.236.51.59
-    port: 54437
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      headers:
+        host: us219.netfilx.live
+    server: us219.netfilx.live
+    port: 80
+    uuid: 1e65ec6d-9a42-4cd0-8c51-63030970134f
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省江门市移动19
+    server: 120.238.122.170
+    port: 35019
+    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
     alterId: 0
     cipher: auto
     network: auto
   - type: vmess
-    name: 台湾省台南市中华电信10
+    name: 台湾省台南市中华电信20
     ws-opts:
       path: /
       headers:
@@ -2951,92 +3034,43 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 广东省潮州市移动11
-    server: 183.240.188.57
-    port: 35014
-    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
+    name: 美国CloudFlare节点21
+    ws-opts:
+      path: /ivideos.sbs/linkws
+      headers:
+        host: ury-unit-c030ehei8.poget71138.workers.dev
+    server: 104.16.61.8
+    port: 2086
+    uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
   - type: vmess
-    name: 广东省江门市移动15
-    server: 120.238.122.170
-    port: 35029
-    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
+    name: 美国CloudFlare节点22
+    ws-opts:
+      path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+      headers:
+        host: booty-pensions-scheduling-blogging.trycloudflare.com
+    server: yh7.dtku41.xyz
+    port: 8080
+    uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: zula.ir
-    port: 443
-    password: 36360cc3-957a-4597-9abf-f73f29641ee3
+    name: 美国+Merit网络公司
+    server: 35.94.124.59
+    port: 12326
+    password: DpCgqOgIbcUr
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 甘肃省兰州市+移动
-    server: 36.138.99.56
-    port: 40316
-    password: BZjkHMao
+    name: 美国+惠普公司
+    server: 15.237.188.177
+    port: 12326
+    password: IRAJLkTmRFnn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 广东省潮州市移动20
-    ws-opts:
-      path: /
-    server: 183.240.188.57
-    port: 35013
-    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 广东省潮州市移动22
-    server: 183.240.188.57
-    port: 35012
-    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 广东省潮州市移动24
-    server: 183.240.188.57
-    port: 35003
-    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 巴西圣保罗CloudFlare节点26
-    ws-opts:
-      path: argo
-    server: 188.114.96.6
-    port: 443
-    uuid: 5b0a489e-e9eb-41b1-902e-d4acad667ba6
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-  - type: vmess
-    name: 广东省江门市移动27
-    ws-opts:
-      path: /
-    server: 120.238.122.243
-    port: 40259
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 广东省潮州市移动28
-    ws-opts:
-      path: /
-    server: 183.240.188.56
-    port: 35009
-    uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
-    alterId: 0
-    cipher: auto
-    network: auto
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3333,24 +3367,27 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 甘肃省兰州市移动1
       - 美国+惠普HP
-      - 广东省潮州市移动5
-      - 广东省广州市移动6
-      - 美国CloudFlare节点7
-      - 广东省潮州市移动8
-      - 广东省广州市移动9
-      - 台湾省台南市中华电信10
+      - 美国CloudFlare节点3
+      - 广东省江门市移动4
+      - 安徽省+移动数据上网公共出口
+      - 广东省潮州市移动6
+      - 韩国+首尔Amazon数据中心
+      - 美国CloudFlare节点8
+      - 美国+俄勒冈州波特兰Amazon数据中心
       - 广东省潮州市移动11
-      - 广东省江门市移动15
-      - 美国+CloudFlare节点
-      - 甘肃省兰州市+移动
-      - 广东省潮州市移动20
-      - 广东省潮州市移动22
-      - 广东省潮州市移动24
-      - 巴西圣保罗CloudFlare节点26
-      - 广东省江门市移动27
-      - 广东省潮州市移动28
+      - 美国CloudFlare节点13
+      - 法国+OVH
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 广东省江门市移动19
+      - 台湾省台南市中华电信20
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国+Merit网络公司
+      - 美国+惠普公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3647,24 +3684,27 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 甘肃省兰州市移动1
       - 美国+惠普HP
-      - 广东省潮州市移动5
-      - 广东省广州市移动6
-      - 美国CloudFlare节点7
-      - 广东省潮州市移动8
-      - 广东省广州市移动9
-      - 台湾省台南市中华电信10
+      - 美国CloudFlare节点3
+      - 广东省江门市移动4
+      - 安徽省+移动数据上网公共出口
+      - 广东省潮州市移动6
+      - 韩国+首尔Amazon数据中心
+      - 美国CloudFlare节点8
+      - 美国+俄勒冈州波特兰Amazon数据中心
       - 广东省潮州市移动11
-      - 广东省江门市移动15
-      - 美国+CloudFlare节点
-      - 甘肃省兰州市+移动
-      - 广东省潮州市移动20
-      - 广东省潮州市移动22
-      - 广东省潮州市移动24
-      - 巴西圣保罗CloudFlare节点26
-      - 广东省江门市移动27
-      - 广东省潮州市移动28
+      - 美国CloudFlare节点13
+      - 法国+OVH
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 广东省江门市移动19
+      - 台湾省台南市中华电信20
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国+Merit网络公司
+      - 美国+惠普公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3960,24 +4000,27 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 甘肃省兰州市移动1
       - 美国+惠普HP
-      - 广东省潮州市移动5
-      - 广东省广州市移动6
-      - 美国CloudFlare节点7
-      - 广东省潮州市移动8
-      - 广东省广州市移动9
-      - 台湾省台南市中华电信10
+      - 美国CloudFlare节点3
+      - 广东省江门市移动4
+      - 安徽省+移动数据上网公共出口
+      - 广东省潮州市移动6
+      - 韩国+首尔Amazon数据中心
+      - 美国CloudFlare节点8
+      - 美国+俄勒冈州波特兰Amazon数据中心
       - 广东省潮州市移动11
-      - 广东省江门市移动15
-      - 美国+CloudFlare节点
-      - 甘肃省兰州市+移动
-      - 广东省潮州市移动20
-      - 广东省潮州市移动22
-      - 广东省潮州市移动24
-      - 巴西圣保罗CloudFlare节点26
-      - 广东省江门市移动27
-      - 广东省潮州市移动28
+      - 美国CloudFlare节点13
+      - 法国+OVH
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 广东省江门市移动19
+      - 台湾省台南市中华电信20
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国+Merit网络公司
+      - 美国+惠普公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4305,24 +4348,27 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 甘肃省兰州市移动1
       - 美国+惠普HP
-      - 广东省潮州市移动5
-      - 广东省广州市移动6
-      - 美国CloudFlare节点7
-      - 广东省潮州市移动8
-      - 广东省广州市移动9
-      - 台湾省台南市中华电信10
+      - 美国CloudFlare节点3
+      - 广东省江门市移动4
+      - 安徽省+移动数据上网公共出口
+      - 广东省潮州市移动6
+      - 韩国+首尔Amazon数据中心
+      - 美国CloudFlare节点8
+      - 美国+俄勒冈州波特兰Amazon数据中心
       - 广东省潮州市移动11
-      - 广东省江门市移动15
-      - 美国+CloudFlare节点
-      - 甘肃省兰州市+移动
-      - 广东省潮州市移动20
-      - 广东省潮州市移动22
-      - 广东省潮州市移动24
-      - 巴西圣保罗CloudFlare节点26
-      - 广东省江门市移动27
-      - 广东省潮州市移动28
+      - 美国CloudFlare节点13
+      - 法国+OVH
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点17
+      - 美国CloudFlare节点18
+      - 广东省江门市移动19
+      - 台湾省台南市中华电信20
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国+Merit网络公司
+      - 美国+惠普公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
