@@ -1,4 +1,4 @@
-# 更新时间 2024-04-30T18:55:18.039Z
+# 更新时间 2024-04-30T19:10:47.908Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2842,55 +2842,232 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 23.157.40.47
-    port: 3389
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: ying.iepl1.me
+    server: 104.19.48.110
+    port: 2082
+    uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 54.191.105.151
-    port: 13009
-    password: mb18d57VNXW7
+    name: 新加坡+Amazon数据中心
+    server: 13.229.209.98
+    port: 13048
+    password: ROLdml5eAEHB
     udp: true
     skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点3
     ws-opts:
-      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-      headers:
-        host: uk.moss.network
-    server: 104.19.40.237
-    port: 8880
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
       path: /ws?ed=2048
       headers:
         host: ying.iepl1.me
-    server: 104.16.39.154
+    server: 104.16.39.255
     port: 2082
     uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 广东省广州市移动6
+    name: 美国CloudFlare节点5
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: ying.iepl1.me
+    server: 104.19.45.229
+    port: 2082
+    uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: ying.iepl1.me
+    server: 104.16.39.40
+    port: 2082
+    uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国AT&T网络7
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.172
+    port: 443
+    uuid: beccf0cc-adc8-46f2-82fd-0b1350abb734
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.40.176.183
+    port: 13063
+    password: r829xcyUWJbD
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 新加坡Amazon数据中心9
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 13.35.13.178
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: ying.iepl1.me
+    server: 104.16.43.218
+    port: 2082
+    uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国AT&T网络11
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.36
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国AT&T网络12
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.154
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: ss
+    name: 北美地区+V2CROSS.COM
+    server: 23.157.40.44
+    port: 9090
+    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 广东省广州市移动14
     ws-opts:
       path: /
-    server: 120.232.242.117
-    port: 41492
+    server: 183.236.51.59
+    port: 54437
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点8
+    name: 美国CloudFlare节点15
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.58
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点17
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: ying.iepl1.me
+    server: 104.19.48.233
+    port: 2082
+    uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国AT&T网络18
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.99
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 安徽省+移动数据上网公共出口
+    server: 112.29.94.24
+    port: 51000
+    password: MyYoZhfX
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国AT&T网络20
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.204
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 甘肃省兰州市移动24
+    ws-opts:
+      path: /v2ray
+      headers:
+        host: hk.lalayunssl.xyz
+    server: zf.lalayun.cyou
+    port: 10163
+    uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国AT&T网络25
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.37
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点27
     ws-opts:
       path: /d/65dd503.TG.WangCai2.WangCai_8:107690
       headers:
@@ -2902,113 +3079,99 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点9
+    name: 新加坡DigitalOcean数据中心29
+    ws-opts:
+      path: /v2ray
+    server: 128.199.161.230
+    port: 99
+    uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国AT&T网络30
+    ws-opts:
+      path: /stream
+      headers:
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.132
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点31
     ws-opts:
       path: /ws?ed=2048
       headers:
         host: ying.iepl1.me
-    server: 104.16.42.10
+    server: 104.19.48.202
     port: 2082
-    uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+    uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 8119
-    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点13
+    name: 美国AT&T网络32
     ws-opts:
-      path: /ws?ed=2048
+      path: /stream
       headers:
-        host: ying.iepl1.me
-    server: 104.16.42.160
-    port: 2082
-    uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.81
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
     alterId: 0
     cipher: auto
     network: ws
+    tls: true
   - type: vmess
-    name: 广东省移动15
-    ws-opts:
-      path: /debian
-      headers:
-        host: data-hk-v1.usabooks.com.cn
-    server: data-hk-v1.usabooks.com.cn
-    port: 20206
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点18
+    name: 美国CloudFlare节点33
     ws-opts:
       path: /d/65dd503.TG.WangCai2.WangCai_8:107690
       headers:
         host: uk.moss.network
-    server: 104.19.40.99
+    server: 104.19.40.84
     port: 8880
     uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点20
-    ws-opts:
-      path: /
-      headers:
-        host: onea.flha.ru
-    server: 104.19.45.237
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点22
+    name: 美国CloudFlare节点34
     ws-opts:
       path: /ws?ed=2048
       headers:
         host: ying.iepl1.me
-    server: 104.19.45.46
+    server: 104.16.39.99
     port: 2082
     uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 新加坡+Amazon数据中心
-    server: sg08.421421.xyz
-    port: 20230
-    password: 0f408453-2589-4fc2-bf9d-22e0cef8b8d2
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 日本+V2CROSS.COM
-    server: 43.206.242.253
-    port: 12997
-    password: R1khzKpAkVjf
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 日本+东京都亚马逊(Amazon)公司数据中心
-    server: 54.248.42.193
-    port: 13001
-    password: Nj0FQlmWmEav
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点27
+    name: 美国AT&T网络35
     ws-opts:
-      path: /
+      path: /stream
       headers:
-        host: onea.flha.ru
-    server: 104.19.45.135
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+        host: d2zpep5anc4l5k.cloudfront.net
+    server: 99.84.50.116
+    port: 443
+    uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点36
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: ying.iepl1.me
+    server: 104.19.48.72
+    port: 2082
+    uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
     alterId: 0
     cipher: auto
     network: ws
@@ -3305,23 +3468,35 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 广东省广州市移动6
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
-      - 法国+OVH
-      - 美国CloudFlare节点13
-      - 广东省移动15
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点22
+      - 美国CloudFlare节点1
       - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国AT&T网络7
+      - 美国+Amazon数据中心
+      - 新加坡Amazon数据中心9
+      - 美国CloudFlare节点10
+      - 美国AT&T网络11
+      - 美国AT&T网络12
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点17
+      - 美国AT&T网络18
+      - 安徽省+移动数据上网公共出口
+      - 美国AT&T网络20
+      - 甘肃省兰州市移动24
+      - 美国AT&T网络25
       - 美国CloudFlare节点27
+      - 新加坡DigitalOcean数据中心29
+      - 美国AT&T网络30
+      - 美国CloudFlare节点31
+      - 美国AT&T网络32
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 美国AT&T网络35
+      - 美国CloudFlare节点36
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3615,23 +3790,35 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 广东省广州市移动6
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
-      - 法国+OVH
-      - 美国CloudFlare节点13
-      - 广东省移动15
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点22
+      - 美国CloudFlare节点1
       - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国AT&T网络7
+      - 美国+Amazon数据中心
+      - 新加坡Amazon数据中心9
+      - 美国CloudFlare节点10
+      - 美国AT&T网络11
+      - 美国AT&T网络12
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点17
+      - 美国AT&T网络18
+      - 安徽省+移动数据上网公共出口
+      - 美国AT&T网络20
+      - 甘肃省兰州市移动24
+      - 美国AT&T网络25
       - 美国CloudFlare节点27
+      - 新加坡DigitalOcean数据中心29
+      - 美国AT&T网络30
+      - 美国CloudFlare节点31
+      - 美国AT&T网络32
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 美国AT&T网络35
+      - 美国CloudFlare节点36
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3924,23 +4111,35 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 广东省广州市移动6
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
-      - 法国+OVH
-      - 美国CloudFlare节点13
-      - 广东省移动15
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点22
+      - 美国CloudFlare节点1
       - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国AT&T网络7
+      - 美国+Amazon数据中心
+      - 新加坡Amazon数据中心9
+      - 美国CloudFlare节点10
+      - 美国AT&T网络11
+      - 美国AT&T网络12
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点17
+      - 美国AT&T网络18
+      - 安徽省+移动数据上网公共出口
+      - 美国AT&T网络20
+      - 甘肃省兰州市移动24
+      - 美国AT&T网络25
       - 美国CloudFlare节点27
+      - 新加坡DigitalOcean数据中心29
+      - 美国AT&T网络30
+      - 美国CloudFlare节点31
+      - 美国AT&T网络32
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 美国AT&T网络35
+      - 美国CloudFlare节点36
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4265,23 +4464,35 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 北美地区+V2CROSS.COM
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 广东省广州市移动6
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
-      - 法国+OVH
-      - 美国CloudFlare节点13
-      - 广东省移动15
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点20
-      - 美国CloudFlare节点22
+      - 美国CloudFlare节点1
       - 新加坡+Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 美国AT&T网络7
+      - 美国+Amazon数据中心
+      - 新加坡Amazon数据中心9
+      - 美国CloudFlare节点10
+      - 美国AT&T网络11
+      - 美国AT&T网络12
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点17
+      - 美国AT&T网络18
+      - 安徽省+移动数据上网公共出口
+      - 美国AT&T网络20
+      - 甘肃省兰州市移动24
+      - 美国AT&T网络25
       - 美国CloudFlare节点27
+      - 新加坡DigitalOcean数据中心29
+      - 美国AT&T网络30
+      - 美国CloudFlare节点31
+      - 美国AT&T网络32
+      - 美国CloudFlare节点33
+      - 美国CloudFlare节点34
+      - 美国AT&T网络35
+      - 美国CloudFlare节点36
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
