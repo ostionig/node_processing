@@ -1,4 +1,4 @@
-# 更新时间 2024-05-02T13:07:28.571Z
+# 更新时间 2024-05-02T18:18:27.712Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2904,6 +2904,118 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: ss
+    name: 法国+OVH机房SAS硬盘BGP主机
+    server: 149.202.82.172
+    port: 5003
+    password: YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 香港电讯盈科有限公司2
+    ws-opts:
+      path: /
+    server: kagoya.hkss.online
+    port: 443
+    uuid: 4664e760-f5f3-3cc2-8bb3-04f85aa7febb
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.172.219
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.75.137.66
+    port: 8091
+    password: YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 韩国+蘑菇主机BGP数据中心
+    server: 103.214.68.57
+    port: 10003
+    password: 6x8HcghsjS
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点7
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.185.79
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 4444
+    password: YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.185.64
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点13
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.99
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 新加坡+Amazon数据中心
+    server: sg08.421421.xyz
+    port: 20230
+    password: 0f408453-2589-4fc2-bf9d-22e0cef8b8d2
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点16
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: kkyx.yydsii.com
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 上海市电信19
+    ws-opts:
+      path: /zh-cn
+    server: mmsg16.micloud.buzz
+    port: 46016
+    uuid: e4e6bc46-a03f-47e3-94ba-fb535f3ab83d
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3202,6 +3314,18 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 香港电讯盈科有限公司2
+      - 美国CloudFlare节点3
+      - 美国+华盛顿Cogent通信公司
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国CloudFlare节点7
+      - 法国+OVH
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点13
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare节点16
+      - 上海市电信19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3500,6 +3624,18 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 香港电讯盈科有限公司2
+      - 美国CloudFlare节点3
+      - 美国+华盛顿Cogent通信公司
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国CloudFlare节点7
+      - 法国+OVH
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点13
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare节点16
+      - 上海市电信19
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3797,6 +3933,18 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 香港电讯盈科有限公司2
+      - 美国CloudFlare节点3
+      - 美国+华盛顿Cogent通信公司
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国CloudFlare节点7
+      - 法国+OVH
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点13
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare节点16
+      - 上海市电信19
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4126,6 +4274,18 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国->🇬🇧_GB_英国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 香港电讯盈科有限公司2
+      - 美国CloudFlare节点3
+      - 美国+华盛顿Cogent通信公司
+      - 韩国+蘑菇主机BGP数据中心
+      - 美国CloudFlare节点7
+      - 法国+OVH
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点13
+      - 新加坡+Amazon数据中心
+      - 美国CloudFlare节点16
+      - 上海市电信19
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
