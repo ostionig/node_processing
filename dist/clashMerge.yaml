@@ -1,4 +1,4 @@
-# 更新时间 2024-05-03T13:00:01.879Z
+# 更新时间 2024-05-03T18:17:54.824Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3224,6 +3224,153 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 上海市电信0
+    ws-opts:
+      path: /zh-cn
+    server: mmsg16.micloud.buzz
+    port: 46016
+    uuid: e4e6bc46-a03f-47e3-94ba-fb535f3ab83d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国V2CROSS.COM1
+    ws-opts:
+      path: /de2
+      headers:
+        host: oracle-de-02.t3csyun.buzz
+    server: 138.2.134.219
+    port: 45104
+    uuid: 4807b409-137e-480b-a593-0beaf657e850
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 法国+OVH机房SAS硬盘BGP主机
+    server: 149.202.82.172
+    port: 5601
+    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.75.136.21
+    port: 9102
+    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 8881
+    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 广东省广州市移动6
+    ws-opts:
+      path: /
+    server: 120.232.242.117
+    port: 41492
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 广东省广州市移动8
+    ws-opts:
+      path: /
+    server: 183.236.51.59
+    port: 54437
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 日本+东京都Amazon数据中心
+    server: 18.183.174.153
+    port: 12989
+    password: lksczT392Am6
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 瑞典+V2CROSS.COM
+    server: 167.88.61.175
+    port: 8881
+    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 54.186.5.16
+    port: 12990
+    password: WKK5qy9dqQqB
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点13
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.48
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 日本+东京都亚马逊(Amazon)公司数据中心
+    server: 54.250.164.26
+    port: 12993
+    password: D74qIgkQJimo
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 巴西圣保罗CloudFlare节点17
+    ws-opts:
+      path: argo
+    server: 188.114.96.6
+    port: 443
+    uuid: 5b0a489e-e9eb-41b1-902e-d4acad667ba6
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+  - type: ss
+    name: 广东省深圳市+阿里云
+    server: 119.23.104.213
+    port: 8474
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphNTAxYzgyYzcyZDc5MGI4
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点30
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.99
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点31
+    ws-opts:
+      path: /xiaodao?ed=2048
+      headers:
+        host: tk-007.xiaoxiaobujidao.xyz
+    server: cf-002-ipv4.xiaoxiaobujidao.xyz
+    port: 80
+    uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+弗吉尼亚州阿什本Amazon数据中心
+    server: 54.89.242.83
+    port: 12995
+    password: 4WWZs2uTRbDU
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3557,6 +3704,23 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 上海市电信0
+      - 美国V2CROSS.COM1
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+华盛顿Cogent通信公司
+      - 法国+OVH
+      - 广东省广州市移动6
+      - 广东省广州市移动8
+      - 日本+东京都Amazon数据中心
+      - 瑞典+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点13
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 巴西圣保罗CloudFlare节点17
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3890,6 +4054,23 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 上海市电信0
+      - 美国V2CROSS.COM1
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+华盛顿Cogent通信公司
+      - 法国+OVH
+      - 广东省广州市移动6
+      - 广东省广州市移动8
+      - 日本+东京都Amazon数据中心
+      - 瑞典+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点13
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 巴西圣保罗CloudFlare节点17
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4222,6 +4403,23 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 上海市电信0
+      - 美国V2CROSS.COM1
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+华盛顿Cogent通信公司
+      - 法国+OVH
+      - 广东省广州市移动6
+      - 广东省广州市移动8
+      - 日本+东京都Amazon数据中心
+      - 瑞典+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点13
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 巴西圣保罗CloudFlare节点17
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4586,6 +4784,23 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 上海市电信0
+      - 美国V2CROSS.COM1
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国+华盛顿Cogent通信公司
+      - 法国+OVH
+      - 广东省广州市移动6
+      - 广东省广州市移动8
+      - 日本+东京都Amazon数据中心
+      - 瑞典+V2CROSS.COM
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点13
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 巴西圣保罗CloudFlare节点17
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
