@@ -1,4 +1,4 @@
-# 更新时间 2024-05-03T19:07:11.940Z
+# 更新时间 2024-05-04T01:02:14.082Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3227,6 +3227,18 @@ proxies:
   - type: vmess
     name: 美国CloudFlare节点0
     ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.199.185
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
       path: /d/65dd503.TG.WangCai2.WangCai_8:107690
       headers:
         host: uk.moss.network
@@ -3236,71 +3248,121 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.75.191.195
-    port: 13043
-    password: t4ZUVBgWORXr
-    udp: true
-    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点2
     ws-opts:
-      path: /?ed=2048
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
       headers:
-        host: ca3.889611.com
-    server: 162.159.200.4
-    port: 80
-    uuid: ca1af7ca-75b4-4842-a113-7bc34ff06278
+        host: uk.moss.network
+    server: 104.19.40.58
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 日本+V2CROSS.COM
+    server: 43.202.68.91
+    port: 13413
+    password: r9tcl27GqSdv
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点4
     ws-opts:
       path: /
       headers:
-        host: hk3.visaapp.top
-    server: 104.18.154.42
+        host: er3.889611.com
+    server: 104.18.15.147
     port: 80
     uuid: ca1af7ca-75b4-4842-a113-7bc34ff06278
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 8119
-    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.16.192.138
+  - type: vmess
+    name: 香港电讯盈科有限公司6
+    ws-opts:
+      path: /
+    server: kagoya.hkss.online
     port: 443
-    password: 4732adfa16c6450bbef87264e41332db
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.114.114.143
-    port: 4444
-    password: YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN
-    cipher: aes-128-gcm
+    uuid: 4664e760-f5f3-3cc2-8bb3-04f85aa7febb
+    alterId: 0
+    cipher: auto
+    network: auto
   - type: trojan
-    name: 新加坡+亚马逊(Amazon)公司数据中心
-    server: 54.255.202.50
-    port: 13069
-    password: LtjGRTjOxxsd
+    name: 加拿大+魁北克省蒙特利尔Amazon数据中心
+    server: 35.182.43.206
+    port: 13399
+    password: I7m19Z675jvU
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 广东省深圳市+阿里云
-    server: 119.23.104.213
-    port: 8474
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphNTAxYzgyYzcyZDc5MGI4
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点13
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.185.64
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.170.224.16
+    port: 13407
+    password: INvhn5JhasBB
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点15
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.237
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点16
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: ying.iepl1.me
+    server: ying.iepl1.me
+    port: 2082
+    uuid: 860e601f-d15d-480f-9679-078fd50b7326
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点20
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: ca3.visaapp.top
+    server: 162.159.200.3
+    port: 80
+    uuid: ca1af7ca-75b4-4842-a113-7bc34ff06278
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省广州市移动21
+    ws-opts:
+      path: /
+    server: 120.232.242.117
+    port: 41492
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点22
     ws-opts:
       path: /
       headers:
@@ -3312,84 +3374,35 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点16
+    name: 巴西圣保罗CloudFlare节点23
     ws-opts:
-      path: /
-      headers:
-        host: oiictw.yydsii.com
-    server: 172.67.172.67
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+      path: argo
+    server: 188.114.96.6
+    port: 443
+    uuid: 5b0a489e-e9eb-41b1-902e-d4acad667ba6
     alterId: 0
     cipher: auto
-    network: ws
+    network: grpc
+    tls: true
   - type: vmess
-    name: 美国CloudFlare节点17
+    name: 美国CloudFlare节点24
     ws-opts:
       path: /
       headers:
-        host: fcdn.flha.ru
-    server: fcdn.flha.ru
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点18
-    ws-opts:
-      path: /
-      headers:
-        host: ustoucjjnid18sj6us.lovebaipiao.com
-    server: 104.19.174.68
+        host: er3.889611.com
+    server: 104.18.15.150
     port: 80
     uuid: ca1af7ca-75b4-4842-a113-7bc34ff06278
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 3.8.174.173
-    port: 13046
-    password: TvUcKKxn8yCD
+    name: 新加坡+Amazon数据中心
+    server: 54.169.115.86
+    port: 13417
+    password: LvFdnn9cuWbR
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点24
-    ws-opts:
-      path: /obdii.cfd/linkws
-      headers:
-        host: 4868-poetry-4868.napora7003.workers.dev
-    server: speed.cloudflare.com
-    port: 80
-    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点25
-    ws-opts:
-      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-      headers:
-        host: uk.moss.network
-    server: 104.19.40.222
-    port: 8880
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点26
-    ws-opts:
-      path: /
-      headers:
-        host: oiictw.yydsii.com
-    server: 172.67.185.64
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3724,22 +3737,22 @@ proxy-groups:
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 日本+V2CROSS.COM
       - 美国CloudFlare节点4
-      - 法国+OVH
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
-      - 新加坡+亚马逊(Amazon)公司数据中心
-      - 广东省深圳市+阿里云
+      - 香港电讯盈科有限公司6
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点15
       - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国CloudFlare节点18
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点20
+      - 广东省广州市移动21
+      - 美国CloudFlare节点22
+      - 巴西圣保罗CloudFlare节点23
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 新加坡+Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4074,22 +4087,22 @@ proxy-groups:
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 日本+V2CROSS.COM
       - 美国CloudFlare节点4
-      - 法国+OVH
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
-      - 新加坡+亚马逊(Amazon)公司数据中心
-      - 广东省深圳市+阿里云
+      - 香港电讯盈科有限公司6
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点15
       - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国CloudFlare节点18
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点20
+      - 广东省广州市移动21
+      - 美国CloudFlare节点22
+      - 巴西圣保罗CloudFlare节点23
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 新加坡+Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4423,22 +4436,22 @@ proxy-groups:
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 日本+V2CROSS.COM
       - 美国CloudFlare节点4
-      - 法国+OVH
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
-      - 新加坡+亚马逊(Amazon)公司数据中心
-      - 广东省深圳市+阿里云
+      - 香港电讯盈科有限公司6
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点15
       - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国CloudFlare节点18
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点20
+      - 广东省广州市移动21
+      - 美国CloudFlare节点22
+      - 巴西圣保罗CloudFlare节点23
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 新加坡+Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4804,22 +4817,22 @@ proxy-groups:
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 日本+V2CROSS.COM
       - 美国CloudFlare节点4
-      - 法国+OVH
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
-      - 新加坡+亚马逊(Amazon)公司数据中心
-      - 广东省深圳市+阿里云
+      - 香港电讯盈科有限公司6
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国CloudFlare节点13
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点15
       - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国CloudFlare节点18
-      - 英国+伦敦Amazon数据中心
+      - 美国CloudFlare节点20
+      - 广东省广州市移动21
+      - 美国CloudFlare节点22
+      - 巴西圣保罗CloudFlare节点23
       - 美国CloudFlare节点24
-      - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 新加坡+Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
