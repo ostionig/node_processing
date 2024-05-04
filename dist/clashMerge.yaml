@@ -1,4 +1,4 @@
-# 更新时间 2024-05-04T07:08:44.412Z
+# 更新时间 2024-05-04T12:24:02.755Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3231,104 +3231,64 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.40.84.236
-    port: 14341
-    password: 4boqrBcXTysc
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 乌克兰+V2CROSS.COM
-    server: 95.164.117.128
-    port: 443
-    password: dcf0fcec-3800-4f42-9b78-1323f6a4a004
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 广东省江门市移动5
-    server: 120.238.122.243
-    port: 40259
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.172.219
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
+  - type: ss
+    name: 广东省深圳市+阿里云
+    server: 119.23.104.213
+    port: 8474
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphNTAxYzgyYzcyZDc5MGI4
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点6
+    name: 美国CloudFlare节点7
     ws-opts:
-      path: /xiaodao?ed=2048
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
       headers:
-        host: tk-007.xiaoxiaobujidao.xyz
-    server: cf-004-ipv4.xiaoxiaobujidao.xyz
-    port: 80
-    uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+        host: uk.moss.network
+    server: 104.19.40.222
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
     name: 安徽省+移动数据上网公共出口
     server: 112.29.94.23
-    port: 11210
+    port: 51003
     password: MyYoZhfX
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.75.137.71
-    port: 7306
-    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
-    cipher: aes-128-gcm
   - type: vmess
-    name: 广东省广州市移动14
-    ws-opts:
-      path: /
-    server: 183.236.51.59
-    port: 54437
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.96.184.164
-    port: 14349
-    password: Zdc5m102nukV
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 日本东京Amazon数据中心20
+    name: 美国CloudFlare节点11
     ws-opts:
       path: /
       headers:
-        host: jp02.fredericamelody.online
-    server: 3.112.7.179
-    port: 80
-    uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+        host: oiictw.yydsii.com
+    server: kkyx.yydsii.com
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 英国+社会保险安全部
-    server: account.emofid.co
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpuREJaNnhtN0lLZHlYS25B
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 新加坡+Amazon数据中心
-    server: 54.169.115.202
-    port: 14333
-    password: TsghAY0znZYm
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 德国法兰克福Oracle云计算数据中心23
+    name: 湖南省联通14
     ws-opts:
-      path: /de2
+      path: /
       headers:
-        host: de-frankfurt-oracle-b26cf5.ip1.shop
-    server: 130.61.234.189
-    port: 45104
-    uuid: 4807b409-137e-480b-a593-0beaf657e850
+        host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    server: yes.cnmjcn.net
+    port: 16632
+    uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
     alterId: 0
     cipher: auto
     network: ws
@@ -3660,18 +3620,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 广东省江门市移动5
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点2
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点7
       - 安徽省+移动数据上网公共出口
-      - 美国+华盛顿Cogent通信公司
-      - 广东省广州市移动14
-      - 美国+Amazon+EC2服务器
-      - 日本东京Amazon数据中心20
-      - 英国+社会保险安全部
-      - 新加坡+Amazon数据中心
-      - 德国法兰克福Oracle云计算数据中心23
+      - 美国CloudFlare节点11
+      - 湖南省联通14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4000,18 +3954,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 广东省江门市移动5
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点2
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点7
       - 安徽省+移动数据上网公共出口
-      - 美国+华盛顿Cogent通信公司
-      - 广东省广州市移动14
-      - 美国+Amazon+EC2服务器
-      - 日本东京Amazon数据中心20
-      - 英国+社会保险安全部
-      - 新加坡+Amazon数据中心
-      - 德国法兰克福Oracle云计算数据中心23
+      - 美国CloudFlare节点11
+      - 湖南省联通14
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4339,18 +4287,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 广东省江门市移动5
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点2
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点7
       - 安徽省+移动数据上网公共出口
-      - 美国+华盛顿Cogent通信公司
-      - 广东省广州市移动14
-      - 美国+Amazon+EC2服务器
-      - 日本东京Amazon数据中心20
-      - 英国+社会保险安全部
-      - 新加坡+Amazon数据中心
-      - 德国法兰克福Oracle云计算数据中心23
+      - 美国CloudFlare节点11
+      - 湖南省联通14
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4710,18 +4652,12 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 广东省江门市移动5
-      - 美国CloudFlare节点6
+      - 美国CloudFlare节点2
+      - 广东省深圳市+阿里云
+      - 美国CloudFlare节点7
       - 安徽省+移动数据上网公共出口
-      - 美国+华盛顿Cogent通信公司
-      - 广东省广州市移动14
-      - 美国+Amazon+EC2服务器
-      - 日本东京Amazon数据中心20
-      - 英国+社会保险安全部
-      - 新加坡+Amazon数据中心
-      - 德国法兰克福Oracle云计算数据中心23
+      - 美国CloudFlare节点11
+      - 湖南省联通14
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
