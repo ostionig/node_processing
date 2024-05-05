@@ -1,4 +1,4 @@
-# 更新时间 2024-05-05T06:55:09.569Z
+# 更新时间 2024-05-05T07:12:09.425Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4205,43 +4205,38 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.110.1.122
-    port: 7306
-    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
-    cipher: aes-128-gcm
   - type: vmess
-    name: 巴西圣保罗CloudFlare节点3
+    name: 美国CloudFlare节点1
     ws-opts:
-      path: argo
-    server: 188.114.96.6
-    port: 443
-    uuid: 5b0a489e-e9eb-41b1-902e-d4acad667ba6
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-  - type: ss
-    name: 广东省深圳市+阿里云
-    server: 119.23.104.213
-    port: 8474
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphNTAxYzgyYzcyZDc5MGI4
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /ws?ed=2048
+      path: /vmess
       headers:
-        host: ying.iepl1.me
-    server: ying.iepl1.me
-    port: 2082
-    uuid: 97b317b9-6abe-4f52-ab69-7bbc40883e86
+        host: is2-vmess.sshmax.xyz
+    server: 172.67.132.209
+    port: 80
+    uuid: 7e67dfca-3f0d-4ba1-a7e8-b272bcfc156f
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点10
+    name: 广东省广州市移动3
+    ws-opts:
+      path: /
+    server: 120.232.242.117
+    port: 41492
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 广东省江门市移动5
+    server: 120.238.122.243
+    port: 40259
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点6
     ws-opts:
       path: /
       headers:
@@ -4253,74 +4248,89 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点12
+    name: 巴西圣保罗CloudFlare节点7
     ws-opts:
-      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      path: argo
+    server: 188.114.96.6
+    port: 443
+    uuid: 5b0a489e-e9eb-41b1-902e-d4acad667ba6
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: /
       headers:
-        host: uk.moss.network
-    server: 104.19.40.99
-    port: 8880
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+        host: oiictw.yydsii.com
+    server: 172.67.172.219
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 法国+OVH机房SAS硬盘BGP主机
+    server: 149.202.82.172
+    port: 7002
+    password: YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH
+    cipher: aes-128-gcm
   - type: vmess
     name: 美国CloudFlare节点13
     ws-opts:
       path: /d/65dd503.TG.WangCai2.WangCai_8:107690
       headers:
         host: uk.moss.network
-    server: 104.19.40.222
+    server: 104.19.40.237
     port: 8880
     uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国Fastly全球Anycast节点15
+    name: 美国CloudFlare节点14
     ws-opts:
-      path: /aries?ed=2560
+      path: /
       headers:
-        host: nmsl.kp
-    server: 151.101.195.10
-    port: 80
-    uuid: d39a347a-00c9-4f91-9255-7f536c07c5a8
+        host: oiictw.yydsii.com
+    server: 172.67.172.67
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 四川省联通数据上网公共出口16
+    ws-opts:
+      path: /
+      headers:
+        host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    server: yes.cnmjcn.net
+    port: 16632
+    uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
     name: 美国CloudFlare节点17
     ws-opts:
-      path: /xiaodao?ed=2048
+      path: /
       headers:
-        host: tk-007.xiaoxiaobujidao.xyz
-    server: cf-002-ipv4.xiaoxiaobujidao.xyz
-    port: 80
-    uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+        host: oiictw.yydsii.com
+    server: kkyx.yydsii.com
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 浙江省丽水市+移动
-    server: 183.249.207.244
-    port: 22386
-    password: MyYoZhfX
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.75.222.21
-    port: 16251
-    password: kyFWrYAQDWJY
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 台湾省台北市+中华电信
-    server: 5gzdx.233235.xyz
-    port: 45335
-    password: 7be1cf8f-c48f-4fbd-a98b-6cf54e16919b
-    udp: true
-    skip-cert-verify: true
+  - type: ss
+    name: 浙江省宁波市+移动+数掘科技gfvps.cn
+    server: zy.aand.site
+    port: 43605
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDQwODA4Yi1hOGFkLTQ4NGEtOTBjMi00Mzk5ZDVhMjZkYmU=
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4730,18 +4740,18 @@ proxy-groups:
       - 🇺🇸_US_美国->🇮🇳_IN_印度
       - 🇺🇸_US_美国_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+华盛顿Cogent通信公司
-      - 巴西圣保罗CloudFlare节点3
-      - 广东省深圳市+阿里云
-      - 美国CloudFlare节点8
+      - 美国CloudFlare节点1
+      - 广东省广州市移动3
+      - 广东省江门市移动5
+      - 美国CloudFlare节点6
+      - 巴西圣保罗CloudFlare节点7
       - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国CloudFlare节点13
-      - 美国Fastly全球Anycast节点15
+      - 美国CloudFlare节点14
+      - 四川省联通数据上网公共出口16
       - 美国CloudFlare节点17
-      - 浙江省丽水市+移动
-      - 美国+Amazon+EC2服务器
-      - 台湾省台北市+中华电信
+      - 浙江省宁波市+移动+数掘科技gfvps.cn
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5151,18 +5161,18 @@ proxy-groups:
       - 🇺🇸_US_美国->🇮🇳_IN_印度
       - 🇺🇸_US_美国_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+华盛顿Cogent通信公司
-      - 巴西圣保罗CloudFlare节点3
-      - 广东省深圳市+阿里云
-      - 美国CloudFlare节点8
+      - 美国CloudFlare节点1
+      - 广东省广州市移动3
+      - 广东省江门市移动5
+      - 美国CloudFlare节点6
+      - 巴西圣保罗CloudFlare节点7
       - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国CloudFlare节点13
-      - 美国Fastly全球Anycast节点15
+      - 美国CloudFlare节点14
+      - 四川省联通数据上网公共出口16
       - 美国CloudFlare节点17
-      - 浙江省丽水市+移动
-      - 美国+Amazon+EC2服务器
-      - 台湾省台北市+中华电信
+      - 浙江省宁波市+移动+数掘科技gfvps.cn
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5571,18 +5581,18 @@ proxy-groups:
       - 🇺🇸_US_美国->🇮🇳_IN_印度
       - 🇺🇸_US_美国_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+华盛顿Cogent通信公司
-      - 巴西圣保罗CloudFlare节点3
-      - 广东省深圳市+阿里云
-      - 美国CloudFlare节点8
+      - 美国CloudFlare节点1
+      - 广东省广州市移动3
+      - 广东省江门市移动5
+      - 美国CloudFlare节点6
+      - 巴西圣保罗CloudFlare节点7
       - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国CloudFlare节点13
-      - 美国Fastly全球Anycast节点15
+      - 美国CloudFlare节点14
+      - 四川省联通数据上网公共出口16
       - 美国CloudFlare节点17
-      - 浙江省丽水市+移动
-      - 美国+Amazon+EC2服务器
-      - 台湾省台北市+中华电信
+      - 浙江省宁波市+移动+数掘科技gfvps.cn
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6023,18 +6033,18 @@ proxy-groups:
       - 🇺🇸_US_美国->🇮🇳_IN_印度
       - 🇺🇸_US_美国_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+华盛顿Cogent通信公司
-      - 巴西圣保罗CloudFlare节点3
-      - 广东省深圳市+阿里云
-      - 美国CloudFlare节点8
+      - 美国CloudFlare节点1
+      - 广东省广州市移动3
+      - 广东省江门市移动5
+      - 美国CloudFlare节点6
+      - 巴西圣保罗CloudFlare节点7
       - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国CloudFlare节点13
-      - 美国Fastly全球Anycast节点15
+      - 美国CloudFlare节点14
+      - 四川省联通数据上网公共出口16
       - 美国CloudFlare节点17
-      - 浙江省丽水市+移动
-      - 美国+Amazon+EC2服务器
-      - 台湾省台北市+中华电信
+      - 浙江省宁波市+移动+数掘科技gfvps.cn
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
