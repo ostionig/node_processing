@@ -1,4 +1,4 @@
-# 更新时间 2024-05-08T01:30:54.163Z
+# 更新时间 2024-05-08T06:16:38.903Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3371,102 +3371,20 @@ proxies:
     port: 35276
     server: 51.140.34.50
     type: ss
-  - name: 🇬🇧_GB_英国
-    type: vmess
-    server: 89.213.164.154
-    port: 80
-    cipher: auto
-    uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: http
   - name: 🇺🇸_US_美国_1
     type: vmess
-    server: 172.67.164.78
-    port: 80
-    cipher: auto
-    uuid: 42507d7c-bc67-4534-8ffc-6b9234b74018
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /cctv13/hd.m3u8
-      headers:
-        host: mai.nekoneko.buzz
-  - name: 🇺🇸_US_美国_2
-    type: vmess
-    server: 46.3.82.198
-    port: 80
-    cipher: auto
-    uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: http
-  - name: 🇺🇸_US_美国_3
-    type: vmess
-    server: cfcdn1.sanfencdn9.com
-    port: 2082
-    cipher: auto
-    uuid: 7f40abd1-6397-4706-8510-bc5d08df8ad5
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /video/CuTy87zAzV/
-      headers:
-        host: us4Bb5oSgJA.fzbqfrse.xyz
-  - name: 🇺🇸_US_美国_4
-    type: vmess
     server: 104.19.138.73
-    port: 2082
+    port: 2052
     cipher: auto
-    uuid: 7f40abd1-6397-4706-8510-bc5d08df8ad5
+    uuid: 3fdef482-3fba-47f9-af67-b3f5bf93ec4c
     alterId: 0
     tls: false
     skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /video/CuTy87zAzV/
+      path: /video/GQ2qE5Us9g
       headers:
-        host: us4Bb5oSgJA.fzbqfrse.xyz
-  - name: 🇺🇸_US_美国_5
-    type: vmess
-    server: 46.3.82.198
-    port: 443
-    cipher: auto
-    uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: http
-  - name: 🇺🇸_US_美国_7
-    type: vmess
-    server: 162.159.33.117
-    port: 2082
-    cipher: auto
-    uuid: 7f40abd1-6397-4706-8510-bc5d08df8ad5
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /video/CuTy87zAzV/
-      headers:
-        host: us4Bb5oSgJA.fzbqfrse.xyz
-  - name: 🇬🇧_GB_英国->🇺🇸_US_美国
-    type: vmess
-    server: 89.213.164.154
-    port: 443
-    cipher: auto
-    uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: http
+        host: tw1bQiWSE4x.fzbqfrse.xyz
   - type: vmess
     name: 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
     server: 使用前记得更新订阅
@@ -3475,6 +3393,120 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点0
+    server: 104.25.107.8
+    port: 2087
+    uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 172.64.150.2
+    port: 443
+    password: c5a16410-1fc2-497d-8619-c2dbb5c6fd1b
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.29
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: /video/GQ2qE5Us9g
+      headers:
+        host: tw1bQiWSE4x.fzbqfrse.xyz
+    server: 162.159.33.117
+    port: 2052
+    uuid: 3fdef482-3fba-47f9-af67-b3f5bf93ec4c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点5
+    ws-opts:
+      path: /XSjeg73o6ZdsheahCb5JG
+      headers:
+        host: us-ccs.yuji2022.eu.org
+    server: speed.cloudflare.com
+    port: 8880
+    uuid: 4b5e4565-322f-4223-a891-78a84f189726
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点7
+    ws-opts:
+      path: /afrhms16v.bestxray.buzz/linkws
+      headers:
+        host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    server: 104.16.60.8
+    port: 2082
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.107
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点16
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.239
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点17
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.210
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.169.219.32
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 安徽省+移动数据上网公共出口
+    server: 112.29.94.23
+    port: 46011
+    password: MyYoZhfX
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3804,15 +3836,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇬🇧_GB_英国
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇬🇧_GB_英国->🇺🇸_US_美国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点17
+      - 美国+Amazon数据中心
+      - 安徽省+移动数据上网公共出口
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4142,15 +4178,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇬🇧_GB_英国
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇬🇧_GB_英国->🇺🇸_US_美国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点17
+      - 美国+Amazon数据中心
+      - 安徽省+移动数据上网公共出口
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4479,15 +4519,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇬🇧_GB_英国
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇬🇧_GB_英国->🇺🇸_US_美国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点17
+      - 美国+Amazon数据中心
+      - 安徽省+移动数据上网公共出口
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4848,15 +4892,19 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇬🇧_GB_英国
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇬🇧_GB_英国->🇺🇸_US_美国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点12
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点17
+      - 美国+Amazon数据中心
+      - 安徽省+移动数据上网公共出口
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
