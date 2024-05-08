@@ -1,4 +1,4 @@
-# 更新时间 2024-05-08T06:50:18.185Z
+# 更新时间 2024-05-08T07:01:31.611Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3395,27 +3395,35 @@ proxies:
     network: auto
   - type: vmess
     name: 美国CloudFlare节点0
-    server: 104.25.107.8
-    port: 2087
-    uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.89
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
     alterId: 0
     cipher: auto
-    network: grpc
-    tls: true
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 172.64.150.2
-    port: 443
-    password: c5a16410-1fc2-497d-8619-c2dbb5c6fd1b
-    udp: true
-    skip-cert-verify: true
+    network: ws
+  - type: vmess
+    name: 广东省移动1
+    ws-opts:
+      path: /niuniu
+      headers:
+        host: 193.25.215.160
+    server: 183.240.220.84
+    port: 16627
+    uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: vmess
     name: 美国CloudFlare节点2
     ws-opts:
       path: /
       headers:
         host: osaka.xlb8.eu.org
-    server: 104.19.43.29
+    server: 104.19.43.61
     port: 80
     uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
     alterId: 0
@@ -3424,46 +3432,47 @@ proxies:
   - type: vmess
     name: 美国CloudFlare节点3
     ws-opts:
-      path: /video/GQ2qE5Us9g
+      path: /
       headers:
-        host: tw1bQiWSE4x.fzbqfrse.xyz
-    server: 162.159.33.117
-    port: 2052
-    uuid: 3fdef482-3fba-47f9-af67-b3f5bf93ec4c
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.239
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 安徽省+移动数据上网公共出口
+    server: 112.29.94.23
+    port: 51003
+    password: MyYoZhfX
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+Amazon+EC2服务器
+    server: 3.29.13.85
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点5
-    ws-opts:
-      path: /XSjeg73o6ZdsheahCb5JG
-      headers:
-        host: us-ccs.yuji2022.eu.org
-    server: speed.cloudflare.com
-    port: 8880
-    uuid: 4b5e4565-322f-4223-a891-78a84f189726
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点7
-    ws-opts:
-      path: /afrhms16v.bestxray.buzz/linkws
-      headers:
-        host: worker-noisy-paper-fa00.hetoj18200.workers.dev
-    server: 104.16.60.8
-    port: 2082
-    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点12
+    name: 美国CloudFlare节点14
     ws-opts:
       path: /
       headers:
         host: osaka.xlb8.eu.org
-    server: 104.19.43.107
+    server: 104.19.43.27
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点15
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.28
     port: 80
     uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
     alterId: 0
@@ -3475,36 +3484,143 @@ proxies:
       path: /
       headers:
         host: osaka.xlb8.eu.org
-    server: 104.19.43.239
+    server: 104.19.43.208
     port: 80
     uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点17
+    name: 美国CloudFlare节点18
     ws-opts:
       path: /
       headers:
         host: osaka.xlb8.eu.org
-    server: 104.19.43.210
+    server: 104.19.43.231
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点19
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.172.136
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 德国+黑森州法兰克福AMazon数据中心
+    server: 3.122.244.128
+    port: 16331
+    password: ZMuOw7qcQ9Ra
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点25
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.92
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点29
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.173
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点30
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.214
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点31
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.172.219
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点32
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.99
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点34
+    ws-opts:
+      path: /
+      headers:
+        host: osaka.xlb8.eu.org
+    server: 104.19.43.162
     port: 80
     uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 18.169.219.32
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.72.90.117
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 美国加利福尼亚州洛杉矶IT7网络36
+    ws-opts:
+      path: /
+    server: c76s3.portablesubmarines.com
+    port: 13820
+    uuid: f094f632-5113-4f1c-8398-25077be216b0
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: ss
+    name: 英国+伦敦Microsoft公司
+    server: 51.145.47.225
+    port: 45844
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5Q29aQklWSDNKSXFlVVhOZGl2ZTlC
+    cipher: aes-128-gcm
   - type: trojan
-    name: 安徽省+移动数据上网公共出口
-    server: 112.29.94.23
-    port: 46011
-    password: MyYoZhfX
+    name: 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
+    server: 107.23.251.3
+    port: 16335
+    password: I7a2t806VWoL
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -3839,16 +3955,27 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+CloudFlare节点
+      - 广东省移动1
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国+Amazon数据中心
       - 安徽省+移动数据上网公共出口
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点19
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点34
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国加利福尼亚州洛杉矶IT7网络36
+      - 英国+伦敦Microsoft公司
+      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4181,16 +4308,27 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+CloudFlare节点
+      - 广东省移动1
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国+Amazon数据中心
       - 安徽省+移动数据上网公共出口
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点19
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点34
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国加利福尼亚州洛杉矶IT7网络36
+      - 英国+伦敦Microsoft公司
+      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4522,16 +4660,27 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+CloudFlare节点
+      - 广东省移动1
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国+Amazon数据中心
       - 安徽省+移动数据上网公共出口
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点19
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点34
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国加利福尼亚州洛杉矶IT7网络36
+      - 英国+伦敦Microsoft公司
+      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4895,16 +5044,27 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国+CloudFlare节点
+      - 广东省移动1
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点16
-      - 美国CloudFlare节点17
-      - 美国+Amazon数据中心
       - 安徽省+移动数据上网公共出口
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国CloudFlare节点18
+      - 美国CloudFlare节点19
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
+      - 美国CloudFlare节点31
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点34
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国加利福尼亚州洛杉矶IT7网络36
+      - 英国+伦敦Microsoft公司
+      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
