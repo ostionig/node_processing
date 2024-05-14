@@ -1,4 +1,4 @@
-# 更新时间 2024-05-13T19:06:07.059Z
+# 更新时间 2024-05-14T01:04:20.915Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3367,7 +3367,26 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 广东省江门市移动2
+    name: 美国CloudFlare节点0
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.185.79
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+麻省理工学院
+    server: 18.119.164.221
+    port: 15423
+    password: O5E6DR92vyPK
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省江门市移动3
     ws-opts:
       path: /
     server: 120.238.122.243
@@ -3376,24 +3395,107 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 9101
-    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.156.79.186
+    port: 15405
+    password: Rb6yJHzgq66P
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 广东省移动7
+    name: 美国CloudFlare节点5
     ws-opts:
-      path: /
+      path: /aries?ed=2048
       headers:
-        host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    server: m.cnmjin.net
-    port: 16632
-    uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+        host: do-au.alipay.ovh
+    server: 162.159.3.11
+    port: 8080
+    uuid: 4f1f8f1e-926c-4edb-a398-8627110973f1
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /glweidf.sbs/linkws
+      headers:
+        host: throbbing-shape-90d7.hite-nomade.workers.dev
+    server: speed.cloudflare.com
+    port: 80
+    uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 法国+国际航空电讯集团公司(SITA)
+    server: 57.181.30.171
+    port: 15421
+    password: CZyEJ8Ljqc7h
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+惠普HP
+    server: 15.204.87.225
+    port: 7002
+    password: YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 捷克V2CROSS.COM11
+    ws-opts:
+      path: /RACEVPN
+    server: nl2-full.privateip.net
+    port: 443
+    uuid: 40e357c2-06f4-433a-b6cc-5d5c8b487e1d
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.172.219
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.70.175.107
+    port: 15421
+    password: 539a0KjR5S07
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+Akamai科技公司CDN网络节点
+    server: 172.233.56.110
+    port: 50876
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6V1E4YnVQNkxtUmJRR2FDb09KcjB1
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 英国+社会保险安全部
+    server: 51.20.19.66
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 广东省佛山市+移动
+    server: gfoq.b4-h5a6gq7.h3w-kr01.my777999.top
+    port: 32999
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2Mzk5YWM3ZC04MjY1LTQzNmQtYjM0OC0yOTlkZjRiNzM1YTU=
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 34.218.233.43
+    port: 15409
+    password: SNMTrGrir4D7
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3758,9 +3860,21 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省江门市移动2
-      - 法国+OVH
-      - 广东省移动7
+      - 美国CloudFlare节点0
+      - 美国+麻省理工学院
+      - 广东省江门市移动3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 捷克V2CROSS.COM11
+      - 美国CloudFlare节点12
+      - 美国+Amazon+EC2服务器
+      - 美国+Akamai科技公司CDN网络节点
+      - 英国+社会保险安全部
+      - 广东省佛山市+移动
+      - 美国+俄勒冈州波特兰Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4125,9 +4239,21 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省江门市移动2
-      - 法国+OVH
-      - 广东省移动7
+      - 美国CloudFlare节点0
+      - 美国+麻省理工学院
+      - 广东省江门市移动3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 捷克V2CROSS.COM11
+      - 美国CloudFlare节点12
+      - 美国+Amazon+EC2服务器
+      - 美国+Akamai科技公司CDN网络节点
+      - 英国+社会保险安全部
+      - 广东省佛山市+移动
+      - 美国+俄勒冈州波特兰Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4491,9 +4617,21 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省江门市移动2
-      - 法国+OVH
-      - 广东省移动7
+      - 美国CloudFlare节点0
+      - 美国+麻省理工学院
+      - 广东省江门市移动3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 捷克V2CROSS.COM11
+      - 美国CloudFlare节点12
+      - 美国+Amazon+EC2服务器
+      - 美国+Akamai科技公司CDN网络节点
+      - 英国+社会保险安全部
+      - 广东省佛山市+移动
+      - 美国+俄勒冈州波特兰Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4889,9 +5027,21 @@ proxy-groups:
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省江门市移动2
-      - 法国+OVH
-      - 广东省移动7
+      - 美国CloudFlare节点0
+      - 美国+麻省理工学院
+      - 广东省江门市移动3
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点5
+      - 美国CloudFlare节点6
+      - 法国+国际航空电讯集团公司(SITA)
+      - 美国+惠普HP
+      - 捷克V2CROSS.COM11
+      - 美国CloudFlare节点12
+      - 美国+Amazon+EC2服务器
+      - 美国+Akamai科技公司CDN网络节点
+      - 英国+社会保险安全部
+      - 广东省佛山市+移动
+      - 美国+俄勒冈州波特兰Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
