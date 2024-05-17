@@ -1,4 +1,4 @@
-# 更新时间 2024-05-17T18:55:19.473Z
+# 更新时间 2024-05-17T19:11:44.063Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3104,33 +3104,145 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.41.167.152
+    name: 美国+Amazon+EC2服务器
+    server: 3.76.177.188
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 15.188.246.126
+    port: 17053
+    password: t0u0P9z6yLom
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 34.246.93.159
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 广东省深圳市移动4
+    ws-opts:
+      path: /
+      headers:
+        host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    server: m.cnmjin.net
+    port: 16632
+    uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: ss
-    name: 立陶宛+V2CROSS.COM
-    server: 89.117.109.97
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQWGdXUFg3Wk1FUlFYOTE2Tm04cGxU
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 8119
+    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
     cipher: aes-128-gcm
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.86.135.117
-    port: 5500
-    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.222
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省江门市移动7
+    ws-opts:
+      path: /
+    server: 120.238.122.243
+    port: 40259
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
   - type: trojan
-    name: 韩国+蘑菇主机BGP数据中心
-    server: 103.214.68.57
-    port: 10003
-    password: 6x8HcghsjS
+    name: 美国+惠普公司
+    server: 16.16.88.51
+    port: 22222
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 芬兰+Hetzner+Online公司
+    server: 95.217.211.238
+    port: 8080
+    password: >-
+      MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206MkYzeDY1M0dIS1RsV0J0ZUFMT1BQbFN3d0FQYzF2em9EQ0QvZUU3MDJVVT06cmpYaXZQdmhDSVhvVzRDZWlNNzFoQ1M4cFpYWk9mTVk2OFk3QmU0S05kaz0=
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点5
+    name: 广东省广州市移动12
+    server: 183.236.51.59
+    port: 51707
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点14
+    ws-opts:
+      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+      headers:
+        host: uk.moss.network
+    server: 104.19.40.58
+    port: 8880
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点15
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      headers:
+        host: in.xlb8.eu.org
+    server: 104.19.52.111
+    port: 80
+    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点18
+    ws-opts:
+      path: /api/v3/download.getFile
+      headers:
+        host: sssub.v2.001.ssrsub.com
+    server: russia.com
+    port: 8880
+    uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 法国+OVH机房SAS硬盘BGP主机
+    server: 149.202.82.172
+    port: 7307
+    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 日本东京+Amazon数据中心
+    server: 52.192.163.196
+    port: 17043
+    password: 36J8kfEt8RLI
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 北美地区+V2CROSS.COM
+    server: us.sptnk.space
+    port: 57456
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozZmJlYjY2OGY0ODQxNGY2
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点31
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
@@ -3141,103 +3253,11 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 广东省佛山市移动7
-    server: 879xhl1.hsspr5bu1-tw02.my777999.top
-    port: 34998
-    uuid: dffc697a-2535-470c-bb6a-8157b6c157a7
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 伊朗V2CROSS.COM8
-    server: cdn2.wikihost.info
-    port: 80
-    uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点10
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        host: in.xlb8.eu.org
-    server: 104.19.52.189
-    port: 80
-    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点12
-    ws-opts:
-      path: /video/QXjZG5u4F2
-      headers:
-        host: us3AJ8biuQx.fzbqfrse.xyz
-    server: 104.21.8.93
-    port: 2052
-    uuid: 55444c8f-fdeb-4af4-98ee-7cf5f4667659
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点13
-    ws-opts:
-      path: /
-      headers:
-        host: oiictw.yydsii.com
-    server: 172.67.172.67
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-    alterId: 0
-    cipher: auto
-    network: ws
   - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon数据中心
-    server: 54.186.6.152
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.14.220.197
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点16
-    ws-opts:
-      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-      headers:
-        host: uk.moss.network
-    server: 104.19.40.237
-    port: 8880
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 美国+惠普公司
-    server: 15.236.243.216
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.77.125.162
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 韩国+首尔Amazon数据中心
-    server: 54.180.163.229
-    port: 16921
-    password: EwFfJmqkT5Ja
+    name: 美国+Merit网络公司
+    server: 35.95.31.198
+    port: 17068
+    password: ct1VtSdKP4B4
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -3558,22 +3578,24 @@ proxy-groups:
       - 🇨🇦_CA_加拿大
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 立陶宛+V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 韩国+蘑菇主机BGP数据中心
-      - 美国CloudFlare节点5
-      - 广东省佛山市移动7
-      - 伊朗V2CROSS.COM8
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 美国+俄勒冈州波特兰Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点16
-      - 美国+惠普公司
+      - 法国+巴黎Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 韩国+首尔Amazon数据中心
+      - 广东省深圳市移动4
+      - 法国+OVH
+      - 美国CloudFlare节点6
+      - 广东省江门市移动7
+      - 美国+惠普公司
+      - 芬兰+Hetzner+Online公司
+      - 广东省广州市移动12
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点18
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 日本东京+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点31
+      - 美国+Merit网络公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3892,22 +3914,24 @@ proxy-groups:
       - 🇨🇦_CA_加拿大
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 立陶宛+V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 韩国+蘑菇主机BGP数据中心
-      - 美国CloudFlare节点5
-      - 广东省佛山市移动7
-      - 伊朗V2CROSS.COM8
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 美国+俄勒冈州波特兰Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点16
-      - 美国+惠普公司
+      - 法国+巴黎Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 韩国+首尔Amazon数据中心
+      - 广东省深圳市移动4
+      - 法国+OVH
+      - 美国CloudFlare节点6
+      - 广东省江门市移动7
+      - 美国+惠普公司
+      - 芬兰+Hetzner+Online公司
+      - 广东省广州市移动12
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点18
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 日本东京+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点31
+      - 美国+Merit网络公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4225,22 +4249,24 @@ proxy-groups:
       - 🇨🇦_CA_加拿大
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 立陶宛+V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 韩国+蘑菇主机BGP数据中心
-      - 美国CloudFlare节点5
-      - 广东省佛山市移动7
-      - 伊朗V2CROSS.COM8
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 美国+俄勒冈州波特兰Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点16
-      - 美国+惠普公司
+      - 法国+巴黎Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 韩国+首尔Amazon数据中心
+      - 广东省深圳市移动4
+      - 法国+OVH
+      - 美国CloudFlare节点6
+      - 广东省江门市移动7
+      - 美国+惠普公司
+      - 芬兰+Hetzner+Online公司
+      - 广东省广州市移动12
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点18
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 日本东京+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点31
+      - 美国+Merit网络公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4590,22 +4616,24 @@ proxy-groups:
       - 🇨🇦_CA_加拿大
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 立陶宛+V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 韩国+蘑菇主机BGP数据中心
-      - 美国CloudFlare节点5
-      - 广东省佛山市移动7
-      - 伊朗V2CROSS.COM8
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 美国+俄勒冈州波特兰Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 美国CloudFlare节点16
-      - 美国+惠普公司
+      - 法国+巴黎Amazon数据中心
       - 爱尔兰+都柏林Amazon数据中心
-      - 韩国+首尔Amazon数据中心
+      - 广东省深圳市移动4
+      - 法国+OVH
+      - 美国CloudFlare节点6
+      - 广东省江门市移动7
+      - 美国+惠普公司
+      - 芬兰+Hetzner+Online公司
+      - 广东省广州市移动12
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点18
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 日本东京+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点31
+      - 美国+Merit网络公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
