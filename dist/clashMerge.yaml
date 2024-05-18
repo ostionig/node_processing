@@ -1,4 +1,4 @@
-# 更新时间 2024-05-18T01:03:36.674Z
+# 更新时间 2024-05-18T06:18:06.869Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,6 +6,12 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+  - name: CN_speednode_0002
+    server: hk4.gauss.life
+    port: 16101
+    type: ss
+    cipher: aes-128-gcm
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
   - name: CN_speednode_0003
     server: 120.232.242.117
     port: 31778
@@ -21,15 +27,11 @@ proxies:
     http-opts: {}
     skip-cert-verify: true
   - name: CN_speednode_0004
-    server: 120.232.240.38
-    port: 8443
-    type: vmess
-    alterId: 0
-    cipher: auto
-    network: ''
-    skip-cert-verify: true
-    tls: true
-    uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
+    server: hk4.gauss.life
+    port: 16301
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
   - name: CN_speednode_0005
     server: 183.236.51.59
     port: 54100
@@ -40,17 +42,55 @@ proxies:
     servername: ''
     tls: false
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  - name: JP_speednode_0014
-    server: 18.176.215.63
-    port: 2377
+  - name: CN_speednode_0006
+    server: jp5.gauss.life
+    port: 16412
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: (TG @WangCai2)c68b799:50307
-  - name: NN_speednode_0023
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0007
+    server: hk6.gauss.life
+    port: 16323
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0008
+    server: jp6.gauss.life
+    port: 16423
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0009
+    server: jp4.gauss.life
+    port: 16401
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0010
+    server: hk6.gauss.life
+    port: 16123
+    type: ss
+    cipher: aes-128-gcm
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0012
+    server: hk5.gauss.life
+    port: 16112
+    type: ss
+    cipher: aes-128-gcm
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0014
+    server: jp4.gauss.life
+    port: 16501
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0015
+    server: jp5.gauss.life
+    port: 16512
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  - name: CN_speednode_0016
     server: data-hk-v1.usabooks.com.cn
     port: 20206
     type: vmess
@@ -64,118 +104,21 @@ proxies:
       path: /debian
       headers:
         Host: data-hk-v1.usabooks.com.cn
-  - name: NN_speednode_0024
-    server: achk.cloudflarest.link
-    port: 2082
-    type: vmess
-    client-fingerprint: chrome
-    uuid: a3d900b4-dc3b-475d-a7b6-4be701eaf0c4
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /lemonnw?ed=2048
-      headers:
-        Host: mugenus.gogolemon.top
-    udp: true
-  - name: NN_speednode_0025
-    server: achk.cloudflarest.link
-    port: 2052
-    type: vmess
-    client-fingerprint: chrome
-    uuid: a3d900b4-dc3b-475d-a7b6-4be701eaf0c4
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: azcloudjp.gogolemon.top
-    udp: true
   - name: SG_speednode_0032
     server: 103.172.116.94
     port: 9098
     type: ss
     password: aLpQtfEZe445QyHk
     cipher: aes-256-cfb
-  - name: SG_speednode_0033
-    server: 103.172.116.94
-    port: 9032
-    type: ss
-    password: UWZQeLRWnkqgkseq
-    cipher: aes-256-cfb
-    alterId: -1
-    country: 🏁 ZZ
-    customName: ChatGPT 🏁 ZZ_142
-  - name: SG_speednode_0034
-    server: 103.172.116.94
-    port: 9093
-    type: ss
-    password: wfLC2y7rzZyCmuyt
-    cipher: aes-256-cfb
-    udp: true
-  - name: SG_speednode_0035
-    server: 103.172.116.94
-    port: 9040
-    type: ss
-    password: p9z5BVADH2YFs3MN
-    cipher: aes-256-cfb
-    alterId: -1
-    customName: 4FreeIran-1245
-  - name: SG_speednode_0036
-    server: 103.172.116.94
-    port: 9033
-    type: ss
-    password: UTJA57ypk2XKQpnm
-    cipher: aes-256-cfb
-    alterId: -1
-    customName: 4FreeIran-842
-  - name: SG_speednode_0037
-    server: 103.172.116.94
-    port: 9050
-    type: ss
-    password: FG5ddLsMPbV5CutE
-    cipher: aes-256-cfb
-  - name: SG_speednode_0038
-    server: 103.172.116.94
-    port: 9079
-    type: ss
-    password: TPqX8edgbAURcAMb
-    cipher: aes-256-cfb
-  - name: SG_speednode_0039
-    server: 103.172.116.94
-    port: 9026
-    type: ss
-    password: QWDDvVE9npNurQfA
-    cipher: aes-256-cfb
-    alterId: -1
-    country: 🏁 ZZ
-    customName: ChatGPT 🏁 ZZ_460
-  - name: SG_speednode_0040
-    server: 103.172.116.94
-    port: 9053
-    type: ss
-    password: SBM7R883jBmnqe6C
-    cipher: aes-256-cfb
-    alterId: -1
-    country: 🏁 ZZ
-    customName: 🏁 ZZ_724
-  - name: US_speednode_0244
+  - name: US_speednode_0225
     server: 156.146.38.163
     port: 443
-    type: ss
-    cipher: aes-128-cfb
+    type: ssr
     password: shadowsocks
-    delay: 865
-    country: 🇺🇸US
+    cipher: aes-128-cfb
+    protocol: origin
+    obfs: plain
     alterId: -1
-    customName: 🇺🇸US-156.146.38.163-0325
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -3069,12 +3012,26 @@ proxies:
     port: 35276
     server: 51.140.34.50
     type: ss
-  - name: 🇨🇦_CA_加拿大
+  - name: 🇺🇸_US_美国_1
     type: vmess
-    server: 15.156.226.178
-    port: 25996
+    server: russia.com
+    port: 8880
     cipher: auto
-    uuid: 786c0e71-c2d4-4bdc-913f-5c75dd54721f
+    uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /api/v3/download.getFile
+      headers:
+        host: sssub.v2.001.ssrsub.com
+  - name: 🇺🇸_US_美国->🇺🇦_UA_乌克兰
+    type: vmess
+    server: 172.67.166.192
+    port: 80
+    cipher: auto
+    uuid: cd1db809-2de0-409c-aef5-861e95eff53e
     alterId: 0
     tls: false
     skip-cert-verify: true
@@ -3082,19 +3039,17 @@ proxies:
     ws-opts:
       path: /
       headers:
-        host: m.linkedin.com
+        host: ua1-vmess.sshmax.xyz
   - name: 🇷🇺_RU_俄罗斯联邦
     type: vmess
-    server: 45.136.245.240
-    port: 12910
+    server: 46.17.45.13
+    port: 17697
     cipher: auto
-    uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+    uuid: 558ff688-d70d-4219-9e59-748289528256
     alterId: 0
-    tls: true
+    tls: false
     skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
+    network: tcp
   - type: vmess
     name: 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
     server: 使用前记得更新订阅
@@ -3103,164 +3058,27 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 广东省广州市移动1
-    ws-opts:
-      path: /
-    server: 183.236.51.59
-    port: 54437
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 8008
-    password: YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 8881
-    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 韩国+蘑菇主机BGP数据中心
-    server: 103.214.68.57
-    port: 10003
-    password: 6x8HcghsjS
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 广东省佛山市移动10
-    server: 879xhl1.hsspr5bu1-tw02.my777999.top
-    port: 34998
-    uuid: dffc697a-2535-470c-bb6a-8157b6c157a7
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 35.156.231.138
-    port: 17425
-    password: KPQ3XsJwAbW5
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国华盛顿Cogent通信公司13
-    ws-opts:
-      path: /9b475e2a-
-      headers:
-        host: 38.60.204.119
-    server: 38.60.204.119
-    port: 56836
-    uuid: 9b475e2a-7855-4cc3-ad4c-963a331277e0
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.195.102.66
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 加拿大+V2CROSS.COM
-    server: sg08.421421.xyz
-    port: 20230
-    password: 0f408453-2589-4fc2-bf9d-22e0cef8b8d2
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 广东省移动27
-    ws-opts:
-      path: /debian
-      headers:
-        host: data-hk-v1.usabooks.com.cn
-    server: 120.233.42.83
-    port: 20206
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 104.167.197.23
-    port: 57456
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozZmJlYjY2OGY0ODQxNGY2
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点29
-    ws-opts:
-      path: /d/65dd503.TG.WangCai2.WangCai_8:107690
-      headers:
-        host: uk.moss.network
-    server: 104.19.40.58
-    port: 8880
-    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.69.185.131
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 3.9.252.30
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+麻省理工学院
-    server: 18.132.100.255
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 35.180.104.121
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 44.222.223.13
-    port: 17426
-    password: ExLEJi3RWoFW
-    udp: true
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - CN_speednode_0002
       - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
-      - JP_speednode_0014
-      - NN_speednode_0023
-      - NN_speednode_0024
-      - NN_speednode_0025
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0012
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0016
       - SG_speednode_0032
-      - SG_speednode_0033
-      - SG_speednode_0034
-      - SG_speednode_0035
-      - SG_speednode_0036
-      - SG_speednode_0037
-      - SG_speednode_0038
-      - SG_speednode_0039
-      - SG_speednode_0040
-      - US_speednode_0244
+      - US_speednode_0225
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇷🇺 俄罗斯 v2rayfree.eu.org
       - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
@@ -3553,49 +3371,31 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+OVH
-      - 韩国+蘑菇主机BGP数据中心
-      - 广东省佛山市移动10
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国华盛顿Cogent通信公司13
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 广东省移动27
-      - 北美地区+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国+Amazon+EC2服务器
-      - 英国+伦敦Amazon数据中心
-      - 美国+麻省理工学院
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - CN_speednode_0002
       - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
-      - JP_speednode_0014
-      - NN_speednode_0023
-      - NN_speednode_0024
-      - NN_speednode_0025
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0012
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0016
       - SG_speednode_0032
-      - SG_speednode_0033
-      - SG_speednode_0034
-      - SG_speednode_0035
-      - SG_speednode_0036
-      - SG_speednode_0037
-      - SG_speednode_0038
-      - SG_speednode_0039
-      - SG_speednode_0040
-      - US_speednode_0244
+      - US_speednode_0225
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇷🇺 俄罗斯 v2rayfree.eu.org
       - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
@@ -3888,48 +3688,30 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+OVH
-      - 韩国+蘑菇主机BGP数据中心
-      - 广东省佛山市移动10
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国华盛顿Cogent通信公司13
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 广东省移动27
-      - 北美地区+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国+Amazon+EC2服务器
-      - 英国+伦敦Amazon数据中心
-      - 美国+麻省理工学院
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - CN_speednode_0002
       - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
-      - JP_speednode_0014
-      - NN_speednode_0023
-      - NN_speednode_0024
-      - NN_speednode_0025
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0012
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0016
       - SG_speednode_0032
-      - SG_speednode_0033
-      - SG_speednode_0034
-      - SG_speednode_0035
-      - SG_speednode_0036
-      - SG_speednode_0037
-      - SG_speednode_0038
-      - SG_speednode_0039
-      - SG_speednode_0040
-      - US_speednode_0244
+      - US_speednode_0225
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇷🇺 俄罗斯 v2rayfree.eu.org
       - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
@@ -4222,26 +4004,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+OVH
-      - 韩国+蘑菇主机BGP数据中心
-      - 广东省佛山市移动10
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国华盛顿Cogent通信公司13
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 广东省移动27
-      - 北美地区+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国+Amazon+EC2服务器
-      - 英国+伦敦Amazon数据中心
-      - 美国+麻省理工学院
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4279,23 +4045,21 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_speednode_0002
       - CN_speednode_0003
       - CN_speednode_0004
       - CN_speednode_0005
-      - JP_speednode_0014
-      - NN_speednode_0023
-      - NN_speednode_0024
-      - NN_speednode_0025
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0012
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0016
       - SG_speednode_0032
-      - SG_speednode_0033
-      - SG_speednode_0034
-      - SG_speednode_0035
-      - SG_speednode_0036
-      - SG_speednode_0037
-      - SG_speednode_0038
-      - SG_speednode_0039
-      - SG_speednode_0040
-      - US_speednode_0244
+      - US_speednode_0225
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇷🇺 俄罗斯 v2rayfree.eu.org
       - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
@@ -4588,26 +4352,10 @@ proxy-groups:
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】42_8@22
       - 🇺🇲 美国【付费推荐：https://jdyvip.link/】47_8@34
       - 🇬🇧 英国【付费推荐：https://jdyvip.link/】59_8@35
-      - 🇨🇦_CA_加拿大
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国->🇺🇦_UA_乌克兰
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 法国+OVH
-      - 韩国+蘑菇主机BGP数据中心
-      - 广东省佛山市移动10
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国华盛顿Cogent通信公司13
-      - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 广东省移动27
-      - 北美地区+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国+Amazon+EC2服务器
-      - 英国+伦敦Amazon数据中心
-      - 美国+麻省理工学院
-      - 法国+巴黎Amazon数据中心
-      - 美国+Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
