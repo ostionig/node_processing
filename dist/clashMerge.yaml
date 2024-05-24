@@ -1,4 +1,4 @@
-# 更新时间 2024-05-24T18:54:26.699Z
+# 更新时间 2024-05-24T19:10:45.935Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3639,6 +3639,32 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: ss
+    name: 法国+OVH机房SAS硬盘BGP主机
+    server: 149.202.82.172
+    port: 5003
+    password: YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 广东省广州市移动4
+    server: 183.236.51.59
+    port: 51707
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /
+      headers:
+        host: hk2.wish.ml
+    server: hk.wish.ml
+    port: 2052
+    uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4011,6 +4037,9 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 广东省广州市移动4
+      - 美国CloudFlare节点6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4383,6 +4412,9 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 广东省广州市移动4
+      - 美国CloudFlare节点6
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4754,6 +4786,9 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 广东省广州市移动4
+      - 美国CloudFlare节点6
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5157,6 +5192,9 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇷🇺_RU_俄罗斯联邦
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 广东省广州市移动4
+      - 美国CloudFlare节点6
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
