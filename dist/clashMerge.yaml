@@ -1,4 +1,4 @@
-# 更新时间 2024-05-25T06:56:07.818Z
+# 更新时间 2024-05-25T07:14:43.484Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3762,35 +3762,89 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 广东省深圳市移动8
+    name: 广东省移动0
     ws-opts:
       path: /
       headers:
-        host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    server: 183.232.142.47
+        host: ee1683cb66f83a1d45e5fdf2e7bdc7dd.mobgslb.tbcache.com
+    server: 120.233.204.126
     port: 16632
-    uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+    uuid: d9a9d508-67e1-4929-8bea-8733d5a30c93
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 35.180.172.215
-    port: 14272
-    password: r0VrSVhpCFzg
-    udp: true
-    skip-cert-verify: true
+  - type: ss
+    name: 法国+OVH机房SAS硬盘BGP主机
+    server: 149.202.82.172
+    port: 8008
+    password: YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=
+    cipher: aes-128-gcm
   - type: ss
     name: 英国+伦敦Microsoft公司
     server: 51.145.101.254
     port: 19054
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptR1VDeEpVUkQ4eUhmWGV4dml2UWhK
     cipher: aes-128-gcm
+  - type: ss
+    name: 荷兰+V2CROSS.COM
+    server: 194.26.229.18
+    port: 50744
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzSVo4MERac0FDOVpTc2hTNjlnWXFs
+    cipher: aes-128-gcm
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.236.236.119
+    name: 江苏省+移动
+    server: 36.151.195.48
+    port: 20344
+    password: TNDSJfNv
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: /linkws
+      headers:
+        host: glweidf.sbs
+    server: hms182.glweidf.sbs
+    port: 443
+    uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 日本+东京Amazon数据中心
+    server: 13.231.138.75
+    port: 14327
+    password: KSehVFUMH1Zw
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省江门市移动16
+    server: 120.238.122.243
+    port: 40259
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.153.114.70
     port: 22222
-    password: telegram-id-privatevpns
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 52.43.111.172
+    port: 14341
+    password: 9fDc33NA35Ow
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+俄亥俄州都柏林Amazon数据中心
+    server: 18.219.243.91
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
 proxy-groups:
@@ -4172,10 +4226,17 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇫🇷_FR_法国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省深圳市移动8
-      - 法国+巴黎Amazon数据中心
+      - 广东省移动0
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+伦敦Microsoft公司
-      - 美国+惠普公司
+      - 荷兰+V2CROSS.COM
+      - 江苏省+移动
+      - 美国CloudFlare节点10
+      - 日本+东京Amazon数据中心
+      - 广东省江门市移动16
+      - 美国+Amazon数据中心
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4555,10 +4616,17 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇫🇷_FR_法国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省深圳市移动8
-      - 法国+巴黎Amazon数据中心
+      - 广东省移动0
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+伦敦Microsoft公司
-      - 美国+惠普公司
+      - 荷兰+V2CROSS.COM
+      - 江苏省+移动
+      - 美国CloudFlare节点10
+      - 日本+东京Amazon数据中心
+      - 广东省江门市移动16
+      - 美国+Amazon数据中心
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4937,10 +5005,17 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇫🇷_FR_法国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省深圳市移动8
-      - 法国+巴黎Amazon数据中心
+      - 广东省移动0
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+伦敦Microsoft公司
-      - 美国+惠普公司
+      - 荷兰+V2CROSS.COM
+      - 江苏省+移动
+      - 美国CloudFlare节点10
+      - 日本+东京Amazon数据中心
+      - 广东省江门市移动16
+      - 美国+Amazon数据中心
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5351,10 +5426,17 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇫🇷_FR_法国
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省深圳市移动8
-      - 法国+巴黎Amazon数据中心
+      - 广东省移动0
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+伦敦Microsoft公司
-      - 美国+惠普公司
+      - 荷兰+V2CROSS.COM
+      - 江苏省+移动
+      - 美国CloudFlare节点10
+      - 日本+东京Amazon数据中心
+      - 广东省江门市移动16
+      - 美国+Amazon数据中心
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国+俄亥俄州都柏林Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
