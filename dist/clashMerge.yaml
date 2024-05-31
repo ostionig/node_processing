@@ -1,4 +1,4 @@
-# 更新时间 2024-05-31T18:54:15.155Z
+# 更新时间 2024-05-31T19:11:24.917Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3020,77 +3020,19 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 104.20.19.168
+    port: 2083
+    password: auto
+    udp: true
+    skip-cert-verify: true
   - type: ss
     name: 法国+OVH机房SAS硬盘BGP主机
     server: 149.202.82.172
-    port: 5000
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    port: 5500
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
     cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.75.195.20
-    port: 14940
-    password: R1ccoZXO79Xu
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 6679
-    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: /vmess
-      headers:
-        host: 127.0.0.1.dl3.darkvpnpro.黄金神威.南北战争.mrarsha.贾伊·加内什.Jai.suonycars.buzz.
-    server: 104.18.17.151
-    port: 80
-    uuid: 0007f335-04ba-4604-8f39-ddb2b1d449a3
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: beedoost.org
-    port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOGJ0OWZZMFFzTFM2ZUxuWFVlMFlt
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 俄罗斯V2CROSS.COM7
-    server: 31.192.234.7
-    port: 12954
-    uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.75.137.93
-    port: 8119
-    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点13
-    ws-opts:
-      path: /video/VDXcaM7r
-      headers:
-        host: GWYp69Yujp2.yofnhkfc.xyz
-    server: cfcdn3.sanfencdn9.com
-    port: 80
-    uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.47.176
-    port: 443
-    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-    udp: true
-    skip-cert-verify: true
   - type: trojan
     name: 英国+社会保险安全部
     server: 51.20.61.145
@@ -3098,20 +3040,97 @@ proxies:
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 阿尔巴尼亚+V2CROSS.COM
+    server: 109.104.152.126
+    port: 51122
+    password: YWVzLTI1Ni1nY206ZG9uZ3RhaXdhbmcuY29t
+    cipher: aes-128-gcm
   - type: trojan
-    name: 美国加利福尼亚州洛杉矶+V2CROSS.COM
-    server: 45.156.24.4
-    port: 443
-    password: ca3d2d6a-f7ea-4a52-ba12-37bd8fcea8d2
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.72.112.77
+    name: 法国+巴黎Amazon数据中心
+    server: 35.181.165.63
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 2375
+    password: YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 45.158.171.148
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOGJ0OWZZMFFzTFM2ZUxuWFVlMFlt
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.114.123.12
+    port: 20001
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTrwn42E8J+NhfCfm6bwn42G8J+Nhy7wn42I8J+nmy7wn42J
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点15
+    ws-opts:
+      path: /video/bYdJ7Vc2We
+      headers:
+        host: us6gzxQRrE4.fzbqfrse.xyz
+    server: cfcdn1.sanfencdn9.com
+    port: 8880
+    uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 北美地区+V2CROSS.COM
+    server: 23.157.40.20
+    port: 5500
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 湖南省联通20
+    ws-opts:
+      path: /
+      headers:
+        host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    server: yes.cnmjcn.net
+    port: 16632
+    uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 广东省广州市移动24
+    ws-opts:
+      path: /
+    server: 183.236.51.59
+    port: 54437
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 江苏省+移动
+    server: 36.151.195.48
+    port: 29841
+    password: TNDSJfNv
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点31
+    ws-opts:
+      path: /video/3YKfzGw4
+      headers:
+        host: rpmlybgzsg2.yofnhkfc.xyz
+    server: cfcdn2.sanfencdn9.com
+    port: 2052
+    uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3429,18 +3448,20 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇨🇦_CA_加拿大
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+Amazon+EC2服务器
-      - 法国+OVH
-      - 美国CloudFlare节点4
-      - 美国+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM7
-      - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点13
       - 美国+CloudFlare节点
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+社会保险安全部
-      - 美国加利福尼亚州洛杉矶+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 阿尔巴尼亚+V2CROSS.COM
+      - 法国+巴黎Amazon数据中心
+      - 法国+OVH
+      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点15
+      - 北美地区+V2CROSS.COM
+      - 湖南省联通20
+      - 广东省广州市移动24
+      - 江苏省+移动
+      - 美国CloudFlare节点31
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3758,18 +3779,20 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇨🇦_CA_加拿大
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+Amazon+EC2服务器
-      - 法国+OVH
-      - 美国CloudFlare节点4
-      - 美国+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM7
-      - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点13
       - 美国+CloudFlare节点
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+社会保险安全部
-      - 美国加利福尼亚州洛杉矶+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 阿尔巴尼亚+V2CROSS.COM
+      - 法国+巴黎Amazon数据中心
+      - 法国+OVH
+      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点15
+      - 北美地区+V2CROSS.COM
+      - 湖南省联通20
+      - 广东省广州市移动24
+      - 江苏省+移动
+      - 美国CloudFlare节点31
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4086,18 +4109,20 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇨🇦_CA_加拿大
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+Amazon+EC2服务器
-      - 法国+OVH
-      - 美国CloudFlare节点4
-      - 美国+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM7
-      - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点13
       - 美国+CloudFlare节点
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+社会保险安全部
-      - 美国加利福尼亚州洛杉矶+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 阿尔巴尼亚+V2CROSS.COM
+      - 法国+巴黎Amazon数据中心
+      - 法国+OVH
+      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点15
+      - 北美地区+V2CROSS.COM
+      - 湖南省联通20
+      - 广东省广州市移动24
+      - 江苏省+移动
+      - 美国CloudFlare节点31
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4446,18 +4471,20 @@ proxy-groups:
       - 🇺🇸_US_美国_5
       - 🇨🇦_CA_加拿大
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国+Amazon+EC2服务器
-      - 法国+OVH
-      - 美国CloudFlare节点4
-      - 美国+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM7
-      - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点13
       - 美国+CloudFlare节点
+      - 法国+OVH机房SAS硬盘BGP主机
       - 英国+社会保险安全部
-      - 美国加利福尼亚州洛杉矶+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 阿尔巴尼亚+V2CROSS.COM
+      - 法国+巴黎Amazon数据中心
+      - 法国+OVH
+      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点15
+      - 北美地区+V2CROSS.COM
+      - 湖南省联通20
+      - 广东省广州市移动24
+      - 江苏省+移动
+      - 美国CloudFlare节点31
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
