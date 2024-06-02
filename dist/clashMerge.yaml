@@ -1,4 +1,4 @@
-# 更新时间 2024-06-02T18:53:52.862Z
+# 更新时间 2024-06-02T19:09:30.959Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2941,34 +2941,29 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 广东省广州市移动1
-    ws-opts:
-      path: /
-    server: 183.236.51.59
-    port: 54437
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
   - type: ss
-    name: 美国+华盛顿州
-    server: 205.134.180.137
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnMTNTN2RvWGFyMEE=
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 6697
+    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
     cipher: aes-128-gcm
   - type: ss
     name: 法国+OVH机房SAS硬盘BGP主机
     server: 149.202.82.172
-    port: 8881
-    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
+    port: 7306
+    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
     cipher: aes-128-gcm
-  - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 8119
-    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 俄罗斯莫斯科JustHost4
+    ws-opts:
+      path: /
+    server: 45.136.245.240
+    port: 12910
+    uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3272,10 +3267,9 @@ proxy-groups:
       - 🇨🇷_CR_哥斯达黎加->🇬🇧_GB_英国
       - 🇺🇸_US_美国_7
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 美国+华盛顿州
-      - 法国+OVH机房SAS硬盘BGP主机
       - 法国+OVH
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 俄罗斯莫斯科JustHost4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3579,10 +3573,9 @@ proxy-groups:
       - 🇨🇷_CR_哥斯达黎加->🇬🇧_GB_英国
       - 🇺🇸_US_美国_7
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 美国+华盛顿州
-      - 法国+OVH机房SAS硬盘BGP主机
       - 法国+OVH
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 俄罗斯莫斯科JustHost4
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3885,10 +3878,9 @@ proxy-groups:
       - 🇨🇷_CR_哥斯达黎加->🇬🇧_GB_英国
       - 🇺🇸_US_美国_7
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 美国+华盛顿州
-      - 法国+OVH机房SAS硬盘BGP主机
       - 法国+OVH
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 俄罗斯莫斯科JustHost4
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4223,10 +4215,9 @@ proxy-groups:
       - 🇨🇷_CR_哥斯达黎加->🇬🇧_GB_英国
       - 🇺🇸_US_美国_7
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动1
-      - 美国+华盛顿州
-      - 法国+OVH机房SAS硬盘BGP主机
       - 法国+OVH
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 俄罗斯莫斯科JustHost4
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
