@@ -1,4 +1,4 @@
-# 更新时间 2024-06-04T18:55:52.207Z
+# 更新时间 2024-06-04T19:13:48.899Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2953,19 +2953,11 @@ proxies:
   - type: ss
     name: 法国+OVH机房SAS硬盘BGP主机
     server: 149.202.82.172
-    port: 8090
-    password: YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3
+    port: 7307
+    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
     cipher: aes-128-gcm
   - type: vmess
-    name: 浙江省移动数据上网公共出口1
-    server: 879xhl1.hsspr5bu1-tw02.my777999.top
-    port: 34998
-    uuid: 33aefd89-3285-4347-9083-6249711f02e9
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点4
+    name: 美国CloudFlare节点2
     ws-opts:
       path: /
       headers:
@@ -2976,41 +2968,30 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 巴西圣保罗CloudFlare节点5
-    ws-opts:
-      path: /
-      headers:
-        host: De1.vmess.site.
-    server: 188.114.97.3
-    port: 80
-    uuid: b25f8da6-54a2-49b3-bacf-8403b4c36556
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 韩国+蘑菇主机BGP数据中心
+    server: 103.214.68.57
+    port: 10003
+    password: 6x8HcghsjS
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 北美地区+V2CROSS.COM
+    server: 23.150.152.53
+    port: 9101
+    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿州
+    server: 205.134.180.139
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsV2FHUFZGam1uYWc=
+    cipher: aes-128-gcm
   - type: ss
     name: 法国+OVH
     server: 51.77.53.200
-    port: 8119
-    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /
-      headers:
-        host: aliyun_hk1.cn2.free.hr
-    server: web.com
-    port: 2052
-    uuid: a1ec3211-b1ff-4e53-a729-e5b7b55567eb
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 意大利+V2CROSS.COM
-    server: 212.102.53.197
-    port: 443
-    password: YWVzLTEyOC1nY206c2hhZG93c29ja3M=
+    port: 8881
+    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
     cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
@@ -3323,12 +3304,11 @@ proxy-groups:
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省移动数据上网公共出口1
-      - 美国CloudFlare节点4
-      - 巴西圣保罗CloudFlare节点5
+      - 美国CloudFlare节点2
+      - 韩国+蘑菇主机BGP数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国+华盛顿州
       - 法国+OVH
-      - 美国CloudFlare节点8
-      - 意大利+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3640,12 +3620,11 @@ proxy-groups:
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省移动数据上网公共出口1
-      - 美国CloudFlare节点4
-      - 巴西圣保罗CloudFlare节点5
+      - 美国CloudFlare节点2
+      - 韩国+蘑菇主机BGP数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国+华盛顿州
       - 法国+OVH
-      - 美国CloudFlare节点8
-      - 意大利+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3956,12 +3935,11 @@ proxy-groups:
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省移动数据上网公共出口1
-      - 美国CloudFlare节点4
-      - 巴西圣保罗CloudFlare节点5
+      - 美国CloudFlare节点2
+      - 韩国+蘑菇主机BGP数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国+华盛顿州
       - 法国+OVH
-      - 美国CloudFlare节点8
-      - 意大利+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4304,12 +4282,11 @@ proxy-groups:
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 法国+OVH机房SAS硬盘BGP主机
-      - 浙江省移动数据上网公共出口1
-      - 美国CloudFlare节点4
-      - 巴西圣保罗CloudFlare节点5
+      - 美国CloudFlare节点2
+      - 韩国+蘑菇主机BGP数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国+华盛顿州
       - 法国+OVH
-      - 美国CloudFlare节点8
-      - 意大利+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
