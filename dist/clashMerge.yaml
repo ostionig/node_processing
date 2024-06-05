@@ -1,4 +1,4 @@
-# 更新时间 2024-06-04T19:13:48.899Z
+# 更新时间 2024-06-05T01:06:13.032Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -2951,48 +2951,68 @@ proxies:
     cipher: auto
     network: auto
   - type: ss
-    name: 法国+OVH机房SAS硬盘BGP主机
-    server: 149.202.82.172
-    port: 7307
-    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 8888
+    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
     cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿州昆西Microsoft公司
+    server: 51.143.145.42
+    port: 25611
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmelV2WWZmRWJwQjdlOXlIRzZBVEdL
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 韩国+V2CROSS.COM
+    server: 116.47.10.236
+    port: 27335
+    password: moist
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点2
+    name: 美国CloudFlare节点4
     ws-opts:
-      path: /
+      path: /?ed=2048&Telegram🇨🇳 @WangCai2
       headers:
-        host: hk07.hy-2.one
-    server: cf.hy2.one
-    port: 80
-    uuid: 7054ee51-8542-4c7d-bfb6-bea7f1e044e3
+        host: oiictw.yydsii.com
+    server: 104.19.47.178
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.107.226.146
+    port: 1230
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpINVMwaHZjeFJpI1lMbWdV
+    cipher: aes-128-gcm
   - type: trojan
-    name: 韩国+蘑菇主机BGP数据中心
-    server: 103.214.68.57
-    port: 10003
-    password: 6x8HcghsjS
+    name: 美国+CloudFlare节点
+    server: 104.19.171.3
+    port: 443
+    password: f0eb8c92ce8946aaba856569cff1a16b
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 23.150.152.53
-    port: 9101
-    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 美国+华盛顿州
-    server: 205.134.180.139
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsV2FHUFZGam1uYWc=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 法国+OVH
-    server: 51.77.53.200
-    port: 8881
-    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+惠普公司
+    server: 15.236.87.21
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点11
+    ws-opts:
+      path: /
+      headers:
+        host: aliyun_hk1.cn2.free.hr
+    server: web.com
+    port: 2052
+    uuid: a1ec3211-b1ff-4e53-a729-e5b7b55567eb
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3303,12 +3323,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国CloudFlare节点2
-      - 韩国+蘑菇主机BGP数据中心
-      - 北美地区+V2CROSS.COM
-      - 美国+华盛顿州
       - 法国+OVH
+      - 美国+华盛顿州昆西Microsoft公司
+      - 韩国+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国+华盛顿Cogent通信公司
+      - 美国+CloudFlare节点
+      - 美国+惠普公司
+      - 美国CloudFlare节点11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3619,12 +3641,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国CloudFlare节点2
-      - 韩国+蘑菇主机BGP数据中心
-      - 北美地区+V2CROSS.COM
-      - 美国+华盛顿州
       - 法国+OVH
+      - 美国+华盛顿州昆西Microsoft公司
+      - 韩国+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国+华盛顿Cogent通信公司
+      - 美国+CloudFlare节点
+      - 美国+惠普公司
+      - 美国CloudFlare节点11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3934,12 +3958,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国CloudFlare节点2
-      - 韩国+蘑菇主机BGP数据中心
-      - 北美地区+V2CROSS.COM
-      - 美国+华盛顿州
       - 法国+OVH
+      - 美国+华盛顿州昆西Microsoft公司
+      - 韩国+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国+华盛顿Cogent通信公司
+      - 美国+CloudFlare节点
+      - 美国+惠普公司
+      - 美国CloudFlare节点11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4281,12 +4307,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国CloudFlare节点2
-      - 韩国+蘑菇主机BGP数据中心
-      - 北美地区+V2CROSS.COM
-      - 美国+华盛顿州
       - 法国+OVH
+      - 美国+华盛顿州昆西Microsoft公司
+      - 韩国+V2CROSS.COM
+      - 美国CloudFlare节点4
+      - 美国+华盛顿Cogent通信公司
+      - 美国+CloudFlare节点
+      - 美国+惠普公司
+      - 美国CloudFlare节点11
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
