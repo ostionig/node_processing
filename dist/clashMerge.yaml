@@ -1,4 +1,4 @@
-# 更新时间 2024-06-05T07:19:02.624Z
+# 更新时间 2024-06-05T12:28:42.340Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3041,6 +3041,70 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: ss
+    name: 法国+OVH
+    server: 51.77.53.200
+    port: 6697
+    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
+    cipher: aes-128-gcm
+  - type: ss
+    name: 加拿大+安大略省多伦多BunnyCDN节点
+    server: 38.111.114.133
+    port: 5004
+    password: YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.77.51.1
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.217.214.190
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点9
+    ws-opts:
+      path: /
+      headers:
+        host: Asdfghjkl10.unique69.com.
+    server: 172.67.204.84
+    port: 2095
+    uuid: edf2bc84-8723-4c98-82d3-52a3a59875a4
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 德国+黑森州法兰克福AMazon数据中心
+    server: 3.121.254.99
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+V2CROSS.COM
+    server: 99.81.159.45
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点19
+    ws-opts:
+      path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+      headers:
+        host: Pl2.vmess.site.
+    server: 172.67.204.84
+    port: 80
+    uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3358,6 +3422,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH
+      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点9
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰+V2CROSS.COM
+      - 美国CloudFlare节点19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3675,6 +3747,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH
+      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点9
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰+V2CROSS.COM
+      - 美国CloudFlare节点19
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3991,6 +4071,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH
+      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点9
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰+V2CROSS.COM
+      - 美国CloudFlare节点19
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4339,6 +4427,14 @@ proxy-groups:
       - 🇸🇪_SE_瑞典
       - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 法国+OVH
+      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点9
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰+V2CROSS.COM
+      - 美国CloudFlare节点19
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
