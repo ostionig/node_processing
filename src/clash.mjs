@@ -60,6 +60,25 @@ export function getClashNodesByUrl(url) {
     })
 }
 
+/**
+ * @param {string} url
+ */
+export function getClashFileByUrl(url) {
+  return fetch(url)
+    .then((res) => {
+      return res.text();
+    }).then(content => {
+      const conf = yaml.load(content);
+      // if(hooks[url]){
+      //   return hooks[url](conf.proxies);
+      // }
+      return conf;
+    }).catch(e => {
+      logger.error("fetch fail at url: ", url, e);
+      return [];
+    })
+}
+
 export async function mergeClashNodes(urls) {
   const allNode = await Promise.all(urls.map(url => getClashNodesByUrl(url)));
 

@@ -2,6 +2,7 @@ import { clashList } from "./resource/clash.mjs";
 import { v2rayList } from "./resource/v2ray.mjs";
 import {
   generateClashConf,
+  getClashFileByUrl,
   getClashNodesByContent,
   mergeClashNodes,
 } from "./src/clash.mjs";
@@ -12,6 +13,9 @@ import { testSpeed } from "./src/speedTest.mjs";
 import { batchV2rayToClashNodes } from "./src/v2ray.mjs";
 import uuidValidate from 'uuid-validate';
 import { to } from "await-to-js"
+import pkg from 'lodash';
+const { last } = pkg;
+import jsYaml from "js-yaml";
 
 async function task1() {
   const [nodeListErr, nodeList] = await to(mergeClashNodes(clashList));
@@ -59,3 +63,33 @@ async function task1() {
 }
 
 task1();
+
+function getFileName(url){
+  const arr = url.split("/");
+  let fileName = last(arr);
+
+  if(fileName.includes(".yaml")){
+    return fileName;
+  }else{
+    return fileName + ".yaml"
+  }
+}
+
+// copy speednode and add custom rules
+async function task2(){
+  await Promise.all(clashList.map(async (url)=>{
+    const config = await getClashFileByUrl(url);
+
+    const fileName = getFileName(url);
+
+    config.rules.unshift("DOMAIN-KEYWORD,local,DIRECT");
+    
+    const fileContent = jsYaml.dump(config);
+
+    generateFile(fileName, fileContent);
+  }))
+
+  
+}
+
+task2();
