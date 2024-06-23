@@ -1,4 +1,4 @@
-# 更新时间 2024-06-23T13:06:12.847Z
+# 更新时间 2024-06-23T18:18:27.949Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3468,8 +3468,73 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 24.144.79.122
+    port: 1080
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0OGRxd1F5TTM0Y3lscU8rcVFwTCtiWWlaeUJITzQ3Sk1hMDdUSkNQNGVjPQ==
+    cipher: aes-128-gcm
   - type: vmess
-    name: 广东省广州市移动2
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.199.69
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 日本东京Amazon数据中心4
+    server: jp02.zeatyler.online
+    port: 80
+    uuid: 4c8e9532-979d-4c3c-b16c-828ab7f85c01
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+俄勒冈州波特兰Amazon数据中心
+    server: 54.70.198.130
+    port: 16930
+    password: QYe7rEYZnW8X
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点6
+    ws-opts:
+      path: /video/X37qXHip
+      headers:
+        host: 6Sn8mFtTjp3.yofnhkfc.xyz
+    server: cfcdn3.sanfencdn9.com
+    port: 80
+    uuid: fec25e7b-3e30-4702-9b93-62ed3849a9d7
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点8
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.142
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 江苏省徐州市+移动
+    server: 223.113.54.154
+    port: 23621
+    password: RmdXQRXg
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 广东省广州市移动11
     ws-opts:
       path: /
     server: 120.232.153.37
@@ -3478,89 +3543,75 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.67.239.157
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.37.162.95
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 172.66.40.117
-    port: 443
-    password: e16e9768-240f-4ff2-8c29-36d220ed2aa4
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 日本+V2CROSS.COM
-    server: bgroup.node4.s.nodelist-gfwairport2.top
-    port: 50001
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyMTU1MTQ1YS1iMWI1LTQ0M2EtODk3Ny02NzBmNmJkMTBmMDI=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 英国+Microsoft公司
-    server: 51.13.182.130
-    port: 48562
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplSHBxNGNnWHptV1RrSTJ4S04zdzU0
-    cipher: aes-128-gcm
   - type: vmess
-    name: 广东省广州市移动9
+    name: 广东省移动16
     ws-opts:
       path: /
-    server: 120.232.153.40
-    port: 53942
+    server: 183.240.235.164
+    port: 55908
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点17
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.186
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+惠普公司
-    server: 16.16.190.37
+    name: 美国+Xerox
+    server: 13.50.220.135
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: 78.153.139.190
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotTzhXcTdjMV9CdXZ4Y2lrOHNELWR3
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 18.157.60.241
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 乌克兰+V2CROSS.COM
+    server: 141.105.130.9
+    port: 27685
+    password: >-
+      MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206cjY0YW1YakN2WHpTYkJuNlpUVHRRbUp3N3pPcGY4SmRUL2ZvbUZpM2tZbz06dHhrUTNWRmJtM0JxVnhzM0hEbTJRZUNybWJ2WmxQT1NFMkNuWm8zRFVtbz0=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 北美地区+V2CROSS.COM
+    server: 23.157.40.101
+    port: 8008
+    password: YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=
+    cipher: aes-128-gcm
   - type: vmess
-    name: 海南省海口市电信14
+    name: 美国CloudFlare节点27
     ws-opts:
-      path: /zh-cn
+      path: /
       headers:
-        host: mmjp11.micloud.buzz
-    server: mmjp11.micloud.buzz
-    port: 46011
-    uuid: e0affd30-6517-4f32-a2bd-71faab70b40a
+        host: oiictw.yydsii.com
+    server: 172.67.185.64
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 广东省+移动
-    server: tw05.network-cdn-gw.cc
-    port: 46605
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmZjk3YTg2OS1iYzRjLTQ2ZTktOGQ0Ni0zM2RkOWZkNzRjMTI=
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点19
-    ws-opts:
-      path: GKI7QXj9evft2rWGqHh74mj
-    server: fonts.com
-    port: 443
-    uuid: e16e9768-240f-4ff2-8c29-36d220ed2aa4
-    alterId: 0
-    cipher: auto
-    network: grpc
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点21
+    name: 美国CloudFlare节点28
     ws-opts:
       path: /
       headers:
@@ -3572,62 +3623,12 @@ proxies:
     cipher: auto
     network: ws
   - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 3.8.61.101
-    port: 22222
-    password: telegram-id-privatevpns
+    name: 日本东京+Amazon数据中心
+    server: 52.199.160.184
+    port: 16946
+    password: MysJZN4aqvLt
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点25
-    ws-opts:
-      path: /
-      headers:
-        host: oiictw.yydsii.com
-    server: 172.67.185.64
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 美国+俄勒冈州波特兰Amazon西海岸数据中心
-    server: 50.112.25.159
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 江苏省徐州市+移动
-    server: 223.113.54.154
-    port: 23621
-    password: RmdXQRXg
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 海南省海口市电信30
-    ws-opts:
-      path: /zh-cn
-      headers:
-        host: mmus36.micloud.buzz
-    server: mmus36.micloud.buzz
-    port: 46036
-    uuid: e0affd30-6517-4f32-a2bd-71faab70b40a
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点32
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: usakansas.xlb8.eu.org
-    server: 104.19.42.49
-    port: 8080
-    uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3993,24 +3994,24 @@ proxy-groups:
       - 🇺🇸_US_美国_17
       - 🇨🇦_CA_加拿大_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动2
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 英国+Microsoft公司
-      - 广东省广州市移动9
-      - 美国+惠普公司
-      - 海南省海口市电信14
-      - 广东省+移动
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 英国+伦敦Amazon数据中心
-      - 美国CloudFlare节点25
-      - 美国+俄勒冈州波特兰Amazon西海岸数据中心
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 日本东京Amazon数据中心4
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
       - 江苏省徐州市+移动
-      - 海南省海口市电信30
-      - 美国CloudFlare节点32
+      - 广东省广州市移动11
+      - 广东省移动16
+      - 美国CloudFlare节点17
+      - 美国+Xerox
+      - 俄罗斯+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
+      - 日本东京+Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4376,24 +4377,24 @@ proxy-groups:
       - 🇺🇸_US_美国_17
       - 🇨🇦_CA_加拿大_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动2
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 英国+Microsoft公司
-      - 广东省广州市移动9
-      - 美国+惠普公司
-      - 海南省海口市电信14
-      - 广东省+移动
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 英国+伦敦Amazon数据中心
-      - 美国CloudFlare节点25
-      - 美国+俄勒冈州波特兰Amazon西海岸数据中心
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 日本东京Amazon数据中心4
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
       - 江苏省徐州市+移动
-      - 海南省海口市电信30
-      - 美国CloudFlare节点32
+      - 广东省广州市移动11
+      - 广东省移动16
+      - 美国CloudFlare节点17
+      - 美国+Xerox
+      - 俄罗斯+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
+      - 日本东京+Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4758,24 +4759,24 @@ proxy-groups:
       - 🇺🇸_US_美国_17
       - 🇨🇦_CA_加拿大_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动2
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 英国+Microsoft公司
-      - 广东省广州市移动9
-      - 美国+惠普公司
-      - 海南省海口市电信14
-      - 广东省+移动
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 英国+伦敦Amazon数据中心
-      - 美国CloudFlare节点25
-      - 美国+俄勒冈州波特兰Amazon西海岸数据中心
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 日本东京Amazon数据中心4
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
       - 江苏省徐州市+移动
-      - 海南省海口市电信30
-      - 美国CloudFlare节点32
+      - 广东省广州市移动11
+      - 广东省移动16
+      - 美国CloudFlare节点17
+      - 美国+Xerox
+      - 俄罗斯+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
+      - 日本东京+Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5172,24 +5173,24 @@ proxy-groups:
       - 🇺🇸_US_美国_17
       - 🇨🇦_CA_加拿大_2
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 广东省广州市移动2
-      - 美国+Amazon+EC2服务器
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 英国+Microsoft公司
-      - 广东省广州市移动9
-      - 美国+惠普公司
-      - 海南省海口市电信14
-      - 广东省+移动
-      - 美国CloudFlare节点19
-      - 美国CloudFlare节点21
-      - 英国+伦敦Amazon数据中心
-      - 美国CloudFlare节点25
-      - 美国+俄勒冈州波特兰Amazon西海岸数据中心
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 日本东京Amazon数据中心4
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 美国CloudFlare节点6
+      - 美国CloudFlare节点8
       - 江苏省徐州市+移动
-      - 海南省海口市电信30
-      - 美国CloudFlare节点32
+      - 广东省广州市移动11
+      - 广东省移动16
+      - 美国CloudFlare节点17
+      - 美国+Xerox
+      - 俄罗斯+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 乌克兰+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
+      - 日本东京+Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
