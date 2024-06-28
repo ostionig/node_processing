@@ -1,4 +1,4 @@
-# 更新时间 2024-06-28T06:58:41.650Z
+# 更新时间 2024-06-28T07:19:29.925Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3467,14 +3467,15 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 美国+新泽西州皮特卡维Choopa数据中心
-    server: 140.82.2.66
-    port: 20088
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTrapsq6bNmsVEoxcThERmfHqsel
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 韩国+首尔Amazon数据中心
+    server: prispy.koreanbbq.link
+    port: 443
+    password: IFZ8Ya5xpEwNTxF6BCjCql7nXgCDFSRlAlX963CpeSSuZ34leSzDRBpgKea237DO88nzy
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 广东省东莞市移动7
+    name: 广东省东莞市移动6
     ws-opts:
       path: /
       headers:
@@ -3486,7 +3487,32 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点9
+    name: 美国CloudFlare节点7
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.126
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点8
+    ws-opts:
+      path: /
+      headers:
+        host: hk01.linkitnow.net
+    server: 104.19.48.8
+    port: 8443
+    uuid: 39135a39-e6ca-43df-a360-d859eea58d86
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点10
     ws-opts:
       path: /
       headers:
@@ -3858,9 +3884,11 @@ proxy-groups:
       - 未知_3
       - 🇺🇸_US_美国_8
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州皮特卡维Choopa数据中心
-      - 广东省东莞市移动7
-      - 美国CloudFlare节点9
+      - 韩国+首尔Amazon数据中心
+      - 广东省东莞市移动6
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4221,9 +4249,11 @@ proxy-groups:
       - 未知_3
       - 🇺🇸_US_美国_8
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州皮特卡维Choopa数据中心
-      - 广东省东莞市移动7
-      - 美国CloudFlare节点9
+      - 韩国+首尔Amazon数据中心
+      - 广东省东莞市移动6
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4583,9 +4613,11 @@ proxy-groups:
       - 未知_3
       - 🇺🇸_US_美国_8
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州皮特卡维Choopa数据中心
-      - 广东省东莞市移动7
-      - 美国CloudFlare节点9
+      - 韩国+首尔Amazon数据中心
+      - 广东省东莞市移动6
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4977,9 +5009,11 @@ proxy-groups:
       - 未知_3
       - 🇺🇸_US_美国_8
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+新泽西州皮特卡维Choopa数据中心
-      - 广东省东莞市移动7
-      - 美国CloudFlare节点9
+      - 韩国+首尔Amazon数据中心
+      - 广东省东莞市移动6
+      - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
+      - 美国CloudFlare节点10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
