@@ -1,4 +1,4 @@
-# 更新时间 2024-07-05T13:13:27.227Z
+# 更新时间 2024-07-05T18:19:57.539Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3864,24 +3864,36 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 加拿大+安大略省多伦多BunnyCDN节点
-    server: 38.111.114.161
-    port: 5498
-    password: YWVzLTI1Ni1nY206bEdxczk1UWtGSG8yTlY=
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点1
+    name: 美国CloudFlare公司CDN节点(shopify)1
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: cdn2.freegradely.xyz
-    server: 172.64.175.223
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+        host: ip004.dtku47.xyz
+    server: 23.227.38.6
+    port: 2086
+    uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip1.1457230.xyz
+    server: 104.19.45.35
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 荷兰+V2CROSS.COM
+    server: 193.29.139.251
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4266,8 +4278,9 @@ proxy-groups:
       - 🇺🇸_US_美国_13
       - 🇺🇸_US_美国_15
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+安大略省多伦多BunnyCDN节点
-      - 美国CloudFlare节点1
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 美国CloudFlare节点2
+      - 荷兰+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4652,8 +4665,9 @@ proxy-groups:
       - 🇺🇸_US_美国_13
       - 🇺🇸_US_美国_15
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+安大略省多伦多BunnyCDN节点
-      - 美国CloudFlare节点1
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 美国CloudFlare节点2
+      - 荷兰+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5037,8 +5051,9 @@ proxy-groups:
       - 🇺🇸_US_美国_13
       - 🇺🇸_US_美国_15
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+安大略省多伦多BunnyCDN节点
-      - 美国CloudFlare节点1
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 美国CloudFlare节点2
+      - 荷兰+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5454,8 +5469,9 @@ proxy-groups:
       - 🇺🇸_US_美国_13
       - 🇺🇸_US_美国_15
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+安大略省多伦多BunnyCDN节点
-      - 美国CloudFlare节点1
+      - 美国CloudFlare公司CDN节点(shopify)1
+      - 美国CloudFlare节点2
+      - 荷兰+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
