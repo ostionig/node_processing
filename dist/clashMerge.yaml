@@ -1,4 +1,4 @@
-# 更新时间 2024-07-10T07:20:42.302Z
+# 更新时间 2024-07-10T12:30:19.191Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4766,14 +4766,26 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点4
+    name: 美国CloudFlare节点2
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: cdn1.freegradely.xyz
-    server: 104.19.42.49
+    server: 104.19.59.89
     port: 2052
     uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip14.freegradely.xyz
+    server: 104.19.38.8
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
     cipher: auto
     network: ws
@@ -5210,7 +5222,8 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5644,7 +5657,8 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6077,7 +6091,8 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6542,7 +6557,8 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点4
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
