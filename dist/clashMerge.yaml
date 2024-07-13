@@ -1,4 +1,4 @@
-# 更新时间 2024-07-13T18:53:41.352Z
+# 更新时间 2024-07-13T19:09:54.306Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3042,14 +3042,26 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点2
+    name: 美国CloudFlare节点0
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip14.freegradely.xyz
-    server: 104.26.7.132
+        host: ip2.1457230.xyz
+    server: 104.19.47.80
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai2
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.223
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
@@ -3058,68 +3070,29 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: cdn3.freegradely.xyz
-    server: 104.19.21.240
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点4
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.1457230.xyz
-    server: 104.19.47.45
+        host: ip13.freegradely.xyz
+    server: 104.19.46.22
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 美国CloudFlare节点6
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: cdn2.freegradely.xyz
-    server: 104.26.7.152
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    network: ws
   - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 35.156.143.6
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.72.86.118
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: /
-      headers:
-        host: oiictw.yydsii.com
-    server: 172.67.169.189
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    name: 美国CloudFlare节点5
+    server: 172.64.32.154
+    port: 2087
+    uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
     alterId: 0
     cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点9
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: cdn3.freegradely.xyz
-    server: 104.19.42.79
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    network: ws
+    network: grpc
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3444,13 +3417,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点6
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3775,13 +3746,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点6
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点5
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4105,13 +4074,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点6
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点5
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4467,13 +4434,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点2
       - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点6
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国CloudFlare节点8
-      - 美国CloudFlare节点9
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国CloudFlare节点5
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
