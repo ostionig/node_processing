@@ -1,4 +1,4 @@
-# 更新时间 2024-07-18T18:58:38.124Z
+# 更新时间 2024-07-18T19:17:21.073Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3915,18 +3915,20 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 美国CloudFlare节点0
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.1457230.xyz
-    server: 172.64.166.2
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 法国+国际航空电讯集团公司(SITA)
+    server: 57.180.64.122
+    port: 12942
+    password: KIl0KMGEFCzB
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 德国+黑森州法兰克福AMazon数据中心
+    server: 3.120.114.36
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点2
     ws-opts:
@@ -3939,27 +3941,18 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 德国+黑森州法兰克福AMazon数据中心
-    server: 3.120.114.36
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 法国+国际航空电讯集团公司(SITA)
-    server: 57.180.64.122
-    port: 12942
-    password: KIl0KMGEFCzB
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 德国+黑森州法兰克福Amazon数据中心
-    server: 18.184.47.16
-    port: 12921
-    password: 9TcWgIja8p10
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.1457230.xyz
+    server: 104.19.46.33
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: vmess
     name: 美国CloudFlare节点6
     ws-opts:
@@ -3972,13 +3965,20 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 18.184.47.16
+    port: 12921
+    password: 9TcWgIja8p10
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点8
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip2.1457230.xyz
-    server: 104.19.46.33
+    server: 172.64.166.2
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
@@ -4365,12 +4365,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点0
-      - 美国CloudFlare节点2
-      - 德国+黑森州法兰克福AMazon数据中心
       - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 美国CloudFlare节点6
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点8
   - name: ♻️ 自动选择
     type: url-test
@@ -4753,12 +4753,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点0
-      - 美国CloudFlare节点2
-      - 德国+黑森州法兰克福AMazon数据中心
       - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 美国CloudFlare节点6
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点8
   - name: 🌍 国外媒体
     type: select
@@ -5140,12 +5140,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点0
-      - 美国CloudFlare节点2
-      - 德国+黑森州法兰克福AMazon数据中心
       - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 美国CloudFlare节点6
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点8
   - name: 📲 电报信息
     type: select
@@ -5559,12 +5559,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国CloudFlare节点0
-      - 美国CloudFlare节点2
-      - 德国+黑森州法兰克福AMazon数据中心
       - 法国+国际航空电讯集团公司(SITA)
-      - 德国+黑森州法兰克福Amazon数据中心
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 美国CloudFlare节点6
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点8
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
