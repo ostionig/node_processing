@@ -1,4 +1,4 @@
-# 更新时间 2024-07-20T18:56:57.973Z
+# 更新时间 2024-07-20T19:13:33.786Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3964,53 +3964,81 @@ proxies:
   - type: vmess
     name: 美国CloudFlare节点0
     ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 172.67.199.115
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+惠普HP
+    server: 16.170.113.120
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: /
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.18.6.253
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 印度V2CROSS.COM3
+    ws-opts:
+      path: /vpnjantit
+    server: 103.248.61.51
+    port: 10000
+    uuid: 64d0cb9e-42be-11ef-9311-5e730d7ebdbb
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点4
+    ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip11.freegradely.xyz
-    server: 104.20.17.186
+        host: ip2.1457230.xyz
+    server: 104.19.59.89
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点1
-    ws-opts:
-      path: /
-      headers:
-        host: onea.flha.ru
-    server: 104.19.45.129
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点3
+    name: 美国CloudFlare节点5
     ws-opts:
       path: /vmess
       headers:
         host: ru2.vmess.site
-    server: 198.41.219.122
+    server: 104.25.91.195
     port: 80
     uuid: 0c367da7-e882-4727-8c29-ecb0bda90528
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点5
+    name: 美国V2CROSS.COM6
     ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: cdn1.freegradely.xyz
-    server: 104.19.32.216
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      path: /path/112105043006
+    server: 69.80.226.37
+    port: 31004
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: ws
+    tls: true
   - type: vmess
-    name: 美国CloudFlare节点6
+    name: 美国CloudFlare节点7
     ws-opts:
       path: github.com/Alvin9999
       headers:
@@ -4022,111 +4050,31 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点8
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip13.freegradely.xyz
-    server: 104.19.46.33
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
     name: 美国CloudFlare节点9
     ws-opts:
-      path: /
+      path: github.com/Alvin9999
       headers:
-        host: onea.flha.ru
-    server: 104.19.45.238
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+        host: cdn1.freegradely.xyz
+    server: 104.19.58.175
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.79.134.7
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点12
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai2
-      headers:
-        host: oiictw.yydsii.com
-    server: 104.19.47.58
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点13
+    name: 美国CloudFlare节点11
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip2.1457230.xyz
-    server: 172.64.233.7
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 广东省广州市+移动
-    server: kis7as.9sjd2dkesl2.shop
-    port: 46983
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYb1lyckVmWll4eEhMM0FJ
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 俄罗斯V2CROSS.COM15
-    server: 193.124.46.147
-    port: 37632
-    uuid: 3111d980-aeed-44ef-abaa-545a0d6bbbfe
-    alterId: 0
-    cipher: auto
-    network: auto
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点16
-    ws-opts:
-      path: /
-      headers:
-        host: onea.flha.ru
-    server: 104.19.45.73
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点17
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.1457230.xyz
-    server: 172.64.233.17
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点18
-    ws-opts:
-      path: /
-      headers:
-        host: onea.flha.ru
-    server: 104.19.45.191
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点20
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip11.freegradely.xyz
-    server: 172.64.175.213
+    server: 104.17.106.151
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
@@ -4134,71 +4082,50 @@ proxies:
     network: ws
   - type: ss
     name: 美国+V2CROSS.COM
-    server: 45.158.171.138
-    port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOGJ0OWZZMFFzTFM2ZUxuWFVlMFlt
-    cipher: aes-128-gcm
-  - type: ss
-    name: 俄罗斯+V2CROSS.COM
-    server: 62.133.63.16
-    port: 33188
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsYVdNNmFGVURZVllkSktQWTZqSjlX
+    server: 69.50.95.53
+    port: 6697
+    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点29
-    ws-opts:
-      path: /
-      headers:
-        host: oiictw.yydsii.com
-    server: 172.67.185.3
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点32
-    ws-opts:
-      path: /
-      headers:
-        host: onea.flha.ru
-    server: 104.19.45.166
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点33
-    ws-opts:
-      path: /ws?ed=2560
-      headers:
-        host: m2-us3.m2network.icu
-    server: m2-us3.m2network.icu
-    port: 80
-    uuid: 27682278-393e-4a80-8ad0-bf08bbc27833
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点36
+    name: 美国CloudFlare节点14
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip14.freegradely.xyz
-    server: 104.19.47.77
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+        host: cdn1.freegradely.xyz
+    server: 104.18.57.111
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点37
+    name: 美国CloudFlare节点15
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: cdn1.freegradely.xyz
+    server: 104.19.55.49
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 法国国际航空电讯集团公司(SITA)16
+    server: jp-1.dugusite3.top
+    port: 5061
+    uuid: 48630e14-5997-3daf-bd5a-6b1a9bcaae7c
+    alterId: 0
+    cipher: auto
+    network: auto
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点17
     ws-opts:
       path: /
       headers:
-        host: hk01.leleles.us
-    server: 172.67.81.88
+        host: hk01.linkitnow.net
+    server: 104.17.70.188
     port: 8443
     uuid: fa937016-d2a6-4efa-a940-8f3aa5d279b1
     alterId: 0
@@ -4206,62 +4133,43 @@ proxies:
     network: ws
     tls: true
   - type: vmess
-    name: 美国CloudFlare节点38
+    name: 美国CloudFlare节点18
     ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai2
+      path: /
       headers:
         host: oiictw.yydsii.com
-    server: 104.19.47.250
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 加拿大+Bell
-    server: 142.171.219.14
-    port: 21156
-    password: fdc65525-e161-3356-9992-f0446eff60fc
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点41
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: cdn2.freegradely.xyz
-    server: 104.19.32.226
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点42
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.1457230.xyz
-    server: 104.19.21.71
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点45
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai2
-      headers:
-        host: oiictw.yydsii.com
-    server: 104.19.47.254
+    server: 172.67.172.141
     port: 8080
     uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点46
+    name: 加拿大V2CROSS.COM19
+    ws-opts:
+      path: /2jLawPUqb4le83LAqUg
+      headers:
+        host: pokh.torii-leather.com
+    server: edge.get.media.laserbylily.ca
+    port: 80
+    uuid: bd831106-94e1-4ef3-b473-c1a8418ca107
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点20
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai2
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.207
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点21
     ws-opts:
       path: github.com/Alvin9999
       headers:
@@ -4273,145 +4181,223 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点48
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip14.freegradely.xyz
-    server: 104.19.42.49
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点49
-    ws-opts:
-      path: /ivideos.sbs/linkws
-      headers:
-        host: vmess.taxar71054.workers.dev
-    server: 104.16.61.8
-    port: 8080
-    uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点50
+    name: 美国CloudFlare节点22
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip2.1457230.xyz
-    server: 172.64.233.35
+    server: 104.19.46.63
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点51
+    name: 美国CloudFlare节点23
     ws-opts:
-      path: /?ed=2048
+      path: /
       headers:
         host: oiictw.yydsii.com
-    server: 104.19.47.126
+    server: 104.18.6.63
     port: 8080
     uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点52
+    name: 美国CloudFlare节点25
     ws-opts:
-      path: /?ed=2048
+      path: /@config_shahin,@config_shahin,@config_shahin,@config_shahin?ed=80
+      headers:
+        host: >-
+          2.irvn.debian.6.i.6.6.fxp.debian.org.speedtest.net.列列男事的事列上赛男.ghormehsabzi.cyou.
+    server: 104.17.148.22
+    port: 2082
+    uuid: 1368893d-58cb-4a25-9105-a5fa3f6a1a88
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点26
+    ws-opts:
+      path: /@config_shahin,@config_shahin,@config_shahin,@config_shahin?ed=80
+      headers:
+        host: >-
+          2.irvn.debian.6.i.6.6.fxp.debian.org.speedtest.net.列列男事的事列上赛男.ghormehsabzi.cyou.
+    server: www.speedtest.net
+    port: 2082
+    uuid: 1368893d-58cb-4a25-9105-a5fa3f6a1a88
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 日本+V2CROSS.COM
+    server: 43.206.219.186
+    port: 17003
+    password: sm4BMPHc12w0
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国加利福尼亚州洛杉矶市SharkTech数据中心29
+    ws-opts:
+      path: /path/191019072927
+      headers:
+        host: www.15314695.xyz
+    server: 107.167.20.182
+    port: 30001
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点30
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip14.freegradely.xyz
+    server: 104.19.47.27
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国华盛顿Cogent通信公司32
+    ws-opts:
+      path: /path/220234013533
+    server: 38.33.44.20
+    port: 38000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点33
+    ws-opts:
+      path: /
       headers:
         host: oiictw.yydsii.com
-    server: 104.19.47.155
+    server: 172.67.172.96
     port: 8080
     uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点53
+    name: 美国CloudFlare节点34
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: cdn3.freegradely.xyz
-    server: 172.67.74.122
+    server: 104.19.47.75
     port: 2052
     uuid: d6b6d982-d52f-465a-b988-85670b23f64a
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点54
+    name: 美国V2CROSS.COM35
     ws-opts:
-      path: /
-      headers:
-        host: hk01.linkitnow.net
-    server: 172.67.188.95
-    port: 8443
-    uuid: fa937016-d2a6-4efa-a940-8f3aa5d279b1
+      path: /path/1719834064422
+    server: 38.28.128.246
+    port: 37006
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: ws
     tls: true
-  - type: ss
-    name: 加拿大+安大略省多伦多BunnyCDN节点
-    server: 38.111.114.133
-    port: 5601
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点58
+    name: 伊朗V2CROSS.COM37
+    ws-opts:
+      path: /linkws
+      headers:
+        host: beyonddsz.cfd
+    server: beyonddsz.cfd
+    port: 443
+    uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点38
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.1457230.xyz
+    server: 172.64.233.17
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点39
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: cdn1.freegradely.xyz
+    server: 104.20.17.186
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点40
     ws-opts:
       path: /
       headers:
         host: onea.flha.ru
-    server: 104.19.45.240
+    server: 104.19.45.241
     port: 2095
     uuid: 7a737f41-b792-4260-94ff-3d864da67b80
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国华盛顿Cogent通信公司62
+    name: 美国CloudFlare节点41
     ws-opts:
-      path: /path/340434130032
+      path: /
       headers:
-        host: www.23179753.xyz
-    server: 38.14.107.233
-    port: 38003
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+        host: onea.flha.ru
+    server: 104.19.45.194
+    port: 2095
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.21.47.176
-    port: 443
-    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 广东省广州市移动65
+    name: 法国OVH44
     ws-opts:
-      path: /
-    server: 183.236.51.23
-    port: 45020
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      path: /vpnjantit
+    server: 51.77.200.55
+    port: 10000
+    uuid: 329ca152-42be-11ef-83f1-6bbc07c8700f
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
   - type: vmess
-    name: 美国CloudFlare节点66
+    name: 美国CloudFlare节点45
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai2
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.199
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点47
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip14.freegradely.xyz
-    server: 104.19.47.65
+        host: ip5-4.freegradely.xyz
+    server: 104.26.0.50
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
@@ -4424,115 +4410,105 @@ proxies:
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 美国+惠普HP
-    server: 15.204.87.225
-    port: 8118
-    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
-    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点70
+    name: 美国CloudFlare节点49
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai2
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.164
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点50
     ws-opts:
       path: /
       headers:
         host: onea.flha.ru
-    server: 104.19.45.209
+    server: 104.19.45.161
     port: 2095
     uuid: 7a737f41-b792-4260-94ff-3d864da67b80
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点71
+    name: 加拿大TELUS52
     ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: cdn2.freegradely.xyz
-    server: 172.64.99.32
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省广州市移动72
-    ws-opts:
-      path: /
-    server: 183.236.51.23
-    port: 51707
+      path: /path/023114310920
+    server: 74.48.79.5
+    port: 31003
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点73
-    ws-opts:
-      path: /
-      headers:
-        host: oiictw.yydsii.com
-    server: 172.67.172.176
-    port: 8080
-    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-    alterId: 0
-    cipher: auto
     network: ws
+    tls: true
+  - type: trojan
+    name: 日本东京+Amazon数据中心
+    server: 52.197.246.185
+    port: 17007
+    password: yLwNXD1PGjzZ
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点74
+    name: 美国CloudFlare节点54
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: cdn3.freegradely.xyz
-    server: 104.19.42.79
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点77
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.1457230.xyz
-    server: 104.19.47.22
+        host: ip1.1789034.xyz
+    server: russia.com
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点78
+    name: 美国CloudFlare节点55
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳 @WangCai2
       headers:
         host: oiictw.yydsii.com
-    server: 104.19.47.149
+    server: 104.19.47.232
     port: 8080
     uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点79
+    name: 美国CloudFlare节点56
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai2
+      headers:
+        host: oiictw.yydsii.com
+    server: 104.19.47.211
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点58
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip13.freegradely.xyz
-    server: 104.19.45.19
+        host: ip5-4.freegradely.xyz
+    server: 104.19.38.88
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点80
+    name: 美国CloudFlare节点60
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: cdn1.freegradely.xyz
-    server: 104.19.21.63
-    port: 2052
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+        host: ip14.freegradely.xyz
+    server: 104.19.47.65
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
     alterId: 0
     cipher: auto
     network: ws
@@ -4921,57 +4897,54 @@ proxy-groups:
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点1
-      - 美国CloudFlare节点3
+      - 美国+惠普HP
+      - 美国CloudFlare节点2
+      - 印度V2CROSS.COM3
+      - 美国CloudFlare节点4
       - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点8
+      - 美国V2CROSS.COM6
+      - 美国CloudFlare节点7
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 俄罗斯V2CROSS.COM15
-      - 美国CloudFlare节点16
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点11
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 法国国际航空电讯集团公司(SITA)16
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
+      - 加拿大V2CROSS.COM19
       - 美国CloudFlare节点20
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国CloudFlare节点32
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点26
+      - 日本+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶市SharkTech数据中心29
+      - 美国CloudFlare节点30
+      - 美国华盛顿Cogent通信公司32
       - 美国CloudFlare节点33
-      - 美国CloudFlare节点36
-      - 美国CloudFlare节点37
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM35
+      - 伊朗V2CROSS.COM37
       - 美国CloudFlare节点38
-      - 加拿大+Bell
+      - 美国CloudFlare节点39
+      - 美国CloudFlare节点40
       - 美国CloudFlare节点41
-      - 美国CloudFlare节点42
+      - 法国OVH44
       - 美国CloudFlare节点45
-      - 美国CloudFlare节点46
-      - 美国CloudFlare节点48
+      - 美国CloudFlare节点47
+      - 英国+社会保险安全部
       - 美国CloudFlare节点49
       - 美国CloudFlare节点50
-      - 美国CloudFlare节点51
-      - 美国CloudFlare节点52
-      - 美国CloudFlare节点53
+      - 加拿大TELUS52
+      - 日本东京+Amazon数据中心
       - 美国CloudFlare节点54
-      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国CloudFlare节点55
+      - 美国CloudFlare节点56
       - 美国CloudFlare节点58
-      - 美国华盛顿Cogent通信公司62
-      - 美国+CloudFlare节点
-      - 广东省广州市移动65
-      - 美国CloudFlare节点66
-      - 英国+社会保险安全部
-      - 美国+惠普HP
-      - 美国CloudFlare节点70
-      - 美国CloudFlare节点71
-      - 广东省广州市移动72
-      - 美国CloudFlare节点73
-      - 美国CloudFlare节点74
-      - 美国CloudFlare节点77
-      - 美国CloudFlare节点78
-      - 美国CloudFlare节点79
-      - 美国CloudFlare节点80
+      - 美国CloudFlare节点60
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5357,57 +5330,54 @@ proxy-groups:
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点1
-      - 美国CloudFlare节点3
+      - 美国+惠普HP
+      - 美国CloudFlare节点2
+      - 印度V2CROSS.COM3
+      - 美国CloudFlare节点4
       - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点8
+      - 美国V2CROSS.COM6
+      - 美国CloudFlare节点7
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 俄罗斯V2CROSS.COM15
-      - 美国CloudFlare节点16
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点11
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 法国国际航空电讯集团公司(SITA)16
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
+      - 加拿大V2CROSS.COM19
       - 美国CloudFlare节点20
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国CloudFlare节点32
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点26
+      - 日本+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶市SharkTech数据中心29
+      - 美国CloudFlare节点30
+      - 美国华盛顿Cogent通信公司32
       - 美国CloudFlare节点33
-      - 美国CloudFlare节点36
-      - 美国CloudFlare节点37
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM35
+      - 伊朗V2CROSS.COM37
       - 美国CloudFlare节点38
-      - 加拿大+Bell
+      - 美国CloudFlare节点39
+      - 美国CloudFlare节点40
       - 美国CloudFlare节点41
-      - 美国CloudFlare节点42
+      - 法国OVH44
       - 美国CloudFlare节点45
-      - 美国CloudFlare节点46
-      - 美国CloudFlare节点48
+      - 美国CloudFlare节点47
+      - 英国+社会保险安全部
       - 美国CloudFlare节点49
       - 美国CloudFlare节点50
-      - 美国CloudFlare节点51
-      - 美国CloudFlare节点52
-      - 美国CloudFlare节点53
+      - 加拿大TELUS52
+      - 日本东京+Amazon数据中心
       - 美国CloudFlare节点54
-      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国CloudFlare节点55
+      - 美国CloudFlare节点56
       - 美国CloudFlare节点58
-      - 美国华盛顿Cogent通信公司62
-      - 美国+CloudFlare节点
-      - 广东省广州市移动65
-      - 美国CloudFlare节点66
-      - 英国+社会保险安全部
-      - 美国+惠普HP
-      - 美国CloudFlare节点70
-      - 美国CloudFlare节点71
-      - 广东省广州市移动72
-      - 美国CloudFlare节点73
-      - 美国CloudFlare节点74
-      - 美国CloudFlare节点77
-      - 美国CloudFlare节点78
-      - 美国CloudFlare节点79
-      - 美国CloudFlare节点80
+      - 美国CloudFlare节点60
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5792,57 +5762,54 @@ proxy-groups:
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点1
-      - 美国CloudFlare节点3
+      - 美国+惠普HP
+      - 美国CloudFlare节点2
+      - 印度V2CROSS.COM3
+      - 美国CloudFlare节点4
       - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点8
+      - 美国V2CROSS.COM6
+      - 美国CloudFlare节点7
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 俄罗斯V2CROSS.COM15
-      - 美国CloudFlare节点16
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点11
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 法国国际航空电讯集团公司(SITA)16
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
+      - 加拿大V2CROSS.COM19
       - 美国CloudFlare节点20
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国CloudFlare节点32
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点26
+      - 日本+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶市SharkTech数据中心29
+      - 美国CloudFlare节点30
+      - 美国华盛顿Cogent通信公司32
       - 美国CloudFlare节点33
-      - 美国CloudFlare节点36
-      - 美国CloudFlare节点37
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM35
+      - 伊朗V2CROSS.COM37
       - 美国CloudFlare节点38
-      - 加拿大+Bell
+      - 美国CloudFlare节点39
+      - 美国CloudFlare节点40
       - 美国CloudFlare节点41
-      - 美国CloudFlare节点42
+      - 法国OVH44
       - 美国CloudFlare节点45
-      - 美国CloudFlare节点46
-      - 美国CloudFlare节点48
+      - 美国CloudFlare节点47
+      - 英国+社会保险安全部
       - 美国CloudFlare节点49
       - 美国CloudFlare节点50
-      - 美国CloudFlare节点51
-      - 美国CloudFlare节点52
-      - 美国CloudFlare节点53
+      - 加拿大TELUS52
+      - 日本东京+Amazon数据中心
       - 美国CloudFlare节点54
-      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国CloudFlare节点55
+      - 美国CloudFlare节点56
       - 美国CloudFlare节点58
-      - 美国华盛顿Cogent通信公司62
-      - 美国+CloudFlare节点
-      - 广东省广州市移动65
-      - 美国CloudFlare节点66
-      - 英国+社会保险安全部
-      - 美国+惠普HP
-      - 美国CloudFlare节点70
-      - 美国CloudFlare节点71
-      - 广东省广州市移动72
-      - 美国CloudFlare节点73
-      - 美国CloudFlare节点74
-      - 美国CloudFlare节点77
-      - 美国CloudFlare节点78
-      - 美国CloudFlare节点79
-      - 美国CloudFlare节点80
+      - 美国CloudFlare节点60
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6259,57 +6226,54 @@ proxy-groups:
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
-      - 美国CloudFlare节点1
-      - 美国CloudFlare节点3
+      - 美国+惠普HP
+      - 美国CloudFlare节点2
+      - 印度V2CROSS.COM3
+      - 美国CloudFlare节点4
       - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点8
+      - 美国V2CROSS.COM6
+      - 美国CloudFlare节点7
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点12
-      - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 俄罗斯V2CROSS.COM15
-      - 美国CloudFlare节点16
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点11
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点14
+      - 美国CloudFlare节点15
+      - 法国国际航空电讯集团公司(SITA)16
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
+      - 加拿大V2CROSS.COM19
       - 美国CloudFlare节点20
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点29
-      - 美国CloudFlare节点32
+      - 美国CloudFlare节点21
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
+      - 美国CloudFlare节点25
+      - 美国CloudFlare节点26
+      - 日本+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶市SharkTech数据中心29
+      - 美国CloudFlare节点30
+      - 美国华盛顿Cogent通信公司32
       - 美国CloudFlare节点33
-      - 美国CloudFlare节点36
-      - 美国CloudFlare节点37
+      - 美国CloudFlare节点34
+      - 美国V2CROSS.COM35
+      - 伊朗V2CROSS.COM37
       - 美国CloudFlare节点38
-      - 加拿大+Bell
+      - 美国CloudFlare节点39
+      - 美国CloudFlare节点40
       - 美国CloudFlare节点41
-      - 美国CloudFlare节点42
+      - 法国OVH44
       - 美国CloudFlare节点45
-      - 美国CloudFlare节点46
-      - 美国CloudFlare节点48
+      - 美国CloudFlare节点47
+      - 英国+社会保险安全部
       - 美国CloudFlare节点49
       - 美国CloudFlare节点50
-      - 美国CloudFlare节点51
-      - 美国CloudFlare节点52
-      - 美国CloudFlare节点53
+      - 加拿大TELUS52
+      - 日本东京+Amazon数据中心
       - 美国CloudFlare节点54
-      - 加拿大+安大略省多伦多BunnyCDN节点
+      - 美国CloudFlare节点55
+      - 美国CloudFlare节点56
       - 美国CloudFlare节点58
-      - 美国华盛顿Cogent通信公司62
-      - 美国+CloudFlare节点
-      - 广东省广州市移动65
-      - 美国CloudFlare节点66
-      - 英国+社会保险安全部
-      - 美国+惠普HP
-      - 美国CloudFlare节点70
-      - 美国CloudFlare节点71
-      - 广东省广州市移动72
-      - 美国CloudFlare节点73
-      - 美国CloudFlare节点74
-      - 美国CloudFlare节点77
-      - 美国CloudFlare节点78
-      - 美国CloudFlare节点79
-      - 美国CloudFlare节点80
+      - 美国CloudFlare节点60
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
