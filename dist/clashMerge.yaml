@@ -1,4 +1,4 @@
-# 更新时间 2024-07-22T19:16:38.696Z
+# 更新时间 2024-07-23T01:10:21.898Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3059,6 +3059,60 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 江苏省+移动
+    server: 36.151.195.77
+    port: 20819
+    password: MfqALmAJ
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /video/Zo98PYfE
+      headers:
+        host: kvjqqknzjp6.yofnhkfc.xyz
+    server: cfcdn3.sanfencdn9.com
+    port: 2052
+    uuid: 78c40177-c364-480d-bd77-76e9d89f69b4
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国加利福尼亚州洛杉矶PetaExpress2
+    server: 198.2.234.98
+    port: 39771
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: ss
+    name: 江苏省镇江市+移动
+    server: tw03.jjjjjj.icu
+    port: 30401
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YzJiZjU0Zi01ZjEzLTRkNzEtYjg2Ni0zYTNmMjNjNGQ4NmI=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 河北省+中移铁通
+    server: nn.auozzjs.lol
+    port: 10002
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YzJiZjU0Zi01ZjEzLTRkNzEtYjg2Ni0zYTNmMjNjNGQ4NmI=
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国V2CROSS.COM6
+    ws-opts:
+      path: /sbudvws
+      headers:
+        host: 155.724064.xyz
+    server: 155.724064.xyz
+    port: 443
+    uuid: 64917049-d265-477f-a4cf-b5076e746270
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3383,6 +3437,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 江苏省+移动
+      - 美国CloudFlare节点1
+      - 美国加利福尼亚州洛杉矶PetaExpress2
+      - 江苏省镇江市+移动
+      - 河北省+中移铁通
+      - 美国V2CROSS.COM6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3707,6 +3767,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 江苏省+移动
+      - 美国CloudFlare节点1
+      - 美国加利福尼亚州洛杉矶PetaExpress2
+      - 江苏省镇江市+移动
+      - 河北省+中移铁通
+      - 美国V2CROSS.COM6
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4030,6 +4096,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 江苏省+移动
+      - 美国CloudFlare节点1
+      - 美国加利福尼亚州洛杉矶PetaExpress2
+      - 江苏省镇江市+移动
+      - 河北省+中移铁通
+      - 美国V2CROSS.COM6
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4385,6 +4457,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 江苏省+移动
+      - 美国CloudFlare节点1
+      - 美国加利福尼亚州洛杉矶PetaExpress2
+      - 江苏省镇江市+移动
+      - 河北省+中移铁通
+      - 美国V2CROSS.COM6
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
