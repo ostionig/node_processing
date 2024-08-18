@@ -87,6 +87,12 @@ async function task2(){
     const fileContent = jsYaml.dump(config);
 
     generateFile(fileName, fileContent);
+
+    const configContent = generateClashConf(conf.proxies);
+
+    const comments = `# 更新时间 ${new Date().toISOString()}
+`;
+    generateFile("copy_"+fileName, comments + configContent);
   }))
 
   
