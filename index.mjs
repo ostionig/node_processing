@@ -88,7 +88,7 @@ async function task2(){
 
     generateFile(fileName, fileContent);
 
-    const configContent = generateClashConf(conf.proxies);
+    const configContent = generateClashConf(config.proxies);
 
     const comments = `# 更新时间 ${new Date().toISOString()}
 `;
