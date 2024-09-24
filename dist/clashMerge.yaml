@@ -1,4 +1,4 @@
-# 更新时间 2024-09-24T12:34:58.044Z
+# 更新时间 2024-09-24T13:03:43.523Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -4657,14 +4657,26 @@ proxies:
     cipher: auto
     network: auto
   - type: vmess
-    name: 美国CloudFlare节点1
+    name: 美国CloudFlare节点0
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip14.freegradely.xyz
-    server: 104.19.47.22
+    server: 104.19.38.8
     port: 2086
     uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /linde06.indiavideo.sbs/linkws
+      headers:
+        host: worgold21yagranghadeyaakbarshokretbozorg.abza.workers.dev
+    server: 104.16.61.8
+    port: 8880
+    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
     alterId: 0
     cipher: auto
     network: ws
@@ -4680,24 +4692,24 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+  - type: vmess
+    name: 美国CloudFlare节点3
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.1457230.xyz
+    server: 172.64.166.8
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: ss
     name: 上海市+UCloud
     server: 5c404a0e5048e5e4.cdn.jiashule.com
     port: 21850
     password: YWVzLTI1Ni1nY206YzZkMzUwOTQtZGQ4NS00MjAyLTgxZWYtNWUzODdjNTYwNDgx
     cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare公司CDN节点(shopify)5
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip5-10.freegradely.xyz
-    server: 23.227.38.8
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5196,10 +5208,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 上海市+UCloud
-      - 美国CloudFlare公司CDN节点(shopify)5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -5698,10 +5711,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 上海市+UCloud
-      - 美国CloudFlare公司CDN节点(shopify)5
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -6199,10 +6213,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 上海市+UCloud
-      - 美国CloudFlare公司CDN节点(shopify)5
   - name: 📲 电报信息
     type: select
     proxies:
@@ -6732,10 +6747,11 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 美国CloudFlare节点0
       - 美国CloudFlare节点1
       - 美国CloudFlare节点2
+      - 美国CloudFlare节点3
       - 上海市+UCloud
-      - 美国CloudFlare公司CDN节点(shopify)5
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
