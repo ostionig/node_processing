@@ -11,16 +11,16 @@ import { logger } from "./log.mjs"
  * @param {} nodeList 
  * @returns 
  */
-export function generateClashConf(nodeList) {
+export function generateClashConf(nodeList = []) {
   // 去重
-  nodeList = uniqBy(nodeList.filter(n=>n), (node) => node.name);
+  nodeList = uniqBy(nodeList?.filter?.(n=>n), (node) => node.name) || [];
   nodeList = uniqBy(nodeList, (node)=> node.server + ":" + node.port);
 
   const example = fs.readFileSync("./example.yaml");
   const conf = yaml.load(example);
-  const proxies = nodeList.filter((node) => {
+  const proxies = nodeList?.filter?.((node) => {
     return !Number.isNaN(node.port);
-  });
+  }) || [];
 
   // .map((node) => JSON.stringify(node));
   const names = proxies.map((node) => node.name);
