@@ -1,4 +1,4 @@
-# 更新时间 2024-10-02T12:34:28.218Z
+# 更新时间 2024-10-02T13:03:08.494Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3729,14 +3729,37 @@ proxies:
     cipher: auto
     network: auto
   - type: ss
-    name: 上海市+UCloud
-    server: 113.31.144.105
-    port: 30001
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNjM5MTIxMS1jZTY1LTQ3NTItOGJiYi00MTE1ODFjMDQzNGY=
+    name: 北美地区+V2CROSS.COM
+    server: 169.197.141.84
+    port: 5499
+    password: YWVzLTI1Ni1nY206bEdxczk1UWtGSG8yTlY=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 加拿大+V2CROSS.COM
+    server: 142.202.49.68
+    port: 8119
+    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.121.43.97
+    port: 5600
+    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 捷克+V2CROSS.COM
+    server: 195.181.160.6
+    port: 990
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz
+    cipher: aes-128-gcm
+  - type: ss
+    name: 英国+V2CROSS.COM
+    server: 185.93.173.218
+    port: 990
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz
     cipher: aes-128-gcm
   - type: vmess
-    name: 加拿大VELCOM通讯1
+    name: 加拿大VELCOM通讯10
     ws-opts:
       path: /5fadaf6d-887d-4146-b1a1-205de7bbc120
       headers:
@@ -3748,20 +3771,56 @@ proxies:
     cipher: auto
     network: ws
     tls: true
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 23.157.40.5
-    port: 6697
-    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 18.184.108.138
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国加利福尼亚州圣何塞PEGTECH4
-    server: 142.4.104.33
-    port: 52143
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    name: 美国CloudFlare节点19
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: >-
+          speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.expresstv.ggff.net
+    server: 172.67.196.170
+    port: 2086
+    uuid: 5e7429a4-b006-4a16-b1a3-1af2fbcddbc0
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点20
+    ws-opts:
+      path: /
+      headers:
+        host: onea.flha.ru
+    server: 104.19.45.108
+    port: 2095
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点23
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        host: 33.bycf.us.kg
+    server: cf.877771.xyz
+    port: 80
+    uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 波兰+V2CROSS.COM
+    server: 141.98.234.93
+    port: 20012
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXZm14S1gyRkJKUlUwSWU5VkxJWURM
+    cipher: aes-128-gcm
   - type: trojan
     name: 美国+Amazon数据中心
     server: 18.192.81.2
@@ -3770,134 +3829,146 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点8
+    name: 美国CloudFlare节点35
+    ws-opts:
+      path: /
+      headers:
+        host: onea.flha.ru
+    server: 104.19.45.172
+    port: 2095
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点41
+    ws-opts:
+      path: /
+      headers:
+        host: onea.flha.ru
+    server: 104.19.45.123
+    port: 2095
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点42
+    ws-opts:
+      path: /
+      headers:
+        host: onea.flha.ru
+    server: 104.19.45.209
+    port: 2095
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 欧洲+V2CROSS.COM
+    server: 185.47.253.227
+    port: 990
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点44
+    ws-opts:
+      path: /
+      headers:
+        host: rn2.hostmjj.com
+    server: 162.159.136.98
+    port: 80
+    uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点49
     ws-opts:
       path: /?ed=2048
       headers:
         host: >-
-          speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.expresstv.ggff.net
+          speedtestnetcomexpresstvsoft98irernanewsggffnetemailcloudflare.ernanews.ggff.net
     server: >-
-      speedtestneternanewsggffnetemailcloudflarecomexpresstvsoft98ir.expresstv.ggff.net
-    port: 2086
-    uuid: 5e7429a4-b006-4a16-b1a3-1af2fbcddbc0
+      speedtestneternanewsggffnetemailcloudflarecomexpresstvsoft98ir.ernanews.ggff.net
+    port: 2052
+    uuid: 4b1168e7-82b0-43a7-8dbc-b22b61547ef4
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 亚太地区+V2CROSS.COM
-    server: 103.174.86.113
-    port: 51348
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2WnI4TWxVWFVpaE5FbmRxSXBqRHhRZFNlcWkzN0ZiZ29IQm1RMXN5eTZaamtiQm4=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 美国+V2CROSS.COM
-    server: 139.64.165.155
-    port: 5003
-    password: YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk
-    cipher: aes-128-gcm
-  - type: ss
-    name: 加拿大+V2CROSS.COM
-    server: 142.202.49.68
-    port: 8091
-    password: YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点26
-    ws-opts:
-      path: /linkws
-      headers:
-        host: ivideos.sbs
-    server: 104.21.46.121
-    port: 443
-    uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
   - type: ss
     name: 俄罗斯+V2CROSS.COM
-    server: 89.185.84.185
-    port: 12575
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDYU5HMWFObEgwUUpSa2RzV1Z6VzYz
+    server: 194.87.45.189
+    port: 40076
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzT0o3V282eUhxV1F2OEZVRXEzQktW
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点34
+    name: 美国CloudFlare节点55
     ws-opts:
-      path: /
+      path: /jahfkjha.cfd/linkws
       headers:
-        host: onea.flha.ru
-    server: 104.19.45.237
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 美国+惠普HP
-    server: 15.204.87.225
-    port: 7002
-    password: YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点48
-    ws-opts:
-      path: /
-      headers:
-        host: onea.flha.ru
-    server: 104.19.45.112
-    port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+        host: hyfhhg.jadovah977.workers.dev
+    server: 104.16.67.38
+    port: 2086
+    uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 广东省广州市移动49
-    server: 120.232.153.40
-    port: 35601
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    name: 英国V2CROSS.COM61
+    ws-opts:
+      path: /
+    server: 5.39.254.196
+    port: 17808
+    uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
     alterId: 0
     cipher: auto
-    network: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点62
+    ws-opts:
+      path: /aries?ed=2048
+      headers:
+        host: open.alipay.ovh
+    server: dns.ton.org
+    port: 80
+    uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 173.245.59.110
-    port: 443
-    password: Trevely
+    name: 英国+伦敦Amazon数据中心
+    server: 3.9.161.40
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国Fastly全球Anycast节点54
-    ws-opts:
-      path: ws/?ed=2048
-      headers:
-        host: Dbdjhiw72ebsu272hs519j.com
-    server: 151.101.130.219
-    port: 443
-    uuid: 891cbe76-0008-42b8-81cc-5a7eb249529c
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.67.27.249
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: ss
-    name: 波兰+V2CROSS.COM
-    server: 141.98.234.93
-    port: 20012
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXZm14S1gyRkJKUlUwSWU5VkxJWURM
+    name: 爱尔兰+V2CROSS.COM
+    server: 13.79.174.197
+    port: 63314
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpuQU9zV1RYd3dsQkZkMkV6MmRHSzJz
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国V2CROSS.COM69
+    name: 美国Fastly全球Anycast节点78
     ws-opts:
-      path: /path/011410073331
+      path: /aries?ed=2048
       headers:
-        host: www.48907900.xyz
-    server: 134.122.139.79
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+        host: nmsl.kp
+    server: 151.101.67.10
+    port: 80
+    uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
   - type: trojan
     name: 广东省广州市+移动
     server: naiu-hk.05vr9nyqg5.download
@@ -3905,12 +3976,6 @@ proxies:
     password: c471ef32-798d-40a0-a57c-acf3475a204e
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 英国+V2CROSS.COM
-    server: 185.126.239.249
-    port: 990
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz
-    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4304,27 +4369,33 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 上海市+UCloud
-      - 加拿大VELCOM通讯1
       - 北美地区+V2CROSS.COM
-      - 美国加利福尼亚州圣何塞PEGTECH4
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 亚太地区+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国CloudFlare节点26
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点34
-      - 美国+惠普HP
-      - 美国CloudFlare节点48
-      - 广东省广州市移动49
-      - 美国+CloudFlare节点
-      - 美国Fastly全球Anycast节点54
-      - 波兰+V2CROSS.COM
-      - 美国V2CROSS.COM69
-      - 广东省广州市+移动
+      - 美国+华盛顿Cogent通信公司
+      - 捷克+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 加拿大VELCOM通讯10
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
+      - 美国CloudFlare节点23
+      - 波兰+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点35
+      - 美国CloudFlare节点41
+      - 美国CloudFlare节点42
+      - 欧洲+V2CROSS.COM
+      - 美国CloudFlare节点44
+      - 美国CloudFlare节点49
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点55
+      - 英国V2CROSS.COM61
+      - 美国CloudFlare节点62
+      - 英国+伦敦Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+V2CROSS.COM
+      - 美国Fastly全球Anycast节点78
+      - 广东省广州市+移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4718,27 +4789,33 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 上海市+UCloud
-      - 加拿大VELCOM通讯1
       - 北美地区+V2CROSS.COM
-      - 美国加利福尼亚州圣何塞PEGTECH4
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 亚太地区+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国CloudFlare节点26
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点34
-      - 美国+惠普HP
-      - 美国CloudFlare节点48
-      - 广东省广州市移动49
-      - 美国+CloudFlare节点
-      - 美国Fastly全球Anycast节点54
-      - 波兰+V2CROSS.COM
-      - 美国V2CROSS.COM69
-      - 广东省广州市+移动
+      - 美国+华盛顿Cogent通信公司
+      - 捷克+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 加拿大VELCOM通讯10
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
+      - 美国CloudFlare节点23
+      - 波兰+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点35
+      - 美国CloudFlare节点41
+      - 美国CloudFlare节点42
+      - 欧洲+V2CROSS.COM
+      - 美国CloudFlare节点44
+      - 美国CloudFlare节点49
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点55
+      - 英国V2CROSS.COM61
+      - 美国CloudFlare节点62
+      - 英国+伦敦Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+V2CROSS.COM
+      - 美国Fastly全球Anycast节点78
+      - 广东省广州市+移动
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5131,27 +5208,33 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 上海市+UCloud
-      - 加拿大VELCOM通讯1
       - 北美地区+V2CROSS.COM
-      - 美国加利福尼亚州圣何塞PEGTECH4
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 亚太地区+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国CloudFlare节点26
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点34
-      - 美国+惠普HP
-      - 美国CloudFlare节点48
-      - 广东省广州市移动49
-      - 美国+CloudFlare节点
-      - 美国Fastly全球Anycast节点54
-      - 波兰+V2CROSS.COM
-      - 美国V2CROSS.COM69
-      - 广东省广州市+移动
+      - 美国+华盛顿Cogent通信公司
+      - 捷克+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 加拿大VELCOM通讯10
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
+      - 美国CloudFlare节点23
+      - 波兰+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点35
+      - 美国CloudFlare节点41
+      - 美国CloudFlare节点42
+      - 欧洲+V2CROSS.COM
+      - 美国CloudFlare节点44
+      - 美国CloudFlare节点49
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点55
+      - 英国V2CROSS.COM61
+      - 美国CloudFlare节点62
+      - 英国+伦敦Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+V2CROSS.COM
+      - 美国Fastly全球Anycast节点78
+      - 广东省广州市+移动
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5576,27 +5659,33 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 上海市+UCloud
-      - 加拿大VELCOM通讯1
       - 北美地区+V2CROSS.COM
-      - 美国加利福尼亚州圣何塞PEGTECH4
-      - 美国+Amazon数据中心
-      - 美国CloudFlare节点8
-      - 亚太地区+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国CloudFlare节点26
-      - 俄罗斯+V2CROSS.COM
-      - 美国CloudFlare节点34
-      - 美国+惠普HP
-      - 美国CloudFlare节点48
-      - 广东省广州市移动49
-      - 美国+CloudFlare节点
-      - 美国Fastly全球Anycast节点54
-      - 波兰+V2CROSS.COM
-      - 美国V2CROSS.COM69
-      - 广东省广州市+移动
+      - 美国+华盛顿Cogent通信公司
+      - 捷克+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 加拿大VELCOM通讯10
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
+      - 美国CloudFlare节点23
+      - 波兰+V2CROSS.COM
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点35
+      - 美国CloudFlare节点41
+      - 美国CloudFlare节点42
+      - 欧洲+V2CROSS.COM
+      - 美国CloudFlare节点44
+      - 美国CloudFlare节点49
+      - 俄罗斯+V2CROSS.COM
+      - 美国CloudFlare节点55
+      - 英国V2CROSS.COM61
+      - 美国CloudFlare节点62
+      - 英国+伦敦Amazon数据中心
+      - 美国+Amazon+EC2服务器
+      - 爱尔兰+V2CROSS.COM
+      - 美国Fastly全球Anycast节点78
+      - 广东省广州市+移动
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
