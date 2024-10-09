@@ -1,4 +1,4 @@
-# 更新时间 2024-10-09T06:45:59.829Z
+# 更新时间 2024-10-09T06:56:32.940Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,18 +6,7 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: CN_speednode_0003
-    server: c2ys.qiyunlink.xyz
-    port: 47342
-    type: vmess
-    uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    network: tcp
-  - name: CN_speednode_0005
+  - name: CN_speednode_0007
     server: c2ys.qiyunlink.xyz
     port: 35612
     type: vmess
@@ -28,7 +17,29 @@ proxies:
     tls: false
     skip-cert-verify: true
     network: tcp
-  - name: CN_speednode_0007
+  - name: CN_speednode_0008
+    server: o1sl.qiyunlink.top
+    port: 35678
+    type: vmess
+    uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    skip-cert-verify: true
+    network: tcp
+  - name: CN_speednode_0009
+    server: o1sl.qiyunlink.top
+    port: 36158
+    type: vmess
+    uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    skip-cert-verify: true
+    network: tcp
+  - name: CN_speednode_0010
     server: c2ys.qiyunlink.xyz
     port: 47217
     type: vmess
@@ -39,7 +50,35 @@ proxies:
     tls: false
     skip-cert-verify: true
     network: tcp
-  - name: JP_speednode_0030
+  - name: CN_speednode_0011
+    server: t2666.113001.xyz
+    port: 32009
+    type: ss
+    cipher: aes-128-gcm
+    password: 541200f4-3c26-4ee0-b5e0-d86253b1ef54
+  - name: CN_speednode_0012
+    server: c2ys.qiyunlink.xyz
+    port: 47526
+    type: vmess
+    uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    skip-cert-verify: true
+    network: tcp
+  - name: CN_speednode_0013
+    server: c2ys.qiyunlink.xyz
+    port: 46391
+    type: vmess
+    uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    skip-cert-verify: true
+    network: tcp
+  - name: JP_speednode_0026
     server: 18.176.215.63
     port: 2377
     type: ss
@@ -49,22 +88,134 @@ proxies:
     plugin-opts:
       mode: tls
       host: (TG @WangCai2)ca5bef9:175503
-  - name: KR_speednode_0109
-    server: shouer2112.12123.org
-    port: 30003
+  - name: US_speednode_0064
+    server: sgcft01.xqc.best
+    port: 443
     type: vmess
-    uuid: 0e8a4ec6-66c1-45c0-a51a-cd51a35f2a11
+    uuid: 91624a42-c536-4422-b3dc-572794e98475
     alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: shouer2112.12123.org
+    servername: d21rddomp7gdx6.cloudfront.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /stream
+      headers:
+        Host: d21rddomp7gdx6.cloudfront.net
+  - name: US_speednode_0089
+    server: shsz.12123.org
+    port: 30000
+    type: vmess
+    uuid: 6957b648-f61a-4734-933d-f9a7021c7bb2
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: shsz.12123.org
     skip-cert-verify: true
     network: ws
     ws-opts:
       path: /12123.org
       headers:
         Host: www.baidu.com
+  - name: US_speednode_0108
+    server: shs2.12123.org
+    port: 30005
+    type: vmess
+    uuid: 85b733a3-7b70-481e-a7d2-23508408ea61
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: shs2.12123.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /12123.org
+      headers:
+        Host: www.baidu.com
+  - name: US_speednode_0119
+    server: hkcft01.xqc.best
+    port: 443
+    type: vmess
+    uuid: 6a47535b-63dd-4db8-8eab-571089b3bf14
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: daqchd3a0qfpy.cloudfront.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /stream
+      headers:
+        Host: daqchd3a0qfpy.cloudfront.net
+  - name: US_speednode_0129
+    server: jpcft01.xqc.best
+    port: 443
+    type: vmess
+    uuid: 70387357-82fa-4a2f-a9ad-3edb1e0071da
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: d263c0bqn07wlj.cloudfront.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /stream
+      headers:
+        Host: d263c0bqn07wlj.cloudfront.net
+  - name: US_speednode_0213
+    server: usav3.ftko8vzt9w.cyou
+    port: 2083
+    type: vmess
+    uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: usav3.ftko8vzt9w.cyou
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: usav3.ftko8vzt9w.cyou
+  - name: US_speednode_0218
+    server: hlv3.ftko8vzt9w.cyou
+    port: 2083
+    type: vmess
+    uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: hlv3.ftko8vzt9w.cyou
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hlv3.ftko8vzt9w.cyou
+  - name: US_speednode_0219
+    server: xjpv3.ftko8vzt9w.cyou
+    port: 2087
+    type: vmess
+    uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xjpv3.ftko8vzt9w.cyou
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: xjpv3.ftko8vzt9w.cyou
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -794,6 +945,23 @@ proxies:
       path: github.com/Alvin9999
       headers:
         Host: ip2.8084726.xyz
+  - name: 🇦🇺 澳大利亚 v2rayfree.eu.org
+    server: shouer2112.12123.org
+    port: 30003
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 4ae987a9-f9e6-49f0-95ad-e8f375678d62
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: www.baidu.com
+    network: ws
+    ws-opts:
+      path: /12123.org
+      headers:
+        Host: www.baidu.com
   - grpc-opts:
       grpc-service-name: 443trojan
     name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -3935,11 +4103,22 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CN_speednode_0003
-      - CN_speednode_0005
       - CN_speednode_0007
-      - JP_speednode_0030
-      - KR_speednode_0109
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0013
+      - JP_speednode_0026
+      - US_speednode_0064
+      - US_speednode_0089
+      - US_speednode_0108
+      - US_speednode_0119
+      - US_speednode_0129
+      - US_speednode_0213
+      - US_speednode_0218
+      - US_speednode_0219
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 广东省广州市 移动
@@ -3998,6 +4177,7 @@ proxy-groups:
       - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
       - 🇺🇸 美国 CloudFlare节点 26
+      - 🇦🇺 澳大利亚 v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -4336,11 +4516,22 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CN_speednode_0003
-      - CN_speednode_0005
       - CN_speednode_0007
-      - JP_speednode_0030
-      - KR_speednode_0109
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0013
+      - JP_speednode_0026
+      - US_speednode_0064
+      - US_speednode_0089
+      - US_speednode_0108
+      - US_speednode_0119
+      - US_speednode_0129
+      - US_speednode_0213
+      - US_speednode_0218
+      - US_speednode_0219
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 广东省广州市 移动
@@ -4399,6 +4590,7 @@ proxy-groups:
       - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
       - 🇺🇸 美国 CloudFlare节点 26
+      - 🇦🇺 澳大利亚 v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -4736,11 +4928,22 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - CN_speednode_0003
-      - CN_speednode_0005
       - CN_speednode_0007
-      - JP_speednode_0030
-      - KR_speednode_0109
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0013
+      - JP_speednode_0026
+      - US_speednode_0064
+      - US_speednode_0089
+      - US_speednode_0108
+      - US_speednode_0119
+      - US_speednode_0129
+      - US_speednode_0213
+      - US_speednode_0218
+      - US_speednode_0219
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 广东省广州市 移动
@@ -4799,6 +5002,7 @@ proxy-groups:
       - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
       - 🇺🇸 美国 CloudFlare节点 26
+      - 🇦🇺 澳大利亚 v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -5168,11 +5372,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_speednode_0003
-      - CN_speednode_0005
       - CN_speednode_0007
-      - JP_speednode_0030
-      - KR_speednode_0109
+      - CN_speednode_0008
+      - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0013
+      - JP_speednode_0026
+      - US_speednode_0064
+      - US_speednode_0089
+      - US_speednode_0108
+      - US_speednode_0119
+      - US_speednode_0129
+      - US_speednode_0213
+      - US_speednode_0218
+      - US_speednode_0219
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 广东省广州市 移动
@@ -5231,6 +5446,7 @@ proxy-groups:
       - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
       - 🇺🇸 美国 CloudFlare节点 26
+      - 🇦🇺 澳大利亚 v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
