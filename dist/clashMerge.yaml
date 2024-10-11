@@ -1,4 +1,4 @@
-# 更新时间 2024-10-11T18:52:27.809Z
+# 更新时间 2024-10-11T19:09:40.034Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3296,9 +3296,9 @@ proxies:
     network: auto
   - type: ss
     name: 美国+华盛顿Cogent通信公司
-    server: 38.121.43.65
-    port: 3306
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    server: 38.68.134.9
+    port: 8000
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
     cipher: aes-128-gcm
   - type: ss
     name: 美国+V2CROSS.COM
@@ -3306,86 +3306,62 @@ proxies:
     port: 8080
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOGJ0OWZZMFFzTFM2ZUxuWFVlMFlt
     cipher: aes-128-gcm
-  - type: trojan
-    name: 西班牙+V2CROSS.COM
-    server: 185.238.228.6
-    port: 443
-    password: bpb-trojan
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 23.150.152.41
-    port: 8881
-    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
-    cipher: aes-128-gcm
-  - type: ss
-    name: 欧盟+V2CROSS.COM
-    server: 45.87.175.154
-    port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnREZSZTUydWlJdlZheHFQbHF3NDM5
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 立陶宛+NGS新闻
-    server: 185.176.24.2
-    port: 443
-    password: bpb-trojan
-    udp: true
-    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点21
+    name: 美国CloudFlare节点10
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip2.8084726.xyz
-    server: 104.26.5.90
-    port: 2095
-    uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
+        host: ip3.6929198.xyz
+    server: 162.159.140.93
+    port: 2082
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 荷兰北荷兰省阿姆斯特丹DigitalOcean数据中心23
-    server: 188.166.96.150
-    port: 1010
-    uuid: 09e3fef1-3136-41a9-9531-6ea36482dea1
-    alterId: 0
-    cipher: auto
-    network: auto
   - type: ss
-    name: 加拿大+V2CROSS.COM
-    server: 142.202.49.84
-    port: 8008
-    password: YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=
+    name: 北美地区+V2CROSS.COM
+    server: 23.150.152.41
+    port: 5600
+    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
     cipher: aes-128-gcm
   - type: vmess
-    name: 广东省广州市移动33
-    server: 120.232.153.71
-    port: 43526
-    uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 丹麦V2CROSS.COM34
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        host: open.alipay.ovh
-    server: go.alipay.ovh
-    port: 80
-    uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 广东省广州市移动36
+    name: 广东省广州市移动20
     server: 120.232.153.40
     port: 43526
     uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
     alterId: 0
     cipher: auto
     network: auto
+  - type: vmess
+    name: 美国CloudFlare节点36
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.8084726.xyz
+    server: www.visa.com
+    port: 2095
+    uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点37
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.6016725.xyz
+    server: 104.19.45.50
+    port: 2095
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国+加利福尼亚州旧金山市Awknet通信公司
+    server: 67.220.85.74
+    port: 6697
+    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3747,16 +3723,12 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+华盛顿Cogent通信公司
       - 美国+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
+      - 美国CloudFlare节点10
       - 北美地区+V2CROSS.COM
-      - 欧盟+V2CROSS.COM
-      - 立陶宛+NGS新闻
-      - 美国CloudFlare节点21
-      - 荷兰北荷兰省阿姆斯特丹DigitalOcean数据中心23
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市移动33
-      - 丹麦V2CROSS.COM34
-      - 广东省广州市移动36
+      - 广东省广州市移动20
+      - 美国CloudFlare节点36
+      - 美国CloudFlare节点37
+      - 美国+加利福尼亚州旧金山市Awknet通信公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4118,16 +4090,12 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+华盛顿Cogent通信公司
       - 美国+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
+      - 美国CloudFlare节点10
       - 北美地区+V2CROSS.COM
-      - 欧盟+V2CROSS.COM
-      - 立陶宛+NGS新闻
-      - 美国CloudFlare节点21
-      - 荷兰北荷兰省阿姆斯特丹DigitalOcean数据中心23
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市移动33
-      - 丹麦V2CROSS.COM34
-      - 广东省广州市移动36
+      - 广东省广州市移动20
+      - 美国CloudFlare节点36
+      - 美国CloudFlare节点37
+      - 美国+加利福尼亚州旧金山市Awknet通信公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4488,16 +4456,12 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+华盛顿Cogent通信公司
       - 美国+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
+      - 美国CloudFlare节点10
       - 北美地区+V2CROSS.COM
-      - 欧盟+V2CROSS.COM
-      - 立陶宛+NGS新闻
-      - 美国CloudFlare节点21
-      - 荷兰北荷兰省阿姆斯特丹DigitalOcean数据中心23
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市移动33
-      - 丹麦V2CROSS.COM34
-      - 广东省广州市移动36
+      - 广东省广州市移动20
+      - 美国CloudFlare节点36
+      - 美国CloudFlare节点37
+      - 美国+加利福尼亚州旧金山市Awknet通信公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4890,16 +4854,12 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国+华盛顿Cogent通信公司
       - 美国+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
+      - 美国CloudFlare节点10
       - 北美地区+V2CROSS.COM
-      - 欧盟+V2CROSS.COM
-      - 立陶宛+NGS新闻
-      - 美国CloudFlare节点21
-      - 荷兰北荷兰省阿姆斯特丹DigitalOcean数据中心23
-      - 加拿大+V2CROSS.COM
-      - 广东省广州市移动33
-      - 丹麦V2CROSS.COM34
-      - 广东省广州市移动36
+      - 广东省广州市移动20
+      - 美国CloudFlare节点36
+      - 美国CloudFlare节点37
+      - 美国+加利福尼亚州旧金山市Awknet通信公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
