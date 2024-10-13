@@ -1,4 +1,4 @@
-# 更新时间 2024-10-13T06:52:12.073Z
+# 更新时间 2024-10-13T07:09:44.606Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3225,43 +3225,46 @@ proxies:
     cipher: auto
     network: auto
   - type: ss
-    name: 欧盟+V2CROSS.COM
-    server: 45.87.175.157
-    port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnOUFKc3JCUGdXNE5oam95M3hDaW9D
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.110.1.105
+    port: 5498
+    password: YWVzLTI1Ni1nY206bEdxczk1UWtGSG8yTlY=
     cipher: aes-128-gcm
   - type: ss
-    name: 美国+V2CROSS.COM
-    server: 69.50.95.53
-    port: 3389
-    password: YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=
+    name: 北美地区+V2CROSS.COM
+    server: 169.197.142.216
+    port: 6679
+    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点5
+    name: 广东省广州市移动3
+    server: 120.232.153.40
+    port: 43526
+    uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 越南+V2CROSS.COM
+    server: std1.loadingip.com
+    port: 443
+    password: 94d219c9-1afc-4d42-b090-8b3794764380
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 丹麦V2CROSS.COM9
     ws-opts:
-      path: github.com/Alvin9999
+      path: /aries?ed=2048
       headers:
-        host: ip3.6929198.xyz
-    server: 162.159.140.93
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+        host: open.alipay.ovh
+    server: go.alipay.ovh
+    port: 80
+    uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点6
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.6016725.xyz
-    server: 104.19.45.13
-    port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点10
+    name: 美国CloudFlare节点11
     ws-opts:
       path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
       headers:
@@ -3274,36 +3277,43 @@ proxies:
     cipher: auto
     network: ws
   - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.18.22.235
+    name: 加拿大+V2CROSS.COM
+    server: 23.227.60.8
     port: 443
     password: bpb-trojan
     udp: true
     skip-cert-verify: true
   - type: ss
-    name: 加拿大+V2CROSS.COM
-    server: 142.202.49.122
-    port: 5500
-    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
+    name: 欧盟+V2CROSS.COM
+    server: 45.87.175.199
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnREZSZTUydWlJdlZheHFQbHF3NDM5
     cipher: aes-128-gcm
-  - type: ss
-    name: 美国+加利福尼亚州洛杉矶Cogent通信
-    server: 154.3.8.151
-    port: 30067
-    password: YWVzLTI1Ni1nY206aVVCMDkyM1JCQQ==
-    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+惠普公司
+    server: 16.16.129.253
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点41
+    name: 美国CloudFlare节点32
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip2.6016725.xyz
-    server: 104.19.58.175
-    port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+        host: ip3.6929198.xyz
+    server: 162.159.140.93
+    port: 2082
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 爱尔兰+V2CROSS.COM
+    server: 13.74.65.144
+    port: 32935
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGWDc3Q3AyQ0hLcThKS1RIdXgyeFVp
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3650,15 +3660,17 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点10
-      - 美国+CloudFlare节点
+      - 美国+华盛顿Cogent通信公司
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动3
+      - 越南+V2CROSS.COM
+      - 丹麦V2CROSS.COM9
+      - 美国CloudFlare节点11
       - 加拿大+V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 美国CloudFlare节点41
+      - 欧盟+V2CROSS.COM
+      - 美国+惠普公司
+      - 美国CloudFlare节点32
+      - 爱尔兰+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4005,15 +4017,17 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点10
-      - 美国+CloudFlare节点
+      - 美国+华盛顿Cogent通信公司
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动3
+      - 越南+V2CROSS.COM
+      - 丹麦V2CROSS.COM9
+      - 美国CloudFlare节点11
       - 加拿大+V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 美国CloudFlare节点41
+      - 欧盟+V2CROSS.COM
+      - 美国+惠普公司
+      - 美国CloudFlare节点32
+      - 爱尔兰+V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4359,15 +4373,17 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点10
-      - 美国+CloudFlare节点
+      - 美国+华盛顿Cogent通信公司
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动3
+      - 越南+V2CROSS.COM
+      - 丹麦V2CROSS.COM9
+      - 美国CloudFlare节点11
       - 加拿大+V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 美国CloudFlare节点41
+      - 欧盟+V2CROSS.COM
+      - 美国+惠普公司
+      - 美国CloudFlare节点32
+      - 爱尔兰+V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4745,15 +4761,17 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国CloudFlare节点5
-      - 美国CloudFlare节点6
-      - 美国CloudFlare节点10
-      - 美国+CloudFlare节点
+      - 美国+华盛顿Cogent通信公司
+      - 北美地区+V2CROSS.COM
+      - 广东省广州市移动3
+      - 越南+V2CROSS.COM
+      - 丹麦V2CROSS.COM9
+      - 美国CloudFlare节点11
       - 加拿大+V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 美国CloudFlare节点41
+      - 欧盟+V2CROSS.COM
+      - 美国+惠普公司
+      - 美国CloudFlare节点32
+      - 爱尔兰+V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
