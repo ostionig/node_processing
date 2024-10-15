@@ -1,4 +1,4 @@
-# 更新时间 2024-10-15T18:53:46.739Z
+# 更新时间 2024-10-15T19:12:38.079Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3315,33 +3315,14 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.18.22.235
-    port: 443
-    password: bpb-trojan
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 丹麦V2CROSS.COM6
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        host: open.alipay.ovh
-    server: go.alipay.ovh
-    port: 80
-    uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
-    alterId: 0
-    cipher: auto
-    network: ws
   - type: ss
     name: 美国+华盛顿Cogent通信公司
-    server: 38.75.137.42
-    port: 9101
-    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
+    server: 38.143.66.87
+    port: 6379
+    password: YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点18
+    name: 美国CloudFlare节点3
     ws-opts:
       path: github.com/Alvin9999
       headers:
@@ -3353,31 +3334,37 @@ proxies:
     cipher: auto
     network: ws
   - type: trojan
-    name: 西班牙+V2CROSS.COM
-    server: 185.238.228.6
+    name: 越南+V2CROSS.COM
+    server: std1.loadingip.com
     port: 443
-    password: bpb-trojan
+    password: 94d219c9-1afc-4d42-b090-8b3794764380
     udp: true
     skip-cert-verify: true
+  - type: trojan
+    name: 俄罗斯+V2CROSS.COM
+    server: present-blowfish.sunbeam921.monster
+    port: 443
+    password: '3672449442956713984'
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 欧盟+V2CROSS.COM
+    server: 45.87.175.199
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnREZSZTUydWlJdlZheHFQbHF3NDM5
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点36
+    name: 美国CloudFlare节点39
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip2.6016725.xyz
-    server: 162.159.140.19
-    port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+        host: ip3.6929198.xyz
+    server: 162.159.140.93
+    port: 2082
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 加拿大+V2CROSS.COM
-    server: 23.227.60.8
-    port: 443
-    password: bpb-trojan
-    udp: true
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3737,13 +3724,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 丹麦V2CROSS.COM6
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点18
-      - 西班牙+V2CROSS.COM
-      - 美国CloudFlare节点36
-      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 越南+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 欧盟+V2CROSS.COM
+      - 美国CloudFlare节点39
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4103,13 +4089,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 丹麦V2CROSS.COM6
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点18
-      - 西班牙+V2CROSS.COM
-      - 美国CloudFlare节点36
-      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 越南+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 欧盟+V2CROSS.COM
+      - 美国CloudFlare节点39
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4468,13 +4453,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 丹麦V2CROSS.COM6
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点18
-      - 西班牙+V2CROSS.COM
-      - 美国CloudFlare节点36
-      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 越南+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 欧盟+V2CROSS.COM
+      - 美国CloudFlare节点39
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4865,13 +4849,12 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+CloudFlare节点
-      - 丹麦V2CROSS.COM6
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点18
-      - 西班牙+V2CROSS.COM
-      - 美国CloudFlare节点36
-      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点3
+      - 越南+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 欧盟+V2CROSS.COM
+      - 美国CloudFlare节点39
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
