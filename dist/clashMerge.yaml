@@ -1,4 +1,4 @@
-# 更新时间 2024-10-16T12:34:44.593Z
+# 更新时间 2024-10-16T13:03:20.259Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3803,13 +3803,43 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: trojan
-    name: 立陶宛+NGS新闻
-    server: 185.176.24.2
+  - type: ss
+    name: 意大利+V2CROSS.COM
+    server: 212.102.53.195
     port: 443
-    password: bpb-trojan
-    udp: true
-    skip-cert-verify: true
+    password: YWVzLTEyOC1nY206c2hhZG93c29ja3M=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.121.43.97
+    port: 7307
+    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点8
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.6016725.xyz
+    server: 162.159.140.19
+    port: 2095
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 俄罗斯+V2CROSS.COM
+    server: 5.188.36.54
+    port: 51348
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4ZVF4QjdzTUdwdGZGY3QycWsyRVNMZUNOTExoUlJ3WHJrTlpYQ2RMRll2WXdQUUQ=
+    cipher: aes-128-gcm
+  - type: ss
+    name: 加拿大+V2CROSS.COM
+    server: 142.202.49.84
+    port: 5003
+    password: YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk
+    cipher: aes-128-gcm
   - type: trojan
     name: 丹麦+V2CROSS.COM
     server: 195.85.59.68
@@ -3818,41 +3848,31 @@ proxies:
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 美国CloudFlare节点11
+    name: 美国CloudFlare节点19
     ws-opts:
-      path: /rongseven?ed=2048
+      path: github.com/Alvin9999
       headers:
-        host: 33.bycf.us.kg
-    server: cf.877771.xyz
-    port: 80
-    uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+        host: ip3.6929198.xyz
+    server: 172.64.198.249
+    port: 2082
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
     network: ws
   - type: ss
-    name: 美国+V2CROSS.COM
-    server: 45.144.48.63
-    port: 57456
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkMzgzNzIyNGVkNDY1ZjAw
-    cipher: aes-128-gcm
-  - type: ss
-    name: 北美地区+V2CROSS.COM
-    server: 169.197.142.216
-    port: 6679
-    password: YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T
+    name: 欧盟+V2CROSS.COM
+    server: 45.87.175.157
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnOUFKc3JCUGdXNE5oam95M3hDaW9D
     cipher: aes-128-gcm
   - type: vmess
-    name: 丹麦V2CROSS.COM35
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        host: open.alipay.ovh
-    server: go.alipay.ovh
-    port: 80
-    uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
+    name: 广东省广州市移动25
+    server: 120.232.153.40
+    port: 35601
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
-    network: ws
+    network: auto
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4253,12 +4273,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 立陶宛+NGS新闻
+      - 意大利+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 丹麦+V2CROSS.COM
-      - 美国CloudFlare节点11
-      - 美国+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 丹麦V2CROSS.COM35
+      - 美国CloudFlare节点19
+      - 欧盟+V2CROSS.COM
+      - 广东省广州市移动25
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4659,12 +4682,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 立陶宛+NGS新闻
+      - 意大利+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 丹麦+V2CROSS.COM
-      - 美国CloudFlare节点11
-      - 美国+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 丹麦V2CROSS.COM35
+      - 美国CloudFlare节点19
+      - 欧盟+V2CROSS.COM
+      - 广东省广州市移动25
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -5064,12 +5090,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 立陶宛+NGS新闻
+      - 意大利+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 丹麦+V2CROSS.COM
-      - 美国CloudFlare节点11
-      - 美国+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 丹麦V2CROSS.COM35
+      - 美国CloudFlare节点19
+      - 欧盟+V2CROSS.COM
+      - 广东省广州市移动25
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5501,12 +5530,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 立陶宛+NGS新闻
+      - 意大利+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国CloudFlare节点8
+      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 丹麦+V2CROSS.COM
-      - 美国CloudFlare节点11
-      - 美国+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 丹麦V2CROSS.COM35
+      - 美国CloudFlare节点19
+      - 欧盟+V2CROSS.COM
+      - 广东省广州市移动25
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
