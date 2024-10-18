@@ -1,4 +1,4 @@
-# 更新时间 2024-10-17T19:09:40.615Z
+# 更新时间 2024-10-18T01:19:32.557Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -220,7 +220,31 @@ proxies:
     password: 6601fb90e9b3
     tfo: false
   - name: 🇺🇸 美国 CloudFlare节点
-    server: singapore.com
+    server: 104.19.45.3
+    port: 2095
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: onea.flha.ru
+  - name: 🇨🇳 上海市+上海电信科技发展有限公司(中山南路111号)
+    server: soonkr.soon.guru
+    port: 40032
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+    tfo: false
+  - name: 🇺🇸 美国 CloudFlare节点 2
+    server: 172.64.175.88
     port: 2082
     client-fingerprint: chrome
     type: vmess
@@ -235,43 +259,45 @@ proxies:
       path: github.com/Alvin9999
       headers:
         Host: ip3.6929198.xyz
-  - name: 🇨🇳 广东省 移动
-    server: z3.fragranceninja.com
-    port: 12960
+  - name: 🇺🇸 美国 CloudFlare节点 3
+    server: 172.66.44.139
+    port: 8443
+    client-fingerprint: randomized
+    type: trojan
+    password: bpb-trojan
+    sni: AZaDneT-Hwt.pAGES.dev
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /trJVqjkRZ0POGhfThT/MTUyLjcwLjkwLjE2OA==?ed=2560
+      headers:
+        Host: AZaDneT-Hwt.pAGES.dev
+  - name: 🇺🇸 美国 CloudFlare节点 4
+    server: 172.64.167.22
+    port: 2082
     client-fingerprint: chrome
     type: vmess
-    uuid: a32313ad-5e39-4f9a-9cad-512041790050
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     tfo: false
     skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
   - name: 🇺🇸 美国+华盛顿Cogent通信公司
-    server: 38.110.1.12
-    port: 6379
+    server: 38.75.136.21
+    port: 5600
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
+    password: Y6R9pAtvxxzmGC
     tfo: false
-  - name: 🇺🇸 美国+v2rayfree.eu.org
-    server: 69.50.95.218
-    port: 7001
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-    tfo: false
-  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
-    server: service.ouluyun9803.com
-    port: 20005
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 3
-    server: 172.64.166.20
+  - name: 🇺🇸 美国 CloudFlare节点 5
+    server: 172.64.167.10
     port: 2095
     client-fingerprint: chrome
     type: vmess
@@ -281,17 +307,42 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
+    servername: ip10.6016725.xyz
     network: ws
     ws-opts:
-      path: github.com/Alvin9999
+      path: /
       headers:
-        Host: ip2.6016725.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 4
-    server: 172.64.167.8
-    port: 2095
+        Host: ip10.6016725.xyz
+  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org
+    server: 176.124.199.255
+    port: 30252
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: Zgg@X0m515
+    tfo: false
+  - name: 亚太地区 v2rayfree.eu.org
+    server: bs1.loadingip.com
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: 94d219c9-1afc-4d42-b090-8b3794764380
+    sni: bs1.loadingip.com
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 Xerox
+    server: 13.51.52.231
+    port: 22222
+    client-fingerprint: chrome
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 CloudFlare节点 6
+    server: 104.26.5.145
+    port: 2082
     client-fingerprint: chrome
     type: vmess
-    uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
     tls: false
@@ -301,7 +352,23 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        Host: ip2.8084726.xyz
+        Host: ip3.6929198.xyz
+  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org 2
+    server: 89.185.84.185
+    port: 12575
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: gdt6FA0fOR3pBQdFcyHyfv
+    tfo: false
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 2
+    server: 38.110.1.35
+    port: 8888
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    tfo: false
   - name: 🇨🇳 广东省广州市 移动
     server: 120.232.153.27
     port: 58831
@@ -313,33 +380,12 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇺🇸 美国 Amazon EC2服务器
-    server: 3.96.108.146
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 5
-    server: 172.67.209.80
-    port: 443
-    client-fingerprint: randomized
-    type: trojan
-    password: bpb-trojan
-    sni: 403b3611-99Bc-43b7-88D7-26ED5d0825a9-3.pAgeS.Dev
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /trHs32TkLnOBacvIv4?ed=2560
-      headers:
-        Host: 403b3611-99Bc-43b7-88D7-26ED5d0825a9-3.pAgeS.Dev
-  - name: 🇺🇸 美国 CloudFlare节点 6
-    server: 104.21.80.180
-    port: 80
+  - name: 🇺🇸 美国 CloudFlare节点 7
+    server: server31.beheshtbaneh.com
+    port: 8880
     client-fingerprint: chrome
     type: vmess
-    uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
     alterId: 0
     cipher: auto
     tls: false
@@ -349,60 +395,23 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: jp02.knt6y4bjx.buzz
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 2
-    server: 38.114.114.69
-    port: 5500
+        Host: server31.beheshtbaneh.com
+  - name: 🇺🇸 美国 CloudFlare节点 8
+    server: 104.19.32.216
+    port: 2082
     client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
     tfo: false
-  - name: 🇬🇧 英国 伦敦Amazon数据中心
-    server: 3.9.100.151
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-  - name: 欧盟+v2rayfree.eu.org
-    server: 45.87.175.164
-    port: 8080
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: gDFRe52uiIvVaxqPlqw439
-    tfo: false
-  - name: 🇺🇸 美国+v2rayfree.eu.org 2
-    server: 69.50.95.218
-    port: 3389
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 7
-    server: 104.21.90.210
-    port: 2053
-    client-fingerprint: chrome
-    type: trojan
-    password: auto
-    sni: e9464f45.trauma-2r4.pages.dev
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /
+      path: github.com/Alvin9999
       headers:
-        Host: e9464f45.trauma-2r4.pages.dev
-  - name: 🇺🇸 美国+v2rayfree.eu.org 3
-    server: 69.50.95.218
-    port: 9090
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    tfo: false
+        Host: ip3.6929198.xyz
   - name: 🇺🇸 美国+华盛顿Cogent通信公司 3
     server: 38.110.1.35
     port: 5004
@@ -411,161 +420,23 @@ proxies:
     cipher: aes-256-gcm
     password: g5MeD6Ft3CWlJId
     tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 8
-    server: 104.19.45.11
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip3.6929198.xyz
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 4
-    server: 38.114.114.69
-    port: 7002
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 5
-    server: 38.110.1.105
-    port: 5601
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 6
-    server: 38.75.136.21
-    port: 7307
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-    tfo: false
-  - name: 🇺🇦 乌克兰 v2rayfree.eu.org
-    server: 31.43.179.76
-    port: 443
+  - name: 🇺🇸 美国 Amazon EC2服务器
+    server: bgroup.node2.t.nodelist-airport.com
+    port: 50001
     client-fingerprint: chrome
     type: trojan
-    password: bpb-trojan
-    sni: 403B3611-99BC-43B7-88d7-26ed5D0825a9-3.PAgEs.dEv
+    password: 2155145a-b1b5-443a-8977-670f6bd10f02
+    sni: bgroup.node2.t.nodelist-airport.com
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /trG7Z0qjsy05QMgybQ?ed=2560
-      headers:
-        Host: 403B3611-99BC-43B7-88d7-26ed5D0825a9-3.PAgEs.dEv
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 7
-    server: 38.114.114.69
-    port: 7306
+  - name: 亚太地区+v2rayfree.eu.org
+    server: 103.174.86.113
+    port: 51348
     client-fingerprint: chrome
     type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
+    cipher: chacha20-ietf-poly1305
+    password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn
     tfo: false
   - name: 🇺🇸 美国 CloudFlare节点 9
-    server: 104.20.18.168
-    port: 443
-    client-fingerprint: randomized
-    type: trojan
-    password: bpb-trojan
-    sni: 403B3611-99Bc-43b7-88D7-26Ed5D0825a9-3.PAGeS.dev
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /trYEKooUVTeXcm8lnU?ed=2560
-      headers:
-        Host: 403B3611-99Bc-43b7-88D7-26Ed5D0825a9-3.PAGeS.dev
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 8
-    server: 38.110.1.105
-    port: 8080
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 10
-    server: 104.19.38.10
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip6.6929198.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 11
-    server: 172.64.175.88
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ip3.6929198.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 12
-    server: 172.64.175.88
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.6016725.xyz
-  - name: 🇺🇸 美国 麻省理工学院
-    server: 18.134.27.86
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 13
-    server: 104.26.5.112
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.6016725.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 14
     server: 104.26.5.90
     port: 2095
     client-fingerprint: chrome
@@ -581,123 +452,32 @@ proxies:
       path: github.com/Alvin9999
       headers:
         Host: ip2.6016725.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 15
-    server: 104.17.213.57
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: xmivideo.cfd
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 9
-    server: 38.110.1.105
-    port: 8118
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 10
-    server: 38.114.114.69
-    port: 8000
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-    tfo: false
-  - name: 🇺🇸 美国 Amazon数据中心
-    server: 13.39.245.51
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 11
-    server: 38.110.1.105
-    port: 5003
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-    tfo: false
-  - name: 🇺🇸 美国+v2rayfree.eu.org 4
-    server: 69.50.95.218
-    port: 8888
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 12
-    server: 38.110.1.105
-    port: 5004
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-    tfo: false
-  - name: 🇺🇸 美国 v2rayfree.eu.org
-    server: 23.162.200.182
-    port: 22324
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-    server: 18.196.197.92
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org
-    server: 185.242.86.156
-    port: 54170
+  - name: 🇨🇳 广东省广州市+移动
+    server: soonfrk.soon.guru
+    port: 40011
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: 36ZCHeabUSfKjfQEvJ4HDV
+    password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
     tfo: false
-  - name: 🇺🇸 美国+v2rayfree.eu.org 5
-    server: 69.50.95.53
-    port: 3389
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 13
-    server: 38.110.1.105
-    port: 7307
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 14
-    server: 38.114.114.69
+  - name: 🇹🇼 台湾省 中华电信
+    server: twnode11.oportal.cc
     port: 443
     client-fingerprint: chrome
+    type: trojan
+    password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+    sni: twnode11.oportal.cc
+    skip-cert-verify: false
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 4
+    server: 38.75.136.21
+    port: 2375
+    client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
+    password: faBAoD54k87UJG7
     tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 16
-    server: 104.26.5.88
+  - name: 🇺🇸 美国 CloudFlare节点 10
+    server: 104.20.25.146
     port: 2082
     client-fingerprint: chrome
     type: vmess
@@ -712,150 +492,256 @@ proxies:
       path: github.com/Alvin9999
       headers:
         Host: ip3.6929198.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 17
-    server: 104.26.5.88
-    port: 2095
+  - name: 🇨🇳 广东省中山市 移动
+    server: 120.237.79.157
+    port: 46665
     client-fingerprint: chrome
     type: vmess
-    uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
-    alterId: 0
+    uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
+    alterId: 64
     cipher: auto
     tls: false
     tfo: false
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.8084726.xyz
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 15
-    server: 38.114.114.69
-    port: 2376
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 18
-    server: 172.67.64.120
-    port: 80
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 7a8c8e19-b110-4224-89c5-f32f8c9b07eb
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-      headers:
-        Host: >-
-          68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org 2
-    server: 194.87.45.189
-    port: 40076
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 70y6ddwQrkSHA62ttsIXLZ
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 19
-    server: 172.64.167.35
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.8084726.xyz
-  - name: 🇺🇸 北美地区+v2rayfree.eu.org
-    server: 169.197.141.84
-    port: 8091
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司 16
-    server: 38.114.114.69
-    port: 5003
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-    tfo: false
-  - name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心 2
-    server: 35.156.130.123
-    port: 22222
-    client-fingerprint: chrome
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 20
-    server: 104.19.45.9
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: onea.flha.ru
-  - name: 🇨🇦 加拿大+v2rayfree.eu.org
-    server: 142.202.49.84
-    port: 5004
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-    tfo: false
-  - name: 🇺🇸 美国+v2rayfree.eu.org 6
-    server: 69.50.95.53
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 5
+    server: 38.110.1.35
     port: 8881
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
     password: kDWvXYZoTBcGkC4
     tfo: false
-  - name: 🇸🇬 新加坡 Amazon数据中心
-    server: sg007.421421.xyz
-    port: 20230
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 6
+    server: 38.75.136.21
+    port: 9102
     client-fingerprint: chrome
-    type: trojan
-    password: cf13832b-4ca0-4fee-8e85-2b2411104e75
-    sni: 421421.xyz
+    type: ss
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+    tfo: false
+  - name: 🇨🇳 山东省青岛市+联通
+    server: soonfr.soon.guru
+    port: 40034
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+    tfo: false
+  - name: 🇺🇸 美国 CloudFlare节点 11
+    server: 172.64.99.22
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
     skip-cert-verify: false
-  - name: 🇨🇦 加拿大+v2rayfree.eu.org 2
-    server: 142.202.49.84
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
+  - name: 🇨🇳 广东省+移动
+    server: soonth.soon.guru
+    port: 40009
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+    tfo: false
+  - name: 🇺🇸 美国 CloudFlare节点 12
+    server: 104.19.123.11
+    port: 2095
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.6016725.xyz
+  - name: 🇺🇸 美国 CloudFlare节点 13
+    server: 172.64.166.9
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
+  - name: 🇺🇸 美国 CloudFlare节点 14
+    server: 104.26.5.60
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
+  - name: 🇺🇸 美国+v2rayfree.eu.org 4
+    server: 69.50.95.218
+    port: 8882
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+    tfo: false
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 7
+    server: 38.75.136.21
+    port: 3306
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    tfo: false
+  - name: 🇺🇸 美国 CloudFlare节点 15
+    server: 104.26.7.132
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 8
+    server: 38.75.136.21
     port: 5003
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
     password: g5MeD6Ft3CWlJId
     tfo: false
-  - name: 🇺🇸 美国+惠普HP
-    server: 15.204.87.222
-    port: 8119
+  - name: 🇺🇸 美国 CloudFlare节点 16
+    server: 162.159.140.77
+    port: 2095
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.6016725.xyz
+  - name: 🇺🇸 美国 CloudFlare节点 17
+    server: 172.64.167.8
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
+  - name: 🇺🇸 北美地区+v2rayfree.eu.org
+    server: 23.157.40.20
+    port: 8881
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
+    password: kDWvXYZoTBcGkC4
+    tfo: false
+  - name: 🇺🇸 美国 CloudFlare节点 18
+    server: 104.19.45.11
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 9
+    server: 38.91.101.11
+    port: 2375
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    tfo: false
+  - name: 🇰🇷 韩国+KT电信
+    server: service.ouluyun9803.com
+    port: 26667
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+  - name: 🇺🇸 美国 CloudFlare节点 21
+    server: 104.19.123.11
+    port: 2082
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip3.6929198.xyz
+  - name: 🇳🇱 荷兰 v2rayfree.eu.org
+    server: ent1.imyourdaddy.top
+    port: 20985
+    client-fingerprint: chrome
+    type: trojan
+    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+    sni: sale.alibaba.com
+    skip-cert-verify: false
+  - name: 🇺🇸 北美地区+v2rayfree.eu.org 2
+    server: 23.150.248.29
+    port: 3306
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
     tfo: false
   - name: 🇫🇷 法国 法国计算机科学大学
     server: irvideo.cfd
@@ -870,9 +756,44 @@ proxies:
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /
+      path: /linkws
       headers:
         Host: irvideo.cfd
+  - name: 🇺🇸 美国+华盛顿Cogent通信公司 10
+    server: 38.75.136.21
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+    tfo: false
+  - name: 🇭🇰 香港 电讯盈科有限公司
+    server: hkt2.bika.hk
+    port: 30251
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+  - name: 🇺🇸 美国 CloudFlare节点 22
+    server: 104.19.45.35
+    port: 2095
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.6016725.xyz
   - grpc-opts:
       grpc-service-name: 443trojan
     name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -1628,6 +1549,12 @@ proxies:
     ws-headers:
       Host: 0320hk857.fans8.xyz
     ws-path: /ray
+  - cipher: chacha20-ietf-poly1305
+    name: 🇳🇱NL-185.242.86.156-156_1@156
+    password: 36ZCHeabUSfKjfQEvJ4HDV
+    port: 54170
+    server: 185.242.86.156
+    type: ss
   - alterId: 0
     cipher: auto
     name: 🇱🇺LU-202.78.162.5-157_1@157
@@ -1647,19 +1574,6 @@ proxies:
     port: 40368
     server: 193.243.147.128
     type: ss
-  - alterId: 0
-    cipher: auto
-    name: 🏁RELAY-172.67.161.114-161_1@161
-    network: ws
-    port: 8880
-    server: server31.beheshtbaneh.com
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-    ws-headers:
-      Host: server31.beheshtbaneh.com
-    ws-path: /
   - alterId: 0
     cipher: auto
     name: 🇨🇳CN-120.233.205.133-162_1@162
@@ -1693,9 +1607,9 @@ proxies:
       Host: server26.beheshtbaneh.com
     ws-path: /
   - cipher: chacha20-ietf-poly1305
-    name: 🇨🇳CN-120.238.122.160-166_1@166
+    name: 🇨🇳CN-120.238.122.160-167_1@167
     password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    port: 26667
+    port: 20005
     server: service.ouluyun9803.com
     type: ss
   - alterId: 0
@@ -2057,12 +1971,6 @@ proxies:
     ws-headers:
       Host: nest-emily-healing-h.trycloudflare.com
     ws-path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-  - cipher: aes-256-gcm
-    name: 🇺🇸US-38.75.136.21-225_1@224
-    password: pKEW8JPByTVTLtM
-    port: 443
-    server: 38.75.136.21
-    type: ss
   - alterId: 0
     cipher: auto
     name: 🇸🇬SG-146.190.87.238-227_1@226
@@ -3683,297 +3591,201 @@ proxies:
     cipher: auto
     network: auto
   - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.75.136.21
-    port: 2375
-    password: YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3
+    name: 加拿大+V2CROSS.COM
+    server: 142.202.49.122
+    port: 8118
+    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点3
+    name: 美国CloudFlare节点1
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip2.6016725.xyz
-    server: 172.64.175.213
+    server: 172.64.175.88
     port: 2095
     uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 欧盟+V2CROSS.COM
+    server: 45.87.175.192
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnOUFKc3JCUGdXNE5oam95M3hDaW9D
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.68.134.9
+    port: 8881
+    password: YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 139.64.164.15
+    port: 7306
+    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点4
+    name: 美国CloudFlare节点8
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip3.6929198.xyz
-    server: 104.19.45.31
+    server: 172.64.198.249
     port: 2082
     uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 英国+V2CROSS.COM
+    server: 185.5.38.111
+    port: 55988
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyRW1XUlMxVGtTM1RreEtBcG5yaWhiM2FIakRTWFJ2VDFUMUs5VTJCcnV4cm5wNUE4em1wVHh3d1ROamU2QmtWcW1uOUJnUkY2cHE4cW9SSENmWmRjYWg3QkxianJwVDE=
+    cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点9
+    name: 美国CloudFlare节点11
     ws-opts:
-      path: github.com/Alvin9999
+      path: /
       headers:
-        host: ip2.6016725.xyz
-    server: 162.159.140.19
+        host: onea.flha.ru
+    server: 104.19.45.84
     port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
     alterId: 0
     cipher: auto
     network: ws
-  - type: vmess
-    name: 美国CloudFlare节点10
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip3.6929198.xyz
-    server: 172.64.167.22
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点12
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip3.6929198.xyz
-    server: 172.64.167.44
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 美国+Xerox
+    server: 13.61.70.97
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点13
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip2.6016725.xyz
-    server: 104.19.45.15
+    server: 104.26.5.123
     port: 2095
     uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
     alterId: 0
     cipher: auto
     network: ws
   - type: trojan
-    name: 广东省广州市+移动
-    server: naiu-other.05vr9nyqg5.download
-    port: 13036
-    password: 8d4a8689-e8fd-4405-9834-3f812c528db0
+    name: 澳大利亚+V2CROSS.COM
+    server: ent1.imyourdaddy.top
+    port: 20983
+    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 山东省青岛市+联通
-    server: soontur.soon.guru
-    port: 40019
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyOWZlZmNjMy05YWUxLTRlMDEtYTFkMC01MzRmYzE2NzExMjE=
-    cipher: aes-128-gcm
   - type: vmess
-    name: 丹麦V2CROSS.COM17
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        host: open.alipay.ovh
-    server: go.alipay.ovh
-    port: 80
-    uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点18
+    name: 美国CloudFlare节点15
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: ip2.6016725.xyz
-    server: 104.19.45.19
+    server: 104.26.5.67
     port: 2095
     uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点19
+    name: 美国CloudFlare节点16
     ws-opts:
-      path: /
+      path: github.com/Alvin9999
       headers:
-        host: onea.flha.ru
-    server: 104.19.45.248
+        host: ip2.6016725.xyz
+    server: 104.19.21.230
     port: 2095
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 上海市+UCloud
-    server: gdgs.tarioblink.me
-    port: 30001
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmN2MyMTgwZi0xYTkzLTRkNjUtOWU2Ni03YWQ2MjQwMWY3ODM=
-    cipher: aes-128-gcm
   - type: trojan
-    name: 台湾省+中华电信
-    server: 61.220.126.180
-    port: 443
-    password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+    name: 美国+惠普HP
+    server: 15.157.239.99
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 广东省移动29
-    ws-opts:
-      path: /
-      headers:
-        host: trojan.burgerip.co.uk
-    server: 183.238.202.173
-    port: 39041
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点31
-    ws-opts:
-      path: /linkws
-      headers:
-        host: adenc36v.xtooltech.cfd
-    server: 172.67.219.194
-    port: 443
-    uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
   - type: trojan
     name: 美国+Amazon+EC2服务器
-    server: bgroup.node2.t.nodelist-airport.com
-    port: 50001
-    password: 2155145a-b1b5-443a-8977-670f6bd10f02
+    server: 3.15.66.19
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: ss
+    name: 广东省+移动
+    server: 183.240.255.75
+    port: 11001
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiZTY1MGFhMC1hMTIxLTQ5ZGQtYTk1MS0yNTY1MGE1NmE1MGM=
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+CloudFlare节点
+    server: 172.66.47.117
+    port: 8443
+    password: bpb-trojan
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点32
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip3.6929198.xyz
+    server: 172.64.166.33
+    port: 2082
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点33
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.6016725.xyz
+    server: 172.64.198.249
+    port: 2095
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: vmess
     name: 美国CloudFlare节点34
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: ip2.6016725.xyz
-    server: 162.159.140.45
-    port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+        host: ip3.6929198.xyz
+    server: 104.26.5.103
+    port: 2082
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
     name: 美国CloudFlare节点35
     ws-opts:
-      path: github.com/Alvin9999
+      path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
       headers:
-        host: ip3.6929198.xyz
-    server: 104.19.21.230
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.20.235.127
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 香港电讯盈科有限公司43
-    server: hkt2.bika.hk
-    port: 30251
-    uuid: 9e88a10b-655c-5120-89d0-408634169561
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国CloudFlare节点44
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip3.6929198.xyz
-    server: 172.64.167.29
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+        host: >-
+          68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    server: 172.67.64.120
+    port: 80
+    uuid: 7a8c8e19-b110-4224-89c5-f32f8c9b07eb
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点45
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip3.6929198.xyz
-    server: 104.20.25.146
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 广东省+移动
-    server: soonth.soon.guru
-    port: 40009
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyOWZlZmNjMy05YWUxLTRlMDEtYTFkMC01MzRmYzE2NzExMjE=
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 荷兰+V2CROSS.COM
-    server: ent1.imyourdaddy.top
-    port: 20985
-    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 广东省广州市移动50
-    server: 120.232.153.71
-    port: 43526
-    uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: ss
-    name: 安徽省合肥市+移动
-    server: tt04.51feitu.com
-    port: 21004
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMzBiN2VkZS01NWU1LTRlMWYtYjUwOS1lZmNhY2MxODc3ZTE=
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点55
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip6.6929198.xyz
-    server: 104.19.38.11
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点56
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.6016725.xyz
-    server: 172.64.166.22
-    port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国Fastly全球Anycast节点58
+    name: 美国Fastly全球Anycast节点36
     ws-opts:
       path: /m28jcoZZUhkqg6pk11
       headers:
@@ -3985,6 +3797,87 @@ proxies:
     cipher: auto
     network: ws
     tls: true
+  - type: vmess
+    name: 美国CloudFlare节点37
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.6016725.xyz
+    server: 172.64.166.12
+    port: 2095
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 美国+Amazon数据中心
+    server: series-a2.samanehha.co
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点40
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip3.6929198.xyz
+    server: 104.19.45.17
+    port: 2082
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 德国+黑森州法兰克福Amazon数据中心
+    server: 52.28.208.61
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点44
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.6016725.xyz
+    server: icook.tw
+    port: 2095
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点46
+    ws-opts:
+      path: /
+      headers:
+        host: shs.kejixiaoqi666.store
+    server: 3.gogolemon.top
+    port: 80
+    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 香港电讯盈科有限公司49
+    server: 1.65.205.116
+    port: 30251
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点50
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip2.6016725.xyz
+    server: 162.159.140.19
+    port: 2095
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4015,66 +3908,55 @@ proxy-groups:
       - US_speednode_0106
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省 移动
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇨🇳 上海市+上海电信科技发展有限公司(中山南路111号)
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国+华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 亚太地区 v2rayfree.eu.org
+      - 🇺🇸 美国 Xerox
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
       - 🇺🇸 美国+华盛顿Cogent通信公司 2
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 2
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国+v2rayfree.eu.org 3
-      - 🇺🇸 美国+华盛顿Cogent通信公司 3
       - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国+华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 亚太地区+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇨🇳 广东省广州市+移动
+      - 🇹🇼 台湾省 中华电信
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 广东省中山市 移动
       - 🇺🇸 美国+华盛顿Cogent通信公司 5
       - 🇺🇸 美国+华盛顿Cogent通信公司 6
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 7
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 8
-      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 山东省青岛市+联通
       - 🇺🇸 美国 CloudFlare节点 11
+      - 🇨🇳 广东省+移动
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国+华盛顿Cogent通信公司 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 10
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国+华盛顿Cogent通信公司 11
       - 🇺🇸 美国+v2rayfree.eu.org 4
-      - 🇺🇸 美国+华盛顿Cogent通信公司 12
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 5
-      - 🇺🇸 美国+华盛顿Cogent通信公司 13
-      - 🇺🇸 美国+华盛顿Cogent通信公司 14
+      - 🇺🇸 美国+华盛顿Cogent通信公司 7
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国+华盛顿Cogent通信公司 8
       - 🇺🇸 美国 CloudFlare节点 16
       - 🇺🇸 美国 CloudFlare节点 17
-      - 🇺🇸 美国+华盛顿Cogent通信公司 15
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
-      - 🇺🇸 美国 CloudFlare节点 19
       - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 16
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心 2
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇨🇦 加拿大+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 6
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇨🇦 加拿大+v2rayfree.eu.org 2
-      - 🇺🇸 美国+惠普HP
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国+华盛顿Cogent通信公司 9
+      - 🇰🇷 韩国+KT电信
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇳🇱 荷兰 v2rayfree.eu.org
+      - 🇺🇸 北美地区+v2rayfree.eu.org 2
       - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国+华盛顿Cogent通信公司 10
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 22
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -4184,13 +4066,13 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇱🇺LU-202.78.162.5-157_1@157
       - 🇫🇷FR-193.243.147.128-160_1@160
-      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
       - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
+      - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
@@ -4228,7 +4110,6 @@ proxy-groups:
       - 🇺🇸US-38.114.114.225-221_1@220
       - 🏁RELAY-10.10.34.36-223_1@222
       - 🏁RELAY-162.159.137.249-224_1@223
-      - 🇺🇸US-38.75.136.21-225_1@224
       - 🇸🇬SG-146.190.87.238-227_1@226
       - 🇧🇬BG-5.101.219.5-228_1@227
       - 🏁RELAY-104.21.20.16-230_1@229
@@ -4372,36 +4253,36 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点1
+      - 欧盟+V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点8
+      - 英国+V2CROSS.COM
+      - 美国CloudFlare节点11
+      - 美国+Xerox
       - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 山东省青岛市+联通
-      - 丹麦V2CROSS.COM17
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点19
-      - 上海市+UCloud
-      - 台湾省+中华电信
-      - 广东省移动29
-      - 美国CloudFlare节点31
+      - 澳大利亚+V2CROSS.COM
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国+惠普HP
       - 美国+Amazon+EC2服务器
+      - 广东省+移动
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点33
       - 美国CloudFlare节点34
       - 美国CloudFlare节点35
-      - 英国+社会保险安全部
-      - 香港电讯盈科有限公司43
+      - 美国Fastly全球Anycast节点36
+      - 美国CloudFlare节点37
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点40
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点44
-      - 美国CloudFlare节点45
-      - 广东省+移动
-      - 荷兰+V2CROSS.COM
-      - 广东省广州市移动50
-      - 安徽省合肥市+移动
-      - 美国CloudFlare节点55
-      - 美国CloudFlare节点56
-      - 美国Fastly全球Anycast节点58
+      - 美国CloudFlare节点46
+      - 香港电讯盈科有限公司49
+      - 美国CloudFlare节点50
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4432,66 +4313,55 @@ proxy-groups:
       - US_speednode_0106
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省 移动
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇨🇳 上海市+上海电信科技发展有限公司(中山南路111号)
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国+华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 亚太地区 v2rayfree.eu.org
+      - 🇺🇸 美国 Xerox
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
       - 🇺🇸 美国+华盛顿Cogent通信公司 2
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 2
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国+v2rayfree.eu.org 3
-      - 🇺🇸 美国+华盛顿Cogent通信公司 3
       - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国+华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 亚太地区+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇨🇳 广东省广州市+移动
+      - 🇹🇼 台湾省 中华电信
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 广东省中山市 移动
       - 🇺🇸 美国+华盛顿Cogent通信公司 5
       - 🇺🇸 美国+华盛顿Cogent通信公司 6
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 7
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 8
-      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 山东省青岛市+联通
       - 🇺🇸 美国 CloudFlare节点 11
+      - 🇨🇳 广东省+移动
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国+华盛顿Cogent通信公司 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 10
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国+华盛顿Cogent通信公司 11
       - 🇺🇸 美国+v2rayfree.eu.org 4
-      - 🇺🇸 美国+华盛顿Cogent通信公司 12
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 5
-      - 🇺🇸 美国+华盛顿Cogent通信公司 13
-      - 🇺🇸 美国+华盛顿Cogent通信公司 14
+      - 🇺🇸 美国+华盛顿Cogent通信公司 7
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国+华盛顿Cogent通信公司 8
       - 🇺🇸 美国 CloudFlare节点 16
       - 🇺🇸 美国 CloudFlare节点 17
-      - 🇺🇸 美国+华盛顿Cogent通信公司 15
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
-      - 🇺🇸 美国 CloudFlare节点 19
       - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 16
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心 2
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇨🇦 加拿大+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 6
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇨🇦 加拿大+v2rayfree.eu.org 2
-      - 🇺🇸 美国+惠普HP
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国+华盛顿Cogent通信公司 9
+      - 🇰🇷 韩国+KT电信
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇳🇱 荷兰 v2rayfree.eu.org
+      - 🇺🇸 北美地区+v2rayfree.eu.org 2
       - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国+华盛顿Cogent通信公司 10
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 22
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -4601,13 +4471,13 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇱🇺LU-202.78.162.5-157_1@157
       - 🇫🇷FR-193.243.147.128-160_1@160
-      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
       - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
+      - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
@@ -4645,7 +4515,6 @@ proxy-groups:
       - 🇺🇸US-38.114.114.225-221_1@220
       - 🏁RELAY-10.10.34.36-223_1@222
       - 🏁RELAY-162.159.137.249-224_1@223
-      - 🇺🇸US-38.75.136.21-225_1@224
       - 🇸🇬SG-146.190.87.238-227_1@226
       - 🇧🇬BG-5.101.219.5-228_1@227
       - 🏁RELAY-104.21.20.16-230_1@229
@@ -4789,36 +4658,36 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点1
+      - 欧盟+V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点8
+      - 英国+V2CROSS.COM
+      - 美国CloudFlare节点11
+      - 美国+Xerox
       - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 山东省青岛市+联通
-      - 丹麦V2CROSS.COM17
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点19
-      - 上海市+UCloud
-      - 台湾省+中华电信
-      - 广东省移动29
-      - 美国CloudFlare节点31
+      - 澳大利亚+V2CROSS.COM
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国+惠普HP
       - 美国+Amazon+EC2服务器
+      - 广东省+移动
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点33
       - 美国CloudFlare节点34
       - 美国CloudFlare节点35
-      - 英国+社会保险安全部
-      - 香港电讯盈科有限公司43
+      - 美国Fastly全球Anycast节点36
+      - 美国CloudFlare节点37
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点40
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点44
-      - 美国CloudFlare节点45
-      - 广东省+移动
-      - 荷兰+V2CROSS.COM
-      - 广东省广州市移动50
-      - 安徽省合肥市+移动
-      - 美国CloudFlare节点55
-      - 美国CloudFlare节点56
-      - 美国Fastly全球Anycast节点58
+      - 美国CloudFlare节点46
+      - 香港电讯盈科有限公司49
+      - 美国CloudFlare节点50
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4848,66 +4717,55 @@ proxy-groups:
       - US_speednode_0106
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省 移动
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇨🇳 上海市+上海电信科技发展有限公司(中山南路111号)
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国+华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 亚太地区 v2rayfree.eu.org
+      - 🇺🇸 美国 Xerox
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
       - 🇺🇸 美国+华盛顿Cogent通信公司 2
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 2
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国+v2rayfree.eu.org 3
-      - 🇺🇸 美国+华盛顿Cogent通信公司 3
       - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国+华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 亚太地区+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇨🇳 广东省广州市+移动
+      - 🇹🇼 台湾省 中华电信
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 广东省中山市 移动
       - 🇺🇸 美国+华盛顿Cogent通信公司 5
       - 🇺🇸 美国+华盛顿Cogent通信公司 6
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 7
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 8
-      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 山东省青岛市+联通
       - 🇺🇸 美国 CloudFlare节点 11
+      - 🇨🇳 广东省+移动
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国+华盛顿Cogent通信公司 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 10
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国+华盛顿Cogent通信公司 11
       - 🇺🇸 美国+v2rayfree.eu.org 4
-      - 🇺🇸 美国+华盛顿Cogent通信公司 12
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 5
-      - 🇺🇸 美国+华盛顿Cogent通信公司 13
-      - 🇺🇸 美国+华盛顿Cogent通信公司 14
+      - 🇺🇸 美国+华盛顿Cogent通信公司 7
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国+华盛顿Cogent通信公司 8
       - 🇺🇸 美国 CloudFlare节点 16
       - 🇺🇸 美国 CloudFlare节点 17
-      - 🇺🇸 美国+华盛顿Cogent通信公司 15
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
-      - 🇺🇸 美国 CloudFlare节点 19
       - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 16
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心 2
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇨🇦 加拿大+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 6
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇨🇦 加拿大+v2rayfree.eu.org 2
-      - 🇺🇸 美国+惠普HP
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国+华盛顿Cogent通信公司 9
+      - 🇰🇷 韩国+KT电信
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇳🇱 荷兰 v2rayfree.eu.org
+      - 🇺🇸 北美地区+v2rayfree.eu.org 2
       - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国+华盛顿Cogent通信公司 10
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 22
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -5017,13 +4875,13 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇱🇺LU-202.78.162.5-157_1@157
       - 🇫🇷FR-193.243.147.128-160_1@160
-      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
       - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
+      - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
@@ -5061,7 +4919,6 @@ proxy-groups:
       - 🇺🇸US-38.114.114.225-221_1@220
       - 🏁RELAY-10.10.34.36-223_1@222
       - 🏁RELAY-162.159.137.249-224_1@223
-      - 🇺🇸US-38.75.136.21-225_1@224
       - 🇸🇬SG-146.190.87.238-227_1@226
       - 🇧🇬BG-5.101.219.5-228_1@227
       - 🏁RELAY-104.21.20.16-230_1@229
@@ -5205,36 +5062,36 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点1
+      - 欧盟+V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点8
+      - 英国+V2CROSS.COM
+      - 美国CloudFlare节点11
+      - 美国+Xerox
       - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 山东省青岛市+联通
-      - 丹麦V2CROSS.COM17
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点19
-      - 上海市+UCloud
-      - 台湾省+中华电信
-      - 广东省移动29
-      - 美国CloudFlare节点31
+      - 澳大利亚+V2CROSS.COM
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国+惠普HP
       - 美国+Amazon+EC2服务器
+      - 广东省+移动
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点33
       - 美国CloudFlare节点34
       - 美国CloudFlare节点35
-      - 英国+社会保险安全部
-      - 香港电讯盈科有限公司43
+      - 美国Fastly全球Anycast节点36
+      - 美国CloudFlare节点37
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点40
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点44
-      - 美国CloudFlare节点45
-      - 广东省+移动
-      - 荷兰+V2CROSS.COM
-      - 广东省广州市移动50
-      - 安徽省合肥市+移动
-      - 美国CloudFlare节点55
-      - 美国CloudFlare节点56
-      - 美国Fastly全球Anycast节点58
+      - 美国CloudFlare节点46
+      - 香港电讯盈科有限公司49
+      - 美国CloudFlare节点50
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5296,66 +5153,55 @@ proxy-groups:
       - US_speednode_0106
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省 移动
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇨🇳 上海市+上海电信科技发展有限公司(中山南路111号)
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国+华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
+      - 亚太地区 v2rayfree.eu.org
+      - 🇺🇸 美国 Xerox
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
       - 🇺🇸 美国+华盛顿Cogent通信公司 2
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 2
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国+v2rayfree.eu.org 3
-      - 🇺🇸 美国+华盛顿Cogent通信公司 3
       - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国+华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 亚太地区+v2rayfree.eu.org
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇨🇳 广东省广州市+移动
+      - 🇹🇼 台湾省 中华电信
       - 🇺🇸 美国+华盛顿Cogent通信公司 4
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 广东省中山市 移动
       - 🇺🇸 美国+华盛顿Cogent通信公司 5
       - 🇺🇸 美国+华盛顿Cogent通信公司 6
-      - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 7
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 8
-      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇳 山东省青岛市+联通
       - 🇺🇸 美国 CloudFlare节点 11
+      - 🇨🇳 广东省+移动
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国+华盛顿Cogent通信公司 9
-      - 🇺🇸 美国+华盛顿Cogent通信公司 10
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国+华盛顿Cogent通信公司 11
       - 🇺🇸 美国+v2rayfree.eu.org 4
-      - 🇺🇸 美国+华盛顿Cogent通信公司 12
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 5
-      - 🇺🇸 美国+华盛顿Cogent通信公司 13
-      - 🇺🇸 美国+华盛顿Cogent通信公司 14
+      - 🇺🇸 美国+华盛顿Cogent通信公司 7
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国+华盛顿Cogent通信公司 8
       - 🇺🇸 美国 CloudFlare节点 16
       - 🇺🇸 美国 CloudFlare节点 17
-      - 🇺🇸 美国+华盛顿Cogent通信公司 15
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org 2
-      - 🇺🇸 美国 CloudFlare节点 19
       - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司 16
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心 2
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇨🇦 加拿大+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org 6
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇨🇦 加拿大+v2rayfree.eu.org 2
-      - 🇺🇸 美国+惠普HP
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国+华盛顿Cogent通信公司 9
+      - 🇰🇷 韩国+KT电信
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇳🇱 荷兰 v2rayfree.eu.org
+      - 🇺🇸 北美地区+v2rayfree.eu.org 2
       - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国+华盛顿Cogent通信公司 10
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 22
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -5465,13 +5311,13 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇱🇺LU-202.78.162.5-157_1@157
       - 🇫🇷FR-193.243.147.128-160_1@160
-      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
       - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
+      - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
@@ -5509,7 +5355,6 @@ proxy-groups:
       - 🇺🇸US-38.114.114.225-221_1@220
       - 🏁RELAY-10.10.34.36-223_1@222
       - 🏁RELAY-162.159.137.249-224_1@223
-      - 🇺🇸US-38.75.136.21-225_1@224
       - 🇸🇬SG-146.190.87.238-227_1@226
       - 🇧🇬BG-5.101.219.5-228_1@227
       - 🏁RELAY-104.21.20.16-230_1@229
@@ -5653,36 +5498,36 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
+      - 加拿大+V2CROSS.COM
+      - 美国CloudFlare节点1
+      - 欧盟+V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点3
-      - 美国CloudFlare节点4
-      - 美国CloudFlare节点9
-      - 美国CloudFlare节点10
-      - 美国CloudFlare节点12
+      - 美国+V2CROSS.COM
+      - 美国CloudFlare节点8
+      - 英国+V2CROSS.COM
+      - 美国CloudFlare节点11
+      - 美国+Xerox
       - 美国CloudFlare节点13
-      - 广东省广州市+移动
-      - 山东省青岛市+联通
-      - 丹麦V2CROSS.COM17
-      - 美国CloudFlare节点18
-      - 美国CloudFlare节点19
-      - 上海市+UCloud
-      - 台湾省+中华电信
-      - 广东省移动29
-      - 美国CloudFlare节点31
+      - 澳大利亚+V2CROSS.COM
+      - 美国CloudFlare节点15
+      - 美国CloudFlare节点16
+      - 美国+惠普HP
       - 美国+Amazon+EC2服务器
+      - 广东省+移动
+      - 美国+CloudFlare节点
+      - 美国CloudFlare节点32
+      - 美国CloudFlare节点33
       - 美国CloudFlare节点34
       - 美国CloudFlare节点35
-      - 英国+社会保险安全部
-      - 香港电讯盈科有限公司43
+      - 美国Fastly全球Anycast节点36
+      - 美国CloudFlare节点37
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点40
+      - 德国+黑森州法兰克福Amazon数据中心
       - 美国CloudFlare节点44
-      - 美国CloudFlare节点45
-      - 广东省+移动
-      - 荷兰+V2CROSS.COM
-      - 广东省广州市移动50
-      - 安徽省合肥市+移动
-      - 美国CloudFlare节点55
-      - 美国CloudFlare节点56
-      - 美国Fastly全球Anycast节点58
+      - 美国CloudFlare节点46
+      - 香港电讯盈科有限公司49
+      - 美国CloudFlare节点50
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
