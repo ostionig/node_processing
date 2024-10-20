@@ -1,4 +1,4 @@
-# 更新时间 2024-10-20T13:00:02.242Z
+# 更新时间 2024-10-20T18:21:21.141Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -14,12 +14,60 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
+  - name: 🇺🇸 美国 CloudFlare节点
+    server: 104.21.82.183
+    port: 8880
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: server26.beheshtbaneh.com
+  - name: 🇺🇸 美国 CloudFlare节点 2
+    server: server31.beheshtbaneh.com
+    port: 8880
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: server31.beheshtbaneh.com
+  - name: 🇺🇸 美国 CloudFlare节点 3
+    server: www.darkroom.lol
+    port: 8080
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: www.darkroom.lol
   - name: 🇮🇳 印度 v2rayfree.eu.org
     server: 202.78.162.5
     port: 443
     client-fingerprint: chrome
     type: vmess
-    uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
+    uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
     alterId: 0
     cipher: auto
     tls: true
@@ -29,31 +77,7 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: sahand.serveminecraft.net
-  - name: 🇵🇱 波兰+v2rayfree.eu.org
-    server: 193.243.147.128
-    port: 40368
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: 7BcLdsO1WweoGD0X
-    tfo: false
-  - name: 🇮🇹 意大利+v2rayfree.eu.org
-    server: service.ouluyun9803.com
-    port: 20003
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    tfo: false
-  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org
-    server: 185.242.86.156
-    port: 54170
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 36ZCHeabUSfKjfQEvJ4HDV
-    tfo: false
+        Host: irsoft.sytes.net
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -61,10 +85,10 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -72,20 +96,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
   - name: 📲 电报信息
     type: select
     proxies:
@@ -124,10 +148,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇹 意大利+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
