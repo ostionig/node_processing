@@ -1,28 +1,80 @@
-# 更新时间 2024-10-26T07:09:20.865Z
+# 更新时间 2024-10-26T12:31:45.143Z
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-proxies: []
+proxies:
+  - name: 🇬🇧 高性价比机场:https://kfyun.uk
+    server: 127.0.0.1
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-128-gcm
+    password: 6601fb90e9b3
+    tfo: false
+  - name: 🇮🇹 意大利+v2rayfree.eu.org
+    server: service.ouluyun9803.com
+    port: 20005
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+  - name: 🇮🇹 意大利+v2rayfree.eu.org 2
+    server: service.ouluyun9803.com
+    port: 20003
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+  - name: 🇮🇳 印度 v2rayfree.eu.org
+    server: 202.78.162.5
+    port: 443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: pendar.onthewifi.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇮🇹 意大利+v2rayfree.eu.org 2
+      - 🇮🇳 印度 v2rayfree.eu.org
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    proxies: []
+    proxies:
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇮🇹 意大利+v2rayfree.eu.org 2
+      - 🇮🇳 印度 v2rayfree.eu.org
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇮🇹 意大利+v2rayfree.eu.org 2
+      - 🇮🇳 印度 v2rayfree.eu.org
   - name: 📲 电报信息
     type: select
     proxies:
@@ -60,6 +112,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇮🇹 意大利+v2rayfree.eu.org 2
+      - 🇮🇳 印度 v2rayfree.eu.org
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
