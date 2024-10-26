@@ -1,4 +1,4 @@
-# 更新时间 2024-10-25T19:10:04.890Z
+# 更新时间 2024-10-26T01:17:27.741Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -159,44 +159,12 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
-  - name: 🇵🇱 波兰+v2rayfree.eu.org
-    server: 193.243.147.128
-    port: 40368
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: 7BcLdsO1WweoGD0X
-    tfo: false
-  - name: 🇮🇳 印度 v2rayfree.eu.org
-    server: 202.78.162.5
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sahand.serveminecraft.net
-  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
-    server: service.ouluyun9803.com
-    port: 20003
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    tfo: false
   - name: 🇺🇸 美国 CloudFlare节点
-    server: server31.beheshtbaneh.com
+    server: 104.21.82.183
     port: 8880
     client-fingerprint: chrome
     type: vmess
-    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+    uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
     alterId: 0
     cipher: auto
     tls: false
@@ -206,7 +174,31 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: server31.beheshtbaneh.com
+        Host: server26.beheshtbaneh.com
+  - name: 🇮🇹 意大利+v2rayfree.eu.org
+    server: service.ouluyun9803.com
+    port: 20005
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+  - name: 🇰🇷 韩国+KT电信
+    server: service.ouluyun9803.com
+    port: 26667
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org
+    server: 185.242.86.156
+    port: 54170
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 36ZCHeabUSfKjfQEvJ4HDV
+    tfo: false
   - grpc-opts:
       grpc-service-name: 443trojan
     name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -962,12 +954,38 @@ proxies:
     ws-headers:
       Host: 0320hk857.fans8.xyz
     ws-path: /ray
-  - cipher: chacha20-ietf-poly1305
-    name: 🇳🇱NL-185.242.86.156-156_1@156
-    password: 36ZCHeabUSfKjfQEvJ4HDV
-    port: 54170
-    server: 185.242.86.156
+  - alterId: 0
+    cipher: auto
+    name: 🇱🇺LU-202.78.162.5-157_1@157
+    network: ws
+    port: 443
+    server: 202.78.162.5
+    skip-cert-verify: true
+    tls: true
+    type: vmess
+    uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+    ws-headers:
+      Host: irsoft.sytes.net
+    ws-path: /
+  - cipher: aes-256-gcm
+    name: 🇫🇷FR-193.243.147.128-160_1@160
+    password: 7BcLdsO1WweoGD0X
+    port: 40368
+    server: 193.243.147.128
     type: ss
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-172.67.161.114-161_1@161
+    network: ws
+    port: 8880
+    server: server31.beheshtbaneh.com
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+    ws-headers:
+      Host: server31.beheshtbaneh.com
+    ws-path: /
   - alterId: 0
     cipher: auto
     name: 🇨🇳CN-120.233.205.133-162_1@162
@@ -981,29 +999,10 @@ proxies:
     ws-headers:
       Host: data-us-v1.shwjfkw.cn
     ws-path: /debian
-  - alterId: 0
-    cipher: auto
-    name: 🏁RELAY-104.21.82.183-164_1@164
-    network: ws
-    port: 8880
-    server: 104.21.82.183
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-    ws-headers:
-      Host: server26.beheshtbaneh.com
-    ws-path: /
   - cipher: chacha20-ietf-poly1305
-    name: 🇨🇳CN-120.238.122.160-166_1@166
+    name: 🇨🇳CN-120.238.122.160-163_1@163
     password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    port: 26667
-    server: service.ouluyun9803.com
-    type: ss
-  - cipher: chacha20-ietf-poly1305
-    name: 🇨🇳CN-120.238.122.160-167_1@167
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    port: 20005
+    port: 20003
     server: service.ouluyun9803.com
     type: ss
   - alterId: 0
@@ -3010,10 +3009,10 @@ proxy-groups:
       - US_speednode_0221
       - US_speednode_0273
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇰🇷 韩国+KT电信
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -3123,11 +3122,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
-      - 🇳🇱NL-185.242.86.156-156_1@156
+      - 🇱🇺LU-202.78.162.5-157_1@157
+      - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
-      - 🇨🇳CN-120.238.122.160-167_1@167
+      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
@@ -3329,10 +3328,10 @@ proxy-groups:
       - US_speednode_0221
       - US_speednode_0273
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇰🇷 韩国+KT电信
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -3442,11 +3441,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
-      - 🇳🇱NL-185.242.86.156-156_1@156
+      - 🇱🇺LU-202.78.162.5-157_1@157
+      - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
-      - 🇨🇳CN-120.238.122.160-167_1@167
+      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
@@ -3647,10 +3646,10 @@ proxy-groups:
       - US_speednode_0221
       - US_speednode_0273
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇰🇷 韩国+KT电信
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -3760,11 +3759,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
-      - 🇳🇱NL-185.242.86.156-156_1@156
+      - 🇱🇺LU-202.78.162.5-157_1@157
+      - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
-      - 🇨🇳CN-120.238.122.160-167_1@167
+      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
@@ -3997,10 +3996,10 @@ proxy-groups:
       - US_speednode_0221
       - US_speednode_0273
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸 美国 CloudFlare节点
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇰🇷 韩国+KT电信
+      - 🇷🇺 俄罗斯+v2rayfree.eu.org
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -4110,11 +4109,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
-      - 🇳🇱NL-185.242.86.156-156_1@156
+      - 🇱🇺LU-202.78.162.5-157_1@157
+      - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
-      - 🇨🇳CN-120.238.122.160-167_1@167
+      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
       - 🇯🇵JP-54.199.83.239-171_1@171
