@@ -1,4 +1,4 @@
-# 更新时间 2024-10-27T13:25:42.836Z
+# 更新时间 2024-10-27T18:21:30.049Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -14,9 +14,25 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
+  - name: 🇺🇸 美国 Fastly全球Anycast节点
+    server: gov.uk
+    port: 443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /77848824
+      headers:
+        Host: zheshiscp.com
   - name: 🇰🇷 韩国+KT电信
     server: service.ouluyun9803.com
-    port: 20005
+    port: 20003
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
@@ -38,38 +54,14 @@ proxies:
       path: /
       headers:
         Host: server31.beheshtbaneh.com
-  - name: 🇺🇸 美国 Fastly全球Anycast节点
-    server: gov.uk
-    port: 443
+  - name: 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+    server: service.ouluyun9803.com
+    port: 26667
     client-fingerprint: chrome
-    type: vmess
-    uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
     tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /77848824
-      headers:
-        Host: zheshiscp.com
-  - name: 🇮🇳 印度 v2rayfree.eu.org
-    server: 202.78.162.5
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: irsoft.sytes.net
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -77,10 +69,10 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -88,20 +80,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -140,10 +132,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇰🇷 韩国+KT电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
