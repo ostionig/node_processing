@@ -1,4 +1,4 @@
-# 更新时间 2024-10-30T07:17:47.685Z
+# 更新时间 2024-10-30T12:34:54.332Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,7 +6,23 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: CN_speednode_0002
+  - name: CA_speednode_0002
+    type: ss
+    server: 149.22.95.183
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: CN_speednode_0005
+    server: 120.232.153.37
+    port: 46665
+    type: vmess
+    alterId: 64
+    cipher: auto
+    skip-cert-verify: true
+    tls: false
+    udp: true
+    uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
+  - name: CN_speednode_0006
     server: dajbxtw.naikonode1.top
     port: 15504
     type: ssr
@@ -17,24 +33,178 @@ proxies:
     protocol: auth_aes128_md5
     protocol-param: 40208:yYyiNvXTethxtYP7
     udp: true
-  - name: CN_speednode_0003
-    server: 120.232.153.37
-    port: 46665
+  - name: CN_speednode_0007
     type: vmess
-    alterId: 64
+    server: b.baodesign.top
+    port: 25006
+    uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
+    alterId: 0
     cipher: auto
-    skip-cert-verify: true
-    tls: false
     udp: true
-    uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
-  - name: CN_speednode_0004
-    type: vmess
-    server: 183.236.48.161
-    port: 33288
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    cipher: auto
+    tls: false
+    skip-cert-verify: true
     network: tcp
-    alterId: 64
+  - name: DE_speednode_0009
+    type: ss
+    server: 23.157.88.61
+    port: 2376
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: GB_speednode_0025
+    server: 107.181.155.244
+    port: 55330
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: >-
+      rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
+  - name: GB_speednode_0026
+    server: 212.102.47.131
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: IE_speednode_0028
+    type: ss
+    server: 52.164.203.76
+    port: 20143
+    cipher: chacha20-ietf-poly1305
+    password: 81aBd6IJIgFwT1lqcojSzK
+  - name: JP_speednode_0036
+    server: 149.22.87.240
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: JP_speednode_0037
+    server: 149.22.87.241
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: LT_speednode_0038
+    server: 45.87.175.157
+    port: 8080
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: cvII85TrW6n0OGyfpHVS1u
+  - name: NL_speednode_0039
+    type: ss
+    server: 208.67.105.196
+    port: 42029
+    cipher: chacha20-ietf-poly1305
+    password: >-
+      SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+  - name: NL_speednode_0040
+    server: ams1.fromblancwithlove.com
+    port: 19175
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV
+  - name: US_speednode_0053
+    type: ss
+    server: 150.241.95.62
+    port: 9366
+    cipher: chacha20-ietf-poly1305
+    password: rZv1$9veNc
+  - name: US_speednode_0055
+    type: vmess
+    server: cdn1.bpcdn.cc
+    port: 2086
+    uuid: aaa1b350-15f7-4837-9a08-2129ff9c6d1e
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hkrg0nf30ik5piq1zr.lovebaipiao.com
+  - name: US_speednode_0057
+    server: 156.146.38.168
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: US_speednode_0059
+    server: 37.19.198.160
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: US_speednode_0060
+    server: 142.202.48.105
+    port: 5004
+    type: ss
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: US_speednode_0061
+    server: 37.19.198.243
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: US_speednode_0062
+    server: 38.121.43.204
+    port: 8090
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: US_speednode_0065
+    server: 38.110.1.107
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: US_speednode_0066
+    server: 38.121.43.204
+    port: 8118
+    type: ss
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: US_speednode_0067
+    server: 150.241.95.62
+    port: 42445
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: flj72wu+&R
+  - name: US_speednode_0068
+    server: 159.246.55.132
+    port: 443
+    type: trojan
+    password: auto
+    sni: vip.123789.pp.ua
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vip.123789.pp.ua
+    skip-cert-verify: true
+  - name: US_speednode_0069
+    server: 38.110.1.107
+    port: 2375
+    type: ss
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: US_speednode_0070
+    server: 144.202.112.106
+    port: 3913
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 76dze09gQEvqS_jOuo
+  - name: US_speednode_0071
+    server: 23.150.152.41
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: VN_speednode_0073
+    server: 36.50.134.29
+    port: 443
+    type: trojan
+    password: 94d219c9-1afc-4d42-b090-8b3794764380
+    skip-cert-verify: true
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -43,222 +213,6 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点
-    server: 172.66.44.141
-    port: 2083
-    client-fingerprint: randomized
-    type: trojan
-    password: bpb-trojan
-    sni: fB0887ca.BPB-WorkEr-pAnel-e3c.paGes.DeV
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /trMK2zs2naPJSgJ7Pr?ed=2560
-      headers:
-        Host: fB0887ca.BPB-WorkEr-pAnel-e3c.paGes.DeV
-  - name: 🇯🇵 日本 v2rayfree.eu.org
-    server: 146.56.151.232
-    port: 20991
-    client-fingerprint: chrome
-    type: trojan
-    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-    sni: sale.alibaba.com
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 2
-    server: 104.19.123.11
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.6016725.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 3
-    server: denc36.xtooltech.cfd
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: adenc36v.xtooltech.cfd
-  - name: 🇺🇸 美国 CloudFlare节点 4
-    server: 104.16.149.244
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip3.6929198.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 6
-    server: ip.sb
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip8.6016725.xyz
-  - name: 🇨🇳 河北省 移动(全省通用)
-    server: z6.fragranceninja.com
-    port: 12928
-    client-fingerprint: chrome
-    type: vmess
-    uuid: a32313ad-5e39-4f9a-9cad-512041790050
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 v2rayfree.eu.org
-    server: 159.112.235.48
-    port: 2083
-    client-fingerprint: randomized
-    type: trojan
-    password: bpb-trojan
-    sni: 403b3611-99bC-43B7-88d7-26ed5d0825A9-3.PAGes.dEv
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /trZTKk76m0W1AxpNcC?ed=2560
-      headers:
-        Host: 403b3611-99bC-43B7-88d7-26ed5d0825A9-3.PAGes.dEv
-  - name: 亚太地区 v2rayfree.eu.org
-    server: std1.loadingip.com
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: 94d219c9-1afc-4d42-b090-8b3794764380
-    sni: std1.loadingip.com
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 7
-    server: hsj.lbxjc.online
-    port: 80
-    client-fingerprint: chrome
-    type: vmess
-    uuid: e6543319-0574-42ac-b778-1c4325d626f5
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: chunchuan.kejixiaoqi666.store
-  - name: 🇨🇳 广东省 移动
-    server: z2.fragranceninja.com
-    port: 12925
-    client-fingerprint: chrome
-    type: vmess
-    uuid: a32313ad-5e39-4f9a-9cad-512041790050
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: z2.fragranceninja.com
-  - name: 亚太地区 v2rayfree.eu.org 2
-    server: 36.50.134.29
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: 94d219c9-1afc-4d42-b090-8b3794764380
-    sni: 36.50.134.29
-    skip-cert-verify: false
-  - name: 🇨🇳 湖南省长沙市 移动
-    server: c.baodesign.top
-    port: 25007
-    client-fingerprint: chrome
-    type: vmess
-    uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇺🇸 美国+v2rayfree.eu.org
-    server: 139.64.165.144
-    port: 8080
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-    tfo: false
-  - name: 🇺🇸 美国+华盛顿Cogent通信公司
-    server: 38.121.43.204
-    port: 8090
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 9
-    server: 172.64.167.8
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.6016725.xyz
-  - name: 🇯🇵 日本 v2rayfree.eu.org 3
-    server: ent1.imyourdaddy.top
-    port: 20982
-    client-fingerprint: chrome
-    type: trojan
-    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-    sni: sale.alibaba.com
-    skip-cert-verify: false
-  - name: 🇯🇵 日本 v2rayfree.eu.org 4
-    server: ent1.imyourdaddy.top
-    port: 20991
-    client-fingerprint: chrome
-    type: trojan
-    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-    sni: sale.alibaba.com
-    skip-cert-verify: false
   - name: 🇮🇳 印度 v2rayfree.eu.org
     server: 202.78.162.5
     port: 443
@@ -275,278 +229,22 @@ proxies:
       path: /
       headers:
         Host: pendar.onthewifi.com
-  - name: 🇺🇸 北美地区+v2rayfree.eu.org
-    server: 23.150.152.41
-    port: 2375
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-    tfo: false
-  - name: 🇮🇷 伊朗+v2rayfree.eu.org
-    server: 185.24.151.214
-    port: 52952
+  - name: 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+    server: service.ouluyun9803.com
+    port: 26667
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: >-
-      LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
     tfo: false
-  - name: 🇨🇳 湖南省长沙市 移动 2
-    server: a.baodesign.top
-    port: 25009
-    client-fingerprint: chrome
-    type: vmess
-    uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 10
-    server: 172.67.180.238
-    port: 443
-    client-fingerprint: randomized
-    type: trojan
-    password: bpb-trojan
-    sni: 403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /trep2km0aVhJcl29WO?ed=2560
-      headers:
-        Host: 403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV
-  - name: 🇺🇸 美国+v2rayfree.eu.org 2
-    server: 149.22.87.240
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-    tfo: false
-  - name: 🇵🇱 波兰+v2rayfree.eu.org
-    server: 141.98.101.179
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-    tfo: false
-  - name: 欧盟+v2rayfree.eu.org
-    server: 45.87.175.154
-    port: 8080
+  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+    server: service.ouluyun9803.com
+    port: 20003
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: cvII85TrW6n0OGyfpHVS1u
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
     tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 11
-    server: server31.beheshtbaneh.com
-    port: 8880
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: server31.beheshtbaneh.com
-  - name: 🇺🇸 美国 CloudFlare节点 12
-    server: 104.20.17.186
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip3.6929198.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 13
-    server: 172.64.167.44
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.6016725.xyz
-  - name: 🇷🇺 俄罗斯+v2rayfree.eu.org
-    server: 185.242.86.156
-    port: 54170
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 36ZCHeabUSfKjfQEvJ4HDV
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 14
-    server: 104.26.5.113
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.6016725.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 15
-    server: 172.64.175.213
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip3.6929198.xyz
-  - name: 🇺🇸 美国 CloudFlare节点 16
-    server: 172.64.166.20
-    port: 2095
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.6016725.xyz
-  - name: 🇨🇳 广东省 移动 2
-    server: z3.fragranceninja.com
-    port: 12970
-    client-fingerprint: chrome
-    type: vmess
-    uuid: a32313ad-5e39-4f9a-9cad-512041790050
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 18
-    server: 198.41.220.16
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: b0b861c2c85346a389b9e95769c3cba4
-    sni: avianrecruit.com
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /6b777a91
-      headers:
-        Host: avianrecruit.com
-  - name: 🇨🇳 广东省广州市 移动
-    server: 120.232.153.37
-    port: 42055
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇺🇸 美国 CloudFlare节点 19
-    server: 162.159.140.56
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip3.6929198.xyz
-  - name: 🇨🇳 广东省广州市+电信IDC机房
-    server: soonhk.soon.guru
-    port: 40000
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 5b4aa2a3-2d45-4cc3-b8f8-02a562a37e38
-    tfo: false
-  - name: 🇺🇸 美国 CloudFlare节点 20
-    server: www.visa.com
-    port: 2082
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: ip16.6929198.xyz
-  - name: 🇷🇺 俄罗斯 v2rayfree.eu.org
-    server: 147.45.51.16
-    port: 2098
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 83876222-64a4-4912-aa18-b7d9d34959de
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇨🇳 广东省 移动 3
-    server: z3.fragranceninja.com
-    port: 12959
-    client-fingerprint: chrome
-    type: vmess
-    uuid: a32313ad-5e39-4f9a-9cad-512041790050
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: z3.fragranceninja.com
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: z3.fragranceninja.com
   - grpc-opts:
       grpc-service-name: 443trojan
     name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -1302,12 +1000,31 @@ proxies:
     ws-headers:
       Host: 0320hk857.fans8.xyz
     ws-path: /ray
+  - cipher: chacha20-ietf-poly1305
+    name: 🇳🇱NL-185.242.86.156-156_1@156
+    password: 36ZCHeabUSfKjfQEvJ4HDV
+    port: 54170
+    server: 185.242.86.156
+    type: ss
   - cipher: aes-256-gcm
     name: 🇫🇷FR-193.243.147.128-160_1@160
     password: 7BcLdsO1WweoGD0X
     port: 40368
     server: 193.243.147.128
     type: ss
+  - alterId: 0
+    cipher: auto
+    name: 🏁RELAY-172.67.161.114-161_1@161
+    network: ws
+    port: 8880
+    server: server31.beheshtbaneh.com
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+    ws-headers:
+      Host: server31.beheshtbaneh.com
+    ws-path: /
   - alterId: 0
     cipher: auto
     name: 🇨🇳CN-120.233.205.133-162_1@162
@@ -1321,12 +1038,6 @@ proxies:
     ws-headers:
       Host: data-us-v1.shwjfkw.cn
     ws-path: /debian
-  - cipher: chacha20-ietf-poly1305
-    name: 🇨🇳CN-120.238.122.160-163_1@163
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    port: 20003
-    server: service.ouluyun9803.com
-    type: ss
   - alterId: 0
     cipher: auto
     name: 🏁RELAY-104.21.82.183-164_1@164
@@ -1340,12 +1051,6 @@ proxies:
     ws-headers:
       Host: server26.beheshtbaneh.com
     ws-path: /
-  - cipher: chacha20-ietf-poly1305
-    name: 🇨🇳CN-120.238.122.160-166_1@166
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    port: 26667
-    server: service.ouluyun9803.com
-    type: ss
   - cipher: chacha20-ietf-poly1305
     name: 🇨🇳CN-120.238.122.160-167_1@167
     password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
@@ -3342,51 +3047,38 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CN_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
+      - CA_speednode_0002
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - DE_speednode_0009
+      - GB_speednode_0025
+      - GB_speednode_0026
+      - IE_speednode_0028
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - LT_speednode_0038
+      - NL_speednode_0039
+      - NL_speednode_0040
+      - US_speednode_0053
+      - US_speednode_0055
+      - US_speednode_0057
+      - US_speednode_0059
+      - US_speednode_0060
+      - US_speednode_0061
+      - US_speednode_0062
+      - US_speednode_0065
+      - US_speednode_0066
+      - US_speednode_0067
+      - US_speednode_0068
+      - US_speednode_0069
+      - US_speednode_0070
+      - US_speednode_0071
+      - VN_speednode_0073
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇨🇳 河北省 移动(全省通用)
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 亚太地区 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇨🇳 广东省 移动
-      - 亚太地区 v2rayfree.eu.org 2
-      - 🇨🇳 湖南省长沙市 移动
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇯🇵 日本 v2rayfree.eu.org 3
-      - 🇯🇵 日本 v2rayfree.eu.org 4
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇮🇷 伊朗+v2rayfree.eu.org
-      - 🇨🇳 湖南省长沙市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国+v2rayfree.eu.org 2
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇨🇳 广东省 移动 2
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 CloudFlare节点 19
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇨🇳 广东省 移动 3
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -3496,11 +3188,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
       - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
@@ -3689,51 +3381,38 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CN_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
+      - CA_speednode_0002
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - DE_speednode_0009
+      - GB_speednode_0025
+      - GB_speednode_0026
+      - IE_speednode_0028
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - LT_speednode_0038
+      - NL_speednode_0039
+      - NL_speednode_0040
+      - US_speednode_0053
+      - US_speednode_0055
+      - US_speednode_0057
+      - US_speednode_0059
+      - US_speednode_0060
+      - US_speednode_0061
+      - US_speednode_0062
+      - US_speednode_0065
+      - US_speednode_0066
+      - US_speednode_0067
+      - US_speednode_0068
+      - US_speednode_0069
+      - US_speednode_0070
+      - US_speednode_0071
+      - VN_speednode_0073
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇨🇳 河北省 移动(全省通用)
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 亚太地区 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇨🇳 广东省 移动
-      - 亚太地区 v2rayfree.eu.org 2
-      - 🇨🇳 湖南省长沙市 移动
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇯🇵 日本 v2rayfree.eu.org 3
-      - 🇯🇵 日本 v2rayfree.eu.org 4
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇮🇷 伊朗+v2rayfree.eu.org
-      - 🇨🇳 湖南省长沙市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国+v2rayfree.eu.org 2
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇨🇳 广东省 移动 2
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 CloudFlare节点 19
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇨🇳 广东省 移动 3
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -3843,11 +3522,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
       - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
@@ -4035,51 +3714,38 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - CN_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
+      - CA_speednode_0002
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - DE_speednode_0009
+      - GB_speednode_0025
+      - GB_speednode_0026
+      - IE_speednode_0028
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - LT_speednode_0038
+      - NL_speednode_0039
+      - NL_speednode_0040
+      - US_speednode_0053
+      - US_speednode_0055
+      - US_speednode_0057
+      - US_speednode_0059
+      - US_speednode_0060
+      - US_speednode_0061
+      - US_speednode_0062
+      - US_speednode_0065
+      - US_speednode_0066
+      - US_speednode_0067
+      - US_speednode_0068
+      - US_speednode_0069
+      - US_speednode_0070
+      - US_speednode_0071
+      - VN_speednode_0073
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇨🇳 河北省 移动(全省通用)
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 亚太地区 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇨🇳 广东省 移动
-      - 亚太地区 v2rayfree.eu.org 2
-      - 🇨🇳 湖南省长沙市 移动
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇯🇵 日本 v2rayfree.eu.org 3
-      - 🇯🇵 日本 v2rayfree.eu.org 4
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇮🇷 伊朗+v2rayfree.eu.org
-      - 🇨🇳 湖南省长沙市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国+v2rayfree.eu.org 2
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇨🇳 广东省 移动 2
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 CloudFlare节点 19
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇨🇳 广东省 移动 3
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -4189,11 +3855,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
       - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
@@ -4413,51 +4079,38 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
+      - CA_speednode_0002
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - CN_speednode_0007
+      - DE_speednode_0009
+      - GB_speednode_0025
+      - GB_speednode_0026
+      - IE_speednode_0028
+      - JP_speednode_0036
+      - JP_speednode_0037
+      - LT_speednode_0038
+      - NL_speednode_0039
+      - NL_speednode_0040
+      - US_speednode_0053
+      - US_speednode_0055
+      - US_speednode_0057
+      - US_speednode_0059
+      - US_speednode_0060
+      - US_speednode_0061
+      - US_speednode_0062
+      - US_speednode_0065
+      - US_speednode_0066
+      - US_speednode_0067
+      - US_speednode_0068
+      - US_speednode_0069
+      - US_speednode_0070
+      - US_speednode_0071
+      - VN_speednode_0073
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇨🇳 河北省 移动(全省通用)
-      - 🇺🇸 美国 v2rayfree.eu.org
-      - 亚太地区 v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇨🇳 广东省 移动
-      - 亚太地区 v2rayfree.eu.org 2
-      - 🇨🇳 湖南省长沙市 移动
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇸 美国+华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇯🇵 日本 v2rayfree.eu.org 3
-      - 🇯🇵 日本 v2rayfree.eu.org 4
       - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 北美地区+v2rayfree.eu.org
-      - 🇮🇷 伊朗+v2rayfree.eu.org
-      - 🇨🇳 湖南省长沙市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国+v2rayfree.eu.org 2
-      - 🇵🇱 波兰+v2rayfree.eu.org
-      - 欧盟+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇨🇳 广东省 移动 2
-      - 🇺🇸 美国 CloudFlare节点 18
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国 CloudFlare节点 19
-      - 🇨🇳 广东省广州市+电信IDC机房
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇷🇺 俄罗斯 v2rayfree.eu.org
-      - 🇨🇳 广东省 移动 3
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
       - 🇨🇳CN-139.227.223.3-049_1@49
@@ -4567,11 +4220,11 @@ proxy-groups:
       - 🇨🇳CN-211.99.115.24-153_1@153
       - 🇨🇳CN-211.99.115.24-154_1@154
       - 🇦🇶NOWHERE-0.0.0.0-155_1@155
+      - 🇳🇱NL-185.242.86.156-156_1@156
       - 🇫🇷FR-193.243.147.128-160_1@160
+      - 🏁RELAY-172.67.161.114-161_1@161
       - 🇨🇳CN-120.233.205.133-162_1@162
-      - 🇨🇳CN-120.238.122.160-163_1@163
       - 🏁RELAY-104.21.82.183-164_1@164
-      - 🇨🇳CN-120.238.122.160-166_1@166
       - 🇨🇳CN-120.238.122.160-167_1@167
       - 🏁RELAY-172.67.161.114-169_1@169
       - 🇸🇬SG-13.213.46.196-170_1@170
