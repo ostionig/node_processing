@@ -1,4 +1,4 @@
-# 更新时间 2024-10-30T13:04:02.249Z
+# 更新时间 2024-10-30T18:24:19.247Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,7 +6,32 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: CA_speednode_0001
+  - name: AE_speednode_0001
+    type: vless
+    server: m3.jadidistorefandogh.ir
+    port: 2053
+    uuid: 1873b7c8-8341-4759-be82-139037d5c198
+    udp: true
+    tls: true
+    client-fingerprint: chrome
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    skip-cert-verify: false
+    servername: my.jadidistorefandogh.ir
+    network: ws
+    ws-opts:
+      path: /digikala.com/login/?ed=2560
+      headers:
+        Host: my.jadidistorefandogh.ir
+  - name: CA_speednode_0002
+    type: ss
+    server: 149.22.95.183
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: CA_speednode_0003
     server: 23.162.200.227
     port: 443
     type: vmess
@@ -19,38 +44,7 @@ proxies:
     ws-opts:
       path: /linkvws
     udp: true
-  - name: CA_speednode_0002
-    type: ss
-    server: 149.22.95.183
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: CH_speednode_0003
-    type: vmess
-    server: 23.166.88.27
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 1
-    cipher: auto
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /linkvws
-      headers:
-        Host: 23.166.88.27
-  - name: CN_speednode_0005
-    server: 120.232.153.37
-    port: 46665
-    type: vmess
-    alterId: 64
-    cipher: auto
-    skip-cert-verify: true
-    tls: false
-    udp: true
-    uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
-  - name: CN_speednode_0006
+  - name: CN_speednode_0004
     server: dajbxtw.naikonode1.top
     port: 15504
     type: ssr
@@ -61,18 +55,15 @@ proxies:
     protocol: auth_aes128_md5
     protocol-param: 40208:yYyiNvXTethxtYP7
     udp: true
-  - name: CN_speednode_0007
-    type: vmess
+  - name: CN_speednode_0005
     server: b.baodesign.top
     port: 25006
+    type: vmess
     uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
     alterId: 0
     cipher: auto
-    udp: true
     tls: false
-    skip-cert-verify: true
-    network: tcp
-  - name: CR_speednode_0008
+  - name: CR_speednode_0006
     type: vless
     server: 190.93.247.155
     port: 80
@@ -84,72 +75,7 @@ proxies:
       path: /vless
       headers:
         Host: Hu2.v2vless.site.
-  - name: DE_speednode_0009
-    type: ss
-    server: 23.157.88.61
-    port: 2376
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: DE_speednode_0010
-    type: vmess
-    server: 23.158.56.39
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 1
-    cipher: auto
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /linkvws
-      headers:
-        Host: 23.158.56.39
-  - name: DE_speednode_0011
-    type: vmess
-    server: 23.158.56.145
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 1
-    cipher: auto
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /linkvws
-      headers:
-        Host: 23.158.56.145
-  - name: DE_speednode_0012
-    type: vmess
-    server: 23.158.56.81
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 1
-    cipher: auto
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /linkvws
-      headers:
-        Host: 23.158.56.81
-  - name: FR_speednode_0014
-    type: vless
-    server: 141.145.217.226
-    port: 443
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: la.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: la.ylks01.eu.org
-  - name: FR_speednode_0015
+  - name: FR_speednode_0007
     type: vmess
     server: 23.162.152.177
     port: 443
@@ -165,64 +91,39 @@ proxies:
       path: /linkvws
       headers:
         Host: 23.162.152.177
-  - name: GB_speednode_0016
-    server: 94.247.142.241
-    type: vless
-    port: 443
-    udp: true
-    uuid: 775213ac-3976-439a-8977-3277c0e4735d
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: fq521.6789.cloudns.be
-    ws-opts:
-      path: /Twitterfreecodes
-      headers:
-        Host: fq521.6789.cloudns.be
-  - name: GB_speednode_0025
-    server: 107.181.155.244
-    port: 55330
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: >-
-      rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
-  - name: GB_speednode_0026
+  - name: GB_speednode_0008
     server: 212.102.47.131
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: HK_speednode_0027
+  - name: GB_speednode_0009
+    port: 443
+    server: 94.247.142.241
     type: vless
-    server: 156.254.115.158
-    port: 33032
-    uuid: 72d37e1d-d577-4db3-dc92-3ec65b6d172b
+    network: ws
+    tls: true
     udp: true
-    skip-cert-verify: false
-    network: tcp
-  - name: IE_speednode_0028
+    servername: fq521.6789.cloudns.be
+    skip-cert-verify: true
+    ws-opts:
+      path: /Twitterfreecodes
+      headers:
+        Host: fq521.6789.cloudns.be
+    uuid: 775213ac-3976-439a-8977-3277c0e4735d
+  - name: IE_speednode_0018
     type: ss
     server: 52.164.203.76
     port: 20143
     cipher: chacha20-ietf-poly1305
     password: 81aBd6IJIgFwT1lqcojSzK
-  - name: IR_speednode_0029
-    type: vless
-    server: 185.113.10.235
-    port: 443
-    uuid: f1a495fd-8236-45b7-ae71-4c855ad15367
-    udp: true
-    skip-cert-verify: false
-    servername: neshan.org
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-      headers:
-        Host:
-          - neshan.org
-  - name: JO_speednode_0030
+  - name: IN_speednode_0019
+    server: 103.174.86.113
+    port: 51348
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn
+  - name: JO_speednode_0020
     type: vless
     network: ws
     server: 62.72.166.67
@@ -234,76 +135,31 @@ proxies:
       headers:
         Host: fq521.6789.cloudns.be
       path: /Twitter苏小柠
-  - name: JP_speednode_0031
-    port: 2083
-    server: 103.116.7.67
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: nicorobin.eula.cloudns.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /telegram@linkvws?ed=2048
-      headers:
-        Host: nicorobin.eula.cloudns.org
-    uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
-  - name: JP_speednode_0032
-    type: vless
-    network: ws
-    server: 103.116.7.220
-    port: 2096
-    uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
-    servername: nicorobin.eula.cloudns.org
-    tls: true
-    ws-opts:
-      headers:
-        Host: nicorobin.eula.cloudns.org
-      path: /?ed=2048
-  - name: JP_speednode_0034
-    type: vless
-    server: 103.116.7.152
-    port: 2096
-    uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
-    tls: true
-    servername: nicorobin.eula.cloudns.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: nicorobin.eula.cloudns.org
-  - name: JP_speednode_0036
-    server: 149.22.87.240
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: JP_speednode_0037
+  - name: JP_speednode_0021
     server: 149.22.87.241
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: LT_speednode_0038
-    server: 45.87.175.157
-    port: 8080
+  - name: JP_speednode_0022
+    server: 149.22.87.240
+    port: 443
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: cvII85TrW6n0OGyfpHVS1u
-  - name: NL_speednode_0039
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: NL_speednode_0023
     type: ss
-    server: 208.67.105.196
-    port: 42029
+    server: 79.127.239.84
+    port: 19175
     cipher: chacha20-ietf-poly1305
-    password: >-
-      SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  - name: NL_speednode_0040
+    password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV
+  - name: NL_speednode_0024
     server: ams1.fromblancwithlove.com
     port: 19175
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV
-  - name: RU_speednode_0041
+  - name: RU_speednode_0025
     type: vless
     network: ws
     server: 188.42.145.159
@@ -317,33 +173,68 @@ proxies:
       headers:
         Host: VIrgiNiavPn-nL.pagEs.dEv
       path: /security=tls
-  - name: SC_speednode_0042
+  - name: SC_speednode_0026
     type: vless
-    server: 154.83.2.200
-    port: 443
-    uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19
-    tls: true
-    servername: am-tunnel-6fs.pages.dev
     network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: am-tunnel-6fs.pages.dev
-  - name: SC_speednode_0043
     server: 154.83.2.54
-    type: vless
     port: 2096
-    udp: true
     uuid: fe962226-fe1c-4391-a5ba-7b7c62adda19
-    network: ws
-    tls: true
-    skip-cert-verify: true
     servername: am-tunnel-6fs.pages.dev
+    skip-cert-verify: true
+    tls: true
+    udp: true
     ws-opts:
-      path: /
       headers:
         Host: am-tunnel-6fs.pages.dev
-  - name: US_speednode_0048
+      path: /
+  - name: SE_speednode_0030
+    type: vless
+    server: 185.146.173.58
+    port: 8080
+    uuid: 9c92dd71-acac-422b-b23e-e764f8cba0de
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /servernett
+      headers:
+        Host: lc72.lebasnoo.ir.
+  - name: US_speednode_0031
+    server: 104.19.209.229
+    type: vless
+    port: 8880
+    udp: true
+    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: late-tooth.granzinhannah.workers.dev
+  - name: US_speednode_0032
+    server: 150.241.95.62
+    port: 42445
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: flj72wu+&R
+  - name: US_speednode_0033
+    server: 156.146.38.168
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: US_speednode_0034
+    type: vless
+    network: ws
+    server: 199.232.37.15
+    port: 80
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    skip-cert-verify: false
+    udp: true
+    ws-opts:
+      headers:
+        Host: sara193.ir
+      path: /BCXzvAcvSB7JzMWj?ed=2560
+  - name: US_speednode_0035
     type: vless
     server: 199.232.5.101
     port: 443
@@ -361,136 +252,7 @@ proxies:
       path: /H?ed=2560
       headers:
         Host: mefa.ir
-  - name: US_speednode_0049
-    type: vless
-    network: ws
-    server: 199.232.37.15
-    port: 80
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    skip-cert-verify: false
-    udp: true
-    ws-opts:
-      headers:
-        Host: sara193.ir
-      path: /BCXzvAcvSB7JzMWj?ed=2560
-  - name: US_speednode_0050
-    server: 104.19.209.229
-    type: vless
-    port: 8880
-    udp: true
-    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: late-tooth.granzinhannah.workers.dev
-  - name: US_speednode_0051
-    type: vless
-    server: 172.66.47.66
-    port: 443
-    uuid: bb27a0c6-aa5e-4105-a943-b87239507057
-    tls: true
-    servername: pardazeshvpn-tg86.pages.dev
-    network: ws
-    ws-opts:
-      path: >-
-        /telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn-telegram:@pardazeshvpn?ed=2048
-      headers:
-        Host: pardazeshvpn-tg86.pages.dev
-  - name: US_speednode_0052
-    type: vless
-    server: 167.82.30.71
-    port: 80
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /4u7lAS4nPLtz0xPz?ed=2560
-      headers:
-        Host: samane.ir
-  - name: US_speednode_0053
-    type: ss
-    server: 150.241.95.62
-    port: 9366
-    cipher: chacha20-ietf-poly1305
-    password: rZv1$9veNc
-  - name: US_speednode_0055
-    type: vmess
-    server: cdn1.bpcdn.cc
-    port: 2086
-    uuid: aaa1b350-15f7-4837-9a08-2129ff9c6d1e
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: hkrg0nf30ik5piq1zr.lovebaipiao.com
-  - name: US_speednode_0056
-    type: vless
-    server: 172.67.73.237
-    port: 443
-    uuid: 263f4c03-183a-4062-98c7-d42d4b2de9d7
-    udp: true
-    tls: true
-    client-fingerprint: random
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    servername: yelaor39jfaan.thelastronin.cloudns.org
-    network: ws
-    ws-opts:
-      path: /VLESS/jp-full.privateip.net
-      headers:
-        Host: yelan.thelastronin.cloudns.org
-  - name: US_speednode_0057
-    server: 156.146.38.168
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: US_speednode_0058
-    type: vless
-    server: www.speedtest.net
-    port: 80
-    uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /Telegram-Xv2ry2?ed
-      headers:
-        Host: >-
-          www.speedtest.net.nl1.70.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-  - name: US_speednode_0059
-    server: 37.19.198.160
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: US_speednode_0060
-    server: 142.202.48.105
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: US_speednode_0061
-    server: 37.19.198.243
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: US_speednode_0062
-    server: 38.121.43.204
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: US_speednode_0063
+  - name: US_speednode_0037
     type: vless
     server: www.speedtest.net
     port: 443
@@ -508,43 +270,45 @@ proxies:
       path: /W5V92vB3BQrJH2yY?ed=2560
       headers:
         Host: cconfigplus.spdtest.ggff.net
-  - name: US_speednode_0064
-    type: vless
-    server: 104.17.234.128
-    port: 443
-    uuid: 1ad95b6a-8dca-4773-8947-eedf49fdc4c1
-    udp: true
-    tls: true
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: false
-    servername: join.bede.VPNCUSTOMIZE.www.speedtest.net.Abrha.co.za
-    network: ws
-    ws-opts:
-      path: /Telegram,VPNCUSTOMIZE?ed=8080
-      headers:
-        Host: join.bede.vpncustomize.www.speedtest.net.Abrha.co.za
-  - name: US_speednode_0065
+  - name: US_speednode_0038
+    type: ss
+    server: 23.134.94.168
+    port: 3389
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: US_speednode_0039
     server: 38.110.1.107
     port: 5000
     type: ss
     cipher: aes-256-gcm
     password: Y6R9pAtvxxzmGC
-  - name: US_speednode_0066
-    server: 38.121.43.204
-    port: 8118
+  - name: US_speednode_0040
+    type: trojan
+    server: 216.128.147.13
+    port: 443
+    password: wkmY1R4EcP
+    sni: z-v2-003274.kailib.com
+    skip-cert-verify: true
+    udp: false
+  - name: US_speednode_0041
+    server: 142.202.48.105
+    port: 5004
     type: ss
     cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: US_speednode_0067
-    server: 150.241.95.62
-    port: 42445
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: flj72wu+&R
-  - name: US_speednode_0068
+    password: g5MeD6Ft3CWlJId
+  - name: US_speednode_0042
+    type: vless
+    server: 167.82.30.71
+    port: 80
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    udp: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /4u7lAS4nPLtz0xPz?ed=2560
+      headers:
+        Host: samane.ir
+  - name: US_speednode_0043
     server: 159.246.55.132
     port: 443
     type: trojan
@@ -556,231 +320,180 @@ proxies:
       headers:
         Host: vip.123789.pp.ua
     skip-cert-verify: true
-  - name: US_speednode_0069
-    server: 38.110.1.107
-    port: 2375
+  - name: US_speednode_0044
+    server: 38.121.43.204
+    port: 8090
     type: ss
     cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: US_speednode_0070
-    server: 144.202.112.106
-    port: 3913
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 76dze09gQEvqS_jOuo
-  - name: US_speednode_0071
-    server: 23.150.152.41
-    port: 5000
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: US_speednode_0072
+    password: PCnnH6SQSnfoS27
+  - name: US_speednode_0045
     type: vmess
-    server: 38.99.82.187
+    server: 104.19.72.200
     port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 1
+    uuid: b87e29df-7dd9-4c0c-8530-b2847e27522c
+    alterId: 0
     cipher: auto
     udp: true
     tls: true
-    servername: 38.99.82.187
+    servername: sjuzius.zdzdzd.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /juzi
+      headers:
+        Host: sjuzius.zdzdzd.xyz
+  - name: US_speednode_0046
+    type: vmess
+    server: 69.50.93.90
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
     skip-cert-verify: true
     network: ws
     ws-opts:
       path: /linkvws
       headers:
-        Host: 38.99.82.187
-  - name: VN_speednode_0073
-    server: 36.50.134.29
+        Host: 69.50.93.90
+  - name: US_speednode_0048
+    type: vless
+    server: hajlab.ucdavis.edu
     port: 443
-    type: trojan
-    password: 94d219c9-1afc-4d42-b090-8b3794764380
-    skip-cert-verify: true
+    uuid: 9e8aad0e-5ba2-4005-b5fb-03521dc00345
+    udp: true
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    servername: hajlab.ucdavis.edu
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v03.TzZLiMitTNeW.NeT
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_speednode_0001
+      - AE_speednode_0001
       - CA_speednode_0002
-      - CH_speednode_0003
+      - CA_speednode_0003
+      - CN_speednode_0004
       - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CR_speednode_0008
-      - DE_speednode_0009
-      - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0012
-      - FR_speednode_0014
-      - FR_speednode_0015
-      - GB_speednode_0016
-      - GB_speednode_0025
-      - GB_speednode_0026
-      - HK_speednode_0027
-      - IE_speednode_0028
-      - IR_speednode_0029
-      - JO_speednode_0030
-      - JP_speednode_0031
-      - JP_speednode_0032
-      - JP_speednode_0034
-      - JP_speednode_0036
-      - JP_speednode_0037
-      - LT_speednode_0038
-      - NL_speednode_0039
-      - NL_speednode_0040
-      - RU_speednode_0041
-      - SC_speednode_0042
-      - SC_speednode_0043
+      - CR_speednode_0006
+      - FR_speednode_0007
+      - GB_speednode_0008
+      - GB_speednode_0009
+      - IE_speednode_0018
+      - IN_speednode_0019
+      - JO_speednode_0020
+      - JP_speednode_0021
+      - JP_speednode_0022
+      - NL_speednode_0023
+      - NL_speednode_0024
+      - RU_speednode_0025
+      - SC_speednode_0026
+      - SE_speednode_0030
+      - US_speednode_0031
+      - US_speednode_0032
+      - US_speednode_0033
+      - US_speednode_0034
+      - US_speednode_0035
+      - US_speednode_0037
+      - US_speednode_0038
+      - US_speednode_0039
+      - US_speednode_0040
+      - US_speednode_0041
+      - US_speednode_0042
+      - US_speednode_0043
+      - US_speednode_0044
+      - US_speednode_0045
+      - US_speednode_0046
       - US_speednode_0048
-      - US_speednode_0049
-      - US_speednode_0050
-      - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0057
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - VN_speednode_0073
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA_speednode_0001
+      - AE_speednode_0001
       - CA_speednode_0002
-      - CH_speednode_0003
+      - CA_speednode_0003
+      - CN_speednode_0004
       - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CR_speednode_0008
-      - DE_speednode_0009
-      - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0012
-      - FR_speednode_0014
-      - FR_speednode_0015
-      - GB_speednode_0016
-      - GB_speednode_0025
-      - GB_speednode_0026
-      - HK_speednode_0027
-      - IE_speednode_0028
-      - IR_speednode_0029
-      - JO_speednode_0030
-      - JP_speednode_0031
-      - JP_speednode_0032
-      - JP_speednode_0034
-      - JP_speednode_0036
-      - JP_speednode_0037
-      - LT_speednode_0038
-      - NL_speednode_0039
-      - NL_speednode_0040
-      - RU_speednode_0041
-      - SC_speednode_0042
-      - SC_speednode_0043
+      - CR_speednode_0006
+      - FR_speednode_0007
+      - GB_speednode_0008
+      - GB_speednode_0009
+      - IE_speednode_0018
+      - IN_speednode_0019
+      - JO_speednode_0020
+      - JP_speednode_0021
+      - JP_speednode_0022
+      - NL_speednode_0023
+      - NL_speednode_0024
+      - RU_speednode_0025
+      - SC_speednode_0026
+      - SE_speednode_0030
+      - US_speednode_0031
+      - US_speednode_0032
+      - US_speednode_0033
+      - US_speednode_0034
+      - US_speednode_0035
+      - US_speednode_0037
+      - US_speednode_0038
+      - US_speednode_0039
+      - US_speednode_0040
+      - US_speednode_0041
+      - US_speednode_0042
+      - US_speednode_0043
+      - US_speednode_0044
+      - US_speednode_0045
+      - US_speednode_0046
       - US_speednode_0048
-      - US_speednode_0049
-      - US_speednode_0050
-      - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0057
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - VN_speednode_0073
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - CA_speednode_0001
+      - AE_speednode_0001
       - CA_speednode_0002
-      - CH_speednode_0003
+      - CA_speednode_0003
+      - CN_speednode_0004
       - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CR_speednode_0008
-      - DE_speednode_0009
-      - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0012
-      - FR_speednode_0014
-      - FR_speednode_0015
-      - GB_speednode_0016
-      - GB_speednode_0025
-      - GB_speednode_0026
-      - HK_speednode_0027
-      - IE_speednode_0028
-      - IR_speednode_0029
-      - JO_speednode_0030
-      - JP_speednode_0031
-      - JP_speednode_0032
-      - JP_speednode_0034
-      - JP_speednode_0036
-      - JP_speednode_0037
-      - LT_speednode_0038
-      - NL_speednode_0039
-      - NL_speednode_0040
-      - RU_speednode_0041
-      - SC_speednode_0042
-      - SC_speednode_0043
+      - CR_speednode_0006
+      - FR_speednode_0007
+      - GB_speednode_0008
+      - GB_speednode_0009
+      - IE_speednode_0018
+      - IN_speednode_0019
+      - JO_speednode_0020
+      - JP_speednode_0021
+      - JP_speednode_0022
+      - NL_speednode_0023
+      - NL_speednode_0024
+      - RU_speednode_0025
+      - SC_speednode_0026
+      - SE_speednode_0030
+      - US_speednode_0031
+      - US_speednode_0032
+      - US_speednode_0033
+      - US_speednode_0034
+      - US_speednode_0035
+      - US_speednode_0037
+      - US_speednode_0038
+      - US_speednode_0039
+      - US_speednode_0040
+      - US_speednode_0041
+      - US_speednode_0042
+      - US_speednode_0043
+      - US_speednode_0044
+      - US_speednode_0045
+      - US_speednode_0046
       - US_speednode_0048
-      - US_speednode_0049
-      - US_speednode_0050
-      - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0057
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - VN_speednode_0073
   - name: 📲 电报信息
     type: select
     proxies:
@@ -818,62 +531,41 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_speednode_0001
+      - AE_speednode_0001
       - CA_speednode_0002
-      - CH_speednode_0003
+      - CA_speednode_0003
+      - CN_speednode_0004
       - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CR_speednode_0008
-      - DE_speednode_0009
-      - DE_speednode_0010
-      - DE_speednode_0011
-      - DE_speednode_0012
-      - FR_speednode_0014
-      - FR_speednode_0015
-      - GB_speednode_0016
-      - GB_speednode_0025
-      - GB_speednode_0026
-      - HK_speednode_0027
-      - IE_speednode_0028
-      - IR_speednode_0029
-      - JO_speednode_0030
-      - JP_speednode_0031
-      - JP_speednode_0032
-      - JP_speednode_0034
-      - JP_speednode_0036
-      - JP_speednode_0037
-      - LT_speednode_0038
-      - NL_speednode_0039
-      - NL_speednode_0040
-      - RU_speednode_0041
-      - SC_speednode_0042
-      - SC_speednode_0043
+      - CR_speednode_0006
+      - FR_speednode_0007
+      - GB_speednode_0008
+      - GB_speednode_0009
+      - IE_speednode_0018
+      - IN_speednode_0019
+      - JO_speednode_0020
+      - JP_speednode_0021
+      - JP_speednode_0022
+      - NL_speednode_0023
+      - NL_speednode_0024
+      - RU_speednode_0025
+      - SC_speednode_0026
+      - SE_speednode_0030
+      - US_speednode_0031
+      - US_speednode_0032
+      - US_speednode_0033
+      - US_speednode_0034
+      - US_speednode_0035
+      - US_speednode_0037
+      - US_speednode_0038
+      - US_speednode_0039
+      - US_speednode_0040
+      - US_speednode_0041
+      - US_speednode_0042
+      - US_speednode_0043
+      - US_speednode_0044
+      - US_speednode_0045
+      - US_speednode_0046
       - US_speednode_0048
-      - US_speednode_0049
-      - US_speednode_0050
-      - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0057
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - VN_speednode_0073
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连

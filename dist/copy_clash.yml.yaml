@@ -1,4 +1,4 @@
-# 更新时间 2024-10-30T13:04:02.315Z
+# 更新时间 2024-10-30T18:24:19.388Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -14,28 +14,44 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
-  - name: 🇺🇸 美国 Fastly全球Anycast节点
-    server: gov.uk
-    port: 443
+  - name: 🇺🇸 美国 CloudFlare节点
+    server: www.darkroom.lol
+    port: 8080
     client-fingerprint: chrome
     type: vmess
-    uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     tfo: false
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /77848824
+      path: /
       headers:
-        Host: zheshiscp.com
+        Host: www.darkroom.lol
+  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+    server: service.ouluyun9803.com
+    port: 20003
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
+  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+    server: service.ouluyun9803.com
+    port: 20005
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+    tfo: false
   - name: 🇮🇳 印度 v2rayfree.eu.org
     server: 202.78.162.5
     port: 443
     client-fingerprint: chrome
     type: vmess
-    uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
+    uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
     alterId: 0
     cipher: auto
     tls: true
@@ -45,23 +61,7 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: pendar.onthewifi.com
-  - name: 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
-    server: service.ouluyun9803.com
-    port: 26667
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    tfo: false
-  - name: 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
-    server: service.ouluyun9803.com
-    port: 20003
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    tfo: false
+        Host: irsoft.sytes.net
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -69,10 +69,10 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇮🇳 印度 v2rayfree.eu.org
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -80,20 +80,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇮🇳 印度 v2rayfree.eu.org
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇮🇳 印度 v2rayfree.eu.org
   - name: 📲 电报信息
     type: select
     proxies:
@@ -132,10 +132,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 美国科罗拉多州布隆菲尔德市+Level3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信
+      - 🇩🇪 德国下萨克森州萨尔茨吉特+德国电信 2
+      - 🇮🇳 印度 v2rayfree.eu.org
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
