@@ -1,4 +1,4 @@
-# 更新时间 2024-10-31T06:44:34.519Z
+# 更新时间 2024-10-31T06:55:06.754Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,112 +6,121 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: CA_speednode_0002
+  - name: CA_speednode_0001
     type: ss
     server: 149.22.95.183
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: CN_speednode_0004
-    server: dajbxtw.naikonode1.top
-    port: 15504
-    type: ssr
-    cipher: chacha20-ietf
-    obfs: plain
-    obfs-param: 83e2a40208.microsoft.com
-    password: NaikoCloud
-    protocol: auth_aes128_md5
-    protocol-param: 40208:yYyiNvXTethxtYP7
-    udp: true
-  - name: CN_speednode_0005
-    server: b.baodesign.top
-    port: 25006
+  - name: CN_speednode_0003
     type: vmess
-    uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
-    alterId: 0
+    server: 183.236.51.23
+    port: 51002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
+    udp: true
     tls: false
-  - name: GB_speednode_0008
+    skip-cert-verify: true
+    network: tcp
+  - name: GB_speednode_0007
     server: 212.102.47.131
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: IE_speednode_0018
+  - name: IE_speednode_0017
     type: ss
     server: 52.164.203.76
     port: 20143
     cipher: chacha20-ietf-poly1305
     password: 81aBd6IJIgFwT1lqcojSzK
-  - name: IN_speednode_0019
-    server: 103.174.86.113
-    port: 51348
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn
-  - name: JP_speednode_0021
-    server: 149.22.87.241
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: JP_speednode_0022
+  - name: JP_speednode_0020
     server: 149.22.87.240
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: NL_speednode_0023
+  - name: NL_speednode_0021
     type: ss
-    server: 79.127.239.84
-    port: 19175
+    server: 208.67.105.196
+    port: 42029
     cipher: chacha20-ietf-poly1305
-    password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV
-  - name: NL_speednode_0024
-    server: ams1.fromblancwithlove.com
-    port: 19175
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV
-  - name: US_speednode_0032
+    password: >-
+      SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+  - name: RU_speednode_0022
+    type: vmess
+    server: n002.kovmk.website
+    port: 8080
+    uuid: 6dde3b3f-0a00-448a-a406-26d0960d1655
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n002.kovmk.website
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /xyz
+      headers:
+        Host: daohang.kovmk.website
+  - name: RU_speednode_0023
+    type: vmess
+    server: n001.kovmk.website
+    port: 8080
+    uuid: 92f1932f-ee19-464f-900c-93df90df830d
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: n001.kovmk.website
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /xyz
+      headers:
+        Host: daohang.kovmk.website
+  - name: RU_speednode_0024
+    type: vmess
+    server: m003.mmzhk.website
+    port: 8080
+    uuid: 6dde3b3f-0a00-448a-a406-26d0960d1655
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: m003.mmzhk.website
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /xyz
+      headers:
+        Host: daohang.mmzhk.website
+  - name: US_speednode_0031
     server: 150.241.95.62
     port: 42445
     type: ss
     cipher: chacha20-ietf-poly1305
     password: flj72wu+&R
-  - name: US_speednode_0033
+  - name: US_speednode_0034
     server: 156.146.38.168
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
+  - name: US_speednode_0036
+    server: 38.110.1.107
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
   - name: US_speednode_0038
     type: ss
     server: 23.134.94.168
     port: 3389
     cipher: aes-256-gcm
     password: Y6R9pAtvxxzmGC
-  - name: US_speednode_0039
-    server: 38.110.1.107
-    port: 5000
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
   - name: US_speednode_0040
-    type: trojan
-    server: 216.128.147.13
-    port: 443
-    password: wkmY1R4EcP
-    sni: z-v2-003274.kailib.com
-    skip-cert-verify: true
-    udp: false
-  - name: US_speednode_0041
-    server: 142.202.48.105
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: US_speednode_0043
     server: 159.246.55.132
     port: 443
     type: trojan
@@ -123,13 +132,7 @@ proxies:
       headers:
         Host: vip.123789.pp.ua
     skip-cert-verify: true
-  - name: US_speednode_0044
-    server: 38.121.43.204
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: US_speednode_0045
+  - name: US_speednode_0041
     type: vmess
     server: 104.19.72.200
     port: 443
@@ -145,6 +148,24 @@ proxies:
       path: /juzi
       headers:
         Host: sjuzius.zdzdzd.xyz
+  - name: US_speednode_0047
+    type: vmess
+    server: www.baldengineer.com
+    port: 443
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: yen63jj36j3jfflan.thelastronin.cloudns.org
+    skip-cert-verify: true
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: /linkws/afrhms16v.bestxray.buzz
+      headers:
+        Host: yelan.thelastronin.cloudns.org
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -2987,25 +3008,22 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_speednode_0002
-      - CN_speednode_0004
-      - CN_speednode_0005
-      - GB_speednode_0008
-      - IE_speednode_0018
-      - IN_speednode_0019
-      - JP_speednode_0021
-      - JP_speednode_0022
-      - NL_speednode_0023
-      - NL_speednode_0024
-      - US_speednode_0032
-      - US_speednode_0033
+      - CA_speednode_0001
+      - CN_speednode_0003
+      - GB_speednode_0007
+      - IE_speednode_0017
+      - JP_speednode_0020
+      - NL_speednode_0021
+      - RU_speednode_0022
+      - RU_speednode_0023
+      - RU_speednode_0024
+      - US_speednode_0031
+      - US_speednode_0034
+      - US_speednode_0036
       - US_speednode_0038
-      - US_speednode_0039
       - US_speednode_0040
       - US_speednode_0041
-      - US_speednode_0043
-      - US_speednode_0044
-      - US_speednode_0045
+      - US_speednode_0047
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇮🇳 印度 v2rayfree.eu.org
       - 🇷🇺 俄罗斯+v2rayfree.eu.org
@@ -3312,25 +3330,22 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CA_speednode_0002
-      - CN_speednode_0004
-      - CN_speednode_0005
-      - GB_speednode_0008
-      - IE_speednode_0018
-      - IN_speednode_0019
-      - JP_speednode_0021
-      - JP_speednode_0022
-      - NL_speednode_0023
-      - NL_speednode_0024
-      - US_speednode_0032
-      - US_speednode_0033
+      - CA_speednode_0001
+      - CN_speednode_0003
+      - GB_speednode_0007
+      - IE_speednode_0017
+      - JP_speednode_0020
+      - NL_speednode_0021
+      - RU_speednode_0022
+      - RU_speednode_0023
+      - RU_speednode_0024
+      - US_speednode_0031
+      - US_speednode_0034
+      - US_speednode_0036
       - US_speednode_0038
-      - US_speednode_0039
       - US_speednode_0040
       - US_speednode_0041
-      - US_speednode_0043
-      - US_speednode_0044
-      - US_speednode_0045
+      - US_speednode_0047
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇮🇳 印度 v2rayfree.eu.org
       - 🇷🇺 俄罗斯+v2rayfree.eu.org
@@ -3636,25 +3651,22 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - CA_speednode_0002
-      - CN_speednode_0004
-      - CN_speednode_0005
-      - GB_speednode_0008
-      - IE_speednode_0018
-      - IN_speednode_0019
-      - JP_speednode_0021
-      - JP_speednode_0022
-      - NL_speednode_0023
-      - NL_speednode_0024
-      - US_speednode_0032
-      - US_speednode_0033
+      - CA_speednode_0001
+      - CN_speednode_0003
+      - GB_speednode_0007
+      - IE_speednode_0017
+      - JP_speednode_0020
+      - NL_speednode_0021
+      - RU_speednode_0022
+      - RU_speednode_0023
+      - RU_speednode_0024
+      - US_speednode_0031
+      - US_speednode_0034
+      - US_speednode_0036
       - US_speednode_0038
-      - US_speednode_0039
       - US_speednode_0040
       - US_speednode_0041
-      - US_speednode_0043
-      - US_speednode_0044
-      - US_speednode_0045
+      - US_speednode_0047
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇮🇳 印度 v2rayfree.eu.org
       - 🇷🇺 俄罗斯+v2rayfree.eu.org
@@ -3992,25 +4004,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_speednode_0002
-      - CN_speednode_0004
-      - CN_speednode_0005
-      - GB_speednode_0008
-      - IE_speednode_0018
-      - IN_speednode_0019
-      - JP_speednode_0021
-      - JP_speednode_0022
-      - NL_speednode_0023
-      - NL_speednode_0024
-      - US_speednode_0032
-      - US_speednode_0033
+      - CA_speednode_0001
+      - CN_speednode_0003
+      - GB_speednode_0007
+      - IE_speednode_0017
+      - JP_speednode_0020
+      - NL_speednode_0021
+      - RU_speednode_0022
+      - RU_speednode_0023
+      - RU_speednode_0024
+      - US_speednode_0031
+      - US_speednode_0034
+      - US_speednode_0036
       - US_speednode_0038
-      - US_speednode_0039
       - US_speednode_0040
       - US_speednode_0041
-      - US_speednode_0043
-      - US_speednode_0044
-      - US_speednode_0045
+      - US_speednode_0047
       - 🇬🇧 高性价比机场:https://kfyun.uk
       - 🇮🇳 印度 v2rayfree.eu.org
       - 🇷🇺 俄罗斯+v2rayfree.eu.org
