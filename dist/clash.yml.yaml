@@ -23,15 +23,24 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
-  - name: 0|--1
-    server: 194.87.82.28
-    port: 12224
+  - name: 0|--20
+    server: 188.114.97.2
+    port: 443
     client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2fwufOmJ9ELfN4umzcHBfV
+    type: vmess
+    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+    alterId: 0
+    cipher: auto
+    tls: true
     tfo: false
-  - name: 0|--18
+    skip-cert-verify: false
+    servername: obdii.cfd
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: obdii.cfd
+  - name: 0|--23
     server: 188.114.96.3
     port: 443
     client-fingerprint: chrome
@@ -47,7 +56,7 @@ proxies:
       path: /linkws
       headers:
         Host: obdii.cfd
-  - name: 0|--23
+  - name: 0|--25
     server: 172.67.175.56
     port: 443
     client-fingerprint: chrome
@@ -63,7 +72,7 @@ proxies:
       path: /linkws
       headers:
         Host: obdii.cfd
-  - name: 0|--26
+  - name: 0|--27
     server: 172.67.71.160
     port: 443
     client-fingerprint: chrome
@@ -81,39 +90,6 @@ proxies:
       headers:
         Host: obdii.cfd
   - name: 0|--28
-    server: 45.149.12.84
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /linkws#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
-      headers:
-        Host: obdii.cfd
-  - name: 0|--30
-    server: 188.114.97.2
-    port: 443
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-    alterId: 0
-    cipher: auto
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: obdii.cfd
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: obdii.cfd
-  - name: 0|--31
     server: 185.146.173.59
     port: 443
     client-fingerprint: chrome
@@ -128,6 +104,22 @@ proxies:
     network: ws
     ws-opts:
       path: /linkws
+      headers:
+        Host: obdii.cfd
+  - name: 0|--29
+    server: 45.149.12.84
+    port: 443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /linkws#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
       headers:
         Host: obdii.cfd
   - name: '3,4,5|d*********g.com_0 #2'
@@ -977,21 +969,6 @@ proxies:
       headers:
         Host: pooleno.ir
   - name: 15|US_speednode_0033
-    server: 172.67.175.9
-    port: 80
-    client-fingerprint: chrome
-    type: vless
-    uuid: ea9148b9-13b7-41cf-8911-94234e7c3fcf
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    servername: private-codmhttp.teqqlzdw.workers.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: private-codmhttp.teqqlzdw.workers.dev
-  - name: 15|US_speednode_0034
     server: 199.232.5.101
     port: 443
     client-fingerprint: chrome
@@ -1006,7 +983,7 @@ proxies:
       path: /H?ed=2560fp=chrome
       headers:
         Host: mefa.ir
-  - name: 15|US_speednode_0035
+  - name: 15|US_speednode_0034
     server: 199.232.5.79
     port: 443
     client-fingerprint: chrome
@@ -1021,7 +998,7 @@ proxies:
       path: /H?ed=2560fp=chrome
       headers:
         Host: mefa.ir
-  - name: 15|US_speednode_0036
+  - name: 15|US_speednode_0035
     server: 199.232.6.53
     port: 443
     client-fingerprint: chrome
@@ -1036,7 +1013,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0037
+  - name: 15|US_speednode_0036
     server: 199.232.33.127
     port: 443
     client-fingerprint: chrome
@@ -1051,7 +1028,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: mefa.ir
-  - name: 15|US_speednode_0038
+  - name: 15|US_speednode_0037
     server: 199.232.32.247
     port: 443
     client-fingerprint: chrome
@@ -1066,7 +1043,7 @@ proxies:
       path: /security=tls
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0039
+  - name: 15|US_speednode_0038
     server: 199.232.5.79
     port: 443
     client-fingerprint: chrome
@@ -1081,7 +1058,7 @@ proxies:
       path: /security=tls
       headers:
         Host: mefa.ir
-  - name: 15|US_speednode_0040
+  - name: 15|US_speednode_0039
     server: 140.248.152.40
     port: 443
     client-fingerprint: chrome
@@ -1096,22 +1073,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0041
-    server: 199.232.8.68
-    port: 443
-    client-fingerprint: chrome
-    type: vless
-    uuid: 80772220-3e7d-5f06-ae29-96672b8fa6df
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: ELiv2RAy-jOiN.cOm
-    network: ws
-    ws-opts:
-      path: /fp=qq
-      headers:
-        Host: ELiv2RAy-jOiN.cOm
-  - name: 15|US_speednode_0042
+  - name: 15|US_speednode_0040
     server: 199.232.32.234
     port: 443
     client-fingerprint: chrome
@@ -1126,7 +1088,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: behdasht.hrtc.ir
-  - name: 15|US_speednode_0043
+  - name: 15|US_speednode_0041
     server: 199.232.8.31
     port: 443
     client-fingerprint: chrome
@@ -1141,7 +1103,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0044
+  - name: 15|US_speednode_0042
     server: 199.232.7.154
     port: 443
     client-fingerprint: chrome
@@ -1156,7 +1118,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0045
+  - name: 15|US_speednode_0043
     server: 167.82.97.248
     port: 443
     client-fingerprint: chrome
@@ -1171,7 +1133,7 @@ proxies:
       path: /security=tls
       headers:
         Host: backtory.com
-  - name: 15|US_speednode_0046
+  - name: 15|US_speednode_0044
     server: 140.248.152.40
     port: 443
     client-fingerprint: chrome
@@ -1186,7 +1148,7 @@ proxies:
       path: /security=tls
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0047
+  - name: 15|US_speednode_0045
     server: 199.232.0.21
     port: 443
     client-fingerprint: chrome
@@ -1201,7 +1163,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0048
+  - name: 15|US_speednode_0046
     server: 151.101.3.8
     port: 80
     client-fingerprint: chrome
@@ -1217,23 +1179,7 @@ proxies:
         /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
       headers:
         Host: TEL.VMESSORG.http.www.speedtest.net.fast.com.vmessorgg.ir
-  - name: 15|US_speednode_0049
-    server: NUFiLTER.fastly80-2.hosting-ip.com
-    port: 80
-    client-fingerprint: chrome
-    type: vless
-    uuid: 651d818e-4d5c-4180-a295-1db7a8fabc71
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    servername: Berim3arekar.net
-    network: ws
-    ws-opts:
-      path: >-
-        /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=2048
-      headers:
-        Host: Berim3arekar.net
-  - name: 15|US_speednode_0050
+  - name: 15|US_speednode_0047
     server: unlimiteddev.fastly80-3.hosting-ip.com
     port: 80
     client-fingerprint: chrome
@@ -1249,22 +1195,7 @@ proxies:
         /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480fp=chrome
       headers:
         Host: UNLIMITEDDEV.channel-telegram-1.ir
-  - name: 15|US_speednode_0051
-    server: 172.66.44.106
-    port: 443
-    client-fingerprint: chrome
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: MabdI.PAGeS.DEv
-    network: ws
-    ws-opts:
-      path: /9GqWAHqtHAZpMxkq?ed=2560fp=randomized
-      headers:
-        Host: MabdI.PAGeS.DEv
-  - name: 15|US_speednode_0052
+  - name: 15|US_speednode_0048
     server: 104.18.12.229
     port: 8443
     client-fingerprint: chrome
@@ -1279,7 +1210,7 @@ proxies:
       path: /security=tls
       headers:
         Host: pardazeshvpn-tg70.pages.dev
-  - name: 15|US_speednode_0053
+  - name: 15|US_speednode_0049
     server: 199.232.32.247
     port: 443
     client-fingerprint: chrome
@@ -1294,7 +1225,7 @@ proxies:
       path: /H?ed=2560fp=randomized
       headers:
         Host: Sanjeshp.Ir
-  - name: 15|US_speednode_0054
+  - name: 15|US_speednode_0050
     server: 172.66.45.10
     port: 443
     client-fingerprint: chrome
@@ -1309,7 +1240,7 @@ proxies:
       path: /vlesssecurity=tls
       headers:
         Host: newtunnel-2xm.pages.dev
-  - name: 15|US_speednode_0055
+  - name: 15|US_speednode_0051
     server: 199.232.5.66
     port: 443
     client-fingerprint: chrome
@@ -1324,7 +1255,7 @@ proxies:
       path: /fp=qq
       headers:
         Host: ELiV2RaY-0.cOm
-  - name: 15|US_speednode_0056
+  - name: 15|US_speednode_0052
     server: 104.21.92.73
     port: 443
     client-fingerprint: chrome
@@ -1337,7 +1268,7 @@ proxies:
       path: /
       headers:
         Host: trojan.putata.us.kg
-  - name: 15|US_speednode_0059
+  - name: 15|US_speednode_0055
     server: 104.19.198.103
     port: 80
     client-fingerprint: chrome
@@ -1380,13 +1311,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 0|--18
+      - 0|--20
       - 0|--23
-      - 0|--26
+      - 0|--25
+      - 0|--27
       - 0|--28
-      - 0|--30
-      - 0|--31
+      - 0|--29
       - '3,4,5|d*********g.com_0 #2'
       - '3,4,5|d*********g.com_1 #2'
       - '3,4,5|d*********g.com_2 #2'
@@ -1476,11 +1406,7 @@ proxy-groups:
       - 15|US_speednode_0050
       - 15|US_speednode_0051
       - 15|US_speednode_0052
-      - 15|US_speednode_0053
-      - 15|US_speednode_0054
       - 15|US_speednode_0055
-      - 15|US_speednode_0056
-      - 15|US_speednode_0059
       - '16|d*********g.com_2 #3'
       - 3
   - name: ♻️ 自动选择
@@ -1489,13 +1415,12 @@ proxy-groups:
     interval: 300
     proxies:
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 0|--18
+      - 0|--20
       - 0|--23
-      - 0|--26
+      - 0|--25
+      - 0|--27
       - 0|--28
-      - 0|--30
-      - 0|--31
+      - 0|--29
       - '3,4,5|d*********g.com_0 #2'
       - '3,4,5|d*********g.com_1 #2'
       - '3,4,5|d*********g.com_2 #2'
@@ -1585,11 +1510,7 @@ proxy-groups:
       - 15|US_speednode_0050
       - 15|US_speednode_0051
       - 15|US_speednode_0052
-      - 15|US_speednode_0053
-      - 15|US_speednode_0054
       - 15|US_speednode_0055
-      - 15|US_speednode_0056
-      - 15|US_speednode_0059
       - '16|d*********g.com_2 #3'
       - 3
   - name: 🌍 国外媒体
@@ -1599,13 +1520,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 0|--18
+      - 0|--20
       - 0|--23
-      - 0|--26
+      - 0|--25
+      - 0|--27
       - 0|--28
-      - 0|--30
-      - 0|--31
+      - 0|--29
       - '3,4,5|d*********g.com_0 #2'
       - '3,4,5|d*********g.com_1 #2'
       - '3,4,5|d*********g.com_2 #2'
@@ -1695,11 +1615,7 @@ proxy-groups:
       - 15|US_speednode_0050
       - 15|US_speednode_0051
       - 15|US_speednode_0052
-      - 15|US_speednode_0053
-      - 15|US_speednode_0054
       - 15|US_speednode_0055
-      - 15|US_speednode_0056
-      - 15|US_speednode_0059
       - '16|d*********g.com_2 #3'
       - 3
   - name: 🌏 国内媒体
@@ -1728,13 +1644,12 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 0|--18
+      - 0|--20
       - 0|--23
-      - 0|--26
+      - 0|--25
+      - 0|--27
       - 0|--28
-      - 0|--30
-      - 0|--31
+      - 0|--29
       - '3,4,5|d*********g.com_0 #2'
       - '3,4,5|d*********g.com_1 #2'
       - '3,4,5|d*********g.com_2 #2'
@@ -1824,11 +1739,7 @@ proxy-groups:
       - 15|US_speednode_0050
       - 15|US_speednode_0051
       - 15|US_speednode_0052
-      - 15|US_speednode_0053
-      - 15|US_speednode_0054
       - 15|US_speednode_0055
-      - 15|US_speednode_0056
-      - 15|US_speednode_0059
       - '16|d*********g.com_2 #3'
       - 3
   - name: 📲 电报信息
@@ -1837,13 +1748,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 0|--18
+      - 0|--20
       - 0|--23
-      - 0|--26
+      - 0|--25
+      - 0|--27
       - 0|--28
-      - 0|--30
-      - 0|--31
+      - 0|--29
       - '3,4,5|d*********g.com_0 #2'
       - '3,4,5|d*********g.com_1 #2'
       - '3,4,5|d*********g.com_2 #2'
@@ -1933,11 +1843,7 @@ proxy-groups:
       - 15|US_speednode_0050
       - 15|US_speednode_0051
       - 15|US_speednode_0052
-      - 15|US_speednode_0053
-      - 15|US_speednode_0054
       - 15|US_speednode_0055
-      - 15|US_speednode_0056
-      - 15|US_speednode_0059
       - '16|d*********g.com_2 #3'
       - 3
   - name: 🍎 苹果服务
@@ -1947,13 +1853,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 0|--18
+      - 0|--20
       - 0|--23
-      - 0|--26
+      - 0|--25
+      - 0|--27
       - 0|--28
-      - 0|--30
-      - 0|--31
+      - 0|--29
       - '3,4,5|d*********g.com_0 #2'
       - '3,4,5|d*********g.com_1 #2'
       - '3,4,5|d*********g.com_2 #2'
@@ -2043,11 +1948,7 @@ proxy-groups:
       - 15|US_speednode_0050
       - 15|US_speednode_0051
       - 15|US_speednode_0052
-      - 15|US_speednode_0053
-      - 15|US_speednode_0054
       - 15|US_speednode_0055
-      - 15|US_speednode_0056
-      - 15|US_speednode_0059
       - '16|d*********g.com_2 #3'
       - 3
   - name: 🎯 全球直连
@@ -2066,13 +1967,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 0|--18
+      - 0|--20
       - 0|--23
-      - 0|--26
+      - 0|--25
+      - 0|--27
       - 0|--28
-      - 0|--30
-      - 0|--31
+      - 0|--29
       - '3,4,5|d*********g.com_0 #2'
       - '3,4,5|d*********g.com_1 #2'
       - '3,4,5|d*********g.com_2 #2'
@@ -2162,11 +2062,7 @@ proxy-groups:
       - 15|US_speednode_0050
       - 15|US_speednode_0051
       - 15|US_speednode_0052
-      - 15|US_speednode_0053
-      - 15|US_speednode_0054
       - 15|US_speednode_0055
-      - 15|US_speednode_0056
-      - 15|US_speednode_0059
       - '16|d*********g.com_2 #3'
       - 3
 rules:
