@@ -1,4 +1,4 @@
-# 更新时间 2024-12-13T01:27:24.644Z
+# 更新时间 2024-12-13T06:26:54.772Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -15,33 +15,54 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: GB_speednode_0002
-    server: 5.39.254.196
-    port: 23140
+  - name: CN_speednode_0002
+    server: 183.236.51.23
+    port: 41020
     type: vmess
-    uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-    alterId: 0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     tls: false
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: HK_speednode_0003
-    server: 43.199.143.90
-    port: 48539
+  - name: CN_speednode_0003
+    server: 36.151.192.198
+    port: 31071
+    type: trojan
+    password: QwwHvrnN
+    skip-cert-verify: true
+  - name: CN_speednode_0004
+    server: 36.151.192.203
+    port: 25241
+    type: trojan
+    password: QwwHvrnN
+    skip-cert-verify: true
+  - name: CN_speednode_0005
+    server: 36.151.192.242
+    port: 51377
+    type: trojan
+    password: DNUMdmnJ
+    skip-cert-verify: true
+  - name: CN_speednode_0006
+    server: 219.135.227.209
+    port: 18003
+    type: ss
+    cipher: aes-256-gcm
+    password: JT3JJY2B9WYM3ZFF
+  - name: GB_speednode_0009
+    server: 169.150.210.233
+    port: 8080
+    type: ss
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: HK_speednode_0010
+    server: 218.190.230.207
+    port: 41288
     type: trojan
     password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
     sni: hk12.bilibili.com
     skip-cert-verify: true
-  - name: HK_speednode_0004
-    server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green
-    port: 41790
-    type: trojan
-    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-    sni: us1.bilibili.com
-    skip-cert-verify: true
-  - name: HK_speednode_0005
+  - name: HK_speednode_0011
     server: 0bce075b5465c22ad8c82382a5df74ad.v1.cac.node-is.green
     port: 44991
     type: trojan
@@ -49,378 +70,26 @@ proxies:
     sni: us1.bilibili.com
     skip-cert-verify: true
     udp: true
-  - name: LV_speednode_0011
-    server: 46.183.217.232
-    port: 990
+  - name: SG_speednode_0013
+    server: 54.169.221.38
+    port: 443
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: f8f7aCzcPKbsF8p3
-  - name: PL_speednode_0012
-    server: 92.118.205.228
-    port: 990
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: f8f7aCzcPKbsF8p3
-  - name: US_speednode_0013
-    server: 162.159.45.167
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
+    cipher: aes-256-cfb
+    password: amazonskr05
   - name: US_speednode_0014
-    server: 162.159.45.28
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0015
-    server: 162.159.45.124
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0016
-    server: 162.159.45.124
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0017
-    server: 162.159.45.194
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0018
-    server: 162.159.45.28
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0019
-    server: 162.159.45.102
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0020
-    server: 162.159.45.115
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0021
-    server: 162.159.45.20
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0022
-    server: 162.159.45.2
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0023
-    server: 162.159.45.238
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0024
-    server: 162.159.45.141
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0025
-    server: 162.159.45.5
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0026
-    server: 162.159.45.218
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0027
-    server: 162.159.45.247
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0028
-    server: 162.159.45.100
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0029
-    server: 162.159.45.2
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0030
-    server: 162.159.45.181
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0031
-    server: 162.159.45.137
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0032
-    server: 162.159.45.63
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0033
-    server: 162.159.45.53
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0035
-    server: 162.159.45.208
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0036
     server: 107.155.57.11
     port: 8080
     type: ss
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
-  - name: US_speednode_0037
-    server: 162.159.45.16
+  - name: US_speednode_0016
+    server: 54.203.0.206
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: US_speednode_0020
+    server: 104.26.0.3
     port: 8880
     type: vmess
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
@@ -428,990 +97,32 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-    servername: m129.106778.xyz
     network: ws
     ws-opts:
       path: /github.com/Alvin9999
       headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0038
-    server: 162.159.45.231
-    port: 2086
+        Host: m125.106778.xyz
+  - name: US_speednode_0021
+    server: 104.26.0.9
+    port: 8880
     type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
-    servername: e104.808075.xyz
     network: ws
     ws-opts:
       path: /github.com/Alvin9999
       headers:
-        Host: e104.808075.xyz
-    udp: true
+        Host: m125.106778.xyz
+  - name: US_speednode_0027
+    server: 35.91.173.159
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
   - name: US_speednode_0039
-    server: 162.159.45.167
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0040
-    server: 162.159.45.115
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0041
-    server: 162.159.45.141
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0042
-    server: 162.159.45.77
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0043
-    server: 162.159.45.137
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0044
-    server: 162.159.45.181
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0045
-    server: 162.159.45.5
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0046
-    server: 162.159.45.100
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0047
-    server: 162.159.45.108
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0048
-    server: 162.159.45.53
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0049
-    server: 162.159.45.218
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0050
-    server: 162.159.45.128
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0051
-    server: 162.159.45.47
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0052
-    server: 162.159.45.231
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0053
-    server: 162.159.45.165
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0054
-    server: 162.159.45.194
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0055
-    server: 162.159.45.192
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0056
-    server: 162.159.45.208
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0058
-    server: 104.26.0.2
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0059
-    server: 104.26.0.107
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0060
-    server: 104.26.0.77
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0061
-    server: 162.159.45.63
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0062
-    server: 104.26.0.91
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0063
-    server: 104.26.0.101
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0064
-    server: 104.26.0.16
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0065
-    server: 104.26.0.100
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0066
-    server: 104.26.0.20
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0067
-    server: 104.26.0.106
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m129.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m129.106778.xyz
-    udp: true
-  - name: US_speednode_0068
-    server: 104.26.0.239
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0069
-    server: 104.26.0.230
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0070
-    server: 104.26.0.15
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0071
-    server: 104.26.0.12
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0072
-    server: 104.26.0.243
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0073
-    server: 104.26.0.14
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0074
-    server: 104.26.0.226
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e104.808075.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e104.808075.xyz
-    udp: true
-  - name: US_speednode_0075
-    server: 104.26.0.22
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0076
-    server: 104.26.0.13
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0077
-    server: 104.26.0.11
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0078
-    server: 104.26.0.29
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0079
-    server: 104.26.0.3
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0080
-    server: 104.26.0.98
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0081
-    server: 104.26.0.89
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0082
-    server: 104.26.0.28
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0083
-    server: 104.26.0.88
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0084
-    server: 104.26.0.99
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0085
-    server: 104.26.0.95
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0086
-    server: 104.26.0.101
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0087
-    server: 104.26.0.94
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0088
-    server: 104.26.0.242
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0089
-    server: 104.26.0.249
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0090
-    server: 104.26.0.96
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0091
-    server: 104.26.0.250
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0092
-    server: 104.26.0.87
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0093
-    server: 104.26.0.244
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0094
-    server: 104.26.0.102
-    port: 2086
-    type: vmess
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: p132.613055.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: p132.613055.xyz
-    udp: true
-  - name: US_speednode_0095
-    server: 104.26.0.3
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0096
-    server: 104.26.0.15
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0097
-    server: 104.26.0.5
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0098
-    server: 104.26.0.20
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0099
-    server: 104.26.0.25
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0100
     server: 104.26.0.108
     port: 8880
     type: vmess
@@ -1427,87 +138,20 @@ proxies:
       headers:
         Host: m125.106778.xyz
     udp: true
-  - name: US_speednode_0101
-    server: 104.26.0.213
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
+  - name: US_speednode_0041
+    server: 18.237.72.225
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: US_speednode_0042
+    server: 194.5.215.59
+    port: 8080
+    type: ss
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: US_speednode_0102
-    server: 104.26.0.9
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0104
-    server: 104.26.0.250
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0105
-    server: 104.26.0.245
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0106
-    server: 104.26.0.33
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
-    udp: true
-  - name: US_speednode_0107
+  - name: US_speednode_0043
     server: 104.26.0.221
     port: 8880
     type: vmess
@@ -1523,8 +167,8 @@ proxies:
       headers:
         Host: m125.106778.xyz
     udp: true
-  - name: US_speednode_0108
-    server: 104.26.0.233
+  - name: US_speednode_0044
+    server: 104.26.0.33
     port: 8880
     type: vmess
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
@@ -1539,23 +183,14 @@ proxies:
       headers:
         Host: m125.106778.xyz
     udp: true
-  - name: US_speednode_0109
-    server: 104.26.0.98
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m125.106778.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m125.106778.xyz
+  - name: US_speednode_0049
+    server: 23.251.121.242
+    port: 8080
+    type: ss
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: US_speednode_0110
+  - name: US_speednode_0051
     server: 104.26.0.220
     port: 8880
     type: vmess
@@ -1579,71 +214,47 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
-  - name: 0|--1
-    server: 54.169.5.182
+  - name: 0|--2
+    server: 103.36.91.32
+    port: 8388
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf
+    password: asd123456
+    tfo: false
+  - name: 0|--3
+    server: 54.202.63.77
     port: 443
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
-  - name: 0|--2
-    server: 68.183.227.236
+  - name: 0|--5
+    server: 193.108.119.230
     port: 8080
     client-fingerprint: chrome
     type: ss
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     tfo: false
-  - name: 0|--4
-    server: 38.110.1.46
-    port: 7001
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-    tfo: false
-  - name: 0|--5
-    server: 38.110.1.46
+  - name: 0|--37
+    server: irvideo.cfd
     port: 443
     client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
+    type: vmess
+    uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+    alterId: 0
+    cipher: auto
+    tls: true
     tfo: false
-  - name: 0|--6
-    server: 38.110.1.46
-    port: 6379
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-    tfo: false
-  - name: 0|--7
-    server: 38.110.1.46
-    port: 8080
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-    tfo: false
-  - name: 0|--8
-    server: 38.110.1.46
-    port: 5500
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-    tfo: false
-  - name: 0|--94
-    server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
-    port: 49089
-    client-fingerprint: chrome
-    type: trojan
-    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-    sni: jp12.bilibili.com
     skip-cert-verify: false
-  - name: 0|--95
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: irvideo.cfd
+  - name: 0|--121
     server: 1906e95f0a4e34cca3d5618e3498505d.v1.cac.node-is.green
     port: 48539
     client-fingerprint: chrome
@@ -1651,13 +262,21 @@ proxies:
     password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
     sni: hk12.bilibili.com
     skip-cert-verify: false
-  - name: 0|--100
-    server: 7c0bb8d8872425b41520a1a9ad77fa89.v1.cac.node-is.green
-    port: 49782
+  - name: 0|--122
+    server: eb0aa4fcce49b0399bc0f109cd6a0296.v1.cac.node-is.green
+    port: 49089
     client-fingerprint: chrome
     type: trojan
     password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
     sni: jp12.bilibili.com
+    skip-cert-verify: false
+  - name: 0,15|HK_speednode_0004
+    server: ddbfb45e8b47580a5b2c2b5e43fa9213.v1.cac.node-is.green
+    port: 41790
+    client-fingerprint: chrome
+    type: trojan
+    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    sni: us1.bilibili.com
     skip-cert-verify: false
   - name: 🇭🇰 13,14|香港|@ripaojiedian
     server: 36.151.192.239
@@ -1667,25 +286,26 @@ proxies:
     password: DNUMdmnJ
     sni: 36.151.192.239
     skip-cert-verify: false
-  - name: 🇭🇰 13,14|香港2|@ripaojiedian
-    server: 36.151.192.203
-    port: 25241
-    client-fingerprint: chrome
-    type: trojan
-    password: QwwHvrnN
-    sni: 36.151.192.203
-    skip-cert-verify: false
-  - name: 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
+  - name: 🇭🇰 13,14|香港3|@ripaojiedian
     server: hk1.tiljkc.top
-    port: 39041
+    port: 41002
     client-fingerprint: chrome
     type: vmess
     uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     tfo: false
     skip-cert-verify: false
+    servername: urydh.ljricbrd.top
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - hk1.tiljkc.top
   - name: 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
     server: h-k02.loveroise.com
     port: 54002
@@ -1695,12 +315,20 @@ proxies:
     password: 09833a6f-4d46-426e-87fe-7793a5489f84
     tfo: false
   - name: 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-    server: 113.99.142.152
-    port: 15013
+    server: 219.135.227.209
+    port: 15012
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
-    password: 5BPUP4YJFYRRQK13
+    password: PW5K9ORIVZQLTTCZ
+    tfo: false
+  - name: 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+    server: h-k01.loveroise.com
+    port: 54000
+    client-fingerprint: chrome
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 09833a6f-4d46-426e-87fe-7793a5489f84
     tfo: false
   - name: 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
     server: 183.236.51.23
@@ -1713,14 +341,6 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-    server: h-k01.loveroise.com
-    port: 54000
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 09833a6f-4d46-426e-87fe-7793a5489f84
-    tfo: false
   - name: 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
     server: 18.162.246.4
     port: 18443
@@ -1747,14 +367,6 @@ proxies:
       path: /?ed=2560
       headers:
         Host: tr.koiok.us.kg
-  - name: 🇯🇵 13,14|日本|@ripaojiedian
-    server: 36.151.192.198
-    port: 31071
-    client-fingerprint: chrome
-    type: trojan
-    password: QwwHvrnN
-    sni: 36.151.192.198
-    skip-cert-verify: false
   - name: 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
     server: j-p01.loveroise.com
     port: 54096
@@ -1782,14 +394,6 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
-    server: 219.135.227.209
-    port: 18016
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: LKX69P4C7CNLBQJ2
-    tfo: false
   - name: 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
     server: k-r04.loveroise.com
     port: 54014
@@ -1807,27 +411,41 @@ proxies:
     password: 09833a6f-4d46-426e-87fe-7793a5489f84
     tfo: false
   - name: 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-    server: sgp1.tiljkc.top
-    port: 34843
+    server: 219.135.227.209
+    port: 16016
     client-fingerprint: chrome
-    type: vmess
-    uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
-    alterId: 0
-    cipher: auto
-    tls: false
+    type: ss
+    cipher: aes-256-gcm
+    password: 2F5D5R6AZHTMJC3K
     tfo: false
-    skip-cert-verify: false
   - name: 🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian
-    server: sgp1.tiljkc.top
-    port: 34842
+    server: 113.99.142.152
+    port: 16001
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: VKDQGD5V6EA0Z0PU
+    tfo: false
+  - name: 🇸🇬 13,14|新加坡4|@ripaojiedian
+    server: sg1.tiljkc.top
+    port: 21005
     client-fingerprint: chrome
     type: vmess
     uuid: edd1ca31-bdf4-377e-bc3a-76635a33c9cd
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     tfo: false
     skip-cert-verify: false
+    servername: urydh.ljricbrd.top
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - sg1.tiljkc.top
   - name: 🇺🇸 13,14|美国|@ripaojiedian
     server: usla.mjt000.com
     port: 443
@@ -1844,16 +462,8 @@ proxies:
     cipher: aes-256-gcm
     password: MB2IKBDACE0LUEEZ
     tfo: false
-  - name: 🇺🇸 13|🇺🇸 美国3|@ripaojiedian
-    server: 38.110.1.252
-    port: 3389
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    tfo: false
   - name: 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
-    server: 52.38.9.34
+    server: 18.183.227.204
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -1861,7 +471,7 @@ proxies:
     password: amazonskr05
     tfo: false
   - name: 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-    server: 43.203.255.151
+    server: 18.143.139.72
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -1869,7 +479,7 @@ proxies:
     password: amazonskr05
     tfo: false
   - name: 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-    server: 52.194.222.57
+    server: 13.250.110.56
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -1883,6 +493,14 @@ proxies:
     type: trojan
     password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
     sni: vn.mjt000.com
+    skip-cert-verify: false
+  - name: 15|HK_speednode_0003
+    server: 43.199.143.90
+    port: 48539
+    client-fingerprint: chrome
+    type: trojan
+    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    sni: hk12.bilibili.com
     skip-cert-verify: false
   - name: 16|d*********g.com_2
     server: 42.236.73.72
@@ -4722,10 +3340,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.66
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.26.0.64
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -4734,34 +3352,29 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.18.114.244
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点2
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.21.238.186
+        host: e5.808075.xyz
+    server: 104.18.114.243
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
+  - type: trojan
+    name: 美国+佐治亚州亚特兰大市BellSouth公司
+    server: 2e703cfbaa90b14fa90d4f1353058efc.v1.cac.node-is.green
+    port: 45476
+    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点3
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.26.0.193
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.18.114.231
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -4770,15 +3383,27 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.26.0.247
+        host: e5.808075.xyz
+    server: 104.21.238.185
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
     name: 美国CloudFlare节点5
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.21.238.162
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点6
     ws-opts:
       path: github.com/Alvin9999
       headers:
@@ -4790,298 +3415,7 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点6
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.21.238.63
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
     name: 美国CloudFlare节点7
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.26.0.21
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点9
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.18.114.164
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点11
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.18.114.17
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点13
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.21.238.64
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点14
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.18.114.245
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点15
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.21.238.2
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点16
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 162.159.45.183
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点17
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.21.238.123
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点18
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.26.0.232
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点19
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.21.238.43
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点21
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.18.114.140
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 韩国V2CROSS.COM23
-    ws-opts:
-      path: /hgqqvws
-      headers:
-        host: cc2.1808.site
-    server: si.1808.site
-    port: 30002
-    uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点24
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.21.238.100
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点25
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.21.238.225
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点26
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.18.114.243
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点29
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.18.114.37
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点31
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.18.114.173
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.208.219.0
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点33
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.18.114.73
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点34
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.21.238.32
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.135.24.83
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点36
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.18.114.223
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点37
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.21.238.99
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点38
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.26.0.200
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点39
     ws-opts:
       path: github.com/Alvin9999
       headers:
@@ -5093,14 +3427,375 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点40
+    name: 美国CloudFlare节点8
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: p1.613055.xyz
-    server: 104.18.114.3
+    server: 104.26.0.201
     port: 2086
     uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点9
+    ws-opts:
+      path: /afrhms07.xfixedfloat.cfd/linkws
+      headers:
+        host: vpnsupportfast.vpnsuortfast.workers.dev
+    server: 104.16.60.8
+    port: 2086
+    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点10
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.227
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点12
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.52
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点13
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.144
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点14
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.141
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点15
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.202
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点16
+    ws-opts:
+      path: /github.com/Alvin9999
+      headers:
+        host: m129.106778.xyz
+    server: 162.159.45.47
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点17
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.26.0.210
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点18
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.26.0.2
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点19
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.226
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点20
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.172
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点21
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.21
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点22
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.94
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点23
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.135
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点24
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.26
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点25
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.74
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 俄罗斯V2CROSS.COM26
+    ws-opts:
+      path: /glweidf.cfd/linkws
+      headers:
+        host: worker-mute-bar-1719.nifotok993.workers.dev
+    server: 185.221.160.163
+    port: 443
+    uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: vmess
+    name: 美国CloudFlare节点27
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.21.238.16
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点28
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.72
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点29
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.25
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点30
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.146
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点31
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.232
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点32
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.36
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点34
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.183
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点35
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 162.159.45.47
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点36
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.237
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点37
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.205
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点38
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.229
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点39
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.56
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点40
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.21.238.123
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5109,10 +3804,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.75
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 162.159.45.219
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5122,7 +3817,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.26.0.14
+    server: 104.18.114.138
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5133,10 +3828,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.21.238.92
+        host: p1.613055.xyz
+    server: 104.26.0.24
     port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5146,28 +3841,33 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.21.238.104
+    server: 104.26.0.18
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 美国+佐治亚州亚特兰大市BellSouth公司
-    server: f6e0da7813d9e2566bf3b1669b9f84bf.v1.cac.node-is.green
-    port: 49300
-    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点45
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.240
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: vmess
     name: 美国CloudFlare节点46
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.101
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.26.0.22
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5176,10 +3876,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.70
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.18.114.49
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5188,10 +3888,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.219
+        host: e5.808075.xyz
+    server: 104.18.114.55
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5200,10 +3900,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.15
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.18.114.168
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5212,10 +3912,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.21.238.191
+        host: e5.808075.xyz
+    server: 104.26.0.203
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5224,10 +3924,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.184
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.21.238.41
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5236,10 +3936,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.69
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.26.0.34
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5248,10 +3948,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.26.0.150
+        host: p1.613055.xyz
+    server: 104.26.0.187
     port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5260,10 +3960,22 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.26.0.112
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.18.114.113
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点55
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.21.238.71
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5272,10 +3984,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.178
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.21.238.15
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5285,7 +3997,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.18.114.156
+    server: 104.18.114.221
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5296,27 +4008,44 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.156
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.18.114.215
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
-  - type: trojan
-    name: 香港+Amazon数据中心
-    server: 18.166.209.170
-    port: 49089
-    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-    udp: true
-    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点59
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.98
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: vmess
     name: 美国CloudFlare节点60
     ws-opts:
       path: github.com/Alvin9999
       headers:
+        host: p1.613055.xyz
+    server: 104.18.114.31
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点61
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
         host: m1.106778.xyz
-    server: 104.18.114.178
+    server: 104.26.0.161
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5327,10 +4056,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.8
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.18.114.89
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5339,10 +4068,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.18.114.182
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.26.0.191
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5351,10 +4080,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.8
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.21.238.241
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5363,10 +4092,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.45
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.26.0.195
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5376,31 +4105,25 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.18.114.208
+    server: 104.26.0.66
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
+  - type: ss
+    name: 希腊+V2CROSS.COM
+    server: 92.118.205.85
+    port: 20022
+    password: YWVzLTI1Ni1nY206ZG9uZ3RhaXdhbmcuY29t
+    cipher: aes-128-gcm
   - type: vmess
     name: 美国CloudFlare节点68
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.26.0.207
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点69
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
         host: m1.106778.xyz
-    server: 104.18.114.194
+    server: 104.26.0.149
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5412,7 +4135,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.21.238.62
+    server: 104.18.114.4
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
@@ -5423,22 +4146,22 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.21.238.217
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.26.0.241
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
     name: 美国CloudFlare节点72
     ws-opts:
-      path: /
+      path: github.com/Alvin9999
       headers:
-        host: gost.naiunclient.top
-    server: gost.cloudflare.182682.xyz
-    port: 80
-    uuid: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+        host: p1.613055.xyz
+    server: 104.18.114.52
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5448,7 +4171,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.26.0.91
+    server: 104.18.114.20
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5459,8 +4182,20 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
+        host: p1.613055.xyz
+    server: 104.26.0.237
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点75
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
         host: m1.106778.xyz
-    server: 104.26.0.168
+    server: 104.26.0.154
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5472,7 +4207,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: p1.613055.xyz
-    server: 162.159.45.20
+    server: 104.26.0.38
     port: 2086
     uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
@@ -5483,10 +4218,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.47
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.21.238.62
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5495,10 +4230,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.1
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 162.159.45.238
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5508,7 +4243,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.18.114.6
+    server: 104.26.0.84
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5520,7 +4255,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.18.114.69
+    server: 104.21.238.134
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5543,10 +4278,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.249
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.26.0.243
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5555,10 +4290,22 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.26.0.232
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.26.0.152
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点84
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.3
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5567,28 +4314,46 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.26.0.97
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.26.0.4
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
-  - type: ss
-    name: 希腊+V2CROSS.COM
-    server: 92.118.205.85
-    port: 20022
-    password: YWVzLTI1Ni1nY206ZG9uZ3RhaXdhbmcuY29t
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点86
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.240
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点87
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.26.0.166
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: vmess
     name: 美国CloudFlare节点88
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.26.0.219
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.21.238.187
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5597,10 +4362,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.34
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.26.0.85
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5610,7 +4375,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.26.0.122
+    server: 104.18.114.68
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5621,10 +4386,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.235
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.18.114.217
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5634,7 +4399,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.18.114.115
+    server: 104.26.0.208
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
@@ -5645,10 +4410,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.21.238.127
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.21.238.206
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5657,10 +4422,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.21.238.102
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.26.0.78
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5669,10 +4434,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.68
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.26.0.165
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5682,9 +4447,21 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: p1.613055.xyz
-    server: 104.18.114.198
+    server: 104.18.114.28
     port: 2086
     uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点97
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.244
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5694,7 +4471,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: p1.613055.xyz
-    server: 104.26.0.105
+    server: 104.21.238.142
     port: 2086
     uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
@@ -5706,9 +4483,21 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.26.0.130
+    server: 104.26.0.140
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点100
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.177
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5717,10 +4506,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.52
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.26.0.159
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5729,10 +4518,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.26.0.161
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.21.238.90
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5741,10 +4530,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.26.0.132
+        host: e5.808075.xyz
+    server: 104.21.238.30
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5754,7 +4543,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.21.238.107
+    server: 104.18.114.215
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
@@ -5765,10 +4554,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.21.238.221
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.21.238.154
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5778,7 +4567,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.18.114.179
+    server: 104.18.114.142
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
@@ -5789,10 +4578,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.26.0.30
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.21.238.197
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5801,10 +4590,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.145
+        host: e5.808075.xyz
+    server: 104.26.0.184
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5813,10 +4602,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.26.0.133
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.26.0.244
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5825,10 +4614,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.32
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.21.238.247
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5838,7 +4627,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.18.114.229
+    server: 104.21.238.97
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5849,10 +4638,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.132
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.26.0.155
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5861,10 +4650,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.26.0.166
+        host: e5.808075.xyz
+    server: 104.21.238.9
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5873,10 +4662,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.26.0.118
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.21.238.173
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5885,10 +4674,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.21.238.185
+        host: p1.613055.xyz
+    server: 104.18.114.96
     port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5897,10 +4686,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.21.238.170
+        host: e5.808075.xyz
+    server: 104.21.238.148
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5909,10 +4698,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.21.238.31
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.26.0.250
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -5921,8 +4710,20 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
+        host: p1.613055.xyz
+    server: 104.18.114.33
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点119
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
         host: m1.106778.xyz
-    server: 104.18.114.95
+    server: 104.21.238.226
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5934,7 +4735,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.21.238.38
+    server: 104.18.114.190
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
@@ -5945,10 +4746,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.65
+        host: p1.613055.xyz
+    server: 104.18.114.134
     port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -5957,10 +4758,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.21.238.65
+        host: e5.808075.xyz
+    server: 104.26.0.121
     port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5970,7 +4771,7 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.18.114.180
+    server: 104.18.114.142
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
@@ -5981,10 +4782,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.21.238.185
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.21.238.181
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -5994,9 +4795,21 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.21.238.210
+    server: 104.26.0.55
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点126
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.249
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -6005,10 +4818,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.229
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.21.238.14
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6017,10 +4830,22 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.148
+        host: p1.613055.xyz
+    server: 104.18.114.176
     port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点129
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.232
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6029,10 +4854,22 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.61
+        host: m1.106778.xyz
+    server: 104.21.238.143
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点131
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.202
     port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -6041,10 +4878,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.57
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.21.238.180
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6053,10 +4890,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.18.114.162
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.18.114.140
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6065,10 +4902,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.18.114.168
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.18.114.9
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -6078,21 +4915,21 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: p1.613055.xyz
-    server: 104.18.114.90
+    server: 104.18.114.110
     port: 2086
     uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点137
+    name: 美国CloudFlare节点136
     ws-opts:
-      path: github.com/Alvin9999
+      path: /github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.18.114.30
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: p1.613055.xyz
+    server: 104.18.114.13
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -6101,10 +4938,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.26.0.191
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.21.238.91
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6113,10 +4950,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: p1.613055.xyz
-    server: 104.26.0.49
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+        host: m1.106778.xyz
+    server: 104.26.0.214
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6125,142 +4962,15 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.18.114.64
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点142
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.21.238.89
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: ss
-    name: 广东省+移动
-    server: osijdjxmd15.yunxiangvip.mom
-    port: 27802
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMGY2ZjBjOC05NGYyLTQ5NjMtOTVmMi0yYjBjMzhkZDFhZGU=
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点145
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.26.0.103
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点146
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.26.0.117
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点147
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.26.0.186
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点148
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.21.238.56
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点149
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
         host: p1.613055.xyz
-    server: 104.18.114.143
+    server: 162.159.45.77
     port: 2086
     uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点150
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: m1.106778.xyz
-    server: 104.18.114.57
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点151
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.21.238.154
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点152
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: e5.808075.xyz
-    server: 104.26.0.122
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点154
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: p1.613055.xyz
-    server: 104.26.0.138
-    port: 2086
-    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点155
+    name: 美国CloudFlare节点141
     ws-opts:
       path: github.com/Alvin9999
       headers:
@@ -6272,26 +4982,194 @@ proxies:
     cipher: auto
     network: ws
   - type: vmess
-    name: 美国CloudFlare节点156
+    name: 美国CloudFlare节点142
     ws-opts:
       path: github.com/Alvin9999
       headers:
         host: m1.106778.xyz
-    server: 104.26.0.153
+    server: 104.21.238.237
     port: 8880
     uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
   - type: vmess
+    name: 美国CloudFlare节点143
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.74
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点144
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.39
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点145
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.151
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点146
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.24
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点147
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.165
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点148
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.47
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点149
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.231
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点150
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.200
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点151
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.178
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点152
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.57
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点153
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.68
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点154
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.202
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点155
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.238
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点156
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.93
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
     name: 美国CloudFlare节点157
     ws-opts:
-      path: /
+      path: github.com/Alvin9999
       headers:
-        host: shs.xiaoqi666.xyz
-    server: 104.21.89.219
-    port: 2086
-    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+        host: m1.106778.xyz
+    server: 104.21.238.137
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6300,10 +5178,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: e5.808075.xyz
-    server: 104.18.114.81
-    port: 2086
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+        host: m1.106778.xyz
+    server: 104.21.238.111
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
     alterId: 0
     cipher: auto
     network: ws
@@ -6312,10 +5190,10 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        host: m1.106778.xyz
-    server: 104.18.114.134
-    port: 8880
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+        host: e5.808075.xyz
+    server: 104.26.0.142
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
     alterId: 0
     cipher: auto
     network: ws
@@ -6325,9 +5203,712 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: e5.808075.xyz
-    server: 104.18.114.209
+    server: 104.21.238.60
     port: 2086
     uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点161
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.214
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点162
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.164
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点163
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.68
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点164
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.186
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点165
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.89
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点166
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 162.159.45.20
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点167
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.40
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点168
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.187
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点169
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.93
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点170
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.212
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点171
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.3
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点172
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.92
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点173
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.21.238.126
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 香港+环球全域电讯国际互联节点
+    server: hgc.node-is.green
+    port: 42264
+    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点175
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.7
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点176
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.100
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点177
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.101
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点178
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.66
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点179
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.26.0.167
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点180
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.54
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点181
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.170
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点182
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.166
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点183
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.242
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点184
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.67
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点185
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.204
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点186
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.194
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点187
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.28
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点188
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.26.0.55
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点189
+    ws-opts:
+      path: /github.com/Alvin9999
+      headers:
+        host: e104.808075.xyz
+    server: 104.26.0.107
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点190
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.26.0.6
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点191
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.21.238.45
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点192
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.18.114.74
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点193
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.22
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点194
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 162.159.45.100
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点195
+    ws-opts:
+      path: /
+      headers:
+        host: gost.naiunclient.top
+    server: gost.cloudflare.182682.xyz
+    port: 80
+    uuid: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点196
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.239
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点197
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.78
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点198
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.67
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点199
+    ws-opts:
+      path: /
+      headers:
+        host: chunchuan.kejixiaoqi666.store
+    server: 104.16.155.10
+    port: 80
+    uuid: e6543319-0574-42ac-b778-1c4325d626f5
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点200
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.9
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点201
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.213
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点202
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.123
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点203
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.21.238.221
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点204
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.150
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点205
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.59
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点206
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.246
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点207
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.92
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点208
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.26.0.73
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点209
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.247
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点210
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.248
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点211
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.54
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点212
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.21.238.166
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点213
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.18.114.53
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点214
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: m1.106778.xyz
+    server: 104.26.0.248
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点215
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 162.159.45.247
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点216
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.206
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点217
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.21.238.172
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点219
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: e5.808075.xyz
+    server: 104.26.0.8
+    port: 2086
+    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 美国CloudFlare节点220
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: p1.613055.xyz
+    server: 104.18.114.87
+    port: 2086
+    uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
     alterId: 0
     cipher: auto
     network: ws
@@ -6338,143 +5919,58 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - CN_speednode_0001
-      - GB_speednode_0002
-      - HK_speednode_0003
-      - HK_speednode_0004
-      - HK_speednode_0005
-      - LV_speednode_0011
-      - PL_speednode_0012
-      - US_speednode_0013
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - GB_speednode_0009
+      - HK_speednode_0010
+      - HK_speednode_0011
+      - SG_speednode_0013
       - US_speednode_0014
-      - US_speednode_0015
       - US_speednode_0016
-      - US_speednode_0017
-      - US_speednode_0018
-      - US_speednode_0019
       - US_speednode_0020
       - US_speednode_0021
-      - US_speednode_0022
-      - US_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
       - US_speednode_0027
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0033
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
       - US_speednode_0039
-      - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - US_speednode_0045
-      - US_speednode_0046
-      - US_speednode_0047
-      - US_speednode_0048
       - US_speednode_0049
-      - US_speednode_0050
       - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0054
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - US_speednode_0073
-      - US_speednode_0074
-      - US_speednode_0075
-      - US_speednode_0076
-      - US_speednode_0077
-      - US_speednode_0078
-      - US_speednode_0079
-      - US_speednode_0080
-      - US_speednode_0081
-      - US_speednode_0082
-      - US_speednode_0083
-      - US_speednode_0084
-      - US_speednode_0085
-      - US_speednode_0086
-      - US_speednode_0087
-      - US_speednode_0088
-      - US_speednode_0089
-      - US_speednode_0090
-      - US_speednode_0091
-      - US_speednode_0092
-      - US_speednode_0093
-      - US_speednode_0094
-      - US_speednode_0095
-      - US_speednode_0096
-      - US_speednode_0097
-      - US_speednode_0098
-      - US_speednode_0099
-      - US_speednode_0100
-      - US_speednode_0101
-      - US_speednode_0102
-      - US_speednode_0104
-      - US_speednode_0105
-      - US_speednode_0106
-      - US_speednode_0107
-      - US_speednode_0108
-      - US_speednode_0109
-      - US_speednode_0110
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
       - 0|--2
-      - 0|--4
+      - 0|--3
       - 0|--5
-      - 0|--6
-      - 0|--7
-      - 0|--8
-      - 0|--94
-      - 0|--95
-      - 0|--100
+      - 0|--37
+      - 0|--121
+      - 0|--122
+      - 0,15|HK_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
-      - 🇭🇰 13,14|香港2|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 13,14|香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
       - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13,14|日本|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13,14|新加坡4|@ripaojiedian
       - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国3|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|HK_speednode_0003
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -6777,14 +6273,16 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
       - 美国CloudFlare节点1
-      - 美国CloudFlare节点2
+      - 美国+佐治亚州亚特兰大市BellSouth公司
       - 美国CloudFlare节点3
       - 美国CloudFlare节点4
       - 美国CloudFlare节点5
       - 美国CloudFlare节点6
       - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点12
       - 美国CloudFlare节点13
       - 美国CloudFlare节点14
       - 美国CloudFlare节点15
@@ -6792,17 +6290,21 @@ proxy-groups:
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
       - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
       - 美国CloudFlare节点21
-      - 韩国V2CROSS.COM23
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
       - 美国CloudFlare节点24
       - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 俄罗斯V2CROSS.COM26
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
       - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
       - 美国CloudFlare节点31
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点33
+      - 美国CloudFlare节点32
       - 美国CloudFlare节点34
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点35
       - 美国CloudFlare节点36
       - 美国CloudFlare节点37
       - 美国CloudFlare节点38
@@ -6812,7 +6314,7 @@ proxy-groups:
       - 美国CloudFlare节点42
       - 美国CloudFlare节点43
       - 美国CloudFlare节点44
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点45
       - 美国CloudFlare节点46
       - 美国CloudFlare节点47
       - 美国CloudFlare节点48
@@ -6822,23 +6324,26 @@ proxy-groups:
       - 美国CloudFlare节点52
       - 美国CloudFlare节点53
       - 美国CloudFlare节点54
+      - 美国CloudFlare节点55
       - 美国CloudFlare节点56
       - 美国CloudFlare节点57
       - 美国CloudFlare节点58
-      - 香港+Amazon数据中心
+      - 美国CloudFlare节点59
       - 美国CloudFlare节点60
+      - 美国CloudFlare节点61
       - 美国CloudFlare节点62
       - 美国CloudFlare节点63
       - 美国CloudFlare节点64
       - 美国CloudFlare节点65
       - 美国CloudFlare节点66
+      - 希腊+V2CROSS.COM
       - 美国CloudFlare节点68
-      - 美国CloudFlare节点69
       - 美国CloudFlare节点70
       - 美国CloudFlare节点71
       - 美国CloudFlare节点72
       - 美国CloudFlare节点73
       - 美国CloudFlare节点74
+      - 美国CloudFlare节点75
       - 美国CloudFlare节点76
       - 美国CloudFlare节点77
       - 美国CloudFlare节点78
@@ -6847,8 +6352,10 @@ proxy-groups:
       - 美国CloudFlare节点81
       - 美国CloudFlare节点82
       - 美国CloudFlare节点83
+      - 美国CloudFlare节点84
       - 美国CloudFlare节点85
-      - 希腊+V2CROSS.COM
+      - 美国CloudFlare节点86
+      - 美国CloudFlare节点87
       - 美国CloudFlare节点88
       - 美国CloudFlare节点89
       - 美国CloudFlare节点90
@@ -6858,8 +6365,10 @@ proxy-groups:
       - 美国CloudFlare节点94
       - 美国CloudFlare节点95
       - 美国CloudFlare节点96
+      - 美国CloudFlare节点97
       - 美国CloudFlare节点98
       - 美国CloudFlare节点99
+      - 美国CloudFlare节点100
       - 美国CloudFlare节点101
       - 美国CloudFlare节点102
       - 美国CloudFlare节点103
@@ -6878,25 +6387,31 @@ proxy-groups:
       - 美国CloudFlare节点116
       - 美国CloudFlare节点117
       - 美国CloudFlare节点118
+      - 美国CloudFlare节点119
       - 美国CloudFlare节点120
       - 美国CloudFlare节点121
       - 美国CloudFlare节点122
       - 美国CloudFlare节点123
       - 美国CloudFlare节点124
       - 美国CloudFlare节点125
+      - 美国CloudFlare节点126
       - 美国CloudFlare节点127
       - 美国CloudFlare节点128
+      - 美国CloudFlare节点129
       - 美国CloudFlare节点130
+      - 美国CloudFlare节点131
       - 美国CloudFlare节点132
       - 美国CloudFlare节点133
       - 美国CloudFlare节点134
       - 美国CloudFlare节点135
-      - 美国CloudFlare节点137
+      - 美国CloudFlare节点136
       - 美国CloudFlare节点138
       - 美国CloudFlare节点139
       - 美国CloudFlare节点140
+      - 美国CloudFlare节点141
       - 美国CloudFlare节点142
-      - 广东省+移动
+      - 美国CloudFlare节点143
+      - 美国CloudFlare节点144
       - 美国CloudFlare节点145
       - 美国CloudFlare节点146
       - 美国CloudFlare节点147
@@ -6905,6 +6420,7 @@ proxy-groups:
       - 美国CloudFlare节点150
       - 美国CloudFlare节点151
       - 美国CloudFlare节点152
+      - 美国CloudFlare节点153
       - 美国CloudFlare节点154
       - 美国CloudFlare节点155
       - 美国CloudFlare节点156
@@ -6912,6 +6428,65 @@ proxy-groups:
       - 美国CloudFlare节点158
       - 美国CloudFlare节点159
       - 美国CloudFlare节点160
+      - 美国CloudFlare节点161
+      - 美国CloudFlare节点162
+      - 美国CloudFlare节点163
+      - 美国CloudFlare节点164
+      - 美国CloudFlare节点165
+      - 美国CloudFlare节点166
+      - 美国CloudFlare节点167
+      - 美国CloudFlare节点168
+      - 美国CloudFlare节点169
+      - 美国CloudFlare节点170
+      - 美国CloudFlare节点171
+      - 美国CloudFlare节点172
+      - 美国CloudFlare节点173
+      - 香港+环球全域电讯国际互联节点
+      - 美国CloudFlare节点175
+      - 美国CloudFlare节点176
+      - 美国CloudFlare节点177
+      - 美国CloudFlare节点178
+      - 美国CloudFlare节点179
+      - 美国CloudFlare节点180
+      - 美国CloudFlare节点181
+      - 美国CloudFlare节点182
+      - 美国CloudFlare节点183
+      - 美国CloudFlare节点184
+      - 美国CloudFlare节点185
+      - 美国CloudFlare节点186
+      - 美国CloudFlare节点187
+      - 美国CloudFlare节点188
+      - 美国CloudFlare节点189
+      - 美国CloudFlare节点190
+      - 美国CloudFlare节点191
+      - 美国CloudFlare节点192
+      - 美国CloudFlare节点193
+      - 美国CloudFlare节点194
+      - 美国CloudFlare节点195
+      - 美国CloudFlare节点196
+      - 美国CloudFlare节点197
+      - 美国CloudFlare节点198
+      - 美国CloudFlare节点199
+      - 美国CloudFlare节点200
+      - 美国CloudFlare节点201
+      - 美国CloudFlare节点202
+      - 美国CloudFlare节点203
+      - 美国CloudFlare节点204
+      - 美国CloudFlare节点205
+      - 美国CloudFlare节点206
+      - 美国CloudFlare节点207
+      - 美国CloudFlare节点208
+      - 美国CloudFlare节点209
+      - 美国CloudFlare节点210
+      - 美国CloudFlare节点211
+      - 美国CloudFlare节点212
+      - 美国CloudFlare节点213
+      - 美国CloudFlare节点214
+      - 美国CloudFlare节点215
+      - 美国CloudFlare节点216
+      - 美国CloudFlare节点217
+      - 美国CloudFlare节点219
+      - 美国CloudFlare节点220
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -6919,143 +6494,58 @@ proxy-groups:
     tolerance: 50
     proxies:
       - CN_speednode_0001
-      - GB_speednode_0002
-      - HK_speednode_0003
-      - HK_speednode_0004
-      - HK_speednode_0005
-      - LV_speednode_0011
-      - PL_speednode_0012
-      - US_speednode_0013
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - GB_speednode_0009
+      - HK_speednode_0010
+      - HK_speednode_0011
+      - SG_speednode_0013
       - US_speednode_0014
-      - US_speednode_0015
       - US_speednode_0016
-      - US_speednode_0017
-      - US_speednode_0018
-      - US_speednode_0019
       - US_speednode_0020
       - US_speednode_0021
-      - US_speednode_0022
-      - US_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
       - US_speednode_0027
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0033
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
       - US_speednode_0039
-      - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - US_speednode_0045
-      - US_speednode_0046
-      - US_speednode_0047
-      - US_speednode_0048
       - US_speednode_0049
-      - US_speednode_0050
       - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0054
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - US_speednode_0073
-      - US_speednode_0074
-      - US_speednode_0075
-      - US_speednode_0076
-      - US_speednode_0077
-      - US_speednode_0078
-      - US_speednode_0079
-      - US_speednode_0080
-      - US_speednode_0081
-      - US_speednode_0082
-      - US_speednode_0083
-      - US_speednode_0084
-      - US_speednode_0085
-      - US_speednode_0086
-      - US_speednode_0087
-      - US_speednode_0088
-      - US_speednode_0089
-      - US_speednode_0090
-      - US_speednode_0091
-      - US_speednode_0092
-      - US_speednode_0093
-      - US_speednode_0094
-      - US_speednode_0095
-      - US_speednode_0096
-      - US_speednode_0097
-      - US_speednode_0098
-      - US_speednode_0099
-      - US_speednode_0100
-      - US_speednode_0101
-      - US_speednode_0102
-      - US_speednode_0104
-      - US_speednode_0105
-      - US_speednode_0106
-      - US_speednode_0107
-      - US_speednode_0108
-      - US_speednode_0109
-      - US_speednode_0110
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
       - 0|--2
-      - 0|--4
+      - 0|--3
       - 0|--5
-      - 0|--6
-      - 0|--7
-      - 0|--8
-      - 0|--94
-      - 0|--95
-      - 0|--100
+      - 0|--37
+      - 0|--121
+      - 0|--122
+      - 0,15|HK_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
-      - 🇭🇰 13,14|香港2|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 13,14|香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
       - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13,14|日本|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13,14|新加坡4|@ripaojiedian
       - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国3|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|HK_speednode_0003
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -7358,14 +6848,16 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
       - 美国CloudFlare节点1
-      - 美国CloudFlare节点2
+      - 美国+佐治亚州亚特兰大市BellSouth公司
       - 美国CloudFlare节点3
       - 美国CloudFlare节点4
       - 美国CloudFlare节点5
       - 美国CloudFlare节点6
       - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点12
       - 美国CloudFlare节点13
       - 美国CloudFlare节点14
       - 美国CloudFlare节点15
@@ -7373,17 +6865,21 @@ proxy-groups:
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
       - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
       - 美国CloudFlare节点21
-      - 韩国V2CROSS.COM23
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
       - 美国CloudFlare节点24
       - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 俄罗斯V2CROSS.COM26
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
       - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
       - 美国CloudFlare节点31
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点33
+      - 美国CloudFlare节点32
       - 美国CloudFlare节点34
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点35
       - 美国CloudFlare节点36
       - 美国CloudFlare节点37
       - 美国CloudFlare节点38
@@ -7393,7 +6889,7 @@ proxy-groups:
       - 美国CloudFlare节点42
       - 美国CloudFlare节点43
       - 美国CloudFlare节点44
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点45
       - 美国CloudFlare节点46
       - 美国CloudFlare节点47
       - 美国CloudFlare节点48
@@ -7403,23 +6899,26 @@ proxy-groups:
       - 美国CloudFlare节点52
       - 美国CloudFlare节点53
       - 美国CloudFlare节点54
+      - 美国CloudFlare节点55
       - 美国CloudFlare节点56
       - 美国CloudFlare节点57
       - 美国CloudFlare节点58
-      - 香港+Amazon数据中心
+      - 美国CloudFlare节点59
       - 美国CloudFlare节点60
+      - 美国CloudFlare节点61
       - 美国CloudFlare节点62
       - 美国CloudFlare节点63
       - 美国CloudFlare节点64
       - 美国CloudFlare节点65
       - 美国CloudFlare节点66
+      - 希腊+V2CROSS.COM
       - 美国CloudFlare节点68
-      - 美国CloudFlare节点69
       - 美国CloudFlare节点70
       - 美国CloudFlare节点71
       - 美国CloudFlare节点72
       - 美国CloudFlare节点73
       - 美国CloudFlare节点74
+      - 美国CloudFlare节点75
       - 美国CloudFlare节点76
       - 美国CloudFlare节点77
       - 美国CloudFlare节点78
@@ -7428,8 +6927,10 @@ proxy-groups:
       - 美国CloudFlare节点81
       - 美国CloudFlare节点82
       - 美国CloudFlare节点83
+      - 美国CloudFlare节点84
       - 美国CloudFlare节点85
-      - 希腊+V2CROSS.COM
+      - 美国CloudFlare节点86
+      - 美国CloudFlare节点87
       - 美国CloudFlare节点88
       - 美国CloudFlare节点89
       - 美国CloudFlare节点90
@@ -7439,8 +6940,10 @@ proxy-groups:
       - 美国CloudFlare节点94
       - 美国CloudFlare节点95
       - 美国CloudFlare节点96
+      - 美国CloudFlare节点97
       - 美国CloudFlare节点98
       - 美国CloudFlare节点99
+      - 美国CloudFlare节点100
       - 美国CloudFlare节点101
       - 美国CloudFlare节点102
       - 美国CloudFlare节点103
@@ -7459,25 +6962,31 @@ proxy-groups:
       - 美国CloudFlare节点116
       - 美国CloudFlare节点117
       - 美国CloudFlare节点118
+      - 美国CloudFlare节点119
       - 美国CloudFlare节点120
       - 美国CloudFlare节点121
       - 美国CloudFlare节点122
       - 美国CloudFlare节点123
       - 美国CloudFlare节点124
       - 美国CloudFlare节点125
+      - 美国CloudFlare节点126
       - 美国CloudFlare节点127
       - 美国CloudFlare节点128
+      - 美国CloudFlare节点129
       - 美国CloudFlare节点130
+      - 美国CloudFlare节点131
       - 美国CloudFlare节点132
       - 美国CloudFlare节点133
       - 美国CloudFlare节点134
       - 美国CloudFlare节点135
-      - 美国CloudFlare节点137
+      - 美国CloudFlare节点136
       - 美国CloudFlare节点138
       - 美国CloudFlare节点139
       - 美国CloudFlare节点140
+      - 美国CloudFlare节点141
       - 美国CloudFlare节点142
-      - 广东省+移动
+      - 美国CloudFlare节点143
+      - 美国CloudFlare节点144
       - 美国CloudFlare节点145
       - 美国CloudFlare节点146
       - 美国CloudFlare节点147
@@ -7486,6 +6995,7 @@ proxy-groups:
       - 美国CloudFlare节点150
       - 美国CloudFlare节点151
       - 美国CloudFlare节点152
+      - 美国CloudFlare节点153
       - 美国CloudFlare节点154
       - 美国CloudFlare节点155
       - 美国CloudFlare节点156
@@ -7493,149 +7003,123 @@ proxy-groups:
       - 美国CloudFlare节点158
       - 美国CloudFlare节点159
       - 美国CloudFlare节点160
+      - 美国CloudFlare节点161
+      - 美国CloudFlare节点162
+      - 美国CloudFlare节点163
+      - 美国CloudFlare节点164
+      - 美国CloudFlare节点165
+      - 美国CloudFlare节点166
+      - 美国CloudFlare节点167
+      - 美国CloudFlare节点168
+      - 美国CloudFlare节点169
+      - 美国CloudFlare节点170
+      - 美国CloudFlare节点171
+      - 美国CloudFlare节点172
+      - 美国CloudFlare节点173
+      - 香港+环球全域电讯国际互联节点
+      - 美国CloudFlare节点175
+      - 美国CloudFlare节点176
+      - 美国CloudFlare节点177
+      - 美国CloudFlare节点178
+      - 美国CloudFlare节点179
+      - 美国CloudFlare节点180
+      - 美国CloudFlare节点181
+      - 美国CloudFlare节点182
+      - 美国CloudFlare节点183
+      - 美国CloudFlare节点184
+      - 美国CloudFlare节点185
+      - 美国CloudFlare节点186
+      - 美国CloudFlare节点187
+      - 美国CloudFlare节点188
+      - 美国CloudFlare节点189
+      - 美国CloudFlare节点190
+      - 美国CloudFlare节点191
+      - 美国CloudFlare节点192
+      - 美国CloudFlare节点193
+      - 美国CloudFlare节点194
+      - 美国CloudFlare节点195
+      - 美国CloudFlare节点196
+      - 美国CloudFlare节点197
+      - 美国CloudFlare节点198
+      - 美国CloudFlare节点199
+      - 美国CloudFlare节点200
+      - 美国CloudFlare节点201
+      - 美国CloudFlare节点202
+      - 美国CloudFlare节点203
+      - 美国CloudFlare节点204
+      - 美国CloudFlare节点205
+      - 美国CloudFlare节点206
+      - 美国CloudFlare节点207
+      - 美国CloudFlare节点208
+      - 美国CloudFlare节点209
+      - 美国CloudFlare节点210
+      - 美国CloudFlare节点211
+      - 美国CloudFlare节点212
+      - 美国CloudFlare节点213
+      - 美国CloudFlare节点214
+      - 美国CloudFlare节点215
+      - 美国CloudFlare节点216
+      - 美国CloudFlare节点217
+      - 美国CloudFlare节点219
+      - 美国CloudFlare节点220
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - CN_speednode_0001
-      - GB_speednode_0002
-      - HK_speednode_0003
-      - HK_speednode_0004
-      - HK_speednode_0005
-      - LV_speednode_0011
-      - PL_speednode_0012
-      - US_speednode_0013
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - GB_speednode_0009
+      - HK_speednode_0010
+      - HK_speednode_0011
+      - SG_speednode_0013
       - US_speednode_0014
-      - US_speednode_0015
       - US_speednode_0016
-      - US_speednode_0017
-      - US_speednode_0018
-      - US_speednode_0019
       - US_speednode_0020
       - US_speednode_0021
-      - US_speednode_0022
-      - US_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
       - US_speednode_0027
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0033
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
       - US_speednode_0039
-      - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - US_speednode_0045
-      - US_speednode_0046
-      - US_speednode_0047
-      - US_speednode_0048
       - US_speednode_0049
-      - US_speednode_0050
       - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0054
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - US_speednode_0073
-      - US_speednode_0074
-      - US_speednode_0075
-      - US_speednode_0076
-      - US_speednode_0077
-      - US_speednode_0078
-      - US_speednode_0079
-      - US_speednode_0080
-      - US_speednode_0081
-      - US_speednode_0082
-      - US_speednode_0083
-      - US_speednode_0084
-      - US_speednode_0085
-      - US_speednode_0086
-      - US_speednode_0087
-      - US_speednode_0088
-      - US_speednode_0089
-      - US_speednode_0090
-      - US_speednode_0091
-      - US_speednode_0092
-      - US_speednode_0093
-      - US_speednode_0094
-      - US_speednode_0095
-      - US_speednode_0096
-      - US_speednode_0097
-      - US_speednode_0098
-      - US_speednode_0099
-      - US_speednode_0100
-      - US_speednode_0101
-      - US_speednode_0102
-      - US_speednode_0104
-      - US_speednode_0105
-      - US_speednode_0106
-      - US_speednode_0107
-      - US_speednode_0108
-      - US_speednode_0109
-      - US_speednode_0110
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
       - 0|--2
-      - 0|--4
+      - 0|--3
       - 0|--5
-      - 0|--6
-      - 0|--7
-      - 0|--8
-      - 0|--94
-      - 0|--95
-      - 0|--100
+      - 0|--37
+      - 0|--121
+      - 0|--122
+      - 0,15|HK_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
-      - 🇭🇰 13,14|香港2|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 13,14|香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
       - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13,14|日本|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13,14|新加坡4|@ripaojiedian
       - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国3|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|HK_speednode_0003
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -7938,14 +7422,16 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
       - 美国CloudFlare节点1
-      - 美国CloudFlare节点2
+      - 美国+佐治亚州亚特兰大市BellSouth公司
       - 美国CloudFlare节点3
       - 美国CloudFlare节点4
       - 美国CloudFlare节点5
       - 美国CloudFlare节点6
       - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点12
       - 美国CloudFlare节点13
       - 美国CloudFlare节点14
       - 美国CloudFlare节点15
@@ -7953,17 +7439,21 @@ proxy-groups:
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
       - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
       - 美国CloudFlare节点21
-      - 韩国V2CROSS.COM23
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
       - 美国CloudFlare节点24
       - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 俄罗斯V2CROSS.COM26
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
       - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
       - 美国CloudFlare节点31
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点33
+      - 美国CloudFlare节点32
       - 美国CloudFlare节点34
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点35
       - 美国CloudFlare节点36
       - 美国CloudFlare节点37
       - 美国CloudFlare节点38
@@ -7973,7 +7463,7 @@ proxy-groups:
       - 美国CloudFlare节点42
       - 美国CloudFlare节点43
       - 美国CloudFlare节点44
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点45
       - 美国CloudFlare节点46
       - 美国CloudFlare节点47
       - 美国CloudFlare节点48
@@ -7983,23 +7473,26 @@ proxy-groups:
       - 美国CloudFlare节点52
       - 美国CloudFlare节点53
       - 美国CloudFlare节点54
+      - 美国CloudFlare节点55
       - 美国CloudFlare节点56
       - 美国CloudFlare节点57
       - 美国CloudFlare节点58
-      - 香港+Amazon数据中心
+      - 美国CloudFlare节点59
       - 美国CloudFlare节点60
+      - 美国CloudFlare节点61
       - 美国CloudFlare节点62
       - 美国CloudFlare节点63
       - 美国CloudFlare节点64
       - 美国CloudFlare节点65
       - 美国CloudFlare节点66
+      - 希腊+V2CROSS.COM
       - 美国CloudFlare节点68
-      - 美国CloudFlare节点69
       - 美国CloudFlare节点70
       - 美国CloudFlare节点71
       - 美国CloudFlare节点72
       - 美国CloudFlare节点73
       - 美国CloudFlare节点74
+      - 美国CloudFlare节点75
       - 美国CloudFlare节点76
       - 美国CloudFlare节点77
       - 美国CloudFlare节点78
@@ -8008,8 +7501,10 @@ proxy-groups:
       - 美国CloudFlare节点81
       - 美国CloudFlare节点82
       - 美国CloudFlare节点83
+      - 美国CloudFlare节点84
       - 美国CloudFlare节点85
-      - 希腊+V2CROSS.COM
+      - 美国CloudFlare节点86
+      - 美国CloudFlare节点87
       - 美国CloudFlare节点88
       - 美国CloudFlare节点89
       - 美国CloudFlare节点90
@@ -8019,8 +7514,10 @@ proxy-groups:
       - 美国CloudFlare节点94
       - 美国CloudFlare节点95
       - 美国CloudFlare节点96
+      - 美国CloudFlare节点97
       - 美国CloudFlare节点98
       - 美国CloudFlare节点99
+      - 美国CloudFlare节点100
       - 美国CloudFlare节点101
       - 美国CloudFlare节点102
       - 美国CloudFlare节点103
@@ -8039,25 +7536,31 @@ proxy-groups:
       - 美国CloudFlare节点116
       - 美国CloudFlare节点117
       - 美国CloudFlare节点118
+      - 美国CloudFlare节点119
       - 美国CloudFlare节点120
       - 美国CloudFlare节点121
       - 美国CloudFlare节点122
       - 美国CloudFlare节点123
       - 美国CloudFlare节点124
       - 美国CloudFlare节点125
+      - 美国CloudFlare节点126
       - 美国CloudFlare节点127
       - 美国CloudFlare节点128
+      - 美国CloudFlare节点129
       - 美国CloudFlare节点130
+      - 美国CloudFlare节点131
       - 美国CloudFlare节点132
       - 美国CloudFlare节点133
       - 美国CloudFlare节点134
       - 美国CloudFlare节点135
-      - 美国CloudFlare节点137
+      - 美国CloudFlare节点136
       - 美国CloudFlare节点138
       - 美国CloudFlare节点139
       - 美国CloudFlare节点140
+      - 美国CloudFlare节点141
       - 美国CloudFlare节点142
-      - 广东省+移动
+      - 美国CloudFlare节点143
+      - 美国CloudFlare节点144
       - 美国CloudFlare节点145
       - 美国CloudFlare节点146
       - 美国CloudFlare节点147
@@ -8066,6 +7569,7 @@ proxy-groups:
       - 美国CloudFlare节点150
       - 美国CloudFlare节点151
       - 美国CloudFlare节点152
+      - 美国CloudFlare节点153
       - 美国CloudFlare节点154
       - 美国CloudFlare节点155
       - 美国CloudFlare节点156
@@ -8073,6 +7577,65 @@ proxy-groups:
       - 美国CloudFlare节点158
       - 美国CloudFlare节点159
       - 美国CloudFlare节点160
+      - 美国CloudFlare节点161
+      - 美国CloudFlare节点162
+      - 美国CloudFlare节点163
+      - 美国CloudFlare节点164
+      - 美国CloudFlare节点165
+      - 美国CloudFlare节点166
+      - 美国CloudFlare节点167
+      - 美国CloudFlare节点168
+      - 美国CloudFlare节点169
+      - 美国CloudFlare节点170
+      - 美国CloudFlare节点171
+      - 美国CloudFlare节点172
+      - 美国CloudFlare节点173
+      - 香港+环球全域电讯国际互联节点
+      - 美国CloudFlare节点175
+      - 美国CloudFlare节点176
+      - 美国CloudFlare节点177
+      - 美国CloudFlare节点178
+      - 美国CloudFlare节点179
+      - 美国CloudFlare节点180
+      - 美国CloudFlare节点181
+      - 美国CloudFlare节点182
+      - 美国CloudFlare节点183
+      - 美国CloudFlare节点184
+      - 美国CloudFlare节点185
+      - 美国CloudFlare节点186
+      - 美国CloudFlare节点187
+      - 美国CloudFlare节点188
+      - 美国CloudFlare节点189
+      - 美国CloudFlare节点190
+      - 美国CloudFlare节点191
+      - 美国CloudFlare节点192
+      - 美国CloudFlare节点193
+      - 美国CloudFlare节点194
+      - 美国CloudFlare节点195
+      - 美国CloudFlare节点196
+      - 美国CloudFlare节点197
+      - 美国CloudFlare节点198
+      - 美国CloudFlare节点199
+      - 美国CloudFlare节点200
+      - 美国CloudFlare节点201
+      - 美国CloudFlare节点202
+      - 美国CloudFlare节点203
+      - 美国CloudFlare节点204
+      - 美国CloudFlare节点205
+      - 美国CloudFlare节点206
+      - 美国CloudFlare节点207
+      - 美国CloudFlare节点208
+      - 美国CloudFlare节点209
+      - 美国CloudFlare节点210
+      - 美国CloudFlare节点211
+      - 美国CloudFlare节点212
+      - 美国CloudFlare节点213
+      - 美国CloudFlare节点214
+      - 美国CloudFlare节点215
+      - 美国CloudFlare节点216
+      - 美国CloudFlare节点217
+      - 美国CloudFlare节点219
+      - 美国CloudFlare节点220
   - name: 📲 电报信息
     type: select
     proxies:
@@ -8111,143 +7674,58 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - CN_speednode_0001
-      - GB_speednode_0002
-      - HK_speednode_0003
-      - HK_speednode_0004
-      - HK_speednode_0005
-      - LV_speednode_0011
-      - PL_speednode_0012
-      - US_speednode_0013
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
+      - GB_speednode_0009
+      - HK_speednode_0010
+      - HK_speednode_0011
+      - SG_speednode_0013
       - US_speednode_0014
-      - US_speednode_0015
       - US_speednode_0016
-      - US_speednode_0017
-      - US_speednode_0018
-      - US_speednode_0019
       - US_speednode_0020
       - US_speednode_0021
-      - US_speednode_0022
-      - US_speednode_0023
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
       - US_speednode_0027
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0033
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
       - US_speednode_0039
-      - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - US_speednode_0045
-      - US_speednode_0046
-      - US_speednode_0047
-      - US_speednode_0048
       - US_speednode_0049
-      - US_speednode_0050
       - US_speednode_0051
-      - US_speednode_0052
-      - US_speednode_0053
-      - US_speednode_0054
-      - US_speednode_0055
-      - US_speednode_0056
-      - US_speednode_0058
-      - US_speednode_0059
-      - US_speednode_0060
-      - US_speednode_0061
-      - US_speednode_0062
-      - US_speednode_0063
-      - US_speednode_0064
-      - US_speednode_0065
-      - US_speednode_0066
-      - US_speednode_0067
-      - US_speednode_0068
-      - US_speednode_0069
-      - US_speednode_0070
-      - US_speednode_0071
-      - US_speednode_0072
-      - US_speednode_0073
-      - US_speednode_0074
-      - US_speednode_0075
-      - US_speednode_0076
-      - US_speednode_0077
-      - US_speednode_0078
-      - US_speednode_0079
-      - US_speednode_0080
-      - US_speednode_0081
-      - US_speednode_0082
-      - US_speednode_0083
-      - US_speednode_0084
-      - US_speednode_0085
-      - US_speednode_0086
-      - US_speednode_0087
-      - US_speednode_0088
-      - US_speednode_0089
-      - US_speednode_0090
-      - US_speednode_0091
-      - US_speednode_0092
-      - US_speednode_0093
-      - US_speednode_0094
-      - US_speednode_0095
-      - US_speednode_0096
-      - US_speednode_0097
-      - US_speednode_0098
-      - US_speednode_0099
-      - US_speednode_0100
-      - US_speednode_0101
-      - US_speednode_0102
-      - US_speednode_0104
-      - US_speednode_0105
-      - US_speednode_0106
-      - US_speednode_0107
-      - US_speednode_0108
-      - US_speednode_0109
-      - US_speednode_0110
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
       - 0|--2
-      - 0|--4
+      - 0|--3
       - 0|--5
-      - 0|--6
-      - 0|--7
-      - 0|--8
-      - 0|--94
-      - 0|--95
-      - 0|--100
+      - 0|--37
+      - 0|--121
+      - 0|--122
+      - 0,15|HK_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
-      - 🇭🇰 13,14|香港2|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 13,14|香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
       - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13,14|日本|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13,14|新加坡4|@ripaojiedian
       - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国3|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|HK_speednode_0003
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -8550,14 +8028,16 @@ proxy-groups:
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
       - 美国CloudFlare节点0
       - 美国CloudFlare节点1
-      - 美国CloudFlare节点2
+      - 美国+佐治亚州亚特兰大市BellSouth公司
       - 美国CloudFlare节点3
       - 美国CloudFlare节点4
       - 美国CloudFlare节点5
       - 美国CloudFlare节点6
       - 美国CloudFlare节点7
+      - 美国CloudFlare节点8
       - 美国CloudFlare节点9
-      - 美国CloudFlare节点11
+      - 美国CloudFlare节点10
+      - 美国CloudFlare节点12
       - 美国CloudFlare节点13
       - 美国CloudFlare节点14
       - 美国CloudFlare节点15
@@ -8565,17 +8045,21 @@ proxy-groups:
       - 美国CloudFlare节点17
       - 美国CloudFlare节点18
       - 美国CloudFlare节点19
+      - 美国CloudFlare节点20
       - 美国CloudFlare节点21
-      - 韩国V2CROSS.COM23
+      - 美国CloudFlare节点22
+      - 美国CloudFlare节点23
       - 美国CloudFlare节点24
       - 美国CloudFlare节点25
-      - 美国CloudFlare节点26
+      - 俄罗斯V2CROSS.COM26
+      - 美国CloudFlare节点27
+      - 美国CloudFlare节点28
       - 美国CloudFlare节点29
+      - 美国CloudFlare节点30
       - 美国CloudFlare节点31
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国CloudFlare节点33
+      - 美国CloudFlare节点32
       - 美国CloudFlare节点34
-      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点35
       - 美国CloudFlare节点36
       - 美国CloudFlare节点37
       - 美国CloudFlare节点38
@@ -8585,7 +8069,7 @@ proxy-groups:
       - 美国CloudFlare节点42
       - 美国CloudFlare节点43
       - 美国CloudFlare节点44
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点45
       - 美国CloudFlare节点46
       - 美国CloudFlare节点47
       - 美国CloudFlare节点48
@@ -8595,23 +8079,26 @@ proxy-groups:
       - 美国CloudFlare节点52
       - 美国CloudFlare节点53
       - 美国CloudFlare节点54
+      - 美国CloudFlare节点55
       - 美国CloudFlare节点56
       - 美国CloudFlare节点57
       - 美国CloudFlare节点58
-      - 香港+Amazon数据中心
+      - 美国CloudFlare节点59
       - 美国CloudFlare节点60
+      - 美国CloudFlare节点61
       - 美国CloudFlare节点62
       - 美国CloudFlare节点63
       - 美国CloudFlare节点64
       - 美国CloudFlare节点65
       - 美国CloudFlare节点66
+      - 希腊+V2CROSS.COM
       - 美国CloudFlare节点68
-      - 美国CloudFlare节点69
       - 美国CloudFlare节点70
       - 美国CloudFlare节点71
       - 美国CloudFlare节点72
       - 美国CloudFlare节点73
       - 美国CloudFlare节点74
+      - 美国CloudFlare节点75
       - 美国CloudFlare节点76
       - 美国CloudFlare节点77
       - 美国CloudFlare节点78
@@ -8620,8 +8107,10 @@ proxy-groups:
       - 美国CloudFlare节点81
       - 美国CloudFlare节点82
       - 美国CloudFlare节点83
+      - 美国CloudFlare节点84
       - 美国CloudFlare节点85
-      - 希腊+V2CROSS.COM
+      - 美国CloudFlare节点86
+      - 美国CloudFlare节点87
       - 美国CloudFlare节点88
       - 美国CloudFlare节点89
       - 美国CloudFlare节点90
@@ -8631,8 +8120,10 @@ proxy-groups:
       - 美国CloudFlare节点94
       - 美国CloudFlare节点95
       - 美国CloudFlare节点96
+      - 美国CloudFlare节点97
       - 美国CloudFlare节点98
       - 美国CloudFlare节点99
+      - 美国CloudFlare节点100
       - 美国CloudFlare节点101
       - 美国CloudFlare节点102
       - 美国CloudFlare节点103
@@ -8651,25 +8142,31 @@ proxy-groups:
       - 美国CloudFlare节点116
       - 美国CloudFlare节点117
       - 美国CloudFlare节点118
+      - 美国CloudFlare节点119
       - 美国CloudFlare节点120
       - 美国CloudFlare节点121
       - 美国CloudFlare节点122
       - 美国CloudFlare节点123
       - 美国CloudFlare节点124
       - 美国CloudFlare节点125
+      - 美国CloudFlare节点126
       - 美国CloudFlare节点127
       - 美国CloudFlare节点128
+      - 美国CloudFlare节点129
       - 美国CloudFlare节点130
+      - 美国CloudFlare节点131
       - 美国CloudFlare节点132
       - 美国CloudFlare节点133
       - 美国CloudFlare节点134
       - 美国CloudFlare节点135
-      - 美国CloudFlare节点137
+      - 美国CloudFlare节点136
       - 美国CloudFlare节点138
       - 美国CloudFlare节点139
       - 美国CloudFlare节点140
+      - 美国CloudFlare节点141
       - 美国CloudFlare节点142
-      - 广东省+移动
+      - 美国CloudFlare节点143
+      - 美国CloudFlare节点144
       - 美国CloudFlare节点145
       - 美国CloudFlare节点146
       - 美国CloudFlare节点147
@@ -8678,6 +8175,7 @@ proxy-groups:
       - 美国CloudFlare节点150
       - 美国CloudFlare节点151
       - 美国CloudFlare节点152
+      - 美国CloudFlare节点153
       - 美国CloudFlare节点154
       - 美国CloudFlare节点155
       - 美国CloudFlare节点156
@@ -8685,6 +8183,65 @@ proxy-groups:
       - 美国CloudFlare节点158
       - 美国CloudFlare节点159
       - 美国CloudFlare节点160
+      - 美国CloudFlare节点161
+      - 美国CloudFlare节点162
+      - 美国CloudFlare节点163
+      - 美国CloudFlare节点164
+      - 美国CloudFlare节点165
+      - 美国CloudFlare节点166
+      - 美国CloudFlare节点167
+      - 美国CloudFlare节点168
+      - 美国CloudFlare节点169
+      - 美国CloudFlare节点170
+      - 美国CloudFlare节点171
+      - 美国CloudFlare节点172
+      - 美国CloudFlare节点173
+      - 香港+环球全域电讯国际互联节点
+      - 美国CloudFlare节点175
+      - 美国CloudFlare节点176
+      - 美国CloudFlare节点177
+      - 美国CloudFlare节点178
+      - 美国CloudFlare节点179
+      - 美国CloudFlare节点180
+      - 美国CloudFlare节点181
+      - 美国CloudFlare节点182
+      - 美国CloudFlare节点183
+      - 美国CloudFlare节点184
+      - 美国CloudFlare节点185
+      - 美国CloudFlare节点186
+      - 美国CloudFlare节点187
+      - 美国CloudFlare节点188
+      - 美国CloudFlare节点189
+      - 美国CloudFlare节点190
+      - 美国CloudFlare节点191
+      - 美国CloudFlare节点192
+      - 美国CloudFlare节点193
+      - 美国CloudFlare节点194
+      - 美国CloudFlare节点195
+      - 美国CloudFlare节点196
+      - 美国CloudFlare节点197
+      - 美国CloudFlare节点198
+      - 美国CloudFlare节点199
+      - 美国CloudFlare节点200
+      - 美国CloudFlare节点201
+      - 美国CloudFlare节点202
+      - 美国CloudFlare节点203
+      - 美国CloudFlare节点204
+      - 美国CloudFlare节点205
+      - 美国CloudFlare节点206
+      - 美国CloudFlare节点207
+      - 美国CloudFlare节点208
+      - 美国CloudFlare节点209
+      - 美国CloudFlare节点210
+      - 美国CloudFlare节点211
+      - 美国CloudFlare节点212
+      - 美国CloudFlare节点213
+      - 美国CloudFlare节点214
+      - 美国CloudFlare节点215
+      - 美国CloudFlare节点216
+      - 美国CloudFlare节点217
+      - 美国CloudFlare节点219
+      - 美国CloudFlare节点220
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
