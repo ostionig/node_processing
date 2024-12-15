@@ -1,4 +1,4 @@
-# 更新时间 2024-12-14T19:10:20.840Z
+# 更新时间 2024-12-15T01:39:45.067Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -23,6 +23,14 @@ proxies:
     password: 14fFPrbezE3HDZzsMOr6
     tfo: false
   - name: 0|--2
+    server: 194.5.215.59
+    port: 8080
+    client-fingerprint: chrome
+    type: ss
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    tfo: false
+  - name: 0|--3
     server: 18.237.72.225
     port: 443
     client-fingerprint: chrome
@@ -30,7 +38,7 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
-  - name: 0|--3
+  - name: 0|--4
     server: 23.251.121.242
     port: 8080
     client-fingerprint: chrome
@@ -38,6 +46,14 @@ proxies:
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     tfo: false
+  - name: 0,15|IN_speednode_0004
+    server: prime-gator.treefrog761.one
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: 3648425794742788000
+    sni: prime-gator.treefrog761.one
+    skip-cert-verify: false
   - name: 🇭🇰 13,14|香港|@ripaojiedian
     server: 36.151.192.239
     port: 42395
@@ -301,14 +317,6 @@ proxies:
     type: trojan
     password: 3648425794742788000
     sni: loving-boa.treefrog761.one
-    skip-cert-verify: false
-  - name: 15|IN_speednode_0004
-    server: prime-gator.treefrog761.one
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: 3648425794742788000
-    sni: prime-gator.treefrog761.one
     skip-cert-verify: false
   - name: 15|SE_speednode_0005
     server: 129.151.204.91
@@ -1442,6 +1450,8 @@ proxy-groups:
       - 0|--1
       - 0|--2
       - 0|--3
+      - 0|--4
+      - 0,15|IN_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -1466,7 +1476,6 @@ proxy-groups:
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 15|CY_speednode_0002
       - 15|IN_speednode_0003
-      - 15|IN_speednode_0004
       - 15|SE_speednode_0005
       - 15|SE_speednode_0006
       - 15|SE_speednode_0007
@@ -1552,6 +1561,8 @@ proxy-groups:
       - 0|--1
       - 0|--2
       - 0|--3
+      - 0|--4
+      - 0,15|IN_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -1576,7 +1587,6 @@ proxy-groups:
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 15|CY_speednode_0002
       - 15|IN_speednode_0003
-      - 15|IN_speednode_0004
       - 15|SE_speednode_0005
       - 15|SE_speednode_0006
       - 15|SE_speednode_0007
@@ -1661,6 +1671,8 @@ proxy-groups:
       - 0|--1
       - 0|--2
       - 0|--3
+      - 0|--4
+      - 0,15|IN_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -1685,7 +1697,6 @@ proxy-groups:
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 15|CY_speednode_0002
       - 15|IN_speednode_0003
-      - 15|IN_speednode_0004
       - 15|SE_speednode_0005
       - 15|SE_speednode_0006
       - 15|SE_speednode_0007
@@ -1802,6 +1813,8 @@ proxy-groups:
       - 0|--1
       - 0|--2
       - 0|--3
+      - 0|--4
+      - 0,15|IN_speednode_0004
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -1826,7 +1839,6 @@ proxy-groups:
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 15|CY_speednode_0002
       - 15|IN_speednode_0003
-      - 15|IN_speednode_0004
       - 15|SE_speednode_0005
       - 15|SE_speednode_0006
       - 15|SE_speednode_0007
