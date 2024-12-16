@@ -1,4 +1,4 @@
-# 更新时间 2024-12-15T19:10:19.592Z
+# 更新时间 2024-12-16T01:37:27.328Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -695,22 +695,30 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
-  - name: 0|--4
-    server: 194.5.215.59
+  - name: 0|--3
+    server: 193.108.119.230
     port: 8080
     client-fingerprint: chrome
     type: ss
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     tfo: false
-  - name: 0|--5
-    server: 13.213.67.37
-    port: 443
+  - name: 0|--4
+    server: 137.175.97.159
+    port: 8388
     client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
+    cipher: chacha20-ietf
+    password: asd123456
     tfo: false
+  - name: 0|--48
+    server: 218.190.230.207
+    port: 41288
+    client-fingerprint: chrome
+    type: trojan
+    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    sni: hk12.bilibili.com
+    skip-cert-verify: false
   - name: 🇭🇰 13,14|香港|@ripaojiedian
     server: 36.151.192.239
     port: 42395
@@ -3771,126 +3779,141 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 加拿大+V2CROSS.COM
-    server: 142.202.49.122
-    port: 9102
-    password: YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=
-    cipher: aes-128-gcm
-  - type: ss
-    name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-    server: series-a2.samanehha.co
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
-    cipher: aes-128-gcm
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.155.157.23
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 立陶宛V2CROSS.COM5
-    ws-opts:
-      path: /
-      headers:
-        host: jk.ylka.us.kg
-    server: 89.117.112.235
-    port: 8443
-    uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: trojan
-    name: 香港+环球全域电讯国际互联节点
-    server: 218.190.230.207
-    port: 45590
+    name: 美国+纽约(Prudential)
+    server: eeaa7ed9a53f5bb5260e79cd2bbd9823.v1.cac.node-is.green
+    port: 49905
     password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
     udp: true
     skip-cert-verify: true
   - type: vmess
-    name: 伊朗V2CROSS.COM8
+    name: 美国CloudFlare节点1
+    ws-opts:
+      path: /
+      headers:
+        host: shs.xiaoqi666.xyz
+    server: 172.67.165.53
+    port: 2086
+    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 澳大利亚+V2CROSS.COM
+    server: std1.loadingip.com
+    port: 443
+    password: 94d219c9-1afc-4d42-b090-8b3794764380
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 香港+环球全域电讯国际互联节点
+    server: 218.190.230.207
+    port: 48169
+    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 伊朗V2CROSS.COM4
     server: 178.239.151.73
     port: 43671
     uuid: ed26e437-abb0-4cb8-9221-be9f651f2c29
     alterId: 0
     cipher: auto
     network: grpc
-  - type: vmess
-    name: 美国V2CROSS.COM9
-    ws-opts:
-      path: /path/1733651459092
-    server: 137.175.38.243
-    port: 36003
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: ss
-    name: 广东省广州市+移动
-    server: soonjp.soon.guru
-    port: 40003
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphYjhiNjI1Yy1lZmI4LTQ1Y2QtYjUwOS1jN2NjZWFiZTBjYzY=
-    cipher: aes-128-gcm
   - type: trojan
-    name: 美国+惠普公司
-    server: 15.223.148.117
+    name: 美国+Amazon数据中心
+    server: 13.37.38.67
     port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 日本+东京都品川区Linode数据中心
-    server: 139.162.84.183
-    port: 3306
-    password: 7ac49a893e0bd10c
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+纽约(Prudential)
-    server: bf2cbe59ba59df8e23183167727d3f23.v1.cac.node-is.green
-    port: 41143
-    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+佐治亚州亚特兰大市BellSouth公司
-    server: f46b3f65e076124c635c50538527e26d.v1.cac.node-is.green
-    port: 41143
-    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: ss
     name: 欧盟+V2CROSS.COM
-    server: 45.87.175.199
+    server: beesyar.org
     port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn
     cipher: aes-128-gcm
   - type: vmess
-    name: 俄罗斯V2CROSS.COM23
+    name: 美国华盛顿Cogent通信公司9
     ws-opts:
-      path: /
-    server: 194.87.68.196
-    port: 48696
-    uuid: f5dc8f26-f472-4089-82f8-7af58ea887d3
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国加利福尼亚州圣何塞PEGTECH数据中心25
-    ws-opts:
-      path: /path/1733477783705
-    server: 192.74.242.243
-    port: 38003
+      path: /path/1733651231647
+    server: 38.11.61.80
+    port: 31001
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: ws
     tls: true
+  - type: vmess
+    name: 美国CloudFlare节点13
+    ws-opts:
+      path: /dabai.in104.25.31.219
+      headers:
+        host: 100-158-80-199.s2.cn-db.top
+    server: s2.cn-db.top
+    port: 2052
+    uuid: e50bb174-f2cb-3081-931e-fa4bfd69f42d
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.72.67.153
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国华盛顿Cogent通信公司19
+    ws-opts:
+      path: /path/1733651231647
+      headers:
+        host: www.25902523.xyz
+    server: 38.33.19.70
+    port: 37004
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.137.65.57
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点21
+    ws-opts:
+      path: /rbikf56l
+      headers:
+        host: eu-2.hihu.net
+    server: kos-madar-pedram.xwz.ip-ddns.com
+    port: 443
+    uuid: cd956ba0-ba4c-11ef-b236-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: ss
+    name: 亚太地区+V2CROSS.COM
+    server: arxfw2b78fi2q9hzylhn.freesocks.work
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOazlhc2dsRHpIemprdFZ6VGt2aGFB
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点24
+    ws-opts:
+      path: /
+      headers:
+        host: shs.xiaoqi666.xyz
+    server: 104.21.89.219
+    port: 2086
+    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3947,8 +3970,9 @@ proxy-groups:
       - US_speednode_0073
       - US_speednode_0074
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--3
       - 0|--4
-      - 0|--5
+      - 0|--48
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -4273,21 +4297,21 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+V2CROSS.COM
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 立陶宛V2CROSS.COM5
-      - 香港+环球全域电讯国际互联节点
-      - 伊朗V2CROSS.COM8
-      - 美国V2CROSS.COM9
-      - 广东省广州市+移动
-      - 美国+惠普公司
-      - 日本+东京都品川区Linode数据中心
       - 美国+纽约(Prudential)
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点1
+      - 澳大利亚+V2CROSS.COM
+      - 香港+环球全域电讯国际互联节点
+      - 伊朗V2CROSS.COM4
+      - 美国+Amazon数据中心
       - 欧盟+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM23
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心25
+      - 美国华盛顿Cogent通信公司9
+      - 美国CloudFlare节点13
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国华盛顿Cogent通信公司19
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点21
+      - 亚太地区+V2CROSS.COM
+      - 美国CloudFlare节点24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4344,8 +4368,9 @@ proxy-groups:
       - US_speednode_0073
       - US_speednode_0074
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--3
       - 0|--4
-      - 0|--5
+      - 0|--48
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -4670,21 +4695,21 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+V2CROSS.COM
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 立陶宛V2CROSS.COM5
-      - 香港+环球全域电讯国际互联节点
-      - 伊朗V2CROSS.COM8
-      - 美国V2CROSS.COM9
-      - 广东省广州市+移动
-      - 美国+惠普公司
-      - 日本+东京都品川区Linode数据中心
       - 美国+纽约(Prudential)
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点1
+      - 澳大利亚+V2CROSS.COM
+      - 香港+环球全域电讯国际互联节点
+      - 伊朗V2CROSS.COM4
+      - 美国+Amazon数据中心
       - 欧盟+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM23
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心25
+      - 美国华盛顿Cogent通信公司9
+      - 美国CloudFlare节点13
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国华盛顿Cogent通信公司19
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点21
+      - 亚太地区+V2CROSS.COM
+      - 美国CloudFlare节点24
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4740,8 +4765,9 @@ proxy-groups:
       - US_speednode_0073
       - US_speednode_0074
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--3
       - 0|--4
-      - 0|--5
+      - 0|--48
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -5066,21 +5092,21 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+V2CROSS.COM
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 立陶宛V2CROSS.COM5
-      - 香港+环球全域电讯国际互联节点
-      - 伊朗V2CROSS.COM8
-      - 美国V2CROSS.COM9
-      - 广东省广州市+移动
-      - 美国+惠普公司
-      - 日本+东京都品川区Linode数据中心
       - 美国+纽约(Prudential)
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点1
+      - 澳大利亚+V2CROSS.COM
+      - 香港+环球全域电讯国际互联节点
+      - 伊朗V2CROSS.COM4
+      - 美国+Amazon数据中心
       - 欧盟+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM23
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心25
+      - 美国华盛顿Cogent通信公司9
+      - 美国CloudFlare节点13
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国华盛顿Cogent通信公司19
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点21
+      - 亚太地区+V2CROSS.COM
+      - 美国CloudFlare节点24
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5168,8 +5194,9 @@ proxy-groups:
       - US_speednode_0073
       - US_speednode_0074
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--3
       - 0|--4
-      - 0|--5
+      - 0|--48
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -5494,21 +5521,21 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 加拿大+V2CROSS.COM
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 立陶宛V2CROSS.COM5
-      - 香港+环球全域电讯国际互联节点
-      - 伊朗V2CROSS.COM8
-      - 美国V2CROSS.COM9
-      - 广东省广州市+移动
-      - 美国+惠普公司
-      - 日本+东京都品川区Linode数据中心
       - 美国+纽约(Prudential)
-      - 美国+佐治亚州亚特兰大市BellSouth公司
+      - 美国CloudFlare节点1
+      - 澳大利亚+V2CROSS.COM
+      - 香港+环球全域电讯国际互联节点
+      - 伊朗V2CROSS.COM4
+      - 美国+Amazon数据中心
       - 欧盟+V2CROSS.COM
-      - 俄罗斯V2CROSS.COM23
-      - 美国加利福尼亚州圣何塞PEGTECH数据中心25
+      - 美国华盛顿Cogent通信公司9
+      - 美国CloudFlare节点13
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国华盛顿Cogent通信公司19
+      - 美国+Amazon+EC2服务器
+      - 美国CloudFlare节点21
+      - 亚太地区+V2CROSS.COM
+      - 美国CloudFlare节点24
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
