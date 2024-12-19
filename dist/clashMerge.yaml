@@ -1,4 +1,4 @@
-# 更新时间 2024-12-18T19:16:05.150Z
+# 更新时间 2024-12-19T01:24:04.975Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -109,15 +109,15 @@ proxies:
     password: 6601fb90e9b3
     tfo: false
   - name: 0|--1
-    server: 54.201.174.149
-    port: 443
+    server: 137.175.97.159
+    port: 8388
     client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
+    cipher: chacha20-ietf
+    password: asd123456
     tfo: false
   - name: 0|--2
-    server: 34.222.136.128
+    server: 18.237.72.225
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -125,22 +125,14 @@ proxies:
     password: amazonskr05
     tfo: false
   - name: 0|--3
-    server: 211.22.161.135
-    port: 2377
+    server: 3.34.255.220
+    port: 443
     client-fingerprint: chrome
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: aes-256-cfb
+    password: amazonskr05
     tfo: false
   - name: 0|--4
-    server: 211.22.161.134
-    port: 2377
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    tfo: false
-  - name: 0|--5
     server: 54.70.176.73
     port: 443
     client-fingerprint: chrome
@@ -148,15 +140,15 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
-  - name: 0|--6
-    server: 43.202.65.32
+  - name: 0|--5
+    server: 34.222.136.128
     port: 443
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
-  - name: 0|--7
+  - name: 0|--6
     server: 3.38.212.48
     port: 443
     client-fingerprint: chrome
@@ -164,8 +156,16 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
+  - name: 0|--7
+    server: 34.215.192.217
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
   - name: 0|--8
-    server: 43.203.141.93
+    server: 35.94.51.2
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -173,7 +173,15 @@ proxies:
     password: amazonskr05
     tfo: false
   - name: 0|--9
-    server: 43.200.1.13
+    server: 43.202.65.32
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--10
+    server: 34.222.132.123
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -187,6 +195,54 @@ proxies:
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
+    tfo: false
+  - name: 0|--12
+    server: 43.200.1.13
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--13
+    server: 43.203.243.93
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--14
+    server: 43.203.198.1
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--15
+    server: 43.203.141.93
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 🇸🇬 0,13|🇸🇬 狮城特殊|@ripaojiedian
+    server: 43.203.122.162
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--17
+    server: 79.110.53.169
+    port: 8080
+    client-fingerprint: chrome
+    type: ss
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
     tfo: false
   - name: 🇭🇰 13,14|香港|@ripaojiedian
     server: 36.151.192.239
@@ -355,14 +411,6 @@ proxies:
     tfo: false
   - name: 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
     server: 3.113.31.223
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    tfo: false
-  - name: 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-    server: 43.203.122.162
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -3210,41 +3258,64 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: trojan
+    name: 北京市+联通
+    server: 123.125.94.170
+    port: 1357
+    password: d4f89111885.wns.windows.com
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 伊朗V2CROSS.COM2
+    server: 188.245.190.24
+    port: 21020
+    uuid: 50de25a7-6c97-442c-9cc3-704d0adebb07
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.39.195.231
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: ss
-    name: 德国+法兰克福Oracle云计算数据中心
-    server: 130.61.77.41
-    port: 57754
-    password: YWVzLTEyOC1nY206ODliOTAwMDEtNDIwNi00ODcxLWE5OWQtMTc0NGQ0OGYyMTVi
+    name: 北美地区+V2CROSS.COM
+    server: 23.154.136.100
+    port: 8090
+    password: YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3
     cipher: aes-128-gcm
   - type: ss
-    name: 美国+
-    server: 40.172.6.30
+    name: 亚太地区+V2CROSS.COM
+    server: 160.19.78.75
     port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOazlhc2dsRHpIemprdFZ6VGt2aGFB
     cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+惠普公司
+    server: 15.236.137.181
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 日本+东京Amazon数据中心
+    server: jp008.421421.xyz
+    port: 20230
+    password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+    udp: true
+    skip-cert-verify: true
   - type: ss
-    name: 伊朗+V2CROSS.COM
-    server: 31.59.111.4
-    port: 4001
-    password: YWVzLTEyOC1nY206ODliOTAwMDEtNDIwNi00ODcxLWE5OWQtMTc0NGQ0OGYyMTVi
+    name: 欧盟+V2CROSS.COM
+    server: 45.87.175.178
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh
     cipher: aes-128-gcm
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.31.157.66
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 35.179.198.137
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+俄亥俄州都柏林Amazon数据中心
-    server: 3.19.25.7
+    name: 美国+Amazon+EC2服务器
+    server: 3.97.18.166
     port: 22222
     password: telegram-id-directvpn
     udp: true
@@ -3275,7 +3346,14 @@ proxy-groups:
       - 0|--7
       - 0|--8
       - 0|--9
+      - 0|--10
       - 0|--11
+      - 0|--12
+      - 0|--13
+      - 0|--14
+      - 0|--15
+      - 🇸🇬 0,13|🇸🇬 狮城特殊|@ripaojiedian
+      - 0|--17
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -3295,7 +3373,6 @@ proxy-groups:
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -3597,12 +3674,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+法兰克福Oracle云计算数据中心
-      - 美国+
-      - 伊朗+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市+联通
+      - 伊朗V2CROSS.COM2
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+惠普公司
+      - 日本+东京Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -3629,7 +3709,14 @@ proxy-groups:
       - 0|--7
       - 0|--8
       - 0|--9
+      - 0|--10
       - 0|--11
+      - 0|--12
+      - 0|--13
+      - 0|--14
+      - 0|--15
+      - 🇸🇬 0,13|🇸🇬 狮城特殊|@ripaojiedian
+      - 0|--17
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -3649,7 +3736,6 @@ proxy-groups:
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -3951,12 +4037,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+法兰克福Oracle云计算数据中心
-      - 美国+
-      - 伊朗+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市+联通
+      - 伊朗V2CROSS.COM2
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+惠普公司
+      - 日本+东京Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3982,7 +4071,14 @@ proxy-groups:
       - 0|--7
       - 0|--8
       - 0|--9
+      - 0|--10
       - 0|--11
+      - 0|--12
+      - 0|--13
+      - 0|--14
+      - 0|--15
+      - 🇸🇬 0,13|🇸🇬 狮城特殊|@ripaojiedian
+      - 0|--17
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -4002,7 +4098,6 @@ proxy-groups:
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -4304,12 +4399,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+法兰克福Oracle云计算数据中心
-      - 美国+
-      - 伊朗+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市+联通
+      - 伊朗V2CROSS.COM2
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+惠普公司
+      - 日本+东京Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4367,7 +4465,14 @@ proxy-groups:
       - 0|--7
       - 0|--8
       - 0|--9
+      - 0|--10
       - 0|--11
+      - 0|--12
+      - 0|--13
+      - 0|--14
+      - 0|--15
+      - 🇸🇬 0,13|🇸🇬 狮城特殊|@ripaojiedian
+      - 0|--17
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -4387,7 +4492,6 @@ proxy-groups:
       - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
       - 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
@@ -4689,12 +4793,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 德国+法兰克福Oracle云计算数据中心
-      - 美国+
-      - 伊朗+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 北京市+联通
+      - 伊朗V2CROSS.COM2
+      - 美国+Amazon数据中心
+      - 北美地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+惠普公司
+      - 日本+东京Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
