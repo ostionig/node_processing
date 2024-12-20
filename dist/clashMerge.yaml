@@ -1,4 +1,4 @@
-# 更新时间 2024-12-20T18:52:09.050Z
+# 更新时间 2024-12-20T19:08:29.474Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3244,66 +3244,74 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: vmess
-    name: 法国法国计算机科学大学3
-    ws-opts:
-      path: /linkws
-      headers:
-        host: irvideo.cfd
-    server: irvideo.cfd
+  - type: ss
+    name: 美国+V2CROSS.COM
+    server: 139.64.165.230
+    port: 5500
+    password: YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+惠普HP
+    server: 15.184.97.151
     port: 443
-    uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
+    cipher: aes-128-gcm
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.110.1.105
+    port: 5003
+    password: YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk
+    cipher: aes-128-gcm
+  - type: ss
+    name: 拉脱维亚+V2CROSS.COM
+    server: 46.183.217.232
+    port: 990
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+    server: 35.177.251.95
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 15.188.100.226
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+麻省理工学院
+    server: 18.119.69.149
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 法国国际航空电讯集团公司(SITA)20
+    ws-opts:
+      path: /
+    server: 57.155.30.207
+    port: 80
+    uuid: b831381d-6324-4d53-ad4f-8cda48b30812
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国弗吉尼亚州阿什本Amazon数据中心21
+    ws-opts:
+      path: /
+      headers:
+        host: tls.99.node-for-bigairport.win
+    server: tls.99.node-for-bigairport.win
+    port: 443
+    uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
     alterId: 0
     cipher: auto
     network: ws
     tls: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.75.205.131
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Xerox
-    server: 13.61.128.169
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 美国+Amazon数据中心
-    server: 13.43.125.180
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 瑞典+斯德哥尔摩Amazon数据中心
-    server: 13.48.216.217
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 英国+伦敦Amazon数据中心
-    server: 3.11.16.154
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 亚太地区+V2CROSS.COM
-    server: 160.19.78.75
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOazlhc2dsRHpIemprdFZ6VGt2aGFB
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 英国+社会保险安全部
-    server: 51.44.91.63
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3658,14 +3666,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国法国计算机科学大学3
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
-      - 美国+Amazon数据中心
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 亚太地区+V2CROSS.COM
-      - 英国+社会保险安全部
+      - 美国+V2CROSS.COM
+      - 美国+惠普HP
+      - 美国+华盛顿Cogent通信公司
+      - 拉脱维亚+V2CROSS.COM
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+麻省理工学院
+      - 法国国际航空电讯集团公司(SITA)20
+      - 美国弗吉尼亚州阿什本Amazon数据中心21
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4020,14 +4029,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国法国计算机科学大学3
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
-      - 美国+Amazon数据中心
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 亚太地区+V2CROSS.COM
-      - 英国+社会保险安全部
+      - 美国+V2CROSS.COM
+      - 美国+惠普HP
+      - 美国+华盛顿Cogent通信公司
+      - 拉脱维亚+V2CROSS.COM
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+麻省理工学院
+      - 法国国际航空电讯集团公司(SITA)20
+      - 美国弗吉尼亚州阿什本Amazon数据中心21
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4381,14 +4391,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国法国计算机科学大学3
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
-      - 美国+Amazon数据中心
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 亚太地区+V2CROSS.COM
-      - 英国+社会保险安全部
+      - 美国+V2CROSS.COM
+      - 美国+惠普HP
+      - 美国+华盛顿Cogent通信公司
+      - 拉脱维亚+V2CROSS.COM
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+麻省理工学院
+      - 法国国际航空电讯集团公司(SITA)20
+      - 美国弗吉尼亚州阿什本Amazon数据中心21
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4774,14 +4785,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 法国法国计算机科学大学3
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Xerox
-      - 美国+Amazon数据中心
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 英国+伦敦Amazon数据中心
-      - 亚太地区+V2CROSS.COM
-      - 英国+社会保险安全部
+      - 美国+V2CROSS.COM
+      - 美国+惠普HP
+      - 美国+华盛顿Cogent通信公司
+      - 拉脱维亚+V2CROSS.COM
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国+麻省理工学院
+      - 法国国际航空电讯集团公司(SITA)20
+      - 美国弗吉尼亚州阿什本Amazon数据中心21
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
