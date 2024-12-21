@@ -1,4 +1,4 @@
-# 更新时间 2024-12-21T01:18:31.264Z
+# 更新时间 2024-12-21T06:22:23.585Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,168 +6,95 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: BE_speednode_0001
-    server: 192.71.249.71
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: BR_speednode_0002
-    server: vm.v2ray.com.br
-    port: 8080
-    type: vmess
-    uuid: 7bc1cddb-e8a0-4742-8a15-4221c481e01f
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-  - name: CH_speednode_0003
+  - name: CH_speednode_0001
     server: 138.124.60.136
     port: 44915
     type: ss
     cipher: chacha20-ietf-poly1305
     password: fMcrsQuZhCNiHBmXT80AhQ3mPK5alh/iLuDz4pILlYU=
-  - name: CN_speednode_0004
-    server: 223.113.54.145
-    port: 36442
+  - name: CN_speednode_0002
+    server: 36.151.192.201
+    port: 34185
     type: trojan
     password: QwwHvrnN
     skip-cert-verify: true
-  - name: DE_speednode_0006
-    server: 78.47.102.195
-    port: 44484
-    type: vmess
-    uuid: 8a2ce574-2b74-4f10-a28e-b6d852e3f725
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: GB_speednode_0007
-    server: 212.102.53.197
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: GB_speednode_0008
-    server: uk-dc1.yangon.club
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: GT_speednode_0009
-    server: 170.80.111.5
-    port: 989
-    type: ssr
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    protocol: origin
-    obfs: plain
-    protocol-param: ''
-    obfs-param: ''
-  - name: KZ_speednode_0012
-    server: 194.76.18.129
+  - name: GB_speednode_0006
+    server: 51.38.65.155
     port: 443
     type: trojan
-    password: tg-fq521free
-    sni: torjan.xn--xhq44j.eu.org
+    password: 419298f0-bf0c-11ef-bc6c-1239d0255272
+    sni: speedtest.net
     skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: torjan.xn--xhq44j.eu.org
-  - name: LT_speednode_0013
-    server: 45.87.175.181
-    port: 8080
+  - name: HK_speednode_0007
+    server: hk9.ftq.ink
+    port: 4000
+    type: http
+    tls: true
+  - name: JP_speednode_0008
+    server: 13.114.67.166
+    port: 443
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: cvII85TrW6n0OGyfpHVS1u
-  - name: NL_speednode_0014
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: KR_speednode_0011
+    server: 43.203.243.93
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+  - name: NL_speednode_0013
     server: 149.34.244.82
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-  - name: NL_speednode_0015
-    server: 149.34.244.77
+  - name: US_speednode_0014
+    server: 52.32.68.164
     port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-  - name: PL_speednode_0016
-    server: 217.30.10.18
-    port: 9001
     type: ss
     cipher: aes-256-cfb
-    password: UkXRsXvR6buDMG2Y
-    udp: true
-  - name: PL_speednode_0017
-    server: 217.30.10.18
-    port: 9084
-    type: ss
-    cipher: aes-256-cfb
-    password: c3NtHJ5ujV2tGDfj
-  - name: RU_speednode_0018
-    server: 45.67.215.95
-    port: 443
-    type: trojan
-    password: tg-fq521free
-    sni: torjan.xn--xhq44j.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: torjan.xn--xhq44j.eu.org
-  - name: SG_speednode_0020
-    server: 109.120.138.94
-    port: 10851
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: O4D8WTvkvIALxm+8sIH2rgpXizdNVcqjbcN0O1Rl9KQ=
-  - name: SK_speednode_0021
-    server: 196.245.151.50
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: US_speednode_0024
-    server: 216.24.57.30
-    port: 443
-    type: trojan
-    password: tg-fq521free
-    sni: torjan.xn--xhq44j.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: torjan.xn--xhq44j.eu.org
-  - name: US_speednode_0025
-    server: 3.147.48.100
-    port: 36325
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 4p8Xip5R50r2guWgrffLUg
-  - name: US_speednode_0026
-    server: 198.62.62.67
-    port: 443
-    type: trojan
-    password: tg-fq521free
-    sni: torjan.xn--xhq44j.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: torjan.xn--xhq44j.eu.org
+    password: amazonskr05
   - name: US_speednode_0028
-    server: 104.219.41.229
+    server: 104.26.9.227
     port: 443
     type: trojan
-    password: Julius
-    sni: miami.juliusnet.com
+    password: UipJV58NIw
+    sni: t2.rtx.al
     skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /cfiiib
+      headers:
+        Host: t2.rtx.al
+  - name: US_speednode_0040
+    server: www.visa.com.tw
+    port: 8443
+    type: vmess
+    uuid: 6e064e59-b61c-4b9d-9455-7f143df84ec0
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: jk.htg8866.us.kg
+    network: ws
+    ws-opts:
+      path: /65hsr6
+      headers:
+        Host: jk.htg8866.us.kg
+  - name: US_speednode_0042
+    server: upos-sz-mirrorcf1ov.bilivideo.com
+    port: 80
+    type: vmess
+    uuid: 74133cf5-3e95-4f79-8379-7977f94c493a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /74133cf5-3e95-4f79-8379-7977f94c493a-vm?ed=2048
+      headers:
+        Host: argo9.zjccc.nyc.mn
   - name: 🇬🇧 高性价比机场:https://kfyun.uk
     server: 127.0.0.1
     port: 443
@@ -176,16 +103,8 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
-  - name: 0|--1
-    server: 217.30.10.18
-    port: 9010
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: f63gg8EruDnUrmz4
-    tfo: false
-  - name: 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
-    server: 52.79.248.193
+  - name: 0|--2
+    server: 3.38.212.48
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -193,54 +112,14 @@ proxies:
     password: amazonskr05
     tfo: false
   - name: 0|--3
-    server: 38.114.114.77
-    port: 5500
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-    tfo: false
-  - name: 0|--5
-    server: 79.110.53.169
-    port: 8080
-    client-fingerprint: chrome
-    type: ss
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
-    tfo: false
-  - name: 0|--6
-    server: 43.200.1.13
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    tfo: false
-  - name: 0|--8
-    server: 45.87.175.154
-    port: 8080
+    server: 109.120.138.94
+    port: 10851
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: cvII85TrW6n0OGyfpHVS1u
+    password: O4D8WTvkvIALxm+8sIH2rgpXizdNVcqjbcN0O1Rl9KQ=
     tfo: false
-  - name: 0|--11
-    server: 54.218.229.170
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    tfo: false
-  - name: 0|--13
-    server: 217.30.10.18
-    port: 9093
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: wfLC2y7rzZyCmuyt
-    tfo: false
-  - name: 0|--14
+  - name: 0|--4
     server: 54.70.176.73
     port: 443
     client-fingerprint: chrome
@@ -248,15 +127,31 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
-  - name: 0|--15
+  - name: 0|--5
     server: 217.30.10.18
-    port: 9014
+    port: 9045
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
-    password: KnJGad3FqTvjqbaX
+    password: Lp27rqyJq72bZsqX
     tfo: false
-  - name: 0|--16
+  - name: 0|--6
+    server: 217.30.10.18
+    port: 9011
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    tfo: false
+  - name: 0|--7
+    server: 217.30.10.18
+    port: 9037
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    tfo: false
+  - name: 0|--8
     server: 54.201.174.149
     port: 443
     client-fingerprint: chrome
@@ -264,6 +159,46 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
+  - name: 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
+    server: 3.36.65.244
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--11
+    server: 34.222.136.128
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--12
+    server: 43.200.1.13
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
+  - name: 0|--30
+    server: irvideo.cfd
+    port: 443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /linkws
+      headers:
+        Host: irvideo.cfd
   - name: 🇭🇰 13,14|香港|@ripaojiedian
     server: 36.151.192.239
     port: 42395
@@ -272,13 +207,21 @@ proxies:
     password: DNUMdmnJ
     sni: 36.151.192.239
     skip-cert-verify: false
+  - name: 13,14,15|CN_speednode_0004
+    server: 223.113.54.145
+    port: 36442
+    client-fingerprint: chrome
+    type: trojan
+    password: QwwHvrnN
+    sni: 223.113.54.145
+    skip-cert-verify: false
   - name: 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
-    server: 219.135.227.209
-    port: 15007
+    server: db59a98b.b8z9y9a5g9-fb-hk18.6pzfwf.com
+    port: 56018
     client-fingerprint: chrome
     type: ss
-    cipher: aes-256-gcm
-    password: KGPWD7ZZY2F0ZYPY
+    cipher: chacha20-ietf-poly1305
+    password: ZpeGa4
     tfo: false
   - name: 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
     server: 120.198.71.214
@@ -302,14 +245,23 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-    server: gy.666666222.shop
-    port: 34338
+  - name: 🇭🇰 13,14|香港6|@ripaojiedian
+    server: 170.178.186.12
+    port: 30000
     client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: e514e283-fa04-446e-a655-b854da829375
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
     tfo: false
+    skip-cert-verify: false
+    servername: www.59477189.xyz
+    network: ws
+    ws-opts:
+      path: /path/240811062813
+      headers:
+        Host: www.59477189.xyz
   - name: 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
     server: 183.236.51.23
     port: 46602
@@ -326,117 +278,178 @@ proxies:
     port: 39041
     client-fingerprint: chrome
     type: vmess
-    uuid: c1ae98ab-35aa-36bf-b317-857006d2fdfb
+    uuid: 24a13b6a-be32-3c9b-9d71-c3613da5390e
     alterId: 0
     cipher: auto
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-    server: i.needss.top
-    port: 20016
+  - name: 🇯🇵 13,14|日本2|@ripaojiedian
+    server: 89.163.231.19
+    port: 30005
     client-fingerprint: chrome
     type: vmess
-    uuid: aa44bc1f-3085-4e33-96e4-fcfc5a18a688
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: www.80347320.xyz
+    network: ws
+    ws-opts:
+      path: /path/240811062813
+      headers:
+        Host: www.80347320.xyz
+  - name: 🇯🇵 13,14|日本3|@ripaojiedian
+    server: 38.48.227.231
+    port: 47778
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: www.42266451.xyz
+    network: ws
+    ws-opts:
+      path: /path/240811062813
+      headers:
+        Host: www.42266451.xyz
+  - name: 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
+    server: 156.231.104.12
+    port: 18002
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: N2YMKAZFC2O29JGP
+    tfo: false
+  - name: 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+    server: 149.22.87.204
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-128-gcm
+    password: shadowsocks
+    tfo: false
+  - name: 🇯🇵 13|🇯🇵 日本6|@ripaojiedian
+    server: jp1.tiljkc.top
+    port: 38953
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 24a13b6a-be32-3c9b-9d71-c3613da5390e
     alterId: 0
     cipher: auto
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇯🇵 13|🇯🇵 日本|@ripaojiedian
-    server: 219.135.227.209
+  - name: 🇯🇵 13|🇯🇵 日本7|@ripaojiedian
+    server: 156.231.104.19
     port: 18009
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
-    password: YD5ETBMPY0O6L2A9
+    password: D8Q8HROCQRCZCSVC
     tfo: false
-  - name: 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
-    server: jp1.tiljkc.top
-    port: 38951
-    client-fingerprint: chrome
-    type: vmess
-    uuid: c1ae98ab-35aa-36bf-b317-857006d2fdfb
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
-    server: 156.231.104.21
-    port: 18011
+  - name: 🇯🇵 13|🇯🇵 日本8|@ripaojiedian
+    server: 156.231.104.13
+    port: 18003
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
-    password: 9ZEB8Z1ZXEUHAGUH
+    password: OIGGYGR002SRGG33
     tfo: false
-  - name: 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-    server: 156.231.104.11
-    port: 18001
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: 0JP2PNY1VIZVNSRJ
-    tfo: false
-  - name: 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
-    server: i.needss.top
-    port: 20021
-    client-fingerprint: chrome
-    type: vmess
-    uuid: aa44bc1f-3085-4e33-96e4-fcfc5a18a688
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-    server: 219.135.227.209
-    port: 16015
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: CVPPFA5LEN1NRWWO
-    tfo: false
-  - name: 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-    server: sg1.tiljkc.top
-    port: 34842
-    client-fingerprint: chrome
-    type: vmess
-    uuid: c1ae98ab-35aa-36bf-b317-857006d2fdfb
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇺🇸 13|🇺🇸 美国|@ripaojiedian
-    server: h.522226.xyz
-    port: 45800
-    client-fingerprint: chrome
-    type: trojan
-    password: xjN4xcuPGg55
-    sni: h.522226.xyz
-    skip-cert-verify: false
-  - name: 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-    server: xdd.dashuai.cyou
-    port: 45053
-    client-fingerprint: chrome
-    type: vmess
-    uuid: 5f60da64-5a9a-4fe3-925d-4dd45084816e
-    alterId: 0
-    cipher: auto
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-  - name: 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-    server: 43.203.141.93
+  - name: 🇰🇷 13,14|韩国|@ripaojiedian
+    server: www.csgo.com
     port: 443
     client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
+    type: vmess
+    uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
+    alterId: 0
+    cipher: auto
+    tls: true
     tfo: false
+    skip-cert-verify: false
+    servername: kr.cfyyds.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        Host: kr.cfyyds.filegear-sg.me
+  - name: 🇰🇷 13,14|韩国2|@ripaojiedian
+    server: 104.18.150.157
+    port: 8443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 04bd72e7-87ec-416d-8f3b-b0fbbf023555
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: df.htg8866.us.kg
+    network: ws
+    ws-opts:
+      path: /r7ir567fu
+      headers:
+        Host: df.htg8866.us.kg
+  - name: 🇸🇬 13,14|新加坡|@ripaojiedian
+    server: 51.89.78.48
+    port: 30008
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: www.12268626.xyz
+    network: ws
+    ws-opts:
+      path: /path/240811062813
+      headers:
+        Host: www.12268626.xyz
+  - name: 🇸🇬 13,14|新加坡2|@ripaojiedian
+    server: sg1.tiljkc.top
+    port: 21005
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 24a13b6a-be32-3c9b-9d71-c3613da5390e
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: api.teborder.com
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - sg1.tiljkc.top
+  - name: 🇺🇸 13,14|美国|@ripaojiedian
+    server: America.com
+    port: 443
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
+    alterId: 0
+    cipher: auto
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: us.anycast.us.kg
+    network: grpc
+    grpc-opts:
+      grpc-mode: none
+      grpc-service-name: /
   - name: 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-    server: 3.38.212.48
+    server: 43.202.1.19
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -450,6 +463,66 @@ proxies:
     type: trojan
     password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
     sni: vn.mjt000.com
+    skip-cert-verify: false
+  - name: 15|KZ_speednode_0012
+    server: 194.76.18.129
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+  - name: 15|RU_speednode_0018
+    server: 45.67.215.95
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+  - name: 15|US_speednode_0024
+    server: 216.24.57.30
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+  - name: 15|US_speednode_0026
+    server: 198.62.62.67
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+  - name: 15|US_speednode_0028
+    server: 104.219.41.229
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: Julius
+    sni: miami.juliusnet.com
     skip-cert-verify: false
   - name: 16|d*********g.com_2
     server: 42.236.73.72
@@ -3284,25 +3357,51 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
-  - type: ss
-    name: 美国+加利福尼亚州洛杉矶Cogent通信
-    server: 154.3.8.151
-    port: 30067
-    password: YWVzLTI1Ni1nY206aVVCMDkyM1JCQQ==
-    cipher: aes-128-gcm
-  - type: ss
-    name: 亚太地区+V2CROSS.COM
-    server: arxfw2b78fi2q9hzylhn.freesocks.work
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOazlhc2dsRHpIemprdFZ6VGt2aGFB
-    cipher: aes-128-gcm
   - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 52.213.83.23
+    name: 美国+Sprint网络
+    server: 63.176.214.136
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点2
+    ws-opts:
+      path: /afrhms16v.bestxray.buzz/linkws
+      headers:
+        host: uare-truth-7033.rijiwex893.workers.dev
+    server: 104.16.67.38
+    port: 2095
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: trojan
+    name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+    server: 35.177.79.12
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 法国+巴黎Amazon数据中心
+    server: 15.188.100.226
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点5
+    ws-opts:
+      path: /afrhms16v.bestxray.buzz/linkws
+      headers:
+        host: till-bush-d255.loyabok125.workers.dev
+    server: 104.16.67.38
+    port: 2082
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
     name: 美国+弗吉尼亚州阿什本Amazon数据中心
     server: 3.220.236.149
@@ -3310,99 +3409,105 @@ proxies:
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 欧盟+V2CROSS.COM
-    server: beesyar.org
-    port: 8080
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh
-    cipher: aes-128-gcm
+  - type: vmess
+    name: 广东省广州市移动8
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        host: ip3.6929198.xyz
+    server: 183.236.51.23
+    port: 53002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: vmess
+    name: 美国CloudFlare节点9
+    ws-opts:
+      path: /afrhms16v.bestxray.buzz/linkws
+      headers:
+        host: 8shhebsj78wjisnbhsjvess-pond-6cc6.cerog91216.workers.dev
+    server: 104.16.61.8
+    port: 8880
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+V2CROSS.COM
-    server: 168.138.142.53
-    port: 443
-    password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 江苏省+移动
-    server: 36.151.192.201
-    port: 34185
-    password: QwwHvrnN
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 新加坡+Amazon数据中心
-    server: bgroup.node3.s.nodelist-airport.com
-    port: 50001
-    password: >-
-      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphMWExNGQwYy02NWRlLTRiM2YtYjQ5My0yYjBjODk3NzhjNzA=
-    cipher: aes-128-gcm
-  - type: trojan
-    name: 美国+惠普HP
-    server: 15.157.247.25
+    name: 美国+Amazon数据中心
+    server: 13.36.142.59
     port: 22222
-    password: telegram-id-directvpn
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
+  - type: vmess
+    name: 美国CloudFlare节点15
+    ws-opts:
+      path: /afrhms16v.bestxray.buzz/linkws
+      headers:
+        host: worker-mute-bar-1719.nifotok993.workers.dev
+    server: 104.16.60.8
+    port: 2052
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
+    network: ws
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - BE_speednode_0001
-      - BR_speednode_0002
-      - CH_speednode_0003
-      - CN_speednode_0004
-      - DE_speednode_0006
-      - GB_speednode_0007
-      - GB_speednode_0008
-      - GT_speednode_0009
-      - KZ_speednode_0012
-      - LT_speednode_0013
-      - NL_speednode_0014
-      - NL_speednode_0015
-      - PL_speednode_0016
-      - PL_speednode_0017
-      - RU_speednode_0018
-      - SG_speednode_0020
-      - SK_speednode_0021
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
+      - CH_speednode_0001
+      - CN_speednode_0002
+      - GB_speednode_0006
+      - HK_speednode_0007
+      - JP_speednode_0008
+      - KR_speednode_0011
+      - NL_speednode_0013
+      - US_speednode_0014
       - US_speednode_0028
+      - US_speednode_0040
+      - US_speednode_0042
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
+      - 0|--2
       - 0|--3
+      - 0|--4
       - 0|--5
       - 0|--6
+      - 0|--7
       - 0|--8
+      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
       - 0|--11
-      - 0|--13
-      - 0|--14
-      - 0|--15
-      - 0|--16
+      - 0|--12
+      - 0|--30
       - 🇭🇰 13,14|香港|@ripaojiedian
+      - 13,14,15|CN_speednode_0004
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13,14|香港6|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
-      - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 13,14|日本2|@ripaojiedian
+      - 🇯🇵 13,14|日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本6|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本7|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本8|@ripaojiedian
+      - 🇰🇷 13,14|韩国|@ripaojiedian
+      - 🇰🇷 13,14|韩国2|@ripaojiedian
+      - 🇸🇬 13,14|新加坡|@ripaojiedian
+      - 🇸🇬 13,14|新加坡2|@ripaojiedian
+      - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|KZ_speednode_0012
+      - 15|RU_speednode_0018
+      - 15|US_speednode_0024
+      - 15|US_speednode_0026
+      - 15|US_speednode_0028
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -3703,74 +3808,72 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 亚太地区+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Sprint网络
+      - 美国CloudFlare节点2
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点5
       - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 江苏省+移动
-      - 新加坡+Amazon数据中心
-      - 美国+惠普HP
+      - 广东省广州市移动8
+      - 美国CloudFlare节点9
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点15
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - BE_speednode_0001
-      - BR_speednode_0002
-      - CH_speednode_0003
-      - CN_speednode_0004
-      - DE_speednode_0006
-      - GB_speednode_0007
-      - GB_speednode_0008
-      - GT_speednode_0009
-      - KZ_speednode_0012
-      - LT_speednode_0013
-      - NL_speednode_0014
-      - NL_speednode_0015
-      - PL_speednode_0016
-      - PL_speednode_0017
-      - RU_speednode_0018
-      - SG_speednode_0020
-      - SK_speednode_0021
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
+      - CH_speednode_0001
+      - CN_speednode_0002
+      - GB_speednode_0006
+      - HK_speednode_0007
+      - JP_speednode_0008
+      - KR_speednode_0011
+      - NL_speednode_0013
+      - US_speednode_0014
       - US_speednode_0028
+      - US_speednode_0040
+      - US_speednode_0042
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
+      - 0|--2
       - 0|--3
+      - 0|--4
       - 0|--5
       - 0|--6
+      - 0|--7
       - 0|--8
+      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
       - 0|--11
-      - 0|--13
-      - 0|--14
-      - 0|--15
-      - 0|--16
+      - 0|--12
+      - 0|--30
       - 🇭🇰 13,14|香港|@ripaojiedian
+      - 13,14,15|CN_speednode_0004
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13,14|香港6|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
-      - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 13,14|日本2|@ripaojiedian
+      - 🇯🇵 13,14|日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本6|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本7|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本8|@ripaojiedian
+      - 🇰🇷 13,14|韩国|@ripaojiedian
+      - 🇰🇷 13,14|韩国2|@ripaojiedian
+      - 🇸🇬 13,14|新加坡|@ripaojiedian
+      - 🇸🇬 13,14|新加坡2|@ripaojiedian
+      - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|KZ_speednode_0012
+      - 15|RU_speednode_0018
+      - 15|US_speednode_0024
+      - 15|US_speednode_0026
+      - 15|US_speednode_0028
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -4071,73 +4174,71 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 亚太地区+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Sprint网络
+      - 美国CloudFlare节点2
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点5
       - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 江苏省+移动
-      - 新加坡+Amazon数据中心
-      - 美国+惠普HP
+      - 广东省广州市移动8
+      - 美国CloudFlare节点9
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点15
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - BE_speednode_0001
-      - BR_speednode_0002
-      - CH_speednode_0003
-      - CN_speednode_0004
-      - DE_speednode_0006
-      - GB_speednode_0007
-      - GB_speednode_0008
-      - GT_speednode_0009
-      - KZ_speednode_0012
-      - LT_speednode_0013
-      - NL_speednode_0014
-      - NL_speednode_0015
-      - PL_speednode_0016
-      - PL_speednode_0017
-      - RU_speednode_0018
-      - SG_speednode_0020
-      - SK_speednode_0021
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
+      - CH_speednode_0001
+      - CN_speednode_0002
+      - GB_speednode_0006
+      - HK_speednode_0007
+      - JP_speednode_0008
+      - KR_speednode_0011
+      - NL_speednode_0013
+      - US_speednode_0014
       - US_speednode_0028
+      - US_speednode_0040
+      - US_speednode_0042
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
+      - 0|--2
       - 0|--3
+      - 0|--4
       - 0|--5
       - 0|--6
+      - 0|--7
       - 0|--8
+      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
       - 0|--11
-      - 0|--13
-      - 0|--14
-      - 0|--15
-      - 0|--16
+      - 0|--12
+      - 0|--30
       - 🇭🇰 13,14|香港|@ripaojiedian
+      - 13,14,15|CN_speednode_0004
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13,14|香港6|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
-      - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 13,14|日本2|@ripaojiedian
+      - 🇯🇵 13,14|日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本6|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本7|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本8|@ripaojiedian
+      - 🇰🇷 13,14|韩国|@ripaojiedian
+      - 🇰🇷 13,14|韩国2|@ripaojiedian
+      - 🇸🇬 13,14|新加坡|@ripaojiedian
+      - 🇸🇬 13,14|新加坡2|@ripaojiedian
+      - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|KZ_speednode_0012
+      - 15|RU_speednode_0018
+      - 15|US_speednode_0024
+      - 15|US_speednode_0026
+      - 15|US_speednode_0028
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -4438,15 +4539,16 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 亚太地区+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Sprint网络
+      - 美国CloudFlare节点2
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点5
       - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 江苏省+移动
-      - 新加坡+Amazon数据中心
-      - 美国+惠普HP
+      - 广东省广州市移动8
+      - 美国CloudFlare节点9
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点15
   - name: 📲 电报信息
     type: select
     proxies:
@@ -4484,59 +4586,56 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - BE_speednode_0001
-      - BR_speednode_0002
-      - CH_speednode_0003
-      - CN_speednode_0004
-      - DE_speednode_0006
-      - GB_speednode_0007
-      - GB_speednode_0008
-      - GT_speednode_0009
-      - KZ_speednode_0012
-      - LT_speednode_0013
-      - NL_speednode_0014
-      - NL_speednode_0015
-      - PL_speednode_0016
-      - PL_speednode_0017
-      - RU_speednode_0018
-      - SG_speednode_0020
-      - SK_speednode_0021
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
+      - CH_speednode_0001
+      - CN_speednode_0002
+      - GB_speednode_0006
+      - HK_speednode_0007
+      - JP_speednode_0008
+      - KR_speednode_0011
+      - NL_speednode_0013
+      - US_speednode_0014
       - US_speednode_0028
+      - US_speednode_0040
+      - US_speednode_0042
       - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 0|--1
-      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
+      - 0|--2
       - 0|--3
+      - 0|--4
       - 0|--5
       - 0|--6
+      - 0|--7
       - 0|--8
+      - 🇰🇷 0,13|🇰🇷 韩国特殊|@ripaojiedian
       - 0|--11
-      - 0|--13
-      - 0|--14
-      - 0|--15
-      - 0|--16
+      - 0|--12
+      - 0|--30
       - 🇭🇰 13,14|香港|@ripaojiedian
+      - 13,14,15|CN_speednode_0004
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 13,14|香港6|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港7|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港8|@ripaojiedian
-      - 🇹🇼 13|🇹🇼 台湾|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 13,14|日本2|@ripaojiedian
+      - 🇯🇵 13,14|日本3|@ripaojiedian
       - 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
-      - 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本6|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本7|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本8|@ripaojiedian
+      - 🇰🇷 13,14|韩国|@ripaojiedian
+      - 🇰🇷 13,14|韩国2|@ripaojiedian
+      - 🇸🇬 13,14|新加坡|@ripaojiedian
+      - 🇸🇬 13,14|新加坡2|@ripaojiedian
+      - 🇺🇸 13,14|美国|@ripaojiedian
       - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
       - 🇻🇳 13,14|越南|@ripaojiedian
+      - 15|KZ_speednode_0012
+      - 15|RU_speednode_0018
+      - 15|US_speednode_0024
+      - 15|US_speednode_0026
+      - 15|US_speednode_0028
       - 16|d*********g.com_2
       - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
       - 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
@@ -4837,15 +4936,16 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+加利福尼亚州洛杉矶Cogent通信
-      - 亚太地区+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Sprint网络
+      - 美国CloudFlare节点2
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 法国+巴黎Amazon数据中心
+      - 美国CloudFlare节点5
       - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 江苏省+移动
-      - 新加坡+Amazon数据中心
-      - 美国+惠普HP
+      - 广东省广州市移动8
+      - 美国CloudFlare节点9
+      - 美国+Amazon数据中心
+      - 美国CloudFlare节点15
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
