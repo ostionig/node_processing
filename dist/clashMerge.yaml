@@ -1,4 +1,4 @@
-# 更新时间 2024-12-28T06:51:00.727Z
+# 更新时间 2024-12-28T07:07:34.029Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3624,70 +3624,38 @@ proxies:
     alterId: 0
     cipher: auto
     network: auto
+  - type: ss
+    name: 美国+华盛顿Cogent通信公司
+    server: 38.110.1.105
+    port: 5498
+    password: YWVzLTI1Ni1nY206bEdxczk1UWtGSG8yTlY=
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国Fastly全球Anycast节点2
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: amd.al
+    server: 151.101.2.168
+    port: 80
+    uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8
+    alterId: 0
+    cipher: auto
+    network: ws
   - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.37.176.178
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 爱尔兰+都柏林Amazon数据中心
-    server: 54.217.32.193
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Sprint网络
-    server: 63.177.34.220
+    name: 加拿大+魁北克省蒙特利尔Amazon数据中心
+    server: 99.79.151.157
     port: 22222
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.110.1.105
-    port: 7307
-    password: YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ
-    cipher: aes-128-gcm
-  - type: vmess
-    name: 美国CloudFlare节点7
-    ws-opts:
-      path: /afrhms16v.bestxray.buzz/linkws
-      headers:
-        host: worker-noisy-paper-fa00.hetoj18200.workers.dev
-    server: 104.16.60.8
-    port: 2082
-    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-    alterId: 0
-    cipher: auto
-    network: ws
-  - type: vmess
-    name: 美国CloudFlare节点14
-    ws-opts:
-      path: /rongseven?ed=2048
-      headers:
-        host: 33.bycf.us.kg
-    server: 172.67.164.232
-    port: 443
-    uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点15
-    ws-opts:
-      path: /linde06.indiavideo.sbs/linkws
-      headers:
-        host: square-snowflake-486a.beshir-beisel.workers.dev
-    server: 104.16.68.38
-    port: 2052
-    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 美国+Amazon+EC2服务器
+    server: 3.133.241.50
+    port: 22222
+    password: telegram-id-directvpn
+    udp: true
+    skip-cert-verify: true
   - type: trojan
     name: 德国+黑森州法兰克福Amazon数据中心
     server: 3.126.167.125
@@ -3695,18 +3663,40 @@ proxies:
     password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国Fastly全球Anycast节点20
-    ws-opts:
-      path: /racevpn
-      headers:
-        host: 6606.com
-    server: 151.101.2.216
-    port: 80
-    uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 34.247.9.99
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 欧盟+V2CROSS.COM
+    server: beesyar.org
+    port: 8080
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q
+    cipher: aes-128-gcm
+  - type: ss
+    name: 亚太地区+V2CROSS.COM
+    server: soonjp.soon.guru
+    port: 40003
+    password: >-
+      Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphYjhiNjI1Yy1lZmI4LTQ1Y2QtYjUwOS1jN2NjZWFiZTBjYzY=
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 美国+Xerox
+    server: 13.51.128.154
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.37.176.178
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: vmess
     name: 美国CloudFlare节点21
     ws-opts:
@@ -3720,26 +3710,23 @@ proxies:
     cipher: auto
     network: ws
     tls: true
+  - type: trojan
+    name: 英国+伦敦Amazon数据中心
+    server: 35.179.23.7
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: vmess
-    name: 法国法国计算机科学大学23
+    name: 俄罗斯V2CROSS.COM23
     ws-opts:
-      path: /linkws
-      headers:
-        host: irvideo.cfd
-    server: 163.5.159.231
-    port: 443
-    uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+      path: /
+    server: 194.87.68.115
+    port: 28153
+    uuid: 1ded1ec9-7557-4c15-aaac-758bedea64fd
     alterId: 0
     cipher: auto
     network: ws
-    tls: true
-  - type: trojan
-    name: 瑞典+斯德哥尔摩Amazon数据中心
-    server: 13.49.250.101
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4148,18 +4135,19 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Sprint网络
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
+      - 美国Fastly全球Anycast节点2
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 德国+黑森州法兰克福Amazon数据中心
-      - 美国Fastly全球Anycast节点20
+      - 爱尔兰+都柏林Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点21
-      - 法国法国计算机科学大学23
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 俄罗斯V2CROSS.COM23
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4568,18 +4556,19 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Sprint网络
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
+      - 美国Fastly全球Anycast节点2
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 德国+黑森州法兰克福Amazon数据中心
-      - 美国Fastly全球Anycast节点20
+      - 爱尔兰+都柏林Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点21
-      - 法国法国计算机科学大学23
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 俄罗斯V2CROSS.COM23
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4987,18 +4976,19 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Sprint网络
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
+      - 美国Fastly全球Anycast节点2
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 德国+黑森州法兰克福Amazon数据中心
-      - 美国Fastly全球Anycast节点20
+      - 爱尔兰+都柏林Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点21
-      - 法国法国计算机科学大学23
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 俄罗斯V2CROSS.COM23
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5438,18 +5428,19 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 美国+Sprint网络
       - 美国+华盛顿Cogent通信公司
-      - 美国CloudFlare节点7
-      - 美国CloudFlare节点14
-      - 美国CloudFlare节点15
+      - 美国Fastly全球Anycast节点2
+      - 加拿大+魁北克省蒙特利尔Amazon数据中心
+      - 美国+Amazon+EC2服务器
       - 德国+黑森州法兰克福Amazon数据中心
-      - 美国Fastly全球Anycast节点20
+      - 爱尔兰+都柏林Amazon数据中心
+      - 欧盟+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+Amazon数据中心
       - 美国CloudFlare节点21
-      - 法国法国计算机科学大学23
-      - 瑞典+斯德哥尔摩Amazon数据中心
+      - 英国+伦敦Amazon数据中心
+      - 俄罗斯V2CROSS.COM23
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
