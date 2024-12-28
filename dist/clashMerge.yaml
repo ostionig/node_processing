@@ -1,4 +1,4 @@
-# 更新时间 2024-12-28T13:23:18.580Z
+# 更新时间 2024-12-28T18:21:36.465Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -459,31 +459,31 @@ proxies:
     cipher: aes-128-gcm
     password: 6601fb90e9b3
     tfo: false
+  - name: 0|--1
+    server: 34.213.242.165
+    port: 443
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    tfo: false
   - name: 0|--3
-    server: 43.203.122.162
+    server: 3.38.212.48
     port: 443
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
-  - name: 0|--5
-    server: 34.222.132.123
-    port: 443
+  - name: 0|--7
+    server: 217.30.10.18
+    port: 9010
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
-    password: amazonskr05
+    password: f63gg8EruDnUrmz4
     tfo: false
-  - name: 0|--11
-    server: 51.15.15.82
-    port: 989
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    tfo: false
-  - name: 0|--12
+  - name: 0|--9
     server: 35.92.45.179
     port: 443
     client-fingerprint: chrome
@@ -492,62 +492,6 @@ proxies:
     password: amazonskr05
     tfo: false
   - name: 0|--13
-    server: 35.85.33.177
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    tfo: false
-  - name: 0|--14
-    server: 169.150.210.233
-    port: 8080
-    client-fingerprint: chrome
-    type: ss
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
-    tfo: false
-  - name: 0|--15
-    server: 13.215.250.79
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    tfo: false
-  - name: 0|--16
-    server: 217.30.10.18
-    port: 9020
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: BNmAXXxAHYpTRdzu
-    tfo: false
-  - name: 0|--17
-    server: 217.30.10.18
-    port: 9059
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: 9XwYyZsK8SNzQDtY
-    tfo: false
-  - name: 0|--21
-    server: 217.30.10.18
-    port: 9045
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Lp27rqyJq72bZsqX
-    tfo: false
-  - name: 0|--22
-    server: 52.79.52.119
-    port: 443
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    tfo: false
-  - name: 0|--24
     server: 18.179.197.216
     port: 443
     client-fingerprint: chrome
@@ -555,33 +499,22 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     tfo: false
-  - name: 0|--44
-    server: 38.174.190.80
-    port: 38007
+  - name: 0|--14
+    server: 51.15.15.82
+    port: 989
     client-fingerprint: chrome
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: true
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
     tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /path/102206282005
-      headers:
-        Host: 38.174.190.80
-  - name: 0|--49
-    server: 46.38.146.68
-    port: 38585
+  - name: 0|--17
+    server: 52.79.52.119
+    port: 443
     client-fingerprint: chrome
-    type: vmess
-    uuid: e3cc1286-8401-4b1f-b110-dac3a2b15050
-    alterId: 0
-    cipher: auto
-    tls: false
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
     tfo: false
-    skip-cert-verify: false
   - name: 🇭🇰 13,14|香港|@ripaojiedian
     server: 223.113.54.149
     port: 2524
@@ -3587,10 +3520,35 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
-    name: 瑞典+斯德哥尔摩Amazon数据中心
-    server: 13.48.200.92
+    name: 德国+黑森州法兰克福AMazon数据中心
+    server: 3.120.212.5
     port: 22222
-    password: telegram-id-directvpn
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰都柏林+亚马逊云
+    server: 3.255.20.208
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 美国华盛顿Cogent通信公司6
+    ws-opts:
+      path: /path/102206282005
+    server: 38.174.190.80
+    port: 38007
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 美国+Amazon数据中心
+    server: 13.37.176.178
+    port: 22222
+    password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
   - type: trojan
@@ -3600,74 +3558,6 @@ proxies:
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国加利福尼亚州森尼韦尔市PEGTECH公司3
-    server: 142.0.134.245
-    port: 45017
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: trojan
-    name: 美国+Sprint网络
-    server: 63.177.34.220
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+惠普HP
-    server: 15.157.81.48
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 广东省广州市移动7
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip3.6929198.xyz
-    server: 183.236.51.23
-    port: 53002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    network: auto
-  - type: vmess
-    name: 美国V2CROSS.COM8
-    ws-opts:
-      path: /farcry?ed=2560
-      headers:
-        host: loki.oracle
-    server: 199.232.214.133
-    port: 443
-    uuid: e5852393-ca52-4c90-a237-d63cbbb57f21
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: trojan
-    name: 美国+Amazon数据中心
-    server: 13.38.237.84
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+CloudFlare节点
-    server: 104.22.4.240
-    port: 8443
-    password: >-
-      takaz%3Fcuswo-r%3F_ojuMit%40i%3DrAcrETl&lb1fro%3FL1uP%3D%40me%3D*NlWEbrlsP%23t%40d_8
-    udp: true
-    skip-cert-verify: true
-  - type: ss
-    name: 美国+华盛顿Cogent通信公司
-    server: 38.110.1.105
-    port: 8118
-    password: YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO
-    cipher: aes-128-gcm
   - type: trojan
     name: 爱尔兰+都柏林Amazon数据中心
     server: 54.217.32.193
@@ -3675,51 +3565,26 @@ proxies:
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 加拿大魁北克省博阿努瓦OVH数据中心17
-    server: 51.79.27.204
-    port: 443
-    uuid: 55d1bdb3-170b-420e-a07d-b08bac0c6cff
-    alterId: 0
-    cipher: auto
-    network: grpc
+  - type: trojan
+    name: 美国+Sprint网络
+    server: 63.177.118.185
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 美国+Xerox
+    server: 13.50.94.77
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
   - type: ss
     name: 美国+惠普公司
     server: 16.24.3.43
     port: 443
     password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
     cipher: aes-128-gcm
-  - type: vmess
-    name: 法国法国计算机科学大学20
-    ws-opts:
-      path: /linkws
-    server: irvideo.cfd
-    port: 443
-    uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: vmess
-    name: 美国CloudFlare节点23
-    ws-opts:
-      path: /eisasqa
-      headers:
-        host: foxlux.fovi.tk
-    server: 172.67.51.186
-    port: 443
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: trojan
-    name: 美国+Xerox
-    server: 13.51.128.154
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -3793,20 +3658,13 @@ proxy-groups:
       - US_speednode_0079
       - US_speednode_0080
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--1
       - 0|--3
-      - 0|--5
-      - 0|--11
-      - 0|--12
+      - 0|--7
+      - 0|--9
       - 0|--13
       - 0|--14
-      - 0|--15
-      - 0|--16
       - 0|--17
-      - 0|--21
-      - 0|--22
-      - 0|--24
-      - 0|--44
-      - 0|--49
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -4124,22 +3982,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国加利福尼亚州森尼韦尔市PEGTECH公司3
-      - 美国+Sprint网络
-      - 美国+惠普HP
-      - 广东省广州市移动7
-      - 美国V2CROSS.COM8
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰都柏林+亚马逊云
+      - 美国华盛顿Cogent通信公司6
       - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon+EC2服务器
       - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大魁北克省博阿努瓦OVH数据中心17
-      - 美国+惠普公司
-      - 法国法国计算机科学大学20
-      - 美国CloudFlare节点23
+      - 美国+Sprint网络
       - 美国+Xerox
+      - 美国+惠普公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4213,20 +4064,13 @@ proxy-groups:
       - US_speednode_0079
       - US_speednode_0080
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--1
       - 0|--3
-      - 0|--5
-      - 0|--11
-      - 0|--12
+      - 0|--7
+      - 0|--9
       - 0|--13
       - 0|--14
-      - 0|--15
-      - 0|--16
       - 0|--17
-      - 0|--21
-      - 0|--22
-      - 0|--24
-      - 0|--44
-      - 0|--49
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -4544,22 +4388,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国加利福尼亚州森尼韦尔市PEGTECH公司3
-      - 美国+Sprint网络
-      - 美国+惠普HP
-      - 广东省广州市移动7
-      - 美国V2CROSS.COM8
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰都柏林+亚马逊云
+      - 美国华盛顿Cogent通信公司6
       - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon+EC2服务器
       - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大魁北克省博阿努瓦OVH数据中心17
-      - 美国+惠普公司
-      - 法国法国计算机科学大学20
-      - 美国CloudFlare节点23
+      - 美国+Sprint网络
       - 美国+Xerox
+      - 美国+惠普公司
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4632,20 +4469,13 @@ proxy-groups:
       - US_speednode_0079
       - US_speednode_0080
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--1
       - 0|--3
-      - 0|--5
-      - 0|--11
-      - 0|--12
+      - 0|--7
+      - 0|--9
       - 0|--13
       - 0|--14
-      - 0|--15
-      - 0|--16
       - 0|--17
-      - 0|--21
-      - 0|--22
-      - 0|--24
-      - 0|--44
-      - 0|--49
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -4963,22 +4793,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国加利福尼亚州森尼韦尔市PEGTECH公司3
-      - 美国+Sprint网络
-      - 美国+惠普HP
-      - 广东省广州市移动7
-      - 美国V2CROSS.COM8
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰都柏林+亚马逊云
+      - 美国华盛顿Cogent通信公司6
       - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon+EC2服务器
       - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大魁北克省博阿努瓦OVH数据中心17
-      - 美国+惠普公司
-      - 法国法国计算机科学大学20
-      - 美国CloudFlare节点23
+      - 美国+Sprint网络
       - 美国+Xerox
+      - 美国+惠普公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5083,20 +4906,13 @@ proxy-groups:
       - US_speednode_0079
       - US_speednode_0080
       - 🇬🇧 高性价比机场:https://kfyun.uk
+      - 0|--1
       - 0|--3
-      - 0|--5
-      - 0|--11
-      - 0|--12
+      - 0|--7
+      - 0|--9
       - 0|--13
       - 0|--14
-      - 0|--15
-      - 0|--16
       - 0|--17
-      - 0|--21
-      - 0|--22
-      - 0|--24
-      - 0|--44
-      - 0|--49
       - 🇭🇰 13,14|香港|@ripaojiedian
       - 🇭🇰 13,14|香港2|@ripaojiedian
       - 🇭🇰 13|🇭🇰 香港3|@ripaojiedian
@@ -5414,22 +5230,15 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 美国+Amazon+EC2服务器
-      - 美国加利福尼亚州森尼韦尔市PEGTECH公司3
-      - 美国+Sprint网络
-      - 美国+惠普HP
-      - 广东省广州市移动7
-      - 美国V2CROSS.COM8
+      - 德国+黑森州法兰克福AMazon数据中心
+      - 爱尔兰都柏林+亚马逊云
+      - 美国华盛顿Cogent通信公司6
       - 美国+Amazon数据中心
-      - 美国+CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
+      - 美国+Amazon+EC2服务器
       - 爱尔兰+都柏林Amazon数据中心
-      - 加拿大魁北克省博阿努瓦OVH数据中心17
-      - 美国+惠普公司
-      - 法国法国计算机科学大学20
-      - 美国CloudFlare节点23
+      - 美国+Sprint网络
       - 美国+Xerox
+      - 美国+惠普公司
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
