@@ -1,4 +1,4 @@
-# 更新时间 2025-01-06T13:03:09.070Z
+# 更新时间 2025-01-06T18:24:06.005Z
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -3631,33 +3631,79 @@ proxies:
     cipher: auto
     network: auto
   - type: trojan
-    name: 美国+V2CROSS.COM
-    server: 168.138.142.53
-    port: 443
-    password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
+    name: 法国+巴黎Amazon数据中心
+    server: 52.47.81.213
+    port: 22222
+    password: telegram-id-directvpn
     udp: true
     skip-cert-verify: true
   - type: trojan
-    name: 俄罗斯+V2CROSS.COM
-    server: fitting-ox.boa152.lol
+    name: 美国+Amazon+EC2服务器
+    server: 3.79.125.82
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: ss
+    name: 美国+Amazon数据中心
+    server: series-a2.samanehha.co
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
+    cipher: aes-128-gcm
+  - type: trojan
+    name: 波兰+V2CROSS.COM
+    server: holy-seahorse.boa152.lol
     port: 443
     password: '3723507166611775488'
     udp: true
     skip-cert-verify: true
   - type: ss
-    name: 英国+伦敦Amazon数据中心
-    server: series-a1.samanehha.co
+    name: 罗马尼亚+V2CROSS.COM
+    server: 77.83.246.74
     port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB
-    cipher: aes-128-gcm
-  - type: ss
-    name: 美国+惠普公司
-    server: series-a2-me.varzesh360.co
-    port: 443
-    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKYjhIWEZ1dm5Uc1pMSHpCZDJpOVh6
     cipher: aes-128-gcm
   - type: vmess
-    name: 美国CloudFlare节点5
+    name: 美国加利福尼亚州洛杉矶PetaExpress5
+    server: 107.148.207.249
+    port: 48712
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: trojan
+    name: 英国+伦敦Amazon数据中心
+    server: 3.10.191.122
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 伊朗V2CROSS.COM7
+    ws-opts:
+      path: /
+      headers:
+        host: fast.com
+    server: 5.75.197.221
+    port: 8080
+    uuid: b44ceabe-997c-4988-932d-8efa6a530fc5
+    alterId: 0
+    cipher: auto
+    network: auto
+  - type: ss
+    name: 美国+内华达州克拉克县亨德森市Enzu股份有限公司
+    server: 23.88.37.31
+    port: 443
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMdXh5TmV0Qm90
+    cipher: aes-128-gcm
+  - type: ss
+    name: 英国+Microsoft公司
+    server: 51.13.182.236
+    port: 6870
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNN3gxbUdOT3doUGlSQjlqU3haSk55
+    cipher: aes-128-gcm
+  - type: vmess
+    name: 美国CloudFlare节点15
     ws-opts:
       path: /vmessws
       headers:
@@ -3669,58 +3715,26 @@ proxies:
     cipher: auto
     network: ws
   - type: trojan
-    name: 法国+巴黎Amazon数据中心
-    server: 15.188.224.229
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+弗吉尼亚州阿什本Amazon数据中心
-    server: 34.206.190.76
-    port: 22222
-    password: telegram-id-directvpn
-    udp: true
-    skip-cert-verify: true
-  - type: trojan
-    name: 美国+Amazon+EC2服务器
-    server: 3.74.58.173
-    port: 22222
-    password: telegram-id-privatevpns
-    udp: true
-    skip-cert-verify: true
-  - type: vmess
-    name: 德国黑森州法兰克福Linode数据中心12
-    ws-opts:
-      path: /linkws
-      headers:
-        host: hms26.xpengmotors.sbs
-    server: hms26.xpengmotors.sbs
-    port: 443
-    uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - type: trojan
     name: 美国+Xerox
     server: 13.51.8.163
     port: 22222
     password: telegram-id-privatevpns
     udp: true
     skip-cert-verify: true
-  - type: vmess
-    name: 美国CloudFlare节点19
-    ws-opts:
-      path: /vmessws
-      headers:
-        host: ovh.reonolimits.my.id
-    server: 104.18.21.219
-    port: 80
-    uuid: 3a18edb8-80c1-4cba-b912-4f10513da259
-    alterId: 0
-    cipher: auto
-    network: ws
+  - type: trojan
+    name: 美国+惠普公司
+    server: 16.16.9.49
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 爱尔兰+都柏林Amazon数据中心
+    server: 54.155.31.15
+    port: 22222
+    password: telegram-id-privatevpns
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4112,17 +4126,20 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
-      - 美国+惠普公司
-      - 美国CloudFlare节点5
       - 法国+巴黎Amazon数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 德国黑森州法兰克福Linode数据中心12
+      - 美国+Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶PetaExpress5
+      - 英国+伦敦Amazon数据中心
+      - 伊朗V2CROSS.COM7
+      - 美国+内华达州克拉克县亨德森市Enzu股份有限公司
+      - 英国+Microsoft公司
+      - 美国CloudFlare节点15
       - 美国+Xerox
-      - 美国CloudFlare节点19
+      - 美国+惠普公司
+      - 爱尔兰+都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -4514,17 +4531,20 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
-      - 美国+惠普公司
-      - 美国CloudFlare节点5
       - 法国+巴黎Amazon数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 德国黑森州法兰克福Linode数据中心12
+      - 美国+Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶PetaExpress5
+      - 英国+伦敦Amazon数据中心
+      - 伊朗V2CROSS.COM7
+      - 美国+内华达州克拉克县亨德森市Enzu股份有限公司
+      - 英国+Microsoft公司
+      - 美国CloudFlare节点15
       - 美国+Xerox
-      - 美国CloudFlare节点19
+      - 美国+惠普公司
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -4915,17 +4935,20 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
-      - 美国+惠普公司
-      - 美国CloudFlare节点5
       - 法国+巴黎Amazon数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 德国黑森州法兰克福Linode数据中心12
+      - 美国+Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶PetaExpress5
+      - 英国+伦敦Amazon数据中心
+      - 伊朗V2CROSS.COM7
+      - 美国+内华达州克拉克县亨德森市Enzu股份有限公司
+      - 英国+Microsoft公司
+      - 美国CloudFlare节点15
       - 美国+Xerox
-      - 美国CloudFlare节点19
+      - 美国+惠普公司
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
@@ -5348,17 +5371,20 @@ proxy-groups:
       - 🇺🇸_US_美国_15
       - 🇺🇸_US_美国_16
       - 更新于:02-0704:00-byBuLink.xyz-以下节点不计流量0
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国+伦敦Amazon数据中心
-      - 美国+惠普公司
-      - 美国CloudFlare节点5
       - 法国+巴黎Amazon数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国+Amazon+EC2服务器
-      - 德国黑森州法兰克福Linode数据中心12
+      - 美国+Amazon数据中心
+      - 波兰+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶PetaExpress5
+      - 英国+伦敦Amazon数据中心
+      - 伊朗V2CROSS.COM7
+      - 美国+内华达州克拉克县亨德森市Enzu股份有限公司
+      - 英国+Microsoft公司
+      - 美国CloudFlare节点15
       - 美国+Xerox
-      - 美国CloudFlare节点19
+      - 美国+惠普公司
+      - 爱尔兰+都柏林Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
